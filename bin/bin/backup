@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo "Sync Started"
+
+rsync -a /home/vago/ /mnt/data/vago/ --delete
+
+echo "vago success "
+
+sleep 1
+
+rsync -a --exclude '/lost+found' /mnt/data/ /mnt/mydata/data/ --delete
+
+echo "Sync Finished"
+
+sleep 1

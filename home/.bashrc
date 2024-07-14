@@ -113,3 +113,10 @@ if ! shopt -oq posix; then
 fi
 
 PS1='\[\033[1;36m\]\u\[\033[1;31m\]@\[\033[1;32m\]\h: \[\033[1;36m\]\w\[\033[1;33m\] $\[\033[0m\] ' 
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# Set up fzf key bindings and fuzzy completion
+eval "$(fzf --bash)"
+
+export EDITOR=/usr/bin/nano

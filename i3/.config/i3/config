@@ -49,7 +49,7 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec gnome-terminal
+bindsym $mod+Return exec terminator
 
 # kill focused window
 bindsym $mod+q kill
@@ -245,15 +245,17 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
+#bar {
 #        status_command i3status
-	status_command i3blocks -c ~/.config/i3blocks/config
+#	status_command i3blocks -c ~/.config/i3blocks/config
 #	tray_output primary 
-        workspace_buttons yes
-        font pango: Cantarell 13
+#        workspace_buttons yes
+#        font pango: Cantarell 13
+#
+#}	
 
-}	
 
+exec --no-startup-id ~/.config/polybar/launch_polybar.sh
 
 # class                 border  backgr. text    indicator child_border
 client.focused          #4c7899 #285577 #ffffff #2e9ef4   #285577
@@ -289,7 +291,7 @@ for_window [class="Gufw"] move to workspace $ws5
 bindsym $mod+y exec freetube
 for_window [class="FreeTube"] move to workspace $ws2
 
-for_window [class="Gnome-terminal"] move to workspace $ws1
+for_window [class="Terminator"] move to workspace $ws1
 
 for_window [class="mpv"] move to workspace $ws6
 
@@ -308,8 +310,8 @@ bindsym $mod+Print exec flameshot full
 
 
  # Keyboard 
-exec --no-startup-id "setxkbmap -model pc105 -layout us,gr,il -option grp:alt_space_toggle"
-exec numlock on
+exec --no-startup-id setxkbmap -model pc105 -layout us,gr,il -option 'grp:alt_space_toggle'
+exec --no-startup-id numlockx on
 
 
 # redshift
@@ -356,4 +358,4 @@ bindsym $mod+k exec kdeconnect-app
 # fucos on urgent windows
 for_window [urgent="latest"] focus
 
-exec gnome-terminal
+exec terminator

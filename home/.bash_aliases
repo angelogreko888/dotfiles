@@ -41,6 +41,9 @@ alias sb="source ~/.bashrc"
 alias n.="nano ~/.bashrc "
 alias nb="nano ~/.bash_aliases"
 alias nsl='sudo nano /etc/apt/sources.list'
+alias ni='nano ~/.config/i3/config'
+alias nib='nano ~/.config/i3blocks/config'
+alias np='nano ~/.config/polybar/config.ini'
 
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -51,6 +54,7 @@ alias cg='cd ~/git/'
 alias cgg='cd ~/git/gnome/'
 alias ci='cd ~/.config/i3/'
 alias cii='cd ~/.config/i3blocks/'
+alias cdf='cd ~/dotfiles/'
 
 
 alias md='mkdir -pv'
@@ -74,7 +78,7 @@ alias ap='apropos'
 alias b='btop'
 alias nu='ncdu'
 
-
+alias ts='sudo timeshift-gtk'
 alias tc='sudo timeshift --create'
 alias tr='sudo timeshift --restore'
 alias tl='sudo timeshift --list'
@@ -86,3 +90,28 @@ alias st='sudo -i stacer'
 alias ch='sudo chmod +x '
 alias co='sudo chown vago: '
 alias dk='sudo dpkg -i '
+
+alias nf='nano $(fzf -m --preview="cat {}")'
+alias snf='nano $(fzf -m --preview="cat {}")'
+alias f='fzf -m --preview="cat {}"'
+
+alias gd='sudo gnome-disks'
+alias gp='sudo gparted'
+alias ug='sudo grub-mkconfig -o /boot/grub/grub.cfg'
+
+
+alias pi='sudo pacman -S '
+alias ps='sudo pacman -Ss'
+alias pud='sudo pacman -Sy'
+alias pu='sudo pacman -Syu'
+alias pui='sudo pacman -Rns'
+alias par='sudo pacman -Qdttq | pacman -Rs'
+alias pac='sudo pacman -Scc'
+alias pl='sudo cat/var/log/pacman.log'
+alias psl='sudo nano /etc/pacman.conf'
+alias pdg='sudo pacman -U'
+
+alias yi='yay -S'
+alias ys='yay -Ss'
+alias yu='yay -Sua'
+alias yd='yay -Yc'

@@ -1,7 +1,0 @@
-[Desktop Entry]
-Name=backup
-GenericName=backup
-Exec=/home/vago/bin/backup
-Terminal=false
-Type=Application
-X-GNOME-Autostart-enabled=true

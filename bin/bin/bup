@@ -8,7 +8,7 @@ echo "vago success "
 
 sleep 1
 
-rsync -a --exclude '/lost+found' /mnt/data/ /mnt/mydata/data/ --delete
+rsync -a --exclude '/lost+found' /mnt/data/ /mnt/mydata/data/
 
 echo "Sync Finished"
 

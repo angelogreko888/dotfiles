@@ -10,7 +10,11 @@ esac
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
-HISTCONTROL=ignoreboth
+#HISTCONTROL=ignoreboth
+
+# shopt -s histappend
+PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a"
+
 
 # append to the history file, don't overwrite it
 shopt -s histappend
@@ -119,4 +123,3 @@ PS1='\[\033[1;36m\]\u\[\033[1;31m\]@\[\033[1;32m\]\h: \[\033[1;36m\]\w\[\033[1;3
 # Set up fzf key bindings and fuzzy completion
 eval "$(fzf --bash)"
 
-export EDITOR=/usr/bin/nano

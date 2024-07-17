@@ -55,7 +55,7 @@ bindsym $mod+Return exec terminator
 bindsym $mod+q kill
 
 # start dmenu (a program launcher)
-#bindsym $mod+d exec --no-startup-id dmenu_run
+#bidexndsym $mod+d exec --no-startup-id dmenu_run
 # A more modern dmenu replacement is rofi:
  bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -147,7 +147,6 @@ set $ws7 "7"
 set $ws8 "8"  
 set $ws9 "9"  
 set $ws10 "10"  
-
 set $ws11 "11"  
 set $ws12 "12"  
 set $ws13 "13"  
@@ -267,7 +266,7 @@ client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 client.background       #ffffff
 
 
-exec xinput set-prop "SYNA2B46:00 06CB:CD5F Touchpad" "libinput Tapping Enabled" 1
+#exec xinput set-prop "SYNA2B46:00 06CB:CD5F Touchpad" "libinput Tapping Enabled" 1
 
 #---- Wallpaper display ----#
  exec_always feh --bg-fill ~/.config/backgrounds/parthenon.jpg
@@ -279,6 +278,8 @@ new_window 1pixel
 
 
 # assign program to workspace
+
+#firefox
 bindsym $mod+b exec firefox
 for_window [class="firefox"] move to workspace $ws3
 
@@ -288,6 +289,7 @@ for_window [class="Thunar"] move to workspace $ws4
 for_window [class="Synaptic"] move to workspace $ws5
 for_window [class="Gufw"] move to workspace $ws5
 
+#FreeTube
 bindsym $mod+y exec freetube
 for_window [class="FreeTube"] move to workspace $ws2
 
@@ -295,24 +297,29 @@ for_window [class="Terminator"] move to workspace $ws1
 
 for_window [class="mpv"] move to workspace $ws6
 
+#Scanner
+bindsym $mod+n exec simple-scan
 for_window [class="Simple-scan"] move to workspace $ws10
 
+#Anydesk
+bindsym $mod+a exec anydesk
 for_window [class="Anydesk"] move to workspace $ws10
 
+#virtualBox
+bindsym $mod+o exec VirtualBox Manager
 for_window [class="VirtualBox Manager"] move to workspace $ws9
 
+#kdeconnect
+bindsym $mod+c exec kdeconnect-app
 for_window [class="kdeconnect.app"] move to workspace $ws8
-
 
 # screeshots
 bindsym Print exec flameshot gui
 bindsym $mod+Print exec flameshot full
 
-
  # Keyboard 
 exec --no-startup-id setxkbmap -model pc105 -layout us,gr,il -option 'grp:alt_space_toggle'
 exec --no-startup-id numlockx on
-
 
 # redshift
 bindsym $mod+z exec redshift -P -O 2500
@@ -321,39 +328,18 @@ bindsym $mod+x exec redshift -x
 # arandr
 exec_always --no-startup-id ~/.screenlayout/autoxrandr.sh
 
-
 #log operations
 bindsym $mod+Control+s exec --no-startup-id systemctl suspend
 bindsym $mod+Control+p exec --no-startup-id systemctl poweroff
 bindsym $mod+Control+r exec --no-startup-id systemctl reboot
 exec --no-startup-id xautolock -time 15 -locker "systemctl suspend"
 
-# Set inner/outer gaps
-#gaps inner 10
-#gaps outer 0
-
 # switch/iterate between workspaces
 bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
 
-# toggle caps/num lock indicator
-bindsym --release Caps_Lock exec --no-startup-id pkill -SIGRTMIN+11 i3blocks
-#bindsym --release Num_Lock  exec pkill -SIGRTMIN+11 i3blocks
-
 #Calendar
-bindsym $mod+c exec gsimplecal
-
-#Scanner
-bindsym $mod+n exec simple-scan
-
-#Anydesk
-bindsym $mod+a exec anydesk
-
-#virtualBox
-bindsym $mod+o exec VirtualBox Manager
-
-#KDE Connect
-bindsym $mod+k exec kdeconnect-app
+for_window [class="Yad" title="yad-calendar"] floating enable
 
 # fucos on urgent windows
 for_window [urgent="latest"] focus

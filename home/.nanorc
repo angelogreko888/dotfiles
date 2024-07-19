@@ -1,5 +1,5 @@
 ## Display line numbers to the left (and any anchors in the margin).
- set linenumbers
+# set linenumbers
 
 ## Paint the interface elements of nano.  These are examples; there are
 ## no colors by default, except for errorcolor and spotlightcolor.

@@ -118,16 +118,16 @@ fi
 
 PS1='\[\033[1;36m\]\u\[\033[1;31m\]@\[\033[1;32m\]\h: \[\033[1;36m\]\w\[\033[1;33m\] $\[\033[0m\] ' 
 
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+#[ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 # Set up fzf key bindings and fuzzy completion
-eval "$(fzf --bash)"
+#eval "$(fzf --bash)"
 
-function yy() {
-	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
-	yazi "$@" --cwd-file="$tmp"
-	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
-		cd -- "$cwd"
-	fi
-	rm -f -- "$tmp"
-}
+#function yy() {
+#	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+#	yazi "$@" --cwd-file="$tmp"
+#	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+#		cd -- "$cwd"
+#	fi
+#	rm -f -- "$tmp"
+#}

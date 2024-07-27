@@ -9,6 +9,7 @@ fastfetch
 alias spt="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3 -"
 
 alias xx='exit'
+alias r='ranger'
 
 alias ui="sudo apt purge -y && sudo apt autoremove -y"
 alias i="sudo apt install "

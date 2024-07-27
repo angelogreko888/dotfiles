@@ -11,7 +11,7 @@
 
 set $mod Mod4
 set $tv HDMI-1-0
-set $dm DP-1-3
+set $dm DP-1-0
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -322,8 +322,8 @@ bindsym Print exec flameshot gui
 bindsym $mod+Print exec flameshot full
 
  # Keyboard 
-exec --no-startup-id setxkbmap -model pc105 -layout us,gr,il -option 'grp:alt_space_toggle'
-exec --no-startup-id numlockx on
+exec_always --no-startup-id setxkbmap -model pc105 -layout us,gr,il -option 'grp:alt_space_toggle'
+exec_always --no-startup-id numlockx on
 
 # redshift
 bindsym $mod+z exec redshift -P -O 2500

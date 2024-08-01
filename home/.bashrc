@@ -21,7 +21,7 @@ shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=100000
-HISTFILESIZE=2000
+HISTFILESIZE=20000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -105,6 +105,13 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+# home bin
+if [ -d ~/bin ]
+then
+   PATH=$PATH:~/bin
+fi
+
+
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -118,16 +125,3 @@ fi
 
 PS1='\[\033[1;36m\]\u\[\033[1;31m\]@\[\033[1;32m\]\h: \[\033[1;36m\]\w\[\033[1;33m\] $\[\033[0m\] ' 
 
-#[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-
-# Set up fzf key bindings and fuzzy completion
-#eval "$(fzf --bash)"
-
-#function yy() {
-#	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
-#	yazi "$@" --cwd-file="$tmp"
-#	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
-#		cd -- "$cwd"
-#	fi
-#	rm -f -- "$tmp"
-#}

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#echo "Sync Started"
+echo "Sync Started"
 
 rsync -a /home/vago/ /mnt/data/vago/ --delete
 
@@ -8,8 +8,8 @@ rsync -a /home/vago/ /mnt/data/vago/ --delete
 
 #sleep 1
 
-rsync -a /home/vago/ /mnt/mydata/data/vago/ --delete
+#rsync -a /home/vago/ /mnt/mydata/data/vago/ --delete
 
-#echo "Sync Finished"
+echo "Sync Finished"
 
 #sleep 1

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "Sync Started"
+
+rsync -a --exclude 'lost+found'  /mnt/data/ /mnt/mydata/ --delete
+
+echo "Sync Finished"
+
+#sleep 1

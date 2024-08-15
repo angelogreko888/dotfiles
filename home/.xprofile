@@ -1,1 +1,2 @@
-bup &
+rm -rf ~/.cache/* &
+~/bin/bup &

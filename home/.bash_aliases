@@ -47,6 +47,7 @@ alias nsl='sudo nano /etc/apt/sources.list'
 alias ni='nano ~/.config/i3/config'
 alias nib='nano ~/.config/i3blocks/config'
 alias np='nano ~/.config/polybar/config.ini'
+alias npi='nano ~/.config/picom/picom.conf'
 
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -59,6 +60,8 @@ alias ci='cd ~/.config/i3/'
 alias cii='cd ~/.config/i3blocks/'
 alias cdf='cd ~/dotfiles/'
 
+alias lo='locate'
+alias lu='sudo updatedb'
 
 alias md='mkdir -pv'
 
@@ -76,6 +79,7 @@ alias ga='git add *'
 
 alias ap='apropos'
 alias b='btop'
+alias t='htop'
 alias nu='ncdu'
 
 alias ts='sudo timeshift-gtk'
@@ -115,9 +119,8 @@ alias psl='sudo nano /etc/pacman.conf'
 alias pdg='sudo pacman -U'
 alias pm='sudo nano /etc/pacman.d/mirrorlist'
 alias pup='sudo pacman -Syy && sudo pacman -Syu'
-alias po='sudo pacman -R $(pacman -Qdtq)'
-alias pc='sn /etc/pacman.conf'
-
+alias pd='sudo pacman -R $(pacman -Qdt)'
+alias pq='pacman -Qdt'
 
 alias y='yay'
 alias yi='yay -S'

@@ -32,7 +32,9 @@ exec --no-startup-id dex --autostart --environment i3
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+#exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -i '/home/vago/.config/backgrounds/archlinux.png'
+bindsym $mod+l exec i3lock -i '/home/vago/.config/backgrounds/archlinux.png'
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -115,6 +117,10 @@ bindsym $mod+space focus mode_toggle
 
 # focus the child container
 #bindsym $mod+d focus child
+
+#gaps
+#gaps inner 7
+#gaps outer 3
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -283,12 +289,20 @@ new_window 1pixel
 
 # assign program to workspace
 
+
+#Terminator
+for_window [class="Terminator"] move to workspace $ws1
+for_window [class="Terminator"] focus
+
+
 #firefox
 bindsym $mod+b exec firefox
 for_window [class="firefox"] move to workspace $ws3
+for_window [class="firefox"] focus
 
 bindsym $mod+t exec --no-startup-id thunar
 for_window [class="Thunar"] move to workspace $ws4
+for_window [class="Thunar"] focus
 
 for_window [class="Synaptic"] move to workspace $ws5
 for_window [class="Gufw"] move to workspace $ws5
@@ -297,17 +311,19 @@ for_window [class="Gufw"] move to workspace $ws5
 bindsym $mod+y exec freetube
 for_window [class="FreeTube"] move to workspace $ws2
 
-for_window [class="Terminator"] move to workspace $ws1
-
-for_window [class="mpv"] move to workspace $ws6
+#vlc
+for_window [class="vlc"] move to workspace $ws6
+for_window [class="vlc"] focus
 
 #Scanner
 bindsym $mod+n exec simple-scan
 for_window [class="Simple-scan"] move to workspace $ws10
+for_window [class="Simple-scan"] focus
 
 #Anydesk
 bindsym $mod+a exec anydesk
 for_window [class="Anydesk"] move to workspace $ws10
+for_window [class="Anydesk"] focus
 
 #virtualBox
 bindsym $mod+o exec VirtualBox Manager
@@ -332,11 +348,16 @@ bindsym $mod+x exec redshift -x
 # arandr
 exec_always --no-startup-id ~/.screenlayout/autoxrandr.sh
 
+for_window [class=Gmtp|Eog|simple-scan|feh|File-roller|Evince|gnome-text-editor] floating enable
+for_window [class=Gmtp|Eog|simple-scan|feh|File-roller|Evince|gnome-text-editor] focus
+
+
 #log operations
 bindsym $mod+Control+s exec --no-startup-id systemctl suspend
 bindsym $mod+Control+p exec --no-startup-id systemctl poweroff
 bindsym $mod+Control+r exec --no-startup-id systemctl reboot
-exec --no-startup-id xautolock -time 15 -locker "systemctl suspend"
+exec --no-startup-id xautolock -detectsleep -time 15 -locker "systemctl suspend"
+exec --no-startup-id "xautolock -detectsleep -time 13 -locker \"i3lock -i /home/vago/.config/backgrounds/archlinux.png\""
 
 # switch/iterate between workspaces
 bindsym $mod+Tab workspace next
@@ -347,5 +368,9 @@ for_window [class="Yad" title="yad-calendar"] floating enable
 
 # fucos on urgent windows
 for_window [urgent="latest"] focus
+
+#Compositor
+exec_always picom 
+
 
 exec terminator

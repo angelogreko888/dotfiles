@@ -6,3 +6,4 @@ else
   polybar --reload toph &
 fi
 
+

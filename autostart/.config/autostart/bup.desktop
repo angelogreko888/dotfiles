@@ -1,5 +1,0 @@
-[Desktop Entry]
-Name=Backup
-Type=Application
-Exec=bup 
-NoDisplay=true

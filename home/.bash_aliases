@@ -8,7 +8,7 @@ fastfetch
 #aliases
 alias spt="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3 -"
 
-alias xx='exit'
+alias c='clear'
 alias r='ranger'
 
 alias ui="sudo apt purge -y && sudo apt autoremove -y"
@@ -60,7 +60,7 @@ alias ci='cd ~/.config/i3/'
 alias cii='cd ~/.config/i3blocks/'
 alias cdf='cd ~/dotfiles/'
 
-alias lo='locate'
+alias lo='sudo updatedb; locate'
 alias lu='sudo updatedb'
 
 alias md='mkdir -pv'
@@ -96,31 +96,29 @@ alias co='sudo chown vago: '
 alias dk='sudo dpkg -i '
 alias dkil='dpkg --get-selections | grep -v deinstall'
 
-alias nf='nano $(fzf -m --preview="cat {}")'
-alias snf='nano $(fzf -m --preview="cat {}")'
-alias f='fzf -m --preview="cat {}"'
-
 alias gd='sudo gnome-disks'
 alias gp='sudo gparted'
+
 alias ug='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 
 alias cpk='du -sh /var/cache/pacman/pkg/'
+alias pac='sudo pacman -Scc'
+
 alias chh='du -sh ~/.cache/'
 alias chd='rm -rf ~/.cache/*'
 
 alias pi='sudo pacman -S --needed '
 alias ps='sudo pacman -Ss'
 alias pud='sudo pacman -Syy'
-alias pu='sudo pacman -Syu'
+alias pud='sudo pacman -Syu'
 alias pui='sudo pacman -Rns'
-alias pac='sudo pacman -Scc'
 alias pl='sudo cat /var/log/pacman.log'
 alias psl='sudo nano /etc/pacman.conf'
 alias pdg='sudo pacman -U'
 alias pm='sudo nano /etc/pacman.d/mirrorlist'
-alias pup='sudo pacman -Syy && sudo pacman -Syu'
-alias pd='sudo pacman -R $(pacman -Qdt)'
-alias pq='pacman -Qdt'
+alias pu='sudo pacman -Syy && sudo pacman -Syu'
+alias pd='sudo pacman -Rs $(pacman -Qqdt)'
+alias pq='pacman -Qqdt'
 
 alias y='yay'
 alias yi='yay -S'

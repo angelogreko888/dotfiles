@@ -2,7 +2,7 @@
 
 echo "Sync Started"
 
-rsync -a --exclude 'lost+found'  /mnt/data/ /mnt/mydata/ --delete
+rsync -a --exclude 'lost+found'  /mnt/data/ /mnt/mybook/mydata/ --delete
 
 echo "Sync Finished"
 

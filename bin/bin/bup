@@ -8,7 +8,7 @@ rsync -a /home/vago/dotfiles/ /mnt/data/sync-vago/dotfiles/ --delete
 
 rsync -a /home/vago/git/ /mnt/data/sync-vago/git/ --delete
 
-rsync -a /home/vago/pc/ /mnt/data/sync-vago/pc/ --delete
+#rsync -a /home/vago/pc/ /mnt/data/sync-vago/pc/ --delete
 
 rsync -a /home/vago/vago/ /mnt/data/sync-vago/vago/ --delete
 

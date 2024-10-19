@@ -3,13 +3,14 @@ then
    PATH=$PATH:~/bin
 fi
 
-fastfetch
+#fastfetch
 
 #aliases
 alias spt="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3 -"
 
 alias c='clear'
 alias r='ranger'
+alias ff='fastfetch'
 
 alias ui="sudo apt purge -y && sudo apt autoremove -y"
 alias i="sudo apt install "
@@ -81,15 +82,16 @@ alias ap='apropos'
 alias b='btop'
 alias t='htop'
 alias nu='ncdu'
+alias th='sudo -sE thunar'
 
-alias ts='sudo timeshift-gtk'
+alias ts='sudo -sE timeshift-gtk'
 alias tc='sudo timeshift --create'
 alias tr='sudo timeshift --restore'
 alias tl='sudo timeshift --list'
 
 alias syn='sudo -i synaptic'
 alias gu='sudo -i gufw'
-alias st='sudo -i stacer'
+alias st='sudo -sE stacer'
 
 alias ch='sudo chmod +x '
 alias co='sudo chown vago: '
@@ -102,7 +104,7 @@ alias gp='sudo gparted'
 alias ug='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 
 alias cpk='du -sh /var/cache/pacman/pkg/'
-alias pac='sudo pacman -Scc'
+alias cpd='sudo pacman -Scc'
 
 alias chh='du -sh ~/.cache/'
 alias chd='rm -rf ~/.cache/*'
@@ -123,6 +125,10 @@ alias pq='pacman -Qqdt'
 alias y='yay'
 alias yi='yay -S'
 alias ys='yay -Ss'
-alias yu='yay -Syy && yay -Syu'
+alias yu='yay -Syu'
 alias yd='yay -Yc'
 alias yui='yay -Rns'
+
+alias hh='nano ~/.config/hypr/hyprland.conf'
+alias wc='nano ~/.config/waybar/config'
+alias ch='cd ~/.config/hypr/'

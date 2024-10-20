@@ -131,4 +131,4 @@ alias yui='yay -Rns'
 
 alias hh='nano ~/.config/hypr/hyprland.conf'
 alias wc='nano ~/.config/waybar/config'
-alias ch='cd ~/.config/hypr/'
+alias chh='cd ~/.config/hypr/'

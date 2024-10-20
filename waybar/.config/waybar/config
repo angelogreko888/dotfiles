@@ -20,6 +20,8 @@
 
   "modules-left": [
         "hyprland/workspaces",
+	 "cpu",
+        "memory",
         "hyprland/mode",
 	"hyprland/window"
     //    "hyprland/scratchpad",
@@ -35,15 +37,16 @@
         "pulseaudio",
 //        "network",
         "power-profiles-daemon",
-        "cpu",
-        "memory",
+//        "cpu",
+//        "memory",
 //        "temperature",
 //        "keyboard-state",
         "hyprland/language",
 	"network",
         "backlight",
-        "battery",
-//        "battery#bat2",
+        "bluetooth",
+	"battery",
+//      "battery#bat2",
         "tray",
         "custom/power"
     ],
@@ -147,7 +150,7 @@
         },
 
     "cpu": {
-        "format": "{usage}% ",
+        "format": "{usage}%  ",
         "tooltip": false,
 	"interval": 1
     },
@@ -257,4 +260,16 @@
 	 "icon": false,
 	 "icon-size": 13,
 	},	
+
+	 "bluetooth":{
+    	"format-on": "<span color='#e57474'></span>  Turned On",
+    	"format-off": "<span color='#e57474'></span>  Turned Off",
+    	//"format-disabled": "<span color='#e57474'></span>  Disabled",
+    	"format-disabled": "<span color='#0000ff'></span> ",
+	"format-connected": "<span color='#e57474'></span> Connected",
+    	//"format": "<span color='#e57474'></span> Disabled",
+	"format": "<span color='#ff0000'></span> ",    
+	"on-click":"blueman-manager &"
+    },
+
 }

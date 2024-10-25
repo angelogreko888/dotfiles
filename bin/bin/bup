@@ -12,9 +12,9 @@ rsync -a /home/vago/git/ /mnt/data/sync-vago/git/ --delete
 
 rsync -a /home/vago/vago/ /mnt/data/sync-vago/vago/ --delete
 
-rsync -a /home/vago/xiaomi/ /mnt/data/sync-vago/xiaomi/ --delete
+#rsync -a /home/vago/xiaomi/ /mnt/data/sync-vago/xiaomi/ --delete
 
-rsync -a /home/vago/.screenlayout/ /mnt/data/sync-vago/.screenlayout/ --delete
+#rsync -a /home/vago/.screenlayout/ /mnt/data/sync-vago/.screenlayout/ --delete
 
 echo "Sync Finished"
 

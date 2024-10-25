@@ -11,10 +11,10 @@
   "mod": "dock",
   "margin-left": 10,
   "margin-right": 10,
-  "margin-top": 3,
+  "margin-top": 0,
   "margin-bottom": 0,
     "exclusive": true,
-    "passthrough": false,
+    "passthrough": false ,
     "gtk-layer-shell": true,
   "reload_style_on_change": true,  
 
@@ -22,29 +22,25 @@
         "hyprland/workspaces",
 	 "cpu",
         "memory",
-        "hyprland/mode",
+        "sway/mode",
 	"hyprland/window"
     //    "hyprland/scratchpad",
     //    "custom/media"
     ],
     "modules-center": [
-//        "hyprland/window"
 	"clock",
 	"idle_inhibitor"
 ],
     "modules-right": [
         "mpd",
         "pulseaudio",
-//        "network",
         "power-profiles-daemon",
-//        "cpu",
-//        "memory",
 //        "temperature",
 //        "keyboard-state",
         "hyprland/language",
 	"network",
         "backlight",
-        "bluetooth",
+//        "bluetooth",
 	"battery",
 //      "battery#bat2",
         "tray",
@@ -58,24 +54,24 @@
 //         "format": "{name}: {icon}",
 	 "format": "{icon}",
         "format-icons": {
-             "urgent": "",
+             "urgent": "<span color=\"#ff0000\"></span>",
              "active": "",
              "default": ""
          }
      },
     "keyboard-state": {
-        "numlock": true,
+//        "numlock": true,
         "capslock": true,
 	"binding-keys": [1,69,70],
-        "format": "{name} {icon}",
+        "format": " {icon}",
         "format-icons": {
             "locked": "",
             "unlocked": ""
         }
     },
-//    "hyprland/mode": {
-//        "format": "<span style=\"italic\">{}</span>"
-//    },
+    "sway/mode": {
+        "format": "<span style=\"italic\">{}</span>"
+    },
     "hyprland/scratchpad": {
         "format": "{icon} {count}",
         "show-empty": false,
@@ -135,7 +131,7 @@
 	"clock": {
             "format": "{:%I:%M %p  %a %d %b}",
             "rotate": 0,
-            "tooltip-format": "<tt>{calendar}</tt>",
+            "tooltip-format": "<tt><big>{calendar}</big></tt>",
             "calendar": {
                "mode": "month",
                "mode-mon-col": 3,
@@ -155,7 +151,7 @@
 	"interval": 1
     },
     "memory": {
-        "format": "{}% ",
+        "format": "{used:0.1f} ",
 	"interval": 1
     },
     "temperature": {
@@ -173,23 +169,23 @@
         "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
     "battery": {
+//	"bat": "BAT1",
+	"interval": 30,
         "states": {
-            // "good": 95,
+//            "good": 95,
             "warning": 30,
             "critical": 15
         },
         "format": "{capacity}% {icon}",
-        "format-full": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
-        "format-plugged": "{capacity}% ",
-        "format-alt": "{time} {icon}",
-        // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
-        "format-icons": ["", "", "", "", ""]
+      //  "format-full": "{capacity}% {icon}",
+        "format-charging": "{capacity}%  ",
+        "format-plugged": "{capacity}% (plugged)  ",
+//        "format-alt": "{time}",
+        "format-icons": ["<span color=\"#ff0000\"></span>", "", "", "", ""],
     },
-    "battery#bat2": {
-        "bat": "BAT2"
-    },
+//    "battery#bat2": {
+//        "bat": "BAT2"
+//    },
     "power-profiles-daemon": {
       "format": "{icon}",
       "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
@@ -255,10 +251,11 @@
     },
       "hyprland/window": {  
 	//"format": "{}"   // <--- these is the default value  
-	"format": "<span  weight='bold' >{class}</span>",
+	"format": "<span  weight='regular' >{class}</span>",
 	 "max-length": 120,
 	 "icon": false,
-	 "icon-size": 13,
+	 "icon-size": 17,
+	"on-click": "~/.config/waybar/relaunch.sh &",
 	},	
 
 	 "bluetooth":{

@@ -168,21 +168,40 @@
         "format": "{percent}% {icon}",
         "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
-    "battery": {
+
+	"battery": {
+	    "states": {
+	      "warning": 30,
+	      "critical": 15
+	    },
+	    "format": "<span size='13000' foreground='#a6e3a1'>{icon} </span> {capacity}%",
+	    "format-warning": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {capacity}%",
+	    "format-critical": "<span size='13000' foreground='#E38C8F'>{icon} </span> {capacity}%",
+	    "format-charging": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
+	    "format-plugged": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
+	    "format-alt": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {time}",
+	    "format-full": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
+	    "format-icons": ["", "", "", "", ""],
+	    "tooltip-format": "{time}"
+	  },
+
+
+
+//    "battery": {
 //	"bat": "BAT1",
-	"interval": 30,
-        "states": {
+//	"interval": 30,
+//        "states": {
 //            "good": 95,
-            "warning": 30,
-            "critical": 15
-        },
-        "format": "{capacity}% {icon}",
+//            "warning": 30,
+//            "critical": 15
+//        },
+//        "format": "{capacity}% {icon}",
       //  "format-full": "{capacity}% {icon}",
-        "format-charging": "{capacity}%  ",
-        "format-plugged": "{capacity}% (plugged)  ",
+//        "format-charging": "{capacity}%  ",
+//        "format-plugged": "{capacity}% (plugged)  ",
 //        "format-alt": "{time}",
-        "format-icons": ["<span color=\"#ff0000\"></span>", "", "", "", ""],
-    },
+//        "format-icons": ["<span color=\"#ff0000\"></span>", "", "", "", ""],
+//    },
 //    "battery#bat2": {
 //        "bat": "BAT2"
 //    },

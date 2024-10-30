@@ -52,7 +52,7 @@
 @define-color	crust-rgb  rgb(17, 17, 27);
 
 * {
-  font-family: 'CaskaydiaCove Nerd Font', monospace;
+  font-family: 'monospace;
   font-size: 18px;
 }
 
@@ -60,8 +60,8 @@
 window {
   margin: 0px;
   padding: 10px;
-  border: 2px solid @lavender;
-  border-radius: 8px;
+  border: 2px solid @sky;
+  border-radius: 17px;
   background-color: @base;
 }
 
@@ -69,6 +69,7 @@ window {
 #inner-box {
   margin: 5px;
   padding: 10px;
+  border-radius: 25px;
   border: none;
   background-color: @base;
 }
@@ -78,6 +79,7 @@ window {
   margin: 5px;
   padding: 10px;
   border: none;
+  border-radius: 17px;
   background-color: @base;
 }
 
@@ -94,7 +96,8 @@ window {
   margin: 5px 20px;
   padding: 10px;
   border: none;
-  border-radius: 0.1em;
+ /* border-radius: 0.1em;*/
+  border-radius: 17px;
   color: @text;
   background-color: @base;
 }
@@ -127,6 +130,7 @@ window {
 /* Selected Entry */
 #entry:selected {
   border: 0.11em solid @lavender;
+  border-radius: 13px;
 }
 
 #entry:selected #text {

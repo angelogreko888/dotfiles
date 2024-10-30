@@ -1,11 +1,8 @@
 // -*- mode: jsonc -*-
 {
-  // "layer": "top", // Waybar at top layer
-  //"position": "bottom", // Waybar position (top|bottom|left|right)
-  //"height": 17, // Waybar height (to be removed for auto height)
-  // "width": 1280, // Waybar width
-  //"spacing": 4, // Gaps between modules (4px)
-  // Choose the order of the modules
+  //"height": 21,
+  // "width": 1280, 
+  //"spacing": 4,
   "layer": "top",
   "position": "top",
   "mod": "dock",
@@ -19,47 +16,61 @@
   "reload_style_on_change": true,  
 
   "modules-left": [
+	 "custom/arch",
         "hyprland/workspaces",
 	 "cpu",
-        "memory",
-        "sway/mode",
-	"hyprland/window"
-    //    "hyprland/scratchpad",
-    //    "custom/media"
+        "memory"
+//        "sway/mode",
+//	"hyprland/window"
+
     ],
+
     "modules-center": [
 	"clock",
+        "hyprland/language",
 	"idle_inhibitor"
 ],
+
     "modules-right": [
-        "mpd",
         "pulseaudio",
         "power-profiles-daemon",
 //        "temperature",
 //        "keyboard-state",
-        "hyprland/language",
 	"network",
-        "backlight",
+//        "backlight",
 //        "bluetooth",
 	"battery",
-//      "battery#bat2",
         "tray",
         "custom/power"
     ],
+
     // Modules configuration
-     "hyprland/workspaces": {
-         "disable-scroll": true,
-         "all-outputs": true,
-         "warp-on-scroll": false,
+
+	 "custom/arch": {
+        "format": "󰣇",
+        "on-click": "wofi --show drun",
+        "tooltip": false
+    },
+
+//     "hyprland/workspaces": {
+//         "disable-scroll": true,
+//         "all-outputs": true,
+//         "warp-on-scroll": false,
 //         "format": "{name}: {icon}",
-	 "format": "{icon}",
-        "format-icons": {
-             "urgent": "<span color=\"#ff0000\"></span>",
-             "active": "",
-             "default": ""
-         }
-     },
-    "keyboard-state": {
+//	 "format": "{icon}",
+//       "format-icons": {
+//             "urgent": "<span color=\"#ff0000\"></span>",
+//             "active": "",
+//             "default": ""
+//         }
+//     },
+  
+	  "hyprland/workspaces": {
+        "on-click": "activate",
+        "format": "{name}",
+    },
+
+	"keyboard-state": {
 //        "numlock": true,
         "capslock": true,
 	"binding-keys": [1,69,70],
@@ -105,13 +116,15 @@
         "tooltip-format": "MPD (connected)",
         "tooltip-format-disconnected": "MPD (disconnected)"
     },
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-            "activated": "",
-            "deactivated": ""
+   
+	"idle_inhibitor": {
+             "format": "{icon}",
+             "format-icons": {
+                "activated": "",
+                "deactivated": ""
        }
     },
+
     "tray": {
         // "icon-size": 21,
         "spacing": 10
@@ -132,7 +145,8 @@
             "format": "{:%I:%M %p  %a %d %b}",
             "rotate": 0,
             "tooltip-format": "<tt><big>{calendar}</big></tt>",
-            "calendar": {
+            "interval": 1,
+	     "calendar": {
                "mode": "month",
                "mode-mon-col": 3,
                "on-scroll": 1,
@@ -179,10 +193,11 @@
 	    "format-critical": "<span size='13000' foreground='#E38C8F'>{icon} </span> {capacity}%",
 	    "format-charging": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
 	    "format-plugged": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
-	    "format-alt": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {time}",
+//	    "format-alt": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {time}",
 	    "format-full": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
 	    "format-icons": ["", "", "", "", ""],
-	    "tooltip-format": "{time}"
+	    "tooltip-format": "{time}",
+	    "on-click": "~/.config/waybar/relaunch.sh &",
 	  },
 
 
@@ -273,8 +288,7 @@
 	"format": "<span  weight='regular' >{class}</span>",
 	 "max-length": 120,
 	 "icon": false,
-	 "icon-size": 17,
-	"on-click": "~/.config/waybar/relaunch.sh &",
+	 "icon-size": 17
 	},	
 
 	 "bluetooth":{
@@ -288,4 +302,12 @@
 	"on-click":"blueman-manager &"
     },
 
+
+	"hyprland/language":{
+	 "format": "{}",
+	"format-en": "EN",
+	"format-gr": "GR", 
+	"format-he": "IL",
+	"on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next"
+	},
 }

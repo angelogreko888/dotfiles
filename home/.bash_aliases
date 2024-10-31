@@ -135,3 +135,4 @@ alias chh='cd ~/.config/hypr/'
 alias cdw='cd ~/.config/waybar/'
 alias pp='hyprprop WM_CLASS'
 alias ws='nano ~/.config/waybar/style.css'
+

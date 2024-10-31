@@ -93,3 +93,14 @@ padding-right:0px;
   padding: 0px 20px 0px 20px;
   font-size: 21px;
 }
+
+#custom-swaync {
+  border-radius:10px;
+  padding: 0px 10px 0px 10px;
+}
+
+#pulseaudio {
+  border-radius:10px;
+  padding: 0px 10px 0px 10px;
+}
+

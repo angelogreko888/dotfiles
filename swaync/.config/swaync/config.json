@@ -30,10 +30,8 @@
     "script-fail-notify": true,
     "widgets": [
        	"dnd",
-        "buttons-grid",
-		"mpris",
     	"volume", 
-   	 	"backlight",
+ 	"backlight",
         "title",
         "notifications"
     ],

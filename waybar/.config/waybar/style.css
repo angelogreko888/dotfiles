@@ -104,3 +104,13 @@ padding-right:0px;
   padding: 0px 10px 0px 10px;
 }
 
+#taskbar {
+  border-radius:10px;
+  padding: 0px 10px 0px 10px;
+}
+
+#power-profiles-daemon {
+ border-radius:10px;
+  padding: 0px 10px 0px 10px;
+}
+

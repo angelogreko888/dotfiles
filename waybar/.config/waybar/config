@@ -10,9 +10,9 @@
   "margin-right": 10,
   "margin-top": 0,
   "margin-bottom": 0,
-    "exclusive": true,
-    "passthrough": false ,
-    "gtk-layer-shell": true,
+  "exclusive": true,
+  "passthrough": false ,
+  "gtk-layer-shell": true,
   "reload_style_on_change": true,  
 
 
@@ -30,8 +30,9 @@
 
     "modules-center": [
 	"clock",
-        "hyprland/language",
-	"idle_inhibitor"
+        "hyprland/language"
+//        "keyboard-state"
+
 ],
 
     "modules-right": [
@@ -39,8 +40,8 @@
 	"pulseaudio#microphone",
         "custom/swaync",
 //        "temperature",
-//        "keyboard-state",
 	"network",
+	"idle_inhibitor",
         "backlight",
 //        "bluetooth",
 	"power-profiles-daemon",
@@ -57,37 +58,33 @@
         "tooltip": false
     },
 
-//     "hyprland/workspaces": {
-//         "disable-scroll": true,
-//         "all-outputs": true,
-//         "warp-on-scroll": false,
-//         "format": "{name}: {icon}",
-//	 "format": "{icon}",
-//       "format-icons": {
-//             "urgent": "<span color=\"#ff0000\"></span>",
-//             "active": "",
-//             "default": ""
-//         }
-//     },
   
 	  "hyprland/workspaces": {
         "on-click": "activate",
         "format": "{name}",
     },
 
-	"keyboard-state": {
-//        "numlock": true,
-        "capslock": true,
-	"binding-keys": [1,69,70],
-        "format": " {icon}",
-        "format-icons": {
-            "locked": "",
-            "unlocked": ""
-        }
+
+ 	"keyboard-state": {
+//    "numlock": true,
+    "capslock": true,
+    "format": {
+        "numlock": "N {icon}",
+        "capslock": "C {icon}"                                                                                                                                                       
     },
+    "format-icons": {
+        "locked": "",
+        "unlocked": ""
+    }
+},
+
+
+
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
     },
+
+
     "hyprland/scratchpad": {
         "format": "{icon} {count}",
         "show-empty": false,
@@ -95,39 +92,14 @@
         "tooltip": true,
         "tooltip-format": "{app}: {title}"
     },
-    "mpd": {
-        "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
-        "format-disconnected": "Disconnected ",
-        "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
-        "unknown-tag": "N/A",
-        "interval": 5,
-        "consume-icons": {
-            "on": " "
-        },
-        "random-icons": {
-            "off": "<span color=\"#f53c3c\"></span> ",
-            "on": " "
-        },
-        "repeat-icons": {
-            "on": " "
-        },
-        "single-icons": {
-            "on": "1 "
-        },
-        "state-icons": {
-            "paused": "",
-            "playing": ""
-        },
-        "tooltip-format": "MPD (connected)",
-        "tooltip-format-disconnected": "MPD (disconnected)"
-    },
+
    
 	"idle_inhibitor": {
              "format": "{icon}",
              "format-icons": {
                 "activated": "",
                 "deactivated": ""
-       }
+	       }
     },
 
     "tray": {
@@ -161,24 +133,13 @@
         "tooltip": false,
 	"interval": 1
     },
+
+
     "memory": {
         "format": "{used:0.1f} ",
 	"interval": 1
     },
-    "temperature": {
-         "thermal-zone": 1,
-        // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
-        "critical-threshold": 80,
-        // "format-critical": "{temperatureC}°C {icon}",
-        "format": "{temperatureC}°C {icon}",
-        "format-icons": ["", "", ""],
-	"interval": 1
-    },
-//    "backlight": {
-//        // "device": "acpi_video1",
-//        "format": "{percent}% {icon}",
-//        "format-icons": ["", "", "", "", "", "", "", "", ""]
-//    },
+
 
 
 	"backlight": {
@@ -227,25 +188,6 @@
 	  },
 
 
-
-//    "battery": {
-//	"bat": "BAT1",
-//	"interval": 30,
-//        "states": {
-//            "good": 95,
-//            "warning": 30,
-//            "critical": 15
-//        },
-//        "format": "{capacity}% {icon}",
-      //  "format-full": "{capacity}% {icon}",
-//        "format-charging": "{capacity}%  ",
-//        "format-plugged": "{capacity}% (plugged)  ",
-//        "format-alt": "{time}",
-//        "format-icons": ["<span color=\"#ff0000\"></span>", "", "", "", ""],
-//    },
-//    "battery#bat2": {
-//        "bat": "BAT2"
-//    },
     "power-profiles-daemon": {
       "format": "{icon}",
       "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
@@ -257,16 +199,24 @@
         "power-saver": ""
       }
     },
-    "network": {
-        // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ({signalStrength}%) ",
-//        "format-ethernet": "{ipaddr}/{cidr} ",
-//        "tooltip-format": "{ifname} via {gwaddr} ",
-//        "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected ⚠",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
-    },
 
+
+     "network": {
+	"format": "{ifname}",
+	"format-wifi": "{icon}",
+	"format-ethernet": "󰌘",
+	"format-disconnected": "󰌙",
+	"tooltip-format": "{ipaddr}  {bandwidthUpBits}  {bandwidthDownBits}",
+	"format-linked": "󰈁 {ifname} (No IP)",
+	"tooltip-format-wifi": "{essid} {icon} {signalStrength}%",
+	"tooltip-format-ethernet": "{ifname} 󰌘",
+	"tooltip-format-disconnected": "󰌙 Disconnected",
+	"icon-size": 21,
+	"max-length": 30,
+	"format-icons": [
+		"󰤯", "󰤟", "󰤢", "󰤥", "󰤨"
+	],
+},
 
       "pulseaudio": {
 	"format": "{volume}% {icon}",
@@ -308,20 +258,6 @@
 },
 
 
-
-
-    "custom/media": {
-        "format": "{icon} {}",
-        "return-type": "json",
-        "max-length": 40,
-        "format-icons": {
-            "spotify": "",
-            "default": "🎜"
-        },
-        "escape": true,
-        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
-        // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
-    },
     "custom/power": {
         "format" : "⏻ ",
 		"tooltip": false,
@@ -400,3 +336,4 @@
 },
 
 }
+

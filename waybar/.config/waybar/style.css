@@ -45,6 +45,13 @@
   padding-right: 5px;
 }
 
+
+#idle_inhibitor {
+border-radius:10px;
+   padding: 0px 10px 0px 10px;
+}
+
+
 #idle_inhibitor.activated{
   color:#e57474;
 }
@@ -119,3 +126,21 @@ padding-right:0px;
   padding: 0px 10px 0px 10px;
 }
 
+#keyboard-state {
+ border-radius:10px;
+  padding: 0px 10px 0px 10px;
+}
+
+#keyboard-state {
+border-radius:10px;
+  padding: 0px 10px 0px 10px;
+}
+
+#backlight {
+border-radius:10px;
+  padding: 0px 10px 0px 10px;
+}
+
+#keyboard-state.locked {
+ color:#e57474;
+}

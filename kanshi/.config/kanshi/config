@@ -5,5 +5,5 @@ profile {
 }
 
 profile {
-        output "AU Optronics 0x7EAD 0x00007EAD" enable scale 2
+        output "AU Optronics 0x7EAD 0x00007EAD" enable scale 1
 }

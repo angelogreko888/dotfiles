@@ -30,8 +30,6 @@
     "script-fail-notify": true,
     "widgets": [
        	"dnd",
-    	"volume", 
- 	"backlight",
         "title",
         "notifications"
     ],

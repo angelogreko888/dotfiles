@@ -2,6 +2,8 @@
   font-size: 17px;
   font-family: "JetBrainsMono Nerd Font, FontAwesome, Hack, Arimo, Noto, Roboto, Helvetica, Arial, sans-serif";
   color: #dadada;
+  font-weight: 500;
+  min-height: 0;
 }
 #waybar {
   background: transparent;

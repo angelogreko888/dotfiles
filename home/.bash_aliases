@@ -98,8 +98,8 @@ alias co='sudo chown vago: '
 alias dk='sudo dpkg -i '
 alias dkil='dpkg --get-selections | grep -v deinstall'
 
-alias gd='sudo gnome-disks'
-alias gp='sudo gparted'
+alias gd='sudo -sE gnome-disks'
+alias gp='sudo -sE gparted'
 
 alias ug='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 

@@ -137,7 +137,7 @@
 
     "memory": {
        //"format": "{used:0.1f} ",
-	"format": "{used:.2g} ",
+	"format": "{used:.2g} ",
 	"interval": 1,
     },
 

@@ -136,8 +136,8 @@
 
 
     "memory": {
-       //"format": "{used:0.1f} ",
-	"format": "{used:.2g} ",
+       //"format": "{used:0.1f}  ",
+	"format": "{used:.2g} ",
 	"interval": 1,
     },
 
@@ -222,7 +222,7 @@
 },
 
       "pulseaudio": {
-	"format": "{volume}% {icon}",
+	"format": "{volume} {icon}",
 	"format-bluetooth": "{icon} 󰂰 {volume}%",
 	"format-muted": "󰖁",
 	"format-icons": {
@@ -250,7 +250,7 @@
 
     "pulseaudio#microphone": {
 	"format": "{format_source}",
-	"format-source": "{volume}% ",
+	"format-source": "{volume} ",
 	"format-source-muted": "",
 	"on-click": "$HOME/.config/waybar/scripts/Volume.sh --toggle-mic",
 	"on-click-right": "pavucontrol -t 4",

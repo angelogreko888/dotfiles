@@ -52,6 +52,7 @@ alias npi='nano ~/.config/picom/picom.conf'
 
 alias ..='cd ..'
 alias ...='cd ../..'
+alias ....='cd ../../..'
 alias cc='cd ~/.config/'
 alias cdd='cd ~/Downloads/'
 alias cdc='cd /mnt/data/'

@@ -121,7 +121,7 @@ alias pdg='sudo pacman -U'
 alias pm='sudo nano /etc/pacman.d/mirrorlist'
 alias pu='sudo pacman -Syy && sudo pacman -Syu'
 alias pd='sudo pacman -Rs $(pacman -Qqdt)'
-alias pq='pacman -Qqdt'
+alias pq="sudo pacman -Qe"
 
 alias y='yay'
 alias yi='yay -S'

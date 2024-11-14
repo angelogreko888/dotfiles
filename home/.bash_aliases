@@ -121,7 +121,7 @@ alias psl='sudo nano /etc/pacman.conf'
 alias pdg='sudo pacman -U'
 alias pm='sudo nano /etc/pacman.d/mirrorlist'
 alias pu='sudo pacman -Syy && sudo pacman -Syu'
-alias pd='sudo pacman -Rs $(pacman -Qqdt)'
+alias pd='sudo pacman -Rns $(pacman -Qqdt)'
 alias pq="sudo pacman -Qe"
 
 alias y='yay'
@@ -132,7 +132,7 @@ alias yd='yay -Yc'
 alias yui='yay -Rns'
 
 alias hh='nano ~/.config/hypr/hyprland.conf'
-alias wc='nano ~/.config/waybar/config'
+alias nwc='nano ~/.config/waybar/config'
 alias chh='cd ~/.config/hypr/'
 alias cdw='cd ~/.config/waybar/'
 alias pp='hyprprop WM_CLASS'

@@ -78,6 +78,7 @@ alias gps='git push -u origin main'
 alias gs='git status'
 alias gss='git commit -m "save"'
 alias ga='git add *'
+alias gp='git pull'
 
 alias ap='apropos'
 alias b='btop'

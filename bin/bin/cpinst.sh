@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 handle_error() {
       echo "An error occurred on line $1"

@@ -51,6 +51,7 @@ pipewire-alsa
 pipewire-pulse
 plocate
 power-profiles-daemon
+qt5-wayland
 qt6-wayland
 reflector
 ripgrep

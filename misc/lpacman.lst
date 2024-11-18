@@ -47,6 +47,8 @@ nano
 network-manager-applet
 networkmanager
 numlockx
+nvidia-dkms
+nvidia-utils
 nwg-look
 pamixer
 pavucontrol

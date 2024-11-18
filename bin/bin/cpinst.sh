@@ -8,6 +8,11 @@ handle_error() {
   trap 'handle_error $LINENO' ERR
 
 
+pacman -Qqe | grep -v "$(pacman -Qqm)" > $HOME/vago/pc/inst/pacman.lst
+
+pacman -Qqm > $HOME/vago/pc/inst/aur.lst
+
+
 pac="$HOME/vago/pc/inst/pacman.lst"
 aur="$HOME/vago/pc/inst/aur.lst"
 

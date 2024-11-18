@@ -11,8 +11,8 @@ handle_error() {
 pac="$HOME/vago/pc/inst/pacman.lst"
 aur="$HOME/vago/pc/inst/aur.lst"
 
-dpac="$HOME/dotfiles/misc/pacman$1.lst"
-daur="$HOME/dotfiles/misc/aur$1.lst"
+dpac="$HOME/dotfiles/misc/$1pacman.lst"
+daur="$HOME/dotfiles/misc/$1aur.lst"
 
 ccp() {
 	command cp $pac $dpac
@@ -20,8 +20,8 @@ ccp() {
 }
  
 case $1 in
-        loq) ccp ;;
-        leg) ccp ;;
-        del) ccp ;;
+        q) ccp ;;
+        l) ccp ;;
+        d) ccp ;;
         *) echo "enter a laptop name" && exit 0 ;;
 esac

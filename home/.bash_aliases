@@ -92,7 +92,7 @@ alias tr='sudo timeshift --restore'
 alias tl='sudo timeshift --list'
 
 alias syn='sudo -i synaptic'
-alias gu='sudo -i gufw'
+alias gu='sudo -sE /sbin/gufw-pkexec'
 alias st='sudo -sE stacer'
 
 alias ch='sudo chmod +x '
@@ -113,7 +113,7 @@ alias chd='rm -rf ~/.cache/*'
 
 alias pi='sudo pacman -S --needed '
 alias ps='sudo pacman -Ss'
-alias pud='sudo pacman -Syy'
+alias pus='sudo pacman -Syy'
 alias pud='sudo pacman -Syu'
 alias pui='sudo pacman -Rns'
 alias pl='sudo cat /var/log/pacman.log'

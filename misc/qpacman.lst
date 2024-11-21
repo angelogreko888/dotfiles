@@ -47,12 +47,10 @@ nano
 network-manager-applet
 networkmanager
 nvidia-dkms
-nwg-look
 pamixer
 pavucontrol
 pipewire-alsa
 pipewire-pulse
-pkgfile
 plocate
 power-profiles-daemon
 qt5-wayland

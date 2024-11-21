@@ -8,6 +8,7 @@ btrfs-progs
 cups-pdf
 darktable
 dialog
+dnsmasq
 dosfstools
 efibootmgr
 eog
@@ -15,6 +16,7 @@ evince
 eza
 fastfetch
 file-roller
+firefox
 foot
 gimp
 gmtp
@@ -24,6 +26,7 @@ gparted
 grub
 grub-btrfs
 gst-plugin-pipewire
+gufw
 hdparm
 hypridle
 hyprland
@@ -38,7 +41,6 @@ linux
 linux-firmware
 linux-firmware-qlogic
 linux-headers
-lxappearance
 ly
 mtools
 nano
@@ -50,6 +52,7 @@ pamixer
 pavucontrol
 pipewire-alsa
 pipewire-pulse
+pkgfile
 plocate
 power-profiles-daemon
 qt5-wayland

@@ -2,7 +2,7 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-source /usr/share/doc/pkgfile/command-not-found.bash
+#source /usr/share/doc/pkgfile/command-not-found.bash
 
 
 # If not running interactively, don't do anything
@@ -128,4 +128,5 @@ if ! shopt -oq posix; then
 fi
 
 #PS1='\[\033[1;36m\]\u\[\033[1;31m\]@\[\033[1;32m\]\h: \[\033[1;36m\]\w\[\033[1;33m\] $\[\033[0m\] ' 
-PS1='\[\033[1;32m\]  \[\033[1;36m\]\w\[\033[1;33m\] \[\033[0m\] '
+PS1='\[\033[1;33m\] \[\033[1;36m\]\w \[\033[1;33m\]\[\033[1;32m\] \[\033[1;33m\]'
+

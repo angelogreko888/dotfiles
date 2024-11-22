@@ -1,4 +1,5 @@
 {"_id":"barColor","value":false}
+{"_id":"baseTheme","value":"system"}
 {"_id":"bounds","value":{"x":6,"y":36,"width":1908,"height":1038,"maximized":false,"fullScreen":false}}
 {"_id":"defaultInterval","value":0}
 {"_id":"disableSmoothScrolling","value":false}
@@ -8,5 +9,6 @@
 {"_id":"hideLabelsSideBar","value":false}
 {"_id":"hidePopularVideos","value":true}
 {"_id":"hideTrendingVideos","value":true}
+{"_id":"mainColor","value":"Red"}
 {"_id":"quickBookmarkTargetPlaylistId","value":"favorites"}
 {"_id":"bounds","value":{"x":6,"y":36,"width":1908,"height":1038,"maximized":false,"fullScreen":false}}

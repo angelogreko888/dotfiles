@@ -48,6 +48,7 @@ nano
 network-manager-applet
 networkmanager
 nvidia-dkms
+nwg-look
 pamixer
 pavucontrol
 pipewire-alsa
@@ -78,5 +79,6 @@ wget
 wireless_tools
 wofi
 wpa_supplicant
+xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 xdg-user-dirs

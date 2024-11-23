@@ -268,7 +268,9 @@
         "senja.io",
         "pscp.tv",
         "quantummetric.com",
-        "nagich.com"
+        "nagich.com",
+        "google.com",
+        "cdn-apple.com"
       ],
       "custom": {
         "§:fbsbx.com": {
@@ -1060,7 +1062,6 @@
             "other",
             "font",
             "script",
-            "webgl",
             "media"
           ],
           "temp": false
@@ -1072,27 +1073,6 @@
             "noscript",
             "other",
             "font",
-            "script"
-          ],
-          "temp": false
-        },
-        "§:reddit.com": {
-          "capabilities": [
-            "frame",
-            "fetch",
-            "noscript",
-            "other",
-            "script",
-            "media"
-          ],
-          "temp": false
-        },
-        "§:redditstatic.com": {
-          "capabilities": [
-            "frame",
-            "fetch",
-            "noscript",
-            "other",
             "script"
           ],
           "temp": false
@@ -1795,7 +1775,8 @@
             "noscript",
             "other",
             "font",
-            "media"
+            "media",
+            "script"
           ],
           "temp": false
         },
@@ -3550,6 +3531,111 @@
             "other",
             "font",
             "lazy_load",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:super-pharm.co.il": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font",
+            "script",
+            "lazy_load"
+          ],
+          "temp": false
+        },
+        "§:my.gov.il": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:login.gov.il": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:goodlife.co.il": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:reddit.com": {
+          "capabilities": [
+            "script",
+            "fetch",
+            "ping",
+            "lazy_load"
+          ],
+          "temp": false
+        },
+        "§:redditstatic.com": {
+          "capabilities": [
+            "script"
+          ],
+          "temp": false
+        },
+        "§:bash-prompt-generator.org": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:embedly.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:linux.org": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font",
+            "script",
+            "lazy_load"
+          ],
+          "temp": false
+        },
+        "§:sainsburys.co.uk": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font",
             "script"
           ],
           "temp": false

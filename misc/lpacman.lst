@@ -14,6 +14,8 @@ evince
 eza
 fastfetch
 file-roller
+firefox
+font-manager
 foot
 gimp
 git
@@ -25,6 +27,7 @@ grim
 grub
 grub-btrfs
 gst-plugin-pipewire
+gufw
 hdparm
 htop
 hypridle
@@ -39,7 +42,6 @@ linux
 linux-firmware
 linux-firmware-qlogic
 linux-headers
-lxappearance
 ly
 mtools
 nano
@@ -48,7 +50,6 @@ networkmanager
 numlockx
 nvidia-dkms
 nvidia-utils
-nwg-look
 pamixer
 pavucontrol
 pipewire
@@ -72,6 +73,7 @@ swaybg
 swaync
 thunar
 thunar-archive-plugin
+thunar-volman
 timeshift
 ttf-font-awesome
 ttf-jetbrains-mono-nerd

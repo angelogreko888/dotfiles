@@ -111,7 +111,7 @@ alias cpd='sudo pacman -Scc'
 alias chh='du -sh ~/.cache/'
 alias chd='rm -rf ~/.cache/*'
 
-alias pi='sudo pacman -S --needed '
+alias pi='sudo pacman -Syu --needed '
 alias ps='sudo pacman -Ss'
 alias pus='sudo pacman -Syy'
 alias pud='sudo pacman -Syu'
@@ -122,7 +122,8 @@ alias pdg='sudo pacman -U'
 alias pm='sudo nano /etc/pacman.d/mirrorlist'
 alias pu='sudo pacman -Syy && sudo pacman -Syu'
 alias pd='sudo pacman -Rns $(pacman -Qqdt)'
-alias pq="sudo pacman -Qe"
+alias pq="sudo pacman -Qqe | grep -v "$(pacman -Qqm)""
+alias pa='sudo pacman -Qqm'
 
 alias y='yay'
 alias yi='yay -S'

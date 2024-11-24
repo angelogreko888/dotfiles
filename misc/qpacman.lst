@@ -27,6 +27,7 @@ grub
 grub-btrfs
 gst-plugin-pipewire
 gufw
+gvfs-mtp
 hdparm
 hypridle
 hyprland
@@ -46,7 +47,7 @@ mtools
 nano
 network-manager-applet
 networkmanager
-nvidia-dkms
+nwg-look
 pamixer
 pavucontrol
 pipewire-alsa
@@ -65,6 +66,7 @@ swaybg
 swaync
 thunar
 thunar-archive-plugin
+thunar-volman
 timeshift
 ttf-font-awesome
 ttf-jetbrains-mono-nerd

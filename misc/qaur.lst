@@ -8,15 +8,8 @@ gimp-plugin-layerfx
 hyprevents-git
 hyprprop-git
 hyprshot
-lib32-nvidia-utils-tkg
-lib32-opencl-nvidia-tkg
 libglade
 librewolf-bin
-nvidia-dkms-tkg
-nvidia-egl-wayland-tkg
-nvidia-settings-tkg
-nvidia-utils-tkg
-opencl-nvidia-tkg
 pygtk
 python2
 python2-cairo

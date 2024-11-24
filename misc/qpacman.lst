@@ -47,6 +47,7 @@ mtools
 nano
 network-manager-applet
 networkmanager
+nvidia-dkms
 nwg-look
 pamixer
 pavucontrol

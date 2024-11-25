@@ -10,7 +10,6 @@ darktable
 dialog
 dnsmasq
 dosfstools
-dpkg
 efibootmgr
 eog
 evince
@@ -80,5 +79,6 @@ waybar
 wget
 wireless_tools
 wofi
+wpa_supplicant
 xdg-desktop-portal-hyprland
 xdg-user-dirs

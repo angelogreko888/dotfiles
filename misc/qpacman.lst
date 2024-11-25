@@ -18,6 +18,7 @@ eza
 fastfetch
 file-roller
 firefox
+font-manager
 foot
 gimp
 gmtp
@@ -58,6 +59,7 @@ plocate
 power-profiles-daemon
 qt5-wayland
 qt6-wayland
+ranger
 reflector
 ripgrep
 simple-scan

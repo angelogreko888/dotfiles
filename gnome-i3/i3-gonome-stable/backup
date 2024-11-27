@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo "Sync Started"
+
+rsync -a /home/vago/ /media/vago/BackUp/vago/ --delete
+
+echo " "
+
+echo "Sync Finished"
+
+sleep 1

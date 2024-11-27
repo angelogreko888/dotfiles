@@ -19,10 +19,10 @@
 
   "modules-left": [
 	 "custom/arch",
-        "hyprland/workspaces",
+        "hyprland/language",
 	 "cpu",
         "memory",
-        "hyprland/language",
+        "hyprland/workspaces",
         "wlr/taskbar"
 //        "sway/mode",
 //	"hyprland/window"

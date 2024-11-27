@@ -3,7 +3,7 @@
 
 ## Paint the interface elements of nano.  These are examples; there are
 ## no colors by default, except for errorcolor and spotlightcolor.
- set titlecolor bold,white,blue
+ set titlecolor bold,white,purple
  set promptcolor lightwhite,grey
  set statuscolor bold,white,green
  set errorcolor bold,white,red

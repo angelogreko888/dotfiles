@@ -2,19 +2,13 @@
 
 echo "Sync Started"
 
-rsync -a /home/vago/ /mnt/data/vago/ --delete
+rsync -a --exclude 'gufw.py' /home/vago/ /mnt/data/vago/ --delete
 
 rsync -a /home/vago/dotfiles/ /mnt/data/sync-vago/dotfiles/ --delete
 
 rsync -a /home/vago/git/ /mnt/data/sync-vago/git/ --delete
 
-#rsync -a /home/vago/pc/ /mnt/data/sync-vago/pc/ --delete
-
 rsync -a /home/vago/vago/ /mnt/data/sync-vago/vago/ --delete
-
-#rsync -a /home/vago/xiaomi/ /mnt/data/sync-vago/xiaomi/ --delete
-
-#rsync -a /home/vago/.screenlayout/ /mnt/data/sync-vago/.screenlayout/ --delete
 
 echo "Sync Finished"
 

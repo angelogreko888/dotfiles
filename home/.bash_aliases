@@ -38,7 +38,8 @@ alias ss='sudo apt search'
 alias cp="cp -i "
 alias mv='mv -i'
 
-alias l='exa -lha'
+alias l='eza -a --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions'
+alias ll='exa -lha'
 alias lk='lsblk'
 
 alias sb="source ~/.bashrc"
@@ -61,6 +62,9 @@ alias cgg='cd ~/git/gnome/'
 alias ci='cd ~/.config/i3/'
 alias cii='cd ~/.config/i3blocks/'
 alias cdf='cd ~/dotfiles/'
+
+# yt-dlp
+alias ytm="yt-dlp -x --audio-format mp3 -o '~/Music/%(title)s.%(ext)s'"
 
 alias lo='sudo updatedb; locate'
 alias lu='sudo updatedb'
@@ -106,30 +110,35 @@ alias gp='sudo -sE gparted'
 alias ug='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 
 alias cpk='du -sh /var/cache/pacman/pkg/'
-alias cpd='sudo pacman -Scc'
+#alias cpd='sudo pacman -Scc'
+alias cpd='sudo pacman -Scc --noconfirm && yay -Scc --noconfirm'
 
-alias chh='du -sh ~/.cache/'
-alias chd='rm -rf ~/.cache/*'
+alias ccc='du -sh ~/.cache/'
+alias ccd='rm -rf ~/.cache/*'
 
-alias pi='sudo pacman -Syu --needed '
+alias pi='sudo pacman -Syu --needed --noconfirm '
 alias ps='sudo pacman -Ss'
 alias pus='sudo pacman -Syy'
 alias pud='sudo pacman -Syu'
 alias pui='sudo pacman -Rns'
-alias pl='sudo cat /var/log/pacman.log'
 alias psl='sudo nano /etc/pacman.conf'
 alias pdg='sudo pacman -U'
-alias pm='sudo nano /etc/pacman.d/mirrorlist'
-alias pu='sudo pacman -Syy && sudo pacman -Syu'
-alias pd='sudo pacman -Rns $(pacman -Qqdt)'
+#alias pu='sudo pacman -Syy && sudo pacman -Syu'
+alias pd='sudo pacman -Qdtq | sudo pacman -Rns - ; sudo fstrim -av'
+#alias pd='sudo pacman -Rns $(pacman -Qqdt)'
 alias pq="sudo pacman -Qqe | grep -v "$(pacman -Qqm)""
 alias pa='sudo pacman -Qqm'
 
+alias pm='sudo nano /etc/pacman.d/mirrorlist'
+alias pl='sudo cat /var/log/pacman.log'
+
+alias pu='sudo pacman -Syu --noconfirm && yay -Syu'
+
 alias y='yay'
-alias yi='yay -S'
+alias yi='yay -S --noconfirm'
 alias ys='yay -Ss'
 alias yu='yay -Syu'
-alias yd='yay -Yc'
+#alias yd='yay -Yc'
 alias yui='yay -Rns'
 
 alias hh='nano ~/.config/hypr/hyprland.conf'

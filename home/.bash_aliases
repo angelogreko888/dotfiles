@@ -42,7 +42,7 @@ alias l='eza -a --color=always --long --git --no-filesize --icons=always --no-ti
 alias ll='exa -lha'
 alias lk='lsblk'
 
-alias sb="source ~/.bashrc"
+alias bb="source ~/.bashrc"
 alias n.="nano ~/.bashrc "
 alias nb="nano ~/.bash_aliases"
 alias nsl='sudo nano /etc/apt/sources.list'
@@ -132,7 +132,7 @@ alias pa='sudo pacman -Qqm'
 alias pm='sudo nano /etc/pacman.d/mirrorlist'
 alias pl='sudo cat /var/log/pacman.log'
 
-alias pu='sudo pacman -Syu --noconfirm && yay -Syu'
+alias u='sudo pacman -Syu --noconfirm && yay -Syu'
 
 alias y='yay'
 alias yi='yay -S --noconfirm'

@@ -1,3 +1,25 @@
+@keyframes blink-warning {
+    70% {
+        color: white;
+    }
+
+    to {
+        color: white;
+        background-color: orange;
+    }
+}
+
+@keyframes blink-critical {
+    70% {
+      color: white;
+    }
+
+    to {
+        color: white;
+        background-color: red;
+    }
+}
+
 *{
   font-size: 17px;
   font-family: "JetBrainsMono Nerd Font";
@@ -17,6 +39,7 @@
   border-radius:10px;
   box-shadow:0px 0px black;
 }
+
 
 #cpu,
 #pulseaudio,

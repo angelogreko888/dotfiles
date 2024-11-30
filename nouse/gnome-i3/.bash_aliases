@@ -12,6 +12,16 @@ alias c='clear'
 alias r='ranger'
 alias ff='fastfetch'
 
+alias ui="sudo apt purge -y && sudo apt autoremove -y"
+alias i="sudo apt install "
+alias ar="sudo apt autoremove -y"
+alias upu='sudo apt update'
+alias upl='sudo apt list --upgradable'
+alias upg='sudo apt full-upgrade -y'
+alias upf='flatpak update -y'
+alias up="sudo apt update && sudo apt dist-upgrade -y && sudo apt autoremove -y && flatpak update -y"
+alias ifb='sudo apt --fix-broken install'
+
 alias n="nano "
 alias s="sudo "
 alias sn="sudo nano "
@@ -23,6 +33,7 @@ alias h="history "
 
 alias we="whereis "
 alias w="which "
+alias ss='sudo apt search'
 
 alias cp="cp -i "
 alias mv='mv -i'
@@ -34,6 +45,11 @@ alias lk='lsblk'
 alias bb="source ~/.bashrc"
 alias n.="nano ~/.bashrc "
 alias nb="nano ~/.bash_aliases"
+alias nsl='sudo nano /etc/apt/sources.list'
+alias ni='nano ~/.config/i3/config'
+alias nib='nano ~/.config/i3blocks/config'
+alias np='nano ~/.config/polybar/config.ini'
+alias npi='nano ~/.config/picom/picom.conf'
 
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -42,6 +58,9 @@ alias cc='cd ~/.config/'
 alias cdd='cd ~/Downloads/'
 alias cdc='cd /mnt/data/'
 alias cg='cd ~/git/'
+alias cgg='cd ~/git/gnome/'
+alias ci='cd ~/.config/i3/'
+alias cii='cd ~/.config/i3blocks/'
 alias cdf='cd ~/dotfiles/'
 
 # yt-dlp
@@ -77,7 +96,9 @@ alias tc='sudo timeshift --create'
 alias tr='sudo timeshift --restore'
 alias tl='sudo timeshift --list'
 
+alias syn='sudo -i synaptic'
 alias gu='sudo -sE /sbin/gufw-pkexec'
+alias st='sudo -sE stacer'
 
 alias ch='sudo chmod +x '
 alias co='sudo chown vago: '
@@ -90,6 +111,7 @@ alias gp='sudo -sE gparted'
 alias ug='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 
 alias cpk='du -sh /var/cache/pacman/pkg/'
+#alias cpd='sudo pacman -Scc'
 alias cpd='sudo pacman -Scc --noconfirm && yay -Scc --noconfirm'
 
 alias ccc='du -sh ~/.cache/'
@@ -122,10 +144,8 @@ alias yui='yay -Rns'
 
 alias hh='nano ~/.config/hypr/hyprland.conf'
 alias nwc='nano ~/.config/waybar/config'
-
 alias chh='cd ~/.config/hypr/'
 alias cdw='cd ~/.config/waybar/'
 alias pp='hyprprop WM_CLASS'
-
 alias ws='nano ~/.config/waybar/style.css'
 

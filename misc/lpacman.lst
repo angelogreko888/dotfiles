@@ -91,4 +91,5 @@ xdg-desktop-portal-hyprland
 xdg-user-dirs
 xorg-server
 xorg-xinit
+yt-dlp
 zram-generator

@@ -7,25 +7,15 @@ handle_error() {
 
   trap 'handle_error $LINENO' ERR
 
-pac="$HOME/vago/pc/inst/pacman.lst"
-aur="$HOME/vago/pc/inst/aur.lst"
 
-dpac="$HOME/dotfiles/misc/$1pacman.lst"
-daur="$HOME/dotfiles/misc/$1aur.lst"
-
-pacman -Q | awk '{print $1}' | grep -v "$(pacman -Qqm)" > $pac
-
-pacman -Qqm > $aur
-
-
-ccp() {
-	command cp $pac $dpac
-	command cp $aur $daur
-}
- 
 case $1 in
-        q) ccp ;;
-        l) ccp ;;
-        d) ccp ;;
+        q)  ;;
+        l)  ;;
+        d)  ;;
         *) echo "enter a laptop name" && exit 0 ;;
 esac
+
+pacman -Q | awk '{print $1}' | grep -v "$(pacman -Qqm)" > $HOME/dotfiles/misc/$1pacman.lst
+
+pacman -Qqm > $HOME/dotfiles/misc/$1aur.lst
+

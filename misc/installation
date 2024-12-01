@@ -1,4 +1,6 @@
-pacman -Qqe | grep -v "$(pacman -Qqm)" > pacman.lst
+pacman -Q | awk '{print $1}' | grep -v "$(pacman -Qqm)" > pacman.lst
+
+####pacman -Qqe | grep -v "$(pacman -Qqm)" >pacman.lst
 
 cat pacman.lst | xargs pacman -S --needed --noconfirm
 

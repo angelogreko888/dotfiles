@@ -7,17 +7,16 @@ handle_error() {
 
   trap 'handle_error $LINENO' ERR
 
-
-pacman -Qqe | grep -v "$(pacman -Qqm)" > $HOME/vago/pc/inst/pacman.lst
-
-pacman -Qqm > $HOME/vago/pc/inst/aur.lst
-
-
 pac="$HOME/vago/pc/inst/pacman.lst"
 aur="$HOME/vago/pc/inst/aur.lst"
 
 dpac="$HOME/dotfiles/misc/$1pacman.lst"
 daur="$HOME/dotfiles/misc/$1aur.lst"
+
+pacman -Q | awk '{print $1}' | grep -v "$(pacman -Qqm)" > $pac
+
+pacman -Qqm > $aur
+
 
 ccp() {
 	command cp $pac $dpac

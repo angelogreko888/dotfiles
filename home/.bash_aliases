@@ -65,6 +65,7 @@ alias gs='git status'
 alias gss='git commit -m "save"'
 alias ga='git add *'
 alias gpp='git pull'
+alias gg='git add * && git commit -m "save" && git push -u origin main'
 
 alias ap='apropos'
 alias b='btop'

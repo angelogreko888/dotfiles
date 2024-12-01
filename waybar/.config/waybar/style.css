@@ -147,23 +147,14 @@
 }
 
 #power-profiles-daemon {
- border-radius:10px;
+  border-radius:10px;
   padding: 0px 10px 0px 10px;
 }
 
-#battery {
- border-radius:10px;
-  padding: 0px 10px 0px 10px;
-}
 
 #keyboard-state {
  border-radius:10px;
  padding: 0px 10px 0px 10px;
-}
-
-#keyboard-state {
-border-radius:10px;
-  padding: 0px 10px 0px 10px;
 }
 
 #backlight {
@@ -178,6 +169,8 @@ border-radius:10px;
 }
 
 #battery {
+    border-radius:10px;
+    padding: 0px 10px 0px 10px;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -185,14 +178,10 @@ border-radius:10px;
 
 #battery.warning {
  color: orange;
- border-radius:10px;
-padding: 0px 10px 0px 10px;
 }
 
 #battery.critical {
  color: red;
- border-radius:10px;
-padding: 0px 10px 0px 10px;
 }
 
 #battery.warning.discharging {

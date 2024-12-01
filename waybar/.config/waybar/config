@@ -3,7 +3,7 @@
   "height": 21,
 //  "width": 1080, 
   //"spacing": 4,
-  "layer": "top",
+//  "layer": "top",
   "position": "top",
   "mod": "dock",
   "margin-left": 10,

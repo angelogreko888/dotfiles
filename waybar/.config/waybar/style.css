@@ -1,4 +1,24 @@
+@keyframes blink-warning {
+    70% {
+        color: white;
+    }
 
+    to {
+        color: white;
+        background-color: orange;
+    }
+}
+
+@keyframes blink-critical {
+    70% {
+      color: white;
+    }
+
+    to {
+        color: white;
+        background-color: red;
+    }
+}
 *{
   font-size: 17px;
   font-family: "JetBrainsMono Nerd Font";
@@ -47,11 +67,10 @@
 #battery,
 #keyboard-state,
 
-
 #custom-notification{
   margin-left:5px;
   margin-right:5px;
-  padding-left:5px;
+  padding-left:10px;
   padding-right: 5px;
 }
 
@@ -64,6 +83,8 @@
 
 #idle_inhibitor.activated{
   color:#e57474;
+ border-radius:10px;
+ padding: 0px 10px 0px 10px;
 }
 
 #custom-power{
@@ -137,7 +158,7 @@
 
 #keyboard-state {
  border-radius:10px;
-  padding: 0px 10px 0px 10px;
+ padding: 0px 10px 0px 10px;
 }
 
 #keyboard-state {
@@ -152,38 +173,26 @@ border-radius:10px;
 
 #keyboard-state.locked {
  color:#e57474;
+ border-radius:10px;
+ padding: 0px 10px 0px 10px;
 }
 
-
-@keyframes blink-warning {
-    70% {
-        color: white;
-    }
-
-    to {
-        color: white;
-        background-color: orange;
-    }
+#battery {
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
-
-@keyframes blink-critical {
-    70% {
-      color: white;
-    }
-
-    to {
-        color: white;
-        background-color: red;
-    }
-}
-
 
 #battery.warning {
  color: orange;
+ border-radius:10px;
+padding: 0px 10px 0px 10px;
 }
 
 #battery.critical {
  color: red;
+ border-radius:10px;
+padding: 0px 10px 0px 10px;
 }
 
 #battery.warning.discharging {
@@ -193,5 +202,5 @@ border-radius:10px;
 
 #battery.critical.discharging {
     animation-name: blink-critical;
-    animation-duration: 12s;
+    animation-duration: 1s;
 }

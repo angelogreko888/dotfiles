@@ -70,3 +70,4 @@ nmap <F3> :NERDTreeToggle<CR>
 
 " }}}
 
+colorscheme Black

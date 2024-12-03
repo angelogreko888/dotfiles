@@ -37,6 +37,9 @@ alias bb="source ~/.bashrc"
 alias n.="nano ~/.bashrc "
 alias nb="nano ~/.bash_aliases"
 
+alias v.="vim ~/.bashrc "
+alias vb="vim ~/.bash_aliases"
+
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
@@ -103,13 +106,13 @@ alias ps='sudo pacman -Ss'
 alias pus='sudo pacman -Syy'
 alias pud='sudo pacman -Syu'
 alias pui='sudo pacman -Rns'
-alias psl='sudo nano /etc/pacman.conf'
+alias psl='sudo vim /etc/pacman.conf'
 alias pdg='sudo pacman -U'
 #alias pu='sudo pacman -Syy && sudo pacman -Syu'
 alias pd='sudo pacman -Qdtq | sudo pacman -Rns - ; sudo fstrim -av'
 #alias pd='sudo pacman -Rns $(pacman -Qqdt)'
 
-alias pm='sudo nano /etc/pacman.d/mirrorlist'
+alias pm='sudo vim /etc/pacman.d/mirrorlist'
 alias pl='sudo cat /var/log/pacman.log'
 
 alias u='sudo pacman -Syu --noconfirm && yay -Syu'
@@ -121,12 +124,12 @@ alias yu='yay -Syu'
 #alias yd='yay -Yc'
 alias yui='yay -Rns'
 
-alias hh='nano ~/.config/hypr/hyprland.conf'
-alias nwc='nano ~/.config/waybar/config'
+alias hh='vim ~/.config/hypr/hyprland.conf'
+alias nwc='vim ~/.config/waybar/config'
 
 alias chh='cd ~/.config/hypr/'
 alias cdw='cd ~/.config/waybar/'
 alias pp='hyprprop WM_CLASS'
 
-alias ws='nano ~/.config/waybar/style.css'
+alias ws='vim ~/.config/waybar/style.css'
 

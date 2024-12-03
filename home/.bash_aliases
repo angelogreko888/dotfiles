@@ -15,6 +15,8 @@ alias ff='fastfetch'
 alias n="nano "
 alias s="sudo "
 alias sn="sudo nano "
+alias v='vim '
+alias sv='sudo vim '
 
 alias rr="rm -rf "
 alias srr="sudo rm -rf "

@@ -11,3 +11,4 @@
 {"_id":"hideTrendingVideos","value":true}
 {"_id":"mainColor","value":"Red"}
 {"_id":"quickBookmarkTargetPlaylistId","value":"favorites"}
+{"_id":"bounds","value":{"x":970,"y":36,"width":944,"height":1038,"maximized":false,"fullScreen":false}}

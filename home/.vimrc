@@ -70,4 +70,4 @@ nmap <F3> :NERDTreeToggle<CR>
 
 " }}}
 
-colorscheme cobalt
+colorscheme murphy

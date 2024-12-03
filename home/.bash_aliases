@@ -106,8 +106,6 @@ alias pdg='sudo pacman -U'
 #alias pu='sudo pacman -Syy && sudo pacman -Syu'
 alias pd='sudo pacman -Qdtq | sudo pacman -Rns - ; sudo fstrim -av'
 #alias pd='sudo pacman -Rns $(pacman -Qqdt)'
-alias pq="sudo pacman -Qqe | grep -v "$(pacman -Qqm)""
-alias pa='sudo pacman -Qqm'
 
 alias pm='sudo nano /etc/pacman.d/mirrorlist'
 alias pl='sudo cat /var/log/pacman.log'

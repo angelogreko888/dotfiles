@@ -22,7 +22,7 @@
 *{
   font-size: 17px;
   font-family: "JetBrainsMono Nerd Font";
-  color: #00ff0f;
+  color: #ffffff;
   font-weight: 700;
   min-height: 0;
 }
@@ -33,10 +33,10 @@
   padding: 0px 30px 0px 30px;
 }
 #workspaces{
-  font-size: 21px;
-  background-color: #7d0dc3;
-  border-radius:10px;
-  box-shadow:0px 0px black;
+;  font-size: 21px;
+   border-radius:30px;
+   padding: 0px 30px 0px 30px;
+;   box-shadow:0px 0px black;
 }
 
 
@@ -108,7 +108,7 @@
 }
 
 #workspaces button.active {
-  background-color: #f0a020;
+  background-color: #7d0dc3;
   border-radius:30px;
 }
 

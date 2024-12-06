@@ -61,7 +61,6 @@
 #bluetooth,
 #wireplumber,
 #idle_inhibitor,
-#clock,
 #workspaces,
 #custom-lizzy,
 #battery,
@@ -123,6 +122,7 @@
   padding: 0px 10px 0px 10px;
 }
 
+
 #clock {
   color: #ffffff;
   background-color: #7d0dc3;
@@ -130,6 +130,8 @@
   padding: 0px 10px 0px 10px;
   font-size: 21px;
 }
+
+
 
 #custom-swaync {
   border-radius:10px;

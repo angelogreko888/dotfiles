@@ -9,7 +9,6 @@ fi
 alias spt="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3 -"
 alias wj='curl wttr.in/jerusalem'
 alias wp='curl wttr.in/pahos'
-alias ct='curl https://cht.sh/$1'
 alias x='_x() { curl https://cht.sh/$1 ;}; _x'
 
 alias c='clear'

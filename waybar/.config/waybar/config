@@ -17,7 +17,7 @@
 
   "modules-left": [
 	 "custom/arch",
-        "hyprland/language",
+ "hyprland/language",
 	 "cpu",
         "memory",
         "hyprland/workspaces",
@@ -25,7 +25,7 @@
     ],
 
     "modules-center": [
-	"clock"
+	"custom/clock",
 ],
 
     "modules-right": [
@@ -68,16 +68,15 @@
         "spacing": 10
     },
 
-     "clock": {
-         "format": "{:%I:%M %p  %a %d %b}",
+     "custom/clock": {
+         "exec": "date +\"%-I:%M %p   %a %b %e\"",        
+         "interval": 1,
          "tooltip-format": "<tt>{calendar}</tt>",
-
      "calendar": {
          "mode": "month",
          "mode-mon-col": 3,
          "on-scroll": 1,
          "on-click-right": "mode",
-
      "format": {
          "months": 
          "<span color='#ffead3'><b>{}</b></span>",
@@ -85,9 +84,8 @@
          "<span color='#ffcc66'><b>{}</b></span>",
          "today": 
          "<span color='#ff6699'><b>{}</b></span>"
-      }
-    },
-    
+        } 
+      },
       "actions": {
          "on-click-right": "mode",
          "on-click-forward": "tz_up",
@@ -96,7 +94,6 @@
          "on-scroll-down": "shift_down"
       }
     },
-
 
      "cpu": {
         "format": "{usage}%  ",
@@ -108,8 +105,6 @@
 	"format": "{used:.2g} ",
 	"interval": 1,
     },
-
-
 
       "backlight": {
     	"interval": 2,
@@ -140,9 +135,9 @@
 
 
       "battery": {
-	"states": {
-	   "warning": 30,
-	   "critical": 15,
+	     "states": {
+	         "warning": 30,
+	         "critical": 15,
 	    },
 	"format": "<span size='13000' foreground='#a6e3a1'>{icon} </span> {capacity}%",
 	"format-warning": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {capacity}%",

@@ -129,8 +129,8 @@ alias yu='yay -Syu'
 alias yui='yay -Rns'
 
 alias hh='vim ~/.config/hypr/hyprland.conf'
-alias nwc='vim ~/.config/waybar/config'
-alias nws='vim ~/.config/waybar/style.css'
+alias vwc='vim ~/.config/waybar/config'
+alias vws='vim ~/.config/waybar/style.css'
 
 alias chh='cd ~/.config/hypr/'
 alias cdw='cd ~/.config/waybar/'

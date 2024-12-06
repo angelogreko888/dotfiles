@@ -16,27 +16,28 @@
   "reload_style_on_change": true,  
 
   "modules-left": [
-	 "custom/arch",
- "hyprland/language",
-	 "cpu",
+	    "custom/arch",
+        "clock",
+        "hyprland/language",
+	    "cpu",
         "memory",
         "hyprland/workspaces",
         "wlr/taskbar"
     ],
 
     "modules-center": [
-	"custom/clock",
+	    "custom/clock",
 ],
 
     "modules-right": [
         "pulseaudio",
-	"pulseaudio#microphone",
+	    "pulseaudio#microphone",
         "custom/swaync",
-	"network",
-	"idle_inhibitor",
+	    "network",
+	    "idle_inhibitor",
         "backlight",
-	"power-profiles-daemon",
-	"battery",
+	    "power-profiles-daemon",
+	    "battery",
         "tray",
         "custom/power"
     ],
@@ -69,8 +70,12 @@
     },
 
      "custom/clock": {
-         "exec": "date +\"%-I:%M %p   %a %b %e\"",        
-         "interval": 1,
+         "exec": "date +\"%-I:%M %p\"",
+         "interval": 1, 
+    },
+
+    "clock": {
+         "format": "{:%a %b %d}",
          "tooltip-format": "<tt>{calendar}</tt>",
      "calendar": {
          "mode": "month",

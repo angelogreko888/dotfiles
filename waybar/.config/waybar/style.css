@@ -20,7 +20,7 @@
     }
 }
 *{
-  font-size: 17px;
+  font-size: 19px;
   font-family: "JetBrainsMono Nerd Font";
   color: #ffffff;
   font-weight: 700;
@@ -28,7 +28,8 @@
 }
 #waybar {
 ;  background: transparent;
-  background-color: #4C1C24;
+;  background-color: #4C1C24;
+  background-color: #570987;
   border-radius:30px;
   padding: 0px 30px 0px 30px;
 }
@@ -80,7 +81,7 @@
 
 
 #idle_inhibitor.activated{
-  color:#e57474;
+ color:#e57474;
  border-radius:10px;
  padding: 0px 10px 0px 10px;
 }
@@ -99,16 +100,14 @@
 
 
 #workspaces button:hover {
-  background-color: #D397F8;
+  background-color: #A020F0;
   border-radius:30px;
-  font-size: 21px;
 }
 
 
 #workspaces button.active {
-  background-color: #7d0dc3;
+  background-color: #7D0DC3;
   border-radius:30px;
-  font-size: 21px;
 }
 
 #workspaces button.urgent {
@@ -126,7 +125,7 @@
 
 #custom-clock {
   color: #ffffff;
-  background-color: #7d0dc3;
+  background-color: #7D0DC3;
   border-radius:10px;
   padding: 0px 10px 0px 10px;
   font-size: 21px;

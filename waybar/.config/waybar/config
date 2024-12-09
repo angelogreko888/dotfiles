@@ -102,7 +102,7 @@
 
      "cpu": {
         "format": "{usage}%  ",
-        "tooltip": false,
+        "tooltip": true,
 	"interval": 1
     },
 
@@ -115,18 +115,8 @@
     	"interval": 2,
 	"align": 0,
 	"rotate": 0,
-	//"format": "{icon} {percent}%",
-	"format-icons": [
-		" ",
-		" ",
-		" ",
-		"󰃝 ",
-		"󰃞 ",
-		"󰃟 ",
-		"󰃠 "
-	],
 	"format": "{icon}",
-	//"format-icons": ["","","","","","","","","","","","","","",""],
+	"format-icons": ["","","","","","","","","","","","","","","","󰃠"],
 	"tooltip-format": "backlight {percent}%",
 	"icon-size": 10,
 	"on-click": "",
@@ -136,24 +126,23 @@
 	"on-scroll-up": "$HOME/.config/waybar/scripts/Brightness.sh --inc",
 	"on-scroll-down": "$HOME/.config/waybar/scripts/Brightness.sh --dec",
 	"smooth-scrolling-threshold": 1,
-},
-
+    },
 
       "battery": {
 	     "states": {
 	         "warning": 30,
 	         "critical": 15,
 	    },
-	"format": "<span size='13000' foreground='#a6e3a1'>{icon} </span> {capacity}%",
-	"format-warning": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {capacity}%",
-	"format-critical": "<span size='13000' foreground='#E38C8F'>{icon} </span> {capacity}%",
-	"format-charging": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
-	"format-plugged": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
-	"format-alt": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {time}",
-	"format-full": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
-	"format-icons": ["", "", "", "", ""],
-	"tooltip-format": "{time}",
-	"on-click-right": "~/.config/waybar/relaunch.sh &",
+    	"format": "<span size='13000' foreground='#a6e3a1'>{icon} </span> {capacity}%",
+    	"format-warning": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {capacity}%",
+    	"format-critical": "<span size='13000' foreground='#E38C8F'>{icon} </span> {capacity}%",
+    	"format-charging": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
+    	"format-plugged": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
+    	"format-alt": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {time}",
+    	"format-full": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
+    	"format-icons": ["", "", "", "", ""],
+    	"tooltip-format": "{time}",
+    	"on-click-right": "~/.config/waybar/relaunch.sh &",
 	  },
 
 
@@ -187,6 +176,7 @@
 	 "format-icons": [
 		"󰤯", "󰤟", "󰤢", "󰤥", "󰤨"
 	],
+    "on-click-right": "foot nmtui"
 },
 
       "pulseaudio": {

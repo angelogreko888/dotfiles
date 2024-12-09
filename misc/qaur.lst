@@ -20,6 +20,8 @@ python2-gimp
 python2-gobject2
 python2-numpy
 python2-setuptools
+simple-mtpfs
+simple-mtpfs-debug
 timeshift-autosnap
 upd72020x-fw
 wd719x-firmware

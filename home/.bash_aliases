@@ -69,7 +69,7 @@ alias si='sudo update-initramfs -u'
 
 alias gc='git clone'
 alias gps='git push -u origin main'
-alias gs='git status'
+alias g='git status'
 alias gss='git commit -m "save"'
 alias ga='git add *'
 alias gpp='git pull'

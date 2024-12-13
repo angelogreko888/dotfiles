@@ -48,6 +48,7 @@ linux-headers
 ly
 mtools
 nano
+ncdu
 network-manager-applet
 networkmanager
 nvidia-dkms

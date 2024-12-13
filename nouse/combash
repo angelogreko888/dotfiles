@@ -994,8 +994,6 @@ systemctl list-unit-files
 systemctl list-unit-files | rg kanshi
 ctl kanshi
 ctl status kanshi
-services.kanshi = {
-};
 cd /run/user/1000/
 $XDG_CONFIG_HOME
 ps wdisplays
@@ -1029,8 +1027,6 @@ killall -SIGUSR2 waybar
 n style.css 
 ff
 n ~/.config/waybar/style.css 
-wc
-;
 stow waybar
 stow hypr
 stow way-dispaly/
@@ -1041,7 +1037,6 @@ s cp /etc/way-displays/cfg.yaml ~/.config/way-display/
 rm way-display
 md way-display
 s cp /etc/way-displays/cfg.yaml .
-n c
 n cfg.yaml 
 co cfg.yaml 
 n .config/way-display/cfg.yaml 
@@ -1080,9 +1075,6 @@ sn /etc/systemd/system/numlock.service
 ctl enable numlock.service
 ctl start numlock.service
 ctl status numlock.service
-34
-64+
-ch
 cd hypr/.config/hypr/
 n .descktop 
 n backup.sh
@@ -1095,12 +1087,6 @@ n backup.sh
 rm -rf ~/.cache/*
 s mv ~/Downloads/ActivityCenter.js /usr/local/bin/
 cd /usr/local/bin/
-bash ActivityCenter.js 
-ags -t ActivityCenter.js 
-ps ags
-n ActivityCenter.js 
-rm ActivityCenter.js 
-s rm ActivityCenter.js 
 md wofi
 cd wofi
 mv ~/Downloads/style.css .
@@ -1108,12 +1094,9 @@ stow wofi
 md -p .config/wofi
 cd .config/wofi/
 mv ~/dotfiles/wofi/style.css .
-cd wof
 cd wofi/
-mk -p .config/wofi/
 md -p .config/wofi/
 rr .config/
-gsp
 ps pulsemixer
 pi pulsemixer
 pulsemixer
@@ -1143,7 +1126,6 @@ pi wlroots
 mv blueman.desktop blueman.desktop.backup
 s mv blueman.desktop blueman.desktop.backup
 s mv picom.desktop picom.desktop.backup
-mv config.jsonc config.jsonc.backup
 mv ~/.config/fastfetch/config.jsonc.all .
 cp config.jsonc.all config.jsonc
 hc
@@ -1157,14 +1139,9 @@ y systemd-numlockontty
 ctl status numLockOnTty
 ctl enable numLockOnTty
 ctl start numLockOnTty
-l /etc/systemd/system/numlock.service
 ch /etc/systemd/system/numlock.service
 cd .mozilla/
 cd firefox/
-cd 57q2tl0s.default/
-cd l3ltub8j.default-release/
-cd chrome/
-mv chrome/ ~/pc
 cd pc
 mkinitcpio -L
 sn /etc/sddm.conf
@@ -1172,14 +1149,11 @@ ctl disable numLockOnTty
 ctl disable numlock.service
 ctl stop numlock.service
 ctl stop numLockOnTty
-ctl status numlock.serviceff
-110201
 wc -l
 n ~/.config/waybar/style.css   -l
 cd ~/.config/waybar/ 
 mv style.css style.css.bup
 n style.css -l
 n style.css.bup 
-n ~/iconfig/waybar/style.css
 n ~/.config/waybar/style.css
 n ~/.config/waybar/style.css -l

@@ -119,7 +119,7 @@ alias tm='sudo fstrim -av'
 alias pm='sudo vim /etc/pacman.d/mirrorlist'
 alias pl='sudo cat /var/log/pacman.log'
 
-alias u='sudo pacman -Syu --noconfirm && yay -Syu'
+alias u='sudo pacman -Syu --noconfirm && yay -Syu --noconfirm'
 
 alias y='yay'
 alias yi='yay -S --noconfirm'

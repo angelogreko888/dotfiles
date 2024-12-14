@@ -53,8 +53,8 @@ alias cg='cd ~/git/'
 alias cdf='cd ~/dotfiles/'
 
 # yt-dlp
-alias ytm="yt-dlp -x --audio-format mp3 -o '~/Music/%(title)s.%(ext)s'"
-alias yt="yt-dlp -f mp4 -o '~/Videos/%(title)s.%(ext)s' " 
+alias yt="yt-dlp -x --audio-format mp3 -o '~/Music/%(title)s.%(ext)s'"
+alias ytm="yt-dlp -f mp4 -o '~/Videos/%(title)s.%(ext)s' " 
 
 alias lo='sudo updatedb; locate'
 alias lu='sudo updatedb'

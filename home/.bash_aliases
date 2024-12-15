@@ -8,7 +8,7 @@ fi
 #aliases
 alias spt="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3 -"
 alias wj='curl wttr.in/jerusalem'
-alias wp='curl wttr.in/pahos'
+alias wp='curl wttr.in/paphos'
 alias x='_x() { curl https://cht.sh/$1 ;}; _x'
 
 alias c='clear'
@@ -135,6 +135,3 @@ alias vws='vim ~/.config/waybar/style.css'
 alias chh='cd ~/.config/hypr/'
 alias cdw='cd ~/.config/waybar/'
 alias pp='hyprprop WM_CLASS'
-
-alias ws='vim ~/.config/waybar/style.css'
-

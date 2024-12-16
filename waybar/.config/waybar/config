@@ -17,9 +17,9 @@
         "clock",
         "hyprland/language",
 	    "idle_inhibitor",
-	    "cpu",
-        "memory",
+        "custom/swaync",
         "hyprland/workspaces",
+        "wlr/taskbar",
     ],
 
   "modules-center": [
@@ -27,11 +27,11 @@
 ],
 
   "modules-right": [
+        "memory",
+	    "cpu",
         "pulseaudio",
 	    "pulseaudio#microphone",
-        "custom/swaync",
         "backlight",
-//        "wlr/taskbar",
 	    "network",
         "tray",
 	    "power-profiles-daemon",

@@ -7,3 +7,5 @@ cat pacman.lst | xargs pacman -S --needed --noconfirm
 
 
 ####pacman -Q | awk '{print $1}' | grep -v "$(pacman -Qqm)" > pacman.lst
+
+pacman -S --needed - < pacman.lst

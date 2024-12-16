@@ -266,11 +266,30 @@
         "servedby-buysellads.com",
         "app-us1.com",
         "senja.io",
-        "pscp.tv",
         "quantummetric.com",
         "nagich.com",
+        "cdn-apple.com",
+        "google.co.il",
+        "cdn4ads.com",
+        "optmn.cloud",
+        "amplitude.com",
+        "https://cdn.amplitude.com",
+        "tribalfusion.com",
+        "https://a.tribalfusion.com",
+        "trustpilot.com",
+        "https://api.trustpilot.com",
+        "https://rt.marphezis.com",
+        "marphezis.com",
+        "https://htlb.casalemedia.com",
+        "casalemedia.com",
+        "bringthemhomenow.net",
+        "https://bringthemhomenow.net",
+        "4239cc7770.com",
+        "mbidadm.com",
+        "thin-setting.com",
+        "d3g5ovfngjw9bw.cloudfront.net",
         "google.com",
-        "cdn-apple.com"
+        "forms.gle"
       ],
       "custom": {
         "§:fbsbx.com": {
@@ -366,10 +385,8 @@
         "§:youtube.com": {
           "capabilities": [
             "script",
-            "media",
-            "font",
             "fetch",
-            "frame"
+            "media"
           ],
           "temp": false
         },
@@ -837,7 +854,8 @@
             "noscript",
             "other",
             "font",
-            "script"
+            "script",
+            "media"
           ],
           "temp": false
         },
@@ -1294,7 +1312,8 @@
             "noscript",
             "other",
             "font",
-            "script"
+            "script",
+            "lazy_load"
           ],
           "temp": false
         },
@@ -1314,10 +1333,9 @@
           "capabilities": [
             "frame",
             "fetch",
-            "font",
             "script",
             "media",
-            "lazy_load"
+            "ping"
           ],
           "temp": false
         },
@@ -1770,13 +1788,8 @@
         },
         "§:redd.it": {
           "capabilities": [
-            "frame",
             "fetch",
-            "noscript",
-            "other",
-            "font",
-            "media",
-            "script"
+            "media"
           ],
           "temp": false
         },
@@ -3585,7 +3598,8 @@
             "script",
             "fetch",
             "ping",
-            "lazy_load"
+            "lazy_load",
+            "media"
           ],
           "temp": false
         },
@@ -3639,6 +3653,219 @@
             "script"
           ],
           "temp": false
+        },
+        "§:picmonkey.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:unsplash.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font",
+            "lazy_load",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:lexilogos.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:greektraveltellers.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:researchgate.net": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "pscp.tv": {
+          "capabilities": [
+            "fetch"
+          ],
+          "temp": false
+        },
+        "§:pwmt.org": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:upworthy.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:tiktok.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:jnn-pa.googleapis.com": {
+          "capabilities": [
+            "fetch"
+          ],
+          "temp": false
+        },
+        "§:maariv.co.il": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font",
+            "script",
+            "lazy_load"
+          ],
+          "temp": false
+        },
+        "§:pwg.org": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:chemitec.co.il": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:fosslinux.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font",
+            "script",
+            "lazy_load"
+          ],
+          "temp": false
+        },
+        "§:shadertoy.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "https://new-sentry.gitlab.net": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font"
+          ],
+          "temp": false
+        },
+        "file:": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:7chakracolors.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font",
+            "lazy_load",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:eef857d1fa.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:wunderground.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font",
+            "script"
+          ],
+          "temp": false
         }
       }
     },
@@ -3647,9 +3874,9 @@
   },
   "local": {
     "debug": false,
-    "showCtxMenuItem": true,
+    "showCtxMenuItem": false,
     "showCountBadge": true,
-    "showFullAddresses": false,
+    "showFullAddresses": true,
     "showProbePlaceholders": true,
     "amnesticUpdates": false,
     "storage": "local",

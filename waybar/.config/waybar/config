@@ -31,10 +31,10 @@
 	    "pulseaudio#microphone",
         "custom/swaync",
         "backlight",
-	    "power-profiles-daemon",
-        "wlr/taskbar",
+//        "wlr/taskbar",
 	    "network",
         "tray",
+	    "power-profiles-daemon",
 	    "battery",
         "custom/power"
     ],

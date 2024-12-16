@@ -75,15 +75,16 @@
 
 
 #idle_inhibitor {
-  border-radius:10px;
-  padding: 0px 10px 0px 10px;
+  border-radius:30px;
+  background-color: #7D0DC3;
+  padding: 0px 20px 0px 10px;
 }
 
 
 #idle_inhibitor.activated{
  color:#e57474;
- border-radius:10px;
- padding: 0px 10px 0px 10px;
+ border-radius:30px;
+ padding: 0px 20px 0px 10px;
 }
 
 #custom-power{
@@ -106,7 +107,7 @@
 
 
 #workspaces button.active {
-    background-color: #7D0DC3;
+  background-color: #7D0DC3;
   border-radius:30px;
 }
 
@@ -117,17 +118,29 @@
 
 #language {
   background-color: #7D0DC3;
-  border-radius:10px;
+  border-radius:30px;
   padding: 0px 10px 0px 10px;
-  font-size: 21px;
+}
+
+#language {
+  background-color: #7D0DC3;
+  border-radius:30px;
+  padding: 0px 10px 0px 10px;
+}
+
+#language#gr {
+    color: #ffff00;
+  background-color: #7D0DC3;
+  border-radius:30px;
+  padding: 0px 10px 0px 10px;
 }
 
 
 #custom-clock {
   color: #ffffff;
   background-color: #7D0DC3;
-  border-radius:10px;
-  padding: 0px 10px 0px 10px;
+  border-radius:30px;
+  padding: 0px 20px 0px 20px;
   font-size: 21px;
 }
 

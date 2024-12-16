@@ -15,7 +15,6 @@
   "modules-left": [
 	    "custom/arch",
         "clock",
-        "hyprland/language",
 	    "cpu",
         "memory",
         "hyprland/workspaces",
@@ -23,7 +22,9 @@
     ],
 
   "modules-center": [
+        "hyprland/language",
 	    "custom/clock",
+	    "idle_inhibitor",
 ],
 
   "modules-right": [
@@ -31,7 +32,6 @@
 	    "pulseaudio#microphone",
         "custom/swaync",
 	    "network",
-	    "idle_inhibitor",
         "backlight",
 	    "power-profiles-daemon",
 	    "battery",

@@ -15,7 +15,7 @@ case $1 in
         *) echo "enter a laptop name" && exit 0 ;;
 esac
 
-pacman -Qqe | grep -v "$(pacman -Qqm)" > $HOME/dotfiles/misc/$1pacman.lst
+pacman -Q | grep -v "$(pacman -Qqm)" > $HOME/dotfiles/misc/$1pacman.lst
 
 pacman -Qqm > $HOME/dotfiles/misc/$1aur.lst
 

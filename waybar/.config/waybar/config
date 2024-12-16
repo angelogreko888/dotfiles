@@ -15,26 +15,26 @@
   "modules-left": [
 	    "custom/arch",
         "clock",
+        "hyprland/language",
+	    "idle_inhibitor",
 	    "cpu",
         "memory",
         "hyprland/workspaces",
-        "wlr/taskbar"
     ],
 
   "modules-center": [
-        "hyprland/language",
 	    "custom/clock",
-	    "idle_inhibitor",
 ],
 
   "modules-right": [
         "pulseaudio",
 	    "pulseaudio#microphone",
         "custom/swaync",
-	    "network",
         "backlight",
 	    "power-profiles-daemon",
 	    "battery",
+        "wlr/taskbar",
+	    "network",
         "tray",
         "custom/power"
     ],
@@ -249,13 +249,12 @@
     },
 
     "hyprland/language":{
-        "format": "{}",
-        "format-en": "EN",
-        "format-gr": "GR", 
-        "format-he": "IL",
+	    "format": "{}",
+        "format-en": "🇺🇸",
+	    "format-gr": "🇬🇷",
+	    "format-he": "🇮🇱",
         "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next"
 	},
-
 
 	"custom/swaync": {
         "tooltip": true,

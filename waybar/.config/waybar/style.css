@@ -76,7 +76,6 @@
 
 #idle_inhibitor {
   border-radius:30px;
-  background-color: #7D0DC3;
   padding: 0px 20px 0px 10px;
 }
 
@@ -117,20 +116,6 @@
 }
 
 #language {
-  background-color: #7D0DC3;
-  border-radius:30px;
-  padding: 0px 10px 0px 10px;
-}
-
-#language {
-  background-color: #7D0DC3;
-  border-radius:30px;
-  padding: 0px 10px 0px 10px;
-}
-
-#language#gr {
-    color: #ffff00;
-  background-color: #7D0DC3;
   border-radius:30px;
   padding: 0px 10px 0px 10px;
 }

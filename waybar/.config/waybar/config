@@ -27,9 +27,9 @@
 ],
 
   "modules-right": [
+        "pulseaudio",
         "memory",
 	    "cpu",
-        "pulseaudio",
 	    "pulseaudio#microphone",
         "backlight",
 	    "network",

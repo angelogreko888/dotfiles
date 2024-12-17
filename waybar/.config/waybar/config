@@ -20,6 +20,8 @@
         "custom/swaync",
         "hyprland/workspaces",
         "wlr/taskbar",
+        "memory",
+	    "cpu",
     ],
 
   "modules-center": [
@@ -28,8 +30,6 @@
 
   "modules-right": [
         "pulseaudio",
-        "memory",
-	    "cpu",
 	    "pulseaudio#microphone",
         "backlight",
 	    "network",

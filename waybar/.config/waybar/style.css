@@ -69,7 +69,7 @@
 #custom-notification{
   margin-left:5px;
   margin-right:5px;
-  padding-left:10px;
+  padding-left: 15px;
   padding-right: 5px;
 }
 
@@ -98,26 +98,31 @@
   border-radius:30px;
 }
 
-
 #workspaces button:hover {
   background-color: #A020F0;
+  margin-left:5px;
+  margin-right:5px;
   border-radius:30px;
 }
 
 
 #workspaces button.active {
+  margin-left:5px;
+  margin-right:5px;
   background-color: #7D0DC3;
   border-radius:30px;
 }
 
 #workspaces button.urgent {
+  margin-left:5px;
+  margin-right:5px;
   background-color: #f00000;
   border-radius:10px;
 }
 
 #language {
   border-radius:30px;
-  padding: 0px 10px 0px 10px;
+  padding: 0px 20px 0px 10px;
 }
 
 
@@ -140,7 +145,7 @@
 
 #custom-swaync {
   border-radius:10px;
-  padding: 0px 10px 0px 10px;
+  padding: 0px 10px 0px 15px;
 }
 
 #pulseaudio {

@@ -15,9 +15,7 @@
   "modules-left": [
 	    "custom/arch",
         "clock",
-        "hyprland/language",
 	    "idle_inhibitor",
-        "custom/swaync",
         "hyprland/workspaces",
         "wlr/taskbar",
         "memory",
@@ -25,7 +23,9 @@
     ],
 
   "modules-center": [
+        "hyprland/language",
 	    "custom/clock",
+        "custom/swaync",
 ],
 
   "modules-right": [

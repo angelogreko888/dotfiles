@@ -69,11 +69,12 @@ alias si='sudo update-initramfs -u'
 
 alias gc='git clone'
 alias gps='git push -u origin main'
-alias g='git status'
+alias g='cd ~/dotfiles && git status && cd -'
 alias gss='git commit -m "save"'
 alias ga='git add *'
 alias gpp='git pull'
-alias gg='git add * && git commit -m "save" && git push -u origin main'
+alias gg='cd ~/dotfiles && git add * && git commit -m "save" && git push -u origin main && cd -'
+alias gp='cd ~/dotfiles && git pull && cd -'
 
 alias ap='apropos'
 alias b='btop'
@@ -94,7 +95,7 @@ alias dk='sudo dpkg -i '
 alias dkil='dpkg --get-selections | grep -v deinstall'
 
 alias gd='sudo -sE gnome-disks'
-alias gp='sudo -sE gparted'
+alias ggp='sudo -sE gparted'
 
 alias ug='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 

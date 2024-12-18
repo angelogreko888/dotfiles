@@ -41,6 +41,7 @@
 
 #cpu,
 #pulseaudio,
+#pulseaudio#microphone,
 #window,
 #memory,
 #language,
@@ -70,7 +71,7 @@
   margin-left:5px;
   margin-right:5px;
   padding-left: 15px;
-  padding-right: 5px;
+  padding-right: 15px;
 }
 
 
@@ -122,7 +123,7 @@
 
 #language {
   border-radius:30px;
-  padding: 0px 20px 0px 10px;
+  padding: 0px 25px 0px 10px;
 }
 
 
@@ -150,8 +151,14 @@
 
 #pulseaudio {
   border-radius:10px;
-  padding: 0px 10px 0px 10px;
+  padding: 0px 15px 0px 15px;
 }
+
+#pulseaudio#microphone {
+  border-radius:10px;
+  padding: 0px 15px 0px 15px;
+}
+
 
 #taskbar {
   border-radius:10px;
@@ -160,7 +167,7 @@
 
 #power-profiles-daemon {
   border-radius:10px;
-  padding: 0px 10px 0px 10px;
+  padding: 0px 25px 0px 10px;
 }
 
 
@@ -171,13 +178,13 @@
 
 #backlight {
  border-radius:10px;
- padding: 0px 10px 0px 10px;
+ padding: 0px 15px 0px 15px;
 }
 
 #keyboard-state.locked {
  color:#e57474;
  border-radius:10px;
- padding: 0px 10px 0px 10px;
+ padding: 0px 15px 0px 15px;
 }
 
 #battery {

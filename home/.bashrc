@@ -3,6 +3,10 @@
 # for examples
 
 
+if uwsm check may-start; then
+    exec uwsm start hyprland.desktop
+fi
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;

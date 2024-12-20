@@ -35,6 +35,7 @@ blueman
 bluez
 bluez-libs
 boost-libs
+breeze-icons
 brightnessctl
 brotli
 btop
@@ -48,6 +49,7 @@ cairo
 cairomm
 cairomm-1.16
 cantarell-fonts
+cfitsio
 clucene
 coreutils
 cracklib
@@ -174,6 +176,7 @@ gtk-update-icon-cache
 gtk2
 gtk3
 gtk4
+gtk4-layer-shell
 gtkmm-4.0
 gtkmm3
 gtksourceview5
@@ -195,11 +198,11 @@ hunspell
 hwdata
 hyphen
 hyprcursor
+hyprgraphics
 hypridle
 hyprland
 hyprlang
 hyprlock
-hyprutils
 hyprwayland-scanner
 iana-etc
 icu
@@ -222,15 +225,21 @@ jq
 json-c
 json-glib
 jsoncpp
+karchive
 kbd
+kcolorscheme
+kconfig
 kcoreaddons
 kcrash
 kdbusaddons
 keyutils
+kguiaddons
 ki18n
+kiconthemes
 kirigami
 kmod
 krb5
+kwidgetsaddons
 kwindowsystem
 l-smash
 lame
@@ -268,6 +277,7 @@ libcap-ng
 libcdio
 libcdio-paranoia
 libcdr
+libcgif
 libcloudproviders
 libcmis
 libcolord
@@ -322,6 +332,7 @@ libid3tag
 libidn
 libidn2
 libiec61883
+libimagequant
 libimobiledevice
 libimobiledevice-glue
 libinih
@@ -442,6 +453,7 @@ libutf8proc
 libva
 libvdpau
 libverto
+libvips
 libvisio
 libvlc
 libvorbis
@@ -598,15 +610,18 @@ python-cairo
 python-certifi
 python-charset-normalizer
 python-click
+python-dbus
 python-gobject
 python-idna
 python-installer
 python-more-itertools
 python-packaging
 python-pyproject-hooks
+python-pyxdg
 python-requests
 python-urllib3
 qpdf
+qqc2-desktop-style
 qt5-base
 qt5-declarative
 qt5-svg
@@ -622,6 +637,7 @@ ranger
 raptor
 rasqal
 rav1e
+re2
 readline
 redland
 reflector
@@ -646,6 +662,7 @@ snappy
 sndio
 socat
 sof-firmware
+sonnet
 sord
 sound-theme-freedesktop
 spdlog

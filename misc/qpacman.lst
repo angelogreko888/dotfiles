@@ -50,7 +50,6 @@ cairomm-1.16
 cantarell-fonts
 cblas
 cdparanoia
-cfitsio
 clucene
 cmake
 colord
@@ -128,6 +127,7 @@ fribidi
 fuse-common
 fuse2
 fuse3
+fuzzel
 gawk
 gc
 gcc
@@ -192,7 +192,6 @@ gtk-update-icon-cache
 gtk2
 gtk3
 gtk4
-gtk4-layer-shell
 gtkmm-4.0
 gtkmm3
 gtksourceview5
@@ -297,7 +296,6 @@ libcap-ng
 libcdio
 libcdio-paranoia
 libcdr
-libcgif
 libcloudproviders
 libcmis
 libcolord
@@ -356,7 +354,6 @@ libidn
 libidn2
 libiec61883
 libieee1284
-libimagequant
 libimobiledevice
 libimobiledevice-glue
 libinih
@@ -478,7 +475,6 @@ libva
 libvarlink
 libvdpau
 libverto
-libvips
 libvisio
 libvlc
 libvorbis

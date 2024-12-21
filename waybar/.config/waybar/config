@@ -11,6 +11,7 @@
   "passthrough": false ,
   "gtk-layer-shell": true,
   "reload_style_on_change": true,  
+  "fixed-center": true,
 
   "modules-left": [
 	    "custom/arch",

@@ -49,7 +49,6 @@ cairo
 cairomm
 cairomm-1.16
 cantarell-fonts
-cfitsio
 clucene
 coreutils
 cracklib
@@ -116,6 +115,7 @@ freetype2
 fribidi
 fuse-common
 fuse3
+fuzzel
 gawk
 gc
 gcc
@@ -176,7 +176,6 @@ gtk-update-icon-cache
 gtk2
 gtk3
 gtk4
-gtk4-layer-shell
 gtkmm-4.0
 gtkmm3
 gtksourceview5
@@ -277,7 +276,6 @@ libcap-ng
 libcdio
 libcdio-paranoia
 libcdr
-libcgif
 libcloudproviders
 libcmis
 libcolord
@@ -332,7 +330,6 @@ libid3tag
 libidn
 libidn2
 libiec61883
-libimagequant
 libimobiledevice
 libimobiledevice-glue
 libinih
@@ -453,7 +450,6 @@ libutf8proc
 libva
 libvdpau
 libverto
-libvips
 libvisio
 libvlc
 libvorbis

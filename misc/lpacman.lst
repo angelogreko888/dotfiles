@@ -382,7 +382,6 @@ libnumbertext
 libnvme
 libodfgen
 libogg
-libomxil-bellagio
 libopenmpt
 liborcus
 libp11-kit
@@ -396,8 +395,6 @@ libpipewire
 libplacebo
 libplist
 libpng
-libportal
-libportal-gtk4
 libppd
 libproxy
 libpsl

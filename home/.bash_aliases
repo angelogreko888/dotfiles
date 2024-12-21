@@ -126,7 +126,7 @@ alias y='yay'
 alias yi='yay -S --noconfirm'
 alias ys='yay -Ss'
 alias yu='yay -Syu'
-#alias yd='yay -Yc'
+alias yd='yay -Yc'
 alias yui='yay -Rns'
 
 alias hh='vim ~/.config/hypr/hyprland.conf'

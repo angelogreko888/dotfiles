@@ -41,6 +41,7 @@
 
     // Modules configuration
 
+
   "custom/arch": {
         "format": "󰣇",
      //   "on-click": "wofi --show drun",

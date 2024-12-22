@@ -8,15 +8,12 @@ freetube-bin
 gimp-plugin-layerfx
 hyprevents-git
 hyprland-qtutils-git
-hyprland-qtutils-git-debug
 hyprprop-git
 hyprshade
 hyprshot
 hyprutils-git
-hyprutils-git-debug
 libglade
 librewolf-bin
-librewolf-bin-debug
 pygtk
 pyprland
 python2
@@ -26,7 +23,6 @@ python2-gobject2
 python2-numpy
 python2-setuptools
 simple-mtpfs
-simple-mtpfs-debug
 timeshift-autosnap
 upd72020x-fw
 uwsm

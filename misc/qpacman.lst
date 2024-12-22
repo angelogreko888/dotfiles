@@ -548,6 +548,7 @@ make
 md4c
 mdadm
 mesa
+meson
 minizip
 mkinitcpio
 mkinitcpio-busybox
@@ -567,6 +568,7 @@ nettle
 network-manager-applet
 networkmanager
 nftables
+ninja
 nm-connection-editor
 npth
 nspr
@@ -643,8 +645,8 @@ python-installer
 python-more-itertools
 python-packaging
 python-pyproject-hooks
-python-pyxdg
 python-requests
+python-tqdm
 python-urllib3
 qpdf
 qqc2-desktop-style

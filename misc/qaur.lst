@@ -7,15 +7,13 @@ brother-mfc-1910w
 freetube-bin
 gimp-plugin-layerfx
 hyprevents-git
-hyprland-qtutils-git
+hyprland-qtutils
+hyprland-qtutils-debug
 hyprprop-git
-hyprshade
 hyprshot
-hyprutils-git
 libglade
 librewolf-bin
 pygtk
-pyprland
 python2
 python2-cairo
 python2-gimp

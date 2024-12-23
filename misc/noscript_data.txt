@@ -1335,7 +1335,8 @@
             "fetch",
             "script",
             "media",
-            "ping"
+            "ping",
+            "lazy_load"
           ],
           "temp": false
         },
@@ -3857,6 +3858,64 @@
           "temp": false
         },
         "§:wunderground.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:redhat.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:sheee.co.il": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font",
+            "script",
+            "lazy_load",
+            "media"
+          ],
+          "temp": false
+        },
+        "§:archlinux.org": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:streamable.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font",
+            "script",
+            "media"
+          ],
+          "temp": false
+        },
+        "§:ui.com": {
           "capabilities": [
             "frame",
             "fetch",

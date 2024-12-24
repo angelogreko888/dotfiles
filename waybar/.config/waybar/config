@@ -3,6 +3,7 @@
   "height": 21,
   "position": "top",
   "mod": "dock",
+  "layer": "bottom",
   "margin-left": 10,
   "margin-right": 10,
   "margin-top": 0,

@@ -1,7 +1,5 @@
-/* ----------- 💫 https://github.com/JaKooLit 💫 -------- */
-/* swaync colors - wallust from waybar.css */
 
-//@import '../../.config/waybar/wallust/colors-waybar.css';
+@import '../../.config/swaync/colors.css';
 
 @define-color noti-border-color @color12;
 @define-color noti-bg rgba(0, 0, 0, 0.8);
@@ -18,7 +16,7 @@
 .control-center .notification-row:focus,
 .control-center .notification-row:hover {
     opacity: 1;
-    background: #000000;
+    background: @noti-bg;
     border-radius: 10px
 }
 
@@ -32,11 +30,11 @@
 }
 
 .notification-content{
-	color: #ffffff;
-    background: #000000;
+	color: @text-color;
+    background: @noti-bg;
     padding: 3px 10px 3px 6px;
     border-radius: 10px;
-    border: 1px solid #ffff00;
+    border: 1px solid @noti-border-color;
     margin: 0px;
 }
 

@@ -46,7 +46,6 @@
 
   "custom/arch": {
         "format": "󰣇",
-     //   "on-click": "wofi --show drun",
         "on-click": "uwsm app -- fuzzel",
         "tooltip": false
     },

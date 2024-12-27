@@ -81,6 +81,7 @@ alias b='btop'
 alias t='htop'
 alias nu='ncdu'
 alias th='sudo -sE thunar'
+alias nm='sudo -sE nemo'
 
 alias ts='sudo -sE timeshift-gtk'
 alias tc='sudo timeshift --create'

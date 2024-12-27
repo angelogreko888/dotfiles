@@ -35,6 +35,7 @@ hdparm
 htop
 hypridle
 hyprland
+hyprland-qtutils
 hyprlock
 hyprutils
 inotify-tools
@@ -52,10 +53,12 @@ ly
 mtools
 nano
 ncdu
+nemo
 network-manager-applet
 networkmanager
 nvidia-dkms
 nwg-look
+pacman-contrib
 pamixer
 pavucontrol
 pipewire-alsa
@@ -74,13 +77,9 @@ sof-firmware
 stow
 swaybg
 swaync
-thunar
-thunar-archive-plugin
-thunar-volman
 timeshift
 ttf-font-awesome
 ttf-jetbrains-mono-nerd
-tumbler
 ufw
 usbutils
 vim

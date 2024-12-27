@@ -7,6 +7,7 @@ brightnessctl
 btop
 btrfs-progs
 cups-pdf
+dconf-editor
 dkms
 dunst
 efibootmgr
@@ -49,6 +50,7 @@ linux-headers
 ly
 mtools
 nano
+nemo
 network-manager-applet
 networkmanager
 numlockx
@@ -76,9 +78,6 @@ sof-firmware
 stow
 swaybg
 swaync
-thunar
-thunar-archive-plugin
-thunar-volman
 timeshift
 ttf-font-awesome
 ttf-jetbrains-mono-nerd

@@ -1,0 +1,18 @@
+export XCURSOR_SIZE=24
+export XCURSOR_THEME=radioactive-yellow
+export GTK_THEME=Arc-Dark
+export GTK_ICON_THEME=buuf-nestort
+export GTL_FONT=Cantarell 13
+
+
+env = EDITOR=nano foot
+
+env = MOZ_ENABLE_WAYLAND=1 Librewolf
+env = MOZ_ENABLE_WAYLAND=1 firefox
+env = MOZ_ENABLE_WAYLAND=1 FreeTube
+
+env = GBM_BACKEND,nvidia-drm
+env = __GLX_VENDOR_LIBRARY_NAME,nvidia
+env = LIBVA_DRIVER_NAME,nvidi
+env = __GL_GSYNC_ALLOWED,0
+

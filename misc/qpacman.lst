@@ -46,6 +46,7 @@ iwd
 jdk-openjdk
 kanshi
 less
+lib32-nvidia-utils
 libreoffice-fresh
 linux
 linux-firmware
@@ -60,6 +61,7 @@ network-manager-applet
 networkmanager
 nmap
 nvidia-dkms
+nvidia-settings
 nwg-look
 pacman-contrib
 pamixer

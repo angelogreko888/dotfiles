@@ -50,8 +50,9 @@
             "interval": 600,   
             "exec": "checkupdates | wc -l",
             "exec-if": "exit 0",
-            "on-click": "foot sh -c 'yay; sudo pacman -Syu; echo Done - Press enter to exit; read'; pkill -SIGRTMIN+8 waybar",
-            "signal": 8,
+   //         "on-click": "foot sh -c 'yay; sudo pacman -Syu; echo Done - Press enter to exit; read'; pkill -SIGRTMIN+8 waybar",
+ 	     "on-click": "foot sh -c 'yay; sudo pacman -Syu'; pkill -SIGRTMIN+8 waybar",		
+	    "signal": 8,
             "tooltip": false,
         },
 

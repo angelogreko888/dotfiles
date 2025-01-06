@@ -61,7 +61,6 @@ network-manager-applet
 networkmanager
 nmap
 nvidia-dkms
-nvidia-settings
 nwg-look
 pacman-contrib
 pamixer

@@ -15,7 +15,6 @@ hyprshot
 libglade
 librewolf-bin
 libva-nvidia-driver-git
-libva-nvidia-driver-git-debug
 pygtk
 python2
 python2-cairo

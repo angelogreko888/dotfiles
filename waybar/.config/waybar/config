@@ -26,13 +26,14 @@
 
   "modules-center": [
         "hyprland/language",
-	    "custom/clock",
-        "custom/swaync",
+	 "custom/clock",
+	 "custom/pacman",
 ],
 
   "modules-right": [
         "pulseaudio",
 	    "pulseaudio#microphone",
+         "custom/swaync",
         "backlight",
 	    "network",
         "tray",
@@ -43,6 +44,16 @@
 
     // Modules configuration
 
+
+ "custom/pacman": {
+            "format": "󰅢  {}",
+            "interval": 600,   
+            "exec": "checkupdates | wc -l",
+            "exec-if": "exit 0",
+            "on-click": "foot sh -c 'yay; sudo pacman -Syu; echo Done - Press enter to exit; read'; pkill -SIGRTMIN+8 waybar",
+            "signal": 8,
+            "tooltip": false,
+        },
 
   "custom/arch": {
         "format": "󰣇",

@@ -46,14 +46,13 @@
 
 
  "custom/pacman": {
-            "format": "󰅢  {}",
-            "interval": 600,   
-            "exec": "checkupdates | wc -l",
-            "exec-if": "exit 0",
-   //         "on-click": "foot sh -c 'yay; sudo pacman -Syyu; echo Done - Press enter to exit; read'; pkill -SIGRTMIN+8 waybar",
- 	     "on-click": "foot sh -c 'yay; sudo pacman -Syyu'; pkill -SIGRTMIN+8 waybar",		
-	    "signal": 8,
-            "tooltip": false,
+         "format": "󰅢 {}",
+         "interval": 600,   
+         "exec": "checkupdates | wc -l",
+         "exec-if": "exit 0",
+ 	     "on-click": "foot sh -c 'yay -Syyu; echo ~~~~~~DONE~~~~~~; read;'; kill -SIGRTMIN+8 waybar",		
+	     "signal": 8,
+         "tooltip": false,
         },
 
   "custom/arch": {

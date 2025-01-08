@@ -2,7 +2,6 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-
 if uwsm check may-start; then
     exec uwsm start hyprland.desktop
 fi

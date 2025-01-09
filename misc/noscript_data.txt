@@ -4,8 +4,6 @@
       "capabilities": [
         "frame",
         "fetch",
-        "noscript",
-        "other",
         "font"
       ],
       "temp": false
@@ -288,8 +286,12 @@
         "mbidadm.com",
         "thin-setting.com",
         "d3g5ovfngjw9bw.cloudfront.net",
-        "google.com",
-        "forms.gle"
+        "forms.gle",
+        "equally.ai",
+        "https://widget.prod.equally.ai",
+        "arcgis.com",
+        "https://js.arcgis.com",
+        "google.com"
       ],
       "custom": {
         "§:fbsbx.com": {
@@ -2085,28 +2087,6 @@
           "temp": false
         },
         "§:mastodon.social": {
-          "capabilities": [
-            "frame",
-            "fetch",
-            "noscript",
-            "other",
-            "font",
-            "script"
-          ],
-          "temp": false
-        },
-        "§:247sudoku.com": {
-          "capabilities": [
-            "frame",
-            "fetch",
-            "noscript",
-            "other",
-            "font",
-            "script"
-          ],
-          "temp": false
-        },
-        "247sudoku.com": {
           "capabilities": [
             "frame",
             "fetch",
@@ -3925,6 +3905,185 @@
             "script"
           ],
           "temp": false
+        },
+        "§:discord.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:israelpost.co.il": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:user1st.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:icar.co.il": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:wiktionary.org": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font",
+            "lazy_load",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:ims.gov.il": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:onlyfans.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:github-production-user-asset-6210df.s3.amazonaws.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font",
+            "media",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:xdaforums.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font",
+            "lazy_load",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:academaim-krn.co.il": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:wolframalpha.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:qubes-os.org": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:looking-glass.io": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:matrix.to": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:amiunique.org": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:247sudoku.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font",
+            "script"
+          ],
+          "temp": false
         }
       }
     },
@@ -3935,7 +4094,7 @@
     "debug": false,
     "showCtxMenuItem": false,
     "showCountBadge": true,
-    "showFullAddresses": true,
+    "showFullAddresses": false,
     "showProbePlaceholders": true,
     "amnesticUpdates": false,
     "storage": "local",

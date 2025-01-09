@@ -16,11 +16,11 @@
       "trimming": 0
     },
     "spoofAcceptLang": {
-      "enabled": false,
-      "value": "default"
+      "enabled": true,
+      "value": "en-US"
     },
     "spoofIP": {
-      "enabled": false,
+      "enabled": true,
       "option": 0,
       "rangeFrom": "",
       "rangeTo": ""
@@ -30,22 +30,22 @@
   "options": {
     "cookieNotPersistent": false,
     "cookiePolicy": "allow_all",
-    "blockMediaDevices": false,
-    "blockCSSExfil": false,
+    "blockMediaDevices": true,
+    "blockCSSExfil": true,
     "disableWebRTC": false,
     "firstPartyIsolate": false,
-    "limitHistory": false,
+    "limitHistory": true,
     "protectKBFingerprint": {
-      "enabled": false,
+      "enabled": true,
       "delay": 1
     },
     "protectWinName": true,
     "resistFingerprinting": false,
     "screenSize": "default",
-    "spoofAudioContext": false,
-    "spoofClientRects": false,
-    "spoofFontFingerprint": false,
-    "spoofMediaDevices": false,
+    "spoofAudioContext": true,
+    "spoofClientRects": true,
+    "spoofFontFingerprint": true,
+    "spoofMediaDevices": true,
     "timeZone": "default",
     "trackingProtectionMode": "always",
     "webRTCPolicy": "default",

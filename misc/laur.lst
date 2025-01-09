@@ -1,8 +1,13 @@
+aces-container
 aic94xx-firmware
 android-sdk-platform-tools
 anydesk-bin
+art-rawconverter
 ast-firmware
+aurutils
 bezier
+checkupdates-with-aur
+ctl
 freetube-bin
 hyprevents-git
 hyprland-qtutils-git
@@ -11,6 +16,8 @@ hyprshade
 hyprshot
 hyprutils-git
 librewolf-bin
+libva-nvidia-driver-git
+libva-nvidia-driver-git-debug
 pyprland
 timeshift-autosnap
 upd72020x-fw

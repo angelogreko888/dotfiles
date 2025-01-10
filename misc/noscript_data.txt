@@ -4094,7 +4094,7 @@
     "debug": false,
     "showCtxMenuItem": false,
     "showCountBadge": true,
-    "showFullAddresses": false,
+    "showFullAddresses": true,
     "showProbePlaceholders": true,
     "amnesticUpdates": false,
     "storage": "local",

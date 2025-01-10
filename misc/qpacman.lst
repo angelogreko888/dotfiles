@@ -30,7 +30,6 @@ grub
 grub-btrfs
 gst-plugin-pipewire
 gufw
-gvfs-mtp
 hdparm
 hostapd
 htop
@@ -39,6 +38,7 @@ hyprland
 hyprland-qtutils
 hyprlock
 hyprutils
+imagemagick
 inotify-tools
 intel-ucode
 iw

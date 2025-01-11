@@ -30,5 +30,5 @@ listener {
 
 listener {
     timeout = 900                              
-    on-timeout = pidof hyprlock || (hyprlock & sleep 1s && systemctl suspend)               # suspend pc
+    on-timeout = systemctl suspend                # suspend pc
 }

@@ -2,6 +2,8 @@
 {"_id":"baseTheme","value":"dark"}
 {"_id":"bounds","value":{"x":6,"y":38,"width":1908,"height":1036,"maximized":false,"fullScreen":false}}
 {"_id":"defaultInterval","value":0}
+{"_id":"defaultQuality","value":"360"}
+{"_id":"defaultVideoFormat","value":"legacy"}
 {"_id":"disableSmoothScrolling","value":false}
 {"_id":"expandSideBar","value":false}
 {"_id":"externalPlayer","value":""}
@@ -11,4 +13,5 @@
 {"_id":"hideTrendingVideos","value":true}
 {"_id":"mainColor","value":"Red"}
 {"_id":"quickBookmarkTargetPlaylistId","value":"favorites"}
+{"_id":"region","value":"GR"}
 {"_id":"secColor","value":"Green"}

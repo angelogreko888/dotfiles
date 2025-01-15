@@ -76,6 +76,8 @@ plocate
 power-profiles-daemon
 python-pip
 qemu-base
+qemu-full
+qemu-hw-usb-redirect
 qemu-img
 qt5-wayland
 qt6-wayland
@@ -97,6 +99,7 @@ ufw
 usbutils
 vim
 virt-install
+virt-manager
 virt-viewer
 vlc
 waybar

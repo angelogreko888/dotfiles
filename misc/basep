@@ -93,12 +93,14 @@ timeshift
 ttf-font-awesome
 ttf-jetbrains-mono-nerd
 ufw
+usbutils
 vim
 vlc
 waybar
 wget
 wireless_tools
 wireplumber
+xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 xdg-user-dirs
 yt-dlp

@@ -105,6 +105,7 @@ vlc
 waybar
 wget
 wireless_tools
+xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 xdg-user-dirs
 yt-dlp

@@ -6,6 +6,7 @@ btop
 btrfs-progs
 cups-pdf
 darktable
+dbxtool
 dconf-editor
 dnsmasq
 dosfstools
@@ -21,6 +22,7 @@ firefox
 font-manager
 foot
 fuzzel
+fwupd
 gimp
 gmtp
 gnome-calculator

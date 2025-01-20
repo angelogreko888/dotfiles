@@ -6,6 +6,8 @@ cups
 fstrim.timer
 NetworkManager
 ufw
+avahi-daemon
+upower
 
 )
 

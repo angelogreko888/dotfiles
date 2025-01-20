@@ -37,7 +37,6 @@ hyprshade
 hyprshot
 libglade
 librewolf-bin
-libva-nvidia-driver-git
 pyprland
 simple-mtpfs
 timeshift-autosnap

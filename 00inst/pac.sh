@@ -62,7 +62,6 @@ iwd
 jdk-openjdk
 kanshi
 less
-lib32-nvidia-utils
 libpulse
 libreoffice-fresh
 linux
@@ -77,8 +76,6 @@ nemo
 network-manager-applet
 networkmanager
 nmap
-nvidia-dkms
-nvidia-utils
 nwg-look
 pacman-contrib
 pamixer

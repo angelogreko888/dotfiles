@@ -19,6 +19,7 @@ fuzzel
 gtk-2.0
 gtk-3.0
 home
+hypr
 kanshi
 ranger
 swaync

@@ -32,9 +32,11 @@ gst-plugin-pipewire
 gufw
 hdparm
 htop
+hyprcursor
 hyprgraphics
 hypridle
 hyprland
+hyprland-qtutils
 hyprlang
 hyprlock
 intel-ucode

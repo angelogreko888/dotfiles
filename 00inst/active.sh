@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+cd ~
+
 ctl=(
 ly 
 cups
@@ -15,3 +17,6 @@ for CTL in "${ctl[@]}";do
 	sudo systemctl enable "$CTL"
 	echo ""$CTL" activated"
 done
+
+hyprshade install
+echo "Done!!!"

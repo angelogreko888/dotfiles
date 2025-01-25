@@ -2,7 +2,7 @@
 
 rm -rf ~/.cache/* 
 
-~/bin/gitpull &
+#~/bin/gitpull &
 sleep 1
 ~/bin/bup &
 

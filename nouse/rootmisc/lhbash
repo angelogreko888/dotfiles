@@ -1016,3 +1016,5 @@ cdff
 rm laur.lst lpacman.lst 
 cd nouse/rootmisc/
 bh
+bh l
+ccc

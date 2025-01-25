@@ -1264,3 +1264,37 @@ rm pacman.lst aut.lst
 n backup.sh 
 mv bh.sh bh
 bh
+bh q
+n k
+cat /etc/group | rg vboxusers
+n /etc/group 
+ps librv
+w qemu
+pui qemu
+w libvirt
+lo libvirt
+pacman -Q | rg libvirt
+pacman -Q | rg qemu
+pacman -Q >qqq
+n qqq 
+rm qqq
+cd /var/lib/libvirt/qemu
+cd images/
+cd dnsmasq/
+cd libvirt/
+cd qemu/
+cd snapshot/
+rm libvirt/
+rr libvirt/
+lo libvirt > q
+s rr - < q
+lo libvirt 
+s rr /etc/libvirt/
+s rr /var/lib/libvirt/
+s rr /var/log/libvirt
+log qemu
+cd /usr/share/icons/buuf-nestort/mimetypes/
+open application-x-qemu-disk.png
+sn /usr/include/linux/qemu_fw_cfg.h
+sn /usr/include/qt/QtGui/5.15.16/QtGui/private/qemulationpaintengine_p.h
+hb 

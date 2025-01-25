@@ -8,10 +8,8 @@ cups-pdf
 darktable
 dbxtool
 dconf-editor
-dnsmasq
 dosfstools
 dpkg
-edk2-ovmf
 efibootmgr
 eog
 evince
@@ -32,7 +30,6 @@ gparted
 grub
 grub-btrfs
 gst-plugin-pipewire
-guestfs-tools
 gufw
 hdparm
 hostapd
@@ -52,9 +49,7 @@ jdk-openjdk
 kanshi
 less
 lib32-nvidia-utils
-libosinfo
 libreoffice-fresh
-libvirt
 linux
 linux-firmware
 linux-firmware-qlogic
@@ -77,10 +72,6 @@ pipewire-pulse
 plocate
 power-profiles-daemon
 python-pip
-qemu-base
-qemu-full
-qemu-hw-usb-redirect
-qemu-img
 qt5-wayland
 qt6-wayland
 ranger
@@ -92,17 +83,12 @@ sof-firmware
 stow
 swaybg
 swaync
-swtpm
 timeshift
 ttf-font-awesome
 ttf-jetbrains-mono-nerd
-tuned
 ufw
 usbutils
 vim
-virt-install
-virt-manager
-virt-viewer
 vlc
 waybar
 wget

@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+case $1 in
+        q)  ;;
+        l)  ;;
+        d)  ;;
+        *) echo "enter a laptop name" && exit 0 ;;
+esac
+
+cp ~/.bash_history  ~/hbash
+
+sed -i '/git remote set-url origin /d' ~/hbash
+
+awk -i inplace '!seen[$0]++' ~/hbash
+
+mv ~/hbash  ~/dotfiles/nouse/rootmisc/$1hbash

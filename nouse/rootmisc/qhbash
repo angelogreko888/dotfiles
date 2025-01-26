@@ -1298,3 +1298,26 @@ open application-x-qemu-disk.png
 sn /usr/include/linux/qemu_fw_cfg.h
 sn /usr/include/qt/QtGui/5.15.16/QtGui/private/qemulationpaintengine_p.h
 hb 
+n lhbash 
+cd var/
+cd lo
+cd log/
+cd db/
+today
+y ansiweather
+ansiweather -l jerusalem
+ansiweather -l jerusalem -a true
+ansiweather -l jerusalem -a false
+ansiweather -l jerusalem -a false -F
+yui ansiweather
+cd /etc/pacman.d
+cd hooks/
+n nvidia.hook 
+pacman -Q | grep nvidia
+sn nvidia.hook 
+s reflector --protocol https --age 12 --country Israel --sort rate --number 10 --verbose 
+n mirrorlist
+s reflector --protocol https --age 12 --country Cyprus --sort rate --number 10 --verbose 
+n mirrorlist.pacnew 
+cp mirrorlist.pacnew ~/dotfiles/nouse/rootmisc/
+bh 

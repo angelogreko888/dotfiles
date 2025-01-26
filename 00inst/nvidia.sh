@@ -88,6 +88,10 @@ else
 fi
 
 
+if ! [ -d /etc/pacman.d/hooks ]; then
+	sudo mkdir /etc/pacman.d/hooks
+fi
+
 echo "
 [Trigger]
 Operation=Install

@@ -2,7 +2,7 @@
 
 echo "
 [zram0]
-zram-size = min(ram / 2, 4096)
+zram-size = min(ram / 2)
 compression-algorithm = zstd
 " | sudo tee /etc/systemd/zram-generator.conf
 

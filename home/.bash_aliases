@@ -106,7 +106,7 @@ alias cpd='sudo pacman -Scc --noconfirm && yay -Scc --noconfirm'
 alias ccc='du -sh ~/.cache/'
 alias ccd='rm -rf ~/.cache/*'
 
-alias pi='sudo pacman -Syu --needed --noconfirm '
+alias pi='sudo pacman -Syu --needed '
 alias ps='sudo pacman -Ss'
 alias pus='sudo pacman -Syy'
 alias pud='sudo pacman -Syu'

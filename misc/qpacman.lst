@@ -89,6 +89,11 @@ ttf-jetbrains-mono-nerd
 ufw
 usbutils
 vim
+virtualbox
+virtualbox-ext-vnc
+virtualbox-guest-iso
+virtualbox-guest-utils
+virtualbox-host-modules-arch
 vlc
 waybar
 wget

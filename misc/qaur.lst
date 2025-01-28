@@ -7,6 +7,7 @@ ast-firmware
 aurutils
 bezier
 brother-mfc-1910w
+brother-mfc-1910w-debug
 checkupdates-with-aur
 ctl
 freetube-bin
@@ -17,6 +18,7 @@ hyprshade
 hyprshot
 libglade
 librewolf-bin
+librewolf-bin-debug
 libva-nvidia-driver-git
 pygtk
 pyprland
@@ -31,6 +33,7 @@ timeshift-autosnap
 upd72020x-fw
 uwsm
 virtio-win
+virtualbox-ext-oracle
 wd719x-firmware
 yay
 yay-debug

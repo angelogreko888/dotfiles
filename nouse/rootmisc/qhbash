@@ -1321,3 +1321,75 @@ s reflector --protocol https --age 12 --country Cyprus --sort rate --number 10 -
 n mirrorlist.pacnew 
 cp mirrorlist.pacnew ~/dotfiles/nouse/rootmisc/
 bh 
+sudo pacman -Scc 
+md hook2
+s mkdir hook2
+s rr hook2/
+cd /etc/pacman.d/
+sudo mkdir /etc/pacman.d/hooks1
+s rr hooks1
+curl https://support.brother.com/g/b/downloadhowto.aspx?c=eu_ot&lang=en&prod=mfc1910w_eu_as&os=128&dlid=dlf105191_000&flang=4&type3=10530
+cuel https://download.brother.com/welcome/dlf105191/brmfcfaxdrv-2.0.2-1.amd64.deb
+curl https://download.brother.com/welcome/dlf105191/brmfcfaxdrv-2.0.2-1.amd64.deb
+curl -O https://download.brother.com/welcome/dlf105191/brmfcfaxdrv-2.0.2-1.amd64.deb
+n printbr
+ch printbr 
+./printbr 
+mv printbr ~/dotfiles/00inst/
+mv printbr pbr
+mv pbr pbr.sh
+n pbr.sh 
+sudo pacman -S --needed ffmpeg gstreamer mesa 
+cat /proc/acpi/wakeup
+doas pacman -Sy --needed archlinux-keyring
+s pacman -Sy --needed archlinux-keyring
+s pacman -Qu
+cd /var/run/NetworkManager/system-connections/
+sn myhotspot.nmconnection
+sudo ufw route allow in on eno1 out on wlan0
+sudo ufw route allow in on enp7s0 out on wlan0
+sudo ufw route allow in on wlan0 out on enp7s0
+n lo.nmconnection 
+sn lo.nmconnection 
+mv myhotspot.nmconnection myhotspot.nmconnection.bup
+s mv myhotspot.nmconnection myhotspot.nmconnection.bup
+cd /var/log/
+n gufw.log 
+n lastlog 
+ps hostpad
+sn /etc/hostapd/hostapd.conf
+cd /etc/hostapd/
+s cp hostapd.conf hostapd.conf.bup
+sn hostapd.conf
+s mv hostapd.conf.bup hostapd.conf
+ctl staus avahi
+ctl stop avahi-daemon.socket
+ctl status avahi-daemon.socket
+sudo hostapd ./hostapd.conf
+n hostapd.conf
+pi  	virtualbox
+pi virtualbox-host-modules-arch
+sn /usr/lib/modules-load.d/virtualbox-host-modules-arch.conf
+sn /usr/lib/modules-load.d/virtualbox-host-modules-lts.conf
+sn /usr/lib/modules-load.d/virtualbox-host-dkms.conf
+s systemd-modules-load.service
+cp /usr/lib/modules-load.d/virtualbox-host-modules-arch.conf /usr/lib/modules-load.d/virtualbox-host-modules-arch.conf.bup
+s cp /usr/lib/modules-load.d/virtualbox-host-modules-arch.conf /usr/lib/modules-load.d/virtualbox-host-modules-arch.conf.bup
+modprobe vboxdrv
+s modprobe vboxdrv
+cddf
+sudo usermod -aG vboxusers "$(whoami)"
+pi  	virtualbox-guest-iso
+y virtualbox-ext-oracle 
+y virtualbox-ext-vnc 	
+gsettings get org.gnome.mutter.wayland xwayland-grab-access-rules
+ctl status virtualbox
+ctl status vboxdrv
+md vb
+lsmod |grep kvm
+sudo rmmod kvm_intel
+pi  	virtualbox-guest-utils
+VBoxManage internalcommands dumphdinfo storage.vdi | grep "offData"
+ps virtual-guest-iso
+ps virtualbox-guest-iso
+s pacman -Syy linux-headers

@@ -1020,3 +1020,29 @@ bh l
 ccc
 llll
 kkkk
+stow gtk-2.0/
+stow gtk-3.0/
+stow ranger/
+stow xsettingsd/
+rr hypr/
+`p
+n zram.sh 
+./zram.sh 
+cd /
+pi ncdu
+nb 
+sudo pacman -Scc 
+yay -Scc 
+ping -3 linux.org
+pacman -Q | rg hostapd
+sudo ufw route allow in on enp8s0 out on wlan0
+sudo ufw route allow in on wlan0 out on enp8s0
+ps hostapd
+sudo ufw allow to any port 53
+sudo ufw allow to any port 67 proto udp
+sudo ufw allow to any port 68 proto udp
+chekupdates-with-aur
+y chekupdates-with-aur
+y updates-with-aur
+checkupdates-with-aur
+y aurutil

@@ -51,6 +51,7 @@ linux-headers
 ly
 mtools
 nano
+ncdu
 nemo
 network-manager-applet
 networkmanager

@@ -7,7 +7,6 @@ ast-firmware
 aurutils
 bezier
 brother-mfc-1910w
-brother-mfc-1910w-debug
 checkupdates-with-aur
 ctl
 freetube-bin
@@ -18,7 +17,6 @@ hyprshade
 hyprshot
 libglade
 librewolf-bin
-librewolf-bin-debug
 libva-nvidia-driver-git
 pygtk
 pyprland

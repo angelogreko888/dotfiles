@@ -1,1337 +1,51 @@
-diff pacman.lst pac
-if [[ $? -ne 0 ]]; cat pacman.lst pac> qpac; fi
-diff pacman.lst pac; if [[ $? -ne 0 ]]; cat pacman.lst pac> qpac
-cd atesting/
-l
-n diff
-bash diff
-n diff 
-n d
-n pac
-n tmp
-L
-n pacman.lst 
-cp pacman.lst  pac
-n sort
-n sort 
-rm sort 
-cp ~/bin/cpinst.sh .
-n cpinst.sh 
-mv cpinst.sh ci
-rm pac pacman.lst tmp
-cdf
-cd misc/
-cp ~/dotfiles/misc/qpacman.lst .
-cp ~/dotfiles/misc/qaur.lst .
-ci
-bash ci
-bash ci q
-ll
-n ci -l
-rm tmp*
-n qtmp 
-rm qtmp 
-n ci
-bash ci 
-n qpacman.lst 
-cd
-pacman -Q >q
-comm q qtmp 
-comm qtmp q 
-pacman -Q | awk '{print $1}' > q
-n q
-comm qtmp q
-rm *
-cpinst.sh 
-cpinst.sh q
-g
-gg
-ff
-u
-cg
-cd yay/
-gpp
-cd PhotoGIMP/
-..
-rr nvidia-all/
-cd .vim
-cd colors/
-rr .vim
-n vimi
-n .viminfo
-cd vim/
-cd .vim/
-rr vim/
-vim
-cd nouse/
-md rootmisc
-cd rootmisc/
-cp /etc/pacman.d/mirrorlist .
-n mirrorlist 
-cp /etc/mkinitcpio.conf .
-cp /etc/default/grub .
-r
-ni
-nu
-pi ncdu
-chh
-n keybind.conf 
-v autostart.conf 
-/usr/bin/pypr
-cd gnome-i3/
-cp -r ~/git/* .
-rr yay/ PhotoGIMP/
-b
-pd
-nb
-cd vago/pc/pcc
-cd bash/
-md bash
-cp combash ~/dotfiles/nouse/bash/
-n combash 
-rm combash 
-rr bash/
-n git
-cp combash ~/dotfiles/nouse/
-stow gtk-2.0/
-stow gtk-4.0/
-stow xfce/
-t
-ts
-c
-git rm thunar/*
-ctl status avahi
-ctl status avahi-daemon
-ctl enable avahi-daemon
-ctl start avahi-daemon
-id vago
-sudo useradd -mG sys,log,network,floppy,scanner,power,rfkill,users,video,storage,optical,lp,audio,adm -s/bin/sh vago
-sudo useradd -aG sys,log,network,floppy,scanner,power,rfkill,users,video,storage,optical,lp,audio,adm -s/bin/sh vago
-sudo usermod -aG sys,log,network,floppy,scanner,power,rfkill,users,video,storage,optical,lp,audio,adm -s/bin/sh vago
-ctl status haveged.service
-ctl status reflector.timer
-pm
-n /etc/pacman.d/mirrorlist 
-s  reflector --protocol https --age 12 --latest 5 --country Israel --sort rate  --verbose
-s  reflector --protocol https  --latest 5 --country Israel --sort rate  --verbose
-ctl enable reflector.timer
-ctl status firewalld.service
-ctl status fstrim.timer
-ctl status upower
-ctl enable upower
-ctl start upower
-snapper ls
-duf
-du
-du -f
-du --help
-du -ch
-du -sh
-df
-df -h
-cdd
-comm ArchISO_paclist_230131.txt ~/dotfiles/misc/qpacman.lst 
-pi less
-man ly
-x ly
-x vim
-ps nvme-cli
-ps rsync
-ps sync
-rm ArchISO_paclist_230131.txt 
-pacman -Q > q
-cat q
-pacman -Q | awk '{print $1}' | grep -v "$(pacman -Qqm)"  > q
-comm q ~/dotfiles/misc/qpacman.lst 
-cd bin
-n misc/qaur.lst 
-cd -
-cd waybar/.config/waybar/
-mv waybar.service.in ~/Documents/
-ls
-cd dotfiles/
-mv ~/Documents/waybar.service.in .
-ls -lah
-n .bash_aliases 
-nano .bash_aliases 
-h
-history
-bb
-bash
-w zsh
-w sh
-chsh
-chsh -l
-cd home/
-n.
-sudo usermod -aG adm -s /bin/sh
-sudo usermod -aG adm /bin/sh
-cd /bin
-l | rg sh
-vwc
-vws
-waybar
-y noto-fonts-emoji-flags 
-th
-cc
-cd waybar
-n config 
-nwc
-n wc
-y  noto-emoji
-n .config/waybar/config 
-groups vago
-usermod -aG mod -s /bin/sh
-usermod -aG adm -s /bin/sh
-s deluser vago adm
-sudo deluser vago adm
-ls -l /boot/
-find / -group groupname
-find / -group adm
-sudo find / -group adm
-yay deluser
-sudo gpasswd -d vago adm
-sudo gpasswd -d vago sys,log,network,floppy,scanner,power,rfkill,users,video,storage,optical,lp,audio,adm
-sudo gpasswd -d vago sys
-sudo gpasswd -d vago log
-sudo gpasswd -d vago floppy
-sudo gpasswd -d vago rfkill
-sudo gpasswd -d vago video
-sudo gpasswd -d vago users
-sudo gpasswd -d vago storage
-sudo gpasswd -d vago optical
-sudo gpasswd -d vago lp
-sudo gpasswd -d vago audio
-sudo gpasswd -d vago 
-cd icons/
-md fonts
-ccd fonts/
-cd font
-cd fonts
-cd fonts/
-mv ~/Downloads/NotoColorEmoji-flagsonly.ttf  .
-mv l
-rm NotoColorEmoji.ttf 
-CDF
-pp
-n env.conf 
-pl
-nb 
-gp
-cd dotfiles & git pull
-cd dotfiles && git pull
-cd dotfiles && git pull && cd
-gf
-ggp
-ap vim
-ps apropos
-y apropos
-cat .bash_history-00953.tmp 
-cd .librewolf/
-y hyprshot
-cd i3
-cd i3-gonome-stable/
-cd picom/
-cd gnome-stable/
-n aaalaststuff.sh 
-w xrandr
-cd nouse/gnome-i3/
-cd i3blocks/
-lspci | grep -E 'VGA|3D'
-ls -l /dev/dri/by-path
-ps uwsm
-y uwsm
-s systemd-analyze blame
-y hyprland-qtutils
-n autostart.conf 
-cd fontconfig/
-n conf.d/
-cd conf.d/
-lo zlogin
-n hyprland.conf 
-v hyprland.conf 
-cp env.conf uenv.conf 
-v uenv.conf 
-cp keybind.conf ukeybind.conf 
-v ukeybind.conf 
-yay -S uwsm
-cp autostart.conf uautostart.conf 
-v uautostart.conf 
-y walker
-walker
-cd walker
-n config.json 
-md -p walker/.config/
-cd walker/.config/
-mv ~/.config/walker/ .
-v myapps.conf 
-backup.sh 
-pi fuzzel
-stow fuzzel/
-cd fuzzel
-n fuzzel.ini 
-yui walker
-cpk
-cpd
-n ub
-n ukeybind.conf 
-lo fuzzy
-lo fuzzel
-n /etc/xdg/fuzzel/fuzzel.ini
-fuzzel
-mv env.conf env.conf.hypr
-mv autostart.conf hypr-autostart.conf
-mv env.conf.hypr hypr-env.conf
-mv keybind.conf hypr-keybind.conf 
-mv uautostart.conf autostart.conf 
-mv uenv.conf env.conf 
-mv ukeybind.conf keybind.conf 
-hh
-spt
-wj
-yui walker-debug
-fuzzel 
-cd /etc/xdg/fuzzel
-zsh
-cd /etc/xdg/autostart/
-γ
-yd
-n myapps.conf 
-uwsm
-uwsm app -- hyprland
-w uwsm
-cd nouse/hypr/
-cp * ~/dotfiles/hypr/
-...
-cd hypr/
-mv hypr-* .config/hypr/
-cd .config/hypr/
-cd hy
-n input.conf 
-n hypr-keybind.conf 
-n wspace.conf 
-hyprland
-reboot
-n hypr-autostart.conf 
-n hypr-keybind.conf
-V HYPR-K
-v hypr-keybind.conf
-vim hypr-keybind.conf
-nano  hypr-keybind.conf
-exit
-nano wspace.conf 
-pui uwsm
-cd hypr
-yui uwsm
-n. 
-mv autostart.conf uwsm-autostart.conf 
-mv env.conf uwsm-env.conf 
-mv keybind.conf uwsm-keybind.conf 
-n hypr-keybind.conf.save 
-rm hypr-keybind.conf.save 
-rr hypr/
-n uwsm-keybind.conf 
-n uwsm-autostart.conf 
-n pyprland.toml 
-cd shaders/
-n hyprshade.toml 
-hyprshade install
-systemctl --user enable --now hyprshade.timer
-sudo pip3 install Click
-ps pip
-ps pip3
-pi python-pip
-pi python-click
-b.
-lk
-gu
-cd /
-n dotfiles/misc/qaur.lst 
-pui  hyprutils-git
-sudo pacman -Syu
-pui  hyprutils
-w  hyprutils
-pi  hyprutils
-s pacman -S  hyprutils
-s pacman -S  hyprutils-git
-ps  hyprutils
-y  hyprutils
-y hyprutils
-hyprutils
-s pacman - Syy
-s pacman -Syy
-s pacman -Su
-ps hyprutils
-pui hyprutils
-n ~/dotfiles/misc/qpacman.lst 
-pui hyprland-qtutils-git
-n ~/dotfiles/misc/qaur.lst 
-pui hyprutils-git
-yui hyprutils
-y hyprland-qtutils-git
-pacman -Qs hypr
-s pacman -Rns hyprutils
-which hyprutils
-sudo pacman -Rdd hyprutils && pacman -S hyprutils-git
-sudo pacman -Scc && yay -Scc 
-s pacman -Syu
-s pacman -Rns hyprutils-git
-s pacman -Rns hyprutils-
-n a
-n ~/dotfiles/misc/installation 
-yay -Rns - < a
-yay -S - < a
-s pacman - Syu
-yay -Syu
-yui  hyprutils-git-debug
-ps hyplock
-y hyplock
-y hyprlock
-pacman -Qqe | grep -v "$(pacman -Qqm)" 
-pui wofi
-rm a
-s reflector --protocol https --country Israel --sort rate --verbose --age 6
-sudo fdisk -l
-mv dospc.jpg flopydisks.jpg ~/Downloads/
-pacman -Slq
-hypershot
-hyprshot
-hyprshot -n
-hyprctl monitors all
-v uwsm-keybind.conf 
-s reflector --protocol https --country Israel --sort rate --verbose --age 6 --save /etc/pacman.d/mirrorlist
-cd nouse/rootmisc/
-sn /etc/pacman.d/mirrorlist 
-lsusb | grep -i network
-lsusb 
-cat a
-cd Documents/
-open dostolinux.txt 
-pi nemo
-rm wofi walker 
-cd nemo/
-pi PCmanFM
-pi pcmanfm
-pactree -r thunar 
-ps pactree 
-y pactree
-ps pacman-contrib
-pi pacman-contrib
-pactree -r nemo
-ps nemo
-md thunar
-cd thunar/
-n inst-thunar
-mv ~/dotfiles/xfce/ .
-cd xfce/
-cd nouse/thunar/
-n inst-thunar 
-pui thunar thunar-archive-plugin thunar-volman
-pui pcmanfm
-pui tumbler
-git rm xfce/*
-cd nb
-vf
-nm
-gsettings set org.cinnamon.desktop.default-applications.terminal exec foot
-pi dconf-editor
-open ~/Documents/dostolinux.txt 
-v uwsm-autostart.conf 
-n hyprlock
-n hyprlock.conf 
-cd fuzzel/.config/fuzzel/fuzzel.ini 
-n fuzzel/.config/fuzzel/fuzzel.ini 
-cd fuzzel/.config/fuzzel/
-ctl disable reflector.timer
-ctl stop reflector.timer
-s reflector --protocol https --age 12 --country Israel --sort rate --number 10 --verbose --save /etc/pacman.d/mirrorlist
-cd /run/media/vago/USB STICK
-cd /run/media/vago/
-cd 'USB STICK'/
-cp /mnt/data/distro/Win10_22H2_English_x64v1.iso .
-s mount /sdb/sdb1 /run/media/vago/usb
-s mount /sdb/sdb /run/media/vago/usb
-fdisk -l
-s fdisk -l
-fdisk /dev/sdb
-s fdisk /dev/sdb
-mkfs.fat -F 32 /dev/sdb1
-s mkfs.fat -F 32 /dev/sdb1
-gd
-cd /mnt/
-co USB/
-s co USB/
-cd USB/
-s cp /mnt/data/distro/Win10_22H2_English_x64v1.iso .
-gpd
-ssh
-ip a
-ctl status ssh
-lo ssh
-s n/etc/ssh/ssh_config
-sn /etc/ssh/ssh_config
-nmap
-pi nmap
-nmap -p22
-nmap -r
-s nmap -p22
-s nmap -S 192.168.1.105
-ping -c linux.org
-ping -c 3 linux.org
-sudo systemctl status NetworkManager.service 
-sudo nano /etc/dnsmasq.conf
-n /etc/resolv.conf
-cd /etc
-nmcli dev wifi hotspot ifname wlan0 ssid grgrgr password "@greko110201"
-iw list
-pi iw
-iw list\
-iw list > ~/Documents/list
-n ~/Documents/list
-pi WiFi supplicant
-pi wifi-supplicant
-ps WiFi supplicant
-ps wifi-supplicant
-ps wifi supplicant
-ps supplicant
-pi dnsmasq hostapd
-sn /etc/NetworkManager/conf.d/dns.conf
-cd /etc/NetworkManager/conf.d/
-sn dns.conf
-sudo systemctl restart NetworkManager
-nmcli con add con-name MyHotspot ifname wlan0 type wifi ssid MyHotspot
-nmcli con modify MyHotspot wifi-sec.key-mgmt wpa-psk
-nmcli con modify MyHotspot wifi-sec.psk greko110201
-nmcli con modify MyHotspot wifi.mode ap
-nmcli con modify MyHotspot ipv4.method shared
-nmcli con modify MyHotspot ipv4.addresses 192.168.10.1/24
-nmcli con modify MyHotspot ipv4.gateway 192.168.10.1
-nmcli con up MyHotspot
-sysctl net.ipv4.ip_forward
-sudo ufw route allow in on wlp1s0 out on eno1
-sudo ufw route allow in on wlan0 out on eno1
-sudo ufw route allow out on wlan0 in on eno1
-sudo ufw status verbose
-n /var/log/ufw.log
-cd /var
-cd log
-cd private/
-ufw status
-s ufw status
-s ufw allow ssh/tcp
-ufw app list
-s ufw app list
-s ufw allow from 192.168.10.1
-s ufw allow from 192.168.10.1/24
-s ufw logging low
-s ufw logging off
-s ufw reset
-sudo ufw allow dnsmasq
-sudo nano /etc/services
-sudo ufw allow dnsmasq 
-sudo ufw allow dhclient
-sudo ufw allow udp 68
-sudo ufw allow udp 5353
-sudo ufw allow tcp 53
-sudo ufw allow tcp 67
-sn /etc/NetworkManager/conf.d/dns.conf 
-srm /etc/NetworkManager/conf.d/dns.conf 
-s rm /etc/NetworkManager/conf.d/dns.conf 
-pui hostapd
-ssh vago@10.42.0.157
-w ssh
-ssh vago@10.72.0.1
-cd /etc/gdm3/
-ctl stauts avahi
-ctl status avahi.daemon
-h | rg avahi
-ctl stop avahi-daemon
-h |rg dns
-pi hostapd
-ctl status hotspand
-sudo systemctl status NetworkManager.service
-sudo nmcli device wifi hotspot con-name hot ssid gr band bg password greko110201
-sudo nmcli wlan0 hotspot con-name hot ssid gr band bg password greko110201
-sudo nmcli device wlan0 hotspot con-name hot ssid gr band bg password greko110201
-sudo nmcli device wifi hotspot con-name t-450 ssid t-450 band bg password qw3rtyu1
-ssh 192.168.104
-ssh 192.168.1.104
-ping 192.168.1.105
-ssh vago@192.168.1.104
-sudo ufw app list
-sudo ufw app info 'ssh'
-sudo ufw app info 'SSH'
-sudo v /etc/default/ufw
-sudo vi /etc/default/ufw
-sudo vim /etc/default/ufw
-sudo ufw allow ssh
-ctl status ufw
-ctl status ufw verbose
-ping -c 3 192.168.1.104
-sudo ufw allow 22/tcp
-sudo ufw reload 
-sd  /etc/ssh/ssh_config.d/
-cd  /etc/ssh/ssh_config.d/
-n 20-systemd-ssh-proxy.conf 
-cd /.ssh
-ps ssh
-ps openssh-client
-ps openssh-server
-ps openssh
-ctl status sshd.socket
-rsync -avr -e ssh --progress vago@greko:/home/vago/testing /home/vago/atesting
-cd testing/
-touch bbb
-cd at
-rr testing/
-rm bbb
-cd 
-md testing
-ssh vago@192.168.235.13
-ping 192.168.235.13
-ping 192.168.235.255
-ping -c 3 192.168.235.13
-n look.conf 
-hyprctl
-hyprctl clients
-s pacman -S nvidia-dkms
-which waybar-module-pacman-updates
-y art-rawconverter 
-y art-
-y art-converter
-y art-rawconverter
-art-rawconverter
-ART.bin
-ART
-art
-cd gtk-3.0
-n settings.ini 
-.. 
-y xapp
-y libxapp-gtk3-module
-y libxapp
-yui art-rawconverter-bin
-y art-rawconverter-bin
-sn /etc/modprobe.d/nvidia.conf
-sudo mkinitcpio -P
-ps nvidia-open-dkms
-cat ~/dotfiles/misc/qpacman.lst | rg nvidia
-cat ~/dotfiles/misc/qpacman.lst | rg egl-wayland
-ps egl-wayland
-pacman -Q | rg nvidia
-pacman -Q | rg egl-wayland
-pacman -Q | rg lib32-nvidia-utils
-sn /etc/mkinitcpio.conf
-n uwsm-env.conf 
-md -p uwsm/.config/uwsm
-cd uwsm/.config/uwsm
-n env
-n env-hyprland
-n .gtkrc-2.0 
-stow uwsm/
-cd ~/dotfiles/uwsm/.config/uwsm
-n env-hyprland 
-pi lib32-nvidia-utils
-cat /sys/module/nvidia_drm/parameters/modeset
-s cat /sys/module/nvidia_drm/parameters/modeset
-n /etc/pacman.conf 
-uwsm check is-active
-s uwsm check is-active
-bash ./uuctl.sh 
-y dbus-broker
-echo "$ERROR base-devel not found nor cannot be installed."
-echo "$(tput setaf 1)[ERROR]$(tput sgr0) base-devel not found nor cannot be installed."
-echo $(tput setaf 6)[ACTION]$(tput sgr0)
-pacman -Q | rg nvidia-settings
-pacman -Q | rg libva
-pacman -Q | rg libva-nvidia-driver-git
-y libva-nvidia-driver-git
-y nvidia-settings
-checkupdates
-n style.css 
-cd ~/.config/waybar
-md hypr
-mv hypr-* uwsm-env.conf  ~/dotfiles/nouse/hypr
-mv uwsm-autostart.conf autostart.conf 
-mv uwsm-keybind.conf keybind.conf 
-mv uwsm-env.conf env.conf 
-md uwsm
-mv uuctl.sh ./uwsm/
-mv combash visudo.png ./rootmisc/
-pui nvidia-settings
-q
-n ~/dotfiles/waybar/.config/waybar/config 
-lo systemd
-cd /etc/xdg/systemd
-cd user
-cd /etc/systemd
-systemd-analyze cat-config systemd/user.conf
-n user.conf 
-n homed.conf 
-cd default.target.wants/
-if uwsm check may-start && uwsm select; then 	exec systemd-cat -t uwsm_start uwsm start default; fi
-n sleep.conf 
-pacman -Qdt
-s pacman -Qdt
-curl wttr.in/paphos
-curl wttr.in/PFO
-110201
-xprop
-xprop librewolf://gpu
-checkupdate
-bash ./screenshot 
-n screenshot -l
-w import
-ps import
-ps imagemagick
-pi imagemagick
-import
-python import
-w python
-ch screenshot 
-./screenshot.py
-./screenshot
-hyprcl monitors all
-rm screenshot 
-bash ./record 
-n record 
-cd timeshift/
-co timeshift/
-comm -3 noscript_data.txt noscript_dataq.txt 
-comm  noscript_data.txt noscript_dataq.txt 
-cd hypr/.config/hypr/
-n hypridle.conf 
-pi gvfs-afc gvfs-dnssd gvfs-goa gvfs-google gvfs-gphoto2 gvfs-mtp gvfs-nfs gvfs-onedrive gvfs-smb gvfs-wsdd
-pi samba
-cd /etc/samba/
-lo smb.conf.default
-sn smb.conf
-testparm
-x
-ctl status smb
-ctl start smb
-pi avahi
-ctl status avahi-daemon.service
-s ufw allow CIFS
-sn /etc/ufw/applications.d/samba
-s ufw app update Samba
-s ufw allow Samba
-who
-sn smb.conf 
-sn /usr/local/samba/lib/netlogon
-cd /usr/local/samba/
-cd /usr/local/
-ctl stop smb
-testpar,
-ctl restart smb
-cd /home
-smb version
-smb
-w smb
-w samba
-samba
-s mv smb.conf smb.conf.bup
-sn shares.conf
-md -p ~/share/public-files
-md -p ~/share/private-files
-s groupadd --system smbgroup
-cat /etc/group
-s useradd --system --no-create-home --group smbgroup -s /bin/false smbuser
-cat /etc/passwd
-s chown -R smbuser:smbgroup ~/home/vago/share
-s chown -R smbuser:smbgroup ~/share
-cd share/
-s chmod -R g+w ~/share
-mv smb.conf smb.conf.folderbup
-s mv smb.conf smb.conf.folderbup
-s mv shares.conf shares.conf.folderbup
-s mv smb.conf.bup smb.conf
-s journalctl -xeu smb.service
-sn smb.conf.bup 
-LK
-n bup 
-bup 
-smb://192.168.1.1
-samba://192.168.1.1
-pi cifs-utils
-pi smbclient
-pui gvfs-afc gvfs-dnssd gvfs-goa gvfs-google gvfs-gphoto2 gvfs-mtp gvfs-nfs gvfs-onedrive gvfs-smb gvfs-wsdd samba
-cd pc
-md samba-conf
-s mv * ~/pc/samba-conf/
-rr share
-s rr share/
-cp hypridle.conf hypridle.conf.bup 
-n power_menu.xml 
-cp config config.bup
-n config
-lscpu | grep -i virtualization
-zgrep CONFIG_KVM /proc/config.gz
-pi qemu-base libvirt virt-install vtrt-viewer edk2-ovmf swtpm qemu-img guestfs-tools libosinfo
-pi qemu-base libvirt virt-install virt-viewer edk2-ovmf swtpm qemu-img guestfs-tools libosinfo
-y -S tuned
-y virtio-win
-for drv in qemu interface network nodedev nwfilter secret storage; do     sudo systemctl enable virt${drv}d.service;     sudo systemctl enable virt${drv}d{,-ro,-admin}.socket;   done
-cd /tmp
-pacman -Q | rg samba
-pacman -Q | rg smb
-y freetube
-ps xdg-desktop-portal-hyprland
-y gimp-dmic
-y gimp-gmic
-y gmic
-inix
-inxi
-free -h
-ps nixi
-ps inxi
-pi inxi
-inxi -Fxz
-n cpio
-CTL STATUS UFW
-ctl restart ufw
-sn /etc/default/ufw
-ps distrobox
-sudo virt-host-validate qemu
-n /etc/default/grub
-sn /etc/default/grub
-ug
-ctlstatus tuned
-ctl status tuned
-ctl enable --now tuned
-tuned-adm active
-tuned-adm list
-s tuned-adm profile virtual-host  
-s tuned-adm verify
-s viesh net-list --all
-s virsh net-list --all
-virsh net-autostart default
-s virsh net-autostart default
-s virsh net-start default
-s nmctli device status
-s nmcli device status
-sudo nmcli connection add type bridge con-name bridge0 ifname bridge0
-sudo nmcli connection add type ethernet slave-type bridge     con-name 'Bridge connection 1' ifname enp7s0 master bridge0
-sudo nmcli connection up bridge0
-sudo nmcli connection modify bridge0 connection.autoconnect-slaves 1
-sudo nmcli device status
-sudo ufw allow in on bridge0
-vim nwbridge.xml
-sudo virsh net-define nwbridge.xml
-sudo virsh net-start nwbridge
-sudo virsh net-autostart nwbridge
-rm nwbridge.xml
-sudo virsh net-list --all
-virsh uri
-s virsh uri
-sudo usermod -aG libvirt $USER
-echo "export LIBVIRT_DEFAULT_URI='qemu:///system'" >> ~/.bashrc
-ls /var/lib/libvirt/images/
-sudo setfacl -R -b /var/lib/libvirt/images
-sudo setfacl -R -m u:$USER:rwX /var/lib/libvirt/images
-sudo setfacl -m d:u:$USER:rwx /var/lib/libvirt/images
-getfacl /var/lib/libvirt/images
-touch /var/lib/libvirt/images/test_file
-ls -l /var/lib/libvirt/images/
-rm /var/lib/libvirt/images/test_file
-ctl stauts tuned
-ctl start tuned
-kvm
-qemu
-virt-manager
-w virt-manager
-ps virt-manager
-pi virt-manager
-lsusb
-cd var/lib/libvirt/images/
-cd /var/lib/libvirt/images/
-cd win10.qcow2 
-lo *.vmx
-lo vmx
-lo .vmx
-lo qemu
-sn /etc/libvirt/qemu.conf
-sudo usermod -aG usb libvirt adm $USER 
-ps usbredir
-pi usbredir
-pi 
-pi qemu-hw-usb-redirect
-sudo pacman -S qemu-full libvirt virt-install virt-manager virt-viewer     edk2-ovmf swtpm qemu-img guestfs-tools libosinfo --needed
-ctl status virsh
-ctl status qemu
-nvidia-smi
-b1
-hyprctl layers
-grep layer .config/waybar/*
-fg
-comm qpacman.lst lpacman.lst 
-comm qpacman.lst lpacman.lst > ~/Documents/all
-ps aquamarine
-ps dnsmasq
-ps dosfstools
-ps gmtp
-ps grim
-ps guestfs-tools
-ps hdparm
-ps hostapd
-ps hyprgraphics
-ps libosinfo
-ps libpulse
-ps libvirt
-ps nmap
-ps slurp
-ps swtpm
-ps tumbler
-ps stow
-ps wireplumber
-n ~/Documents/base-inst
-mv ~/Documents/base-inst ~/Documents/basep
-cd ~/Documents/
-n basep 
-n all 
-n dostolinux.txt 
-n ~/Documents/all
-rm ~/Documents/all
-comm qaur.lst laur.lst > ~/Documents/all
-ps aces-container
-y aces-container
-y aurutils
-y checkupdates-with-aur
-y ctl
-y hyprevents-git
-y libglade
-y pygtk
-y simple-mtpfs
-y hyprutils-git
-n basea
-rm all dostolinux.txt 
-mv * ~/dotfiles/misc/
-n installation 
-pacman -Q | rg archlinux-keyring
-sn /etc/pacman.conf 
-s pacman -Syyu
-pacman -Qi
-cd go
-cd pkg/
-cd mod/
-ע
-y
-grep -q '^input:' /etc/group
-sn /etc/group
-cd fastfetch/
-cd fastfetch
-n config.jsonc.backup 
-head /var/log/pacman.log
-awk -F "[[ ]" 'NR==1 {print $2;}' /var/log/pacman.log
-ps pipewire-audio
-SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-echo SCRIPT_DIR
-SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )" && echo SCRIPT_DIR
-SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )" && echo $SCRIPT_DIR
-ctl status pipewire.socket
-ctl status pipewire-pulse.socket
-ps  xdg-desktop-portal-gtk
-pi  xdg-desktop-portal-gtk
-cd uwsm
-n hypridle.conf
-comm qpacman.lst basep
-n basp
-xsd
-ps usbutils
-ps edk2-ovmf
-n basep
-cd  misc/
-comm qaur.lst basea
-y hyprshade
-pi zram-generator
-sn /run/systemd/zram-generator.conf
-lo zram-generator.conf
-sn /etc/systemd/zram-generator.conf
-sn /etc/fstab 
-$EUID
-pacman -Qq | grep -qw '^pulseaudio$'
-pacman -Qq 
-comm qfull.lst qpacman.lst 
-n ~/bin
-n ~/bin/cpinst.sh 
-rm qfull.lst 
-comm qfullpac.lst qpacman.lst 
-w less
-rm qfullpac.lst 
-pacman -Q | grep hyprland-nvidia
-ps hyprland-nvidia
-y hyprland-nvidia
-y hyprland-nvidia-git
-cat /usr/lib/modules/*/pkgbase
-cat ${krnl}-headers"
-sn /etc/modprobe.d/nouveau.conf
-cd /etc/modprobe.d/
-n nvidia.conf 
-pacman -Q | grep cliphist
-ps cliphist
-cat /etc/shells 
-declare -p
-pwdfile
-rr xfce4 
-n bookmark-metadata 
-bup
-ps ssmtp
-ps mail
-ps smtp
-dbxtool --list | grep
-dbxtool --list | grep 'cdb7c90d3ab8833d5324f5d8516d41fa990b9ca721fe643fffaef9057d9f9e48'
-ps dbxtool
-pi dbxtool
-dbxtool --list | grep 'e9e4b5a51f6a5575b9f5bfab1852b0cb2795c66ff4b28135097cba671a5491b9'
-s dbxtool --list | grep 'e9e4b5a51f6a5575b9f5bfab1852b0cb2795c66ff4b28135097cba671a5491b9'
-ps lvfs
-y lvfs
-ps fwupd
-cd /boot
-cd efi
-cd EFI/
-pi fwupd
-fwupdmgr get-devices
-fwupdmgr refresh
-fwupdmgr get-updates
-fwupdmgr update
-fwupdmgr refresh --force
-ps gnome-software
-fwupdmgr --force refresh 
-cd bin/
-n bin/cpinst.sh 
-pwd
-n inst.sh
-ch inst.sh 
-./inst.sh 
-n inst.sh 
-./ inst.sh 
-./inst.sh -x
-cd ~
-SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )") && echo SCRIPT_DIR
-$pwd
-echo $pwd
-echo "$pwd"
-echo pwd
-$HOME
-cd $HOME
-cd-
-pwd != $HOME
-"pwd"
-"$HOME"
-cd "$( dirname "${BASH_SOURCE[0]}" )"
-echo cd
-n inst.sh -l
-test -d $HOME && cd $HOME
-test -d $HOME 
-test -d $HOME && echo not
-xargs cd
-xargs cd ~
-xargs --help
-xargs cd "$HOME"
-xargs -r cd "$HOME"
-xargs "cd $HOME"
-xargs (cd $HOME)
-xargs cd ($HOME)
-home
-./..
-$~
-cd $~
-cd "$~"
-cd "$HOME"
-cd-backward
-bash cd
-bash $HOME
-atesting/inst.sh 
-./inst.sh  -x
-./inst.sh  
-tty --help
-atesting/inst.sh  
-mv inst.sh instp.sh 
-gps
-ls /var/run/daemons
-service --status-all | grep "+"
-ps -e | grep -e d$ -e daemon
-ctl
-ctl --all
-ctl status display-manager.target
-cd git/
-n instp.sh 
-ch instaur.sh 
-./instaur.sh 
-cd ~/git
-cd ~/gita
-rr gita
-rr ~/gita
-echo $PWD
-n instaur.sh
-mv instaur.sh aur.sh
-mv instp.sh pac.sh
-n aur.sh 
-n pac.sh 
-cp aur.sh a.sh
-./a.sh 
-n a.sh -l
-cd gita/
-rr gita/
-n a.sh 
-cp pac.sh p.sh
-./p.sh 
-n p.sh 
-rm a.sh p.sh 
-md 00inst
-mv aur.sh pac.sh ~/dotfiles/00inst/
-mv ~/Downloads/pacman.sh .
-ch pacman.sh 
-./pacman.sh 
-n pacman.sh 
-mv pacman.sh ~/dotfiles/00inst/
-cd 00inst/
-mv ~/Downloads/nvidia.sh .
-ch nvidia.sh 
-mv pacman.sh confpac.sh
 n nvidia.sh 
-./nvidia.sh 
-mv nvidia.sh ~/dotfiles/00inst/
-ps libva-nvidia-driver
-y libva-nvidia-driver
-y lib32-nvidia-utils
-mv ~/Downloads/InputGroup.sh .
-mv InputGroup.sh inputG.sh
-ch inputG.sh 
-n inputG.sh 
-./inputG.sh 
-mv inputG.sh ~/dotfiles/00inst/
-ps qt6-declarative 
-cd 00
-cd dotfiles
-n stow.sh
-n sthypr.sh
-n stow.sh 
-cp stow.sh ss.sh
-md hhhypr
-n ss
-cd ~/atesting/
-n ss.sh 
-ch ss.sh 
-./ss.sh 
-rm ss.sh sthypr.sh 
-ch stow.sh 
-stow hypr/
-./a.sh -x
-rm -rf .config/hypr/
-rm ss.sh 
-mv stow.sh ~/dotfiles/00inst/
-cd FreeTube/
-n ftstow.sh
-cp ftstow.sh ft.sh
-ch *
-md FreeTubee
-n ft.sh 
-./ft.sh 
-rm ft.sh 
-mv ftstow.sh ~/dotfiles/00inst/
-ctl status cups
-ctl status fstrim
-ctl status timeshift
-ctl status systemd-zram-setup@zramN.service
-ctl status systemd-zramN.service
-ctl status systemd-zram0.service
-ctl status zram0.service
-ctl status zram
-zramctl
-n /etc/systemd/zram-generator.conf
-ctl systemd-zram-setup@zram0.service
-ctl status systemd-zram-setup@zram0.service
-ctl enable systemd-zram-setup@zram0.service
-n 01stable.sh 
-n a1zram.sh 
-n active.sh
-n zram.sh
-cd /etc/systemd/zram-generator.conf /etc/systemd/zram-generator.conf.bup
-s cp /etc/systemd/zram-generator.conf /etc/systemd/zram-generator.conf.bup
-cd /etc/systemd/
-./zram.sh 
-n zram-generator.conf
-mv zram.sh ~/dotfiles/00inst/
-n active.sh 
-./ active.sh 
-./active.sh 
-ctl staus NetworkManager
-ctl status NetworkManager
-ctl status networkmanager
-s rm zram-generator.conf.bup 
-mv active.sh ~/dotfiles/00inst/
-h | rg ctl
-n zram.sh 
-v stow.sh 
-cd uwsm/
-cd .config/uwsm/
-v keybind.conf 
-cd gtk-40
-cd gtk-4.0/
-cd systemd/
-cd user/
-ctl status systemd-resolved
-sn /etc/resolv.conf
-ctl status systemd-networkd
-cd /etc/systemd/network/
-cdf 
-n grub.sh
-ch grub.sh 
-n grub.sh 
-./grub.sh 
-n icons.sh
-ch icons.sh 
-./icons.sh 
-n icons.sh -l
-n icons.sh 
-y pyprland
-h | hyprshade
-h | rg hyprshade
-n blue-light-filter.glsl 
-hyprshade on
-hyprshade on --help
-hyprshade on blue-light-filter
-hyprshade off
-hyprshade auto
-rr dotfiles/
-git clone https://github.com/angelogreko888/dotfiles
-hypershade install
-n gitpull
-ch gitpull 
-./gitpull 
-n gitpull 
-y pypr
-pypr
-lo pypr
-uwsm app -- /usr/bin/pypr
-ctl status pypr
-n /run/user/1000/hypr/0bd541f2fd902dbfa04c3ea2ccf679395e316887_1737698726_1388145110/.pyprland.sock
-cd /run/user/1000/hypr/0bd541f2fd902dbfa04c3ea2ccf679395e316887_1737698726_1388145110/
-n .pyprland.sock 
-s rm .pyprland.sock 
-n monitor.conf 
-n qaur.lst 
-n au
-h | rg fwupd
-y -Syy
-gitpull 
-ip link
-sn /etc/netctl/bridge
-cd /etc/netctl/
-n eq.sh
-n dq.sh
-./dq.sh 
-sudo systemctl disable libvirtd.service
-sudo systemctl stop libvirtd.service
-lscpu | grep -i Virtualization
-sudo systemctl disable tuned.service
-sudo nmcli connection down bridge0
-./eq.sh 
-n eq.sh 
-sui  qemu-full qemu-img libvirt virt-install virt-manager virt-viewer edk2-ovmf dnsmasq swtpm guestfs-tools libosinfo tuned
-pui  qemu-full qemu-img libvirt virt-install virt-manager virt-viewer edk2-ovmf dnsmasq swtpm guestfs-tools libosinfo tuned
-pui qemu-base qemu-system-x86  qemu-full qemu-img libvirt virt-install virt-manager virt-viewer edk2-ovmf dnsmasq swtpm guestfs-tools libosinfo tuned
-ps libvirtd
-pacman -Qe
-pacman -Qqe | grep -v "$(pacman -Qqm)" >pacman.lst
-comm qpacman.lst ~/pacman.lst 
-ps qemu-hw-usb-redirect
-pui qemu-hw-usb-redirect
-pacman -Qqm >aut.lst
-comm aut.lst ~/dotfiles/misc/qaur.lst 
-pacman -Qe | grep -v "$(pacman -Qqm)" >pacman.lst
-comm pacman.lst ~/dotfiles/misc/qpacman.lst 
-pacman -Qe | awk '{print $1}' | grep -v "$(pacman -Qqm)" >pacman.lst
-pypr stop
-cp .bash_history ~/atesting/
-n bash-history
-mv bash-history bh.sh
-ch bh.sh 
-./bh.sh 
-n bh.sh 
-n bh
-n .bash_history 
-mv bh ~/bin
-mv bh.sh ~/bin
-rm bh
-cd ~/bin
-./bh.sh q
-rm hbash 
-n qhbash 
-rm pacman.lst aut.lst 
-n backup.sh 
-mv bh.sh bh
-bh
-bh q
-n k
-cat /etc/group | rg vboxusers
-n /etc/group 
-ps librv
-w qemu
-pui qemu
-w libvirt
-lo libvirt
-pacman -Q | rg libvirt
-pacman -Q | rg qemu
-pacman -Q >qqq
-n qqq 
-rm qqq
-cd /var/lib/libvirt/qemu
-cd images/
-cd dnsmasq/
-cd libvirt/
-cd qemu/
-cd snapshot/
-rm libvirt/
-rr libvirt/
-lo libvirt > q
-s rr - < q
-lo libvirt 
-s rr /etc/libvirt/
-s rr /var/lib/libvirt/
-s rr /var/log/libvirt
-log qemu
-cd /usr/share/icons/buuf-nestort/mimetypes/
-open application-x-qemu-disk.png
-sn /usr/include/linux/qemu_fw_cfg.h
-sn /usr/include/qt/QtGui/5.15.16/QtGui/private/qemulationpaintengine_p.h
-hb 
-n lhbash 
-cd var/
-cd lo
-cd log/
-cd db/
-today
-y ansiweather
-ansiweather -l jerusalem
-ansiweather -l jerusalem -a true
-ansiweather -l jerusalem -a false
-ansiweather -l jerusalem -a false -F
-yui ansiweather
-cd /etc/pacman.d
-cd hooks/
-n nvidia.hook 
-pacman -Q | grep nvidia
-sn nvidia.hook 
+u
+..
+l
 s reflector --protocol https --age 12 --country Israel --sort rate --number 10 --verbose 
 n mirrorlist
+cdf
+cd nouse/
+cd rootmisc/
+n mirrorlist 
 s reflector --protocol https --age 12 --country Cyprus --sort rate --number 10 --verbose 
 n mirrorlist.pacnew 
 cp mirrorlist.pacnew ~/dotfiles/nouse/rootmisc/
 bh 
+bh q
+cpinst.sh q
+g
+gg
+h | rg ctl
+b
+cdf 
+cd 00inst/
+n zram.sh 
+sn /etc/systemd/zram-generator.conf
+cd /
+cpk
+cpd
+nb 
 sudo pacman -Scc 
+nu
+ff
+cd /etc/pacman.d
 md hook2
 s mkdir hook2
 s rr hook2/
 cd /etc/pacman.d/
 sudo mkdir /etc/pacman.d/hooks1
 s rr hooks1
+cd
+cdd
 curl https://support.brother.com/g/b/downloadhowto.aspx?c=eu_ot&lang=en&prod=mfc1910w_eu_as&os=128&dlid=dlf105191_000&flang=4&type3=10530
 cuel https://download.brother.com/welcome/dlf105191/brmfcfaxdrv-2.0.2-1.amd64.deb
 curl https://download.brother.com/welcome/dlf105191/brmfcfaxdrv-2.0.2-1.amd64.deb
 curl -O https://download.brother.com/welcome/dlf105191/brmfcfaxdrv-2.0.2-1.amd64.deb
+cd atesting/
+rm *
+cd misc/
+n qaur.lst 
 n printbr
 ch printbr 
 ./printbr 
@@ -1341,12 +55,18 @@ mv pbr pbr.sh
 n pbr.sh 
 sudo pacman -S --needed ffmpeg gstreamer mesa 
 cat /proc/acpi/wakeup
+gp
+n active.sh 
 doas pacman -Sy --needed archlinux-keyring
 s pacman -Sy --needed archlinux-keyring
 s pacman -Qu
 cd /var/run/NetworkManager/system-connections/
+ip a
 sn myhotspot.nmconnection
+sudo ufw route allow in on wlan0 out on eno1
 sudo ufw route allow in on eno1 out on wlan0
+sudo ufw status verbose
+gu
 sudo ufw route allow in on enp7s0 out on wlan0
 sudo ufw route allow in on wlan0 out on enp7s0
 n lo.nmconnection 
@@ -1356,19 +76,28 @@ s mv myhotspot.nmconnection myhotspot.nmconnection.bup
 cd /var/log/
 n gufw.log 
 n lastlog 
+iw list
 ps hostpad
+ps hostapd
 sn /etc/hostapd/hostapd.conf
 cd /etc/hostapd/
 s cp hostapd.conf hostapd.conf.bup
 sn hostapd.conf
 s mv hostapd.conf.bup hostapd.conf
+n qpacman.lst 
+pui hostapd
 ctl staus avahi
+ctl status avahi
+ctl status avahi-daemon
+ctl stop avahi-daemon
 ctl stop avahi-daemon.socket
 ctl status avahi-daemon.socket
+pi hostapd
 sudo hostapd ./hostapd.conf
 n hostapd.conf
 pi  	virtualbox
 pi virtualbox-host-modules-arch
+bb
 sn /usr/lib/modules-load.d/virtualbox-host-modules-arch.conf
 sn /usr/lib/modules-load.d/virtualbox-host-modules-lts.conf
 sn /usr/lib/modules-load.d/virtualbox-host-dkms.conf
@@ -1378,7 +107,9 @@ s cp /usr/lib/modules-load.d/virtualbox-host-modules-arch.conf /usr/lib/modules-
 modprobe vboxdrv
 s modprobe vboxdrv
 cddf
+n inputG.sh 
 sudo usermod -aG vboxusers "$(whoami)"
+id vago
 pi  	virtualbox-guest-iso
 y virtualbox-ext-oracle 
 y virtualbox-ext-vnc 	
@@ -1389,7 +120,148 @@ md vb
 lsmod |grep kvm
 sudo rmmod kvm_intel
 pi  	virtualbox-guest-utils
+chh
+n autostart.conf 
+n.
 VBoxManage internalcommands dumphdinfo storage.vdi | grep "offData"
+lk
 ps virtual-guest-iso
 ps virtualbox-guest-iso
 s pacman -Syy linux-headers
+n /etc/pacman.conf 
+yd
+cd librew
+cd .librewolf/
+n profiles.ini 
+n installs.ini 
+cd XiaomiADBFastbootTools/
+n apps.yml 
+cd .nv
+cg
+cd yay/
+git pull
+exit
+hyprland
+h | rg open
+h | rg xdg-open
+checkupdates
+checkupdates-with-aur
+checkupdates-with-aur --verbose
+pacman -Qm | aur vercmp
+n ~/.config/mimeapps.list
+sn /usr/bin/xdg-open
+n .local/share/applications/mimeapps.list
+cd .local/share/applications/
+vwc
+vws
+waybar
+cd journal/
+n 0a077fcb483b4708ae77b568d8e002d2/
+sn 0a077fcb483b4708ae77b568d8e002d2/
+cd 0a077fcb483b4708ae77b568d8e002d2/
+sn system.journal 
+....
+cd log/
+t
+sudo pacman -Syyu
+sudo pacman -Scc
+sudo pacman -Rns $(pacman -Qdtq)
+df -h
+n input.conf 
+y skype-secure 
+y skype
+n
+du -h
+free -h
+cd nouse/gnome-i3/
+cd i3-gonome-stable/
+n fz
+n b5fzf.sh 
+cd polybar/
+cd .config/polybar/
+n config.ini
+cat /sys/module/nvidia_drm/parameters/modeset
+s cat /sys/module/nvidia_drm/parameters/modeset
+w polkit
+ps polkit
+pi sway
+sway
+cd /etc/xdg/
+lo sway
+cd /etc/sway/config
+cc
+md sway
+cd sway
+cp /etc/sway/config .
+w fuzell
+n pac.sh 
+cd .config/backgrounds
+cd -
+ps swaylock
+pi swaylock
+pi swayidle
+n config 
+n basep 
+cd .config/sway
+cdf nouse/gnome-i3/
+cd i3
+n .config/i3/
+cd .config/i3/
+hyprctl monitors all
+n look.conf 
+grep font *
+cd waybar
+n config
+n style.css 
+swaymsg -t get_inputs
+ps swaymsg
+hyprctl input
+hyprctl 
+hyprctl devices 
+hyprctl devices | rg touchpad
+n config -l
+pi libxcb mesa libglvnd lib32-libglvnd egl-wayland xorg-xwayland libdrm vulkan-tools waybar wlr00ts-eglstreams-git
+ps wlr00ts-eglstreams
+y  wlr00ts-eglstreams-git
+cd nouse/gnome-i3/i3/
+.config/i3/
+n power.sh 
+n  ~/.xprofile
+h
+h | rg group
+sn /etc/groupsn 
+sn /etc/group
+ps seatd
+pi sddm
+ctl status ly
+ctl disable ly
+ctl status sddm
+ctl enable sddm
+ctl disable sddm
+rm .xprofile 
+cd /usr/share/wayland-sessions/
+n sway.desktop 
+sn sway.desktop 
+reboot
+sway --unsuppoe~rted-gpu
+sway --unsupported-gpu
+hyperland
+ctl enable ly
+sudo systemctl enable ly
+pui sway
+y sway-git
+y wlr00ts-eglstreams
+foot
+librewolf
+yui sway-git
+pui sddm
+pd
+cd /etc/pam.d/
+pui swaylock
+h | rg sway
+pui swayidle
+cd /home/vago/.config/sway
+rr sway
+lo sddm
+cd /home/vago/.local/share/sddm
+rr sddm

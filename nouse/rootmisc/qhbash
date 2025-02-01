@@ -319,3 +319,122 @@ cp baur ~/atesting/
 ./aur.sh 
 comm ../misc/qpacman.lst bpac 
 n ../misc/installation 
+cd bin
+n git.sh
+ch git.sh 
+./git.sh 
+n gitpull 
+n git.sh 
+n git.sh -l
+c
+mv gitpull bup-gitpull 
+mv git.sh gitpull.sh 
+mv gitpull.sh ~/bin
+cd 00
+journalctl
+n gitpull.sh 
+-cd
+-cdlf
+journalctl | grep feb 1
+ljournalctl | grep feb
+journalctl |grep feb
+journalctl | grep Feb
+cd uwsm
+n env
+n env-hyprland 
+lo uwsm_hyprland.desktop
+cd 
+cd /usr/bin/env
+sn /usr/bin/env
+sn /etc/profile
+cd /home/user/.config/environment.d/
+ps
+command ps
+nb
+hyprctl scale 1
+cat /sys/power/mem_sleep
+sn /etc/modprobe.d/nvidia.conf 
+sudo update-initramfs -u
+si
+s mkinitcpio -P
+ctl status nvidia-suspend.service
+cd /etc/modprobe.d
+n nvidia.conf 
+journalctl b
+sn nvidia.conf 
+journalctl -b
+nvidia-smi
+dmesg
+s dmesg
+sn /etc/fstab 
+s dmesg | rg PreserveVideoMemoryAllocations
+lsblk -f
+sn /etc/default/grub
+s cp  /etc/default/grub  /etc/default/grub.bup
+ug
+s dmesg 
+pacman -Q | rg nvidia
+pui lib32-nvidia-utils
+lo nvidia
+sn /etc/modules-load.d/nvidia.conf
+n /etc/systemd/system/systemd-hibernate.service.wants/nvidia-hibernate.service
+sn /etc/systemd/system/systemd-hibernate.service.wants/nvidia-hibernate.service
+sn /etc/systemd/system/systemd-hibernate.service.wants/nvidia-resume.service
+sn /etc/systemd/system/systemd-suspend.service.wants/nvidia-resume.service
+sn /etc/systemd/system/systemd-suspend.service.wants/nvidia-suspend.service
+n /home/vago/.nvidia-settings-rc
+rm /home/vago/.nvidia-settings-rc
+sn /etc/mkinitcpio.conf
+d 00inst/
+n backup.sh 
+./backup.sh 
+n bup
+./bup
+y fmc-1910w
+y mfc-1910w
+bup
+sn /etc/locale.gen
+sv /etc/locale.gen
+sv /etc/localtime
+cd /usr/share/zoneinfo/
+:q
+n /etc/vconsole.conf
+n /etc/hosts
+sn /etc/hosts
+pacman -Q | rg xdg-utils
+pacman -Q | rg gvfs
+pacman -Q | rg gvfs-smb
+pacman -Q | rg nfs-utils
+pacman -Q | rg inetutils
+pacman -Q | rg dnsutils
+pacman -Q | rg bash-completion
+pacman -Q | rg openssh
+pacman -Q | rg acpi
+pss acpi
+pacman -Q |rg nfs-utils
+pacman -Q |rg dnsutils
+pacman -Q |rg acpi
+ls -l /usr/lib/modules/$(uname -r)/kernel/drivers/acpi
+dmesg | grep -i acpi
+s dmesg | grep -i acpi
+pacman -Q |rg tlp
+pacman -Q |rg dnsmasq
+pacman -Q |rg vde2
+pacman -Q |rg openbsd-netcat
+pacman -Q |rg iptables-nft
+pacman -Q |rg ipset
+pacman -Q |rg nss-mdns
+pacman -Q |rg acpid
+n befi
+sort befi 
+n befi 
+sort befi > befi
+comm befi ~/dotfiles/00inst/bpac 
+n base-efi.sh
+n base-efi.sh 
+ctl status acpid
+ctl status cups
+su -
+mv * ~/dotfiles/00inst/
+yay -Yc
+pacman -Qtdq

@@ -11,6 +11,8 @@ ufw
 avahi-daemon
 upower
 nvidia-suspend.service
+acpid
+
 )
 
 for CTL in "${ctl[@]}";do

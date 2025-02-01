@@ -20,31 +20,4 @@ cd yay
 makepkg -si --noconfirm
 cd ~
 
-
-aur=(
-aic94xx-firmware
-android-sdk-platform-tools
-anydesk-bin
-ast-firmware
-aurutils
-bezier
-checkupdates-with-aur
-ctl
-freetube-bin
-hyprevents-git
-hyprprop-git
-hyprshade
-hyprshot
-libglade
-librewolf-bin
-pyprland
-simple-mtpfs
-timeshift-autosnap
-upd72020x-fw
-uwsm
-wd719x-firmware
-)
-
-for PKG in "${aur[@]}";do
-        yay -Su --needed --noconfirm "$PKG"
-done
+cat ~/dotfiles/00inst/baur | xargs yay -S --needed --noconfirm

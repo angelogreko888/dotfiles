@@ -1,0 +1,10 @@
+base-devel
+efibootmgr 
+grub 
+linux-headers
+networkmanager 
+pipewire
+pipewire-alsa
+pipewire-jack
+pipewire-pulse
+wpa_supplicant

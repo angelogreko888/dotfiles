@@ -3,6 +3,7 @@
 rm -rf ~/.cache/* 
 
 sleep 1
+
 ~/bin/bup &
 
 exit

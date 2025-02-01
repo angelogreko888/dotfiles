@@ -5,15 +5,12 @@ avahi
 aquamarine
 arc-gtk-theme
 arch-install-scripts
-base
-base-devel
 btop
 btrfs-progs
 cups
 cups-pdf
 dconf-editor
 dosfstools
-efibootmgr
 eog
 evince
 eza
@@ -32,7 +29,6 @@ gnome-disk-utility
 gnome-text-editor
 gparted
 grim
-grub
 grub-btrfs
 gst-plugin-pipewire
 gufw
@@ -57,10 +53,7 @@ kanshi
 less
 libpulse
 libreoffice-fresh
-linux
-linux-firmware
 linux-firmware-qlogic
-linux-headers
 ly
 mtools
 nano
@@ -73,10 +66,6 @@ nwg-look
 pacman-contrib
 pamixer
 pavucontrol
-pipewire
-pipewire-alsa
-pipewire-jack
-pipewire-pulse
 plocate
 power-profiles-daemon
 python-pip
@@ -108,5 +97,6 @@ wireplumber
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 xdg-user-dirs
+xdg-utils
 yt-dlp
 zram-generator

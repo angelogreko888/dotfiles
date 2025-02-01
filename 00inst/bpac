@@ -1,3 +1,7 @@
+acpi
+acpi_call
+acpid
+avahi
 aquamarine
 arc-gtk-theme
 arch-install-scripts
@@ -5,6 +9,7 @@ base
 base-devel
 btop
 btrfs-progs
+cups
 cups-pdf
 dconf-editor
 dosfstools
@@ -31,6 +36,7 @@ grub
 grub-btrfs
 gst-plugin-pipewire
 gufw
+gvfs
 hdparm
 htop
 hyprgraphics

@@ -7,7 +7,7 @@ nvidia=(
   nvidia-utils
   libva
   libva-nvidia-driver
-  lib32-nvidia-utils
+ # lib32-nvidia-utils
 )
 
 for PKG in "${nvidia[@]}";do
@@ -22,20 +22,15 @@ else
   echo "Nvidia modules added in /etc/mkinitcpio.conf"
 fi
 
+
+#echo"
+#options nvidia-drm modeset=1 fbdev=1
+#options nvidia NVreg_PreserveVideoMemoryAllocations=1 
+#" | sudo tee /etc/modprobe.d/nvidia.conf 
+
+
 sudo mkinitcpio -P 
 
-
-# Additional Nvidia steps
-NVEA="/etc/modprobe.d/nvidia.conf"
-if [ -f "$NVEA" ]; then
-  printf "nvidia... added in your system."
-  printf "\n"
-else
-  printf "\n"
-  printf "Adding options to $NVEA..."
-  sudo echo -e "options nvidia_drm modeset=1 fbdev=1" | sudo tee -a /etc/modprobe.d/nvidia.conf 
-  printf "\n"
-fi
 
 # GRUB
 # Check if /etc/default/grub exists

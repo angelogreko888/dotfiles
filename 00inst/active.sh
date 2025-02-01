@@ -10,7 +10,7 @@ NetworkManager
 ufw
 avahi-daemon
 upower
-
+nvidia-suspend.service
 )
 
 for CTL in "${ctl[@]}";do

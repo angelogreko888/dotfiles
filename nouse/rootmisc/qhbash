@@ -265,3 +265,57 @@ rr sway
 lo sddm
 cd /home/vago/.local/share/sddm
 rr sddm
+n hypridle.conf
+n hyprlock.conf 
+n monitor.conf 
+n keybind.conf 
+hyprlock
+hypridle
+ps xorg-xinput
+loginctl session-status
+mv hyprlock.conf hyprlock.conf.bup
+n hyprlock.conf
+(hyprlock & sleep 1s && systemctl suspend)
+n hyprlock
+n hyprlock.conf.bup 
+comm ~/dotfiles/misc/qpacman.lst ~/dotfiles/00inst/pac.sh 
+n pac
+comm ~/dotfiles/misc/qpacman.lst pac
+ps uwsm
+y uwsm
+yui uwsm
+pi uwsm
+ps dbxtool
+pacman -Si dbxtool
+n  ~/dotfiles/00inst/pac.sh 
+n  ~/dotfiles/00inst/aur.sh 
+cp ~/dotfiles/00inst/pac.sh .
+mv pac bpac
+mv pac.sh pacc.sh 
+./pacc.sh 
+ps cat
+w cat
+n pacc.sh 
+pacma -Si jack2
+pacman -Si jack2
+pacman -Si pipewire-jack
+110201
+pui jack2
+pui pipewire-jack
+pi pipewire-jack
+comm ~/dotfiles/misc/qpacman.lst bpac 
+n installation 
+ps libpulse
+ps slurp
+n bpac 
+mv ~/atesting/bpac .
+n aur.sh 
+comm ../misc/qaur.lst baur 
+pacman -Si pygtk
+y pygtk
+n baur
+cp aur.sh ~/atesting/
+cp baur ~/atesting/
+./aur.sh 
+comm ../misc/qpacman.lst bpac 
+n ../misc/installation 

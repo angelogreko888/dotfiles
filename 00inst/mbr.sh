@@ -11,7 +11,7 @@ echo "::1       localhost" >> /etc/hosts
 echo "127.0.1.1 greco.localdomain greco" >> /etc/hosts
 echo root:password | chpasswd
 
-pacman -S --needed --noconfirm base-devel efibootmgr grub linux-headers networkmanager pipewire pipewire-alsa pipewire-jack pipewire-pulse wpa_supplicant
+pacman -S --needed --noconfirm base-devel grub linux-headers networkmanager pipewire pipewire-alsa pipewire-jack pipewire-pulse wpa_supplicant
 
 grub-install --target=i386-pc /dev/XXX
 grub-mkconfig -o /boot/grub/grub.cfg

@@ -1,10 +1,10 @@
 acpi
 acpi_call
 acpid
-avahi
 aquamarine
 arc-gtk-theme
 arch-install-scripts
+avahi
 btop
 btrfs-progs
 cups
@@ -59,8 +59,8 @@ mtools
 nano
 ncdu
 nemo
-network-manager-applet
 networkmanager
+network-manager-applet
 nmap
 nwg-look
 pacman-contrib

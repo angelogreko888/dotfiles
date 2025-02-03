@@ -11,6 +11,8 @@ ufw
 avahi-daemon
 upower
 nvidia-suspend.service
+nvidia-hibernate.service
+nvidia-hibernate.service
 acpid
 
 )

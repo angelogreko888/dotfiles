@@ -52,7 +52,7 @@
     "webSockets": "block_3rd_party"
   },
   "profile": {
-    "selected": "macOS",
+    "selected": "mac3-ff",
     "interval": {
       "option": 5,
       "min": 1,

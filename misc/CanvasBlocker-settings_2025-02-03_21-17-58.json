@@ -53,7 +53,7 @@
 	"audioFixedIndices": "10",
 	"historyLengthThreshold": 2,
 	"protectWindow": true,
-	"allowWindowNameInFrames": false,
+	"allowWindowNameInFrames": true,
 	"protectDOMRect": true,
 	"domRectIntegerFactor": 4,
 	"protectSVG": true,

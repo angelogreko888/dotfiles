@@ -438,3 +438,162 @@ su -
 mv * ~/dotfiles/00inst/
 yay -Yc
 pacman -Qtdq
+cd ../nouse/rootmisc/
+n qhbash 
+...
+mv base-efi.sh efi.sh 
+n efi.sh 
+cd ../../atesting/
+n a
+sort a -o a
+rm a
+sort baur -o baur 
+sort bpac  -o bpac 
+cd ../misc/
+n base
+n basea
+comm qpacman.lst ../00inst/bpac 
+sort qpacman.lst -o qpacman.lst 
+cd 00inst
+sort qaur.lst -o qaur.lst 
+comm qaur.lst ../00inst/baur 
+y virtio-win
+pacman -Si virtio-win
+y -Si virtio-win
+yui virtio-win
+fwupdmgr
+fwupdmgr refresh
+cd ../../bin
+pp
+ctl status systemd-modules-load.service
+ctl enable systemd-modules-load.service
+pss weston
+ctl suspend
+n mbr.sh
+ch mbr.sh 
+mv mbr.sh ~/dotfiles/00inst/
+pss gnome-extra
+ls -ld
+n mbr.sh 
+rm befi 
+ע
+cat /proc/driver/nvidia/params | sort
+ctl status nvidia-hibernate.service
+cd active.sh 
+nvidia-smi --query-gpu=memory.total --format=csv,noheader,nounits
+sn /usr/lib/systemd/system-sleep/nvidia
+w sh
+cd /bin
+l | rg sh
+d
+pss gdm
+pacmna - Si gdm
+pacmna -Si gdm
+pacman -Si gdm
+pss sddm
+pacman -Si sddm
+pacman -Si ly
+ctl stop sddm
+./nvidia.sh 
+sn sudo tee /etc/pacman.d/hooks/nvidia.hook
+sn /etc/pacman.d/hooks/nvidia.hook
+cd /etc/pacman.d/hooks/
+s rn nvidia.hook 
+s rm nvidia.hook 
+n nvidia.hook 
+pss linux
+pi libva-nvidia-driver
+n hyprlo
+cd kanshi
+hypr
+cd hypr
+lo systemd-sleep.conf
+sn /etc/systemd/sleep.conf.d/mem-deep.conf
+sn /sys/power/mem_sleep
+pi acpi
+dmesg | grep DSDT
+s dmesg | grep DSDT
+cd /usr/initcpio/acpi_override/
+cd /usr/initcpio/
+cd /kernel/firmware/acpi/
+cd /kernel/firmware/
+cd /kernel/
+lo dsdt.aml
+sn /etc/systemd/sleep.conf.d/freeze.conf
+cat /sys/block/zram0/comp_algorithm
+ctl systemd-zram-setup@zram0.service
+zramctl
+sn /sys/power/resume
+lk -f
+filefrag -v /swapfile
+s dmesg | grep nvidia
+pacman -Q | grep  nvidia
+pi nvidia-dkms nvidia-utils libva-nvidia-driver
+s pacman -Su nvidia-dkms nvidia-utils libva-nvidia-driver
+lspci -k -d ::03xx
+sn /etc/booster.yaml
+/usr/lib/booster/regenerate_images
+sn /usr/lib/booster/regenerate_images
+s rm /etc/booster.yaml
+pi linux-headers
+sudo pacman -S nvidia-utils
+s pacman -Rns nvidia-dkms nvidia-utils libva-nvidia-driver
+n nv
+sn /etc/modprobe.d/nvidia.conf
+pui libva
+s pacman -S nvidia-dkms nvidia-utils libva-nvidia-driver
+sn /etc/modeset.d/nvidia.conf
+cd /var/lib/dkms/nvidia/
+cd 565.77/
+cd build/
+n make.log 
+s rm /etc/modprobe.d/nvidia.conf
+s rm /etc/modules-load.d/nvidia.conf
+s rm /etc/pacman.d/hooks/nvidia.hook
+pi libva-nvidia-drivers
+n kanshi
+ts
+h | rg pi
+w acpi
+ctl status acpi
+pss acpid
+pi acpid
+ctl enable --now acpid
+n lpacman.lst 
+ctl status sshd
+ctl start sshd
+ping -c 3 192.168.1.104
+ssh vago@192.168.1.104
+x ssh
+foot --default
+man foot
+foot sh -c
+foot sh -c ssh vago@192.168.1.104
+foot sh -c goot
+foot sh -c foot
+foot sh -c ssh
+foot sh -c 'ssh vago@192.168.1.104'
+foot sh -c ssh 'vago@192.168.1.104'
+x foot
+man
+w man
+pi man
+foot -o
+foot -o main
+foot -o default
+foot -T
+foot -T ssh
+foot - ssh
+foot -t ssh
+foot -m
+foot -s
+foot -e
+foot -l never
+foot -pty
+foot -f
+foot -f monospace
+foot -t foot
+foot -T foot
+foot -p
+pss man
+pss man-db

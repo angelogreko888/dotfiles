@@ -1,3 +1,5 @@
+acpi
+acpid
 arc-gtk-theme
 arch-install-scripts
 base
@@ -49,11 +51,13 @@ jdk-openjdk
 kanshi
 less
 libreoffice-fresh
+libva-nvidia-driver
 linux
 linux-firmware
 linux-firmware-qlogic
 linux-headers
 ly
+man-db
 mtools
 nano
 ncdu
@@ -62,6 +66,7 @@ network-manager-applet
 networkmanager
 nmap
 nvidia-dkms
+nvidia-utils
 nwg-look
 pacman-contrib
 pamixer

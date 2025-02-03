@@ -7,7 +7,6 @@ nvidia=(
   nvidia-utils
   libva
   libva-nvidia-driver
- # lib32-nvidia-utils
 )
 
 for PKG in "${nvidia[@]}";do
@@ -21,13 +20,6 @@ else
   sudo sed -Ei 's/^(MODULES=\([^\)]*)\)/\1 nvidia nvidia_modeset nvidia_uvm nvidia_drm)/' /etc/mkinitcpio.conf 
   echo "Nvidia modules added in /etc/mkinitcpio.conf"
 fi
-
-
-#echo"
-#options nvidia-drm modeset=1 fbdev=1
-#options nvidia NVreg_PreserveVideoMemoryAllocations=1 
-#" | sudo tee /etc/modprobe.d/nvidia.conf 
-
 
 sudo mkinitcpio -P 
 
@@ -81,29 +73,6 @@ if [[ $blacklist_nouveau =~ ^[Yy]$ ]]; then
 else
   printf "Skipping nouveau blacklisting..." 
 fi
-
-
-if ! [ -d /etc/pacman.d/hooks ]; then
-	sudo mkdir /etc/pacman.d/hooks
-fi
-
-echo "
-[Trigger]
-Operation=Install
-Operation=Upgrade
-Operation=Remove
-Type=Package
-Target=nvidia-dkms
-Target=linux
-
-[Action]
-Description=Updating NVIDIA module in initcpio
-Depends=mkinitcpio
-When=PostTransaction
-NeedsTargets
-Exec=/bin/sh -c 'while read -r trg; do case $trg in linux*) exit 0; esac; done; /usr/bin/mkinitcpio -P'
-" | sudo tee /etc/pacman.d/hooks/nvidia.hook
-
 
 
 echo "Done!!!"

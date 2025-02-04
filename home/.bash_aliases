@@ -101,7 +101,7 @@ alias ggp='sudo -sE gparted'
 alias ug='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 
 alias cpk='du -sh /var/cache/pacman/pkg/'
-alias cpd='sudo pacman -Scc --noconfirm && yay -Scc --noconfirm'
+alias cpd='sudo pacman -Scc && yay -Scc'
 
 alias ccc='du -sh ~/.cache/'
 alias ccd='rm -rf ~/.cache/*'

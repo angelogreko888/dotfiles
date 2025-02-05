@@ -762,3 +762,15 @@
   when: 1738747418
   when: 1738747438
   when: 1738747462
+- cmd: n qhfish
+  when: 1738747476
+    - qhfish
+  when: 1738747580
+  when: 1738747608
+  when: 1738747610
+  when: 1738747623
+  when: 1738747690
+- cmd: ./cpinst.sh q
+  when: 1738747706
+  when: 1738747710
+  when: 1738747745

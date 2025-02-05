@@ -1046,3 +1046,34 @@ y chekupdates-with-aur
 y updates-with-aur
 checkupdates-with-aur
 y aurutil
+hyprlock
+hypridle
+videoinfo
+s dmesg
+journalctl -b
+pacman -Q | rg nvidia
+lo nvidia
+sn /etc/systemd/system/systemd-hibernate.service.wants/nvidia-hibernate.service
+sn /etc/systemd/system/systemd-hibernate.service.wants/nvidia-resume.service
+sn /etc/systemd/system/systemd-suspend.service.wants/nvidia-resume.service
+sn /etc/systemd/system/systemd-suspend.service.wants/nvidia-suspend.service
+pacman -Q \ grep nvidia
+pacman -Q | grep nvidia
+sn /etc/modprobe.d/
+cd /etc/modprobe.d/
+cd /etc/modules-load.d/
+ctl status ssh
+ssh vago@192.168.105
+y rufus
+y rofus
+pi fish
+cd fish
+stow fish
+cd .local/share/fish
+fish
+cd ~/dotfiles/misc/
+cp qhfish ~/.local/share/fish/fish_history
+n qhfish 
+cd /etc/shells
+n /etc/shells
+chsh -s /usr/bin/fish

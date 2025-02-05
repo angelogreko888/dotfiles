@@ -14,12 +14,3 @@ sed -i '/git remote set-url origin /d' ~/hbash
 awk -i inplace '!seen[$0]++' ~/hbash
 
 mv ~/hbash  ~/dotfiles/nouse/rootmisc/$1hbash
-
-
-cp ~/.local/share/fish/fish_history  ~/hfish
-
-sed -i '/git remote set-url origin /d' ~/hfish
-
-awk -i inplace '!seen[$0]++' ~/hfish
-
-mv ~/hfish  ~/dotfiles/nouse/rootmisc/$1hfish

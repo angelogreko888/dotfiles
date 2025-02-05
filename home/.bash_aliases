@@ -65,7 +65,6 @@ alias ctl="sudo systemctl "
 alias open='xdg-open'
 alias spo='sudo systemctl poweroff'
 alias srb='sudo reboot'
-alias si='sudo update-initramfs -u'
 
 alias gc='git clone'
 alias gps='git push -u origin main'

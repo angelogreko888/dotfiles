@@ -17,5 +17,5 @@ function fish_prompt
         set stat (set_color red)"[$last_status]"(set_color normal)
     end
 
-    echo \n (set_color yellow)∋∈  ∋∈  ∋∈    (set_color green) (prompt_pwd)  (set_color red) $stat ' '
+    echo \n (set_color yellow)∋∈  ∋∈  ∋∈    (set_color green) (prompt_pwd --full-length-dirs 8)  (set_color red) $stat ' '
 end

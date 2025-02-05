@@ -299,7 +299,6 @@ n pacc.sh
 pacma -Si jack2
 pacman -Si jack2
 pacman -Si pipewire-jack
-110201
 pui jack2
 pui pipewire-jack
 pi pipewire-jack
@@ -597,3 +596,85 @@ foot -T foot
 foot -p
 pss man
 pss man-db
+pi man-db
+../misc/
+rm  CanvasBlocker-settings_2025-01-20_21-34-53.json chameleon_1737401664737.json
+n bup-gitpull 
+rm bup-gitpull 
+yu
+s reflector -v --country Israel --latest 10 --protocol https --sort rate
+s reflector --verbose --country Israel --latest 10 --protocol https --sort rate
+ml
+pm
+sn /etc/xdg/reflector/reflector.conf
+ll
+hyprctl monitors
+nwc
+journalctl -xe | grep -i suspend
+lo nvidia-resume.service
+sn /usr/lib/systemd/system/nvidia-resume.service
+n gtk-2.0
+cd gtk-2.0
+n gtkfilechooser.ini 
+cd gtk-3.0
+n settings.ini 
+cd gtk-4
+cd gtk-4.0/
+md -p gtk-4.0/.config
+mv gtk-4.0/ ~/dotfiles/gtk-4.0/.config/
+stow gtk-4.0/
+cd gtk-4.0
+n gtk-dark.css 
+n gtk.css 
+pss swayidle
+lo logind.conf.
+lo logind.conf
+systemd-analyze cat-config systemd/logind.conf
+sn /etc/systemd/logind.conf
+cdc
+cd distro/
+co lmde-6-cinnamon-64bit.iso 
+ch Win10_22H2_English_x64v1.iso 
+co Win10_22H2_English_x64v1.iso 
+chmod -x Win10_22H2_English_x64v1.iso 
+h | rg vb
+y cachy
+y cachy-browser
+yui cachy-browser
+lo
+lo cachy
+rr /home/vago/.cachy
+lk\
+h |rg vb
+pss fish
+pss fish | rg fish
+pi fish
+fish
+pui fish
+hyprshade off
+n .bash_history
+cd /etc/shells
+n /etc/shells
+cd fish/
+n config.fish 
+cd functions/
+n c.fish 
+lo fish
+n fish_variables 
+n /usr/share/fish/functions/N_.fish
+cd /home/vago/.local/share/fish/
+n fish_history 
+cd /etc/fish/conf.d
+cd /usr/share/fish/
+n functions/
+n realpath.fish 
+n cd.fish 
+cd completions/
+chsh -s /usr/local/bin/fish
+w fish
+cd /usr/local/
+cd /usr/local/bin/
+cd /usr/bin/
+l | rg fish
+chsh -s /usr/bin/fish
+sn /etc/shells

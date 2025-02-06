@@ -1,8 +1,8 @@
-export XCURSOR_SIZE=24
-export XCURSOR_THEME=radioactive-yellow
-export GTK_THEME=Arc-Dark
-export GTK_ICON_THEME=buuf-nestort
-export GTL_FONT=Cantarell 13
+env XCURSOR_SIZE=24
+env XCURSOR_THEME=radioactive-yellow
+env GTK_THEME=Arc-Dark
+env GTK_ICON_THEME=buuf-nestort
+env GTL_FONT=Cantarell 13
 
 
 env = EDITOR=nano foot

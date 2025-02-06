@@ -2,7 +2,7 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
-set fish_color_valid_path 
+set fish_color_valid_path  --bold
 
 set -g fish_greeting
 

@@ -1,5 +1,4 @@
 acpi
-acpid
 arc-gtk-theme
 arch-install-scripts
 base
@@ -79,6 +78,7 @@ plocate
 power-profiles-daemon
 python-pip
 qt5-wayland
+qt5ct
 qt6-wayland
 ranger
 reflector

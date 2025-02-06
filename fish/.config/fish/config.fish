@@ -2,6 +2,8 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
+set fish_color_valid_path --underline
+
 set -g fish_greeting
 
 set -l last_status $status

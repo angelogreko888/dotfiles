@@ -3,6 +3,7 @@ arc-gtk-theme
 base
 base-devel
 blueman
+brightnessctl
 btop
 btrfs-progs
 cups-pdf

@@ -815,3 +815,42 @@
   when: 1738784512
 - cmd: ./bh l
   when: 1738784531
+- cmd: ./cpinst.sh l
+  when: 1738784547
+  when: 1738784551
+  when: 1738784586
+  when: 1738784595
+  when: 1738793020
+  when: 1738956626
+- cmd: cd ~/dotfiles && git pull && cd -
+  when: 1738956637
+    - ~/dotfiles
+- cmd: yay -Rns art-rawconverter
+  when: 1738956754
+- cmd: nano  a
+  when: 1738956794
+    - a
+- cmd: sudo pacman -R - < a
+  when: 1738956977
+- cmd: sudo pacman -R opencolorio
+  when: 1738957053
+- cmd: sudo pacman -R opencolorio art-rawconverter
+  when: 1738957068
+  when: 1738957098
+- cmd: sudo pacman -Qdtq | sudo pacman -Rns
+  when: 1738957109
+  when: 1738957112
+  when: 1738957128
+- cmd: yay art-rawconverter
+  when: 1738957149
+- cmd: fastfetch
+  when: 1738957200
+  when: 1738957216
+  when: 1738957220
+- cmd: bash cpinst.sh
+  when: 1738957245
+- cmd: bash cpinst.sh l
+  when: 1738957272
+  when: 1738957294
+  when: 1738957302
+  when: 1738957313

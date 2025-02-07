@@ -350,7 +350,6 @@
 - cmd: cd ../../atesting/
 - cmd: sort a -o a
 - cmd: n a
-- cmd: rm a
 - cmd: cd -
 - cmd: sort baur -o baur
 - cmd: n base
@@ -365,7 +364,6 @@
 - cmd: y -Si virtio-win
 - cmd: yui virtio-win
 - cmd: fwupdmgr
-- cmd: fwupdmgr refresh
 - cmd: cd ../../bin
 - cmd: n bup
 - cmd: modprobe vboxdrv
@@ -478,7 +476,6 @@
 - cmd: n lpacman.lst
 - cmd: ctl start sshd
 - cmd: ctl status sshd
-- cmd: ip a
 - cmd: ping -c 3 192.168.1.104
 - cmd: ssh vago@192.168.1.104
 - cmd: x ssh
@@ -520,7 +517,6 @@
 - cmd: ../misc/
 - cmd: cd ../misc/
 - cmd: rm  CanvasBlocker-settings_2025-01-20_21-34-53.json chameleon_1737401664737.json
-- cmd: cd bin
 - cmd: n gitpull.sh
 - cmd: n bup-gitpull
 - cmd: rm bup-gitpull
@@ -661,8 +657,6 @@
     - ~/.local/share/fish/
 - cmd: bh q
   when: 1738747384
-- cmd: ./cpinst.sh q
-  when: 1738747706
 - cmd: rm qhfish
   when: 1738747955
     - qhfish
@@ -670,8 +664,6 @@
   when: 1738748140
 - cmd: n bpac
   when: 1738748158
-- cmd: cd 00inst/
-  when: 1738751837
 - cmd: sort bpac  -o bpac
   when: 1738751908
 - cmd: mv lfish/ fishlocal
@@ -685,9 +677,6 @@
   when: 1738759755
     - lhbash
     - qhbash
-- cmd: cd bin/
-  when: 1738759779
-    - bin/
 - cmd: awk -i inplace '!seen[$0]++' com
   when: 1738759808
     - com
@@ -722,8 +711,6 @@
 - cmd: cd .local/share/fish/
   when: 1738760900
     - .local/share/fish/
-- cmd: ./bh q
-  when: 1738761007
 - cmd: git rm fishlocal/**
   when: 1738761068
 - cmd: n qhfish
@@ -747,8 +734,6 @@
 - cmd: n yui.fish
   when: 1738763088
     - yui.fish
-- cmd: cd misc/
-  when: 1738763534
 - cmd: nb
   when: 1738763684
 - cmd: ccd
@@ -935,11 +920,6 @@
 - cmd: nano ~/.config/waybar/config
   when: 1738835407
     - ~/.config/waybar/config
-- cmd: cd ~/dotfiles && git add * && git commit -m "save" && git push -u origin main && cd -
-  when: 1738835417
-    - ~/dotfiles
-- cmd: cd ~/dotfiles && git status && cd -
-  when: 1738835420
 - cmd: set fish_color_valid_path --underline
   when: 1738835693
 - cmd: nano  conf/
@@ -951,8 +931,6 @@
   when: 1738835875
 - cmd: nano  config.fish
   when: 1738835880
-- cmd: history
-  when: 1738835939
 - cmd: cd functions/
   when: 1738836030
 - cmd: cd ..
@@ -963,18 +941,12 @@
     - ../..
 - cmd: cd /
   when: 1738836129
-- cmd: eza -a --color always --long --git --no-filesize --icons always --no-time --no-user --no-permissions
-  when: 1738836148
 - cmd: exa -lha
   when: 1738836159
-- cmd: cd
-  when: 1738836170
 - cmd: sudo  dmseg
   when: 1738836197
 - cmd: s dmesg | grep DSDT
   when: 1738836254
-- cmd: sudo  dmesg
-  when: 1738836286
 - cmd: free -h
   when: 1738836497
 - cmd: cat /proc/swaps
@@ -982,11 +954,6 @@
     - /proc/swaps
 - cmd: sudo filefrag -v /swapfile | awk '{ if($1=="0:"){print $4} }'\n
   when: 1738836562
-- cmd: sudo nano  /etc/default/grub
-  when: 1738836733
-- cmd: sudo grub-mkconfig -o /boot/grub/grub.cfg
-  when: 1738836806
-    - /boot/grub/grub.cfg
 - cmd: gsettings set org.gnome.desktop.interface scaling-factor 1
   when: 1738837418
 - cmd: nano  .gtkrc-2.0
@@ -994,25 +961,21 @@
     - .gtkrc-2.0
 - cmd: xdpyinfo|grep resolution
   when: 1738837529
-  when: 1738837733
-  when: 1738837738
 - cmd: sudo nano  /etc/mkinitcpio.conf
   when: 1738837798
 - cmd: sudo  mkinitcpio -P
   when: 1738837828
-  when: 1738837875
-- cmd: journalctl -p3 -xb --no-hostname
-  when: 1738838110
 - cmd: which  rfkill
   when: 1738838492
 - cmd: /usr/bin/rfkill bluetooth
   when: 1738838568
 - cmd: /usr/bin/rfkill block bluetooth
   when: 1738838588
+- cmd: journalctl -p3 -xb --no-hostname
   when: 1738838624
+- cmd: fwupdmgr refresh
   when: 1738838670
-  when: 1738838724
-  when: 1738846653
+- cmd: sudo  dmesg
   when: 1738846698
 - cmd: cat /sys/module/rtc_cmos/parameters/use_acpi_alarm
   when: 1738850719
@@ -1024,7 +987,6 @@
 - cmd: sudo nano  /sys/module/rtc_cmos/parameters/use_acpi_alarm
   when: 1738850916
 - cmd: journalctl -f
-  when: 1738851419
   when: 1738851509
 - cmd: sudo nano  /etc/acpi/handler.sh
   when: 1738851620
@@ -1041,7 +1003,146 @@
   when: 1738851798
 - cmd: sudo pacman -Rns acpid
   when: 1738851803
+- cmd: cd bin
   when: 1738851841
-    - bin
+- cmd: ./cpinst.sh q
   when: 1738851856
+- cmd: ./bh q
   when: 1738851867
+- cmd: cd 00inst/
+  when: 1738851909
+- cmd: nano  bpac
+  when: 1738851918
+    - bpac
+- cmd: sudo systemctl  disable nvidia-resume.service
+  when: 1738854278
+- cmd: sudo systemctl  status nvidia-resume.service
+  when: 1738854281
+- cmd: cd /etc/X11/
+  when: 1738854577
+    - /etc/X11/
+- cmd: sudo nano  /etc/default/grub
+  when: 1738854729
+- cmd: sudo pacman -Ss  hwinfo
+  when: 1738854848
+- cmd: sudo pacman -Su  hwinfo
+  when: 1738854862
+- cmd: hwinfo --framebuffer
+  when: 1738854883
+- cmd: sudo  hwinfo --framebuffer > a
+  when: 1738854913
+- cmd: nano  a
+  when: 1738854917
+    - a
+- cmd: rm a
+  when: 1738854927
+- cmd: videoinfo
+  when: 1738854946
+- cmd: sudo  hwinfo --framebuffer
+  when: 1738855026
+- cmd: sudo  hwinfo
+  when: 1738855040
+- cmd: sudo  hwinfo > hwinfo
+  when: 1738855597
+- cmd: sudo grub-mkconfig -o /boot/grub/grub.cfg
+  when: 1738855614
+    - /boot/grub/grub.cfg
+- cmd: nano  .config/fish/config.fish
+  when: 1738857015
+- cmd: cd bin/
+  when: 1738857049
+    - bin/
+- cmd: cd
+  when: 1738857057
+- cmd: ip a
+  when: 1738857229
+- cmd: history
+  when: 1738857264
+- cmd: cd ~/dotfiles && git status && cd -
+  when: 1738857329
+    - ~/dotfiles
+- cmd: sudo pacman -Syyu --noconfirm && yay -Syyu --noconfirm
+  when: 1738857355
+- cmd: cd ~/dotfiles && git add * && git commit -m "save" && git push -u origin main && cd -
+  when: 1738857787
+- cmd: cd ~/dotfiles/
+  when: 1738907377
+- cmd: cd misc/
+  when: 1738907383
+- cmd: cd ../00inst/
+  when: 1738907430
+    - ../00inst/
+- cmd: nano  baur
+  when: 1738907444
+    - baur
+- cmd: eza -a --color always --long --git --no-filesize --icons always --no-time --no-user --no-permissions
+  when: 1738907474
+- cmd: nano  qaur.lst
+  when: 1738907484
+    - qaur.lst
+- cmd: yay art-rawconverter
+  when: 1738907498
+- cmd: yay -Rns art-rawconverter
+  when: 1738907533
+- cmd: sudo pacman -Ss ctl
+  when: 1738907602
+- cmd: yay ctl
+  when: 1738907621
+- cmd: pacman -Rsp art-rawconverter
+  when: 1738907909
+- cmd: pacman -Rsp art-rawconverter | awk '{print $1}'
+  when: 1738908029
+  when: 1738908187
+  when: 1738908191
+- cmd: sudo  pacman -R - <a
+  when: 1738908413
+  when: 1738908432
+  when: 1738908456
+  when: 1738908480
+- cmd: cd ~/.config/hypr/
+  when: 1738908551
+    - ~/.config/hypr/
+- cmd: nano  keybind.conf
+  when: 1738908557
+    - keybind.conf
+- cmd: hyprprop WM_CLASS
+  when: 1738908615
+  when: 1738908778
+  when: 1738908962
+  when: 1738908965
+  when: 1738908985
+- cmd: sudo pacman -Qdtq | sudo pacman -Rns
+  when: 1738908992
+  when: 1738909023
+- cmd: bash cpinst.sh q
+  when: 1738909041
+- cmd: nano ~/.bash_aliases
+  when: 1738909060
+    - ~/.bash_aliases
+  when: 1738909100
+- cmd: cf
+  when: 1738909243
+  when: 1738909252
+- cmd: nano  ~/.config/fish/config.fish
+  when: 1738909373
+  when: 1738909394
+- cmd: nano
+  when: 1738909414
+  when: 1738909425
+- cmd: sudo pacman -Syu --needed  nano
+  when: 1738909448
+  when: 1738909458
+  when: 1738909473
+  when: 1738909620
+  when: 1738909984
+- cmd: cat $PATH
+  when: 1738910009
+  when: 1738910044
+- cmd: PATH=$PATH:~/bin
+  when: 1738910063
+- cmd: set PATH $PATH:~/bin
+  when: 1738910094
+  when: 1738910102
+  when: 1738910129
+- cmd: bash bh q
+  when: 1738910203

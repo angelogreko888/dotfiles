@@ -3,6 +3,7 @@ arc-gtk-theme
 arch-install-scripts
 base
 base-devel
+brightnessctl
 btop
 btrfs-progs
 cups-pdf
@@ -36,6 +37,7 @@ gufw
 hdparm
 hostapd
 htop
+hwinfo
 hypridle
 hyprland
 hyprland-qtutils

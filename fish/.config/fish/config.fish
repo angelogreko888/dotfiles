@@ -2,6 +2,7 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
+
 set fish_color_valid_path  --bold
 
 set -g fish_greeting
@@ -154,3 +155,5 @@ abbr chh 'cd ~/.config/hypr/'
 abbr cdw 'cd ~/.config/waybar/'
 
 abbr pp 'hyprprop WM_CLASS'
+
+abbr cf 'nano  ~/.config/fish/config.fish'

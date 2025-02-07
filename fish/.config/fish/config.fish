@@ -3,7 +3,7 @@ if status is-interactive
 end
 
 
-set fish_color_valid_path  --bold
+set fish_color_valid_path 
 
 set -g fish_greeting
 
@@ -157,3 +157,5 @@ abbr cdw 'cd ~/.config/waybar/'
 abbr pp 'hyprprop WM_CLASS'
 
 abbr cf 'nano  ~/.config/fish/config.fish'
+abbr bcp 'bash cpinst.sh'
+abbr bbh 'bash bh'

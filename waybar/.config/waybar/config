@@ -1,8 +1,8 @@
 // -*- mode: jsonc -*-
 {
-//  "height": 21,
+  "height": 32,
   "position": "top",
-//  "mod": "dock",
+  "mod": "dock",
   "layer": "bottom",
   "margin-left": 10,
   "margin-right": 10,

@@ -2,7 +2,6 @@ aquamarine
 arc-gtk-theme
 base
 base-devel
-blueman
 brightnessctl
 btop
 btrfs-progs
@@ -42,6 +41,7 @@ hyprland-qtutils
 hyprlang
 hyprlock
 intel-ucode
+inxi
 iwd
 jdk-openjdk
 libpulse

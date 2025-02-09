@@ -1077,3 +1077,8 @@ n qhfish
 cd /etc/shells
 n /etc/shells
 chsh -s /usr/bin/fish
+PATH=$PATH:~/bin
+cat $PATH
+n $PATH
+Sn $PATH
+sn $PATH

@@ -1,6 +1,5 @@
-- cmd: s reflector --protocol https --age 12 --country Israel --sort rate --number 10 --verbose
-  when: 1738688161
 - cmd: cd nouse/
+  when: 0
 - cmd: cd rootmisc/
 - cmd: n mirrorlist
 - cmd: s reflector --protocol https --age 12 --country Cyprus --sort rate --number 10 --verbose
@@ -122,17 +121,20 @@
 - cmd: vws
 - cmd: sudo pacman -Scc
 - cmd: sudo pacman -Rns $(pacman -Qdtq)
+- cmd: df -h
 - cmd: nu
-- cmd: gp
 - cmd: y skype-secure
 - cmd: y skype
 - cmd: du -h
+- cmd: free -h
 - cmd: cd i3-gonome-stable/
 - cmd: n fz
 - cmd: n b5fzf.sh
 - cmd: cd polybar/
 - cmd: cd .config/polybar/
 - cmd: n config.ini
+- cmd: cat /sys/module/nvidia_drm/parameters/modeset
+- cmd: s cat /sys/module/nvidia_drm/parameters/modeset
 - cmd: w polkit
 - cmd: ps polkit
 - cmd: pi sway
@@ -159,14 +161,15 @@
 - cmd: ps swaymsg
 - cmd: hyprctl input
 - cmd: hyprctl
-- cmd: hyprctl devices
 - cmd: hyprctl devices | rg touchpad
 - cmd: n config -l
 - cmd: cd sway
 - cmd: pi libxcb mesa libglvnd lib32-libglvnd egl-wayland xorg-xwayland libdrm vulkan-tools waybar wlr00ts-eglstreams-git
 - cmd: ps wlr00ts-eglstreams
 - cmd: y  wlr00ts-eglstreams-git
+- cmd: cd nouse/gnome-i3/i3/
 - cmd: .config/i3/
+- cmd: cd .config/i3/
 - cmd: n power.sh
 - cmd: n  ~/.xprofile
 - cmd: h | rg group
@@ -277,6 +280,7 @@
 - cmd: ps
 - cmd: command ps
 - cmd: hyprctl scale 1
+- cmd: cat /sys/power/mem_sleep
 - cmd: sudo update-initramfs -u
 - cmd: si
 - cmd: journalctl b
@@ -288,6 +292,7 @@
 - cmd: lsblk -f
 - cmd: s cp  /etc/default/grub  /etc/default/grub.bup
 - cmd: s dmesg | rg PreserveVideoMemoryAllocations
+- cmd: s dmesg
 - cmd: journalctl -b
 - cmd: pacman -Q | rg nvidia
 - cmd: pui lib32-nvidia-utils
@@ -299,6 +304,9 @@
 - cmd: n /home/vago/.nvidia-settings-rc
 - cmd: rm /home/vago/.nvidia-settings-rc
 - cmd: d 00inst/
+- cmd: cd uwsm
+- cmd: n env-hyprland
+- cmd: n env
 - cmd: ./backup.sh
 - cmd: n backup.sh
 - cmd: ./bup
@@ -318,6 +326,7 @@
 - cmd: pacman -Q | rg nfs-utils
 - cmd: pacman -Q | rg inetutils
 - cmd: pacman -Q | rg dnsutils
+- cmd: n.
 - cmd: pacman -Q | rg bash-completion
 - cmd: pacman -Q | rg openssh
 - cmd: pacman -Q | rg acpi
@@ -339,8 +348,8 @@
 - cmd: sort befi
 - cmd: sort befi > befi
 - cmd: ctl status cups
+- cmd: su -
 - cmd: comm befi ~/dotfiles/00inst/bpac
-- cmd: yay -Yc
 - cmd: pacman -Qtdq
 - cmd: n qhbash
 - cmd: ...
@@ -364,6 +373,7 @@
 - cmd: y -Si virtio-win
 - cmd: yui virtio-win
 - cmd: fwupdmgr
+- cmd: fwupdmgr refresh
 - cmd: cd ../../bin
 - cmd: n bup
 - cmd: modprobe vboxdrv
@@ -381,6 +391,7 @@
 - cmd: rm befi
 - cmd: pp
 - cmd: ע
+- cmd: cat /proc/driver/nvidia/params | sort
 - cmd: ctl status nvidia-suspend.service
 - cmd: ctl status nvidia-hibernate.service
 - cmd: cd active.sh
@@ -419,6 +430,7 @@
 - cmd: sn /sys/power/mem_sleep
 - cmd: pi acpi
 - cmd: dmesg | grep DSDT
+- cmd: s dmesg | grep DSDT
 - cmd: cd /usr/initcpio/acpi_override/
 - cmd: cd /usr/initcpio/
 - cmd: cd /kernel/firmware/acpi/
@@ -438,6 +450,7 @@
 - cmd: pacman -Q | grep  nvidia
 - cmd: pi nvidia-dkms nvidia-utils libva-nvidia-driver
 - cmd: s pacman -Su nvidia-dkms nvidia-utils libva-nvidia-driver
+- cmd: lspci -k -d ::03xx
 - cmd: sn /etc/booster.yaml
 - cmd: /usr/lib/booster/regenerate_images
 - cmd: sn /usr/lib/booster/regenerate_images
@@ -454,18 +467,23 @@
 - cmd: cd 565.77/
 - cmd: cd build/
 - cmd: n make.log
+- cmd: sn /etc/mkinitcpio.conf
 - cmd: lo nvidia
 - cmd: s rm /etc/modprobe.d/nvidia.conf
+- cmd: sn /etc/modprobe.d/nvidia.conf
 - cmd: sn /etc/modules-load.d/nvidia.conf
 - cmd: s rm /etc/modules-load.d/nvidia.conf
 - cmd: s rm /etc/pacman.d/hooks/nvidia.hook
 - cmd: pi libva-nvidia-drivers
 - cmd: pi libva-nvidia-driver
+- cmd: s mkinitcpio -P
 - cmd: n kanshi
 - cmd: n
+- cmd: u
 - cmd: ts
 - cmd: n active.sh
 - cmd: n nvidia.sh
+- cmd: ff
 - cmd: h | rg pi
 - cmd: w acpi
 - cmd: ctl status acpi
@@ -476,6 +494,7 @@
 - cmd: n lpacman.lst
 - cmd: ctl start sshd
 - cmd: ctl status sshd
+- cmd: ip a
 - cmd: ping -c 3 192.168.1.104
 - cmd: ssh vago@192.168.1.104
 - cmd: x ssh
@@ -517,6 +536,7 @@
 - cmd: ../misc/
 - cmd: cd ../misc/
 - cmd: rm  CanvasBlocker-settings_2025-01-20_21-34-53.json chameleon_1737401664737.json
+- cmd: cd bin
 - cmd: n gitpull.sh
 - cmd: n bup-gitpull
 - cmd: rm bup-gitpull
@@ -577,9 +597,12 @@
 - cmd: h |rg vb
 - cmd: reboot
 - cmd: s modprobe vboxdrv
+- cmd: nb
 - cmd: pss fish
 - cmd: pss fish | rg fish
 - cmd: pi fish
+- cmd: s reflector --protocol https --age 12 --country Israel --sort rate --number 10 --verbose
+  when: 1738688161
 - cmd: ls -la
   when: 1738688307
 - cmd: ls -la | grep fish
@@ -594,555 +617,289 @@
     - Downloads/
 - cmd: cd .config
   when: 1738738059
-    - .config
 - cmd: ls
   when: 1738738603
 - cmd: nano config.fish
   when: 1738738888
-    - config.fish
 - cmd: n fish_variables
   when: 1738740394
-    - fish_variables
 - cmd: l fish
   when: 1738740464
+- cmd: cd functions/
+  when: 1738740506
 - cmd: lo fish
   when: 1738740552
 - cmd: lo fish  &| less
   when: 1738740640
 - cmd: cd /etc/fish/conf.d
   when: 1738740695
-    - /etc/fish/conf.d
 - cmd: y oh-my-fish
   when: 1738741004
 - cmd: exit
   when: 1738741454
+- cmd: n config.fish
+  when: 1738742719
 - cmd: n .config/fish/config.fish
   when: 1738742784
-    - .config/fish/config.fish
+- cmd: cd /
+  when: 1738743604
+- cmd: fish_config
+  when: 1738745033
 - cmd: cdc
   when: 1738745576
 - cmd: bup
   when: 1738745655
 - cmd: help
   when: 1738745936
+- cmd: cc
+  when: 1738746401
 - cmd: md -p fish/.config
   when: 1738746448
 - cmd: cd fish/.config/
   when: 1738746471
-    - fish/.config/
 - cmd: mv fish/ ~/dotfiles/
   when: 1738746497
-    - fish/
-    - ~/dotfiles/
 - cmd: mv fish/ ~/dotfiles/fish/.config/
   when: 1738746518
-    - ~/dotfiles/fish/.config/
 - cmd: stow fish/
   when: 1738746549
+- cmd: cd fish/
+  when: 1738746562
+- cmd: history
+  when: 1738746609
 - cmd: md -p lfish/.local/share/fish
   when: 1738746945
 - cmd: cd lfish/.local/share/
   when: 1738746967
-    - lfish/.local/share/
 - cmd: rr fish/
   when: 1738746974
 - cmd: mv fish/ ~/dotfiles/lfish/.local/share/
   when: 1738747022
-    - ~/dotfiles/lfish/.local/share/
 - cmd: stow lfish/
   when: 1738747048
-    - lfish/
 - cmd: cd ~/.local/share/fish/
   when: 1738747184
-    - ~/.local/share/fish/
 - cmd: bh q
   when: 1738747384
+- cmd: ./cpinst.sh q
+  when: 1738747706
+- cmd: ./bh q
+  when: 1738747745
+- cmd: n qhfish
+  when: 1738747875
 - cmd: rm qhfish
   when: 1738747955
-    - qhfish
 - cmd: n pac.sh
   when: 1738748140
 - cmd: n bpac
   when: 1738748158
 - cmd: sort bpac  -o bpac
   when: 1738751908
+- cmd: ll
+  when: 1738751957
 - cmd: mv lfish/ fishlocal
   when: 1738752018
+- cmd: n /etc/default/grub
+  when: 1738755593
+- cmd: sn /etc/default/grub
+  when: 1738755601
+- cmd: ug
+  when: 1738755624
 - cmd: n ~/.config/fish/config.fish
   when: 1738759553
-    - ~/.config/fish/config.fish
+- cmd: b
+  when: 1738759624
 - cmd: cd ../nouse/rootmisc/
   when: 1738759703
 - cmd: cat lhbash qhbash >com
   when: 1738759755
-    - lhbash
-    - qhbash
+- cmd: n bh
+  when: 1738759785
 - cmd: awk -i inplace '!seen[$0]++' com
   when: 1738759808
-    - com
 - cmd: n com
   when: 1738759815
 - cmd: cp com ~/.bash_history
   when: 1738760098
-    - ~/.bash_history
+- cmd: cdf
+  when: 1738760158
+- cmd: cd nouse/rootmisc/
+  when: 1738760168
 - cmd: rm com
   when: 1738760177
+- cmd: n .bash_history
+  when: 1738760251
+- cmd: cd .local/share/fish/
+  when: 1738760362
 - cmd: cd generated_completions/
   when: 1738760388
-    - generated_completions/
 - cmd: l &| less
   when: 1738760423
 - cmd: n fish_history
   when: 1738760511
-    - fish_history
+- cmd: ..
+  when: 1738760591
+- cmd: l
+  when: 1738760592
 - cmd: rm fish/
   when: 1738760654
 - cmd: rm fish
-  when: 1738760667
+  when: 1738760785
 - cmd: rr fishlocal/
   when: 1738760802
-    - fishlocal/
 - cmd: cd ../bin/
   when: 1738760816
-    - ../bin/
-- cmd: n bh
-  when: 1738760824
-    - bh
-- cmd: cd .local/share/fish/
-  when: 1738760900
-    - .local/share/fish/
-- cmd: git rm fishlocal/**
-  when: 1738761068
-- cmd: n qhfish
-  when: 1738761137
-- cmd: su -
-  when: 1738761322
-- cmd: fish_config
-  when: 1738761365
-- cmd: fish_config prompt show
-  when: 1738761708
-- cmd: n.
-  when: 1738762105
-- cmd: u
-  when: 1738762601
-- cmd: n functions/
-  when: 1738762998
-    - functions/
-- cmd: n ll.fish
-  when: 1738763040
-    - ll.fish
-- cmd: n yui.fish
-  when: 1738763088
-    - yui.fish
-- cmd: nb
-  when: 1738763684
-- cmd: ccd
-  when: 1738763765
-- cmd: ccc
-  when: 1738763770
-- cmd: c
-  when: 1738763876
-- cmd: cd nouse/rootmisc/
-  when: 1738764069
-    - nouse/rootmisc/
-- cmd: bash
-  when: 1738764181
-- cmd: cd nouse/gnome-i3/i3/
-  when: 1738764213
-- cmd: cd .config/i3/
-  when: 1738764218
-- cmd: g
-  when: 1738773972
-- cmd: gg
-  when: 1738773976
-- cmd: n .local/share/fish/fish_history
-  when: 1738819184
-    - .local/share/fish/fish_history
-- cmd: ff
-  when: 1738819731
-- cmd: cat /sys/power/mem_sleep
-  when: 1738820745
-- cmd: n /etc/default/grub
-  when: 1738820810
-    - /etc/default/grub
-- cmd: h |rg dms
-  when: 1738821040
-- cmd: h |rg dsm
-  when: 1738821055
 - cmd: h
-  when: 1738821069
-- cmd: n .bash_history
-  when: 1738821149
-    - .bash_history
-- cmd: ctl status PreserveVideoMemoryAllocations
-  when: 1738821624
-- cmd: sn /etc/default/grub
-  when: 1738823477
-- cmd: ug
-  when: 1738823563
-- cmd: s rm /etc/modprobe.d/nvidia-power-management.conf
-  when: 1738823587
-    - /etc/modprobe.d/nvidia-power-management.conf
-- cmd: sn /etc/modprobe.d/nvidia-power-management.conf
-  when: 1738823590
-- cmd: cat /proc/driver/nvidia/params | sort
-  when: 1738823925
-- cmd: dh -f
-  when: 1738824084
-- cmd: dh
-  when: 1738824092
-- cmd: du -f
-  when: 1738824101
-- cmd: du
-  when: 1738824106
-- cmd: df
-  when: 1738824129
-- cmd: df -h
-  when: 1738824174
-- cmd: nvidia-smi -q -d MEMORY |grep 'FB Memory Usage' -A1
-  when: 1738824266
-- cmd: grep 'Video Memory Self Refresh' /proc/driver/nvidia/gpus/<Domain>:<Bus>:<Device>.0/power
-  when: 1738824426
-    - /proc/driver/nvidia/gpus/
-- cmd: sn /usr/lib/systemd/system/nvidia-suspend.service
-  when: 1738824536
-    - /usr/lib/systemd/system/nvidia-suspend.service
-- cmd: ctl start nvidia-resume.service
-  when: 1738824872
-- cmd: ctl status nvidia-resume.service
-  when: 1738824875
-- cmd: sn /proc/driver/nvidia/suspend
-  when: 1738824983
-    - /proc/driver/nvidia/suspend
-- cmd: cat /sys/module/nvidia_drm/parameters/modeset
-  when: 1738825425
-- cmd: s cat /sys/module/nvidia_drm/parameters/modeset
-  when: 1738825433
-- cmd: journalctl -b 0 --grep "renderer for"
-  when: 1738829588
-- cmd: s journalctl -b 0 --grep "renderer for"
-  when: 1738829600
-- cmd: cd uwsm
-  when: 1738829643
-- cmd: pacman -Q | grep  qt5ct
-  when: 1738830134
-- cmd: pss qt5ct
-  when: 1738830146
-- cmd: pi qt5ct
-  when: 1738830161
-- cmd: pacman -Q | grep  clutter
-  when: 1738830267
-- cmd: pss clutter
-  when: 1738830274
-- cmd: sn /etc/environment
-  when: 1738830411
-    - /etc/environment
-- cmd: sn /usr/share/glvnd/egl_vendor.d/50_mesa.json
-  when: 1738830501
-    - /usr/share/glvnd/egl_vendor.d/50_mesa.json
-- cmd: pss wp-surface-scale
-  when: 1738830692
-- cmd: y wp-surface-scale
-  when: 1738830702
-- cmd: b
-  when: 1738830943
-- cmd: pacman -Q | grep  egl-wayland
-  when: 1738831205
-- cmd: sn /etc/modprobe.d/nvidia.conf
-  when: 1738831239
-- cmd: sudo mkinitcpio -P
-  when: 1738831268
-- cmd: hyprctl clients
-  when: 1738831712
-- cmd: n env
-  when: 1738831760
-- cmd: n .config/uwsm/env-hyprland
-  when: 1738831889
-    - .config/uwsm/env-hyprland
-- cmd: n .config/uwsm/env
-  when: 1738831920
-    - .config/uwsm/env
-- cmd: n env-hyprland
-  when: 1738831966
-- cmd: lspci -k -d ::03xx
-  when: 1738832100
-- cmd: lspci
-  when: 1738832183
-- cmd: lspci -D
-  when: 1738832214
-- cmd: lspci -b
-  when: 1738832241
-- cmd: lspci -P
-  when: 1738832263
-- cmd: lspci -n
-  when: 1738832292
-- cmd: lspci -k
-  when: 1738832328
-- cmd: lspci -H2
-  when: 1738832380
-- cmd: s lspci -H2
-  when: 1738832389
-- cmd: lspci | grep -E 'VGA|3D'
-  when: 1738832553
-- cmd: ls -l /dev/dri/by-path
-  when: 1738832574
-    - /dev/dri/by-path
-- cmd: s dmesg
-  when: 1738832859
-- cmd: n /etc/mkinitcpio.conf
-  when: 1738832902
-    - /etc/mkinitcpio.conf
-- cmd: sn /etc/mkinitcpio.conf
-  when: 1738832953
-- cmd: s mkinitcpio -P
-  when: 1738832986
-- cmd: cc
-  when: 1738834749
-- cmd: n .bash_aliases
-  when: 1738834800
-    - .bash_aliases
-- cmd: rm *
-  when: 1738835314
-- cmd: l
-  when: 1738835316
-- cmd: ll
-  when: 1738835335
-- cmd: cdf
-  when: 1738835341
-- cmd: ..
-  when: 1738835356
-- cmd: n config.fish
-  when: 1738835362
-- cmd: curl wttr.in/paphos
-  when: 1738835370
-- cmd: curl wttr.in/jerusalem
-  when: 1738835398
-- cmd: nano ~/.config/waybar/config
-  when: 1738835407
-    - ~/.config/waybar/config
-- cmd: set fish_color_valid_path --underline
-  when: 1738835693
-- cmd: nano  conf/
-  when: 1738835779
-- cmd: cd ~/.config/
-  when: 1738835872
-    - ~/.config/
-- cmd: cd fish/
-  when: 1738835875
-- cmd: nano  config.fish
-  when: 1738835880
-- cmd: cd functions/
-  when: 1738836030
-- cmd: cd ..
-  when: 1738836052
-    - ..
-- cmd: cd ../..
-  when: 1738836090
-    - ../..
-- cmd: cd /
-  when: 1738836129
-- cmd: exa -lha
-  when: 1738836159
-- cmd: sudo  dmseg
-  when: 1738836197
-- cmd: s dmesg | grep DSDT
-  when: 1738836254
-- cmd: free -h
-  when: 1738836497
-- cmd: cat /proc/swaps
-  when: 1738836527
-    - /proc/swaps
-- cmd: sudo filefrag -v /swapfile | awk '{ if($1=="0:"){print $4} }'\n
-  when: 1738836562
-- cmd: gsettings set org.gnome.desktop.interface scaling-factor 1
-  when: 1738837418
-- cmd: nano  .gtkrc-2.0
-  when: 1738837479
-    - .gtkrc-2.0
-- cmd: xdpyinfo|grep resolution
-  when: 1738837529
-- cmd: sudo nano  /etc/mkinitcpio.conf
-  when: 1738837798
-- cmd: sudo  mkinitcpio -P
-  when: 1738837828
-- cmd: which  rfkill
-  when: 1738838492
-- cmd: /usr/bin/rfkill bluetooth
-  when: 1738838568
-- cmd: /usr/bin/rfkill block bluetooth
-  when: 1738838588
-- cmd: journalctl -p3 -xb --no-hostname
-  when: 1738838624
-- cmd: fwupdmgr refresh
-  when: 1738838670
-- cmd: sudo  dmesg
-  when: 1738846698
-- cmd: cat /sys/module/rtc_cmos/parameters/use_acpi_alarm
-  when: 1738850719
-    - /sys/module/rtc_cmos/parameters/use_acpi_alarm
-- cmd: sudo updatedb; locate rtc-cmos.c
-  when: 1738850795
-- cmd: sudo updatedb; locate cmos.c
-  when: 1738850826
-- cmd: sudo nano  /sys/module/rtc_cmos/parameters/use_acpi_alarm
-  when: 1738850916
-- cmd: journalctl -f
-  when: 1738851509
-- cmd: sudo nano  /etc/acpi/handler.sh
-  when: 1738851620
-    - /etc/acpi/handler.sh
-- cmd: sudo nano  proc/acpi/event
-  when: 1738851736
-- cmd: sudo systemctl  stauts acpid
-  when: 1738851752
-- cmd: sudo systemctl  status acpid
-  when: 1738851763
-- cmd: sudo systemctl  stop acpid
-  when: 1738851789
-- cmd: sudo systemctl  disable acpid
-  when: 1738851798
-- cmd: sudo pacman -Rns acpid
-  when: 1738851803
-- cmd: cd bin
-  when: 1738851841
-- cmd: ./cpinst.sh q
-  when: 1738851856
-- cmd: ./bh q
-  when: 1738851867
-- cmd: cd 00inst/
-  when: 1738851909
-- cmd: nano  bpac
-  when: 1738851918
-    - bpac
-- cmd: sudo systemctl  disable nvidia-resume.service
-  when: 1738854278
-- cmd: sudo systemctl  status nvidia-resume.service
-  when: 1738854281
-- cmd: cd /etc/X11/
-  when: 1738854577
-    - /etc/X11/
-- cmd: sudo nano  /etc/default/grub
-  when: 1738854729
-- cmd: sudo pacman -Ss  hwinfo
-  when: 1738854848
-- cmd: sudo pacman -Su  hwinfo
-  when: 1738854862
-- cmd: hwinfo --framebuffer
-  when: 1738854883
-- cmd: sudo  hwinfo --framebuffer > a
-  when: 1738854913
-- cmd: nano  a
-  when: 1738854917
-    - a
-- cmd: rm a
-  when: 1738854927
-- cmd: videoinfo
-  when: 1738854946
-- cmd: sudo  hwinfo --framebuffer
-  when: 1738855026
-- cmd: sudo  hwinfo
-  when: 1738855040
-- cmd: sudo  hwinfo > hwinfo
-  when: 1738855597
-- cmd: sudo grub-mkconfig -o /boot/grub/grub.cfg
-  when: 1738855614
-    - /boot/grub/grub.cfg
-- cmd: nano  .config/fish/config.fish
-  when: 1738857015
-- cmd: cd bin/
-  when: 1738857049
-    - bin/
-- cmd: cd
-  when: 1738857057
-- cmd: ip a
-  when: 1738857229
-- cmd: history
-  when: 1738857264
-- cmd: cd ~/dotfiles && git status && cd -
-  when: 1738857329
-    - ~/dotfiles
-- cmd: sudo pacman -Syyu --noconfirm && yay -Syyu --noconfirm
-  when: 1738857355
-- cmd: cd ~/dotfiles && git add * && git commit -m "save" && git push -u origin main && cd -
-  when: 1738857787
-- cmd: cd ~/dotfiles/
-  when: 1738907377
-- cmd: cd misc/
-  when: 1738907383
-- cmd: cd ../00inst/
-  when: 1738907430
-    - ../00inst/
-- cmd: nano  baur
-  when: 1738907444
-    - baur
-- cmd: eza -a --color always --long --git --no-filesize --icons always --no-time --no-user --no-permissions
-  when: 1738907474
-- cmd: nano  qaur.lst
-  when: 1738907484
-    - qaur.lst
-- cmd: yay art-rawconverter
-  when: 1738907498
+  when: 1738783471
+- cmd: c
+  when: 1738783500
+- cmd: ./
+  when: 1738784512
+- cmd: gg
+  when: 1738784586
+- cmd: g
+  when: 1738793020
+- cmd: gp
+  when: 1738956626
 - cmd: yay -Rns art-rawconverter
-  when: 1738907533
-- cmd: sudo pacman -Ss ctl
-  when: 1738907602
-- cmd: yay ctl
-  when: 1738907621
-- cmd: pacman -Rsp art-rawconverter
-  when: 1738907909
-- cmd: pacman -Rsp art-rawconverter | awk '{print $1}'
-  when: 1738908029
-  when: 1738908187
-  when: 1738908191
-- cmd: sudo  pacman -R - <a
-  when: 1738908413
-  when: 1738908432
-  when: 1738908456
-  when: 1738908480
-- cmd: cd ~/.config/hypr/
-  when: 1738908551
-    - ~/.config/hypr/
-- cmd: nano  keybind.conf
-  when: 1738908557
-    - keybind.conf
-- cmd: hyprprop WM_CLASS
-  when: 1738908615
-  when: 1738908778
-  when: 1738908962
-  when: 1738908965
-  when: 1738908985
+  when: 1738956754
+- cmd: nano  a
+  when: 1738956794
+    - a
+- cmd: sudo pacman -R opencolorio
+  when: 1738957053
+- cmd: sudo pacman -R opencolorio art-rawconverter
+  when: 1738957068
+- cmd: sudo pacman -R - < a
+  when: 1738957098
+- cmd: rm a
+  when: 1738957128
+- cmd: yay art-rawconverter
+  when: 1738957149
 - cmd: sudo pacman -Qdtq | sudo pacman -Rns
-  when: 1738908992
-  when: 1738909023
-- cmd: bash cpinst.sh q
-  when: 1738909041
-- cmd: nano ~/.bash_aliases
-  when: 1738909060
-    - ~/.bash_aliases
-  when: 1738909100
-- cmd: cf
-  when: 1738909243
-  when: 1738909252
-- cmd: nano  ~/.config/fish/config.fish
-  when: 1738909373
-  when: 1738909394
-- cmd: nano
-  when: 1738909414
-  when: 1738909425
-- cmd: sudo pacman -Syu --needed  nano
-  when: 1738909448
-  when: 1738909458
-  when: 1738909473
-  when: 1738909620
-  when: 1738909984
+  when: 1738957216
+- cmd: yay -Yc
+  when: 1738957220
+- cmd: bash cpinst.sh
+  when: 1738957245
+- cmd: ./cpinst.sh l
+  when: 1738957302
+- cmd: ./bh l
+  when: 1738957313
+- cmd: bash
+  when: 1738957431
 - cmd: cat $PATH
-  when: 1738910009
-  when: 1738910044
-- cmd: PATH=$PATH:~/bin
-  when: 1738910063
-- cmd: set PATH $PATH:~/bin
-  when: 1738910094
-  when: 1738910102
-  when: 1738910129
+  when: 1738957595
+- cmd: CD
+  when: 1738957607
+- cmd: cd ~/dotfiles && git pull && cd -
+  when: 1739116903
+    - ~/dotfiles
+- cmd: hyprctl devices | rg keyboard
+  when: 1739117541
+- cmd: sudo pacman -Ss inxi
+  when: 1739117680
+- cmd: sudo pacman -Su inxi
+  when: 1739117696
+- cmd: inxi -Fzx
+  when: 1739117713
+- cmd: inxi
+  when: 1739117801
+- cmd: hyprctl devices
+  when: 1739117882
+- cmd: nano /etc/default/keyboard\n
+  when: 1739118503
+- cmd: sudo nano  nano /etc/default/keyboard\n
+  when: 1739118514
+- cmd: localectl status
+  when: 1739118547
+- cmd: localectl status\n
+  when: 1739118980
+- cmd: ψηη
+  when: 1739119004
+- cmd: nano  input.conf
+  when: 1739119028
+    - input.conf
+- cmd: ביי
+  when: 1739120694
+- cmd: nano  keybind.conf
+  when: 1739120737
+    - keybind.conf
+- cmd: sudo updatedb; locate nvidia.conf
+  when: 1739120884
+- cmd: sudo nano  /etc/default/grub
+  when: 1739120951
+    - /etc/default/grub
+- cmd: cd /etc/modules-load.d/
+  when: 1739121017
+    - /etc/modules-load.d/
+- cmd: eza -a --color always --long --git --no-filesize --icons always --no-time --no-user --no-permissions
+  when: 1739121019
+- cmd: sudo pacman -Syyu --noconfirm && yay -Syyu --noconfirm
+  when: 1739121086
+- cmd: cd
+  when: 1739121255
+- cmd: sudo  dmseg
+  when: 1739121293
+- cmd: history  | rg dm
+  when: 1739121331
+- cmd: sudo  dmesg
+  when: 1739121364
+- cmd: cd misc/
+  when: 1739123133
+- cmd: nano  lpacman.lst
+  when: 1739123140
+    - lpacman.lst
+- cmd: sudo pacman -Rns blueman
+  when: 1739123161
+- cmd: cd bin/
+  when: 1739123194
+- cmd: bash cpinst.sh l
+  when: 1739123197
+- cmd: bash bh l
+  when: 1739123219
+    - bh
+- cmd: btop
+  when: 1739133320
+- cmd: cd ~/dotfiles && git status && cd -
+  when: 1739135493
+- cmd: cd ~/dotfiles && git add * && git commit -m "save" && git push -u origin main && cd -
+  when: 1739135496
+- cmd: disown
+  when: 1739139241
+- cmd: pacman -Q | grep  lib32-nvidia-utils
+  when: 1739140598
+- cmd: fastfetch
+  when: 1739141180
+- cmd: cd ~/dotfiles/
+  when: 1739141262
+    - ~/dotfiles/
+- cmd: cd 00inst/
+  when: 1739141269
+- cmd: nano  nvidia.sh
+  when: 1739141276
+    - nvidia.sh
+- cmd: cd ~/.config/hypr/
+  when: 1739142149
+    - ~/.config/hypr/
+- cmd: nano  hyprlock.conf
+  when: 1739142163
+    - hyprlock.conf
+- cmd: nano  hypridle.conf
+  when: 1739142185
+    - hypridle.conf
+- cmd: pidof bash
+  when: 1739142316
+- cmd: pidof fish
+  when: 1739142326
+  when: 1739142876
+- cmd: sudo -sE timeshift-gtk
+  when: 1739142879
+  when: 1739142927
+    - bin/
+  when: 1739142947
+    - cpinst.sh
+- cmd: bash cpinst.sh q
+  when: 1739142956
 - cmd: bash bh q
-  when: 1738910203
+  when: 1739142963

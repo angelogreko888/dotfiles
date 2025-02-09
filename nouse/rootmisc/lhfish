@@ -693,8 +693,6 @@
   when: 1738748140
 - cmd: n bpac
   when: 1738748158
-- cmd: cd 00inst/
-  when: 1738751837
 - cmd: sort bpac  -o bpac
   when: 1738751908
 - cmd: ll
@@ -711,8 +709,6 @@
   when: 1738759553
 - cmd: b
   when: 1738759624
-- cmd: cd misc/
-  when: 1738759679
 - cmd: cd ../nouse/rootmisc/
   when: 1738759703
 - cmd: cat lhbash qhbash >com
@@ -780,16 +776,12 @@
   when: 1738957128
 - cmd: yay art-rawconverter
   when: 1738957149
-- cmd: fastfetch
-  when: 1738957200
 - cmd: sudo pacman -Qdtq | sudo pacman -Rns
   when: 1738957216
 - cmd: yay -Yc
   when: 1738957220
 - cmd: bash cpinst.sh
   when: 1738957245
-- cmd: cd bin/
-  when: 1738957294
 - cmd: ./cpinst.sh l
   when: 1738957302
 - cmd: ./bh l
@@ -800,8 +792,6 @@
   when: 1738957595
 - cmd: CD
   when: 1738957607
-- cmd: bash cpinst.sh l
-  when: 1738957617
 - cmd: cd ~/dotfiles && git pull && cd -
   when: 1739116903
     - ~/dotfiles
@@ -832,9 +822,6 @@
     - input.conf
 - cmd: ביי
   when: 1739120694
-- cmd: cd ~/.config/hypr/
-  when: 1739120716
-    - ~/.config/hypr/
 - cmd: nano  keybind.conf
   when: 1739120737
     - keybind.conf
@@ -850,10 +837,6 @@
   when: 1739121019
 - cmd: sudo pacman -Syyu --noconfirm && yay -Syyu --noconfirm
   when: 1739121086
-- cmd: cd ~/dotfiles && git status && cd -
-  when: 1739121096
-- cmd: cd ~/dotfiles && git add * && git commit -m "save" && git push -u origin main && cd -
-  when: 1739121103
 - cmd: cd
   when: 1739121255
 - cmd: sudo  dmseg
@@ -862,23 +845,64 @@
   when: 1739121331
 - cmd: sudo  dmesg
   when: 1739121364
-- cmd: btop
-  when: 1739123087
-- cmd: cd ~/dotfiles/
-  when: 1739123128
-    - ~/dotfiles/
+- cmd: cd misc/
   when: 1739123133
-    - misc/
 - cmd: nano  lpacman.lst
   when: 1739123140
     - lpacman.lst
 - cmd: sudo pacman -Rns blueman
   when: 1739123161
-  when: 1739123181
+- cmd: cd bin/
   when: 1739123194
-    - bin/
+- cmd: bash cpinst.sh l
   when: 1739123197
-    - cpinst.sh
 - cmd: bash bh l
   when: 1739123219
     - bh
+- cmd: btop
+  when: 1739133320
+- cmd: cd ~/dotfiles && git status && cd -
+  when: 1739135493
+- cmd: cd ~/dotfiles && git add * && git commit -m "save" && git push -u origin main && cd -
+  when: 1739135496
+- cmd: disown
+  when: 1739139241
+- cmd: pacman -Q | grep  lib32-nvidia-utils
+  when: 1739140598
+- cmd: fastfetch
+  when: 1739141180
+- cmd: cd ~/dotfiles/
+  when: 1739141262
+    - ~/dotfiles/
+- cmd: cd 00inst/
+  when: 1739141269
+- cmd: nano  nvidia.sh
+  when: 1739141276
+    - nvidia.sh
+- cmd: cd ~/.config/hypr/
+  when: 1739142149
+    - ~/.config/hypr/
+- cmd: nano  hyprlock.conf
+  when: 1739142163
+    - hyprlock.conf
+- cmd: nano  hypridle.conf
+  when: 1739142185
+    - hypridle.conf
+- cmd: pidof bash
+  when: 1739142316
+- cmd: pidof fish
+  when: 1739142326
+  when: 1739142876
+- cmd: sudo -sE timeshift-gtk
+  when: 1739142879
+  when: 1739142927
+    - bin/
+  when: 1739142947
+    - cpinst.sh
+- cmd: bash cpinst.sh q
+  when: 1739142956
+- cmd: bash bh q
+  when: 1739142963
+  when: 1739142968
+  when: 1739142994
+  when: 1739142999

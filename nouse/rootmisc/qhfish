@@ -982,8 +982,6 @@
   when: 1738855597
 - cmd: ip a
   when: 1738857229
-- cmd: cd misc/
-  when: 1738907383
 - cmd: cd ../00inst/
   when: 1738907430
     - ../00inst/
@@ -1031,18 +1029,10 @@
   when: 1738910094
 - cmd: cat $PATH
   when: 1738910102
-- cmd: bash bh q
-  when: 1738910203
-- cmd: sudo pacman -Qdtq | sudo pacman -Rns
-  when: 1738910311
-- cmd: yay -Yc
-  when: 1738910317
 - cmd: pacman -Q | grep  qt5-wayland
   when: 1738911077
 - cmd: pacman -Q | grep  qt6-wayland
   when: 1738911084
-- cmd: cd ~/dotfiles/
-  when: 1738911103
 - cmd: cd 00inst/
   when: 1738911106
 - cmd: nano  bpac
@@ -1197,8 +1187,6 @@
   when: 1739002558
 - cmd: sudo systemctl  suspend
   when: 1739002687
-- cmd: waybar
-  when: 1739002920
 - cmd: nano  hyprlock.conf
   when: 1739002982
     - hyprlock.conf
@@ -1433,8 +1421,6 @@
 - cmd: sudo nano  mdadm.conf
   when: 1739087326
     - mdadm.conf
-- cmd: cd
-  when: 1739087345
 - cmd: nano  aa
   when: 1739089404
 - cmd: sudo nano  /usr/share/libratbag/logitech-g915-tkl.device
@@ -1479,8 +1465,6 @@
 - cmd: cd /usr/lib/modprobe.d/
   when: 1739106467
     - /usr/lib/modprobe.d/
-- cmd: eza -a --color always --long --git --no-filesize --icons always --no-time --no-user --no-permissions
-  when: 1739106469
 - cmd: nano  nvidia-sleep.conf
   when: 1739106484
 - cmd: nano  nvidia-utils.conf
@@ -1569,8 +1553,6 @@
   when: 1739114958
 - cmd: sudo pacman -Syu --needed  vulkan-intel
   when: 1739115311
-- cmd: fastfetch
-  when: 1739115328
 - cmd: sudo nano  /etc/modprobe.d/i915.conf
   when: 1739115638
 - cmd: dmesg | grep -i -e 'huc' -e 'guc'
@@ -1590,16 +1572,120 @@
 - cmd: sudo grub-mkconfig -o /boot/grub/grub.cfg
   when: 1739116078
     - /boot/grub/grub.cfg
-- cmd: cd ~/dotfiles && git status && cd -
-  when: 1739116710
-    - ~/dotfiles
-- cmd: cd ~/dotfiles && git add * && git commit -m "save" && git push -u origin main && cd -
-  when: 1739116714
-- cmd: bash cpinst.sh q
-  when: 1739170200
 - cmd: cd bin/
   when: 1739170244
     - bin/
+- cmd: bash cpinst.sh q
   when: 1739170246
-    - cpinst.sh
+- cmd: bash bh q
   when: 1739170259
+- cmd: cd ~/dotfiles/
+  when: 1739170330
+- cmd: cd misc/
+  when: 1739170333
+- cmd: comm lpacman.lst qpacman.lst
+  when: 1739170367
+    - lpacman.lst
+    - qpacman.lst
+- cmd: cd
+  when: 1739170519
+- cmd: sudo pacman -Ss dkms
+  when: 1739170565
+- cmd: nano  :
+  when: 1739170703
+    - :
+- cmd: rm : aa
+  when: 1739170713
+    - aa
+- cmd: eza -a --color always --long --git --no-filesize --icons always --no-time --no-user --no-permissions
+  when: 1739170716
+- cmd: nano  vbt
+  when: 1739170723
+- cmd: rm hwinfo
+  when: 1739170743
+- cmd: nano  .nvidia-settings-rc
+  when: 1739170753
+    - .nvidia-settings-rc
+- cmd: pacman -Qi dkms
+  when: 1739170890
+- cmd: cd ~/dotfiles && git status && cd -
+  when: 1739177800
+    - ~/dotfiles
+- cmd: cd ~/dotfiles && git add * && git commit -m "save" && git push -u origin main && cd -
+  when: 1739179791
+- cmd: yay wine
+  when: 1739196370
+- cmd: yay bottles
+  when: 1739198283
+- cmd: sudo pacman -Ss flatpak
+  when: 1739201226
+- cmd: sudo pacman -Su flatpak
+  when: 1739201547
+- cmd: flatpak install bottles
+  when: 1739201595
+- cmd: which  bottles
+  when: 1739201902
+- cmd: which  flatpak
+  when: 1739201914
+- cmd: com.usebottles.bottles
+  when: 1739201939
+- cmd: waybar
+  when: 1739201979
+- cmd: sudo -sE /sbin/gufw-pkexec
+  when: 1739203203
+    - /sbin/gufw-pkexec
+- cmd: flatpak uninstall bottles
+  when: 1739203536
+    - bottles
+- cmd: flatpak uninstall uneeded
+  when: 1739203563
+- cmd: fltpak list
+  when: 1739203582
+- cmd: flatpak list
+  when: 1739203600
+- cmd: sudo pacman -Rns flatpak
+  when: 1739203656
+- cmd: sudo pacman -Qdtq | sudo pacman -Rns
+  when: 1739203677
+- cmd: yay -Yc
+  when: 1739203680
+- cmd: fastfetch
+  when: 1739203689
+- cmd: sudo pacman -Syu --needed  flatpak
+  when: 1739203723
+- cmd: flatpak uninstall org.freedesktop.Platform.ffmpeg-full
+  when: 1739203769
+- cmd: flatpak uninstall org.freedesktop.Platform.ffmpeg_full.i386
+  when: 1739203783
+- cmd: flatpak uninstall org.freedesktop.Platform.GL.default
+  when: 1739203801
+- cmd: flatpak uninstall org.freedesktop.Platform.GL.nvidia-570-86-16
+  when: 1739203818
+- cmd: flatpak uninstall org.freedesktop.Platform.GL32.default
+  when: 1739203829
+- cmd: flatpak uninstall org.freedesktop.Platform.GL32.nvidia-570-86-16
+  when: 1739203839
+- cmd: flatpak uninstall org.freedesktop.Platform.openh264
+  when: 1739203849
+- cmd: flatpak uninstall org.freedesktop.Platform.VAAPI.Intel
+  when: 1739203856
+- cmd: flatpak uninstall org.gnome.Platform
+  when: 1739203867
+- cmd: flatpak uninstall org.gnome.Platform.Compat.i386
+  when: 1739203876
+- cmd: flatpak uninstall org.
+  when: 1739203882
+- cmd: flatpak uninstall org.gtk.Gtk3theme.Arc-Dark
+  when: 1739203891
+- cmd: flatpak uninstall org.winehq.Wine.gecko
+  when: 1739203901
+- cmd: flatpak uninstall org.winehq.Wine.mono
+  when: 1739203910
+  when: 1739203921
+  when: 1739203937
+  when: 1739203954
+  when: 1739203956
+  when: 1739203970
+  when: 1739203978
+    - cpinst.sh
+  when: 1739203988

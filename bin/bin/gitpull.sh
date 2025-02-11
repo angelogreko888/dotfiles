@@ -11,5 +11,5 @@ sleep 1
 
 cd ~/dotfiles 
 
-exec foot sh -c  'git pull; echo Done!!!; cd ~;  read'
+exec foot sh -c  'git pull; echo Done!!!; cd ~/dotfiles/freetube/.config/FreeTube/;cp history.db playlists.db profiles.db search-history.db settings.db ~/.config/FreeTube; echo Copied!!!; cd ~;  read'
 

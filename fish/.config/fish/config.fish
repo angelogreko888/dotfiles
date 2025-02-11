@@ -51,7 +51,7 @@ abbr w "which "
 abbr cp "cp -i "
 abbr mv 'mv -i'
 
-abbr l 'eza -a --color always --long --git --no-filesize --icons always --no-time --no-user --no-permissions'
+abbr l 'eza -a --color always --long --git --no-filesize --icons always --no-time --no-user '
 abbr ll 'exa -lha'
 abbr lk 'lsblk'
 

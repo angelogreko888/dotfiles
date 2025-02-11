@@ -68,7 +68,7 @@ alias srb='sudo reboot'
 
 alias gc='git clone'
 alias gps='git push -u origin main'
-alias g='cp ~/.config/FreeTube history.db playlists.db profiles.db search-history.db settings.db ~/dotfiles/freetube/.config/Freetube/ && cd ~/dotfiles && git status && cd -'
+alias g='cd ~/.config/FreeTube/ && history.db playlists.db profiles.db search-history.db settings.db ~/dotfiles/freetube/.config/FreeTube && cd ~/dotfiles && git status && cd -'
 alias gss='git commit -m "save"'
 alias ga='git add *'
 alias gpp='git pull'

@@ -238,7 +238,7 @@
         "menu-actions": {
             //"shutdown": "shutdown",
             "shutdown": "poweroff",	
-            "reboot": "reboot",
+            "reboot": "~/bin/gpush.sh && reboot",
             "suspend": "pidof hyprlock || (hyprlock & sleep 1s && systemctl suspend)",
         }
     },

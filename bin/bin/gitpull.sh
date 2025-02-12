@@ -11,5 +11,12 @@ sleep 1
 
 cd ~/dotfiles 
 
-exec foot sh -c  'git pull; echo Done!!!; cd ~;  read'
+exec foot sh -c  'git pull;
+  cd ~/dotfiles/freetube/.config/FreeTube/;
+  rsync history.db  ~/.config/FreeTube/history.db;
+  rsync playlists.db  ~/.config/FreeTube/playlists.db;
+  rsync profiles.db  ~/.config/FreeTube/profiles.db;
+  rsync search-history.db  ~/.config/FreeTube/search-history.db;
+  rsync settings.db  ~/.config/FreeTube/settings.db;
+  echo Done!!!; cd ~;  read'
 

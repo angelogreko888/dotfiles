@@ -237,9 +237,9 @@
         "menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
         "menu-actions": {
             //"shutdown": "shutdown",
-            "shutdown": "poweroff",	
+            "shutdown": "~/bin/gpush.sh && poweroff",	
             "reboot": "~/bin/gpush.sh && reboot",
-            "suspend": "pidof hyprlock || (hyprlock & sleep 1s && systemctl suspend)",
+ //           "suspend": "pidof hyprlock || (hyprlock & sleep 1s && systemctl suspend)",
         }
     },
 

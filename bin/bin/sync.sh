@@ -3,15 +3,14 @@
 
 for i in $(seq 1 99);
 do
-sleep 3
-cd  ~/.config/FreeTube/
+  sleep 900
+  cd  ~/.config/FreeTube/
   rsync history.db  ~/dotfiles/freetube/.config/FreeTube/history.db
   rsync playlists.db  ~/dotfiles/freetube/.config/FreeTube/playlists.db
   rsync profiles.db  ~/dotfiles/freetube/.config/FreeTube/profiles.db
   rsync search-history.db  ~/dotfiles/freetube/.config/FreeTube/search-history.db
   rsync settings.db  ~/dotfiles/freetube/.config/FreeTube/settings.db
 
-cd ~/dotfiles
+  cd ~/dotfiles
   git add * && git commit -m "save" && git push -u origin main
-echo done!!!
 done

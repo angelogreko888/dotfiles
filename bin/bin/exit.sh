@@ -2,4 +2,4 @@
 
 ~/bin/gpush.sh
 
-exit
+hyprctl dispatch exit

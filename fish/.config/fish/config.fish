@@ -158,5 +158,5 @@ abbr pp 'hyprprop WM_CLASS'
 
 abbr cf 'nano  ~/.config/fish/config.fish'
 abbr cpi '~/bin/cpinst.sh'
-abbr bbh '~/bin/bh'
+abbr bh '~/bin/bh'
 abbr ggg '~/bin/gpush.sh'

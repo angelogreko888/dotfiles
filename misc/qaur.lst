@@ -28,5 +28,7 @@ timeshift-autosnap
 upd72020x-fw
 virtualbox-ext-oracle
 wd719x-firmware
+winegui-bin
+winegui-bin-debug
 yay
 yay-debug

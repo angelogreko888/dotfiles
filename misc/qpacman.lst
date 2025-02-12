@@ -20,6 +20,8 @@ eza
 fastfetch
 file-roller
 firefox
+firejail
+firetools
 fish
 font-manager
 foot
@@ -109,6 +111,10 @@ vlc
 vulkan-intel
 waybar
 wget
+wine
+wine-gecko
+wine-mono
+winetricks
 wireless_tools
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland

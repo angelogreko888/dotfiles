@@ -188,8 +188,6 @@
 - cmd: y wlr00ts-eglstreams
 - cmd: sway
 - cmd: y sway-git
-- cmd: foot
-- cmd: librewolf
 - cmd: yui sway-git
 - cmd: lo sway
 - cmd: cd /etc/pam.d/
@@ -270,7 +268,6 @@
 - cmd: sn /etc/profile
 - cmd: journalctl | grep Feb
 - cmd: cd /home/user/.config/environment.d/
-- cmd: ps
 - cmd: command ps
 - cmd: hyprctl scale 1
 - cmd: sudo update-initramfs -u
@@ -339,7 +336,6 @@
 - cmd: n base-efi.sh
 - cmd: mv base-efi.sh efi.sh
 - cmd: n befi
-- cmd: cd ../../atesting/
 - cmd: sort a -o a
 - cmd: n a
 - cmd: sort baur -o baur
@@ -362,7 +358,6 @@
 - cmd: ctl status systemd-modules-load.service
 - cmd: pss weston
 - cmd: ctl suspend
-- cmd: cd atesting/
 - cmd: ch mbr.sh
 - cmd: mv mbr.sh ~/dotfiles/00inst/
 - cmd: pss gnome-extra
@@ -687,9 +682,6 @@
 - cmd: rr fishlocal/
   when: 1738760802
     - fishlocal/
-- cmd: cd ../bin/
-  when: 1738760816
-    - ../bin/
 - cmd: n bh
   when: 1738760824
     - bh
@@ -892,17 +884,11 @@
   when: 1738835693
 - cmd: nano  conf/
   when: 1738835779
-- cmd: cd fish/
-  when: 1738835875
-- cmd: nano  config.fish
-  when: 1738835880
 - cmd: cd ../..
   when: 1738836090
     - ../..
 - cmd: cd /
   when: 1738836129
-- cmd: exa -lha
-  when: 1738836159
 - cmd: sudo  dmseg
   when: 1738836197
 - cmd: s dmesg | grep DSDT
@@ -953,8 +939,6 @@
   when: 1738851798
 - cmd: sudo pacman -Rns acpid
   when: 1738851803
-- cmd: cd bin
-  when: 1738851841
 - cmd: ./cpinst.sh q
   when: 1738851856
 - cmd: ./bh q
@@ -1005,59 +989,35 @@
   when: 1738908456
 - cmd: yay art-rawconverter
   when: 1738908480
-- cmd: nano  keybind.conf
-  when: 1738908557
-    - keybind.conf
 - cmd: hyprprop WM_CLASS
   when: 1738908778
 - cmd: cf
   when: 1738909243
-- cmd: nano  .config/fish/config.fish
-  when: 1738909252
-- cmd: nano
-  when: 1738909414
 - cmd: sudo pacman -Syu --needed  nano
   when: 1738909448
 - cmd: bash
   when: 1738909473
-- cmd: nano ~/.bash_aliases
-  when: 1738910044
-    - ~/.bash_aliases
 - cmd: PATH=$PATH:~/bin
   when: 1738910063
 - cmd: set PATH $PATH:~/bin
   when: 1738910094
-- cmd: cat $PATH
-  when: 1738910102
 - cmd: pacman -Q | grep  qt5-wayland
   when: 1738911077
 - cmd: pacman -Q | grep  qt6-wayland
   when: 1738911084
-- cmd: cd 00inst/
-  when: 1738911106
 - cmd: nano  bpac
   when: 1738911125
     - bpac
-- cmd: nano  ~/.config/fish/config.fish
-  when: 1738911352
 - cmd: nano  fish_variables
   when: 1738911615
 - cmd: curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3 -
   when: 1738918593
-- cmd: cd .config/fish/
-  when: 1738919777
-    - .config/fish/
 - cmd: cd functions/
   when: 1738919782
 - cmd: rm ..*
   when: 1738919807
 - cmd: cd kanshi
   when: 1738938349
-- cmd: nano  a
-  when: 1738938380
-    - a
-- cmd: rm a
-  when: 1738938388
 - cmd: nano  hwinfo
   when: 1738938454
     - hwinfo
@@ -1143,9 +1103,6 @@
     - nvidia-utils.conf
 - cmd: systemctl enable nvidia-persistenced
   when: 1738999365
-- cmd: nano ~/.config/waybar/config
-  when: 1738999590
-    - ~/.config/waybar/config
 - cmd: journalctl -f
   when: 1738999742
 - cmd: journalctl -ka
@@ -1408,13 +1365,8 @@
   when: 1739086232
 - cmd: sudo  /etc/default/grub
   when: 1739086419
-- cmd: btop
-  when: 1739086918
 - cmd: grep fbdev /etc/modprobe.d/*
   when: 1739087205
-- cmd: cd ..
-  when: 1739087245
-    - ..
 - cmd: sudo nano  modprobe.d/blacklist.conf
   when: 1739087271
     - modprobe.d/blacklist.conf
@@ -1440,9 +1392,6 @@
     - monitor.conf
 - cmd: kanshi
   when: 1739105955
-- cmd: cd ~/.config/
-  when: 1739105977
-    - ~/.config/
 - cmd: cd kanshi/
   when: 1739105983
     - kanshi/
@@ -1489,12 +1438,6 @@
 - cmd: nano  config
   when: 1739108924
     - config
-- cmd: cd ~/.config/hypr/
-  when: 1739109060
-    - ~/.config/hypr/
-- cmd: nano  autostart.conf
-  when: 1739109062
-    - autostart.conf
 - cmd: sudo nano  sudo nano  /etc/modprobe.d/i915.conf
   when: 1739109104
     - /etc/modprobe.d/i915.conf
@@ -1572,23 +1515,12 @@
 - cmd: sudo grub-mkconfig -o /boot/grub/grub.cfg
   when: 1739116078
     - /boot/grub/grub.cfg
-- cmd: cd bin/
-  when: 1739170244
-    - bin/
-- cmd: bash cpinst.sh q
-  when: 1739170246
-- cmd: bash bh q
-  when: 1739170259
-- cmd: cd ~/dotfiles/
-  when: 1739170330
 - cmd: cd misc/
   when: 1739170333
 - cmd: comm lpacman.lst qpacman.lst
   when: 1739170367
     - lpacman.lst
     - qpacman.lst
-- cmd: cd
-  when: 1739170519
 - cmd: sudo pacman -Ss dkms
   when: 1739170565
 - cmd: nano  :
@@ -1597,8 +1529,6 @@
 - cmd: rm : aa
   when: 1739170713
     - aa
-- cmd: eza -a --color always --long --git --no-filesize --icons always --no-time --no-user --no-permissions
-  when: 1739170716
 - cmd: nano  vbt
   when: 1739170723
 - cmd: rm hwinfo
@@ -1608,11 +1538,6 @@
     - .nvidia-settings-rc
 - cmd: pacman -Qi dkms
   when: 1739170890
-- cmd: cd ~/dotfiles && git status && cd -
-  when: 1739177800
-    - ~/dotfiles
-- cmd: cd ~/dotfiles && git add * && git commit -m "save" && git push -u origin main && cd -
-  when: 1739179791
 - cmd: yay wine
   when: 1739196370
 - cmd: yay bottles
@@ -1643,14 +1568,10 @@
   when: 1739203582
 - cmd: flatpak list
   when: 1739203600
-- cmd: sudo pacman -Rns flatpak
-  when: 1739203656
 - cmd: sudo pacman -Qdtq | sudo pacman -Rns
   when: 1739203677
 - cmd: yay -Yc
   when: 1739203680
-- cmd: fastfetch
-  when: 1739203689
 - cmd: sudo pacman -Syu --needed  flatpak
   when: 1739203723
 - cmd: flatpak uninstall org.freedesktop.Platform.ffmpeg-full
@@ -1681,11 +1602,396 @@
   when: 1739203901
 - cmd: flatpak uninstall org.winehq.Wine.mono
   when: 1739203910
-  when: 1739203921
+- cmd: sudo pacman -Rns flatpak
   when: 1739203937
-  when: 1739203954
-  when: 1739203956
-  when: 1739203970
+- cmd: bash cpinst.sh q
   when: 1739203978
-    - cpinst.sh
+- cmd: bash bh q
   when: 1739203988
+- cmd: sudo updatedb; locate flatpak
+  when: 1739251074
+- cmd: rm -rf  /home/vago/.local/share/flatpak
+  when: 1739251166
+    - /home/vago/.local/share/flatpak
+- cmd: sudo  rr /var/lib/flatpak
+  when: 1739251229
+    - /var/lib/flatpak
+- cmd: sudo rm -rf  /var/lib/flatpak
+  when: 1739251380
+- cmd: sudo  rm /usr/share/mime/application/vnd.flatpak.ref.xml
+  when: 1739251463
+    - /usr/share/mime/application/vnd.flatpak.ref.xml
+- cmd: rm /usr/share/mime/application/vnd.flatpak.repo.xml
+  when: 1739251480
+    - /usr/share/mime/application/vnd.flatpak.repo.xml
+- cmd: sudo  rm /usr/share/mime/application/vnd.flatpak.repo.xml
+  when: 1739251494
+- cmd: sudo  rm /usr/share/mime/application/vnd.flatpak.xml
+  when: 1739251508
+    - /usr/share/mime/application/vnd.flatpak.xml
+- cmd: fastfetch
+  when: 1739251526
+- cmd: sudo pacman -Syu --needed  firejail firetools
+  when: 1739256063
+- cmd: sudo pacman -Syu --needed  apparmor
+  when: 1739256186
+- cmd: firejail libreoffice
+  when: 1739256480
+- cmd: sudo nano   /etc/firejail/firejail.users
+  when: 1739256837
+    - /etc/firejail/firejail.users
+- cmd: sudo nano  /etc/pacman.d/hooks/firejail.hook
+  when: 1739257002
+- cmd: which  foot
+  when: 1739257034
+- cmd: ln -s /usr/bin/firejail /usr/bin/foot
+  when: 1739257065
+    - /usr/bin/firejail
+    - /usr/bin/foot
+- cmd: foot
+  when: 1739257071
+- cmd: pid firejail
+  when: 1739257374
+- cmd: id firejail
+  when: 1739257400
+- cmd: $PATH
+  when: 1739257756
+- cmd: CD
+  when: 1739257776
+- cmd: cat $PATH
+  when: 1739257790
+- cmd: firejail foot
+  when: 1739257926
+- cmd: ps
+  when: 1739258394
+- cmd: ps -el | grep -i firefox
+  when: 1739258663
+- cmd: firecfg
+  when: 1739258982
+- cmd: sudo  firejail clear
+  when: 1739259426
+- cmd: firejail Public/
+  when: 1739259449
+    - Public/
+- cmd: librewolf.desktop
+  when: 1739260052
+- cmd: librewolf
+  when: 1739260078
+- cmd: firejail clean
+  when: 1739260244
+- cmd: firejail librewolf
+  when: 1739260430
+- cmd: ps -el | grep -i librewolf
+  when: 1739260456
+- cmd: nano  myapps.conf
+  when: 1739260677
+    - myapps.conf
+- cmd: htop
+  when: 1739260692
+- cmd: sudo nano  /etc/firejail/firejail.users
+  when: 1739260993
+- cmd: ps -el | grep -i firejail
+  when: 1739273561
+- cmd: sudo pacman -Syu --needed  wine wine-mono wine-gecko
+  when: 1739273884
+- cmd: firejail list
+  when: 1739273974
+- cmd: sudo  firecfg
+  when: 1739273993
+- cmd: which  freetube
+  when: 1739274834
+- cmd: firejail clear
+  when: 1739275230
+- cmd: nano  freetube.desktop
+  when: 1739275243
+    - freetube.desktop
+- cmd: sudo firejail clean
+  when: 1739275461
+- cmd: cd /home/vago/.local/share/applications
+  when: 1739275480
+    - /home/vago/.local/share/applications
+- cmd: sudo  firecfg --fix
+  when: 1739275551
+- cmd: firecfg --fix
+  when: 1739275564
+- cmd: firecfg --clean
+  when: 1739275780
+- cmd: firejail --noprofile freetube
+  when: 1739276122
+- cmd: mkdir -pv firejail
+  when: 1739276287
+- cmd: cp -i  /etc/firejail/freetube.profile .
+  when: 1739276348
+    - /etc/firejail/freetube.profile
+- cmd: firejail freetube
+  when: 1739276495
+- cmd: /usr/bin/firejail freetube
+  when: 1739276784
+- cmd: cp -i  /etc/firejail/librewolf.profile .
+  when: 1739276920
+    - /etc/firejail/librewolf.profile
+- cmd: nano  librewolf.profile
+  when: 1739276927
+    - librewolf.profile
+- cmd: cd firejail/
+  when: 1739277480
+    - firejail/
+- cmd: nano  freetube.profile
+  when: 1739277487
+    - freetube.profile
+- cmd: freetube
+  when: 1739277666
+- cmd: nano ~/.bash_aliases
+  when: 1739278303
+    - ~/.bash_aliases
+- cmd: cd ~/dotfiles && git status && cd -
+  when: 1739278633
+    - ~/dotfiles
+- cmd: nano  ft
+  when: 1739278903
+- cmd: cd fish/
+  when: 1739279009
+- cmd: cp ~/.config/FreeTube/history.db playlists.db profiles.db search-history.db settings.db ~/dotfiles/freetube/.config/Freetube/ &&  cd ~/dotfiles && git status && cd -
+  when: 1739279140
+    - ~/.config/FreeTube/history.db
+- cmd: cp ~/.config/FreeTube/history.db playlists.db profiles.db search-history.db settings.db ~/dotfiles/freetube/.config/Freetube &&  cd ~/dotfiles && git status && cd -
+  when: 1739279227
+- cmd: cp ~/.config/FreeTube/history.db playlists.db profiles.db search-history.db settings.db ~/dotfiles/freetube/.config/FreeTube &&  cd ~/dotfiles && git status && cd -
+  when: 1739279346
+    - ~/dotfiles/freetube/.config/FreeTube
+- cmd: nano ~/.config/waybar/config
+  when: 1739279702
+    - ~/.config/waybar/config
+- cmd: which  swaync
+  when: 1739279786
+- cmd: nano  keybind.conf
+  when: 1739279866
+    - keybind.conf
+- cmd: pacman -Qi swaync
+  when: 1739280035
+- cmd: notify-send hellp
+  when: 1739280135
+- cmd: cd /etc/firejail/
+  when: 1739280162
+    - /etc/firejail/
+- cmd: nano  notify-send.profile
+  when: 1739280208
+    - notify-send.profile
+- cmd: firejail --noprofile notify-send hello
+  when: 1739281232
+- cmd: sudo pacman -Syu --needed  winetricks
+  when: 1739288012
+- cmd: yay winegui
+  when: 1739288175
+- cmd: btop
+  when: 1739288617
+- cmd: cd ~/.config/FreeTube/ && cp history.db playlists.db profiles.db search-history.db settings.db ~/dotfiles/freetube/.config/FreeTube &&  cd ~/dotfiles && git status && cd -
+  when: 1739288787
+    - ~/.config/FreeTube/
+- cmd: cd /mnt/data/
+  when: 1739288996
+    - /mnt/data/
+- cmd: cd Win/
+  when: 1739289014
+    - Win/
+- cmd: cd Adobe\\ Photoshop\\ CS6\\ 13.0\\ Final\\ \\ Multilanguage\\ \\(patch-PainteR\\)\\ \\[ChingLiu\\]/
+  when: 1739289049
+    - Adobe\\ Photoshop\\ CS6\\ 13.0\\ Final\\ \\ Multilanguage\\ \\(patch-PainteR\\)\\ \\[ChingLiu\\]/
+- cmd: cd Adobe\\ CS6/
+  when: 1739289070
+    - Adobe\\ CS6/
+- cmd: wine Set-up.exe
+  when: 1739289084
+    - Set-up.exe
+- cmd: firejail --noprofile winegui
+  when: 1739290022
+- cmd: rm ft
+  when: 1739290435
+    - ft
+- cmd: nano  .config/fish/config.fish
+  when: 1739290499
+- cmd: eza -a --color always --long --git --no-filesize --icons always --no-time --no-user --no-permissions
+  when: 1739290523
+- cmd: fish
+  when: 1739290530
+- cmd: sudo winecfg
+  when: 1739291428
+- cmd: winecfg
+  when: 1739291497
+- cmd: winegui
+  when: 1739291626
+- cmd: ./gitpull.sh
+  when: 1739339331
+- cmd: mkdir -pv d1 d2
+  when: 1739339821
+- cmd: cp -i  a ./d1 ./d2
+  when: 1739339903
+    - a
+    - ./d1
+    - ./d2
+- cmd: cp -i  -r a  d1/ d2/
+  when: 1739339959
+    - d1/
+    - d2/
+- cmd: cd d2/
+  when: 1739339996
+- cmd: cp -i  a d1/
+  when: 1739340031
+- cmd: cd d1/
+  when: 1739340052
+- cmd: cd ..
+  when: 1739340072
+    - ..
+- cmd: sudo chmod +x  x.sh
+  when: 1739340658
+    - x.sh
+- cmd: nano  x.sh -l
+  when: 1739340721
+- cmd: cd ../atesting/
+  when: 1739340851
+- cmd: cd 00inst/
+  when: 1739341151
+- cmd: nano  aur.sh
+  when: 1739341168
+    - aur.sh
+- cmd: cd ../../atesting/
+  when: 1739341390
+- cmd: cd atesting/d1/
+  when: 1739341643
+    - atesting/d1/
+- cmd: nano
+  when: 1739341645
+- cmd: nano  a
+  when: 1739341798
+- cmd: rm -rf  d1/
+  when: 1739341857
+- cmd: rm -rf  d2/
+  when: 1739341864
+- cmd: rm a
+  when: 1739341869
+- cmd: cd ~/.config/
+  when: 1739341901
+    - ~/.config/
+- cmd: cd FreeTube/
+  when: 1739341910
+    - FreeTube/
+- cmd: cd ~/dotfiles/
+  when: 1739342252
+- cmd: cd freetube/.config/FreeTube/
+  when: 1739342270
+    - freetube/.config/FreeTube/
+- cmd: cd .config/fish/
+  when: 1739342835
+    - .config/fish/
+- cmd: nano  config.fish
+  when: 1739342842
+- cmd: ./x.sh
+  when: 1739343091
+- cmd: nano  x.sh
+  when: 1739343293
+- cmd: nano  bup
+  when: 1739343816
+    - bup
+- cmd: cd ~/bin/ && bash cpinst.sh && cd ~
+  when: 1739343855
+    - ~/bin/
+    - cpinst.sh
+    - ~
+- cmd: cd ~/bin/ && bash cpinst.sh && cd ~ q
+  when: 1739343890
+- cmd: nano  gitpull.sh
+  when: 1739344277
+    - gitpull.sh
+- cmd: mv -i   atesting/x.sh /bin/
+  when: 1739344663
+    - atesting/x.sh
+    - /bin/
+- cmd: cp -i   atesting/x.sh /bin/
+  when: 1739344704
+- cmd: exa -lha
+  when: 1739344724
+- cmd: mv -i x.sh ~/bin
+  when: 1739344743
+    - ~/bin
+- cmd: mv -i x.sh ftsync.sh
+  when: 1739344777
+- cmd: sudo chmod +x  sync.sh
+  when: 1739345177
+    - sync.sh
+- cmd: cd
+  when: 1739345290
+- cmd: cd ~/.config/FreeTube/ && cp history.db playlists.db profiles.db search-history.db settings.db ~/dotfiles/freetube/.config/FreeTube &&  cd ~/dotfiles && git status && cd ~
+  when: 1739345746
+- cmd: ./ftsync.sh
+  when: 1739345888
+- cmd: ./gpush.sh
+  when: 1739346034
+- cmd: cd atesting/
+  when: 1739346076
+- cmd: mv -i gpush.sh ~/bin/
+  when: 1739346097
+    - gpush.sh
+- cmd: mv -i sync.sh ~/bin/
+  when: 1739346155
+- cmd: cd ../bin/
+  when: 1739346162
+    - ../bin/
+- cmd: nano  sync.sh -l
+  when: 1739346776
+- cmd: nano  ftsync.sh
+  when: 1739346830
+    - ftsync.sh
+- cmd: ./sync.sh
+  when: 1739346877
+- cmd: rm ftsync.sh
+  when: 1739346977
+- cmd: rm gpush.sh
+  when: 1739346988
+- cmd: nano  sync.sh
+  when: 1739347159
+- cmd: sudo chmod +x  gpush.sh
+  when: 1739347253
+- cmd: eza -a --color always --long --git --no-filesize --icons always --no-time --no-user
+  when: 1739347257
+- cmd: cd ~/dotfiles && git pull && cd -
+  when: 1739347847
+- cmd: cd ~/dotfiles && git add * && git commit -m "save" && git push -u origin main && cd -
+  when: 1739347857
+- cmd: gt
+  when: 1739347860
+- cmd: cd bin
+  when: 1739348044
+- cmd: nano  aaa
+  when: 1739348050
+- cmd: cd ~/.config/hypr/
+  when: 1739349713
+    - ~/.config/hypr/
+- cmd: nano  autostart.conf
+  when: 1739349716
+    - autostart.conf
+- cmd: cd bin/
+  when: 1739349743
+    - bin/
+- cmd: nano  gpush.sh
+  when: 1739349747
+- cmd: nano  ~/.config/fish/config.fish
+  when: 1739349812
+- cmd: ~/bin/cpinst.sh
+  when: 1739349835
+- cmd: cd ~/dotfiles && git status && cd ~
+  when: 1739350224
+- cmd: ggg
+  when: 1739350232
+- cmd: ~/bin/bash gpush.sh
+  when: 1739350241
+- cmd: ~/bin/bash cpinst.sh
+  when: 1739350266
+  when: 1739350300
+- cmd: ~/bin/gpush.sh
+  when: 1739350307
+  when: 1739350310
+- cmd: ~/bin/cpinst.sh q
+  when: 1739350327
+  when: 1739350329
+- cmd: ~/bin/bh q
+  when: 1739350350

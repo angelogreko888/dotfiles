@@ -1592,3 +1592,6 @@ l | rg fish
 chsh -s /usr/bin/fish
 sn /etc/shells
 git rm fishlocal/*
+man pidof
+pidof hyprlock
+n gpush.sh 

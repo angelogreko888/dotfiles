@@ -772,8 +772,6 @@
   when: 1738824129
 - cmd: df -h
   when: 1738824174
-- cmd: nvidia-smi -q -d MEMORY |grep 'FB Memory Usage' -A1
-  when: 1738824266
 - cmd: grep 'Video Memory Self Refresh' /proc/driver/nvidia/gpus/<Domain>:<Bus>:<Device>.0/power
   when: 1738824426
     - /proc/driver/nvidia/gpus/
@@ -1214,8 +1212,6 @@
 - cmd: nano  look.conf
   when: 1739006101
     - look.conf
-- cmd: reboot
-  when: 1739007005
 - cmd: ll /sys/class/hwmon/hwmon4/
   when: 1739007294
     - /sys/class/hwmon/hwmon4/
@@ -1338,8 +1334,6 @@
     - /sys/power/disk
 - cmd: cat /sys/power/mem_sleep
   when: 1739013904
-- cmd: 110201
-  when: 1739015535
 - cmd: cd ../uwsm/
   when: 1739022561
 - cmd: nano  env
@@ -1447,11 +1441,6 @@
   when: 1739109917
 - cmd: lspci | grep vga
   when: 1739110163
-- cmd: cat /sys/module/nvidia_drm/parameters/modeset
-  when: 1739110462
-- cmd: sudo  cat /sys/module/nvidia_drm/parameters/modeset
-  when: 1739110469
-    - /sys/module/nvidia_drm/parameters/modeset
 - cmd: sudo pacman -Ss  xorg-xwayland
   when: 1739110597
 - cmd: sudo pacman -Rns xorg-xwayland
@@ -1459,18 +1448,12 @@
 - cmd: sudo  cat /sys/module/nvidia_drm/parameters/fbdev
   when: 1739110827
     - /sys/module/nvidia_drm/parameters/fbdev
-- cmd: sudo nano  /etc/mkinitcpio.conf
-  when: 1739111575
-- cmd: sudo nano  /etc/modprobe.d/nvidia.conf
-  when: 1739111901
 - cmd: lspci -nn | grep VGA
   when: 1739112978
 - cmd: lspci -k -d ::03xx
   when: 1739113018
 - cmd: sudo pacman -Ss  intel-media-driver
   when: 1739113268
-- cmd: sudo  mkinitcpio -P
-  when: 1739113732
 - cmd: less /sys/kernel/debug/dri/*/gt0/uc/guc_info
   when: 1739113906
 - cmd: intel_vbt_decode /sys/kernel/debug/dri/1/i915_vbt
@@ -1488,8 +1471,6 @@
 - cmd: yay intel vbt decode
   when: 1739114581
     - vbt
-- cmd: fwupdmgr refresh
-  when: 1739114602
 - cmd: sudo pacman -Ss  xf86-video-intel
   when: 1739114751
 - cmd: sudo pacman -Ss  vulkan-intel
@@ -1506,15 +1487,6 @@
   when: 1739115788
 - cmd: sudo  less /sys/kernel/debug/dri/*/gt0/uc/huc_info
   when: 1739115806
-- cmd: sudo  dmesg
-  when: 1739115836
-- cmd: journalctl
-  when: 1739115885
-- cmd: sudo nano  /etc/default/grub
-  when: 1739115955
-- cmd: sudo grub-mkconfig -o /boot/grub/grub.cfg
-  when: 1739116078
-    - /boot/grub/grub.cfg
 - cmd: cd misc/
   when: 1739170333
 - cmd: comm lpacman.lst qpacman.lst
@@ -1629,8 +1601,6 @@
 - cmd: sudo  rm /usr/share/mime/application/vnd.flatpak.xml
   when: 1739251508
     - /usr/share/mime/application/vnd.flatpak.xml
-- cmd: fastfetch
-  when: 1739251526
 - cmd: sudo pacman -Syu --needed  firejail firetools
   when: 1739256063
 - cmd: sudo pacman -Syu --needed  apparmor
@@ -1759,14 +1729,8 @@
 - cmd: cp ~/.config/FreeTube/history.db playlists.db profiles.db search-history.db settings.db ~/dotfiles/freetube/.config/FreeTube &&  cd ~/dotfiles && git status && cd -
   when: 1739279346
     - ~/dotfiles/freetube/.config/FreeTube
-- cmd: nano ~/.config/waybar/config
-  when: 1739279702
-    - ~/.config/waybar/config
 - cmd: which  swaync
   when: 1739279786
-- cmd: nano  keybind.conf
-  when: 1739279866
-    - keybind.conf
 - cmd: pacman -Qi swaync
   when: 1739280035
 - cmd: notify-send hellp
@@ -1783,8 +1747,6 @@
   when: 1739288012
 - cmd: yay winegui
   when: 1739288175
-- cmd: btop
-  when: 1739288617
 - cmd: cd ~/.config/FreeTube/ && cp history.db playlists.db profiles.db search-history.db settings.db ~/dotfiles/freetube/.config/FreeTube &&  cd ~/dotfiles && git status && cd -
   when: 1739288787
     - ~/.config/FreeTube/
@@ -1820,8 +1782,6 @@
   when: 1739291497
 - cmd: winegui
   when: 1739291626
-- cmd: ./gitpull.sh
-  when: 1739339331
 - cmd: mkdir -pv d1 d2
   when: 1739339821
 - cmd: cp -i  a ./d1 ./d2
@@ -1861,8 +1821,6 @@
     - atesting/d1/
 - cmd: nano
   when: 1739341645
-- cmd: nano  a
-  when: 1739341798
 - cmd: rm -rf  d1/
   when: 1739341857
 - cmd: rm -rf  d2/
@@ -1899,9 +1857,6 @@
     - ~
 - cmd: cd ~/bin/ && bash cpinst.sh && cd ~ q
   when: 1739343890
-- cmd: nano  gitpull.sh
-  when: 1739344277
-    - gitpull.sh
 - cmd: mv -i   atesting/x.sh /bin/
   when: 1739344663
     - atesting/x.sh
@@ -1951,47 +1906,210 @@
   when: 1739347159
 - cmd: sudo chmod +x  gpush.sh
   when: 1739347253
-- cmd: eza -a --color always --long --git --no-filesize --icons always --no-time --no-user
-  when: 1739347257
 - cmd: cd ~/dotfiles && git pull && cd -
   when: 1739347847
-- cmd: cd ~/dotfiles && git add * && git commit -m "save" && git push -u origin main && cd -
-  when: 1739347857
 - cmd: gt
   when: 1739347860
-- cmd: cd bin
-  when: 1739348044
 - cmd: nano  aaa
   when: 1739348050
-- cmd: cd ~/.config/hypr/
-  when: 1739349713
-    - ~/.config/hypr/
 - cmd: nano  autostart.conf
   when: 1739349716
     - autostart.conf
-- cmd: cd bin/
-  when: 1739349743
-    - bin/
-- cmd: nano  gpush.sh
-  when: 1739349747
 - cmd: nano  ~/.config/fish/config.fish
   when: 1739349812
-- cmd: ~/bin/cpinst.sh
-  when: 1739349835
-- cmd: cd ~/dotfiles && git status && cd ~
-  when: 1739350224
 - cmd: ggg
   when: 1739350232
 - cmd: ~/bin/bash gpush.sh
   when: 1739350241
 - cmd: ~/bin/bash cpinst.sh
   when: 1739350266
+- cmd: ~/bin/cpinst.sh
   when: 1739350300
-- cmd: ~/bin/gpush.sh
-  when: 1739350307
-  when: 1739350310
 - cmd: ~/bin/cpinst.sh q
   when: 1739350327
-  when: 1739350329
 - cmd: ~/bin/bh q
   when: 1739350350
+- cmd: 110201
+  when: 1739378641
+- cmd: nano sync.sh
+  when: 1739378846
+- cmd: ./gitpull.sh
+  when: 1739379325
+- cmd: nano  gitpull.sh
+  when: 1739379418
+    - gitpull.sh
+- cmd: bash _x() { curl https://cht.sh/$1 ;}; _x pidof
+  when: 1739380107
+- cmd: cd ~/dotfiles && git add * && git commit -m "save" && git push -u origin main && cd -
+  when: 1739380734
+- cmd: fastfetch
+  when: 1739380792
+- cmd: ~/bin/gpush.sh
+  when: 1739380828
+- cmd: nano  gpush.sh
+  when: 1739425119
+- cmd: nano ~/.config/waybar/config
+  when: 1739425663
+    - ~/.config/waybar/config
+- cmd: sudo nano  $HOME/.config/waybar/power_menu.xml
+  when: 1739425842
+    - $HOME/.config/waybar/power_menu.xml
+- cmd: nano  $HOME/.config/waybar/power_menu.xml
+  when: 1739425853
+- cmd: hyprlock & disown && systemctl suspend
+  when: 1739426191
+- cmd: sudo  pacman -S hyprland
+  when: 1739427007
+- cmd: journalctl
+  when: 1739427107
+- cmd: nvidia-smi -q -d MEMORY |grep 'FB Memory Usage' -A1
+  when: 1739427607
+- cmd: sudo nano  /etc/systemd/system/nvidia-suspend.service
+  when: 1739427649
+- cmd: sudo install /usr/share/doc/NVIDIA_GLX-1.0/samples/systemd/nvidia-suspend.service /etc/systemd/system
+  when: 1739427736
+- cmd: sudo nano  /usr/share/doc/NVIDIA_GLX-1.0/samples
+  when: 1739427788
+- cmd: sudo nano  /usr/lib/systemd/system/nvidia-suspend.service
+  when: 1739427898
+- cmd: sudo nano  /proc/driver/nvidia/suspend
+  when: 1739427944
+- cmd: sudo nano  /etc/mkinitcpio.conf
+  when: 1739428172
+- cmd: cat /sys/module/nvidia_drm/parameters/modeset
+  when: 1739428205
+- cmd: sudo  cat /sys/module/nvidia_drm/parameters/modeset
+  when: 1739428211
+    - /sys/module/nvidia_drm/parameters/modeset
+- cmd: sudo nano  /etc/modprobe.d/nvidia.conf
+  when: 1739428256
+- cmd: sudo nano  /etc/default/grub
+  when: 1739428562
+- cmd: nano  a
+  when: 1739428603
+- cmd: sudo grub-mkconfig -o /boot/grub/grub.cfg
+  when: 1739428625
+    - /boot/grub/grub.cfg
+- cmd: sudo  mkinitcpio -P
+  when: 1739428630
+- cmd: reboot
+  when: 1739428656
+- cmd: hyprctl dispatch exit
+  when: 1739429093
+- cmd: sudo  dmesg
+  when: 1739429126
+- cmd: fwupdmgr refresh
+  when: 1739429156
+- cmd: btop
+  when: 1739429337
+- cmd: nano  keybind.conf
+  when: 1739429406
+    - keybind.conf
+- cmd: ~/bin/gpush.sh && hyprctl dispatch exit
+  when: 1739429425
+- cmd: cd bin/
+  when: 1739429487
+    - bin/
+- cmd: sudo chmod +x  exit.sh
+  when: 1739429564
+    - exit.sh
+- cmd: ./exit.sh
+  when: 1739429575
+- cmd: cd ~/dotfiles && git status && cd ~
+  when: 1739429618
+- cmd: cd ~/.config/hypr/
+  when: 1739429648
+    - ~/.config/hypr/
+- cmd: cd bin
+  when: 1739429700
+- cmd: nano  exit.sh
+  when: 1739429705
+- cmd: nano  reboot.sh
+  when: 1739429720
+- cmd: nano  poweroff
+  when: 1739429747
+- cmd: mv -i poweroff poweroff.sh
+  when: 1739429788
+    - poweroff
+- cmd: sudo chmod +x  reboot.sh poweroff.sh
+  when: 1739429799
+    - reboot.sh
+    - poweroff.sh
+- cmd: eza -a --color always --long --git --no-filesize --icons always --no-time --no-user
+  when: 1739429802
+- cmd: pacman -Qi nvidia
+  when: 1739429995
+- cmd: pacman -Qi nvidia-dkms
+  when: 1739430025
+- cmd: sudo  pacman -S dkms
+  when: 1739430063
+- cmd: ~/bin/bup
+  when: 1739430110
+- cmd: pacman -Qi i915
+  when: 1739430178
+- cmd: sudo pacman -Ss powertop
+  when: 1739430201
+- cmd: sudo pacman -Syu --needed  powertop
+  when: 1739430216
+- cmd: powertop
+  when: 1739430226
+- cmd: sudo nano  /etc/systemd/system/powertop.service
+  when: 1739430458
+- cmd: /usr/bin/powertop --auto-tune
+  when: 1739430495
+- cmd: sudo  /usr/bin/powertop --auto-tune
+  when: 1739430500
+    - /usr/bin/powertop
+- cmd: sudo  powertop
+  when: 1739430514
+- cmd: sudo systemctl  status powertop.service
+  when: 1739430569
+- cmd: sudo systemctl  enable --now powertop.service
+  when: 1739430622
+- cmd: sudo systemctl  disable powertop.service
+  when: 1739430733
+- cmd: sudo systemctl  stop powertop.service
+  when: 1739430754
+- cmd: sudo pacman -Rns powertop
+  when: 1739430787
+- cmd: sudo pacman -Syu --needed   mesa-amber
+  when: 1739430895
+  when: 1739431067
+  when: 1739431085
+  when: 1739431099
+  when: 1739431141
+  when: 1739431197
+  when: 1739431224
+  when: 1739431561
+  when: 1739431677
+  when: 1739431731
+  when: 1739431950
+  when: 1739431970
+  when: 1739431981
+  when: 1739432001
+  when: 1739437315
+  when: 1739437352
+  when: 1739437372
+  when: 1739437387
+  when: 1739437394
+  when: 1739437405
+  when: 1739437427
+  when: 1739437454
+- cmd: sudo pacman -Syu --needed  mesa
+  when: 1739437496
+  when: 1739437632
+  when: 1739437682
+  when: 1739437704
+  when: 1739437791
+  when: 1739437841
+  when: 1739437867
+  when: 1739437920
+  when: 1739438058
+  when: 1739438077
+  when: 1739438105
+  when: 1739438108
+- cmd: sudo nano  /etc/fstab
+  when: 1739438154
+    - /etc/fstab
+  when: 1739442199
+  when: 1739442206

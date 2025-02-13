@@ -13,6 +13,8 @@ evince
 eza
 fastfetch
 file-roller
+firejail
+firetools
 firefox
 fish
 font-manager
@@ -70,6 +72,7 @@ power-profiles-daemon
 python-pip
 qt5-wayland
 qt6-wayland
+qt5ct
 ranger
 reflector
 ripgrep

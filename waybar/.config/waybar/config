@@ -239,6 +239,7 @@
             "shutdown": "~/bin/gpush.sh && poweroff",	
             "reboot": "~/bin/gpush.sh && reboot",
  //           "suspend": "pidof hyprlock || (hyprlock & sleep 1s && systemctl suspend)",
+	    "log out": "~/bin/gpush.sh && hyprctl dispatch exit"
         }
     },
 

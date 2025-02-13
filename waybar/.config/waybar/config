@@ -236,10 +236,10 @@
         "menu": "on-click",
         "menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
         "menu-actions": {
-            "shutdown": "~/bin/gpush.sh && poweroff",	
-            "reboot": "~/bin/gpush.sh && reboot",
+            "shutdown": "~/bin/poweroff.sh",	
+            "reboot": "~/bin/reboot.sh",
  //           "suspend": "pidof hyprlock || (hyprlock & sleep 1s && systemctl suspend)",
-	    "log out": "~/bin/gpush.sh && hyprctl dispatch exit"
+	    "log out": "~/bin/exit.sh"
         }
     },
 

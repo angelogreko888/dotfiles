@@ -9,7 +9,7 @@ ctl
 freetube-bin
 hyprevents-git
 hyprprop-git
-hyprshade
+#hyprshade
 hyprshot
 libglade
 librewolf-bin

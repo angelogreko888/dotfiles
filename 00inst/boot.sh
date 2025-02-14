@@ -17,9 +17,9 @@ bootctl --path=/boot install
 
 echo "
 default  arch.conf
-timeout  1
-console-mode max
-editor   no
+timeout  0
+console-mode keep
+editor   1
 " > /boot/loader/loader.conf
 
 echo "

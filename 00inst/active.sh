@@ -12,7 +12,6 @@ upower
 nvidia-suspend.service
 nvidia-hibernate.service
 nvidia-resume.service 
-# systemd-boot-update.service
 
 )
 

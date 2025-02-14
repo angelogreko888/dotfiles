@@ -22,5 +22,7 @@ echo vago:password | chpasswd
 echo "vago ALL=(ALL) ALL" >> /etc/sudoers.d/vago
 echo "Defaults  timestamp_timeout=999" >> /etc/sudoers.d/vago
 
+systemctl enable NetworkManager
+
 printf "\e[1;32mDone! Type exit, umount -a and reboot.\e[0m"
 

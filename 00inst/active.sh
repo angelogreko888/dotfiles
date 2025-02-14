@@ -11,7 +11,7 @@ avahi-daemon
 upower
 nvidia-suspend.service
 nvidia-hibernate.service
-acpid
+nvidia-resume.service 
 
 )
 

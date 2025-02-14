@@ -3,7 +3,6 @@ arc-gtk-theme
 arch-install-scripts
 avahi
 btop
-btrfs-progs
 cups
 cups-pdf
 dconf-editor
@@ -29,7 +28,6 @@ gnome-disk-utility
 gnome-text-editor
 gparted
 grim
-grub-btrfs
 gst-plugin-pipewire
 gufw
 gvfs
@@ -63,7 +61,6 @@ nemo
 networkmanager
 network-manager-applet
 nmap
-nwg-look
 pacman-contrib
 pamixer
 pavucontrol

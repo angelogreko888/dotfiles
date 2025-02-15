@@ -68,7 +68,7 @@ nemo
 network-manager-applet
 networkmanager
 nmap
-nvidia-dkms
+nvidia-open-dkms
 nvidia-settings
 nvidia-utils
 nwg-look

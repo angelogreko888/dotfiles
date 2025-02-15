@@ -1,4 +1,4 @@
-/acpi
+acpi
 arc-gtk-theme
 arch-install-scripts
 avahi
@@ -67,9 +67,9 @@ pavucontrol
 plocate
 power-profiles-daemon
 python-pip
-qt6-wayland
-qt5ct
 qt5-wayland
+qt5ct
+qt6-wayland
 ranger
 reflector
 ripgrep

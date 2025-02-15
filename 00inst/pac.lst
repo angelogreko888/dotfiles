@@ -46,8 +46,6 @@ iwd
 jdk-openjdk
 kanshi
 less
-lib32-nvidia-utils
-lib32-opencl-nvidia
 libpulse
 libreoffice-fresh
 linux-firmware-qlogic

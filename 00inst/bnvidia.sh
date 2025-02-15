@@ -3,21 +3,31 @@
 cd ~
 
 nvidia=(
-  nvidia-dkms
-  nvidia-utils
-  libva
-  libva-nvidia-driver
+	nvidia-open-dkms
+	nvidia-utils
+	opencl-clover-mesa
+	opencl-nvidia
+	lib32-nvidia-utils
+	lib32-opencl-nvidia
+	libvdpau
+	libxnvctrl
+	mesa
+	lib32-mesa 
+	libva-mesa-driver 
+	mesa-vdpau 
+
 )
 
 for PKG in "${nvidia[@]}";do
         sudo pacman -Su --needed --noconfirm "$PKG"
 done
 
+yay -S --noconfirm libva-nvidia-driver-git
 
 if grep -qE '^MODULES=.*nvidia. *nvidia_modeset.*nvidia_uvm.*nvidia_drm' /etc/mkinitcpio.conf; then
   echo "Nvidia modules already included in /etc/mkinitcpio.conf"
 else
-  sudo sed -Ei 's/^(MODULES=\([^\)]*)\)/\1 nvidia nvidia_modeset nvidia_uvm nvidia_drm)/' /etc/mkinitcpio.conf
+  sudo sed -Ei 's/^(MODULES=\([^\)]*)\)/\1 i915 nvidia nvidia_modeset nvidia_uvm nvidia_drm)/' /etc/mkinitcpio.conf
   echo "Nvidia modules added in /etc/mkinitcpio.conf"
 fi
 

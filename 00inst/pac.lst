@@ -1,4 +1,4 @@
-acpi
+/acpi
 arc-gtk-theme
 arch-install-scripts
 avahi
@@ -10,6 +10,7 @@ dbxtool
 dconf-editor
 dmidecode
 dosfstools
+egl-wayland
 eog
 evince
 eza
@@ -92,7 +93,6 @@ waybar
 wget
 wireless_tools
 wireplumber
-xdg-desktop-portal-gtk
 xdg-user-dirs
 xdg-utils
 yt-dlp

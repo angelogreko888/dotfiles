@@ -33,13 +33,6 @@ fi
 
 sudo mkinitcpio -P
 
-# Check if  /boot/loader/entries/arch.conf exists
-if [ -f  /boot/loader/entries/arch.conf ]; then
-    # Check if nvidia-drm.modeset=1 is present
-    if ! sudo grep -q "nvidia-drm.modeset=1"  /boot/loader/entries/arch.conf; then
-        sudo sed -i -e 's/\(options ".*\)"/\1 nvidia-drm.modeset=1"/'  /boot/loader/entries/arch.conf
-        echo "nvidia-drm.modeset=1 added to  /boot/loader/entries/arch.conf"
-    fi
 
 # Blacklist nouveau
     if [[ -z $blacklist_nouveau ]]; then

@@ -170,7 +170,6 @@
 - cmd: n  ~/.xprofile
 - cmd: h | rg group
 - cmd: sn /etc/groupsn
-- cmd: id vago
 - cmd: sn /etc/group
 - cmd: ps seatd
 - cmd: ctl status ly
@@ -971,8 +970,6 @@
   when: 1738907533
 - cmd: sudo pacman -Ss ctl
   when: 1738907602
-- cmd: yay ctl
-  when: 1738907621
 - cmd: pacman -Rsp art-rawconverter
   when: 1738907909
 - cmd: pacman -Rsp art-rawconverter | awk '{print $1}'
@@ -1010,9 +1007,6 @@
 - cmd: nano  hwinfo
   when: 1738938454
     - hwinfo
-- cmd: cd .config/kanshi/
-  when: 1738938689
-    - .config/kanshi/
 - cmd: sudo updatedb; locate sleep.conf
   when: 1738993730
 - cmd: nano  /etc/systemd/sleep.conf
@@ -1203,8 +1197,6 @@
 - cmd: ll /sys/class/hwmon/hwmon4/device/
   when: 1739007319
     - /sys/class/hwmon/hwmon4/device/
-- cmd: sudo pacman -Ss dmidecode
-  when: 1739007479
 - cmd: sudo pacman -Syu --needed  dmidecode
   when: 1739007492
 - cmd: dmidecode
@@ -1321,12 +1313,6 @@
   when: 1739013904
 - cmd: cd ../uwsm/
   when: 1739022561
-- cmd: nano  env
-  when: 1739022566
-    - env
-- cmd: cd uwsm/
-  when: 1739022787
-    - uwsm/
 - cmd: nano  env-hyprland
   when: 1739022791
     - env-hyprland
@@ -1364,11 +1350,6 @@
   when: 1739091566
 - cmd: cd ../kanshi/
   when: 1739105684
-- cmd: nano  monitor.conf
-  when: 1739105764
-    - monitor.conf
-- cmd: kanshi
-  when: 1739105955
 - cmd: cd kanshi/
   when: 1739105983
     - kanshi/
@@ -1379,8 +1360,6 @@
     - nvidia.conf
 - cmd: sudo pacman -Syu --needed   linux-firmware
   when: 1739107067
-- cmd: hyprctl monitors all
-  when: 1739108602
 - cmd: kanshi -c
   when: 1739108650
 - cmd: kanshi -c /.config/kanshi/config
@@ -1394,14 +1373,9 @@
     - ~/.config/kanshi/config
 - cmd: kanshi -c --config /.config/kanshi/config
   when: 1739108902
-- cmd: nano  config
-  when: 1739108924
-    - config
 - cmd: sudo nano  sudo nano  /etc/modprobe.d/i915.conf
   when: 1739109104
     - /etc/modprobe.d/i915.conf
-- cmd: history
-  when: 1739109917
 - cmd: sudo pacman -Ss  xorg-xwayland
   when: 1739110597
 - cmd: sudo pacman -Rns xorg-xwayland
@@ -1476,8 +1450,6 @@
   when: 1739201914
 - cmd: com.usebottles.bottles
   when: 1739201939
-- cmd: waybar
-  when: 1739201979
 - cmd: sudo -sE /sbin/gufw-pkexec
   when: 1739203203
     - /sbin/gufw-pkexec
@@ -1600,8 +1572,6 @@
 - cmd: nano  myapps.conf
   when: 1739260677
     - myapps.conf
-- cmd: htop
-  when: 1739260692
 - cmd: sudo nano  /etc/firejail/firejail.users
   when: 1739260993
 - cmd: ps -el | grep -i firejail
@@ -1748,9 +1718,6 @@
   when: 1739340721
 - cmd: cd ../atesting/
   when: 1739340851
-- cmd: nano  aur.sh
-  when: 1739341168
-    - aur.sh
 - cmd: cd ../../atesting/
   when: 1739341390
 - cmd: cd atesting/d1/
@@ -1764,9 +1731,6 @@
   when: 1739341864
 - cmd: rm a
   when: 1739341869
-- cmd: cd ~/.config/
-  when: 1739341901
-    - ~/.config/
 - cmd: cd FreeTube/
   when: 1739341910
     - FreeTube/
@@ -1845,9 +1809,6 @@
   when: 1739347860
 - cmd: nano  aaa
   when: 1739348050
-- cmd: nano  autostart.conf
-  when: 1739349716
-    - autostart.conf
 - cmd: ggg
   when: 1739350232
 - cmd: ~/bin/bash gpush.sh
@@ -1894,8 +1855,6 @@
   when: 1739427898
 - cmd: sudo nano  /proc/driver/nvidia/suspend
   when: 1739427944
-- cmd: sudo nano  /etc/mkinitcpio.conf
-  when: 1739428172
 - cmd: nano  a
   when: 1739428603
 - cmd: hyprctl dispatch exit
@@ -1907,17 +1866,11 @@
     - keybind.conf
 - cmd: ~/bin/gpush.sh && hyprctl dispatch exit
   when: 1739429425
-- cmd: cd bin/
-  when: 1739429487
-    - bin/
 - cmd: sudo chmod +x  exit.sh
   when: 1739429564
     - exit.sh
 - cmd: ./exit.sh
   when: 1739429575
-- cmd: cd ~/.config/hypr/
-  when: 1739429648
-    - ~/.config/hypr/
 - cmd: cd bin
   when: 1739429700
 - cmd: nano  exit.sh
@@ -1972,14 +1925,6 @@
   when: 1739437454
 - cmd: sudo  dmesg | grep -i -e 'huc' -e 'guc'
   when: 1739437682
-- cmd: sudo nano  /etc/modprobe.d/nvidia.conf
-  when: 1739437841
-- cmd: sudo  mkinitcpio -P
-  when: 1739437920
-- cmd: ~/bin/cpinst.sh q
-  when: 1739442199
-- cmd: ~/bin/bh q
-  when: 1739442206
 - cmd: history  | rg firejail
   when: 1739442409
 - cmd: comm bpac ../misc/qpacman.lst
@@ -2002,8 +1947,6 @@
   when: 1739443281
 - cmd: sudo nano  /etc/X11/xorg.conf.d/20-intel.conf
   when: 1739443385
-- cmd: sudo nano  /etc/environment
-  when: 1739443478
 - cmd: cat /sys/kernel/debug/dri/0/i915_vbt > vbt
   when: 1739443886
 - cmd: sudo  cat /sys/kernel/debug/dri/0/i915_vbt > vbt
@@ -2071,10 +2014,6 @@
   when: 1739455771
 - cmd: sudo pacman -Rns libva-utils
   when: 1739455998
-- cmd: sudo pacman -Qdtq | sudo pacman -Rns
-  when: 1739456003
-- cmd: yay -Yc
-  when: 1739456006
 - cmd: sudo pacman -Ss linux-lts
   when: 1739456319
 - cmd: sudo pacman -Syu --needed  linux-lts linux-lts-headers nvidia-lts
@@ -2087,8 +2026,6 @@
   when: 1739457461
 - cmd: sudo pacman -Rns linux-lts-headers nvidia-lts
   when: 1739457527
-- cmd: sudo pacman -Syu --needed  nvidia-dkms
-  when: 1739457544
 - cmd: sudo pacman -Rns nvidia-lts
   when: 1739457718
 - cmd: pacman -Qi nvidia
@@ -2097,8 +2034,6 @@
   when: 1739457761
 - cmd: sudo pacman -Rns linux-lts
   when: 1739457906
-- cmd: sudo nano  /etc/default/grub
-  when: 1739457926
 - cmd: pacman -Q | rg linux
   when: 1739458014
 - cmd: cd /boot/
@@ -2121,14 +2056,9 @@
   when: 1739531177
 - cmd: sudo nano  visoudo
   when: 1739531279
-- cmd: cd -
-  when: 1739531342
 - cmd: nano  mbr.sh
   when: 1739531355
     - mbr.sh
-- cmd: nano  pac.sh
-  when: 1739531425
-    - pac.sh
 - cmd: btop
   when: 1739531560
 - cmd: nano  ~/.config/fish/config.fish
@@ -2137,11 +2067,6 @@
   when: 1739532378
 - cmd: sudo nano /etc/default/grub
   when: 1739532550
-- cmd: sudo grub-mkconfig -o /boot/grub/grub.cfg
-  when: 1739532567
-    - /boot/grub/grub.cfg
-- cmd: sudo  dmesg
-  when: 1739532665
 - cmd: df
   when: 1739535437
 - cmd: sudo  cp -r /boot /boot.org
@@ -2173,19 +2098,11 @@
 - cmd: sudo nano  /boot/loader/loader.conf
   when: 1739540558
     - /boot/loader/loader.conf
-- cmd: sudo nano  /boot/loader/entries/arch.conf
-  when: 1739540666
 - cmd: reboot
   when: 1739541055
 - cmd: cd /boot/loader/entries/
   when: 1739542144
     - /boot/loader/entries/
-- cmd: cd ..
-  when: 1739542267
-    - ..
-- cmd: sudo nano  loader.conf
-  when: 1739542282
-    - loader.conf
 - cmd: sudo  --path=/boot onstall
   when: 1739542414
 - cmd: sudo mount -o uid=0,gid=0,fmask=0077,dmask=0077 /dev/nvme0n1p1/boot
@@ -2196,23 +2113,12 @@
   when: 1739542710
 - cmd: sudo bootctl --path=/boot install
   when: 1739542746
-- cmd: lsblk -f
-  when: 1739542784
 - cmd: blkid
   when: 1739542992
-- cmd: sudo nano  /etc/fstab
-  when: 1739543076
-    - /etc/fstab
 - cmd: sudo  mount /boot
   when: 1739543270
 - cmd: stat /boot
   when: 1739543275
-- cmd: cd entries/
-  when: 1739543425
-    - entries/
-- cmd: sudo nano  arch.conf
-  when: 1739543429
-    - arch.conf
 - cmd: sudo  bootctl remove
   when: 1739543756
 - cmd: cd /boot
@@ -2254,9 +2160,6 @@
   when: 1739548426
 - cmd: nano  bpac
   when: 1739549713
-- cmd: nano  active.sh
-  when: 1739549743
-    - active.sh
 - cmd: nano  bepac
   when: 1739549799
 - cmd: nano  baur
@@ -2267,10 +2170,6 @@
 - cmd: sudo chmod +x  boot.sh
   when: 1739550137
     - boot.sh
-- cmd: eza -a --color always --long --git --no-filesize --icons always --no-time --no-user
-  when: 1739550142
-- cmd: cd ~/dotfiles && git status && cd ~
-  when: 1739550156
 - cmd: hyprshade off
   when: 1739552611
 - cmd: ~/bin/gpush.sh
@@ -2288,8 +2187,6 @@
   when: 1739605269
 - cmd: yay -Ss opencl-clover-mesa
   when: 1739605318
-- cmd: fastfetch
-  when: 1739605810
 - cmd: history  | rg vga
   when: 1739605922
 - cmd: lspci | grep vga
@@ -2310,12 +2207,6 @@
   when: 1739606424
 - cmd: sudo pacman -Rns hyprland
   when: 1739606432
-- cmd: cd ~/dotfiles/00inst/
-  when: 1739606945
-    - ~/dotfiles/00inst/
-- cmd: nano  pac.lst
-  when: 1739606953
-    - pac.lst
 - cmd: sudo pacman -Rns aquamarine
   when: 1739606971
 - cmd: sudo pacman -Rns hyprlock
@@ -2330,8 +2221,6 @@
   when: 1739607054
 - cmd: sudo pacman -Rns hyprutils
   when: 1739607066
-- cmd: sudo pacman -Ss xdg-desktop-portal-hyprland
-  when: 1739607678
 - cmd: sudo pacman -Rns xdg-desktop-portal-hyprland
   when: 1739607691
 - cmd: yay hyprland-git
@@ -2344,8 +2233,6 @@
   when: 1739607823
 - cmd: sudo pacman -Syu --needed  linux-headers
   when: 1739607841
-- cmd: pacman -Q | rg nvidia
-  when: 1739607893
 - cmd: sudo pacman -Rns nvidia-dkms
   when: 1739607966
 - cmd: sudo pacman -Syu --needed  nvidia-open-dkms
@@ -2370,16 +2257,17 @@
   when: 1739608421
 - cmd: sudo pacman -Syu --needed  opencl-clover-mesa
   when: 1739608430
-  when: 1739608459
-  when: 1739608551
-  when: 1739608567
-  when: 1739608625
+- cmd: sudo nano  /etc/modprobe.d/nvidia.conf
   when: 1739608642
-  when: 1739608717
+- cmd: cd ~/.config/
   when: 1739608741
+    - ~/.config/
+- cmd: cd uwsm/
   when: 1739608747
-  when: 1739608750
+    - uwsm/
+- cmd: nano  env
   when: 1739608761
+    - env
 - cmd: sudo pacman -Syu --needed  hyprlock
   when: 1739608920
 - cmd: yay hyprlock
@@ -2388,7 +2276,265 @@
   when: 1739609096
 - cmd: yay hypridle
   when: 1739609107
-  when: 1739609192
-  when: 1739609199
-  when: 1739609271
+- cmd: ~/bin/bh q
   when: 1739609277
+- cmd: nano  hypridle.conf
+  when: 1739609309
+    - hypridle.conf
+- cmd: fastfetch
+  when: 1739609888
+- cmd: nano  eaur.lst
+  when: 1739614385
+    - eaur.lst
+- cmd: comm pac.lst ../misc/qpacman.lst
+  when: 1739614495
+    - pac.lst
+- cmd: sudo pacman -Ss dbxtool
+  when: 1739614745
+- cmd: sudo pacman -Ss dmidecode
+  when: 1739614806
+- cmd: sudo pacman -Ss grim
+  when: 1739614971
+- cmd: sudo pacman -Ss gvfs
+  when: 1739615044
+- cmd: sudo pacman -Ss libpulse
+  when: 1739615168
+- cmd: sudo pacman -Ss xdg-utils
+  when: 1739615651
+- cmd: sudo pacman -Ss xdg-desktop-portal-gtk
+  when: 1739615686
+- cmd: sudo pacman -Ss wireplumber
+  when: 1739615708
+- cmd: nano  Documents/
+  when: 1739615771
+    - Documents/
+- cmd: nano  envidia.sh
+  when: 1739615806
+    - envidia.sh
+- cmd: ~/bin/cpinst.sh q
+  when: 1739615897
+- cmd: cd ~/dotfiles && git status && cd ~
+  when: 1739615901
+- cmd: comm aur.lst ../misc/qaur.lst
+  when: 1739615968
+    - aur.lst
+    - ../misc/qaur.lst
+- cmd: yay hyprland-protocols-git
+  when: 1739616025
+- cmd: pacman -Qi ctl
+  when: 1739616358
+- cmd: yay -Qi ctl
+  when: 1739616378
+- cmd: yay ctl
+  when: 1739616383
+- cmd: nano  pac.sh
+  when: 1739616673
+    - pac.sh
+- cmd: nano  active.sh
+  when: 1739616702
+    - active.sh
+- cmd: nano  aur.sh
+  when: 1739616922
+    - aur.sh
+- cmd: nano  boot.sh
+  when: 1739616935
+- cmd: bootctl --path=/boot install
+  when: 1739617031
+- cmd: sudo  bootctl --path=/boot install
+  when: 1739617038
+- cmd: echo "\ntitle   Arch Linux\nlinux   /vmlinuz-linux\ninitrd  /initramfs-linux.img\noptions root=UUID=  rw quite splash\n" > /boot/loader/entries/arch.conf
+  when: 1739617074
+- cmd: cd  /boot/loader/entries/
+  when: 1739617122
+- cmd: sudo  echo "\ntitle   Arch Linux\nlinux   /vmlinuz-linux\ninitrd  /initramfs-linux.img\noptions root=UUID=  rw quite splash\n" > /boot/loader/entries/arch.conf
+  when: 1739617168
+- cmd: echo "\ntitle   Arch Linux\nlinux   /vmlinuz-linux\ninitrd  /initramfs-linux.img\noptions root=UUID=  rw quite splash\n" |sudo tee /boot/loader/entries/arch.conf
+  when: 1739617223
+- cmd: echo "\ndefault  arch.conf\ntimeout  0\nconsole-mode keep\neditor   1\n" | sudo tee  /boot/loader/loader.conf
+  when: 1739617296
+- cmd: cd ..
+  when: 1739617301
+    - ..
+- cmd: lsblk -f
+  when: 1739617518
+- cmd: bootctl status
+  when: 1739617888
+- cmd: bootctl list
+  when: 1739618439
+- cmd: sudo nano  /usr/share/systemd/bootctl/arch.conf
+  when: 1739618471
+    - /usr/share/systemd/bootctl/arch.conf
+- cmd: nano  arch.conf
+  when: 1739618561
+    - arch.conf
+- cmd: yay hyprland-nvidia-hidpi-git
+  when: 1739631553
+- cmd: yay hyprland-nvidia
+  when: 1739631572
+- cmd: cd ~/dotfiles/00inst/
+  when: 1739631990
+    - ~/dotfiles/00inst/
+- cmd: sudo pacman -Qdtq | sudo pacman -Rns
+  when: 1739632149
+- cmd: yay -Yc
+  when: 1739632155
+- cmd: nano  aur.lst
+  when: 1739632193
+- cmd: sudo pacman -Ss egl-wayland
+  when: 1739632494
+- cmd: which  xdg-desktop-portal-hyprland
+  when: 1739632697
+- cmd: nano  pac.lst
+  when: 1739632884
+- cmd: yay egl-wayland
+  when: 1739632973
+- cmd: which  xdg-desktop-portal
+  when: 1739633032
+- cmd: cd /usr/lib
+  when: 1739633061
+    - /usr/lib
+- cmd: sudo chmod +x  xdg-desktop
+  when: 1739633114
+    - xdg-desktop
+- cmd: nano  xdph.conf
+  when: 1739633296
+- cmd: cd -
+  when: 1739633526
+- cmd: nano  inputG.sh
+  when: 1739633531
+    - inputG.sh
+- cmd: sudo usermod -aG video "$(whoami)"
+  when: 1739633559
+- cmd: id vago
+  when: 1739633564
+- cmd: sudo pacman -Ss btrfs-progs
+  when: 1739633791
+- cmd: sudo nano  /etc/fstab
+  when: 1739633895
+    - /etc/fstab
+- cmd: sudo pacman -Ss intel-ucode
+  when: 1739634256
+- cmd: sudo pacman -Ss acpid
+  when: 1739634290
+- cmd: sudo pacman -Syu --needed  acpid
+  when: 1739634314
+- cmd: sudo systemctl  enable acpid
+  when: 1739634324
+- cmd: sudo pacman -Ss ntp
+  when: 1739634335
+- cmd: cd /boot/loader
+  when: 1739634636
+    - /boot/loader
+- cmd: nano  loader.conf
+  when: 1739634642
+    - loader.conf
+- cmd: sudo nano  loader.conf
+  when: 1739634664
+- cmd: cd entries/
+  when: 1739634678
+    - entries/
+- cmd: sudo nano  arch.conf
+  when: 1739634689
+- cmd: sudo systemctl  enable systemd-boot-update.service
+  when: 1739634921
+- cmd: sudo systemctl  start systemd-boot-update.service
+  when: 1739634939
+- cmd: sudo systemctl  status systemd-boot-update.service
+  when: 1739634941
+- cmd: sudo  dmesg
+  when: 1739635920
+- cmd: cd .config/kanshi/
+  when: 1739636821
+    - .config/kanshi/
+- cmd: cp -i  config config.bup
+  when: 1739636851
+    - config
+- cmd: PSS wayland-client
+  when: 1739637100
+- cmd: sudo pacman -Ss wayland-client
+  when: 1739637114
+- cmd: nano  config
+  when: 1739637166
+- cmd: htop
+  when: 1739637255
+- cmd: pacman -Q | rg nvidia
+  when: 1739637396
+- cmd: sudo pacman -Rns nvidia-open-dkms
+  when: 1739637420
+- cmd: sudo pacman -Syu --needed  nvidia-dkms
+  when: 1739637485
+- cmd: sudo nano  /boot/loader/entries/arch.conf
+  when: 1739637587
+- cmd: sudo pacman -Ss vulkan-intel
+  when: 1739637704
+- cmd: sudo pacman -Ss lib32-vulkan-intel
+  when: 1739637717
+- cmd: yay nwg-displays
+  when: 1739638284
+- cmd: wayland
+  when: 1739639186
+- cmd: kanshi
+  when: 1739639624
+- cmd: nano  autostart.conf
+  when: 1739639828
+    - autostart.conf
+- cmd: waybar
+  when: 1739640038
+- cmd: history  -l
+  when: 1739648461
+- cmd: history
+  when: 1739648466
+- cmd: yay -Rns nwg-displays
+  when: 1739648499
+- cmd: sudo pacman -Ss xdg-desktop-portal-hyprland
+  when: 1739648577
+- cmd: yay xdg-desktop-portal-hyprland
+  when: 1739648602
+- cmd: yay -Rns xdg-desktop-portal-hyprland-git
+  when: 1739648626
+- cmd: nano  monitor
+  when: 1739648642
+- cmd: nano  monitors.conf
+  when: 1739648684
+    - monitors.conf
+- cmd: cd ~/.config/hypr/
+  when: 1739648714
+    - ~/.config/hypr/
+- cmd: nano  monitor.conf
+  when: 1739648722
+    - monitor.conf
+- cmd: rm  monitors.conf
+  when: 1739648817
+- cmd: sudo nano  /etc/environment
+  when: 1739648851
+- cmd: cd ~/bin
+  when: 1739648883
+- cmd: nano  xdg-desktop
+  when: 1739648891
+- cmd: yay xdg-desktop-portal
+  when: 1739648913
+- cmd: rm  xdg-desktop
+  when: 1739649027
+- cmd: eza -a --color always --long --git --no-filesize --icons always --no-time --no-user
+  when: 1739649029
+- cmd: nano  .config/kanshi/config
+  when: 1739649336
+    - .config/kanshi/config
+- cmd: hyprctl monitors all
+  when: 1739649358
+- cmd: sudo nano  /etc/default/grub
+  when: 1739649707
+- cmd: sudo grub-mkconfig -o /boot/grub/grub.cfg
+  when: 1739649732
+    - /boot/grub/grub.cfg
+- cmd: sudo nano  /etc/mkinitcpio.conf
+  when: 1739649785
+- cmd: sudo  mkinitcpio -P
+  when: 1739649801
+- cmd: cd bin/
+  when: 1739649932
+    - bin/
+  when: 1739649933
+  when: 1739649947
+  when: 1739649963
+  when: 1739649969

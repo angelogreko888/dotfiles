@@ -1,4 +1,5 @@
 acpi
+acpid
 arc-gtk-theme
 arch-install-scripts
 base
@@ -67,7 +68,7 @@ nemo
 network-manager-applet
 networkmanager
 nmap
-nvidia-open-dkms
+nvidia-dkms
 nvidia-settings
 nvidia-utils
 nwg-look
@@ -114,7 +115,6 @@ wine-gecko
 wine-mono
 winetricks
 wireless_tools
-xdg-desktop-portal-gtk
 xdg-user-dirs
 yt-dlp
 zram-generator

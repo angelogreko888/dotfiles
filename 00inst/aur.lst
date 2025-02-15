@@ -12,7 +12,7 @@ hyprevents-git
 hyprgraphics-git
 hypridle-git
 hyprland-git
-#hyprland-protocols-git
+hyprland-protocols-git
 hyprland-qt-support-git
 hyprland-qtutils-git
 hyprlang-git
@@ -27,7 +27,7 @@ librewolf-bin
 libva-nvidia-driver-git
 #pyprland
 simple-mtpfs
-xdg-desktop-portal-gtk
-xdg-desktop-portal-hyprland-git
+#xdg-desktop-portal-gtk
+#xdg-desktop-portal-hyprland-git
 upd72020x-fw
 wd719x-firmware

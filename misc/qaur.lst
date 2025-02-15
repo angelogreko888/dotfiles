@@ -37,6 +37,7 @@ simple-mtpfs
 timeshift-autosnap
 upd72020x-fw
 virtualbox-ext-oracle
+wayland-protocols-git
 wd719x-firmware
 winegui-bin
 yay

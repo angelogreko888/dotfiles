@@ -20,14 +20,14 @@ default  arch.conf
 timeout  0
 console-mode keep
 editor   1
-" > /boot/loader/loader.conf
+" | tee  /boot/loader/loader.conf
 
 echo "
 title   Arch Linux
 linux   /vmlinuz-linux
 initrd  /initramfs-linux.img
 options root=UUID=  rw quite splash
-" > /boot/loader/entries/arch.conf
+" | tee /boot/loader/entries/arch.conf
 
 useradd -m vago
 echo vago:password | chpasswd

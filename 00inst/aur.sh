@@ -20,4 +20,4 @@ cd yay
 makepkg -si --noconfirm
 cd ~
 
-cat ~/dotfiles/00inst/baur | xargs yay -S --needed --noconfirm
+cat ~/dotfiles/00inst/aur.lst | xargs yay -S --needed --noconfirm

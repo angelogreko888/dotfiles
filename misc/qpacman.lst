@@ -41,11 +41,6 @@ hdparm
 hostapd
 htop
 hwinfo
-hypridle
-hyprland
-hyprland-qtutils
-hyprlock
-hyprutils
 imagemagick
 inotify-tools
 intel-ucode
@@ -55,8 +50,9 @@ iwd
 jdk-openjdk
 kanshi
 less
+lib32-nvidia-utils
+lib32-opencl-nvidia
 libreoffice-fresh
-libva-nvidia-driver
 linux
 linux-firmware
 linux-firmware-qlogic
@@ -71,10 +67,12 @@ nemo
 network-manager-applet
 networkmanager
 nmap
-nvidia-dkms
+nvidia-open-dkms
 nvidia-settings
 nvidia-utils
 nwg-look
+opencl-clover-mesa
+opencl-nvidia
 pacman-contrib
 pamixer
 pavucontrol
@@ -109,7 +107,6 @@ virtualbox-guest-iso
 virtualbox-guest-utils
 virtualbox-host-modules-arch
 vlc
-vulkan-intel
 waybar
 wget
 wine
@@ -118,7 +115,6 @@ wine-mono
 winetricks
 wireless_tools
 xdg-desktop-portal-gtk
-xdg-desktop-portal-hyprland
 xdg-user-dirs
 yt-dlp
 zram-generator

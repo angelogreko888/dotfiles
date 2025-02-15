@@ -280,7 +280,6 @@
 - cmd: s cp  /etc/default/grub  /etc/default/grub.bup
 - cmd: s dmesg | rg PreserveVideoMemoryAllocations
 - cmd: journalctl -b
-- cmd: pacman -Q | rg nvidia
 - cmd: pui lib32-nvidia-utils
 - cmd: n /etc/systemd/system/systemd-hibernate.service.wants/nvidia-hibernate.service
 - cmd: sn /etc/systemd/system/systemd-hibernate.service.wants/nvidia-hibernate.service
@@ -768,8 +767,6 @@
   when: 1738824101
 - cmd: du
   when: 1738824106
-- cmd: df
-  when: 1738824129
 - cmd: df -h
   when: 1738824174
 - cmd: grep 'Video Memory Self Refresh' /proc/driver/nvidia/gpus/<Domain>:<Bus>:<Device>.0/power
@@ -967,9 +964,6 @@
 - cmd: cd ../00inst/
   when: 1738907430
     - ../00inst/
-- cmd: nano  baur
-  when: 1738907444
-    - baur
 - cmd: nano  qaur.lst
   when: 1738907484
     - qaur.lst
@@ -1003,9 +997,6 @@
   when: 1738911077
 - cmd: pacman -Q | grep  qt6-wayland
   when: 1738911084
-- cmd: nano  bpac
-  when: 1738911125
-    - bpac
 - cmd: nano  fish_variables
   when: 1738911615
 - cmd: curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3 -
@@ -1022,8 +1013,6 @@
 - cmd: cd .config/kanshi/
   when: 1738938689
     - .config/kanshi/
-- cmd: exit
-  when: 1738938775
 - cmd: sudo updatedb; locate sleep.conf
   when: 1738993730
 - cmd: nano  /etc/systemd/sleep.conf
@@ -1046,8 +1035,6 @@
 - cmd: zgrep CONFIG_ZSWAP_DEFAULT_ON /proc/config.gz
   when: 1738995359
     - /proc/config.gz
-- cmd: lsblk -f
-  when: 1738995607
 - cmd: cat /sys/module/zswap/parameters/enabled
   when: 1738995996
     - /sys/module/zswap/parameters/enabled
@@ -1122,8 +1109,6 @@
   when: 1739001443
 - cmd: journalctl -xe | grep -i wakeup
   when: 1739001579
-- cmd: sudo nano  /boot/loader/entries/arch.conf
-  when: 1739001830
 - cmd: sudo pacman -Ss optimus-manager
   when: 1739002032
 - cmd: sudo pacman -Ss qt5ct
@@ -1379,8 +1364,6 @@
   when: 1739091566
 - cmd: cd ../kanshi/
   when: 1739105684
-- cmd: cd -
-  when: 1739105760
 - cmd: nano  monitor.conf
   when: 1739105764
     - monitor.conf
@@ -1391,27 +1374,9 @@
     - kanshi/
 - cmd: kanshi output "AU Optronics 0x7EAD 0x00007EAD" disable
   when: 1739106003
-- cmd: cd /etc/modprobe.d/
-  when: 1739106377
-    - /etc/modprobe.d/
-- cmd: nano  blacklist.conf
-  when: 1739106396
-    - blacklist.conf
-- cmd: nano  nouveau.conf
-  when: 1739106410
-    - nouveau.conf
-- cmd: nano  nvidia.conf
-  when: 1739106422
-    - nvidia.conf
 - cmd: sudo  rm nvidia.conf
   when: 1739106445
-- cmd: cd /usr/lib/modprobe.d/
-  when: 1739106467
-    - /usr/lib/modprobe.d/
-- cmd: nano  nvidia-sleep.conf
-  when: 1739106484
-- cmd: nano  nvidia-utils.conf
-  when: 1739106511
+    - nvidia.conf
 - cmd: sudo pacman -Syu --needed   linux-firmware
   when: 1739107067
 - cmd: hyprctl monitors all
@@ -1435,21 +1400,12 @@
 - cmd: sudo nano  sudo nano  /etc/modprobe.d/i915.conf
   when: 1739109104
     - /etc/modprobe.d/i915.conf
-- cmd: sudo rm  /etc/modprobe.d/i915.conf
-  when: 1739109139
 - cmd: history
   when: 1739109917
-- cmd: lspci | grep vga
-  when: 1739110163
 - cmd: sudo pacman -Ss  xorg-xwayland
   when: 1739110597
 - cmd: sudo pacman -Rns xorg-xwayland
   when: 1739110661
-- cmd: sudo  cat /sys/module/nvidia_drm/parameters/fbdev
-  when: 1739110827
-    - /sys/module/nvidia_drm/parameters/fbdev
-- cmd: lspci -nn | grep VGA
-  when: 1739112978
 - cmd: lspci -k -d ::03xx
   when: 1739113018
 - cmd: sudo pacman -Ss  intel-media-driver
@@ -1477,12 +1433,8 @@
   when: 1739114958
 - cmd: sudo pacman -Syu --needed  vulkan-intel
   when: 1739115311
-- cmd: sudo nano  /etc/modprobe.d/i915.conf
-  when: 1739115638
 - cmd: dmesg | grep -i -e 'huc' -e 'guc'
   when: 1739115670
-- cmd: sudo  dmesg | grep -i -e 'huc' -e 'guc'
-  when: 1739115675
 - cmd: less /sys/kernel/debug/dri/*/gt0/uc/huc_info
   when: 1739115788
 - cmd: sudo  less /sys/kernel/debug/dri/*/gt0/uc/huc_info
@@ -1501,8 +1453,6 @@
 - cmd: rm : aa
   when: 1739170713
     - aa
-- cmd: nano  vbt
-  when: 1739170723
 - cmd: rm hwinfo
   when: 1739170743
 - cmd: nano  .nvidia-settings-rc
@@ -1540,10 +1490,6 @@
   when: 1739203582
 - cmd: flatpak list
   when: 1739203600
-- cmd: sudo pacman -Qdtq | sudo pacman -Rns
-  when: 1739203677
-- cmd: yay -Yc
-  when: 1739203680
 - cmd: sudo pacman -Syu --needed  flatpak
   when: 1739203723
 - cmd: flatpak uninstall org.freedesktop.Platform.ffmpeg-full
@@ -1626,8 +1572,6 @@
   when: 1739257400
 - cmd: $PATH
   when: 1739257756
-- cmd: CD
-  when: 1739257776
 - cmd: cat $PATH
   when: 1739257790
 - cmd: firejail foot
@@ -1774,8 +1718,6 @@
   when: 1739290499
 - cmd: eza -a --color always --long --git --no-filesize --icons always --no-time --no-user --no-permissions
   when: 1739290523
-- cmd: fish
-  when: 1739290530
 - cmd: sudo winecfg
   when: 1739291428
 - cmd: winecfg
@@ -1799,9 +1741,6 @@
   when: 1739340031
 - cmd: cd d1/
   when: 1739340052
-- cmd: cd ..
-  when: 1739340072
-    - ..
 - cmd: sudo chmod +x  x.sh
   when: 1739340658
     - x.sh
@@ -1809,8 +1748,6 @@
   when: 1739340721
 - cmd: cd ../atesting/
   when: 1739340851
-- cmd: cd 00inst/
-  when: 1739341151
 - cmd: nano  aur.sh
   when: 1739341168
     - aur.sh
@@ -1833,8 +1770,6 @@
 - cmd: cd FreeTube/
   when: 1739341910
     - FreeTube/
-- cmd: cd ~/dotfiles/
-  when: 1739342252
 - cmd: cd freetube/.config/FreeTube/
   when: 1739342270
     - freetube/.config/FreeTube/
@@ -1873,8 +1808,6 @@
 - cmd: sudo chmod +x  sync.sh
   when: 1739345177
     - sync.sh
-- cmd: cd
-  when: 1739345290
 - cmd: cd ~/.config/FreeTube/ && cp history.db playlists.db profiles.db search-history.db settings.db ~/dotfiles/freetube/.config/FreeTube &&  cd ~/dotfiles && git status && cd ~
   when: 1739345746
 - cmd: ./ftsync.sh
@@ -1915,8 +1848,6 @@
 - cmd: nano  autostart.conf
   when: 1739349716
     - autostart.conf
-- cmd: nano  ~/.config/fish/config.fish
-  when: 1739349812
 - cmd: ggg
   when: 1739350232
 - cmd: ~/bin/bash gpush.sh
@@ -1925,10 +1856,6 @@
   when: 1739350266
 - cmd: ~/bin/cpinst.sh
   when: 1739350300
-- cmd: ~/bin/cpinst.sh q
-  when: 1739350327
-- cmd: ~/bin/bh q
-  when: 1739350350
 - cmd: 110201
   when: 1739378641
 - cmd: nano sync.sh
@@ -1942,15 +1869,8 @@
   when: 1739380107
 - cmd: cd ~/dotfiles && git add * && git commit -m "save" && git push -u origin main && cd -
   when: 1739380734
-- cmd: fastfetch
-  when: 1739380792
-- cmd: ~/bin/gpush.sh
-  when: 1739380828
 - cmd: nano  gpush.sh
   when: 1739425119
-- cmd: nano ~/.config/waybar/config
-  when: 1739425663
-    - ~/.config/waybar/config
 - cmd: sudo nano  $HOME/.config/waybar/power_menu.xml
   when: 1739425842
     - $HOME/.config/waybar/power_menu.xml
@@ -1976,32 +1896,12 @@
   when: 1739427944
 - cmd: sudo nano  /etc/mkinitcpio.conf
   when: 1739428172
-- cmd: cat /sys/module/nvidia_drm/parameters/modeset
-  when: 1739428205
-- cmd: sudo  cat /sys/module/nvidia_drm/parameters/modeset
-  when: 1739428211
-    - /sys/module/nvidia_drm/parameters/modeset
-- cmd: sudo nano  /etc/modprobe.d/nvidia.conf
-  when: 1739428256
-- cmd: sudo nano  /etc/default/grub
-  when: 1739428562
 - cmd: nano  a
   when: 1739428603
-- cmd: sudo grub-mkconfig -o /boot/grub/grub.cfg
-  when: 1739428625
-    - /boot/grub/grub.cfg
-- cmd: sudo  mkinitcpio -P
-  when: 1739428630
-- cmd: reboot
-  when: 1739428656
 - cmd: hyprctl dispatch exit
   when: 1739429093
-- cmd: sudo  dmesg
-  when: 1739429126
 - cmd: fwupdmgr refresh
   when: 1739429156
-- cmd: btop
-  when: 1739429337
 - cmd: nano  keybind.conf
   when: 1739429406
     - keybind.conf
@@ -2015,8 +1915,6 @@
     - exit.sh
 - cmd: ./exit.sh
   when: 1739429575
-- cmd: cd ~/dotfiles && git status && cd ~
-  when: 1739429618
 - cmd: cd ~/.config/hypr/
   when: 1739429648
     - ~/.config/hypr/
@@ -2035,10 +1933,6 @@
   when: 1739429799
     - reboot.sh
     - poweroff.sh
-- cmd: eza -a --color always --long --git --no-filesize --icons always --no-time --no-user
-  when: 1739429802
-- cmd: pacman -Qi nvidia
-  when: 1739429995
 - cmd: pacman -Qi nvidia-dkms
   when: 1739430025
 - cmd: sudo  pacman -S dkms
@@ -2074,42 +1968,427 @@
   when: 1739430787
 - cmd: sudo pacman -Syu --needed   mesa-amber
   when: 1739430895
-  when: 1739431067
-  when: 1739431085
-  when: 1739431099
-  when: 1739431141
-  when: 1739431197
-  when: 1739431224
-  when: 1739431561
-  when: 1739431677
-  when: 1739431731
-  when: 1739431950
-  when: 1739431970
-  when: 1739431981
-  when: 1739432001
-  when: 1739437315
-  when: 1739437352
-  when: 1739437372
-  when: 1739437387
-  when: 1739437394
-  when: 1739437405
-  when: 1739437427
+- cmd: exit
   when: 1739437454
-- cmd: sudo pacman -Syu --needed  mesa
-  when: 1739437496
-  when: 1739437632
+- cmd: sudo  dmesg | grep -i -e 'huc' -e 'guc'
   when: 1739437682
-  when: 1739437704
-  when: 1739437791
+- cmd: sudo nano  /etc/modprobe.d/nvidia.conf
   when: 1739437841
-  when: 1739437867
+- cmd: sudo  mkinitcpio -P
   when: 1739437920
-  when: 1739438058
-  when: 1739438077
-  when: 1739438105
-  when: 1739438108
-- cmd: sudo nano  /etc/fstab
-  when: 1739438154
-    - /etc/fstab
+- cmd: ~/bin/cpinst.sh q
   when: 1739442199
+- cmd: ~/bin/bh q
   when: 1739442206
+- cmd: history  | rg firejail
+  when: 1739442409
+- cmd: comm bpac ../misc/qpacman.lst
+  when: 1739442513
+    - bpac
+    - ../misc/qpacman.lst
+- cmd: pacman -Qi dmidecode
+  when: 1739442564
+- cmd: sudo pacman -Ss hyprgraphics
+  when: 1739442652
+- cmd: sudo pacman -Rns mesa
+  when: 1739442822
+- cmd: comm dotfiles/00inst/baur dotfiles/misc/qaur.lst
+  when: 1739442938
+    - dotfiles/00inst/baur
+    - dotfiles/misc/qaur.lst
+- cmd: pacman -Qi pygtk
+  when: 1739442988
+- cmd: lspci -nn | grep VGA
+  when: 1739443281
+- cmd: sudo nano  /etc/X11/xorg.conf.d/20-intel.conf
+  when: 1739443385
+- cmd: sudo nano  /etc/environment
+  when: 1739443478
+- cmd: cat /sys/kernel/debug/dri/0/i915_vbt > vbt
+  when: 1739443886
+- cmd: sudo  cat /sys/kernel/debug/dri/0/i915_vbt > vbt
+  when: 1739443893
+- cmd: nano  vbt
+  when: 1739443926
+- cmd: rm vbt
+  when: 1739443931
+- cmd: sudo nano  /etc/drirc
+  when: 1739444746
+- cmd: sudo rm  /etc/modprobe.d/i915.conf
+  when: 1739444791
+- cmd: sudo nano  /etc/modprobe.d/i915.conf
+  when: 1739444824
+- cmd: lsof /proc/acpi/event
+  when: 1739445083
+- cmd: sudo nano  /proc/acpi/event
+  when: 1739445107
+- cmd: cd /proc/acpi
+  when: 1739445125
+    - /proc/acpi
+- cmd: nano  wakeup
+  when: 1739445137
+    - wakeup
+- cmd: cd button/
+  when: 1739445152
+    - button/
+- cmd: cd lid/LID0/
+  when: 1739445161
+    - lid/LID0/
+- cmd: nano  state
+  when: 1739445166
+    - state
+- cmd: CD
+  when: 1739445172
+- cmd: swapon --show
+  when: 1739445612
+- cmd: sudo pacman -Ss systemd-boot
+  when: 1739445702
+- cmd: cd /etc/modprobe.d/
+  when: 1739455388
+    - /etc/modprobe.d/
+- cmd: nano  blacklist.conf
+  when: 1739455396
+    - blacklist.conf
+- cmd: nano  nouveau.conf
+  when: 1739455435
+    - nouveau.conf
+- cmd: nano  nvidia.conf
+  when: 1739455442
+- cmd: cd /usr/lib/modprobe.d/
+  when: 1739455463
+    - /usr/lib/modprobe.d/
+- cmd: nano  nvidia-utils.conf
+  when: 1739455479
+- cmd: nano  nvidia-sleep.conf
+  when: 1739455498
+- cmd: nano  systemd.conf
+  when: 1739455514
+- cmd: sudo pacman -Syu --needed   libva-utils
+  when: 1739455713
+- cmd: vainfo
+  when: 1739455745
+- cmd: sudo  vainfo
+  when: 1739455771
+- cmd: sudo pacman -Rns libva-utils
+  when: 1739455998
+- cmd: sudo pacman -Qdtq | sudo pacman -Rns
+  when: 1739456003
+- cmd: yay -Yc
+  when: 1739456006
+- cmd: sudo pacman -Ss linux-lts
+  when: 1739456319
+- cmd: sudo pacman -Syu --needed  linux-lts linux-lts-headers nvidia-lts
+  when: 1739456379
+- cmd: sudo pacman -Rns linux linux-headers
+  when: 1739456484
+- cmd: sudo pacman -Rns linux
+  when: 1739456606
+- cmd: sudo pacman -Rns linux linux-headers nvidia-lts
+  when: 1739457461
+- cmd: sudo pacman -Rns linux-lts-headers nvidia-lts
+  when: 1739457527
+- cmd: sudo pacman -Syu --needed  nvidia-dkms
+  when: 1739457544
+- cmd: sudo pacman -Rns nvidia-lts
+  when: 1739457718
+- cmd: pacman -Qi nvidia
+  when: 1739457750
+- cmd: pacman -Q nvidia
+  when: 1739457761
+- cmd: sudo pacman -Rns linux-lts
+  when: 1739457906
+- cmd: sudo nano  /etc/default/grub
+  when: 1739457926
+- cmd: pacman -Q | rg linux
+  when: 1739458014
+- cmd: cd /boot/
+  when: 1739458248
+    - /boot/
+- cmd: nano  vmlinuz-linux
+  when: 1739458258
+    - vmlinuz-linux
+- cmd: sudo  mkinitcpio -p linux
+  when: 1739458306
+- cmd: sudo -sE timeshift-gtk
+  when: 1739520844
+- cmd: nano  ac
+  when: 1739530888
+- cmd: sudo sudoers
+  when: 1739531116
+- cmd: sudo nano  sudoers
+  when: 1739531132
+- cmd: EDITOR nano visudou
+  when: 1739531177
+- cmd: sudo nano  visoudo
+  when: 1739531279
+- cmd: cd -
+  when: 1739531342
+- cmd: nano  mbr.sh
+  when: 1739531355
+    - mbr.sh
+- cmd: nano  pac.sh
+  when: 1739531425
+    - pac.sh
+- cmd: btop
+  when: 1739531560
+- cmd: nano  ~/.config/fish/config.fish
+  when: 1739532319
+- cmd: fish
+  when: 1739532378
+- cmd: sudo nano /etc/default/grub
+  when: 1739532550
+- cmd: sudo grub-mkconfig -o /boot/grub/grub.cfg
+  when: 1739532567
+    - /boot/grub/grub.cfg
+- cmd: sudo  dmesg
+  when: 1739532665
+- cmd: df
+  when: 1739535437
+- cmd: sudo  cp -r /boot /boot.org
+  when: 1739535643
+    - /boot
+- cmd: cd boot.org
+  when: 1739535669
+- cmd: cd /boot.org
+  when: 1739535677
+    - /boot.org
+- cmd: sudo umount /boot/efi
+  when: 1739540091
+    - /boot/efi
+- cmd: sudo mount dev/nvme0n1p1 /boot
+  when: 1739540161
+- cmd: sudo mount /dev/nvme0n1p1 /boot
+  when: 1739540179
+    - /dev/nvme0n1p1
+- cmd: cd
+  when: 1739540235
+- cmd: sudo  cp -r /boot.org/* /boot
+  when: 1739540272
+- cmd: eza -a --color always --long --git --no-filesize --icons always --no-time --no-user  /boot
+  when: 1739540282
+- cmd: bootctl install
+  when: 1739540376
+- cmd: sudo  bootctl install
+  when: 1739540393
+- cmd: sudo nano  /boot/loader/loader.conf
+  when: 1739540558
+    - /boot/loader/loader.conf
+- cmd: sudo nano  /boot/loader/entries/arch.conf
+  when: 1739540666
+- cmd: reboot
+  when: 1739541055
+- cmd: cd /boot/loader/entries/
+  when: 1739542144
+    - /boot/loader/entries/
+- cmd: cd ..
+  when: 1739542267
+    - ..
+- cmd: sudo nano  loader.conf
+  when: 1739542282
+    - loader.conf
+- cmd: sudo  --path=/boot onstall
+  when: 1739542414
+- cmd: sudo mount -o uid=0,gid=0,fmask=0077,dmask=0077 /dev/nvme0n1p1/boot
+  when: 1739542664
+- cmd: sudo mount -o uid=0,gid=0,fmask=0077,dmask=0077 /boot
+  when: 1739542704
+- cmd: stat boot
+  when: 1739542710
+- cmd: sudo bootctl --path=/boot install
+  when: 1739542746
+- cmd: lsblk -f
+  when: 1739542784
+- cmd: blkid
+  when: 1739542992
+- cmd: sudo nano  /etc/fstab
+  when: 1739543076
+    - /etc/fstab
+- cmd: sudo  mount /boot
+  when: 1739543270
+- cmd: stat /boot
+  when: 1739543275
+- cmd: cd entries/
+  when: 1739543425
+    - entries/
+- cmd: sudo nano  arch.conf
+  when: 1739543429
+    - arch.conf
+- cmd: sudo  bootctl remove
+  when: 1739543756
+- cmd: cd /boot
+  when: 1739543767
+- cmd: sudo  rr loader/
+  when: 1739543777
+    - loader/
+- cmd: sudo rm -rf  loader/
+  when: 1739543806
+- cmd: cd ~/dotfiles/
+  when: 1739543920
+- cmd: cd 00inst/
+  when: 1739543924
+- cmd: sudo nano  boot.sh
+  when: 1739544594
+- cmd: ls /sys/firmware/efi/efivars
+  when: 1739545412
+    - /sys/firmware/efi/efivars
+- cmd: nano  efi.sh
+  when: 1739546214
+    - efi.sh
+- cmd: cat /sys/module/nvidia_drm/parameters/fbdev
+  when: 1739548100
+    - /sys/module/nvidia_drm/parameters/fbdev
+- cmd: sudo  cat /sys/module/nvidia_drm/parameters/fbdev
+  when: 1739548106
+- cmd: sudo systemctl  status fbdev
+  when: 1739548165
+- cmd: cat /sys/module/nvidia_drm/parameters/modeset
+  when: 1739548208
+- cmd: sudo  cat /sys/module/nvidia_drm/parameters/modeset
+  when: 1739548212
+    - /sys/module/nvidia_drm/parameters/modeset
+- cmd: sudo systemctl  status nvidia
+  when: 1739548346
+- cmd: sudo systemctl  status nvidia-powerd.service
+  when: 1739548406
+- cmd: sudo systemctl  enable --now nvidia-powerd.service
+  when: 1739548426
+- cmd: nano  bpac
+  when: 1739549713
+- cmd: nano  active.sh
+  when: 1739549743
+    - active.sh
+- cmd: nano  bepac
+  when: 1739549799
+- cmd: nano  baur
+  when: 1739550045
+    - baur
+- cmd: nano  beaur
+  when: 1739550049
+- cmd: sudo chmod +x  boot.sh
+  when: 1739550137
+    - boot.sh
+- cmd: eza -a --color always --long --git --no-filesize --icons always --no-time --no-user
+  when: 1739550142
+- cmd: cd ~/dotfiles && git status && cd ~
+  when: 1739550156
+- cmd: hyprshade off
+  when: 1739552611
+- cmd: ~/bin/gpush.sh
+  when: 1739554684
+- cmd: nano ~/.config/waybar/config
+  when: 1739604651
+    - ~/.config/waybar/config
+- cmd: pacman -Q | rg hyprland-nvidia
+  when: 1739604974
+- cmd: sudo pacman -Ss hyprland-nvidia
+  when: 1739604994
+- cmd: yay -Ss hyprland-nvidia
+  when: 1739605015
+- cmd: yay -Ss vulkan-intel
+  when: 1739605269
+- cmd: yay -Ss opencl-clover-mesa
+  when: 1739605318
+- cmd: fastfetch
+  when: 1739605810
+- cmd: history  | rg vga
+  when: 1739605922
+- cmd: lspci | grep vga
+  when: 1739605930
+- cmd: yay -Ss nvidia-open-dkms
+  when: 1739605985
+- cmd: yay -Ss opencl-nvidia
+  when: 1739606112
+- cmd: pacman -Q | rg lib32-vulkan-intel
+  when: 1739606172
+- cmd: sudo pacman -Rns vulkan-intel
+  when: 1739606207
+- cmd: clear
+  when: 1739606371
+- cmd: sudo pacman -Rns hyprshade
+  when: 1739606410
+- cmd: sudo pacman -Rns pyprland
+  when: 1739606424
+- cmd: sudo pacman -Rns hyprland
+  when: 1739606432
+- cmd: cd ~/dotfiles/00inst/
+  when: 1739606945
+    - ~/dotfiles/00inst/
+- cmd: nano  pac.lst
+  when: 1739606953
+    - pac.lst
+- cmd: sudo pacman -Rns aquamarine
+  when: 1739606971
+- cmd: sudo pacman -Rns hyprlock
+  when: 1739607015
+- cmd: sudo pacman -Rns hyprgraphics
+  when: 1739607019
+- cmd: sudo pacman -Rns hypridle
+  when: 1739607035
+- cmd: sudo pacman -Rns hyprland-qtutils
+  when: 1739607045
+- cmd: sudo pacman -Rns hyprlang
+  when: 1739607054
+- cmd: sudo pacman -Rns hyprutils
+  when: 1739607066
+- cmd: sudo pacman -Ss xdg-desktop-portal-hyprland
+  when: 1739607678
+- cmd: sudo pacman -Rns xdg-desktop-portal-hyprland
+  when: 1739607691
+- cmd: yay hyprland-git
+  when: 1739607698
+- cmd: sudo pacman -Rns libva-nvidia-driver
+  when: 1739607740
+- cmd: yay libva-nvidia-driver-git
+  when: 1739607756
+- cmd: sudo pacman -Rns linux-headers
+  when: 1739607823
+- cmd: sudo pacman -Syu --needed  linux-headers
+  when: 1739607841
+- cmd: pacman -Q | rg nvidia
+  when: 1739607893
+- cmd: sudo pacman -Rns nvidia-dkms
+  when: 1739607966
+- cmd: sudo pacman -Syu --needed  nvidia-open-dkms
+  when: 1739607993
+- cmd: sudo pacman -Syu --needed  lib32-nvidia-utils
+  when: 1739608340
+- cmd: sudo pacman -Syu --needed  libvdpau
+  when: 1739608360
+- cmd: sudo pacman -Syu --needed  opencl-nvidia
+  when: 1739608368
+- cmd: sudo pacman -Syu --needed  lib32-opencl-nvidia
+  when: 1739608378
+- cmd: sudo pacman -Syu --needed  libxnvctrl
+  when: 1739608387
+- cmd: sudo pacman -Syu --needed  mesa
+  when: 1739608394
+- cmd: sudo pacman -Syu --needed  lib32-mesa
+  when: 1739608404
+- cmd: sudo pacman -Syu --needed  libva-mesa-driver
+  when: 1739608414
+- cmd: sudo pacman -Syu --needed  mesa-vdpau
+  when: 1739608421
+- cmd: sudo pacman -Syu --needed  opencl-clover-mesa
+  when: 1739608430
+  when: 1739608459
+  when: 1739608551
+  when: 1739608567
+  when: 1739608625
+  when: 1739608642
+  when: 1739608717
+  when: 1739608741
+  when: 1739608747
+  when: 1739608750
+  when: 1739608761
+- cmd: sudo pacman -Syu --needed  hyprlock
+  when: 1739608920
+- cmd: yay hyprlock
+  when: 1739608938
+- cmd: sudo pacman -Syu --needed  hypridle
+  when: 1739609096
+- cmd: yay hypridle
+  when: 1739609107
+  when: 1739609192
+  when: 1739609199
+  when: 1739609271
+  when: 1739609277

@@ -1,3 +1,4 @@
 winit
 glew
 lspci -k -d ::03xx
+shikane kanshi

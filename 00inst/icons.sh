@@ -14,3 +14,4 @@ else
 	echo "yellow copied!!!"
 fi
 
+sudo cp ~/dotfiles/nouse/icons/NotoColorEmoji-flagsonly.ttf /usr/share/fonts 

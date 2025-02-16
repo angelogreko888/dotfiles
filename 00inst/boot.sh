@@ -26,7 +26,7 @@ echo "
 title   Arch Linux
 linux   /vmlinuz-linux
 initrd  /initramfs-linux.img
-options root=UUID=  rw quite splash
+options root=UUID=  rw nvidia-drm.modeset=1 nvidia_drm.fbdev=1
 " | tee /boot/loader/entries/arch.conf
 
 useradd -m vago

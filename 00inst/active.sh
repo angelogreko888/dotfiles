@@ -13,7 +13,7 @@ nvidia-suspend.service
 nvidia-hibernate.service
 nvidia-resume.service 
 systemd-resolved.service
-
+systemd-boot-update.service
 )
 
 for CTL in "${ctl[@]}";do

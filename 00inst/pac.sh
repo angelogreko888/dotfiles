@@ -10,4 +10,4 @@ handle_error() {
 
 cd ~
 
-cat ~/dotfiles/00int/pac.lst | xargs sudo pacman -S --needed --noconfirm
+cat ~/dotfiles/00inst/pac.lst | xargs sudo pacman -S --needed --noconfirm

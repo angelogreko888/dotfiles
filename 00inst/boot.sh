@@ -11,7 +11,7 @@ echo "::1       localhost" >> /etc/hosts
 echo "127.0.1.1 greco.localdomain greco" >> /etc/hosts
 echo root:password | chpasswd
 
-pacman -S --needed --noconfirm nano base-devel linux-headers networkmanager pipewire pipewire-alsa pipewire-jack pipewire-pulse wpa_supplicant
+pacman -S --needed --noconfirm sudo nano base-devel linux-headers networkmanager wpa_supplicant
 
 bootctl --path=/boot install
 
@@ -26,7 +26,7 @@ echo "
 title   Arch Linux
 linux   /vmlinuz-linux
 initrd  /initramfs-linux.img
-options root=UUID=  rw nvidia-drm.modeset=1 nvidia_drm.fbdev=1
+options root=UUID=  rw quite splash
 " | tee /boot/loader/entries/arch.conf
 
 useradd -m vago

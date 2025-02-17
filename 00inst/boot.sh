@@ -11,7 +11,7 @@ echo "::1       localhost" >> /etc/hosts
 echo "127.0.1.1 greco.localdomain greco" >> /etc/hosts
 echo root:password | chpasswd
 
-pacman -S --needed --noconfirm sudo nano base-devel linux-headers networkmanager wpa_supplicant
+pacman -S --needed --noconfirm git sudo nano base-devel linux-headers networkmanager wpa_supplicant
 
 bootctl --path=/boot install
 

@@ -10,7 +10,7 @@ rsync -a /home/vago/git/ /mnt/data/sync-vago/git/ --delete
 
 rsync -a /home/vago/vago/ /mnt/data/sync-vago/vago/ --delete
 
-rsync -a /home/vago/.librewolf/6z984o5y.default-default /mnt/data/sync-vago/librewolf/ --delete
+rsync -a /home/vago/.librewolf/ /mnt/data/sync-vago/librewolf/ --delete
 
 echo "Sync Finished"
 

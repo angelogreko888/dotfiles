@@ -1,7 +1,77 @@
+which git
+git clone https://github.com/angelogreko888/dotfiles
+cd dotfiles/00inst/
+./pac.sh
+nano pac.sh
+ls
+./confpac.sh 
+./aur.sh 
+./icons.sh 
+n pipewire 
+nano pipewire 
+mv pipewire pipewire.sh
+chmod +x pipewire.sh 
+./pipewire.sh 
+./zram.sh 
+hyprland
+./stow.sh 
+cd ~/.config
+ls -la
+cd
+./active.sh 
+reboot
+t
+b
+cdf
+gd
+lk
+sudo mount /dev/sda /mnt/data
+ff
+pd
+yd
+cd misc/
+l
+..
+cd nouse/rootmisc/
+n qhfish 
+ll
+w fileroller
+w file-roller
+file-roller
+pi nemo
+pui nemo
+md atest
+cd atest/
+pacman -Qqe | grep -v "$(pacman -Qqm)" >pac.lst
+n installation 
+comm pac.lst ~/dotfiles/misc/qpacman.lst 
+cdf 
+pacman -Qqm >aut.lst
+comm aut.lst ~/dotfiles/misc/qaur.lst 
+yui librewolf
+w librewolf
+yui librewolf-bin
+y librewolf-bin
+pac
+cpk
+cd  /var/cache/pacman/pkg/
+l |rg librewolf
+cd .cache/
+cd yay/
+cd librewolf/
+rr librewolf/
+cd .librewolf/
+rr .librewolf/
+poweroff
+cat qhfish |rg fish
+cat qhbash |rg fish
+chsh -s /usr/bin/fish
+fidh
+n /home/vago/.local/share/fish/fish_history
+cat qhfish >> /home/vago/.local/share/fish/fish_history
 exit
 kitty hyprland.conf
 cd .config/hypr
-ls
 nano hyprland.conf 
 ls -lah
 terminator
@@ -39,12 +109,10 @@ hh
 hyprctl monitors all
 sudo systemctl poweroff
 cd /mnt/data/vago/git/gnome/
-l
 pi exa
 cd f
 ./sos-firefoxprivacy.sh 
 s ./sos-firefoxprivacy.sh 
-..
 s cp f/* /usr/share/fonts/
 cd fonts/
 s cp * /usr/share/fonts/
@@ -55,7 +123,6 @@ s cp -r backgrounds/ ~/.config/
 md ~/.config/fastfetch
 cd fastfetch/.config/fastfetch/
 s cp * ~/.config/fastfetch/
-cd
 cd /etc/xdg/autostart/
 mv geoclue-demo-agent.desktop geoclue-demo-agent.desktop.bup
 s mv geoclue-demo-agent.desktop geoclue-demo-agent.desktop.bup
@@ -78,12 +145,8 @@ cat installegion
 pi xdg-user-dirs wget vlc ufw tumbler thunar-archive-plugin timeshift timeshift-autosnap stow rsync ripgrep ranger reflector plocate numlockx mtools 
 pi xdg-user-dirs wget vlc ufw tumbler thunar-archive-plugin timeshift stow rsync ripgrep ranger reflector plocate numlockx mtools 
 pi gufw grub-btrfs gparted gnome-text-editor gnome-disk-utility gmtp file-roller fastfetch evince eog btop
-b
-t
-reboot
 pi swaybn
 pi swaync
-poweroff
 cd /mnt/data/
 mv vago/ vagoold/
 md vago
@@ -121,7 +184,6 @@ cp  ~/bin/* .
 cc
 co *
 pu
-cdf
 rm .bashrc .bash_aliases .descktop .nanorc .vimrc 
 stow home
 rm *
@@ -139,7 +201,6 @@ stow backgrounds/
 swaync
 md git
 gc https://github.com/Jguer/yay
-cd yay/
 makepkg -si
 pi base-devel
 pi pkgbuild
@@ -167,11 +228,9 @@ pi arc-gtk-theme
 pi swaybg
 mv * /mnt/data/sync-vago/
 sn /etc/default/grub
-lk
 cd /mnt/data/l
 pi vlc
 pui kitty
-ff
 cd /mnt/data/oldvago/Documents/
 pi aic94xx-firmware
 y aic94xx-firmware
@@ -235,8 +294,6 @@ gc https://github.com/angelogreko888/gnome
 gc https://github.com/angelogreko888/dotfiles-legion
 pi lxappearance
 sudo usermod -aG input vago
-pd
-yd
 yu
 s EDITOR=nano visudo
 ts
@@ -309,7 +366,6 @@ y hyprprop
 sudo pacman -scc
 sudo pacman -Scc
 nu
-cpk
 cdc
 s rr timeshiftold/
 cd pc
@@ -451,7 +507,6 @@ ctl disable sddm.service
 pui sddm
 sudo hdparm -Tt nvme0n1p1
 hyprprop
-gd
 pui gufw
 pi ufw
 yui freetube-git
@@ -485,7 +540,6 @@ ctl status blueman
 ctl status blueman-applet
 hyprland.desktop
 bash hyprland.desktop
-hyprland
 yay -Rns uwsm
 echo $PATH | tr ":" "\n"
 tr
@@ -568,14 +622,12 @@ backup.sh
 yui zen-browser-bin
 y librewolf
 gpp
-cd misc/
 du
 n /etc/pacman.d/mirrorlist 
 sn /etc/fstab 
 git config pull.ff only
 git merge --no-ff
 git commit
-git clone https://github.com/angelogreko888/dotfiles
 f
 y nvidia-beta 
 sn /etc/pacman.conf 
@@ -593,7 +645,6 @@ df -h
 pi nvidia-dkms
 cpinst.sh 
 cpinst.sh l
-cdf 
 cd misc
 n laur.lst 
 n lpacman.lst 
@@ -680,7 +731,6 @@ n style.css n config
 u
 pi yt-dlp
 cpd
-ll
 cd nouse/gnome-i3/
 cp .bash_aliases ~/dotfiles/nouse/gnome-i3/
 n env.conf 
@@ -856,7 +906,6 @@ mv ~/Downloads/colors-waybar.css ./colors.css
 rm style.css 
 mv ~/Downloads/style.css .
 n uwsm-autostart.conf 
-pi nemo
 n ~/dotfiles/misc/lpacman.lst 
 piu thunar thunar-archive-plugin thunar-volman
 pui thunar thunar-archive-plugin thunar-volman
@@ -1005,7 +1054,6 @@ pui hyrutils
 pi hyprutils
 +
 sudo pacman -R < a
-n installation 
 sudo pacman -R - < a
 sudo pacman -Su - < a
 pi hyprshade
@@ -1014,7 +1062,6 @@ ps hyprshad
 cd 00
 cdff
 rm laur.lst lpacman.lst 
-cd nouse/rootmisc/
 bh
 bh l
 ccc
@@ -1027,7 +1074,6 @@ stow xsettingsd/
 rr hypr/
 `p
 n zram.sh 
-./zram.sh 
 cd /
 pi ncdu
 nb 
@@ -1143,7 +1189,6 @@ ps virtualbox-guest-iso
 s pacman -Syy linux-headers
 n /etc/pacman.conf 
 cd librew
-cd .librewolf/
 n profiles.ini 
 n installs.ini 
 cd XiaomiADBFastbootTools/
@@ -1290,7 +1335,6 @@ y pygtk
 n baur
 cp aur.sh ~/atesting/
 cp baur ~/atesting/
-./aur.sh 
 comm ../misc/qpacman.lst bpac 
 n ../misc/installation 
 n git.sh
@@ -1589,9 +1633,13 @@ cd /usr/local/
 cd /usr/local/bin/
 cd /usr/bin/
 l | rg fish
-chsh -s /usr/bin/fish
 sn /etc/shells
 git rm fishlocal/*
 man pidof
 pidof hyprlock
 n gpush.sh 
+cat qhbash >> ~/.bash_history 
+n .bash_history 
+n bh 
+n envidia.sh 
+fish ctl status nvidia-suspend.service

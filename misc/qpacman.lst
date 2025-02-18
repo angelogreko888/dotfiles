@@ -64,7 +64,6 @@ mesa
 mtools
 nano
 ncdu
-nemo
 network-manager-applet
 networkmanager
 nmap
@@ -85,6 +84,7 @@ python-pip
 qt5-wayland
 qt5ct
 qt6-wayland
+qt6ct
 ranger
 reflector
 ripgrep
@@ -97,6 +97,7 @@ stow
 sudo
 swaybg
 swaync
+thunar
 timeshift
 ttf-font-awesome
 ttf-jetbrains-mono-nerd

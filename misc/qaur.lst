@@ -23,9 +23,10 @@ hyprwayland-scanner-git
 libglade
 librewolf-bin
 libva-nvidia-driver-git
-libva-nvidia-driver-git-debug
 simple-mtpfs
 upd72020x-fw
 wd719x-firmware
+xdg-desktop-portal-gtk-git
+xdg-desktop-portal-hyprland-git
 yay
 yay-debug

@@ -26,7 +26,7 @@ libglade
 librewolf-bin
 #pyprland
 simple-mtpfs
-#xdg-desktop-portal-gtk
-#xdg-desktop-portal-hyprland-git
+xdg-desktop-portal-gtk-git
+xdg-desktop-portal-hyprland-git
 upd72020x-fw
 wd719x-firmware

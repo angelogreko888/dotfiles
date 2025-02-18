@@ -87,7 +87,7 @@ abbr srb 'sudo reboot'
 
 abbr gc 'git clone'
 abbr gps 'git push -u origin main'
-abbr g 'cd ~/dotfiles && git status && cd ~'
+abbr g 'cd ~/dotfiles && git status && cd -'
 abbr gss 'git commit -m "save"'
 abbr ga 'git add *'
 abbr gpp 'git pull'

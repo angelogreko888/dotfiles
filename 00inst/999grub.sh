@@ -15,4 +15,6 @@ if sudo grep -q "GRUB_TIMEOUT=1" /etc/default/grub; then
 	sudo grub-mkconfig -o /boot/grub/grub.cfg
     fi
 
+sudo pacman -Su btrfs-progs grub-btrfs
 
+yay -Su grub-btrfs

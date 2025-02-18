@@ -7,6 +7,7 @@ handle_error() {
 
   trap 'handle_error $LINENO' ERR
 
+source ~/dotfiles/00inst/aur.lst
 
 cd ~
 
@@ -20,4 +21,8 @@ cd yay
 makepkg -si --noconfirm
 cd ~
 
-cat ~/dotfiles/00inst/aur.lst | xargs yay -S --needed --noconfirm
+#cat ~/dotfiles/00inst/aur.lst | xargs yay -S --needed --noconfirm
+
+for PKG in "${lst[@]}";do
+        yay -Su --needed --noconfirm --needed --noconfirm "$PKG"
+done

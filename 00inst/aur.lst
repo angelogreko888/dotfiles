@@ -1,3 +1,4 @@
+lst=(
 xdg-desktop-portal-gtk-git
 xdg-desktop-portal-hyprland-git
 aic94xx-firmware
@@ -29,3 +30,6 @@ hyprshot
 freetube-bin
 android-sdk-platform-tools
 anydesk-bin
+
+
+)

@@ -194,7 +194,6 @@
 - cmd: rr sddm
 - cmd: hypridle
 - cmd: ps xorg-xinput
-- cmd: loginctl session-status
 - cmd: mv hyprlock.conf hyprlock.conf.bup
 - cmd: n hyprlock
 - cmd: n hypridle.conf
@@ -1164,8 +1163,6 @@
   when: 1739013850
 - cmd: cat /sys/power/mem_sleep
   when: 1739013904
-- cmd: nano  env-hyprland
-  when: 1739022791
 - cmd: sudo pacman -Syu --needed   mesa
   when: 1739085013
 - cmd: sudo pacman -Syu --needed   btrfs-progs
@@ -1436,8 +1433,6 @@
   when: 1739277666
 - cmd: nano ~/.bash_aliases
   when: 1739278303
-- cmd: cd ~/dotfiles && git status && cd -
-  when: 1739278633
 - cmd: nano  ft
   when: 1739278903
 - cmd: cd fish/
@@ -1466,8 +1461,6 @@
   when: 1739288175
 - cmd: cd ~/.config/FreeTube/ && cp history.db playlists.db profiles.db search-history.db settings.db ~/dotfiles/freetube/.config/FreeTube &&  cd ~/dotfiles && git status && cd -
   when: 1739288787
-- cmd: cd /mnt/data/
-  when: 1739288996
 - cmd: cd Win/
   when: 1739289014
 - cmd: cd Adobe\\ Photoshop\\ CS6\\ 13.0\\ Final\\ \\ Multilanguage\\ \\(patch-PainteR\\)\\ \\[ChingLiu\\]/
@@ -1560,8 +1553,6 @@
   when: 1739346162
 - cmd: nano  sync.sh -l
   when: 1739346776
-- cmd: nano  ftsync.sh
-  when: 1739346830
 - cmd: rm ftsync.sh
   when: 1739346977
 - cmd: rm gpush.sh
@@ -1590,8 +1581,6 @@
   when: 1739379418
 - cmd: bash _x() { curl https://cht.sh/$1 ;}; _x pidof
   when: 1739380107
-- cmd: cd ~/dotfiles && git add * && git commit -m "save" && git push -u origin main && cd -
-  when: 1739380734
 - cmd: sudo nano  $HOME/.config/waybar/power_menu.xml
   when: 1739425842
 - cmd: nano  $HOME/.config/waybar/power_menu.xml
@@ -1618,8 +1607,6 @@
   when: 1739429093
 - cmd: fwupdmgr refresh
   when: 1739429156
-- cmd: nano  keybind.conf
-  when: 1739429406
 - cmd: ~/bin/gpush.sh && hyprctl dispatch exit
   when: 1739429425
 - cmd: sudo chmod +x  exit.sh
@@ -1778,8 +1765,6 @@
   when: 1739531177
 - cmd: sudo nano  visoudo
   when: 1739531279
-- cmd: nano  mbr.sh
-  when: 1739531355
 - cmd: fish
   when: 1739532378
 - cmd: sudo nano /etc/default/grub
@@ -1836,8 +1821,6 @@
   when: 1739544594
 - cmd: ls /sys/firmware/efi/efivars
   when: 1739545412
-- cmd: nano  efi.sh
-  when: 1739546214
 - cmd: cat /sys/module/nvidia_drm/parameters/fbdev
   when: 1739548100
 - cmd: sudo  cat /sys/module/nvidia_drm/parameters/fbdev
@@ -1958,10 +1941,6 @@
   when: 1739609096
 - cmd: yay hypridle
   when: 1739609107
-- cmd: ~/bin/bh q
-  when: 1739609277
-- cmd: nano  eaur.lst
-  when: 1739614385
 - cmd: comm pac.lst ../misc/qpacman.lst
   when: 1739614495
 - cmd: sudo pacman -Ss dbxtool
@@ -1982,8 +1961,6 @@
   when: 1739615708
 - cmd: nano  Documents/
   when: 1739615771
-- cmd: ~/bin/cpinst.sh q
-  when: 1739615897
 - cmd: comm aur.lst ../misc/qaur.lst
   when: 1739615968
 - cmd: yay hyprland-protocols-git
@@ -1994,8 +1971,6 @@
   when: 1739616378
 - cmd: yay ctl
   when: 1739616383
-- cmd: nano  aur.sh
-  when: 1739616922
 - cmd: bootctl --path=/boot install
   when: 1739617031
 - cmd: sudo  bootctl --path=/boot install
@@ -2022,14 +1997,10 @@
   when: 1739631553
 - cmd: yay hyprland-nvidia
   when: 1739631572
-- cmd: nano  aur.lst
-  when: 1739632193
 - cmd: sudo pacman -Ss egl-wayland
   when: 1739632494
 - cmd: which  xdg-desktop-portal-hyprland
   when: 1739632697
-- cmd: nano  pac.lst
-  when: 1739632884
 - cmd: yay egl-wayland
   when: 1739632973
 - cmd: which  xdg-desktop-portal
@@ -2040,8 +2011,6 @@
   when: 1739633114
 - cmd: nano  xdph.conf
   when: 1739633296
-- cmd: cd -
-  when: 1739633526
 - cmd: nano  inputG.sh
   when: 1739633531
 - cmd: sudo usermod -aG video "$(whoami)"
@@ -2098,10 +2067,6 @@
   when: 1739648461
 - cmd: yay -Rns nwg-displays
   when: 1739648499
-- cmd: sudo pacman -Ss xdg-desktop-portal-hyprland
-  when: 1739648577
-- cmd: yay xdg-desktop-portal-hyprland
-  when: 1739648602
 - cmd: yay -Rns xdg-desktop-portal-hyprland-git
   when: 1739648626
 - cmd: nano  monitor
@@ -2128,7 +2093,6 @@
   when: 1739821167
 - cmd: git clone https://github.com/angelogreko888/dotfiles
 - cmd: nano pac.sh
-- cmd: ./pac.sh
 - cmd: ./confpac.sh
 - cmd: ./icons.sh
 - cmd: n pipewire
@@ -2148,7 +2112,6 @@
 - cmd: pui nemo
 - cmd: pi nemo
 - cmd: md atest
-- cmd: cd atest/
 - cmd: pacman -Qqe | grep -v "$(pacman -Qqm)" >pac.lst
 - cmd: comm pac.lst ~/dotfiles/misc/qpacman.lst
 - cmd: pacman -Qqm >aut.lst
@@ -2173,7 +2136,6 @@
 - cmd: cd yay/
 - cmd: t
 - cmd: n installation
-- cmd: ./aur.sh
 - cmd: yd
 - cmd: pd
 - cmd: cpk
@@ -2260,13 +2222,6 @@
 - cmd: sudo rm -rf  dotfiles/
   when: 1739825706
     - dotfiles/
-- cmd: cd ../uwsm/
-  when: 1739825870
-- cmd: cd ~/.config/uwsm/
-  when: 1739825959
-    - ~/.config/uwsm/
-- cmd: nano  env
-  when: 1739825964
 - cmd: sudo systemctl  disable ly
   when: 1739826076
 - cmd: hyprland
@@ -2285,10 +2240,6 @@
   when: 1739828797
 - cmd: sudo updatedb; locate shikane
   when: 1739828977
-- cmd: sudo pacman -Qdtq | sudo pacman -Rns
-  when: 1739828996
-- cmd: yay -Yc
-  when: 1739828999
 - cmd: yay wlr-randr
   when: 1739829432
 - cmd: wlr-randr --help
@@ -2301,25 +2252,18 @@
   when: 1739829774
 - cmd: sudo  dmesg | rg nvidia
   when: 1739830017
-- cmd: sudo pacman -Syyu --noconfirm && yay -Syyu --noconfirm
-  when: 1739830164
 - cmd: sudo  dmesg | rg i915
   when: 1739830393
 - cmd: sudo nano  /etc/mkinitcpio.conf
   when: 1739830493
 - cmd: sudo  mkinitcpio -P
   when: 1739830528
-- cmd: nano  bnvidia.sh
-  when: 1739830646
-    - bnvidia.sh
 - cmd: sudo pacman -Ss libva
   when: 1739830678
 - cmd: yay -S --noconfirm libva-nvidia-driver-git
   when: 1739830758
 - cmd: sudo pacman -Syu --needed  opencl-clover-mesa opencl-nvidia lib32-nvidia-utils lib32-opencl-nvidia libvdpau libxnvctrl lib32-mesa libva-mesa-driver mesa-vdpau
   when: 1739830872
-- cmd: fastfetch
-  when: 1739831068
 - cmd: kanshi
   when: 1739831197
 - cmd: cd ~/dotfiles/
@@ -2367,8 +2311,6 @@
     - /mnt
 - cmd: cd /
   when: 1739833939
-- cmd: exa -lha
-  when: 1739833943
 - cmd: cd vt
   when: 1739833992
 - cmd: nano  vago/
@@ -2387,14 +2329,6 @@
   when: 1739834801
 - cmd: ./bup
   when: 1739834964
-- cmd: cd ~/dotfiles && git status && cd ~
-  when: 1739835377
-- cmd: ~/bin/gpush.sh
-  when: 1739835381
-- cmd: nano  boot.sh
-  when: 1739835654
-- cmd: nano  pac.sh
-  when: 1739835678
 - cmd: waybar
   when: 1739864906
 - cmd: btop
@@ -2429,8 +2363,6 @@
   when: 1739866856
 - cmd: hyprctl dispatch dpms off && sleep 1 &&  hyprctl dispatch dpms on
   when: 1739866933
-- cmd: cd ~/.config/
-  when: 1739867352
 - cmd: nano  kanshi/
   when: 1739867357
     - kanshi/
@@ -2439,19 +2371,11 @@
     - kanshi/config
 - cmd: nano  .config/kanshi/config
   when: 1739867489
-- cmd: nano  ~/.config/fish/config.fish
-  when: 1739867587
 - cmd: yay -Rns shikane
   when: 1739867916
-- cmd: cd ~/.config/hypr/
-  when: 1739867923
-- cmd: nano  autostart.conf
-  when: 1739867928
 - cmd: cd /vt
   when: 1739867964
     - /vt
-- cmd: cd vago/
-  when: 1739867974
 - cmd: cd /etc/modprobe.d/
   when: 1739868227
 - cmd: nano  nvidia.conf
@@ -2466,8 +2390,6 @@
     - nvidia-utils.conf
 - cmd: lspci -nn | grep VGA
   when: 1739868809
-- cmd: history
-  when: 1739869022
 - cmd: sudo nano  sudo nano  /etc/modprobe.d/i915.conf
   when: 1739869042
 - cmd: sudo nano  sudo
@@ -2478,16 +2400,10 @@
   when: 1739869335
 - cmd: cd /usr/lib/modprobe.d/
   when: 1739869505
-- cmd: cd
-  when: 1739869512
 - cmd: sudo updatedb; locate nvidia.conf
   when: 1739869520
 - cmd: sudo nano  /etc/modprobe.d/nvidia.conf
   when: 1739869539
-- cmd: sudo  dmesg
-  when: 1739869861
-- cmd: cd ~/dotfiles/00inst/
-  when: 1739870134
 - cmd: rm aaa
   when: 1739870142
     - aaa
@@ -2499,38 +2415,403 @@
   when: 1739870183
 - cmd: ./active.sh
   when: 1739870207
-- cmd: eza -a --color always --long --git --no-filesize --icons always --no-time --no-user
-  when: 1739870237
-  when: 1739870278
-    - aur.lst
-- cmd: yay xdg-desktop-portal-gtk
-  when: 1739870309
 - cmd: yay xdg-desktop-portal-hyprland-git
   when: 1739870409
 - cmd: yay aic94xx-firmware
   when: 1739870485
-  when: 1739870587
-    - aur.sh
-  when: 1739871515
+- cmd: nano  env
   when: 1739871522
-    - env
-  when: 1739871906
-    - env-hyprland
 - cmd: sudo pacman -Ss qt6ct
   when: 1739872124
 - cmd: sudo pacman -S qt6ct
   when: 1739872140
-  when: 1739872148
-  when: 1739872550
 - cmd: sudo pacman -Syu --needed  thunar
   when: 1739872556
 - cmd: thunar
   when: 1739872629
 - cmd: sudo pacman -Rns nemo
   when: 1739872718
+- cmd: sudo pacman -Qdtq | sudo pacman -Rns
   when: 1739872749
+- cmd: yay -Yc
   when: 1739872751
+- cmd: sudo  dmesg
   when: 1739872880
+- cmd: fastfetch
   when: 1739878752
+- cmd: ~/bin/cpinst.sh q
   when: 1739879086
+- cmd: ~/bin/bh q
   when: 1739879090
+- cmd: sudo pacman -Rns thunar
+  when: 1739879223
+- cmd: sudo pacman -Syu --needed  nemo
+  when: 1739879232
+- cmd: sudo pacman -Ss xdg-desktop-portal
+  when: 1739880334
+- cmd: cd ~/.config/uwsm/
+  when: 1739880665
+    - ~/.config/uwsm/
+- cmd: yay xdg-desktop-portal-gtk
+  when: 1739881141
+- cmd: sudo systemctl  status
+  when: 1739881329
+- cmd: sudo systemctl  --user xdg-desktop-portal-gtk
+  when: 1739881361
+- cmd: sudo systemctl  --user status xdg-desktop-portal-gtk
+  when: 1739881382
+- cmd: loginctl session-status
+  when: 1739881423
+- cmd: sudo nano  ~/.config/xdg-desktop-portal/portals.conf
+  when: 1739881654
+- cmd: mkdir -pv xdg-desktop-portal
+  when: 1739881740
+- cmd: xdg-mime default nemo.desktop inode/directory
+  when: 1739882074
+- cmd: systemctl --user status xdg-desktop-portal
+  when: 1739882374
+- cmd: sudo updatedb; locate org.freedesktop.portal.FileChooser.xml
+  when: 1739882540
+- cmd: sudo nano  /usr/share/dbus-1/interfaces/org.freedesktop.portal.FileChooser.xml
+  when: 1739882553
+    - /usr/share/dbus-1/interfaces/org.freedesktop.portal.FileChooser.xml
+- cmd: cd edit /usr/share/xdg-desktop-portal/portals/
+  when: 1739882764
+    - /usr/share/xdg-desktop-portal/portals/
+- cmd: cd  /usr/share/xdg-desktop-portal/portals/
+  when: 1739882785
+- cmd: sudo nano  gtk.portal
+  when: 1739882977
+    - gtk.portal
+- cmd: sudo pacman -Syu --needed   xdg-desktop-portal-gnome
+  when: 1739883454
+- cmd: sudo pacman -Syu --needed   xdg-desktop-portal-gtk
+  when: 1739883820
+- cmd: sudo pacman -Rns xdg-desktop-portal-gnome
+  when: 1739883970
+- cmd: sudo pacman -Syu --needed  xdg-desktop-portal-gtk
+  when: 1739884000
+- cmd: sudo pacman -Ss xdg-desktop-portal-hyprland
+  when: 1739884040
+- cmd: yay xdg-desktop-portal-hyprland
+  when: 1739884052
+- cmd: cd ../uwsm/
+  when: 1739884150
+- cmd: nano  env-hyprland
+  when: 1739884159
+- cmd: cd /usr/share/xdg-desktop-portal/
+  when: 1739884201
+    - /usr/share/xdg-desktop-portal/
+- cmd: nano  bnvidia.sh
+  when: 1739885538
+    - bnvidia.sh
+- cmd: ./pac.sh
+  when: 1739885708
+- cmd: nano  pac.sh
+  when: 1739885759
+- cmd: nano  pac.lst
+  when: 1739885858
+- cmd: nano  aur.lst
+  when: 1739885876
+- cmd: ./aur.sh
+  when: 1739886004
+- cmd: nano  aur.sh
+  when: 1739886058
+- cmd: sudo chmod +x  bnvidia.sh
+  when: 1739886187
+- cmd: nano  boot.sh
+  when: 1739886200
+- cmd: mv -i boot.sh 00boot.sh
+  when: 1739886228
+    - boot.sh
+- cmd: nano  ftsync.sh
+  when: 1739886263
+- cmd: nano  ftstow.sh
+  when: 1739886321
+    - ftstow.sh
+- cmd: rm ftstow.sh
+  when: 1739886366
+- cmd: mv -i confpac.sh 00confpac.sh
+  when: 1739886430
+    - confpac.sh
+- cmd: mv -i 00boot.sh 01boot.sh
+  when: 1739886457
+    - 00boot.sh
+- cmd: mv -i pac.sh 10pac.sh
+  when: 1739886588
+    - pac.sh
+- cmd: mv -i aur.sh 20aur.sh
+  when: 1739886618
+    - aur.sh
+- cmd: mv -i icons.sh 30icons.sh
+  when: 1739886666
+    - icons.sh
+- cmd: mv -i inputG.sh 40inputG.sh
+  when: 1739886682
+    - inputG.sh
+- cmd: mv -i pipewire.sh 40pipewire.sh
+  when: 1739886709
+    - pipewire.sh
+- cmd: mv -i zram.sh 50zram.sh
+  when: 1739886749
+    - zram.sh
+- cmd: mv -i stow.sh 60stow.sh
+  when: 1739886770
+    - stow.sh
+- cmd: mv -i active.sh 99active.sh
+  when: 1739886793
+    - active.sh
+- cmd: mv -i bnvidia.sh 90bnvidia.sh
+  when: 1739886851
+- cmd: nano  mbr.sh
+  when: 1739887027
+- cmd: nano  grub.sh
+  when: 1739887174
+    - grub.sh
+- cmd: nano  efi.sh
+  when: 1739887218
+- cmd: nano  efi.sh 01efi.sh
+  when: 1739887275
+    - efi.sh
+- cmd: mv -i  efi.sh 01efi.sh
+  when: 1739887293
+- cmd: mv -i mbr.sh 01mbr.sh
+  when: 1739887322
+    - mbr.sh
+- cmd: mv -i pbr.sh 100pbr.sh
+  when: 1739887488
+    - pbr.sh
+- cmd: mv -i 01efi.sh 011efi.sh
+  when: 1739887607
+    - 01efi.sh
+- cmd: nano  grub.sh 011grub.sh
+  when: 1739887624
+- cmd: mv -i   grub.sh 011grub.sh
+  when: 1739887643
+- cmd: mv -i envidia.sh 91envidia.sh
+  when: 1739887714
+    - envidia.sh
+- cmd: nano  01mbr.sh 012mbr.sh
+  when: 1739887764
+    - 01mbr.sh
+- cmd: mv -i  01mbr.sh 012mbr.sh
+  when: 1739887775
+- cmd: nano  00confpac.sh 000confpac.sh
+  when: 1739887807
+    - 00confpac.sh
+- cmd: mv -i   00confpac.sh 000confpac.sh
+  when: 1739887820
+- cmd: mv -i 01boot.sh 001boot.sh
+  when: 1739887893
+    - 01boot.sh
+- cmd: nano  epac.lst
+  when: 1739888152
+    - epac.lst
+- cmd: nano  011g
+  when: 1739888193
+- cmd: nano  011grub.sh
+  when: 1739888201
+    - 011grub.sh
+- cmd: nano  eaur.lst
+  when: 1739888261
+- cmd: mv -i 011grub.sh 999grub.sh
+  when: 1739888387
+- cmd: rm eaur.lst epac.lst
+  when: 1739888433
+    - eaur.lst
+- cmd: nano  001boot.sh
+  when: 1739888636
+    - 001boot.sh
+- cmd: mv -i mv 001boot.sh 001boot.sh
+  when: 1739888760
+- cmd: mv -i mv 001boot.sh 002boot.sh
+  when: 1739888791
+- cmd: mv -i 001boot.sh 002boot.sh
+  when: 1739888800
+- cmd: mv -i 000confpac.sh 001confpac.sh
+  when: 1739888822
+    - 000confpac.sh
+- cmd: ../freetube/.config/FreeTube/
+  when: 1739889326
+- cmd: cp -i  ~/dotfiles/freetube/.config/FreeTube/history.db playlists.db profiles.db search-history.db settings.db .
+  when: 1739889478
+    - ~/dotfiles/freetube/.config/FreeTube/history.db
+    - .
+- cmd: cp -i  ~/dotfiles/freetube/.config/FreeTube/history.db playlists.db profiles.db search-history.db /settings.db .
+  when: 1739889551
+- cmd: cp -i  history.db playlists.db profiles.db search-history.db settings.db ~/
+  when: 1739889653
+    - history.db
+    - playlists.db
+    - profiles.db
+    - search-history.db
+    - settings.db
+    - ~/
+- cmd: sudo chmod +x  ftube.sh
+  when: 1739889767
+    - ftube.sh
+- cmd: ./ftube.sh
+  when: 1739889840
+- cmd: cd atest/
+  when: 1739889871
+- cmd: nano  ftube.sh
+  when: 1739889874
+- cmd: rm history.db playlists.db profiles.db search-history.db settings.db
+  when: 1739889948
+- cmd: mv -i ftube.sh ~/dotfiles/00inst/
+  when: 1739890082
+    - ~/dotfiles/00inst/
+- cmd: mv -i ftube.sh 888ftube.sh
+  when: 1739890149
+- cmd: nano  ~/.config/fish/config.fish
+  when: 1739890267
+- cmd: cd ~/dotfiles && git status && cd ~
+  when: 1739890322
+- cmd: mv -i 999grub.sh 111grub.sh
+  when: 1739890406
+    - 999grub.sh
+- cmd: mv -i 100pbr.sh 999pbr.sh
+  when: 1739890433
+    - 100pbr.sh
+- cmd: history  |rg firejail
+  when: 1739892269
+- cmd: history  |rg firectl
+  when: 1739892310
+- cmd: firejail
+  when: 1739892607
+- cmd: sudo pacman -Syyu --noconfirm && yay -Syyu --noconfirm
+  when: 1739909211
+- cmd: mv -i 40inputG.sh 7l0inputG.sh
+  when: 1739909488
+    - 40inputG.sh
+- cmd: mv -i 7l0inputG.sh 70inputG.sh
+  when: 1739909517
+    - 7l0inputG.sh
+- cmd: cd ~/dotfiles/00inst/
+  when: 1739909588
+- cmd: nano  grubpac.sh
+  when: 1739909669
+- cmd: nano  011efi.sh
+  when: 1739909790
+    - 011efi.sh
+- cmd: mv -i 011efi.sh 011grubefi.sh
+  when: 1739909863
+- cmd: nano  012mbr.sh
+  when: 1739909893
+    - 012mbr.sh
+- cmd: mv -i 012mbr.sh 013grubmbr.sh
+  when: 1739909946
+- cmd: mv -i grubpac.sh 012grubpac.sh
+  when: 1739909968
+    - grubpac.sh
+- cmd: nano  111grub.sh
+  when: 1739909990
+    - 111grub.sh
+- cmd: mv -i 111grub.sh 0111grub.sh
+  when: 1739910177
+- cmd: sudo chmod +x  012grubpac.sh
+  when: 1739910188
+    - 012grubpac.sh
+- cmd: cd ~/dotfiles && git add * && git commit -m "save" && git push -u origin main && cd -
+  when: 1739910337
+- cmd: rm gtk-2.0/
+  when: 1739914011
+    - gtk-2.0/
+- cmd: rm -rf  gtk-2.0/
+  when: 1739914026
+- cmd: cd ~/.config/
+  when: 1739914633
+- cmd: cd xdg-desktop-portal/
+  when: 1739914641
+    - xdg-desktop-portal/
+- cmd: sudo pacman -Syu --needed   xdg-desktop-portal-lxqt
+  when: 1739915206
+- cmd: cd /usr/share/xdg-desktop-portal/portals/
+  when: 1739915436
+- cmd: nano  lxqt.portal
+  when: 1739915542
+    - lxqt.portal
+- cmd: sudo pacman -Rns  xdg-desktop-portal-lxqt
+  when: 1739915578
+- cmd: l\\\n
+  when: 1739915585
+- cmd: cd ~/.config/xdg-desktop-portal/
+  when: 1739916674
+    - ~/.config/xdg-desktop-portal/
+- cmd: nano  hyprland-portals.conf
+  when: 1739916691
+- cmd: cd -
+  when: 1739916748
+- cmd: nano  gtk.portal
+  when: 1739916757
+- cmd: sudo  nano  gtk.portal
+  when: 1739916796
+- cmd: nano  hyprland.portal
+  when: 1739916812
+    - hyprland.portal
+- cmd: sudo  nano  hyprland.portal
+  when: 1739916822
+- cmd: cd ~/dotfiles && git status && cd -
+  when: 1739920818
+- cmd: ~/bin/gpush.sh
+  when: 1739920863
+- cmd: cd /mnt/data/
+  when: 1739942547
+- cmd: nano  sync-vago/
+  when: 1739942571
+    - sync-vago/
+- cmd: cd sync-vago/
+  when: 1739942595
+- cmd: cd vago/
+  when: 1739942609
+- cmd: exa -lha
+  when: 1739942634
+- cmd: cd
+  when: 1739942642
+- cmd: sudo updatedb; locate xdg-desktop-portal-gtk
+  when: 1739943506
+- cmd: sudo systemctl  status xdg-desktop-portal-gtk.service
+  when: 1739943541
+- cmd: sudo nano  /usr/lib/xdg-desktop-portal-gtk
+  when: 1739943563
+    - /usr/lib/xdg-desktop-portal-gtk
+- cmd: sudo systemctl  status xdg-desktop-portal-gtk
+  when: 1739943596
+- cmd: systemctl --user  status xdg-desktop-portal-gtk
+  when: 1739943623
+- cmd: mkdir -pv -p ~/.config/environment.d/
+  when: 1739943749
+- cmd: cd ~/.config/environment.d/
+  when: 1739943758
+    - ~/.config/environment.d/
+- cmd: sudo nano  /etc/systemd/user.conf
+  when: 1739943807
+    - /etc/systemd/user.conf
+- cmd: history
+  when: 1739944479
+- cmd: cd ~/.config/hypr/
+  when: 1739944637
+- cmd: nano  autostart.conf
+  when: 1739944641
+- cmd: nano  keybind.conf
+  when: 1739944653
+- cmd: rm -rf   ~/.config/environment.d/
+  when: 1739945048
+- cmd: cd ~/dotfiles/misc/
+  when: 1739945171
+    - ~/dotfiles/misc/
+- cmd: rm CanvasBlocker-settings_2025-02-03_21-17-58.json chameleon_1738610295857.json noscript_data.txt
+  when: 1739945204
+    - CanvasBlocker-settings_2025-02-03_21-17-58.json
+    - chameleon_1738610295857.json
+    - noscript_data.txt
+- cmd: cp -i  ~/Downloads/noscript_data.txt .
+  when: 1739945272
+    - ~/Downloads/noscript_data.txt
+- cmd: eza -a --color always --long --git --no-filesize --icons always --no-time --no-user
+  when: 1739945274
+- cmd: rm b*
+  when: 1739945308
+  when: 1739945310
+  when: 1739945329
+  when: 1739945342

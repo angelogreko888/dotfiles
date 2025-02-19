@@ -48,9 +48,9 @@
         "§:tinymce.cachefly.net",
         "§:ytimg.com",
         "§:bootstrapcdn.com",
-        "§:192.168.1.1",
-        "192.168.1.1",
-        "192.168.0.1"
+        "192.168.0.1",
+        "§:btl.gov.il",
+        "192.168.1.1"
       ],
       "untrusted": [
         "googletagmanager.com",
@@ -247,7 +247,6 @@
         "heyday.io",
         "kaltura.com",
         "youbora.com",
-        "live.com",
         "a-ads.com",
         "histats.com",
         "googietagmanager.com",
@@ -291,6 +290,9 @@
         "https://widget.prod.equally.ai",
         "arcgis.com",
         "https://js.arcgis.com",
+        "arkoselabs.com",
+        "https://iframe.arkoselabs.com",
+        "live.com",
         "google.com"
       ],
       "custom": {
@@ -1746,16 +1748,6 @@
           ],
           "temp": false
         },
-        "§:192.168.2.20": {
-          "capabilities": [
-            "frame",
-            "fetch",
-            "noscript",
-            "other",
-            "font"
-          ],
-          "temp": false
-        },
         "tplinkwifi.net": {
           "capabilities": [
             "frame",
@@ -1786,13 +1778,6 @@
             "other",
             "font",
             "script"
-          ],
-          "temp": false
-        },
-        "§:redd.it": {
-          "capabilities": [
-            "fetch",
-            "media"
           ],
           "temp": false
         },
@@ -2328,17 +2313,6 @@
           "temp": false
         },
         "§:1000logos.net": {
-          "capabilities": [
-            "frame",
-            "fetch",
-            "noscript",
-            "other",
-            "font",
-            "script"
-          ],
-          "temp": false
-        },
-        "§:btl.gov.il": {
           "capabilities": [
             "frame",
             "fetch",
@@ -3131,7 +3105,8 @@
             "noscript",
             "other",
             "font",
-            "script"
+            "script",
+            "lazy_load"
           ],
           "temp": false
         },
@@ -3317,14 +3292,11 @@
           "capabilities": [
             "frame",
             "fetch",
-            "noscript",
-            "other",
             "font",
             "script",
-            "object",
-            "lazy_load",
             "media",
-            "unchecked_css"
+            "object",
+            "lazy_load"
           ],
           "temp": false
         },
@@ -3913,7 +3885,7 @@
             "noscript",
             "other",
             "font",
-            "script"
+            "lazy_load"
           ],
           "temp": false
         },
@@ -4084,6 +4056,471 @@
             "script"
           ],
           "temp": false
+        },
+        "§:whatsapp.net": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:sysguides.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "lazy_load",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:home-assistant.io": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script",
+            "noscript"
+          ],
+          "temp": false
+        },
+        "§:ibm.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:t.co": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "noscript",
+            "script"
+          ],
+          "temp": false
+        },
+        "https://t.co": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script",
+            "noscript"
+          ],
+          "temp": false
+        },
+        "§:golangbridge.org": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script",
+            "noscript"
+          ],
+          "temp": false
+        },
+        "§:555.co.il": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "lazy_load",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:yashir.co.il": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "https://ui-recorder-prod.yashir.co.il": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:pafoslive.com.cy": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script",
+            "noscript"
+          ],
+          "temp": false
+        },
+        "§:downloadtwittervideo.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:ssstwitter.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script",
+            "noscript"
+          ],
+          "temp": false
+        },
+        "§:hagihon.co.il": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script",
+            "lazy_load",
+            "media"
+          ],
+          "temp": false
+        },
+        "§:megatv.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "lazy_load",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:in.gr": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:adman.gr": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:livetrafficfeed.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:vindral.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script",
+            "media"
+          ],
+          "temp": false
+        },
+        "§:level1techs.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script",
+            "noscript"
+          ],
+          "temp": false
+        },
+        "§:ranpharma.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:redd.it": {
+          "capabilities": [
+            "fetch",
+            "media"
+          ],
+          "temp": false
+        },
+        "§:star.gr": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:passmark.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:crucial.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script",
+            "noscript"
+          ],
+          "temp": false
+        },
+        "§:user-images.githubusercontent.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "media"
+          ],
+          "temp": false
+        },
+        "§:outfoxxed.me": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script",
+            "media"
+          ],
+          "temp": false
+        },
+        "https://quickshell.outfoxxed.me": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "media",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:endeavouros.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script",
+            "noscript"
+          ],
+          "temp": false
+        },
+        "§:garudalinux.org": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "noscript",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:itsfoss.community": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "noscript",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:linuxmint.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script",
+            "noscript"
+          ],
+          "temp": false
+        },
+        "§:librewolf.net": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font"
+          ],
+          "temp": false
+        },
+        "§:hadassah.org.il": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:phoenixnap.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script",
+            "noscript"
+          ],
+          "temp": false
+        },
+        "§:cachyos.org": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:novacustom.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "noscript",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:lemmy.world": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "lazy_load",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:jetbrains.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script",
+            "noscript"
+          ],
+          "temp": false
+        },
+        "§:winehq.org": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:usebottles.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "lazy_load",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:egov.gov.il": {
+          "capabilities": [
+            "script"
+          ],
+          "temp": false
+        },
+        "§:sm.gov.il": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font"
+          ],
+          "temp": false
+        },
+        "§:debugpoint.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script",
+            "noscript"
+          ],
+          "temp": false
+        },
+        "§:strapi.io": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script",
+            "noscript"
+          ],
+          "temp": false
+        },
+        "§:tp-link.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "noscript",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:nixos.org": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script",
+            "noscript"
+          ],
+          "temp": false
+        },
+        "§:learnlinux.tv": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script",
+            "noscript"
+          ],
+          "temp": false
+        },
+        "192.168.2.20": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "other",
+            "font"
+          ],
+          "temp": false
         }
       }
     },
@@ -4092,13 +4529,13 @@
   },
   "local": {
     "debug": false,
-    "showCtxMenuItem": false,
+    "showCtxMenuItem": true,
     "showCountBadge": true,
-    "showFullAddresses": true,
+    "showFullAddresses": false,
     "showProbePlaceholders": true,
     "amnesticUpdates": false,
     "storage": "local",
-    "uuid": "243c07cc-8f4d-4ce5-ac38-8b0fafece1e7"
+    "uuid": "81a61a43-fb28-46a8-8dda-d61c22e8385f"
   },
   "sync": {
     "global": false,

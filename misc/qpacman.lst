@@ -64,6 +64,7 @@ mesa
 mtools
 nano
 ncdu
+nemo
 network-manager-applet
 networkmanager
 nmap
@@ -97,7 +98,6 @@ stow
 sudo
 swaybg
 swaync
-thunar
 timeshift
 ttf-font-awesome
 ttf-jetbrains-mono-nerd
@@ -112,6 +112,7 @@ wireless_tools
 wireplumber
 wlr-randr
 wpa_supplicant
+xdg-desktop-portal-gtk
 xdg-user-dirs
 xdg-utils
 yt-dlp

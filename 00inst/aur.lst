@@ -2,9 +2,7 @@ lst=(
 xdg-desktop-portal-gtk-git
 xdg-desktop-portal-hyprland-git
 mkinitcpio-firmware
-aic94xx-firmware
 aquamarine-git
-ast-firmware
 aurutils
 bezier
 checkupdates-with-aur
@@ -24,9 +22,6 @@ hyprwayland-scanner-git
 libglade
 librewolf-bin
 simple-mtpfs
-upd72020x-fw
-wd719x-firmware
-android-sdk-platform-tools
 hyprshot
 freetube-bin
 android-sdk-platform-tools

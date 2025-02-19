@@ -1,6 +1,7 @@
 lst=(
 xdg-desktop-portal-gtk-git
 xdg-desktop-portal-hyprland-git
+mkinitcpio-firmware
 aic94xx-firmware
 aquamarine-git
 ast-firmware

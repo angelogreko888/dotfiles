@@ -331,7 +331,6 @@
 - cmd: sort qpacman.lst -o qpacman.lst
 - cmd: comm qpacman.lst ../00inst/bpac
 - cmd: cd 00inst
-- cmd: sort qaur.lst -o qaur.lst
 - cmd: comm qaur.lst ../00inst/baur
 - cmd: y virtio-win
 - cmd: pacman -Si virtio-win
@@ -787,8 +786,6 @@
   when: 1738834749
 - cmd: n .bash_aliases
   when: 1738834800
-- cmd: rm *
-  when: 1738835314
 - cmd: n config.fish
   when: 1738835362
 - cmd: curl wttr.in/paphos
@@ -885,8 +882,6 @@
   when: 1738908456
 - cmd: yay art-rawconverter
   when: 1738908480
-- cmd: hyprprop WM_CLASS
-  when: 1738908778
 - cmd: cf
   when: 1738909243
 - cmd: sudo pacman -Syu --needed  nano
@@ -1393,8 +1388,6 @@
   when: 1739273884
 - cmd: firejail list
   when: 1739273974
-- cmd: sudo  firecfg
-  when: 1739273993
 - cmd: which  freetube
   when: 1739274834
 - cmd: firejail clear
@@ -1570,8 +1563,6 @@
 - cmd: ~/bin/bash cpinst.sh
   when: 1739350266
 - cmd: ~/bin/cpinst.sh
-  when: 1739350300
-- cmd: 110201
   when: 1739378641
 - cmd: nano sync.sh
   when: 1739378846
@@ -2049,10 +2040,6 @@
   when: 1739637100
 - cmd: sudo pacman -Ss wayland-client
   when: 1739637114
-- cmd: nano  config
-  when: 1739637166
-- cmd: pacman -Q | rg nvidia
-  when: 1739637396
 - cmd: sudo pacman -Rns nvidia-open-dkms
   when: 1739637420
 - cmd: sudo pacman -Ss vulkan-intel
@@ -2077,8 +2064,6 @@
   when: 1739648817
 - cmd: sudo nano  /etc/environment
   when: 1739648851
-- cmd: cd ~/bin
-  when: 1739648883
 - cmd: nano  xdg-desktop
   when: 1739648891
 - cmd: yay xdg-desktop-portal
@@ -2188,8 +2173,6 @@
   when: 1739823269
 - cmd: yay aic94xx
   when: 1739823347
-- cmd: cd /etc/pacman.d/
-  when: 1739823612
 - cmd: sudo  mkdir -pv hooks
   when: 1739823630
 - cmd: sudo nano  /etc/pacman.d/hooks/nvidia.hook
@@ -2215,8 +2198,6 @@
 - cmd: sudo  nano  arch.conf
   when: 1739825266
     - arch.conf
-- cmd: htop
-  when: 1739825449
 - cmd: sudo pacman -Syu --needed  nvidia-dkms
   when: 1739825495
 - cmd: sudo rm -rf  dotfiles/
@@ -2266,8 +2247,6 @@
   when: 1739830872
 - cmd: kanshi
   when: 1739831197
-- cmd: cd ~/dotfiles/
-  when: 1739831672
   when: 1739831708
 - cmd: ./sync.sh
   when: 1739831901
@@ -2283,23 +2262,16 @@
   when: 1739831991
 - cmd: ./bh q
   when: 1739832006
-- cmd: nano  backup.sh
-  when: 1739832019
-    - backup.sh
 - cmd: ./backup.sh
   when: 1739832030
 - cmd: sudo systemctl  suspend
   when: 1739832920
-- cmd: nano  bup
-  when: 1739833005
 - cmd: lsblk
   when: 1739833160
 - cmd: mkdir -pv vago
   when: 1739833575
 - cmd: mkdir -pv timeshift
   when: 1739833583
-- cmd: sudo -sE timeshift-gtk
-  when: 1739833593
 - cmd: touch aaa
   when: 1739833721
 - cmd: cd bin/
@@ -2327,8 +2299,6 @@
   when: 1739834732
 - cmd: sudo chown vago:  /vt/
   when: 1739834801
-- cmd: ./bup
-  when: 1739834964
 - cmd: waybar
   when: 1739864906
 - cmd: btop
@@ -2339,9 +2309,6 @@
   when: 1739866338
 - cmd: yay shikane
   when: 1739866348
-- cmd: cd ..
-  when: 1739866411
-    - ..
 - cmd: mkdir -pv shikane
   when: 1739866417
 - cmd: cd shikane/
@@ -2417,8 +2384,6 @@
   when: 1739870207
 - cmd: yay xdg-desktop-portal-hyprland-git
   when: 1739870409
-- cmd: yay aic94xx-firmware
-  when: 1739870485
 - cmd: nano  env
   when: 1739871522
 - cmd: sudo pacman -Ss qt6ct
@@ -2439,10 +2404,6 @@
   when: 1739872880
 - cmd: fastfetch
   when: 1739878752
-- cmd: ~/bin/cpinst.sh q
-  when: 1739879086
-- cmd: ~/bin/bh q
-  when: 1739879090
 - cmd: sudo pacman -Rns thunar
   when: 1739879223
 - cmd: sudo pacman -Syu --needed  nemo
@@ -2509,10 +2470,6 @@
   when: 1739885708
 - cmd: nano  pac.sh
   when: 1739885759
-- cmd: nano  pac.lst
-  when: 1739885858
-- cmd: nano  aur.lst
-  when: 1739885876
 - cmd: ./aur.sh
   when: 1739886004
 - cmd: nano  aur.sh
@@ -2687,8 +2644,6 @@
 - cmd: mv -i 7l0inputG.sh 70inputG.sh
   when: 1739909517
     - 7l0inputG.sh
-- cmd: cd ~/dotfiles/00inst/
-  when: 1739909588
 - cmd: nano  grubpac.sh
   when: 1739909669
 - cmd: nano  011efi.sh
@@ -2712,15 +2667,11 @@
 - cmd: sudo chmod +x  012grubpac.sh
   when: 1739910188
     - 012grubpac.sh
-- cmd: cd ~/dotfiles && git add * && git commit -m "save" && git push -u origin main && cd -
-  when: 1739910337
 - cmd: rm gtk-2.0/
   when: 1739914011
     - gtk-2.0/
 - cmd: rm -rf  gtk-2.0/
   when: 1739914026
-- cmd: cd ~/.config/
-  when: 1739914633
 - cmd: cd xdg-desktop-portal/
   when: 1739914641
     - xdg-desktop-portal/
@@ -2751,10 +2702,6 @@
     - hyprland.portal
 - cmd: sudo  nano  hyprland.portal
   when: 1739916822
-- cmd: cd ~/dotfiles && git status && cd -
-  when: 1739920818
-- cmd: ~/bin/gpush.sh
-  when: 1739920863
 - cmd: cd /mnt/data/
   when: 1739942547
 - cmd: nano  sync-vago/
@@ -2766,8 +2713,6 @@
   when: 1739942609
 - cmd: exa -lha
   when: 1739942634
-- cmd: cd
-  when: 1739942642
 - cmd: sudo updatedb; locate xdg-desktop-portal-gtk
   when: 1739943506
 - cmd: sudo systemctl  status xdg-desktop-portal-gtk.service
@@ -2789,17 +2734,10 @@
     - /etc/systemd/user.conf
 - cmd: history
   when: 1739944479
-- cmd: cd ~/.config/hypr/
-  when: 1739944637
 - cmd: nano  autostart.conf
   when: 1739944641
-- cmd: nano  keybind.conf
-  when: 1739944653
 - cmd: rm -rf   ~/.config/environment.d/
   when: 1739945048
-- cmd: cd ~/dotfiles/misc/
-  when: 1739945171
-    - ~/dotfiles/misc/
 - cmd: rm CanvasBlocker-settings_2025-02-03_21-17-58.json chameleon_1738610295857.json noscript_data.txt
   when: 1739945204
     - CanvasBlocker-settings_2025-02-03_21-17-58.json
@@ -2808,10 +2746,196 @@
 - cmd: cp -i  ~/Downloads/noscript_data.txt .
   when: 1739945272
     - ~/Downloads/noscript_data.txt
-- cmd: eza -a --color always --long --git --no-filesize --icons always --no-time --no-user
-  when: 1739945274
 - cmd: rm b*
   when: 1739945308
-  when: 1739945310
+- cmd: ~/bin/cpinst.sh q
   when: 1739945329
+- cmd: ~/bin/bh q
   when: 1739945342
+- cmd: cd ~/vago/
+  when: 1739945426
+    - ~/vago/
+- cmd: hyprprop WM_CLASS
+  when: 1739945627
+- cmd: cd ~/.config/hypr/
+  when: 1739945671
+- cmd: nano  keybind.conf
+  when: 1739945678
+- cmd: cd ~/dotfiles/misc/
+  when: 1739946234
+    - ~/dotfiles/misc/
+- cmd: nano  qpacman.lst
+  when: 1739946262
+    - qpacman.lst
+- cmd: comm qpacman.lst ../00inst/pac.lst
+  when: 1739946307
+    - ../00inst/pac.lst
+- cmd: cd ~/atest/
+  when: 1739946547
+    - ~/atest/
+- cmd: cp -i  ~/dotfiles/misc/qpacman.lst .
+  when: 1739946637
+    - ~/dotfiles/misc/qpacman.lst
+- cmd: cp -i  ~/dotfiles/misc/qaur.lst .
+  when: 1739946647
+    - ~/dotfiles/misc/qaur.lst
+- cmd: cp -i  ~/dotfiles/00inst/pac.lst .
+  when: 1739946669
+    - ~/dotfiles/00inst/pac.lst
+- cmd: cp -i  ~/dotfiles/00inst/aur.lst .
+  when: 1739946678
+    - ~/dotfiles/00inst/aur.lst
+- cmd: nano pac.lst
+  when: 1739946686
+    - pac.lst
+- cmd: sort -i pac.lst
+  when: 1739946708
+- cmd: sort -i qpacman.lst
+  when: 1739946762
+- cmd: comm qpacman.lst pac.lst
+  when: 1739946866
+- cmd: sudo pacman -Ss libxnvctrl
+  when: 1739946931
+- cmd: wlr-randr
+  when: 1739947943
+- cmd: sudo pacman -Rns wlr-randr
+  when: 1739948019
+- cmd: sort -i aur.lst
+  when: 1739948048
+    - aur.lst
+- cmd: sort aur.lst -o aur.lst
+  when: 1739948117
+- cmd: sort qaur.lst -o qaur.lst
+  when: 1739948140
+- cmd: comm qaur.lst aur.lst
+  when: 1739948158
+    - qaur.lst
+- cmd: yay aic94xx-firmware
+  when: 1739948338
+- cmd: rm *
+  when: 1739948373
+- cmd: cd ~/bin
+  when: 1739948410
+- cmd: nano  backup.sh
+  when: 1739948417
+    - backup.sh
+- cmd: nano  bup
+  when: 1739948427
+- cmd: ./bup
+  when: 1739948442
+- cmd: sudo pacman -Ss mkinitcpio-firmware
+  when: 1739948938
+- cmd: yay mkinitcpio-firmware
+  when: 1739948941
+- cmd: nano  pac.lst
+  when: 1739948974
+- cmd: nano  aur.lst
+  when: 1739949040
+- cmd: cd ..
+  when: 1739949070
+    - ..
+- cmd: nano  monitor.sh
+  when: 1739952339
+    - monitor.sh
+- cmd: rm monitor.sh
+  when: 1739952361
+- cmd: cd ~/dotfiles && git status && cd -
+  when: 1739952365
+- cmd: sudo -sE timeshift-gtk
+  when: 1739962315
+- cmd: htop
+  when: 1739983248
+- cmd: ~/bin/gpush.sh
+  when: 1740030075
+- cmd: nano  .local/share/fish/fish_history
+  when: 1740030132
+    - .local/share/fish/fish_history
+- cmd: cd ~/.config/
+  when: 1740030333
+- cmd: rm -rf  Thunar/
+  when: 1740030348
+    - Thunar/
+- cmd: cd nwg-look/
+  when: 1740030424
+    - nwg-look/
+- cmd: nano  config
+  when: 1740030439
+- cmd: sudo  firecfg
+  when: 1740030475
+- cmd: pacman -Q | nvidia
+  when: 1740030564
+- cmd: pacman -Q | rg nvidia
+  when: 1740030573
+- cmd: cd /etc/pacman.d/
+  when: 1740030590
+- cmd: cd hooks/
+  when: 1740030600
+    - hooks/
+- cmd: sudo  rm nvidia.hook
+  when: 1740030616
+    - nvidia.hook
+- cmd: nano  003bootmbr.sh
+  when: 1740030858
+- cmd: cd ~/dotfiles/00inst/
+  when: 1740030872
+- cmd: nano  002boot.sh
+  when: 1740030881
+    - 002boot.sh
+- cmd: nano  013grubmbr.sh
+  when: 1740030966
+    - 013grubmbr.sh
+- cmd: mv -i 013grubmbr.sh 003grubmbr.sh
+  when: 1740031190
+- cmd: mv -i 011grubefi.sh 004grubefi.sh
+  when: 1740031323
+    - 011grubefi.sh
+- cmd: mv -i 0111grub.sh 0041grub.sh
+  when: 1740031354
+    - 0111grub.sh
+- cmd: mv -i 012grubpac.sh 0042grubpac.sh
+  when: 1740031387
+- cmd: mv -i 888ftube.sh 80ftube.sh
+  when: 1740031466
+    - 888ftube.sh
+- cmd: mv -i 004grubefi.sh 0040grubefi.sh
+  when: 1740031624
+    - 004grubefi.sh
+- cmd: mv -i 99active.sh 990active.sh
+  when: 1740031750
+    - 99active.sh
+- cmd: cd ~/dotfiles && git add * && git commit -m "save" && git push -u origin main && cd -
+  when: 1740031796
+- cmd: nano  003grubmbr.sh
+  when: 1740031866
+    - 003grubmbr.sh
+- cmd: cd ~/dotfiles/
+  when: 1740031924
+- cmd: cd gtk-2.0/
+  when: 1740031943
+- cmd: cd .config/gtk-2.0/
+  when: 1740031960
+    - .config/gtk-2.0/
+- cmd: eza -a --color always --long --git --no-filesize --icons always --no-time --no-user
+  when: 1740031961
+- cmd: cd
+  when: 1740036625
+- cmd: sudo updatedb; locate locale.gen
+  when: 1740036653
+- cmd: sudo updatedb; locate locale
+  when: 1740036662
+- cmd: sudo updatedb; locate locale | less
+  when: 1740036705
+- cmd: sudo nano  locale.gen
+  when: 1740036724
+  when: 1740036746
+- cmd: sudo nano  /etc/locale.conf
+  when: 1740036759
+    - /etc/locale.conf
+- cmd: sudo nano  /etc/locale.gen
+  when: 1740036777
+    - /etc/locale.gen
+- cmd: sudo updatedb; locate symbols/gr
+  when: 1740037149
+  when: 1740041654
+  when: 1740041683
+  when: 1740041690

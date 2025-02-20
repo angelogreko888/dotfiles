@@ -110,7 +110,6 @@ waybar
 wget
 wireless_tools
 wireplumber
-wlr-randr
 wpa_supplicant
 xdg-desktop-portal-gtk
 xdg-user-dirs

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-ln -sf /usr/share/zoneinfo/Israel /etc/localtime
+ln -sf /usr/share/zoneinfo/Europe/Nicosia /etc/localtime
 hwclock --systohc
 sed -i '171s/.//' /etc/locale.gen
 locale-gen

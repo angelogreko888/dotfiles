@@ -19,7 +19,7 @@ echo "
 default  arch.conf
 timeout  0
 console-mode keep
-editor   1
+editor   0
 " | tee  /boot/loader/loader.conf
 
 echo "

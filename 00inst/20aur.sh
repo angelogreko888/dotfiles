@@ -24,5 +24,5 @@ cd ~
 #cat ~/dotfiles/00inst/aur.lst | xargs yay -S --needed --noconfirm
 
 for PKG in "${lst[@]}";do
-        yay -Su --needed --noconfirm --needed --noconfirm "$PKG"
+        yay -Su --needed --noconfirm "$PKG"
 done

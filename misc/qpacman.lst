@@ -12,6 +12,7 @@ dbxtool
 dconf-editor
 dmidecode
 dosfstools
+dpkg
 egl-wayland
 eog
 evince

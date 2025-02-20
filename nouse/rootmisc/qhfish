@@ -1442,8 +1442,6 @@
   when: 1739280035
 - cmd: notify-send hellp
   when: 1739280135
-- cmd: cd /etc/firejail/
-  when: 1739280162
 - cmd: nano  notify-send.profile
   when: 1739280208
 - cmd: firejail --noprofile notify-send hello
@@ -2620,8 +2618,6 @@
     - ~/dotfiles/00inst/
 - cmd: mv -i ftube.sh 888ftube.sh
   when: 1739890149
-- cmd: nano  ~/.config/fish/config.fish
-  when: 1739890267
 - cmd: cd ~/dotfiles && git status && cd ~
   when: 1739890322
 - cmd: mv -i 999grub.sh 111grub.sh
@@ -2748,10 +2744,6 @@
     - ~/Downloads/noscript_data.txt
 - cmd: rm b*
   when: 1739945308
-- cmd: ~/bin/cpinst.sh q
-  when: 1739945329
-- cmd: ~/bin/bh q
-  when: 1739945342
 - cmd: cd ~/vago/
   when: 1739945426
     - ~/vago/
@@ -2812,8 +2804,6 @@
     - qaur.lst
 - cmd: yay aic94xx-firmware
   when: 1739948338
-- cmd: rm *
-  when: 1739948373
 - cmd: cd ~/bin
   when: 1739948410
 - cmd: nano  backup.sh
@@ -2839,19 +2829,10 @@
     - monitor.sh
 - cmd: rm monitor.sh
   when: 1739952361
-- cmd: cd ~/dotfiles && git status && cd -
-  when: 1739952365
 - cmd: sudo -sE timeshift-gtk
   when: 1739962315
 - cmd: htop
   when: 1739983248
-- cmd: ~/bin/gpush.sh
-  when: 1740030075
-- cmd: nano  .local/share/fish/fish_history
-  when: 1740030132
-    - .local/share/fish/fish_history
-- cmd: cd ~/.config/
-  when: 1740030333
 - cmd: rm -rf  Thunar/
   when: 1740030348
     - Thunar/
@@ -2876,8 +2857,6 @@
     - nvidia.hook
 - cmd: nano  003bootmbr.sh
   when: 1740030858
-- cmd: cd ~/dotfiles/00inst/
-  when: 1740030872
 - cmd: nano  002boot.sh
   when: 1740030881
     - 002boot.sh
@@ -2903,8 +2882,6 @@
 - cmd: mv -i 99active.sh 990active.sh
   when: 1740031750
     - 99active.sh
-- cmd: cd ~/dotfiles && git add * && git commit -m "save" && git push -u origin main && cd -
-  when: 1740031796
 - cmd: nano  003grubmbr.sh
   when: 1740031866
     - 003grubmbr.sh
@@ -2915,18 +2892,13 @@
 - cmd: cd .config/gtk-2.0/
   when: 1740031960
     - .config/gtk-2.0/
-- cmd: eza -a --color always --long --git --no-filesize --icons always --no-time --no-user
-  when: 1740031961
-- cmd: cd
-  when: 1740036625
 - cmd: sudo updatedb; locate locale.gen
   when: 1740036653
 - cmd: sudo updatedb; locate locale
   when: 1740036662
-- cmd: sudo updatedb; locate locale | less
-  when: 1740036705
 - cmd: sudo nano  locale.gen
   when: 1740036724
+- cmd: sudo updatedb; locate locale | less
   when: 1740036746
 - cmd: sudo nano  /etc/locale.conf
   when: 1740036759
@@ -2936,6 +2908,100 @@
     - /etc/locale.gen
 - cmd: sudo updatedb; locate symbols/gr
   when: 1740037149
+- cmd: nano  .local/share/fish/fish_history
   when: 1740041654
+    - .local/share/fish/fish_history
+- cmd: ~/bin/cpinst.sh q
   when: 1740041683
+- cmd: ~/bin/bh q
   when: 1740041690
+- cmd: nano  .config/uwsm/env-hyprland
+  when: 1740042093
+    - .config/uwsm/env-hyprland
+- cmd: nano  ~/.config/fish/config.fish
+  when: 1740042228
+- cmd: cd ~/dotfiles && git add * && git commit -m "save" && git push -u origin main && cd -
+  when: 1740042326
+- cmd: yay -Syu --noconfirm -- needed brother-mfc-1910w
+  when: 1740050549
+- cmd: sudo updatedb; locate firejail
+  when: 1740051155
+- cmd: cd /etc/firejail/
+  when: 1740051195
+- cmd: sudo nano   evince.profile
+  when: 1740051236
+    - evince.profile
+- cmd: sudo updatedb; locate firejail | less
+  when: 1740051285
+- cmd: cd ~/.config/
+  when: 1740051658
+- cmd: sudo  firecfg --clean
+  when: 1740051711
+- cmd: ~/bin/gpush.sh
+  when: 1740051794
+- cmd: sudo nano   ~/bin/gpush.sh
+  when: 1740051883
+    - ~/bin/gpush.sh
+- cmd: cd .config/FreeTube/
+  when: 1740051916
+    - .config/FreeTube/
+- cmd: rsync history.db  ~/dotfiles/freetube/.config/FreeTube/history.db
+  when: 1740051918
+- cmd: cd ~/dotfiles && git status && cd -
+  when: 1740051920
+- cmd: rm *.rpm
+  when: 1740052161
+- cmd: dpkg -i --force-all brmfcfaxdrv-2.0.2-1.amd64.deb
+  when: 1740052190
+    - brmfcfaxdrv-2.0.2-1.amd64.deb
+- cmd: sudo  dpkg -i --force-all brmfcfaxdrv-2.0.2-1.amd64.deb
+  when: 1740052196
+- cmd: yay 1910w
+  when: 1740052225
+- cmd: yay -Rns brother-mfc-1910w
+  when: 1740052252
+- cmd: rm *.deb
+  when: 1740052289
+- cmd: bash linux-brprinter-installer-2.2.4-1
+  when: 1740052343
+    - linux-brprinter-installer-2.2.4-1
+- cmd: sudo  bash linux-brprinter-installer-2.2.4-1
+  when: 1740052366
+- cmd: cd
+  when: 1740052614
+- cmd: sudo firecfg
+  when: 1740052651
+- cmd: cd ~/Downloads/
+  when: 1740053119
+    - ~/Downloads/
+- cmd: gunzip linux-brprinter-installer-2.2.4-1.gz
+  when: 1740053130
+    - linux-brprinter-installer-2.2.4-1.gz
+- cmd: cd ~/dotfiles/00inst/
+  when: 1740053166
+- cmd: nano  999pbr.sh
+  when: 1740053436
+    - 999pbr.sh
+- cmd: ./999pbr.sh
+  when: 1740053464
+- cmd: rm *
+  when: 1740053497
+- cmd: eza -a --color always --long --git --no-filesize --icons always --no-time --no-user
+  when: 1740053498
+- cmd: nano  wget-log
+  when: 1740053533
+    - wget-log
+  when: 1740053546
+  when: 1740053553
+  when: 1740053767
+  when: 1740053772
+  when: 1740053825
+    - ~/dotfiles
+  when: 1740054550
+  when: 1740054554
+  when: 1740058016
+  when: 1740058026
+  when: 1740060364
+  when: 1740060367
+  when: 1740060711
+  when: 1740060719

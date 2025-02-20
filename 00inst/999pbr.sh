@@ -10,7 +10,7 @@ handle_error() {
 
 cd ~/Downloads
 
-#sudo pacman -Su dpkg
+sudo pacman -Su dpkg
 
 #yay -Su --noconfirm -- needed brother-mfc-1910w
 
@@ -22,7 +22,7 @@ sudo bash linux-brprinter-installer-2.2.4-1
 
 curl -O https://download.brother.com/welcome/dlf105191/brmfcfaxdrv-2.0.2-1.amd64.deb
 
-#sudo dpkg -i --force-all brmfcfaxdrv-2.0.2-1.amd64.deb
+sudo dpkg -i --force-all brmfcfaxdrv-2.0.2-1.amd64.deb
 
-#rm *
+rm *
 

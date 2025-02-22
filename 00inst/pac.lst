@@ -1,4 +1,5 @@
 lst=(
+
 acpi
 arc-gtk-theme
 arch-install-scripts
@@ -97,5 +98,6 @@ xdg-utils
 yt-dlp
 zram-generator
 nano-syntax-highlighting
+
 
 )

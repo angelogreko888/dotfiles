@@ -3,7 +3,7 @@
 cd ~
 
 ctl=(
-ly 
+ly
 cups
 fstrim.timer
 ufw
@@ -11,9 +11,11 @@ avahi-daemon
 upower
 nvidia-suspend.service
 nvidia-hibernate.service
-nvidia-resume.service 
+nvidia-resume.service
 systemd-resolved.service
 systemd-boot-update.service
+apparmor.service
+
 )
 
 for CTL in "${ctl[@]}";do

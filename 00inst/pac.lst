@@ -37,6 +37,7 @@ grim
 gst-plugin-pipewire
 gufw
 gvfs
+gvfs-mtp
 hdparm
 htop
 imagemagick

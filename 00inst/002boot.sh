@@ -26,7 +26,7 @@ echo "
 title   Arch Linux
 linux   /vmlinuz-linux
 initrd  /initramfs-linux.img
-options root=UUID=  rw quite splash i915.modeset=1 nvidia-drm.modeset=1 nvidia_drm.fbdev=1 lsm=landlock,lockdown,yama,integrity,apparmor,bpf
+options root=UUID=  rw quite splash nvidia-drm.modeset=1 nvidia_drm.fbdev=1 rd.driver.blacklist=nouvea modprob.blacklist=nouvea lsm=landlock,lockdown,yama,integrity,apparmor,bpf
 " | tee /boot/loader/entries/arch.conf
 
 useradd -m vago

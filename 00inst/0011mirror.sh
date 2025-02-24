@@ -13,7 +13,7 @@ case $1 in
 		echo "
 Server = https://mirror.isoc.org.il/pub/archlinux/$repo/os/$arch
 		" | sudo tee -a /etc/pacman.d/mirrorlist ;;
-        c)  sudo  reflector --age 1 --sort rate --protocol https --verbose --save /etc/pacman.d/mirrorlist ;;
+        c)  sudo  reflector --age 1 --sort rate -n 5 --country Germany,Greece,Turkey,Israel --protocol https --verbose --save /etc/pacman.d/mirrorlist ;;
         *) echo "enter country" && exit 0 ;;
 esac
 

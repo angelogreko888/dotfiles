@@ -25,6 +25,7 @@ editor   0
 echo "
 title   Arch Linux
 linux   /vmlinuz-linux
+initrd  /intel-ucode.img
 initrd  /initramfs-linux.img
 options root=UUID=  rw quite splash nvidia-drm.modeset=1 nvidia_drm.fbdev=1 rd.driver.blacklist=nouvea modprob.blacklist=nouvea lsm=landlock,lockdown,yama,integrity,apparmor,bpf
 " | tee /boot/loader/entries/arch.conf

@@ -17,6 +17,6 @@ Server = https://mirror.isoc.org.il/pub/archlinux/$repo/os/$arch
         *) echo "enter country" && exit 0 ;;
 esac
 
-#sudo pacman -Syy
+sudo pacman -Syy
 
 

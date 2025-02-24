@@ -37,6 +37,6 @@ sudo mkinitcpio -P
 
 cd ~/git
 
-#git clone  https://github.com/Frogging-Family/nvidia-all.git
-#cd  nvidia-all/
-#makepkg -si 
+git clone  https://github.com/Frogging-Family/nvidia-all.git
+cd  nvidia-all/
+makepkg -si 

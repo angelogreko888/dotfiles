@@ -7,7 +7,6 @@ handle_error() {
 
   trap 'handle_error $LINENO' ERR
 
-source ~/dotfiles/00inst/aur.lst
 
 cd ~
 
@@ -16,14 +15,14 @@ if ! [ -d git ]; then
 fi
 
 if [ -f /etc/modprobe.d/nouveau.conf ]; then
-  printf "Seems like nouveau is already blacklisted.>
+  printf "Seems like nouveau is already blacklisted."
 else
-  echo "blacklist nouveau" | sudo tee -a "$NOUVEAU" 
+  echo "blacklist nouveau" | sudo tee -a "/etc/modprobe.d/nouveau.conf" 
 
   if [ -f "/etc/modprobe.d/blacklist.conf" ]; then
-    echo "install nouveau /bin/true" | sudo tee -a "/etc/modprobe.d/blackli>
+    echo "install nouveau /bin/true" | sudo tee -a "/etc/modprobe.d/blacklist.conf"
   else
-    echo "install nouveau /bin/true" | sudo tee "/etc/modprobe.d/blacklist.>
+    echo "install nouveau /bin/true" | sudo tee "/etc/modprobe.d/blacklist.conf"
   fi
 fi
 
@@ -38,6 +37,6 @@ sudo mkinitcpio -P
 
 cd ~/git
 
-git clone  https://github.com/Frogging-Family/nvidia-all.git
-cd  nvidia-all/
-makepkg -si 
+#git clone  https://github.com/Frogging-Family/nvidia-all.git
+#cd  nvidia-all/
+#makepkg -si 

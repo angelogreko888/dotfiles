@@ -8,10 +8,14 @@ handle_error() {
   trap 'handle_error $LINENO' ERR
 
 
-source ~/dotfiles/00inst/aur.lst
-
 cd ~
 
-for PKG in "${lst[@]}";do
-        yay -Su --needed --noconfirm "$PKG"
-done
+if ! [ -d git ]; then
+        mkdir ~/git
+fi
+
+cd ~/git
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si --noconfirm
+cd ~

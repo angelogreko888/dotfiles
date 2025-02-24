@@ -33,6 +33,8 @@ else
   echo "Nvidia modules added in /etc/mkinitcpio.conf"
 fi
 
+sudo sed -rie '/kms/d'  /etc/mkinitcpio.conf
+
 sudo mkinitcpio -P
 
 cd ~/git

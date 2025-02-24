@@ -13,7 +13,6 @@ nvidia-suspend.service
 nvidia-hibernate.service
 nvidia-resume.service
 systemd-resolved.service
-systemd-boot-update.service
 apparmor.service
 
 )
@@ -23,5 +22,8 @@ for CTL in "${ctl[@]}";do
 	echo ""$CTL" activated"
 done
 
+chsh -s /usr/bin/fish
+
 # hyprshade install
+
 echo "Done!!!"

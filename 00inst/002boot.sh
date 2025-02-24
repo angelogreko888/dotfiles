@@ -38,3 +38,5 @@ echo "Defaults  timestamp_timeout=999" >> /etc/sudoers.d/vago
 
 systemctl enable NetworkManager
 systemctl enable systemd-boot-update.service
+
+printf "\e[1;32mDone! Type exit, umount -a and reboot.\e[0m"

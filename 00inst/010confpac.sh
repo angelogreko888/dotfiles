@@ -19,7 +19,10 @@ for line in "${lines_to_edit[@]}"; do
     fi
 done
 
-printf "\e[1;31m.......Enter Counry.......: \e[0m"
+sed -i '92s/.//' $pacman_conf
+sed -i '93s/.//' $pacman_conf
+
+printf "\e[1;31m.......Enter Country.......: \e[0m"
 read cn
 
 case $cn in
@@ -31,9 +34,7 @@ Server = https://mirror.isoc.org.il/pub/archlinux/$repo/os/$arch
         c) sudo  reflector --age 1 --sort rate -n 5 --country Germany,Greece,Turkey,Israel,United Kingdom --protocol https --verbose --save /etc/pacman.d/mirrorlist ;;
 esac
 
-sed -i '92s/.//' $pacman_conf
-sed -i '93s/.//' $pacman_conf
-
+sudo nano $pacman_conf
 
 sudo pacman -Syy
 

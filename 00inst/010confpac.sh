@@ -31,7 +31,9 @@ Server = https://mirror.isoc.org.il/pub/archlinux/$repo/os/$arch
         c) sudo  reflector --age 1 --sort rate -n 5 --country Germany,Greece,Turkey,Israel,United Kingdom --protocol https --verbose --save /etc/pacman.d/mirrorlist ;;
 esac
 
-sudo nano $pacman_conf
+sed -i '92s/.//' $pacman_conf
+sed -i '93s/.//' $pacman_conf
+
 
 sudo pacman -Syy
 

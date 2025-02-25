@@ -31,7 +31,8 @@ case $cn in
                 echo "
 Server = https://mirror.isoc.org.il/pub/archlinux/$repo/os/$arch
                 " | sudo tee -a /etc/pacman.d/mirrorlist ;;
-        c) sudo  reflector --age 1 --sort rate -n 5 --country Germany,Greece,Turkey,Israel,United Kingdom --protocol https --verbose --save /etc/pacman.d/mirrorlist ;;
+
+        c) sudo  reflector --age 1 --sort rate -n 7 --country Greece,Turkey,Israel,Germany,United Kingdom --protocol https --verbose --save /etc/pacman.d/mirrorlist ;;
 esac
 
 sudo nano $pacman_conf

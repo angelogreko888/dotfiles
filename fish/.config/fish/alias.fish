@@ -82,9 +82,9 @@ alias tl='sudo timeshift --list'
 
 alias gu='sudo -sE /sbin/gufw-pkexec'
 
-alias ch='sudo chmod +x='
-alias co='sudo chown vago:='
-alias dk='sudo dpkg -i='
+alias ch='sudo chmod +x'
+alias co='sudo chown vago:'
+alias dk='sudo dpkg -i'
 alias dkil='dpkg --get-selections | grep -v deinstall'
 
 alias gd='sudo -sE gnome-disks'
@@ -98,7 +98,7 @@ alias cpd='sudo pacman -Scc && yay -Scc'
 alias ccc='du -sh ~/.cache/'
 alias ccd='rm -rf ~/.cache/*'
 
-alias pi='sudo pacman -Syu --needed='
+alias pi='sudo pacman -Syu --needed'
 alias pss='sudo pacman -Ss'
 alias pu='sudo pacman -Syyu'
 alias pud='sudo pacman -Syu'

@@ -13,7 +13,6 @@ dconf-editor
 dmidecode
 dosfstools
 dpkg
-egl-wayland
 eog
 evince
 eza
@@ -38,12 +37,14 @@ grim
 gst-plugin-pipewire
 gufw
 gvfs
+gvfs-mtp
 hdparm
 htop
 imagemagick
 inotify-tools
 intel-ucode
 inxi
+iucode-tool
 iw
 iwd
 jdk-openjdk
@@ -64,6 +65,7 @@ man-db
 mesa
 mtools
 nano
+nano-syntax-highlighting
 ncdu
 nemo
 network-manager-applet

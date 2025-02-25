@@ -19,6 +19,18 @@ for line in "${lines_to_edit[@]}"; do
     fi
 done
 
+printf "\e[1;31m.......Enter Counry.......: \e[0m"
+read cn
+
+case $cn in
+        i) sudo  reflector --age 1 --sort rate --country Israel --protocol https --verbose --save /etc/pacman.d/mirrorlist ;
+                sudo sed -rie '/mivzakim/d' /etc/pacman.d/mirrorlist  ;
+                echo "
+Server = https://mirror.isoc.org.il/pub/archlinux/$repo/os/$arch
+                " | sudo tee -a /etc/pacman.d/mirrorlist ;;
+        c) sudo  reflector --age 1 --sort rate -n 5 --country Germany,Greece,Turkey,Israel,United Kingdom --protocol https --verbose --save /etc/pacman.d/mirrorlist ;;
+esac
+
 sudo nano $pacman_conf
 
 sudo pacman -Syy

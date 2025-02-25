@@ -17,9 +17,9 @@ for PKG in "${lst[@]}";do
 done
 
 for PKG in "${lst[@]}";do
-	if sudo pacman -Q "$PKG" &>/dev/null; then
-        echo "OK...$PKG"
+        if sudo pacman -Q "$PKG" &>/dev/null; then
+        printf "\e[1;32m $PKG\e[0m\n"
     else
-        echo "[ ERROR ] - Sorry, could not install $PKG!"
+        printf "\e[1;31mERROR...Sorry, could not install... $PKG\e[0m\n"
     fi
 done

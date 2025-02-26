@@ -22,6 +22,7 @@ if [ -f /etc/default/grub ]; then
      # Check if rd.driver.blacklist=nouvea is present
      if ! sudo grep -q "rd.driver.blacklist=nouvea" /etc/default/grub; then
      sudo sed -i -e 's/\(GRUB_CMDLINE_LINUX_DEFAULT=".*\)"/\1 rd.driver.blacklist=nouvea modprob.blacklist=nouvea)/' /etc/default/grub
+      echo "rd.driver.blacklist=nouvea added to /etc/default/grub" 
 
      # Check if apparmor is present
     if ! sudo grep -q "apparmor" /etc/default/grub; then

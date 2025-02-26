@@ -22,6 +22,8 @@ for CTL in "${ctl[@]}";do
 	echo ""$CTL" activated"
 done
 
+sudo firecfg
+
 chsh -s /usr/bin/fish
 
 # hyprshade install

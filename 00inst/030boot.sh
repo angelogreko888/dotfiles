@@ -9,11 +9,17 @@ echo "greco" >> /etc/hostname
 echo "127.0.0.1 localhost" >> /etc/hosts
 echo "::1       localhost" >> /etc/hosts
 echo "127.0.1.1 greco.localdomain greco" >> /etc/hosts
-echo root:password | chpasswd
+
+printf "\n\e[1;31mEnter root password: \e[0m"
+read rp
+echo root:$rp | chpasswd
 
 pacman -S --needed --noconfirm git sudo nano base-devel linux-headers networkmanager wpa_supplicant
 
 bootctl --path=/boot install
+
+printf "\n\e[1;31mEnter UUID: \e[0m"
+read uid
 
 echo "
 default  arch.conf
@@ -27,11 +33,14 @@ title   Arch Linux
 linux   /vmlinuz-linux
 initrd  /intel-ucode.img
 initrd  /initramfs-linux.img
-options root=UUID=  rw quite splash nvidia-drm.modeset=1 nvidia_drm.fbdev=1 rd.driver.blacklist=nouvea modprob.blacklist=nouvea lsm=landlock,lockdown,yama,integrity,apparmor,bpf
+options root=UUID=$uid  rw quite splash nvidia-drm.modeset=1 nvidia_drm.fbdev=1 rd.driver.blacklist=nouvea modprob.blacklist=nouvea lsm=landlock,lockdown,yama,integrity,apparmor,bpf
 " | tee /boot/loader/entries/arch.conf
 
 useradd -m vago
-echo vago:password | chpasswd
+
+printf "\n\e[1;31mEnter user password: \e[0m"
+read up
+echo vago:$up | chpasswd
 
 echo "vago ALL=(ALL) ALL" >> /etc/sudoers.d/vago
 echo "Defaults  timestamp_timeout=999" >> /etc/sudoers.d/vago

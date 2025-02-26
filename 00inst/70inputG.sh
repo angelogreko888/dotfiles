@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 cd ~
 
@@ -13,3 +13,4 @@ fi
 sudo usermod -aG input "$(whoami)"
         echo "User added to the 'input' group. Changes will take effect after you log out and log back in."
 
+id  $whoami

@@ -243,7 +243,6 @@
 - cmd: mv gitpull bup-gitpull
 - cmd: mv git.sh gitpull.sh
 - cmd: mv gitpull.sh ~/bin
-- cmd: cd 00
 - cmd: n autostart.conf
 - cmd: -cd
 - cmd: -cdlf
@@ -326,7 +325,6 @@
 - cmd: sort baur -o baur
 - cmd: n base
 - cmd: n basea
-- cmd: sort qpacman.lst -o qpacman.lst
 - cmd: comm qpacman.lst ../00inst/bpac
 - cmd: cd 00inst
 - cmd: comm qaur.lst ../00inst/baur
@@ -499,7 +497,6 @@
 - cmd: pm
 - cmd: sn /etc/xdg/reflector/reflector.conf
 - cmd: n hyprlock.conf
-- cmd: nwc
 - cmd: lo nvidia-resume.service
 - cmd: sn /usr/lib/systemd/system/nvidia-resume.service
 - cmd: n gtk-2.0
@@ -600,8 +597,6 @@
   when: 1738747048
 - cmd: cd ~/.local/share/fish/
   when: 1738747184
-- cmd: bh q
-  when: 1738747384
 - cmd: rm qhfish
   when: 1738747955
 - cmd: n pac.sh
@@ -670,12 +665,8 @@
   when: 1738764213
 - cmd: cd .config/i3/
   when: 1738764218
-- cmd: g
-  when: 1738773972
 - cmd: gg
   when: 1738773976
-- cmd: n .local/share/fish/fish_history
-  when: 1738819184
 - cmd: n /etc/default/grub
   when: 1738820810
 - cmd: h |rg dms
@@ -892,8 +883,6 @@
   when: 1738911084
 - cmd: nano  fish_variables
   when: 1738911615
-- cmd: curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3 -
-  when: 1738918593
 - cmd: cd functions/
   when: 1738919782
 - cmd: rm ..*
@@ -1496,8 +1485,6 @@
   when: 1739342270
 - cmd: cd .config/fish/
   when: 1739342835
-- cmd: nano  config.fish
-  when: 1739342842
 - cmd: ./x.sh
   when: 1739343091
 - cmd: nano  x.sh
@@ -1540,8 +1527,6 @@
   when: 1739347847
 - cmd: gt
   when: 1739347860
-- cmd: ggg
-  when: 1739350232
 - cmd: ~/bin/bash gpush.sh
   when: 1739350241
 - cmd: ~/bin/bash cpinst.sh
@@ -2091,9 +2076,7 @@
 - cmd: cd nouse/rootmisc/
 - cmd: ff
 - cmd: b
-- cmd: l
 - cmd: ll
-- cmd: cdf
 - cmd: ..
 - cmd: cd misc/
 - cmd: reboot
@@ -2216,8 +2199,6 @@
   when: 1739832030
 - cmd: sudo systemctl  suspend
   when: 1739832920
-- cmd: lsblk
-  when: 1739833160
 - cmd: mkdir -pv vago
   when: 1739833575
 - cmd: mkdir -pv timeshift
@@ -2660,8 +2641,6 @@
   when: 1739946708
 - cmd: sort -i qpacman.lst
   when: 1739946762
-- cmd: comm qpacman.lst pac.lst
-  when: 1739946866
 - cmd: sudo pacman -Ss libxnvctrl
   when: 1739946931
 - cmd: wlr-randr
@@ -2671,13 +2650,6 @@
 - cmd: sort -i aur.lst
   when: 1739948048
     - aur.lst
-- cmd: sort aur.lst -o aur.lst
-  when: 1739948117
-- cmd: sort qaur.lst -o qaur.lst
-  when: 1739948140
-- cmd: comm qaur.lst aur.lst
-  when: 1739948158
-    - qaur.lst
 - cmd: yay aic94xx-firmware
   when: 1739948338
 - cmd: cd ~/bin
@@ -3203,8 +3175,6 @@
 - cmd: cp -i  ~/dotfiles/00inst/pac.lst .
   when: 1740299812
     - ~/dotfiles/00inst/pac.lst
-- cmd: sort pac.lst -o pac.lst
-  when: 1740299864
 - cmd: sort hpac -o hpac
   when: 1740299890
     - hpac
@@ -3303,8 +3273,6 @@
   when: 1740377537
 - cmd: ./70inputG.sh
   when: 1740377874
-- cmd: id vago
-  when: 1740377885
 - cmd: sudo nano  /etc/sudoers.d/vago
   when: 1740378303
 - cmd: mv -i 0040grubefi.sh 0060grubefi.sh
@@ -3326,8 +3294,6 @@
 - cmd: nano  30icons.sh
   when: 1740378934
     - 30icons.sh
-- cmd: cd 00inst/
-  when: 1740379718
 - cmd: mv -i 0030aur.sh 0030yay.sh
   when: 1740379745
 - cmd: nano  002boot.sh
@@ -3436,8 +3402,6 @@
     - atest/
 - cmd: ./0011mirror.sh c
   when: 1740391420
-- cmd: rm *
-  when: 1740391431
 - cmd: htop
   when: 1740391664
 - cmd: btop
@@ -3462,8 +3426,6 @@
   when: 1740397029
     - am
     - ~/atest/
-- cmd: cd ~/atest/
-  when: 1740397056
 - cmd: nano  am
   when: 1740397061
 - cmd: cd -
@@ -3710,8 +3672,6 @@
   when: 1740486846
 - cmd: rm assets gtk.css gtk-dark.css
   when: 1740486866
-- cmd: eza -a --color always --long --git --no-filesize --icons always --no-time --no-user
-  when: 1740486868
 - cmd: eza --color=always --icons=always | egrep "^\\."
   when: 1740487435
 - cmd: cd vago
@@ -3721,50 +3681,246 @@
   when: 1740487478
 - cmd: z
   when: 1740487522
-- cmd: cd
-  when: 1740487526
 - cmd: nano  ~/.config/fish/config.fish
   when: 1740487619
-- cmd: cd atest/
-  when: 1740487722
 - cmd: nano  aliases.fish
   when: 1740487763
 - cmd: cd  ~/.config/fish/
   when: 1740488288
     - ~/.config/fish/
-  when: 1740488290
 - cmd: mv -i ~/atest/aliases.fish .
   when: 1740488304
     - ~/atest/aliases.fish
 - cmd: cp -i  config.fish config.fish.bup
   when: 1740488334
     - config.fish
-  when: 1740488336
+- cmd: nano  config.fish
   when: 1740488347
 - cmd: sn  /usr/share/fish/functions/alias.fish -l
   when: 1740488514
     - /usr/share/fish/functions/alias.fish
-  when: 1740488615
 - cmd: mv -i aliases.fish alias.fish
   when: 1740488633
     - aliases.fish
-  when: 1740488752
 - cmd: nano  alias.fish
   when: 1740488758
     - alias.fish
-  when: 1740488788
-- cmd: af
-  when: 1740488915
+- cmd: curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3 -
   when: 1740488934
-  when: 1740489017
 - cmd: rm config.fish.bup
   when: 1740489033
     - config.fish.bup
+- cmd: eza -a --color always --long --git --no-filesize --icons always --no-time --no-user
   when: 1740489034
-  when: 1740491676
-  when: 1740491720
 - cmd: cpi
   when: 1740494513
 - cmd: cpi q
   when: 1740494517
+- cmd: bh q
   when: 1740494523
+- cmd: cp ~/dotfiles/00inst/pac.lst ~/atest/
+  when: 1740494588
+- cmd: cp ~/dotfiles/misc/qpacman.lst ~/atest/
+  when: 1740494613
+- cmd: rm am mkinitcpio.conf mkinitcpio.confe
+  when: 1740494663
+    - mkinitcpio.confe
+- cmd: sort pac.lst -o pac.lst
+  when: 1740494704
+- cmd: sort qpacman.lst -o qpacman.lst
+  when: 1740494714
+- cmd: comm qpacman.lst pac.lst
+  when: 1740494727
+- cmd: pss libxnvctrl
+  when: 1740494763
+- cmd: n pac.lst
+  when: 1740494840
+- cmd: cp ~/dotfiles/misc/qaur.lst ~/atest/
+  when: 1740494890
+- cmd: cp ~/dotfiles/00inst/aur.lst ~/atest/
+  when: 1740494911
+- cmd: sort aur.lst -o aur.lst
+  when: 1740494944
+- cmd: sort qaur.lst -o qaur.lst
+  when: 1740494955
+- cmd: comm qaur.lst aur.lst
+  when: 1740494970
+    - qaur.lst
+- cmd: n aur.lst
+  when: 1740495010
+- cmd: rm *
+  when: 1740495150
+- cmd: y xdg-desktop-portal-gtk-git
+  when: 1740495987
+- cmd: y xdg-desktop-portal-gtk
+  when: 1740496003
+- cmd: y mkinitcpio-firmware
+  when: 1740496050
+- cmd: ./10pac.sh
+  when: 1740497474
+- cmd: ./20aur.sh
+  when: 1740497553
+- cmd: n 20aur.sh
+  when: 1740497706
+- cmd: n 040yay.sh
+  when: 1740497791
+    - 040yay.sh
+- cmd: pacman -Q | rg yay
+  when: 1740497825
+- cmd: n 10pac.sh
+  when: 1740497848
+    - 10pac.sh
+- cmd: cd ~/atest/
+  when: 1740498785
+- cmd: af
+  when: 1740498980
+- cmd: ch c
+  when: 1740499284
+    - c
+- cmd: chmod 660 c
+  when: 1740499318
+- cmd: chmod 666 c
+  when: 1740499333
+- cmd: chmod 770 c
+  when: 1740499360
+- cmd: chmod 761 c
+  when: 1740499382
+- cmd: chmod 771 c
+  when: 1740499399
+- cmd: n dotfiles/00inst/10pac.sh
+  when: 1740499698
+- cmd: n dotfiles/00inst/010confpac.sh
+  when: 1740500046
+    - dotfiles/00inst/010confpac.sh
+- cmd: cd
+  when: 1740500194
+- cmd: cd 00
+  when: 1740500409
+- cmd: mv 020mirror.sh ../nouse/
+  when: 1740500446
+    - ../nouse/
+- cmd: cd ../nouse/
+  when: 1740500461
+- cmd: md 00inst
+  when: 1740500486
+- cmd: mv 020mirror.sh ../nouse/00inst/
+  when: 1740500499
+    - ../nouse/00inst/
+- cmd: cd ../../00inst/
+  when: 1740500520
+    - ../../00inst/
+- cmd: b 010confpac.sh
+  when: 1740500534
+    - 010confpac.sh
+- cmd: cd nouse/00inst/
+  when: 1740500623
+    - nouse/00inst/
+- cmd: n 020mirror.sh
+  when: 1740500629
+- cmd: n 090grubefi.sh
+  when: 1740553793
+    - 090grubefi.sh
+- cmd: lsblk
+  when: 1740553932
+- cmd: n 095grubmbr.sh
+  when: 1740554138
+    - 095grubmbr.sh
+- cmd: n host
+  when: 1740554564
+    - host
+- cmd: n 099grubaddons.sh
+  when: 1740554874
+- cmd: mv 990active.sh 99active.sh
+  when: 1740555435
+- cmd: mv 80ftube.sh 990ftube.sh
+  when: 1740555469
+    - 80ftube.sh
+- cmd: id vago
+  when: 1740555505
+- cmd: id  "$(whoami)"
+  when: 1740555595
+- cmd: id  $(whoami)
+  when: 1740555606
+- cmd: id  $whoami
+  when: 1740555615
+- cmd: sudo  reflector --age 1 --sort rate -n 7 --country Greece,Turkey,Israel,Germany,United Kingdom --protocol https --verbose
+  when: 1740556385
+- cmd: sudo  reflector --age 1 --sort rate -n 7 --country Greece,Turkey,Israel,Germany,UK --protocol https --verbose
+  when: 1740556486
+- cmd: sudo  reflector --age 1 --sort rate -n 7 --country Turkey --protocol https --verbose
+  when: 1740556920
+- cmd: sudo  reflector --age 1 --sort rate -n 7 --country Turkiye --protocol https --verbose
+  when: 1740556937
+- cmd: sudo  reflector --age 1 --sort rate -n 7 --country Tr --protocol https --verbose
+  when: 1740556947
+- cmd: sudo  reflector --age 1 --sort rate -n 7 --country Il --protocol https --verbose
+  when: 1740557015
+- cmd: sudo  reflector --age 1 --sort rate -n 7 --country il --protocol https --verbose
+  when: 1740557039
+- cmd: sudo  reflector --age 1 --sort rate -n 7 --country Gr --protocol https --verbose
+  when: 1740557110
+- cmd: nwc
+  when: 1740557159
+- cmd: ggg
+  when: 1740574893
+- cmd: n 99
+  when: 1740575171
+- cmd: n 99active.sh
+  when: 1740575185
+- cmd: h |rg firecfg
+  when: 1740575221
+- cmd: mv 99active.sh 990active.sh
+  when: 1740575335
+- cmd: mv 990ftube.sh 998ftube.sh
+  when: 1740575395
+    - 990ftube.sh
+- cmd: n 990active.sh
+  when: 1740575743
+- cmd: n 70inputG.sh
+  when: 1740575862
+    - 70inputG.sh
+- cmd: g
+  when: 1740635527
+- cmd: n .local/share/fish/fish_history
+  when: 1740635557
+- cmd: rm host
+  when: 1740636768
+- cmd: ./c
+  when: 1740636918
+- cmd: cdf
+  when: 1740637266
+- cmd: cd 00inst/
+  when: 1740637269
+- cmd: n 030boot.sh
+  when: 1740637288
+- cmd: n c
+  when: 1740638339
+- cmd: cp /etc/pacman.conf .
+  when: 1740638447
+- cmd: l
+  when: 1740638449
+- cmd: cp 010confpac.sh ~/atest/
+  when: 1740638479
+- cmd: ./010confpac.sh
+  when: 1740638552
+- cmd: cd atest/
+  when: 1740638583
+- cmd: n 010confpac.sh
+  when: 1740638586
+- cmd: n pacman.conf
+  when: 1740638634
+    - pacman.conf
+  when: 1740638713
+  when: 1740638736
+  when: 1740638743
+  when: 1740638782
+  when: 1740638826
+  when: 1740638837
+  when: 1740638872
+  when: 1740638905
+  when: 1740638926
+  when: 1740638951
+  when: 1740639122
+  when: 1740642202
+  when: 1740642234
+  when: 1740642238

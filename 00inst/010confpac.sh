@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 pacman_conf="/etc/pacman.conf"
 
@@ -35,7 +35,7 @@ Server = https://mirror.isoc.org.il/pub/archlinux/$repo/os/$arch
         c) sudo  reflector --age 1 --sort rate -n 7 --country Greece,Tr,Israel,Germany,UK --protocol https --verbose --save /etc/pacman.d/mirrorlist ;;
 esac
 
-sudo nano $pacman_conf
+#sudo nano $pacman_conf
 
 sudo pacman -Syy
 

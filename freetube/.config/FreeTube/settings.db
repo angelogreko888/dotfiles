@@ -17,3 +17,4 @@
 {"_id":"quickBookmarkTargetPlaylistId","value":"favorites"}
 {"_id":"region","value":"GR"}
 {"_id":"secColor","value":"Green"}
+{"_id":"bounds","value":{"x":3,"y":35,"width":1908,"height":1036,"maximized":false,"fullScreen":false}}

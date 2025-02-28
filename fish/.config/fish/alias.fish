@@ -2,7 +2,7 @@
 alias spt="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3 -"
 alias wj='curl wttr.in/jerusalem'
 alias wp='curl wttr.in/paphos'
-#alias x='_x() { curl https://cht.sh/$1 ;}; _x'
+#alias xx='_x() { curl https://cht.sh/$1 ;}; _x'
 
 alias c='clear'
 alias r='ranger'
@@ -55,7 +55,7 @@ alias lu='sudo updatedb'
 alias md='mkdir -pv'
 
 alias ctl="sudo systemctl"
-alias open='xdg-open'
+alias xopen='xdg-open'
 alias spo='sudo systemctl poweroff'
 alias srb='sudo reboot'
 
@@ -76,9 +76,9 @@ alias th='sudo -sE thunar'
 alias nm='sudo -sE nemo'
 
 alias ts='sudo -sE timeshift-gtk'
-alias tc='sudo timeshift --create'
-alias tr='sudo timeshift --restore'
-alias tl='sudo timeshift --list'
+alias tsc='sudo timeshift --create'
+alias tsr='sudo timeshift --restore'
+alias tsl='sudo timeshift --list'
 
 alias gu='sudo -sE /sbin/gufw-pkexec'
 

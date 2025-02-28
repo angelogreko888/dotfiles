@@ -3,7 +3,7 @@ env XCURSOR_THEME=radioactive-yellow
 env GTK_THEME=Arc-Dark
 env GTK_ICON_THEME=buuf-nestort
 env GTL_FONT=Cantarell 13
-
+env = XCURSOR_SIZE,24
 
 env = EDITOR=nano foot
 
@@ -11,17 +11,12 @@ env = MOZ_ENABLE_WAYLAND=1 Librewolf
 env = MOZ_ENABLE_WAYLAND=1 firefox
 env = MOZ_ENABLE_WAYLAND=1 FreeTube
 
-#env = GBM_BACKEND,nvidia-drm
-#env = __GLX_VENDOR_LIBRARY_NAME,nvidia
-#env = LIBVA_DRIVER_NAME,nvidia
-#env = __GL_GSYNC_ALLOWED,0
-
 # NVIDIA https://wiki.hyprland.org/Nvidia/
 env = GBM_BACKEND,nvidia-drm
 env = LIBVA_DRIVER_NAME,nvidia
 env = SDL_VIDEODRIVER,wayland
 env = WLR_DRM_NO_ATOMIC,1
-# env = __GL_VRR_ALLOWED,1
+#env = __GL_VRR_ALLOWED,1
 env = __GLX_VENDOR_LIBRARY_NAME,nvidia
 env = __NV_PRIME_RENDER_OFFLOAD,1
 env = __VK_LAYER_NV_optimus,NVIDIA_only
@@ -35,15 +30,11 @@ env = WLR_RENDERER_ALLOW_SOFTWARE,1
 env = MOZ_DISABLE_RDD_SANDBOX,1
 env = EGL_PLATFORM,wayland
 
-env = WLR_NO_HARDWARE_CURSORS,1
+cursor {
+    no_hardware_cursors = true
+}
 
+#env = WLR_NO_HARDWARE_CURSORS,1
 
-#env = DRI_PRIME,pci-0000_01_00_0
-#env = __VK_LAYER_NV_optimus,NVIDIA_only 
+__EGL_VENDOR_LIBRARY_FILENAMES=/usr/share/glvnd/egl_vendor.d/50_mesa.json
 
-#env = __GL_VRR_ALLOWED,1
-#env = WLR_DRM_NO_ATOMIC,1
-
-#__EGL_VENDOR_LIBRARY_FILENAMES=/usr/share/glvnd/egl_vendor.d/50_mesa.json
-
-#env = NVD_BACKEND,direct

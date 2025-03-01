@@ -82,7 +82,7 @@ alias tsl='sudo timeshift --list'
 
 alias gu='sudo -sE /sbin/gufw-pkexec'
 
-alias ch='sudo chmod +x'
+alias ch='chmod +x'
 alias co='sudo chown vago:'
 alias dk='sudo dpkg -i'
 alias dkil='dpkg --get-selections | grep -v deinstall'

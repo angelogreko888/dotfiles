@@ -24,13 +24,13 @@ read
 
 bash $is$cp
 
-printf "\n\e[1;32m... Do You Want To Install Nvidia? (y/n) ... : \e[0m"
+printf "\n\e[1;32m... Do You Want To Install Nvidia?  ... : \e[0m"
 
-select  yn in y n;do
+select  yn in yes no;do
 	case $yn in
-		y)
+		yes)
 		bash $is$nv ;;
-		n)
+		no)
 		printf "\n\e[1;32m... OK ... : \n\e[0m" ;;
 		*)
 		printf "\n\e[1;31m... !!! ERROR Enter Your Choice !!! ... \e[0m" >&2

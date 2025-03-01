@@ -10,7 +10,7 @@ echo "127.0.0.1 localhost" >> /etc/hosts
 echo "::1       localhost" >> /etc/hosts
 echo "127.0.1.1 greco.localdomain greco" >> /etc/hosts
 
-printf "\n\e[1;31mEnter root password: \e[0m"
+printf "\n\e[1;32mEnter root password: \e[0m"
 read rp
 echo root:$rp | chpasswd
 
@@ -21,7 +21,7 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 useradd -m vago
 
-printf "\n\e[1;31mEnter user password: \e[0m"
+printf "\n\e[1;32mEnter user password: \e[0m"
 read up
 echo vago:$up | chpasswd
 
@@ -30,5 +30,4 @@ echo "Defaults  timestamp_timeout=999" >> /etc/sudoers.d/vago
 
 systemctl enable NetworkManager
 
-printf "\e[1;32mDone! Type exit, umount -a and reboot.\e[0m"
 

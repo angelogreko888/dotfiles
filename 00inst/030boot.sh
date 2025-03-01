@@ -10,7 +10,7 @@ echo "127.0.0.1 localhost" >> /etc/hosts
 echo "::1       localhost" >> /etc/hosts
 echo "127.0.1.1 greco.localdomain greco" >> /etc/hosts
 
-printf "\n\e[1;31mEnter root password: \e[0m"
+printf "\n\e[1;32mEnter root password: \e[0m"
 read rp
 echo root:$rp | chpasswd
 
@@ -18,7 +18,7 @@ pacman -S --needed --noconfirm git sudo nano base-devel linux-headers networkman
 
 bootctl --path=/boot install
 
-printf "\n\e[1;31mEnter UUID: \e[0m"
+printf "\n\e[1;32mEnter UUID: \e[0m"
 read uid
 
 echo "
@@ -38,7 +38,7 @@ options root=UUID=$uid  rw quiet splash nvidia-drm.modeset=1 nvidia_drm.fbdev=1 
 
 useradd -m vago
 
-printf "\n\e[1;31mEnter user password: \e[0m"
+printf "\n\e[1;32mEnter user password: \e[0m"
 read up
 echo vago:$up | chpasswd
 
@@ -50,4 +50,3 @@ systemctl enable systemd-boot-update.service
 
 cat /boot/loader/entries/arch.conf | grep options
 
-printf "\e[1;32mDone! Type exit, umount -a and reboot.\e[0m"

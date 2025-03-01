@@ -41,6 +41,7 @@ bash $is$pp
 printf "\n\e[1;32m... press enter to activate hyprland ... : \e[0m"
 read
 hyprland
+sleep 15
 bash $is$st
 bash $is$at
 

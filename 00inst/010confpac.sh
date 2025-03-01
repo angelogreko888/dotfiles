@@ -23,7 +23,7 @@ sed -i '92s/#//' $pacman_conf
 
 sed -i '93s/#//' $pacman_conf
 
-printf "\e[1;31m.......Enter Country.......: \n\e[0m"
+printf "\e[1;32m.......Enter Country.......: \n\e[0m"
 
 select  cn in Israel Cyprus;do
 

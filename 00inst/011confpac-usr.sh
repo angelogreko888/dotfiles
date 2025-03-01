@@ -45,7 +45,5 @@ select  cn in Israel Cyprus;do
 
 done
 
-#sudo nano $pacman_conf
-
 sudo pacman -Syy
 

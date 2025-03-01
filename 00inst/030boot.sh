@@ -11,7 +11,7 @@ echo "::1       localhost" >> /etc/hosts
 echo "127.0.1.1 greco.localdomain greco" >> /etc/hosts
 
 printf "\n\e[1;32mEnter root password: \e[0m"
-read rp
+read -s rp
 echo root:$rp | chpasswd
 
 pacman -S --needed --noconfirm git sudo nano base-devel linux-headers networkmanager wpa_supplicant
@@ -39,7 +39,7 @@ options root=UUID=$uid  rw quiet splash nvidia-drm.modeset=1 nvidia_drm.fbdev=1 
 useradd -m vago
 
 printf "\n\e[1;32mEnter user password: \e[0m"
-read up
+read -s up
 echo vago:$up | chpasswd
 
 echo "vago ALL=(ALL) ALL" >> /etc/sudoers.d/vago

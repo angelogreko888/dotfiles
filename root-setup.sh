@@ -1,0 +1,56 @@
+#!/usr/bin/env bash
+
+gh="https://raw.githubusercontent.com/angelogreko888/dotfiles/main/00inst/"
+
+cp="010confpac.sh"
+bt="030boot.sh"
+ef="050grubefi.sh"
+mb="060grubmbr.sh"
+gr="070grubaddons.sh"
+
+lst=(
+$cp
+$bt
+$ef
+$mb
+$gr
+)
+for SU in "${lst[@]}";do
+	wget $gh$SU
+done
+
+if ! [ -f "$cp" ] && [ -f "$bt" ]  && [ -f "$ef" ] && [ -f "$gr" ] && [ -f "$mb" ];then
+	printf "\n\e[1;31m!!! Something went wrong- missing file !!! \e[0m"
+        exit 1 
+fi
+
+chmod +x 0*
+
+printf "\n\e[1;31m... to edit pacman conf press enter ... \e[0m"
+read
+
+bash $cp
+
+printf "\n\e[1;31m... Enter your choice ... : \n\e[0m"
+
+select  bm in boot efi mbr;do
+	case $bm in
+		boot)
+			bash $bt 
+			break ;;
+		efi)
+			bash $ef 
+			bash $gr 
+			break ;;
+		mbr)
+			bash $mb 
+			bash $gr 
+			break ;;
+		*)	
+		printf "\n\e[1;31m... !!! ERROR Enter Your Choice !!! ... \e[0m" >&2
+	esac
+done
+
+rm 0*
+
+printf "\n\n\e[1;32m ... Done Root Setup! Type exit, umount -a and reboot ...\e[0m"

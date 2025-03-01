@@ -12,7 +12,7 @@ lines_to_edit=(
 
 for line in "${lines_to_edit[@]}"; do
     if grep -q "^#$line" "$pacman_conf"; then
-        sed -i "s/^#$line/$line/" "$pacman_conf"
+        sudo sed -i "s/^#$line/$line/" "$pacman_conf"
         echo "Uncommented: $line" 
     else
         echo "$line is already uncommented."
@@ -30,12 +30,12 @@ select  cn in Israel Cyprus;do
 	case $cn in
 
         Israel) 
-		reflector --age 1 --sort rate --country Israel --protocol https --verbose --save /etc/pacman.d/mirrorlist 
-                sed -rie '/mivzakim/d' /etc/pacman.d/mirrorlist  
+		sudo  reflector --age 1 --sort rate --country Israel --protocol https --verbose --save /etc/pacman.d/mirrorlist 
+                sudo sed -rie '/mivzakim/d' /etc/pacman.d/mirrorlist  
 		break ;;
 
         Cyprus) 
-		reflector --age 1 --sort rate -n 7 --country Greece,Tr,Israel,Germany,UK --protocol https --verbose --save /etc/pacman.d/mirrorlist 
+		sudo  reflector --age 1 --sort rate -n 7 --country Greece,Tr,Israel,Germany,UK --protocol https --verbose --save /etc/pacman.d/mirrorlist 
 		break ;;
 
 	*) 
@@ -45,5 +45,7 @@ select  cn in Israel Cyprus;do
 
 done
 
-pacman -Syy
+#sudo nano $pacman_conf
+
+sudo pacman -Syy
 

@@ -19,10 +19,8 @@ if ! [ -d ~/dotfiles ];then
 	exit 1
 fi
 
-printf "\n\e[1;32m... Press Enter to edit pacman conf ... : \e[0m"
-read
-
 bash $is$cp
+bash $is$yy
 
 printf "\n\e[1;32m... Do You Want To Install Nvidia?  ... : \e[0m"
 
@@ -37,10 +35,6 @@ select  yn in yes no;do
 	esac
 done
 
-printf "\n\e[1;32m... press Enter to continue ... : \e[0m"
-read
-
-bash $is$yy
 bash $is$pc
 bash $is$ar
 bash $is$pp

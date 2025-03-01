@@ -19,9 +19,9 @@ for line in "${lines_to_edit[@]}"; do
     fi
 done
 
-sed -i '92s/#//' $pacman_conf
+sudo sed -i '92s/#//' $pacman_conf
 
-sed -i '93s/#//' $pacman_conf
+sudo sed -i '93s/#//' $pacman_conf
 
 printf "\e[1;32m.......Enter Country.......: \n\e[0m"
 

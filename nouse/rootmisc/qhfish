@@ -85,7 +85,6 @@
 - cmd: ps virtual-guest-iso
 - cmd: ps virtualbox-guest-iso
 - cmd: s pacman -Syy linux-headers
-- cmd: n /etc/pacman.conf
 - cmd: cd librew
 - cmd: n profiles.ini
 - cmd: n installs.ini
@@ -344,7 +343,6 @@
 - cmd: n efi.sh
 - cmd: n mbr.sh
 - cmd: rm befi
-- cmd: pp
 - cmd: ע
 - cmd: ctl status nvidia-suspend.service
 - cmd: ctl status nvidia-hibernate.service
@@ -635,8 +633,6 @@
   when: 1738761708
 - cmd: n.
   when: 1738762105
-- cmd: u
-  when: 1738762601
 - cmd: n functions/
   when: 1738762998
 - cmd: n ll.fish
@@ -2008,7 +2004,6 @@
 - cmd: ./stow.sh
 - cmd: cd ~/.config
 - cmd: sudo mount /dev/sda /mnt/data
-- cmd: gd
 - cmd: w fileroller
 - cmd: w file-roller
 - cmd: file-roller
@@ -2042,7 +2037,6 @@
 - cmd: yd
 - cmd: pd
 - cmd: cpk
-- cmd: lk
 - cmd: ls -la
 - cmd: ls
 - cmd: n qhfish
@@ -3832,10 +3826,6 @@
   when: 1740638926
 - cmd: cpi
   when: 1740642202
-- cmd: cpi q
-  when: 1740642234
-- cmd: bh q
-  when: 1740642238
 - cmd: n
   when: 1740642245
 - cmd: echo grep -qE 'root=' /boot/loader/entries/arch.conf
@@ -3883,9 +3873,6 @@
   when: 1740654376
 - cmd: n 10
   when: 1740654460
-- cmd: n 10yay.sh
-  when: 1740654465
-    - 10yay.sh
 - cmd: n 99active.sh
   when: 1740654548
 - cmd: n 090nvidia.sh
@@ -3898,8 +3885,6 @@
   when: 1740726220
 - cmd: hyprctl reload
   when: 1740726268
-- cmd: n keybind.conf
-  when: 1740726325
 - cmd: CD bin/
   when: 1740726466
     - bin/
@@ -3925,8 +3910,6 @@
   when: 1740735485
 - cmd: n look.conf
   when: 1740735779
-- cmd: chh
-  when: 1740736022
 - cmd: n xdph.conf
   when: 1740736045
     - xdph.conf
@@ -4028,10 +4011,6 @@
   when: 1740816582
     - root-setup.sh
     - ~/dotfiles/
-- cmd: gg
-  when: 1740816602
-- cmd: af
-  when: 1740816852
 - cmd: sudo  reflector --age 1 --sort rate --country Israel --protocol https --verbose
   when: 1740818022
 - cmd: sudo  reflector --age 12 --sort rate --country Israel --protocol https --verbose
@@ -4047,8 +4026,6 @@
   when: 1740820784
 - cmd: ...
   when: 1740820800
-- cmd: ./c
-  when: 1740821403
 - cmd: pm
   when: 1740822058
 - cmd: cp user-setup user-setup.sh
@@ -4076,8 +4053,6 @@
 - cmd: mv user-setup.sh ~/dotfiles/
   when: 1740829273
     - user-setup.sh
-- cmd: cd atest/
-  when: 1740835774
 - cmd: curl -s https://raw.githubusercontent.com/angelogreko888/dotfiles/main/00inst/010confpac.sh
   when: 1740835793
 - cmd: curl https://raw.githubusercontent.com/angelogreko888/dotfiles/main/00inst/010confpac.sh
@@ -4090,20 +4065,10 @@
   when: 1740835878
 - cmd: rm user-setup
   when: 1740835905
-- cmd: n c
-  when: 1740835910
 - cmd: https://raw.githubusercontent.com/angelogreko888/dotfiles/main/00inst/
   when: 1740835923
-- cmd: cd
-  when: 1740835929
 - cmd: c
   when: 1740836048
-- cmd: cdf
-  when: 1740836050
-- cmd: cd 00inst/
-  when: 1740836052
-- cmd: l
-  when: 1740836069
 - cmd: n 030boot.sh
   when: 1740836074
 - cmd: n 050grubefi.sh
@@ -4116,34 +4081,113 @@
   when: 1740836190
 - cmd: n rsetup.sh
   when: 1740836485
-- cmd: n root-setup.sh
-  when: 1740836493
-- cmd: g
-  when: 1740836581
-- cmd: ggg
-  when: 1740836585
-- cmd: ..
-  when: 1740844413
-- cmd: n user-setup.sh
-  when: 1740844419
-  when: 1740844552
+- cmd: gg
   when: 1740844935
-  when: 1740845161
-  when: 1740845171
+- cmd: n user-setup.sh
   when: 1740845178
+- cmd: ggg
   when: 1740845319
+- cmd: cdf
   when: 1740894334
+- cmd: cd 00inst/
   when: 1740894337
-    - 00inst/
+- cmd: n 10yay.sh
   when: 1740894354
-  when: 1740894478
+    - 10yay.sh
+- cmd: l
   when: 1740894480
-  when: 1740894484
-  when: 1740894508
+- cmd: n c
   when: 1740894542
+- cmd: cd atest/
   when: 1740894561
+- cmd: ./c
   when: 1740894565
+- cmd: ..
   when: 1740895548
+- cmd: n root-setup.sh
   when: 1740895557
+- cmd: cpi q
   when: 1740896576
+- cmd: bh q
   when: 1740896581
+- cmd: g
+  when: 1740896583
+- cmd: n /etc/pacman.conf.pacnew
+  when: 1740896996
+    - /etc/pacman.conf.pacnew
+- cmd: cd
+  when: 1740897066
+- cmd: mv /etc/pacman.conf /etc/pacman.conf.bup
+  when: 1740897095
+- cmd: s mv /etc/pacman.conf /etc/pacman.conf.bup
+  when: 1740897103
+- cmd: s cp /etc/pacman.conf.pacnew /etc/pacman.conf
+  when: 1740897164
+- cmd: n /etc/pacman.conf
+  when: 1740897179
+- cmd: sn /etc/pacman.conf
+  when: 1740897224
+- cmd: u
+  when: 1740897256
+- cmd: pacman -Q | rg  coreutils
+  when: 1740901905
+- cmd: s umount sdb
+  when: 1740902044
+- cmd: s umount /dev/sdb
+  when: 1740902057
+    - /dev/sdb
+- cmd: s umount /dev/sdb1
+  when: 1740902087
+    - /dev/sdb1
+- cmd: cat /mnt/data/distro/archlinux-2025.03.01-x86_64.iso /dev/disk/by-id//usb-USB_SanDisk_3.2Gen1_09012adede7af58d8ce3e5e69851c240103da8251ffb1faa6b6211d4591eed667c120000000000000000000098bbc584ff123020975581072a317b15-0:0
+  when: 1740902174
+    - /mnt/data/distro/archlinux-2025.03.01-x86_64.iso
+    - /dev/disk/by-id//usb-USB_SanDisk_3.2Gen1_09012adede7af58d8ce3e5e69851c240103da8251ffb1faa6b6211d4591eed667c120000000000000000000098bbc584ff123020975581072a317b15-0:0
+- cmd: s cat /mnt/data/distro/archlinux-2025.03.01-x86_64.iso /dev/disk/by-id//usb-USB_SanDisk_3.2Gen1_09012adede7af58d8ce3e5e69851c240103da8251ffb1faa6b6211d4591eed667c120000000000000000000098bbc584ff123020975581072a317b15-0:0
+  when: 1740902216
+- cmd: lk
+  when: 1740902265
+- cmd: dd bs=4M if=/mnt/data/distro/archlinux-2025.03.01-x86_64.iso of=/dev/disk/by-id/usb-USB_SanDisk_3.2Gen1_09012adede7af58d8ce3e5e69851c240103da8251ffb1faa6b6211d4591eed667c120000000000000000000098bbc584ff123020975581072a317b15-0:0 conv=fsync oflag=direct status=progress
+  when: 1740902593
+- cmd: ls -l /dev/disk/by-id/usb-*
+  when: 1740902607
+- cmd: sudo dd bs=4M if=/mnt/data/distro/archlinux-2025.03.01-x86_64.iso of=/dev/disk/by-id/usb-USB_SanDisk_3.2Gen1_09012adede7af58d8ce3e5e69851c240103da8251ffb1faa6b6211d4591eed667c120000000000000000000098bbc584ff123020975581072a317b15-0:0 conv=fsync oflag=direct status=progress
+  when: 1740902629
+- cmd: pi  gnome-multi-writer
+  when: 1740902804
+- cmd: gnome-multi-writer
+  when: 1740902861
+- cmd: sudo -sE gnome-multi-writer
+  when: 1740903214
+- cmd: af
+  when: 1740912908
+- cmd: pp
+  when: 1740912947
+- cmd: chh
+  when: 1740912971
+- cmd: n keybind.conf
+  when: 1740912975
+- cmd: gd
+  when: 1740913494
+- cmd: y usbimager
+  when: 1740913856
+- cmd: s usbimager
+  when: 1740913907
+- cmd: sudo -sE usbimager
+  when: 1740913922
+  when: 1740914070
+  when: 1740914085
+    - keybind.conf
+  when: 1740914120
+- cmd: gw
+  when: 1740914153
+- cmd: pui gnome-multi-writer
+  when: 1740914190
+  when: 1740914201
+  when: 1740914204
+    - 00inst/
+  when: 1740914209
+  when: 1740914238
+  when: 1740914479
+  when: 1740914659
+  when: 1740914662

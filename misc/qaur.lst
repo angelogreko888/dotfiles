@@ -26,6 +26,8 @@ librewolf-bin
 libva-nvidia-driver-git
 simple-mtpfs
 upd72020x-fw
+usbimager
+usbimager-debug
 wd719x-firmware
 xdg-desktop-portal-hyprland-git
 yay

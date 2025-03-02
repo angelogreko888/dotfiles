@@ -26,12 +26,9 @@ fi
 
 chmod +x 0*
 
-printf "\n\e[1;31m... to edit pacman conf press enter ... \e[0m"
-read
-
 bash $cp
 
-printf "\n\e[1;31m... Enter your choice ... : \n\e[0m"
+printf "\n\e[1;32m... Enter your choice ... : \n\e[0m"
 
 select  bm in boot efi mbr;do
 	case $bm in

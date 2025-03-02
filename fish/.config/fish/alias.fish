@@ -89,7 +89,7 @@ alias dkil='dpkg --get-selections | grep -v deinstall'
 
 alias gd='sudo -sE gnome-disks'
 alias ggp='sudo -sE gparted'
-alias gw='sudo -sE gnome-multi-writer'
+alias gw='sudo -sE usbimager'
 
 alias ug='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 

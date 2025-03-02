@@ -23,7 +23,6 @@ gtk-3.0
 gtk-4.0
 home
 hypr
-kanshi
 ranger
 swaync
 uwsm
@@ -31,7 +30,23 @@ waybar
 xsettingsd
 )
 
-
 for ST in "${stow[@]}"; do
 	stow "$ST"
 done
+
+printf "\n\e[1;32m... Do You Want To Stow kanshi?  ... : \e[0m"
+
+select  yn in yes no;do
+        case $yn in
+                yes)
+                        stow kanshi
+                        break ;;
+                no)
+                        printf "\n\e[1;32m... OK ... : \n\e[0m"
+                        break ;;
+                *)
+                        printf "\n\e[1;31m... !!! ERROR Enter Your Choice !!! ... \e[0m" >&2
+        esac
+done
+
+cd ~

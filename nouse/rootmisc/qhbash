@@ -1643,3 +1643,10 @@ n .bash_history
 n bh 
 n envidia.sh 
 fish ctl status nvidia-suspend.service
+bash <(curl -s https://raw.githubusercontent.com/angelogreko888/dotfiles/main/00inst/010confpac.sh)
+rm 0*
+wget https://raw.githubusercontent.com/angelogreko888/dotfiles/main/00inst/010confpac.sh
+n 010confpac.sh 
+n arch-setup 
+rm 010confpac.sh 
+./arch-setup 

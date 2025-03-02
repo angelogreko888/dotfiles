@@ -145,8 +145,6 @@
 - cmd: cd nouse/gnome-i3/
 - cmd: cd i3
 - cmd: n .config/i3/
-- cmd: n input.conf
-- cmd: n look.conf
 - cmd: cd waybar
 - cmd: n style.css
 - cmd: swaymsg -t get_inputs
@@ -316,7 +314,6 @@
 - cmd: comm befi ~/dotfiles/00inst/bpac
 - cmd: pacman -Qtdq
 - cmd: n qhbash
-- cmd: ...
 - cmd: n base-efi.sh
 - cmd: mv base-efi.sh efi.sh
 - cmd: n befi
@@ -380,7 +377,6 @@
 - cmd: ./nvidia.sh
 - cmd: n nvidia.hook
 - cmd: n hyprlo
-- cmd: n keybind.conf
 - cmd: hypr
 - cmd: cd hypr
 - cmd: lo systemd-sleep.conf
@@ -430,8 +426,6 @@
 - cmd: pi libva-nvidia-drivers
 - cmd: pi libva-nvidia-driver
 - cmd: n kanshi
-- cmd: n
-- cmd: ts
 - cmd: n active.sh
 - cmd: n nvidia.sh
 - cmd: h | rg pi
@@ -494,7 +488,6 @@
 - cmd: s reflector -v --country Israel --latest 10 --protocol https --sort rate
 - cmd: s reflector --verbose --country Israel --latest 10 --protocol https --sort rate
 - cmd: ml
-- cmd: pm
 - cmd: sn /etc/xdg/reflector/reflector.conf
 - cmd: n hyprlock.conf
 - cmd: lo nvidia-resume.service
@@ -517,7 +510,6 @@
 - cmd: lo logind.conf
 - cmd: systemd-analyze cat-config systemd/logind.conf
 - cmd: sn /etc/systemd/logind.conf
-- cmd: chh
 - cmd: n monitor.conf
 - cmd: n config
 - cmd: cd distro/
@@ -637,8 +629,6 @@
   when: 1738760900
 - cmd: git rm fishlocal/**
   when: 1738761068
-- cmd: su -
-  when: 1738761322
 - cmd: fish_config
   when: 1738761365
 - cmd: fish_config prompt show
@@ -659,14 +649,10 @@
   when: 1738763765
 - cmd: ccc
   when: 1738763770
-- cmd: c
-  when: 1738763876
 - cmd: cd nouse/gnome-i3/i3/
   when: 1738764213
 - cmd: cd .config/i3/
   when: 1738764218
-- cmd: gg
-  when: 1738773976
 - cmd: n /etc/default/grub
   when: 1738820810
 - cmd: h |rg dms
@@ -741,14 +727,10 @@
   when: 1738831268
 - cmd: hyprctl clients
   when: 1738831712
-- cmd: n env
-  when: 1738831760
 - cmd: n .config/uwsm/env-hyprland
   when: 1738831889
 - cmd: n .config/uwsm/env
   when: 1738831920
-- cmd: n env-hyprland
-  when: 1738831966
 - cmd: lspci -D
   when: 1738832214
 - cmd: lspci -b
@@ -771,8 +753,6 @@
   when: 1738832902
 - cmd: s mkinitcpio -P
   when: 1738832986
-- cmd: cc
-  when: 1738834749
 - cmd: n .bash_aliases
   when: 1738834800
 - cmd: n config.fish
@@ -1535,8 +1515,6 @@
   when: 1739378641
 - cmd: nano sync.sh
   when: 1739378846
-- cmd: ./gitpull.sh
-  when: 1739379325
 - cmd: nano  gitpull.sh
   when: 1739379418
 - cmd: bash _x() { curl https://cht.sh/$1 ;}; _x pidof
@@ -1719,8 +1697,6 @@
   when: 1739531177
 - cmd: sudo nano  visoudo
   when: 1739531279
-- cmd: fish
-  when: 1739532378
 - cmd: sudo nano /etc/default/grub
   when: 1739532550
 - cmd: df
@@ -1873,8 +1849,6 @@
   when: 1739608421
 - cmd: sudo pacman -Syu --needed  opencl-clover-mesa
   when: 1739608430
-- cmd: cd uwsm/
-  when: 1739608747
 - cmd: sudo pacman -Syu --needed  hyprlock
   when: 1739608920
 - cmd: yay hyprlock
@@ -2033,7 +2007,6 @@
 - cmd: ./zram.sh
 - cmd: ./stow.sh
 - cmd: cd ~/.config
-- cmd: cd dotfiles/00inst/
 - cmd: sudo mount /dev/sda /mnt/data
 - cmd: gd
 - cmd: w fileroller
@@ -2077,7 +2050,6 @@
 - cmd: ff
 - cmd: b
 - cmd: ll
-- cmd: ..
 - cmd: cd misc/
 - cmd: reboot
 - cmd: cd .local/state/
@@ -2183,8 +2155,6 @@
   when: 1739831708
 - cmd: ./sync.sh
   when: 1739831901
-- cmd: cd bin
-  when: 1739831919
 - cmd: nano  sync.sh
   when: 1739831923
 - cmd: nano  gpush.sh
@@ -2652,8 +2622,6 @@
     - aur.lst
 - cmd: yay aic94xx-firmware
   when: 1739948338
-- cmd: cd ~/bin
-  when: 1739948410
 - cmd: nano  backup.sh
   when: 1739948417
     - backup.sh
@@ -3231,8 +3199,6 @@
   when: 1740302531
 - cmd: yay xdg-desktop-portal-wlr
   when: 1740302548
-- cmd: cd /
-  when: 1740303066
 - cmd: cd vt/
   when: 1740303088
     - vt/
@@ -3408,8 +3374,6 @@
   when: 1740391688
 - cmd: exit
   when: 1740391713
-- cmd: bash
-  when: 1740391720
 - cmd: cd ~/.config/hypr/
   when: 1740395068
 - cmd: nano  hyprlock.conf
@@ -3428,8 +3392,6 @@
     - ~/atest/
 - cmd: nano  am
   when: 1740397061
-- cmd: cd -
-  when: 1740397544
 - cmd: sudo  reflector --age 3 --sort rate --country Greece, Turkey, Israel --protocol https --verbose
   when: 1740397617
 - cmd: sudo  reflector --age 3 --sort rate --country Greece,Turkey,Israel --protocol https --verbose
@@ -3712,12 +3674,6 @@
     - config.fish.bup
 - cmd: eza -a --color always --long --git --no-filesize --icons always --no-time --no-user
   when: 1740489034
-- cmd: cpi
-  when: 1740494513
-- cmd: cpi q
-  when: 1740494517
-- cmd: bh q
-  when: 1740494523
 - cmd: cp ~/dotfiles/00inst/pac.lst ~/atest/
   when: 1740494588
 - cmd: cp ~/dotfiles/misc/qpacman.lst ~/atest/
@@ -3733,8 +3689,6 @@
   when: 1740494727
 - cmd: pss libxnvctrl
   when: 1740494763
-- cmd: n pac.lst
-  when: 1740494840
 - cmd: cp ~/dotfiles/misc/qaur.lst ~/atest/
   when: 1740494890
 - cmd: cp ~/dotfiles/00inst/aur.lst ~/atest/
@@ -3770,10 +3724,6 @@
 - cmd: n 10pac.sh
   when: 1740497848
     - 10pac.sh
-- cmd: cd ~/atest/
-  when: 1740498785
-- cmd: af
-  when: 1740498980
 - cmd: ch c
   when: 1740499284
     - c
@@ -3792,8 +3742,6 @@
 - cmd: n dotfiles/00inst/010confpac.sh
   when: 1740500046
     - dotfiles/00inst/010confpac.sh
-- cmd: cd
-  when: 1740500194
 - cmd: cd 00
   when: 1740500409
 - cmd: mv 020mirror.sh ../nouse/
@@ -3830,8 +3778,6 @@
     - host
 - cmd: n 099grubaddons.sh
   when: 1740554874
-- cmd: mv 990active.sh 99active.sh
-  when: 1740555435
 - cmd: mv 80ftube.sh 990ftube.sh
   when: 1740555469
     - 80ftube.sh
@@ -3859,14 +3805,8 @@
   when: 1740557039
 - cmd: sudo  reflector --age 1 --sort rate -n 7 --country Gr --protocol https --verbose
   when: 1740557110
-- cmd: nwc
-  when: 1740557159
-- cmd: ggg
-  when: 1740574893
 - cmd: n 99
   when: 1740575171
-- cmd: n 99active.sh
-  when: 1740575185
 - cmd: h |rg firecfg
   when: 1740575221
 - cmd: mv 99active.sh 990active.sh
@@ -3874,53 +3814,336 @@
 - cmd: mv 990ftube.sh 998ftube.sh
   when: 1740575395
     - 990ftube.sh
-- cmd: n 990active.sh
-  when: 1740575743
 - cmd: n 70inputG.sh
   when: 1740575862
     - 70inputG.sh
-- cmd: g
-  when: 1740635527
 - cmd: n .local/share/fish/fish_history
   when: 1740635557
 - cmd: rm host
   when: 1740636768
-- cmd: ./c
-  when: 1740636918
-- cmd: cdf
-  when: 1740637266
-- cmd: cd 00inst/
-  when: 1740637269
-- cmd: n 030boot.sh
-  when: 1740637288
-- cmd: n c
-  when: 1740638339
 - cmd: cp /etc/pacman.conf .
   when: 1740638447
-- cmd: l
-  when: 1740638449
 - cmd: cp 010confpac.sh ~/atest/
   when: 1740638479
-- cmd: ./010confpac.sh
-  when: 1740638552
-- cmd: cd atest/
-  when: 1740638583
-- cmd: n 010confpac.sh
-  when: 1740638586
 - cmd: n pacman.conf
-  when: 1740638634
-    - pacman.conf
-  when: 1740638713
-  when: 1740638736
-  when: 1740638743
-  when: 1740638782
-  when: 1740638826
-  when: 1740638837
-  when: 1740638872
   when: 1740638905
+    - pacman.conf
+- cmd: ./010confpac.sh
   when: 1740638926
-  when: 1740638951
-  when: 1740639122
+- cmd: cpi
   when: 1740642202
+- cmd: cpi q
   when: 1740642234
+- cmd: bh q
   when: 1740642238
+- cmd: n
+  when: 1740642245
+- cmd: echo grep -qE 'root=' /boot/loader/entries/arch.conf
+  when: 1740642656
+- cmd: echo $(grep -qE 'root=' /boot/loader/entries/arch.conf)
+  when: 1740642725
+- cmd: sn /boot/loader/entries/arch.conf
+  when: 1740642764
+- cmd: echo $(grep -qE 'root=UUID"' /boot/loader/entries/arch.conf)
+  when: 1740642788
+- cmd: cat /boot/loader/entries/arch.conf | grep root=UUID=
+  when: 1740643430
+- cmd: cat /boot/loader/entries/arch.conf | grep options
+  when: 1740643464
+- cmd: mv 040yay.sh 10yay.sh
+  when: 1740653511
+- cmd: n 990active.sh
+  when: 1740653575
+- cmd: mv 30icons.sh ../nouse/00inst/
+  when: 1740653655
+- cmd: mv 70inputG.sh ../nouse/00inst/
+  when: 1740653756
+- cmd: mv 50zram.sh  ../nouse/00inst/
+  when: 1740653867
+    - 50zram.sh
+- cmd: mv 10pac.sh 20pac.sh
+  when: 1740654071
+- cmd: mv 20aur.sh 30aur.sh
+  when: 1740654094
+- cmd: mv 080nvidia.sh 090nvidia.sh
+  when: 1740654149
+    - 080nvidia.sh
+- cmd: mv 090grubefi.sh 050grubefi.sh
+  when: 1740654183
+- cmd: mv 095grubmbr.sh 060grubmbr.sh
+  when: 1740654229
+- cmd: mv 099grubaddons.sh 070grubaddons.sh
+  when: 1740654274
+- cmd: mv 990active.sh 99active.sh
+  when: 1740654325
+- cmd: mv 998ftube.sh 800ftube.sh
+  when: 1740654360
+    - 998ftube.sh
+- cmd: mv 999pbr.sh 900pbr.sh
+  when: 1740654376
+- cmd: n 10
+  when: 1740654460
+- cmd: n 10yay.sh
+  when: 1740654465
+    - 10yay.sh
+- cmd: n 99active.sh
+  when: 1740654548
+- cmd: n 090nvidia.sh
+  when: 1740654622
+- cmd: fastfetch --config examples/13
+  when: 1740724587
+- cmd: hyprctl activewindow | grep pid | tr -d 'pid:'
+  when: 1740726032
+- cmd: fish
+  when: 1740726220
+- cmd: hyprctl reload
+  when: 1740726268
+- cmd: n keybind.conf
+  when: 1740726325
+- cmd: CD bin/
+  when: 1740726466
+    - bin/
+- cmd: n poweroff.sh
+  when: 1740726485
+    - poweroff.sh
+- cmd: n suspend.sh
+  when: 1740726510
+- cmd: ch suspend.sh
+  when: 1740726891
+    - suspend.sh
+- cmd: nwc
+  when: 1740727127
+- cmd: cc
+  when: 1740735007
+- cmd: cd uwsm/
+  when: 1740735010
+- cmd: n env-hyprland
+  when: 1740735289
+- cmd: cd ../hypr/
+  when: 1740735433
+- cmd: n env
+  when: 1740735485
+- cmd: n look.conf
+  when: 1740735779
+- cmd: chh
+  when: 1740736022
+- cmd: n xdph.conf
+  when: 1740736045
+    - xdph.conf
+- cmd: n input.conf
+  when: 1740736078
+- cmd: setsid hyprctl systeminfo
+  when: 1740736807
+- cmd: mv ~/Downloads/systeminfo.sh ~/bin
+  when: 1740737090
+    - ~/Downloads/systeminfo.sh
+    - ~/bin
+- cmd: cd ~/bin
+  when: 1740737102
+- cmd: ch systeminfo.sh
+  when: 1740737121
+    - systeminfo.sh
+- cmd: ./systeminfo.sh
+  when: 1740737130
+- cmd: curl https://github.com/mylinuxforwork/dotfiles/blob/main/setup-arch.sh
+  when: 1740737343
+- cmd: wget https://github.com/mylinuxforwork/dotfiles/blob/main/setup-arch.sh
+  when: 1740737376
+- cmd: rm setup-arch.sh pacman.conf 010confpac.sh
+  when: 1740737747
+    - setup-arch.sh
+- cmd: echo $HOME
+  when: 1740737902
+- cmd: echo $USER
+  when: 1740738052
+- cmd: cd -
+  when: 1740738075
+- cmd: cd /
+  when: 1740738201
+- cmd: cd root
+  when: 1740738216
+    - root
+- cmd: su -
+  when: 1740738253
+- cmd: n pac.lst
+  when: 1740738718
+- cmd: n 20pac.sh
+  when: 1740738741
+    - 20pac.sh
+- cmd: ch arch-setup
+  when: 1740739244
+    - arch-setup
+- cmd: cd ../atest/
+  when: 1740755966
+- cmd: wget  https://github.com/angelogreko888/dotfiles/010confpac.sh
+  when: 1740756070
+- cmd: wget https://github.com/angelogreko888/dotfiles/blob/main/010confpac.sh
+  when: 1740756120
+- cmd: wget https://github.com/angelogreko888/dotfiles/blob/main/00int/010confpac.sh
+  when: 1740756300
+- cmd: wget https://github.com/angelogreko888/dotfiles/tree/main/00inst
+  when: 1740756323
+- cmd: n 00inst
+  when: 1740756344
+    - 00inst
+- cmd: wget https://github.com/angelogreko888/dotfiles/blob/main/00inst/010confpac.sh
+  when: 1740756378
+- cmd: m arch-setup
+  when: 1740756439
+- cmd: ch 0*
+  when: 1740757124
+- cmd: n arch-setup -l
+  when: 1740759237
+- cmd: git rm 010confpac.sh
+  when: 1740773375
+- cmd: cd bin
+  when: 1740806591
+- cmd: ./gitpull.sh
+  when: 1740806597
+- cmd: bash <(curl -s https://raw.githubusercontent.com/angelogreko888/dotfiles/main/00inst/010confpac.sh)
+  when: 1740809259
+- cmd: bash
+  when: 1740809290
+- cmd: ch rsetup.sh
+  when: 1740811511
+    - rsetup.sh
+- cmd: ./rsetup.sh
+  when: 1740811519
+- cmd: ./arch-setup
+  when: 1740815933
+- cmd: n arch-setup
+  when: 1740815947
+- cmd: mv arch-setup 001root-setup.sh
+  when: 1740816079
+- cmd: printf "\\e[1;32m ... Done Root Setup! Type exit, umount -a and reboot ...\\e[0m"
+  when: 1740816356
+- cmd: n 001root-setup.sh
+  when: 1740816371
+    - 001root-setup.sh
+- cmd: printf "\\n\\n\\e[1;32m ... Done Root Setup! Type exit, umount -a and reboot ...\\e[0m"
+  when: 1740816399
+- cmd: mv 001root-setup.sh root-setup.sh
+  when: 1740816528
+- cmd: mv root-setup.sh ~/dotfiles/
+  when: 1740816582
+    - root-setup.sh
+    - ~/dotfiles/
+- cmd: gg
+  when: 1740816602
+- cmd: af
+  when: 1740816852
+- cmd: sudo  reflector --age 1 --sort rate --country Israel --protocol https --verbose
+  when: 1740818022
+- cmd: sudo  reflector --age 12 --sort rate --country Israel --protocol https --verbose
+  when: 1740818047
+- cmd: cp 010confpac.sh 011confpac-usr.sh
+  when: 1740818314
+- cmd: rm rsetup.sh
+  when: 1740818468
+- cmd: ch user-setup
+  when: 1740820707
+    - user-setup
+- cmd: cd dotfiles/00inst/
+  when: 1740820784
+- cmd: ...
+  when: 1740820800
+- cmd: ./c
+  when: 1740821403
+- cmd: pm
+  when: 1740822058
+- cmd: cp user-setup user-setup.sh
+  when: 1740823205
+- cmd: rr dotfiles/
+  when: 1740823213
+- cmd: cd ~/atest/
+  when: 1740823307
+- cmd: bash  ~/dotfiles/00inst/011confpac-usr.sh
+  when: 1740823643
+    - ~/dotfiles/00inst/011confpac-usr.sh
+- cmd: ./user-setup
+  when: 1740824546
+- cmd: n ~/dotfiles/00inst/011confpac-usr.sh
+  when: 1740824600
+- cmd: n 070grubaddons.sh
+  when: 1740828884
+- cmd: n 01
+  when: 1740828914
+- cmd: n 010confpac.sh
+  when: 1740828920
+- cmd: n 011confpac-usr.sh
+  when: 1740829014
+    - 011confpac-usr.sh
+- cmd: mv user-setup.sh ~/dotfiles/
+  when: 1740829273
+    - user-setup.sh
+- cmd: cd atest/
+  when: 1740835774
+- cmd: curl -s https://raw.githubusercontent.com/angelogreko888/dotfiles/main/00inst/010confpac.sh
+  when: 1740835793
+- cmd: curl https://raw.githubusercontent.com/angelogreko888/dotfiles/main/00inst/010confpac.sh
+  when: 1740835807
+- cmd: wget https://raw.githubusercontent.com/angelogreko888/dotfiles/main/00inst/010confpac.sh
+  when: 1740835827
+- cmd: rm 0*
+  when: 1740835858
+- cmd: n user-setup
+  when: 1740835878
+- cmd: rm user-setup
+  when: 1740835905
+- cmd: n c
+  when: 1740835910
+- cmd: https://raw.githubusercontent.com/angelogreko888/dotfiles/main/00inst/
+  when: 1740835923
+- cmd: cd
+  when: 1740835929
+- cmd: c
+  when: 1740836048
+- cmd: cdf
+  when: 1740836050
+- cmd: cd 00inst/
+  when: 1740836052
+- cmd: l
+  when: 1740836069
+- cmd: n 030boot.sh
+  when: 1740836074
+- cmd: n 050grubefi.sh
+  when: 1740836110
+    - 050grubefi.sh
+- cmd: n 060grubmbr.sh
+  when: 1740836137
+    - 060grubmbr.sh
+- cmd: ts
+  when: 1740836190
+- cmd: n rsetup.sh
+  when: 1740836485
+- cmd: n root-setup.sh
+  when: 1740836493
+- cmd: g
+  when: 1740836581
+- cmd: ggg
+  when: 1740836585
+- cmd: ..
+  when: 1740844413
+- cmd: n user-setup.sh
+  when: 1740844419
+  when: 1740844552
+  when: 1740844935
+  when: 1740845161
+  when: 1740845171
+  when: 1740845178
+  when: 1740845319
+  when: 1740894334
+  when: 1740894337
+    - 00inst/
+  when: 1740894354
+  when: 1740894478
+  when: 1740894480
+  when: 1740894484
+  when: 1740894508
+  when: 1740894542
+  when: 1740894561
+  when: 1740894565
+  when: 1740895548
+  when: 1740895557
+  when: 1740896576
+  when: 1740896581

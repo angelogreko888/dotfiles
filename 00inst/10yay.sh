@@ -8,6 +8,11 @@ handle_error() {
   trap 'handle_error $LINENO' ERR
 
 
+if  pacman -Q yay &>/dev/null; then
+	printf "\n\e[1;32m... yay is installed - quiting ...\e[0m\n"
+	exit 0
+  fi
+
 cd ~
 
 if ! [ -d git ]; then
@@ -20,6 +25,6 @@ cd yay
 makepkg -si --noconfirm
 cd ~
 
-if ! sudo pacman -Q yay &>/dev/null; then
+if ! pacman -Q yay &>/dev/null; then
        printf "\e[1;31mERROR...Sorry, could not install... yay\e[0m\n"
   fi

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 is="$HOME/dotfiles/00inst/"
-cp="011confpac-usr.sh"
+cp="020confpac-usr.sh"
 nv="090nvidia.sh"
 yy="10yay.sh"
 pc="20pac.sh"

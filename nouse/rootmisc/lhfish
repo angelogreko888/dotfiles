@@ -151,7 +151,6 @@
 - cmd: cd i3
 - cmd: n .config/i3/
 - cmd: n input.conf
-- cmd: n look.conf
 - cmd: cd waybar
 - cmd: n style.css
 - cmd: swaymsg -t get_inputs
@@ -176,7 +175,6 @@
 - cmd: ps seatd
 - cmd: ctl status ly
 - cmd: ctl status sddm
-- cmd: t
 - cmd: rm .xprofile
 - cmd: cd /usr/share/wayland-sessions/
 - cmd: n sway.desktop
@@ -298,9 +296,7 @@
 - cmd: n /home/vago/.nvidia-settings-rc
 - cmd: rm /home/vago/.nvidia-settings-rc
 - cmd: d 00inst/
-- cmd: cd uwsm
 - cmd: n env-hyprland
-- cmd: n env
 - cmd: ./backup.sh
 - cmd: n backup.sh
 - cmd: ./bup
@@ -309,7 +305,6 @@
 - cmd: sn /etc/locale.gen
 - cmd: sv /etc/locale.gen
 - cmd: sv /etc/localtime
-- cmd: cd /usr/share/zoneinfo/
 - cmd: :q
 - cmd: n /etc/vconsole.conf
 - cmd: n /etc/hosts
@@ -342,7 +337,6 @@
 - cmd: sort befi
 - cmd: sort befi > befi
 - cmd: ctl status cups
-- cmd: su -
 - cmd: comm befi ~/dotfiles/00inst/bpac
 - cmd: pacman -Qtdq
 - cmd: n qhbash
@@ -366,7 +360,6 @@
 - cmd: y -Si virtio-win
 - cmd: yui virtio-win
 - cmd: fwupdmgr
-- cmd: fwupdmgr refresh
 - cmd: cd ../../bin
 - cmd: n bup
 - cmd: modprobe vboxdrv
@@ -527,7 +520,6 @@
 - cmd: ../misc/
 - cmd: cd ../misc/
 - cmd: rm  CanvasBlocker-settings_2025-01-20_21-34-53.json chameleon_1737401664737.json
-- cmd: n gitpull.sh
 - cmd: n bup-gitpull
 - cmd: rm bup-gitpull
 - cmd: sudo pacman -Syyu
@@ -545,12 +537,9 @@
 - cmd: n gtk-2.0
 - cmd: cd gtk-2.0
 - cmd: n gtkfilechooser.ini
-- cmd: cd gtk-3.0
-- cmd: n settings.ini
 - cmd: cd gtk-4
 - cmd: md -p gtk-4.0/.config
 - cmd: mv gtk-4.0/ ~/dotfiles/gtk-4.0/.config/
-- cmd: stow gtk-4.0/
 - cmd: cd gtk-4.0
 - cmd: n gtk-dark.css
 - cmd: n gtk.css
@@ -560,7 +549,6 @@
 - cmd: systemd-analyze cat-config systemd/logind.conf
 - cmd: sn /etc/systemd/logind.conf
 - cmd: hyprctl monitors
-- cmd: chh
 - cmd: n monitor.conf
 - cmd: cd kanshi
 - cmd: n config
@@ -574,8 +562,6 @@
 - cmd: y cachy
 - cmd: y cachy-browser
 - cmd: yui cachy-browser
-- cmd: yd
-- cmd: pd
 - cmd: bb
 - cmd: cpd
 - cmd: cpk
@@ -638,8 +624,6 @@
   when: 1738745655
 - cmd: help
   when: 1738745936
-- cmd: cc
-  when: 1738746401
 - cmd: md -p fish/.config
   when: 1738746448
 - cmd: cd fish/.config/
@@ -688,14 +672,8 @@
   when: 1738752018
 - cmd: n /etc/default/grub
   when: 1738755593
-- cmd: sn /etc/default/grub
-  when: 1738755601
-- cmd: ug
-  when: 1738755624
 - cmd: n ~/.config/fish/config.fish
   when: 1738759553
-- cmd: b
-  when: 1738759624
 - cmd: cd ../nouse/rootmisc/
   when: 1738759703
 - cmd: cat lhbash qhbash >com
@@ -708,8 +686,6 @@
   when: 1738759815
 - cmd: cp com ~/.bash_history
   when: 1738760098
-- cmd: cdf
-  when: 1738760158
 - cmd: cd nouse/rootmisc/
   when: 1738760168
 - cmd: rm com
@@ -726,8 +702,6 @@
   when: 1738760511
 - cmd: ..
   when: 1738760591
-- cmd: l
-  when: 1738760592
 - cmd: rm fish/
   when: 1738760654
 - cmd: rm fish
@@ -744,8 +718,6 @@
   when: 1738784512
 - cmd: gg
   when: 1738784586
-- cmd: g
-  when: 1738793020
 - cmd: gp
   when: 1738956626
 - cmd: yay -Rns art-rawconverter
@@ -761,10 +733,6 @@
   when: 1738957098
 - cmd: yay art-rawconverter
   when: 1738957149
-- cmd: sudo pacman -Qdtq | sudo pacman -Rns
-  when: 1738957216
-- cmd: yay -Yc
-  when: 1738957220
 - cmd: ./cpinst.sh l
   when: 1738957302
 - cmd: ./bh l
@@ -839,8 +807,6 @@
   when: 1739142316
 - cmd: pidof fish
   when: 1739142326
-- cmd: sudo -sE timeshift-gtk
-  when: 1739142879
 - cmd: bash cpinst.sh
   when: 1739142947
 - cmd: bash cpinst.sh q
@@ -853,9 +819,6 @@
   when: 1739142994
 - cmd: bash bh l
   when: 1739142999
-- cmd: cd ~/dotfiles && git status && cd -
-  when: 1739226715
-    - ~/dotfiles
 - cmd: librewolf
   when: 1739301028
 - cmd: sudo pacman -Syu --needed  firejail
@@ -881,6 +844,7 @@
   when: 1739309019
 - cmd: cd ~/dotfiles && git add * && git commit -m "save" && git push -u origin main && cd -
   when: 1739309095
+    - ~/dotfiles
 - cmd: ps -el |rg -i firejail
   when: 1739309124
 - cmd: cd ~/.config/FreeTube/ && cp history.db playlists.db profiles.db search-history.db settings.db ~/dotfiles/freetube/.config/FreeTube &&  cd ~/dotfiles && git status && cd ~
@@ -1083,15 +1047,10 @@
   when: 1739745351
     - NotoColorEmoji-flagsonly.ttf
     - ~/dotfiles/nouse/icons
-- cmd: cd -
-  when: 1739745368
 - cmd: sudo nano  aaa
   when: 1739749035
 - cmd: sudo pacman -Qs nano
   when: 1739749358
-- cmd: cd ~/dotfiles/00inst/
-  when: 1739779016
-    - ~/dotfiles/00inst/
 - cmd: nano  aur.sh
   when: 1739780479
     - aur.sh
@@ -1116,9 +1075,6 @@
   when: 1739783158
 - cmd: cd yay/
   when: 1739783176
-- cmd: cd ..
-  when: 1739783197
-    - ..
 - cmd: cp -i  ~/git/yay/ .
   when: 1739783228
     - .
@@ -1130,18 +1086,11 @@
 - cmd: rm -rf yay/
   when: 1739783298
     - yay/
-- cmd: cd ~/dotfiles/
-  when: 1739796128
-    - ~/dotfiles/
-- cmd: cd 00inst/
-  when: 1739796131
 - cmd: nano  pipewire
   when: 1739796253
 - cmd: nano  boot.sh
   when: 1739796397
     - boot.sh
-- cmd: ~/bin/gpush.sh
-  when: 1739796415
 - cmd: cd ~/dotfiles && git status && cd ~
   when: 1739797748
 - cmd: lsblk
@@ -1150,9 +1099,6 @@
   when: 1739800128
 - cmd: sudo -sE gnome-disks
   when: 1739800246
-- cmd: cd /mnt
-  when: 1739800464
-    - /mnt
 - cmd: chmod -x dataq/
   when: 1739800486
     - dataq/
@@ -1200,17 +1146,6 @@
 - cmd: nano  user.conf
   when: 1739944178
     - user.conf
-- cmd: nano  ~/.config/fish/config.fish
-  when: 1739985758
-    - ~/.config/fish/config.fish
-- cmd: cd
-  when: 1739985769
-- cmd: cd bin
-  when: 1739985772
-- cmd: eza -a --color always --long --git --no-filesize --icons always --no-time --no-user
-  when: 1739985775
-- cmd: ./gitpull.sh
-  when: 1739985876
 - cmd: nano  gitpull.sh
   when: 1739985909
     - gitpull.sh
@@ -1224,14 +1159,269 @@
   when: 1739987268
 - cmd: htop
   when: 1739995356
-  when: 1739997160
 - cmd: nano  aur.lst
   when: 1739997167
     - aur.lst
-- cmd: nano  pac.lst
-  when: 1739997386
-    - pac.lst
-- cmd: ~/bin/cpinst.sh l
-  when: 1740065401
 - cmd: ~/bin/bh l
   when: 1740065408
+- cmd: ~/bin/cpinst.sh l
+  when: 1740065432
+- cmd: sudo -sE timeshift-gtk
+  when: 1740082076
+- cmd: cd ~/dotfiles/00
+  when: 1740089051
+- cmd: rm 0042grubpac.sh
+  when: 1740089098
+    - 0042grubpac.sh
+- cmd: nano  0041grub.sh
+  when: 1740089282
+    - 0041grub.sh
+- cmd: nano  20aur.sh
+  when: 1740089560
+    - 20aur.sh
+- cmd: nano  002boot.sh
+  when: 1740089689
+    - 002boot.sh
+- cmd: nano  0040grubefi.sh
+  when: 1740089831
+    - 0040grubefi.sh
+- cmd: cd /usr/share/zoneinfo/
+  when: 1740090754
+- cmd: cd /usr/share/zoneinfo/ | rg cyprus
+  when: 1740090782
+    - /usr/share/zoneinfo/
+- cmd: cd Europe/
+  when: 1740090812
+    - Europe/
+- cmd: cd Asia/
+  when: 1740090923
+    - Asia/
+- cmd: nano  Jerusalem
+  when: 1740090977
+    - Jerusalem
+- cmd: sudo nano  Jerusalem
+  when: 1740091012
+- cmd: nano  003grubmbr.sh
+  when: 1740091075
+    - 003grubmbr.sh
+- cmd: sudo pacman -Syu --needed  nano-syntax-highlighting
+  when: 1740170066
+- cmd: nano  ~/.config/fish/config.fish
+  when: 1740170083
+    - ~/.config/fish/config.fish
+- cmd: yay -Rns freetube-bin
+  when: 1740258105
+- cmd: yay freetube
+  when: 1740258124
+- cmd: cd /etc/firejail/
+  when: 1740258276
+    - /etc/firejail/
+- cmd: nano  freecad.profile
+  when: 1740258287
+    - freecad.profile
+- cmd: sudo nano  freetube.profile
+  when: 1740258303
+    - freetube.profile
+- cmd: freetube
+  when: 1740258735
+- cmd: mkdir -pv atest
+  when: 1740261315
+- cmd: pacman -Qq >> pacages.lst
+  when: 1740261362
+- cmd: readarray -t a <
+  when: 1740261372
+- cmd: readarray -t a < pacages.lst
+  when: 1740261381
+- cmd: sudo chmod +x  array
+  when: 1740261490
+    - array
+- cmd: nano array
+  when: 1740261889
+- cmd: nano array -l
+  when: 1740261907
+- cmd: nano  array -l
+  when: 1740262545
+- cmd: ./array
+  when: 1740262565
+- cmd: cd ~/atest/
+  when: 1740262645
+    - ~/atest/
+- cmd: nano  pacages.lst
+  when: 1740262651
+    - pacages.lst
+- cmd: yay a52dec
+  when: 1740262666
+- cmd: nano  array
+  when: 1740262747
+- cmd: cd ~/dotfiles/00inst/
+  when: 1740262776
+    - ~/dotfiles/00inst/
+- cmd: sudo pacman -Ss acpi
+  when: 1740262988
+- cmd: nano  pac.lst
+  when: 1740263068
+    - pac.lst
+- cmd: nano  10pac.sh
+  when: 1740263097
+    - 10pac.sh
+- cmd: ./10pac.sh
+  when: 1740263123
+- cmd: sudo pacman -Rns  simple-scan kanshi inotify-tools imagemagick
+  when: 1740263400
+- cmd: sudo pacman -Qdtq | sudo pacman -Rns
+  when: 1740263410
+- cmd: yay -Yc
+  when: 1740263413
+- cmd: nano  990active.sh
+  when: 1740263442
+    - 990active.sh
+- cmd: sudo systemctl  enable apparmor.service
+  when: 1740263459
+- cmd: sudo  nano  /etc/default/grub
+  when: 1740263520
+- cmd: fwupdmgr refresh
+  when: 1740263727
+- cmd: rm *
+  when: 1740263838
+- cmd: cd ~/dotfiles && git status && cd -
+  when: 1740264282
+- cmd: stow gtk-2.0/
+  when: 1740264317
+    - gtk-2.0/
+- cmd: cd ~/.config/gtk-2.0/
+  when: 1740428425
+    - ~/.config/gtk-2.0/
+- cmd: nano  gtkfilechooser.ini
+  when: 1740428434
+    - gtkfilechooser.ini
+- cmd: cd ..
+  when: 1740428443
+    - ..
+- cmd: cd gtk-3.0
+  when: 1740428450
+- cmd: nano  settings.ini
+  when: 1740428458
+    - settings.ini
+- cmd: sudo pacman -Syu --needed  nwg-look
+  when: 1740432865
+- cmd: ~/bin/gpush.sh
+  when: 1740433047
+- cmd: sudo nano
+  when: 1740436928
+- cmd: cd ~/dotfiles/
+  when: 1740512508
+    - ~/dotfiles/
+- cmd: eza -a --color always --long --git --no-filesize --icons always --no-time --no-user
+  when: 1740512525
+- cmd: nano  /etc/default/grub
+  when: 1740512613
+- cmd: s nano  /etc/default/grub
+  when: 1740512698
+- cmd: ug
+  when: 1740512717
+- cmd: sn /etc/pacman.conf
+  when: 1740512755
+    - /etc/pacman.conf
+- cmd: cd 00inst/
+  when: 1740512811
+- cmd: n 030boot.sh
+  when: 1740512845
+    - 030boot.sh
+- cmd: n dotfiles/00inst/030boot.sh
+  when: 1740512924
+    - dotfiles/00inst/030boot.sh
+- cmd: sn /etc/pacman.conf -l
+  when: 1740512946
+- cmd: n 010confpac.sh
+  when: 1740513666
+    - 010confpac.sh
+- cmd: pacman -Q | rg wlroots
+  when: 1740602327
+- cmd: pss wlroots
+  when: 1740602915
+- cmd: pi wlroots
+  when: 1740602990
+- cmd: pd
+  when: 1740602997
+- cmd: yd
+  when: 1740603001
+- cmd: cd mnt
+  when: 1740611933
+- cmd: cd /mnt
+  when: 1740611946
+    - /mnt
+- cmd: srr 6A14-BB2A/ 24DCEFD8DCEFA1F2/ data/
+  when: 1740612003
+    - data/
+- cmd: s mv dataq/ data/
+  when: 1740612053
+- cmd: sn /etc/default/grub
+  when: 1740684677
+- cmd: n look.conf
+  when: 1740691495
+- cmd: n hyprland.conf
+  when: 1740692933
+    - hyprland.conf
+- cmd: cd gtk-2.0/cdf
+  when: 1740693825
+- cmd: cd gtk-4.0/.config/gtk-4.0/
+  when: 1740693846
+    - gtk-4.0/.config/gtk-4.0/
+- cmd: n settings.ini
+  when: 1740693853
+- cmd: cdf
+  when: 1740693871
+- cmd: stow gtk-4.0/
+  when: 1740693881
+- cmd: cc
+  when: 1740694009
+- cmd: cd uwsm
+  when: 1740694014
+- cmd: n env
+  when: 1740694022
+- cmd: ggg
+  when: 1740694255
+- cmd: chh
+  when: 1740694527
+- cmd: n animations-dynamic.conf
+  when: 1740694550
+    - animations-dynamic.conf
+- cmd: cd bin
+  when: 1740773617
+- cmd: ./gitpull.sh
+  when: 1740773634
+- cmd: n gitpull.sh
+  when: 1740773646
+- cmd: cd -
+  when: 1740778951
+- cmd: su -
+  when: 1740778960
+- cmd: cd atest/
+  when: 1740779269
+    - atest/
+- cmd: l
+  when: 1740779354
+- cmd: ch c
+  when: 1740779380
+    - c
+- cmd: n c
+  when: 1740779644
+- cmd: ./c
+  when: 1740779682
+- cmd: cd
+  when: 1740779724
+- cmd: n .local/share/fish/fish_history
+  when: 1740779779
+    - .local/share/fish/fish_history
+- cmd: b
+  when: 1740779942
+- cmd: t
+  when: 1740780011
+- cmd: g
+  when: 1740781659
+- cmd: y usbimager\n
+  when: 1740949234
+- cmd: cpi l
+  when: 1740949312
+- cmd: bh l
+  when: 1740949317

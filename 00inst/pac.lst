@@ -1,4 +1,18 @@
 lst=(
+xdg-desktop-portal-gtk 
+xdg-desktop-portal-hyprland 
+aquamarine 
+hyprcursor 
+hyprgraphics 
+hypridle 
+hyprland 
+hyprland-protocols 
+hyprland-qt-support 
+hyprland-qtutils 
+hyprlang 
+hyprlock 
+hyprutils
+hyprwayland-scanner
 
 acpi
 arc-gtk-theme

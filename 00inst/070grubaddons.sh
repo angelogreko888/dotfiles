@@ -21,13 +21,15 @@ if [ -f /etc/default/grub ]; then
 
      # Check if rd.driver.blacklist=nouvea is present
      if ! sudo grep -q "rd.driver.blacklist=nouvea" /etc/default/grub; then
-     sudo sed -i -e 's/\(GRUB_CMDLINE_LINUX_DEFAULT=".*\)"/\1 rd.driver.blacklist=nouvea modprob.blacklist=nouvea)/' /etc/default/grub
+     sudo sed -i -e 's/\(GRUB_CMDLINE_LINUX_DEFAULT=".*\)"/\1 rd.driver.blacklist=nouvea modprob.blacklist=nouvea"/' /etc/default/grub
       echo "rd.driver.blacklist=nouvea added to /etc/default/grub" 
+     fi
 
      # Check if apparmor is present
     if ! sudo grep -q "apparmor" /etc/default/grub; then
-    sudo sed -Ei 's/^(GRUB_CMDLINE_LINUX_DEFAULT=\([^\)]*)\)/\1 lsm=landlock,lockdown,yama,integrity,apparmor,bpf)/' /etc/default/grub
+    sudo sed -Ei 's/^(GRUB_CMDLINE_LINUX_DEFAULT=\([^\)]*)\)/\1 lsm=landlock,lockdown,yama,integrity,apparmor,bpf"/' /etc/default/grub
     echo "apparmor  added to /etc/default/grub"  
+    fi
 
     # Regenerate GRUB configuration 
     if sudo grep -q "apparmor" /etc/default/grub || sudo grep -q "nvidia_drm.fbdev=1" /etc/default/grub; then

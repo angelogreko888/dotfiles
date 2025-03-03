@@ -14,7 +14,7 @@ printf "\n\e[1;32mEnter root password: \e[0m"
 read -s rp
 echo root:$rp | chpasswd
 
-pacman -S --needed --noconfirm sudo nano git base-devel efibootmgr grub linux-headers networkmanager wpa_supplicant
+pacman -S --needed --noconfirm wget sudo nano git base-devel efibootmgr grub linux-headers networkmanager wpa_supplicant
 
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
 grub-mkconfig -o /boot/grub/grub.cfg

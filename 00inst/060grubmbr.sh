@@ -14,7 +14,7 @@ printf "\n\e[1;32mEnter root password: \e[0m"
 read -s rp
 echo root:$rp | chpasswd
 
-pacman -S --needed --noconfirm sudo git nano base-devel grub linux-headers networkmanager wpa_supplicant
+pacman -S --needed --noconfirm sudo wget git nano base-devel grub linux-headers networkmanager wpa_supplicant
 
 lsblk
 

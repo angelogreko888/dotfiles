@@ -23,7 +23,6 @@ btop
 cups
 cups-pdf
 dbxtool
-dconf-editor
 dmidecode
 dosfstools
 egl-wayland
@@ -36,11 +35,9 @@ firejail
 firetools
 firefox
 fish
-font-manager
 foot
 fuzzel
 fwupd
-gimp
 git
 gmtp
 gnome-calculator
@@ -60,10 +57,8 @@ intel-ucode
 inxi
 iw
 iwd
-jdk-openjdk
 less
 libpulse
-libreoffice-fresh
 ly
 man-db
 mesa
@@ -91,7 +86,6 @@ rsync
 simple-scan
 slurp
 smartmontools
-sof-firmware
 stow
 swaybg
 swaync

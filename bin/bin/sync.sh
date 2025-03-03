@@ -5,6 +5,10 @@ for i in $(seq 1 99);
 do
   sleep 900
 
+  wget -q --spider http://google.com
+
+  if [ $? -eq 0 ]; then
+
   cd  ~/.config/FreeTube/
   rsync history.db  ~/dotfiles/freetube/.config/FreeTube/history.db
   rsync playlists.db  ~/dotfiles/freetube/.config/FreeTube/playlists.db
@@ -14,5 +18,9 @@ do
 
   cd ~/dotfiles
   git add * && git commit -m "save" && git push -u origin main
+
+  else
+  echo exit 
+  fi
 
 done

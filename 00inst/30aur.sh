@@ -6,7 +6,7 @@ handle_error() {
   }
 
   trap 'handle_error $LINENO' ERR
-
+  exec 2>> ~/log/aurlog
 
 source ~/dotfiles/00inst/aur.lst
 
@@ -18,6 +18,6 @@ done
 
 for PKG in "${lst[@]}";do
         if ! sudo pacman -Q "$PKG" &>/dev/null; then
-	printf "\e[1;31mERROR...Sorry, could not install... $PKG\e[0m\n"
+	printf "\e[1;31mERROR...Sorry, could not install... $PKG\e[0m\n" 2>&1 |tee -a ~/log/aurlog &>/dev/null
    fi
 done

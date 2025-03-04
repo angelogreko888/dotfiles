@@ -14,10 +14,8 @@ cd ~
 
 for PKG in "${lst[@]}";do
         yay -Su --needed --noconfirm "$PKG"
-done
-
-for PKG in "${lst[@]}";do
-        if ! sudo pacman -Q "$PKG" &>/dev/null; then
-	printf "\e[1;31mERROR...Sorry, could not install... $PKG\e[0m\n" 2>&1 |tee -a ~/log/aurlog &>/dev/null
+	 if ! sudo pacman -Q "$PKG" &>/dev/null; then
+        printf "\e[1;31mERROR...Sorry, could not install... $PKG\e[0m\n" 2>&1 |tee -a ~/log/aurlog &>/dev/null
    fi
 done
+

@@ -35,10 +35,12 @@ fi
 
 sudo sed -rie 's/kms//'  /etc/mkinitcpio.conf
 
-sudo mkinitcpio -P
 
 cd ~/git
 
 git clone  https://github.com/Frogging-Family/nvidia-all.git
 cd  nvidia-all/
 makepkg -si 
+
+sudo mkinitcpio -P
+

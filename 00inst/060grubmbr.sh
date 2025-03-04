@@ -16,6 +16,7 @@ done
 
 hwclock --systohc
 sed -i '171s/.//' /etc/locale.gen
+sed -i '172s/.//' /etc/locale.gen
 locale-gen
 echo "LANG=en_US.UTF-8" >> /etc/locale.conf
 echo "greco" >> /etc/hostname
@@ -33,7 +34,7 @@ while true; do
   echo "Please try again"
 done
 
-pacman -S --needed --noconfirm sudo wget git nano base-devel grub linux-headers networkmanager wpa_supplicant
+pacman -S --needed --noconfirm sudo wget git nano base-devel grub linux-headers networkmanager 
 
 lsblk
 

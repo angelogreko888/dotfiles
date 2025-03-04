@@ -15,6 +15,9 @@ $ef
 $mb
 $gr
 )
+
+pacmna -S --needed --noconfirm  wget nano
+
 for SU in "${lst[@]}";do
 	wget $gh$SU
 done

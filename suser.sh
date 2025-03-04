@@ -25,7 +25,7 @@ fi
 bash $is$cp
 bash $is$yy
 
-printf "\n\e[1;32m... Do You Want To Install Nvidia?  ... : \e[0m"
+printf "\n\e[1;32m... Do You Want To Install Nvidia?  ... : \n\e[0m"
 
 select  yn in yes no;do
 	case $yn in
@@ -49,7 +49,7 @@ bash $is$pp
 printf "\n\e[1;32m... press enter to activate hyprland ... : \e[0m"
 read
 hyprland
-sleep 15
+sleep 10
 bash $is$st
 bash $is$at
 

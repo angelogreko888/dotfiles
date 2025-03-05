@@ -1082,3 +1082,7 @@ cat $PATH
 n $PATH
 Sn $PATH
 sn $PATH
+select  cn in Israel Cyprus;
+select  cn in Israel Cyprus;  c
+select  cn in Israel Cyprus; s
+select  cn in Israel Cyprus; k

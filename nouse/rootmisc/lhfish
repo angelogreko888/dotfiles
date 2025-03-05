@@ -302,7 +302,6 @@
 - cmd: ./bup
 - cmd: y fmc-1910w
 - cmd: y mfc-1910w
-- cmd: sn /etc/locale.gen
 - cmd: sv /etc/locale.gen
 - cmd: sv /etc/localtime
 - cmd: :q
@@ -463,11 +462,9 @@
 - cmd: s mkinitcpio -P
 - cmd: n kanshi
 - cmd: n
-- cmd: u
 - cmd: ts
 - cmd: n active.sh
 - cmd: n nvidia.sh
-- cmd: ff
 - cmd: h | rg pi
 - cmd: w acpi
 - cmd: ctl status acpi
@@ -568,7 +565,6 @@
 - cmd: lo
 - cmd: lo cachy
 - cmd: rr /home/vago/.cachy
-- cmd: lk
 - cmd: h |rg vb
 - cmd: reboot
 - cmd: s modprobe vboxdrv
@@ -700,8 +696,6 @@
   when: 1738760423
 - cmd: n fish_history
   when: 1738760511
-- cmd: ..
-  when: 1738760591
 - cmd: rm fish/
   when: 1738760654
 - cmd: rm fish
@@ -737,8 +731,6 @@
   when: 1738957302
 - cmd: ./bh l
   when: 1738957313
-- cmd: bash
-  when: 1738957431
 - cmd: cat $PATH
   when: 1738957595
 - cmd: CD
@@ -1243,9 +1235,6 @@
   when: 1740262545
 - cmd: ./array
   when: 1740262565
-- cmd: cd ~/atest/
-  when: 1740262645
-    - ~/atest/
 - cmd: nano  pacages.lst
   when: 1740262651
     - pacages.lst
@@ -1322,11 +1311,6 @@
 - cmd: sn /etc/pacman.conf
   when: 1740512755
     - /etc/pacman.conf
-- cmd: cd 00inst/
-  when: 1740512811
-- cmd: n 030boot.sh
-  when: 1740512845
-    - 030boot.sh
 - cmd: n dotfiles/00inst/030boot.sh
   when: 1740512924
     - dotfiles/00inst/030boot.sh
@@ -1369,8 +1353,6 @@
     - gtk-4.0/.config/gtk-4.0/
 - cmd: n settings.ini
   when: 1740693853
-- cmd: cdf
-  when: 1740693871
 - cmd: stow gtk-4.0/
   when: 1740693881
 - cmd: cc
@@ -1379,35 +1361,20 @@
   when: 1740694014
 - cmd: n env
   when: 1740694022
-- cmd: ggg
-  when: 1740694255
 - cmd: chh
   when: 1740694527
 - cmd: n animations-dynamic.conf
   when: 1740694550
     - animations-dynamic.conf
-- cmd: cd bin
-  when: 1740773617
-- cmd: ./gitpull.sh
-  when: 1740773634
 - cmd: n gitpull.sh
   when: 1740773646
 - cmd: cd -
   when: 1740778951
 - cmd: su -
   when: 1740778960
-- cmd: cd atest/
-  when: 1740779269
-    - atest/
-- cmd: l
-  when: 1740779354
 - cmd: ch c
   when: 1740779380
     - c
-- cmd: n c
-  when: 1740779644
-- cmd: ./c
-  when: 1740779682
 - cmd: cd
   when: 1740779724
 - cmd: n .local/share/fish/fish_history
@@ -1417,11 +1384,148 @@
   when: 1740779942
 - cmd: t
   when: 1740780011
-- cmd: g
-  when: 1740781659
 - cmd: y usbimager\n
   when: 1740949234
 - cmd: cpi l
   when: 1740949312
 - cmd: bh l
   when: 1740949317
+- cmd: librewolf://gpu
+  when: 1740950642
+- cmd: lk
+  when: 1740955079
+- cmd: gd
+  when: 1740955229
+- cmd: ff
+  when: 1740955265
+- cmd: cd bin
+  when: 1741029913
+- cmd: ./gitpull.sh
+  when: 1741029923
+- cmd: u
+  when: 1741029948
+- cmd: select  cn in Israel Cyprus;
+  when: 1741030280
+- cmd: select  cn in Israel Cyprus
+  when: 1741030320
+- cmd: bash
+  when: 1741030330
+- cmd: cd ~/atest/
+  when: 1741030420
+    - ~/atest/
+- cmd: pss ell
+  when: 1741039423
+- cmd: pss ell | rg extra/ell
+  when: 1741039479
+- cmd: cdf
+  when: 1741119537
+- cmd: g
+  when: 1741120216
+- cmd: cd atest/
+  when: 1741120685
+    - atest/
+- cmd: l
+  when: 1741120688
+- cmd: ./c
+  when: 1741121383
+- cmd: n c
+  when: 1741121413
+- cmd: sn /etc/locale.gen
+  when: 1741122133
+- cmd: n 060grubmbr.sh
+  when: 1741122178
+    - 060grubmbr.sh
+- cmd: ggg
+  when: 1741122357
+- cmd: n 030boot.sh
+  when: 1741122569
+    - 030boot.sh
+- cmd: n 050grubefi.sh
+  when: 1741122810
+    - 050grubefi.sh
+- cmd: ..
+  when: 1741122956
+- cmd: n sroot.sh
+  when: 1741122963
+    - sroot.sh
+- cmd: n suser.sh
+  when: 1741123085
+    - suser.sh
+- cmd: cd 00inst/
+  when: 1741123188
+  when: 1741123193
+- cmd: s reflector --latest 5 --sort rate --country Israel --protocol https --verbose
+  when: 1741123252
+- cmd: s reflector --latest 5 --sort rate --country Israel --protocol https --verbose --save /etc/pacman.d/mirrorlist
+  when: 1741123301
+    - /etc/pacman.d/mirrorlist
+- cmd: sn /etc/pacman.d/mirrorlist
+  when: 1741123392
+- cmd: s  reflector --latest 5 --sort rate  --country Greece,Tr,Israel,Germany,'United Kingdom'
+  when: 1741123459
+  when: 1741123511
+  when: 1741123576
+  when: 1741124284
+  when: 1741124317
+    - /etc/locale.gen
+  when: 1741125566
+  when: 1741125569
+    - 00inst/
+- cmd: n 020confpac-usr.sh
+  when: 1741125575
+    - 020confpac-usr.sh
+- cmd: n 090nvidia.sh
+  when: 1741125936
+    - 090nvidia.sh
+- cmd: n 20pac.sh
+  when: 1741126202
+    - 20pac.sh
+- cmd: n 30aur.sh
+  when: 1741126428
+    - 30aur.sh
+  when: 1741127485
+- cmd: n aur.lst
+  when: 1741127834
+- cmd: n pac.lst
+  when: 1741127877
+- cmd: rm uaur.sh upac.sh
+  when: 1741127943
+    - uaur.sh
+    - upac.sh
+  when: 1741127945
+  when: 1741127947
+  when: 1741127952
+  when: 1741127956
+- cmd: cd ff
+  when: 1741132227
+  when: 1741132232
+  when: 1741132235
+  when: 1741134123
+- cmd: pss usb disk formater
+  when: 1741209043
+- cmd: pss usb
+  when: 1741209065
+- cmd: pss mintstick
+  when: 1741210181
+- cmd: y mintstick
+  when: 1741210195
+  when: 1741210266
+- cmd: sudo -sE mintstick.py
+  when: 1741210337
+  when: 1741210400
+- cmd: USB Image Writer
+  when: 1741210528
+- cmd: sudo -sE mintstick
+  when: 1741210647
+- cmd: sudo -sE mintstick -m format
+  when: 1741210718
+- cmd: af
+  when: 1741210751
+- cmd: fish
+  when: 1741210836
+- cmd: mf
+  when: 1741210840
+- cmd: mi
+  when: 1741210855
+  when: 1741210985
+  when: 1741210990

@@ -34,7 +34,7 @@ while true; do
   echo "Please try again"
 done
 
-pacman -S --needed --noconfirm wget git sudo nano base-devel linux-headers networkmanager wpa_supplicant
+pacman -Sy --needed --noconfirm wget git sudo nano base-devel linux-headers networkmanager wpa_supplicant
 
 bootctl --path=/boot install
 

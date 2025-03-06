@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-pacma -Sy --needed --noconfirm reflector
+pacman -Sy --needed --noconfirm reflector
 
 pacman_conf="/etc/pacman.conf"
 

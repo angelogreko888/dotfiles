@@ -34,7 +34,7 @@ while true; do
   echo "Please try again"
 done
 
-pacman -S --needed --noconfirm wget sudo nano git base-devel efibootmgr grub linux-headers networkmanager wpa_supplicant
+pacman -Sy --needed --noconfirm wget sudo nano git base-devel efibootmgr grub linux-headers networkmanager wpa_supplicant
 
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
 grub-mkconfig -o /boot/grub/grub.cfg

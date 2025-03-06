@@ -12,6 +12,8 @@ at="99active.sh"
 
 cd ~
 
+sudo pacman -Sy --needed --noconfirm git nano 
+
 mkdir ~/log
 touch ~/log/paclog aurlog
 

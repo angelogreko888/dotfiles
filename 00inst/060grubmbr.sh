@@ -15,8 +15,8 @@ select  cn in Israel Cyprus;do
 done
 
 hwclock --systohc
-sed -i '171s/.//' /etc/locale.gen
-sed -i '172s/.//' /etc/locale.gen
+sed -i '171s/#//' /etc/locale.gen
+sed -i '172s/#//' /etc/locale.gen
 locale-gen
 echo "LANG=en_US.UTF-8" >> /etc/locale.conf
 echo "greco" >> /etc/hostname

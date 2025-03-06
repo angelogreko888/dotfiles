@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+pacma -Sy --needed --noconfirm reflector
+
 pacman_conf="/etc/pacman.conf"
 
 # Remove comments '#' from specific lines

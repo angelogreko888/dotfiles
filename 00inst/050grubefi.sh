@@ -35,8 +35,9 @@ while true; do
 done
 
 pacman -Sy --needed --noconfirm wget sudo nano git base-devel efibootmgr grub linux-headers networkmanager wpa_supplicant
-
+sed -i 's/GRUB_TIMEOUT=5/GRUB_TIMEOUT=1/' /etc/default/grub
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
+
 grub-mkconfig -o /boot/grub/grub.cfg
 
 useradd -m vago

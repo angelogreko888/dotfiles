@@ -34,7 +34,7 @@ while true; do
   echo "Please try again"
 done
 
-pacman -S --needed --noconfirm sudo wget git nano base-devel grub linux-headers networkmanager 
+pacman -Sy --needed --noconfirm sudo wget git nano base-devel grub linux-headers networkmanager 
 
 lsblk
 
@@ -42,6 +42,7 @@ printf "\n\e[1;32mEnter hdd name: \e[0m"
 read hd
 
 grub-install --target=i386-pc /dev/$hd
+sed -i 's/GRUB_TIMEOUT=5/GRUB_TIMEOUT=1/' /etc/default/grub
 grub-mkconfig -o /boot/grub/grub.cfg
 
 useradd -m vago

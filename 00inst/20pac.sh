@@ -6,7 +6,7 @@ handle_error() {
   }
 
   trap 'handle_error $LINENO' ERR
-  exec 2 >> ~/log/paclog
+  exec 2>> ~/log/paclog
 
 source ~/dotfiles/00inst/pac.lst
 

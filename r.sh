@@ -16,7 +16,7 @@ $mb
 $gr
 )
 
-pacmna -Sy --needed --noconfirm  wget nano reflector
+pacman -Sy --needed --noconfirm  wget nano reflector
 
 for SU in "${lst[@]}";do
 	wget $gh$SU

@@ -16,7 +16,7 @@ $mb
 $gr
 )
 
-pacmna -S --needed --noconfirm  wget nano
+pacmna -Sy --needed --noconfirm  wget nano reflector
 
 for SU in "${lst[@]}";do
 	wget $gh$SU
@@ -40,15 +40,15 @@ select  bm in boot efi mbr;do
 			break ;;
 		efi)
 			bash $ef 
-			bash $gr 
+#			bash $gr 
 			break ;;
 		mbr)
 			bash $mb 
-			bash $gr 
+#			bash $gr 
 			break ;;
 		*)
 		printf "\n\e[1;31m... !!! ERROR Enter Your Choice !!! ... \e[0m" >&2
 	esac
 done
 
-printf "\n\n\e[1;32m ... Done Root Setup! Type exit, umount -a and reboot ...\e[0m"
+printf "\n\n\e[1;32m ... Done Root Setup! Type exit, umount -a and reboot ...\n\n\e[0m"

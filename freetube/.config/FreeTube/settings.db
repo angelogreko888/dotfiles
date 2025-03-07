@@ -17,3 +17,4 @@
 {"_id":"quickBookmarkTargetPlaylistId","value":"favorites"}
 {"_id":"region","value":"GR"}
 {"_id":"secColor","value":"Green"}
+{"_id":"defaultVideoFormat","value":"dash"}

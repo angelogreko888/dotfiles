@@ -65,6 +65,41 @@ fi
 #firejail
 sudo firecfg
 
+# Check if /etc/default/grub exists
+if [ -f /etc/default/grub ]; then
+     # Check if apparmor is present
+    if ! sudo grep -q "apparmor" /etc/default/grub; then
+    sudo sed -Ei 's/^(GRUB_CMDLINE_LINUX_DEFAULT=\([^\)]*)\)/\1 lsm=landlock,lockdown,yama,integrity,apparmor,bpf"/' /etc/default/grub
+    echo "apparmor  added to grub"  
+    fi
+
+    # Regenerate GRUB configuration 
+    if sudo grep -q "apparmor" /etc/default/grub; then
+        sudo grub-mkconfig -o /boot/grub/grub.cfg
+    fi
+
+else
+    echo "grub does not exist"
+fi
+
+# Check if arch.comf exists
+if [ -f /boot/loader/entries/arch.conf ]; then
+     # Check if apparmor is present
+    if ! sudo grep -q "apparmor"  /boot/loader/entries/arch.conf; then
+    sudo sed -Ei 's/^(options\([^\)]*)\)/\1 lsm=landlock,lockdown,yama,integrity,apparmor,bpf"/'  /boot/loader/entries/arch.conf
+    echo "apparmor  added to arch.conf"  
+    fi
+
+    # Regenerate GRUB configuration 
+    if sudo grep -q "apparmor"  /boot/loader/entries/arch.conf; then
+        sudo grub-mkconfig -o /boot/grub/grub.cfg
+    fi
+
+else
+    echo "arch.conf does not exist"
+fi
+
+
 #fish
 chsh -s /usr/bin/fish
 

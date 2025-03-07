@@ -6,7 +6,6 @@ handle_error() {
   }
 
   trap 'handle_error $LINENO' ERR
-  exec 2>> ~/log/paclog
 
 source ~/dotfiles/00inst/pac.lst
 
@@ -20,14 +19,14 @@ for PKG in "${lst[@]}";do
    	fi
 done
 
-
-printf "\n\e[1;32m... Do You Want To Install kanshi?  ... : \e[0m"
-select  yn in yes no;do
-	case $yn in
+for PLST in "${plst[@]}";do
+	printf "\n\e[1;32m... Do You Want To Install "$PLST"  ?  ... : \n\e[0m"
+	select  yn in yes no;do
+		case $yn in
 		yes)
-			sudo pacman -Su --needed --noconfirm kanshi
-			if ! sudo pacman -Q kanshi &>/dev/null; then
-                  	      printf "\e[1;31mERROR...Sorry, could not install... kanshi \e[0m\n" 2>&1 |tee -a ~/log/paclog &>/dev/null
+			sudo pacman -Su --needed --noconfirm "$PLST"
+			if ! pacman -Q kanshi &>/dev/null; then
+                  	      printf "\e[1;31mERROR...Sorry, could not install... "$PLST" \e[0m\n" 2>&1 |tee -a ~/log/paclog &>/dev/null
         		fi
 			break ;;
 		no)
@@ -35,22 +34,6 @@ select  yn in yes no;do
 			break ;;
 		*)
 			printf "\n\e[1;31m... !!! ERROR Enter Your Choice !!! ... \e[0m" >&2
-	esac
-done
-
-printf "\n\e[1;32m... Do You Want To Install zram?  ... : \e[0m"
-select  yn in yes no;do
-        case $yn in
-                yes)
-                        sudo pacman -Su --needed --noconfirm zram-generator 
-                        if ! sudo pacman -Q zram-generator  &>/dev/null; then
-                              printf "\e[1;31mERROR...Sorry, could not install... zram \e[0m\n" 2>&1 |tee -a ~/log/paclog &>/dev/null
-                        fi
-                        break ;;
-                no)
-                        printf "\n\e[1;32m... OK ... : \n\e[0m"
-                        break ;;
-                *)
-                        printf "\n\e[1;31m... !!! ERROR Enter Your Choice !!! ... \e[0m" >&2
-        esac
+		esac
+	done
 done

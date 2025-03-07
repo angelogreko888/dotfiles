@@ -24,17 +24,11 @@ echo "127.0.0.1 localhost" >> /etc/hosts
 echo "::1       localhost" >> /etc/hosts
 echo "127.0.1.1 greco.localdomain greco" >> /etc/hosts
 
-printf "\n\e[1;32mEnter Root password \n\e[0m"
-while true; do
-  read -s -p "Password: " rp
-  echo
-  read -s -p "Password (again): " rpr
-  echo
-  [ "$rp" = "$rpr" ] &&  echo root:$rp | chpasswd && break
-  echo "Please try again"
-done
+printf "\n\e[1;32m.....Enter Root password :\e[0m"
+read rp
+echo root:$rp | chpasswd 
 
-pacman -Sy --needed --noconfirm wget git sudo nano base-devel linux-headers networkmanager wpa_supplicant
+pacman -Sy --needed --noconfirm  git sudo nano linux-headers networkmanager wpa_supplicant
 
 bootctl --path=/boot install
 
@@ -58,15 +52,9 @@ options root=UUID=$uid  rw quiet splash nvidia-drm.modeset=1 nvidia_drm.fbdev=1 
 
 useradd -m vago
 
-printf "\n\e[1;32mEnter User password \n\e[0m"
-while true; do
-  read -s -p "Password: " up
-  echo
-  read -s -p "Password (again): " upr
-  echo
-  [ "$up" = "$upr" ] &&  echo root:$up | chpasswd && break
-  echo "Please try again"
-done
+printf "\n\e[1;32m.....Enter User password: \e[0m"
+read up
+echo root:$up | chpasswd
 
 echo "vago ALL=(ALL) ALL" >> /etc/sudoers.d/vago
 echo "Defaults  timestamp_timeout=999" >> /etc/sudoers.d/vago

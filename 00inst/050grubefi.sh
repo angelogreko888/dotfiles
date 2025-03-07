@@ -24,33 +24,21 @@ echo "127.0.0.1 localhost" >> /etc/hosts
 echo "::1       localhost" >> /etc/hosts
 echo "127.0.1.1 greco.localdomain greco" >> /etc/hosts
 
-printf "\n\e[1;32mEnter Root password \n\e[0m"
-while true; do
-  read -s -p "Password: " rp
-  echo
-  read -s -p "Password (again): " rpr
-  echo
-  [ "$rp" = "$rpr" ] &&  echo root:$rp | chpasswd && break
-  echo "Please try again"
-done
+printf "\n\e[1;32m.....Enter Root password :\e[0m"
+read rp
+echo root:$rp | chpasswd 
 
-pacman -Sy --needed --noconfirm wget sudo nano git base-devel efibootmgr grub linux-headers networkmanager wpa_supplicant
-sed -i 's/GRUB_TIMEOUT=5/GRUB_TIMEOUT=1/' /etc/default/grub
+pacman -Sy --needed --noconfirm sudo nano git  efibootmgr grub linux-headers networkmanager wpa_supplicant
+
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
-
+sed -i 's/GRUB_TIMEOUT=5/GRUB_TIMEOUT=1/' /etc/default/grub
 grub-mkconfig -o /boot/grub/grub.cfg
 
 useradd -m vago
 
-printf "\n\e[1;32mEnter User password \n\e[0m"
-while true; do
-  read -s -p "Password: " up
-  echo
-  read -s -p "Password (again): " upr
-  echo
-  [ "$up" = "$upr" ] &&  echo root:$up | chpasswd && break
-  echo "Please try again"
-done
+printf "\n\e[1;32m.....Enter User password: \e[0m"
+read up
+echo root:$up | chpasswd
 
 echo "vago ALL=(ALL) ALL" >> /etc/sudoers.d/vago
 echo "Defaults  timestamp_timeout=999" >> /etc/sudoers.d/vago

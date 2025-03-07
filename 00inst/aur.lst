@@ -9,9 +9,13 @@ libglade
 librewolf-bin
 simple-mtpfs
 hyprshot
+mintstick
+
+)
+
+alst=(
 freetube-git
 android-sdk-platform-tools
 anydesk-bin
-mintstick
 
 )

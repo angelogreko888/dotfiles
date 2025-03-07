@@ -9,40 +9,32 @@ fstrim.timer
 ufw
 avahi-daemon
 upower
-nvidia-suspend.service
-nvidia-hibernate.service
-nvidia-resume.service
 systemd-resolved.service
 apparmor.service
 
 )
 
+nv=(
+nvidia-suspend.service
+nvidia-hibernate.service
+nvidia-resume.service
+
+)
+
+
 #zram
+if pacman -Q zram-generator ;then
 echo "
 [zram0]
 zram-size = min(ram / 2)
 compression-algorithm = zstd
 " | sudo tee /etc/systemd/zram-generator.conf
-
-echo "Done zram!"
+fi
 
 #icons & fonts
-if [ -d /usr/share/icons/buuf-nestort/ ];then
-	echo "buuf exists"
-else
-	sudo cp -r  ~/dotfiles/nouse/icons/buuf-nestort  /usr/share/icons/
-	echo "buuf copied!!!"
-fi
-
-if [ -d /usr/share/icons/radioactive-yellow/ ];then
-	echo "yellow exists"
-else
-	sudo cp -r  ~/dotfiles/nouse/icons/radioactive-yellow /usr/share/icons/ 
-	echo "yellow copied!!!"
-fi
-
+sudo cp -r  ~/dotfiles/nouse/icons/buuf-nestort  /usr/share/icons/
+sudo cp -r  ~/dotfiles/nouse/icons/radioactive-yellow /usr/share/icons/ 
 sudo cp ~/dotfiles/nouse/fonts/NotoColorEmoji-flagsonly.ttf /usr/share/fonts 
-echo "flags copied!!!"
 
 #input group
 if grep -q '^input:' /etc/group; then
@@ -62,6 +54,13 @@ for CTL in "${ctl[@]}";do
 	sudo systemctl enable "$CTL"
 	echo ""$CTL" activated"
 done
+
+if pacman -Q nvidia;then 
+	for NV in "${nv[@]}";do
+	        sudo systemctl enable "$NV"
+        	echo ""$NV" activated"
+	done
+fi
 
 #firejail
 sudo firecfg

@@ -4,6 +4,27 @@ lsblk
 
 printf "\n\e[1;32mEnter Root directory name: \e[0m"
 read rt
+mount /dev/nvme0n1$rt /mnt
+
+printf "\e[1;32m.......swap?: \n\e[0m"
+select  yn in yes no;do
+        case $yn in
+        yes) 
+                printf "\n\e[1;32mEnter swap directory name: \e[0m"
+                read sw
+		mkswap /dev/nvme0n1$sw 
+		swapon /dev/nvme0n1$sw 
+                break ;;
+        no) 
+                printf "\n\e[1;32mNo swap directory \n\e[0m"
+                break ;;
+        *) 
+                printf "\n\e[1;31m... !!! ERROR Enter Your Choice !!! ... \e[0m" >&2
+        esac
+done
+
+printf "\n\e[1;32mEnter Root directory name: \e[0m"
+read rt
 mount /dev/$rt /mnt
 
 printf "\e[1;32m.......boot?: \n\e[0m"
@@ -12,7 +33,7 @@ select  yn in yes no;do
         yes) 
 		printf "\n\e[1;32mEnter Boot directory name: \e[0m"
 		read bd
-		mount /dev/$bd /mnt/boot 
+		mount /dev/nvme0n1$bd /mnt/boot 
                 break ;;
         no) 
 		printf "\n\e[1;32mNo Boot directory \n\e[0m"
@@ -28,7 +49,7 @@ select  yn in yes no;do
         yes) 
 		printf "\n\e[1;32mEnter Home directory name: \e[0m"
 		read hm
-		mount /dev/$hm /mnt/home
+		mount /dev/nvme0n1$hm /mnt/home
                 break ;;
         no) 
                 printf "\n\e[1;32mNo Home directory \n\e[0m"
@@ -43,8 +64,8 @@ select  yn in yes no;do
         case $yn in
         yes) 
                 printf "\n\e[1;32mEnter vt directory name: \e[0m"
-                read hm
-                mount /dev/$hm /mnt/vt
+                read vt
+                mount /dev/nvme0n1$vt /mnt/vt
                 break ;;
         no) 
                 printf "\n\e[1;32mNo vt directory \n\e[0m"

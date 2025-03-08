@@ -31,7 +31,7 @@ select  yn in yes no;do
         yes) 
 		printf "\n\e[1;32mEnter Boot directory name: \e[0m"
 		read bd
-                printf "\n\e[1;32m... confirm swap : "$bd" \e[0m"
+                printf "\n\e[1;32m... confirm boot : $bd" \e[0m"
                 read
 		mount /dev/nvme0n1p$bd /mnt/boot 
                 break ;;
@@ -49,7 +49,7 @@ select  yn in yes no;do
         yes) 
 		printf "\n\e[1;32mEnter Home directory name: \e[0m"
 		read hm
-                printf "\n\e[1;32m... confirm swap : "$hm" \e[0m"
+                printf "\n\e[1;32m... confirm home : "$hm" \e[0m"
                 read
 		mount /dev/nvme0n1p$hm /mnt/home
                 break ;;
@@ -67,7 +67,7 @@ select  yn in yes no;do
         yes) 
                 printf "\n\e[1;32mEnter vt directory name: \e[0m"
                 read vt
-                printf "\n\e[1;32m... confirm swap : "$vt" \e[0m"
+                printf "\n\e[1;32m... confirm vt : "$vt" \e[0m"
                 read
                 mount /dev/nvme0n1p$vt /mnt/vt
                 break ;;

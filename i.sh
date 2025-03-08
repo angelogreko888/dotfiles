@@ -8,6 +8,26 @@ read rt
 mkfs.ext4 /dev/nvme0n1p$rt 
 mount /dev/nvme0n1p$rt /mnt
 
+printf "\e[1;32m.......boot?: \n\e[0m"
+select  yn in yes no;do
+        case $yn in
+        yes) 
+		printf "\n\e[1;32mEnter Boot directory name: \e[0m"
+		read bd
+                printf "\n\e[1;32m... confirm boot : $bd" \e[0m"
+                read
+		mkfs.fat -F32 /dev/nvme0n1p$bd
+		mount --mkdir /dev/nvme0n1p$bd /mnt/boot 
+                break ;;
+        no) 
+		printf "\n\e[1;32mNo Boot directory \n\e[0m"
+                break ;;
+        *) 
+                printf "\n\e[1;31m... !!! ERROR Enter Your Choice !!! ... \e[0m" >&2
+        esac
+done
+
+
 printf "\e[1;32m.......swap?: \n\e[0m"
 select  yn in yes no;do
         case $yn in
@@ -27,24 +47,6 @@ select  yn in yes no;do
         esac
 done
 
-printf "\e[1;32m.......boot?: \n\e[0m"
-select  yn in yes no;do
-        case $yn in
-        yes) 
-		printf "\n\e[1;32mEnter Boot directory name: \e[0m"
-		read bd
-                printf "\n\e[1;32m... confirm boot : $bd" \e[0m"
-                read
-		mkfs.fat -F32 /dev/nvme0n1p$bd
-		mount --mkdir /dev/nvme0n1p$bd /mnt/boot 
-                break ;;
-        no) 
-		printf "\n\e[1;32mNo Boot directory \n\e[0m"
-                break ;;
-        *) 
-                printf "\n\e[1;31m... !!! ERROR Enter Your Choice !!! ... \e[0m" >&2
-        esac
-done
 
 printf "\e[1;32m.......home?: \n\e[0m"
 select  yn in yes no;do

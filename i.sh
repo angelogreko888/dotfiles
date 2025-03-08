@@ -2,8 +2,10 @@
 
 lsblk
 
+
 printf "\n\e[1;32mEnter Root directory name: \e[0m"
 read rt
+mkfs.ext4 /dev/nvme0n1p$rt 
 mount /dev/nvme0n1p$rt /mnt
 
 printf "\e[1;32m.......swap?: \n\e[0m"
@@ -33,7 +35,8 @@ select  yn in yes no;do
 		read bd
                 printf "\n\e[1;32m... confirm boot : $bd" \e[0m"
                 read
-		mount /dev/nvme0n1p$bd /mnt/boot 
+		mkfs.fat -F32 /dev/nvme0n1p$bd
+		mount --mkdir /dev/nvme0n1p$bd /mnt/boot 
                 break ;;
         no) 
 		printf "\n\e[1;32mNo Boot directory \n\e[0m"
@@ -51,7 +54,8 @@ select  yn in yes no;do
 		read hm
                 printf "\n\e[1;32m... confirm home : "$hm" \e[0m"
                 read
-		mount /dev/nvme0n1p$hm /mnt/home
+		mkfs.ext4 /dev/nvme0n1p$hm
+		mount --mkdir /dev/nvme0n1p$hm /mnt/home
                 break ;;
         no) 
                 printf "\n\e[1;32mNo Home directory \n\e[0m"
@@ -69,7 +73,8 @@ select  yn in yes no;do
                 read vt
                 printf "\n\e[1;32m... confirm vt : "$vt" \e[0m"
                 read
-                mount /dev/nvme0n1p$vt /mnt/vt
+		mkfs.ext4 /dev/nvme0n1p$vt
+                mount --mkdir /dev/nvme0n1p$vt /mnt/vt
                 break ;;
         no) 
                 printf "\n\e[1;32mNo vt directory \n\e[0m"
@@ -92,7 +97,3 @@ nano /mnt/etc/fstab
 
 arch-chroot /mnt
 
-printf "\e[1;32m.......enter to continue?: \n\e[0m"
-read 
-
-bash <(curl -s https://raw.githubusercontent.com/angelogreko888/dotfiles/main/r.sh)

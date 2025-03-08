@@ -31,7 +31,7 @@ bash $cp
 
 printf "\n\e[1;32m... Enter your choice ... : \n\e[0m"
 
-select  bm in boot efi mbr;do
+select  bm in boot efi gpt;do
 	case $bm in
 		boot)
 			bash $bt 
@@ -39,7 +39,7 @@ select  bm in boot efi mbr;do
 		efi)
 			bash $ef 
 			break ;;
-		mbr)
+		gpt)
 			bash $mb 
 			break ;;
 		*)

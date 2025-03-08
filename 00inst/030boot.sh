@@ -42,8 +42,6 @@ blkid
 printf "\n\e[1;32m..... enter root : \e[0m"
 read rd
 
-uid=blkid | grep $rd | awk '{print $2}' | cut -b 7-42 
-
 echo "
 default  arch.conf
 timeout  0
@@ -56,8 +54,10 @@ title   Arch Linux
 linux   /vmlinuz-linux
 initrd  /intel-ucode.img
 initrd  /initramfs-linux.img
-options root=UUID=$uid  rw quiet splash nvidia-drm.modeset=1 nvidia_drm.fbdev=1 rd.driver.blacklist=nouveau modprob.blacklist=nouveau lsm=landlock,lockdown,yama,integrity,apparmor,bpf
+options root=UUID=  rw quiet splash nvidia-drm.modeset=1 nvidia_drm.fbdev=1 rd.driver.blacklist=nouveau modprob.blacklist=nouveau lsm=landlock,lockdown,yama,integrity,apparmor,bpf
 " | tee /boot/loader/entries/arch.conf
+
+echo $(blkid | grep $rd | awk '{print $2}' | cut -b 7-42) | tee -a /boot/loader/entries/arch.conf
 
 useradd -m vago
 
@@ -73,3 +73,4 @@ systemctl enable systemd-boot-update.service
 
 cat /boot/loader/entries/arch.conf | grep options
 
+echo "exit umount  reboot"

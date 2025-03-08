@@ -32,8 +32,17 @@ pacman -Sy --needed --noconfirm  git sudo nano linux-headers networkmanager wpa_
 
 bootctl --path=/boot install
 
-printf "\n\e[1;32mEnter UUID: \e[0m"
-read uid
+if ! [ -d  /boot/loader/ ];then
+	printf "\n\e[1;31m..... ERROR.... loader does not exist: \e[0m"
+	exit 1
+fi
+
+blkid
+
+printf "\n\e[1;32m..... enter root : \e[0m"
+read rd
+
+uid=blkid | grep $rd | awk '{print $2}' | cut -b 7-42 
 
 echo "
 default  arch.conf

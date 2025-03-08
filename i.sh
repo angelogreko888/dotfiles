@@ -14,7 +14,7 @@ select  yn in yes no;do
         yes) 
 		printf "\n\e[1;32mEnter Boot directory name: \e[0m"
 		read bd
-                printf "\n\e[1;32m... confirm boot : $bd" \e[0m"
+                printf "\n\e[1;32m... confirm boot : "$bd" \e[0m"
                 read
 		mkfs.fat -F32 /dev/nvme0n1p$bd
 		mount --mkdir /dev/nvme0n1p$bd /mnt/boot 

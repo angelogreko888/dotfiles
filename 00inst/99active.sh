@@ -11,6 +11,7 @@ avahi-daemon
 upower
 systemd-resolved.service
 apparmor.service
+paccache.timer 
 
 )
 

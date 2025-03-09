@@ -14,8 +14,7 @@ mintstick
 )
 
 alst=(
-#freetube-git
 android-sdk-platform-tools
 anydesk-bin
-
+freetube-git
 )

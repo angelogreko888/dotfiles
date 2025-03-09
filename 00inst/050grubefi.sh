@@ -38,7 +38,7 @@ useradd -m vago
 
 printf "\n\e[1;32m.....Enter User password: \e[0m"
 read up
-echo root:$up | chpasswd
+echo vago:$up | chpasswd
 
 echo "vago ALL=(ALL) ALL" >> /etc/sudoers.d/vago
 echo "Defaults  timestamp_timeout=999" >> /etc/sudoers.d/vago

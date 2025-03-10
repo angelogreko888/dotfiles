@@ -15,7 +15,7 @@ cd ~
 for PKG in "${lst[@]}";do
         sudo pacman -Su --needed --noconfirm "$PKG"
 	if ! sudo pacman -Q "$PKG" &>/dev/null; then
-         	printf "\e[1;31mERROR...Sorry, could not install... $PKG\e[0m\n" 2>&1 |tee -a ~/log/paclog &>/dev/null
+         	printf "\e[1;31mERROR...Sorry, could not install... $PKG\e[0m\n" >&2
    	fi
 done
 
@@ -26,7 +26,7 @@ for PLST in "${plst[@]}";do
 		yes)
 			sudo pacman -Su --needed --noconfirm "$PLST"
 			if ! pacman -Q kanshi &>/dev/null; then
-                  	      printf "\e[1;31mERROR...Sorry, could not install... "$PLST" \e[0m\n" 2>&1 |tee -a ~/log/paclog &>/dev/null
+                  	      printf "\e[1;31mERROR...Sorry, could not install... "$PLST" \e[0m\n" >&2
         		fi
 			break ;;
 		no)

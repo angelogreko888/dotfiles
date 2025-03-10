@@ -14,7 +14,7 @@ cd ~
 for PKG in "${lst[@]}";do
         yay -Su --needed --noconfirm "$PKG"
 	 if ! sudo pacman -Q "$PKG" &>/dev/null; then
-        printf "\e[1;31mERROR...Sorry, could not install... $PKG\e[0m\n" 2>&1 |tee -a ~/log/aurlog &>/dev/null
+        printf "\e[1;31mERROR...Sorry, could not install... $PKG\e[0m\n" >&2
    fi
 done
 
@@ -24,8 +24,8 @@ for ALST in "${alst[@]}";do
                 case $yn in
                 yes)
                         sudo pacman -Su --needed --noconfirm "$ALST"
-                        if ! pacman -Q kanshi &>/dev/null; then
-                              printf "\e[1;31mERROR...Sorry, could not install... "$ALST" \e[0m\n" 2>&1 |tee -a ~/log/paclog &>/dev/null
+                        if ! pacman -Q "$ALST" &>/dev/null; then
+                              printf "\e[1;31mERROR...Sorry, could not install... "$ALST" \e[0m\n" >&2
                         fi
                         break ;;
                 no)

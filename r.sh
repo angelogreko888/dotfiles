@@ -10,15 +10,11 @@ pacman -Sy --needed --noconfirm  wget nano reflector
 
 printf "\n\e[1;32m... Enter your choice ... : \n\e[0m"
 
-select  bm in efi boot gpt;do
+select  bm in efi gpt;do
 	case $bm in
 		efi)
                         wget $gh$ef $gh$cp
                         bb=$ef
-			break ;;
-		boot)
-                        wget $gh$bt $gh$cp
-                        bb=$bt 
 			break ;;
 		gpt)
                         wget $gh$gt $gh$cp

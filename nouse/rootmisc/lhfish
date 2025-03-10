@@ -458,7 +458,6 @@
 - cmd: s mkinitcpio -P
 - cmd: n kanshi
 - cmd: n
-- cmd: ts
 - cmd: n active.sh
 - cmd: n nvidia.sh
 - cmd: h | rg pi
@@ -619,14 +618,12 @@
 - cmd: awk -i inplace '!seen[$0]++' com
 - cmd: n com
 - cmd: cp com ~/.bash_history
-- cmd: cd nouse/rootmisc/
 - cmd: rm com
 - cmd: n .bash_history
 - cmd: cd .local/share/fish/
 - cmd: cd generated_completions/
 - cmd: l &| less
 - cmd: rm fish/
-- cmd: rm fish
 - cmd: rr fishlocal/
 - cmd: cd ../bin/
 - cmd: h
@@ -641,7 +638,6 @@
 - cmd: sudo pacman -R - < a
 - cmd: yay art-rawconverter
 - cmd: ./cpinst.sh l
-- cmd: ./bh l
 - cmd: cat $PATH
 - cmd: CD
 - cmd: hyprctl devices | rg keyboard
@@ -735,7 +731,6 @@
 - cmd: mv -i bepac epac.lst
 - cmd: mv -i nvidia.sh envidia.sh
 - cmd: nano  confpac.sh
-- cmd: cd ~/bin
 - cmd: ./gpush.sh
 - cmd: cd ~/.config/uwsm/
 - cmd: nano  env
@@ -900,7 +895,6 @@
 - cmd: chh
 - cmd: n animations-dynamic.conf
 - cmd: n gitpull.sh
-- cmd: cd -
 - cmd: su -
 - cmd: ch c
 - cmd: n .local/share/fish/fish_history
@@ -948,9 +942,7 @@
 - cmd: fish
 - cmd: mf
 - cmd: mi
-- cmd: bh l
 - cmd: n aur.lst
-- cmd: cd misc/
 - cmd: n laur.lst
 - cmd: yui usbimager
 - cmd: yui usbimager-debug
@@ -962,7 +954,6 @@
 - cmd: y floorp
 - cmd: pui firefox
 - cmd: ./gitpull.sh
-- cmd: cdf
 - cmd: n ir.sh
 - cmd: cd nouse/00inst/
 - cmd: mv i.sh r.sh ../../
@@ -1000,12 +991,8 @@
 - cmd: s blkid | grep nvme0n1p2 | awk '{print $2}' | cut -b 7-42
 - cmd: s blkid | grep nvme0n1p2 | awk '{print $2}' | set uid=(cut -b 7-42)
 - cmd: ..
-- cmd: ggg
 - cmd: n i.sh
-- cmd: g
-- cmd: cd
 - cmd: cd atest/
-- cmd: l
 - cmd: nb
 - cmd: n  b
 - cmd: n a
@@ -1026,5 +1013,27 @@
 - cmd: n fish_history
   paths:
     - fish_history
+- cmd: bh l
+- cmd: g
+- cmd: hyprshade off
+- cmd: ggg
+- cmd: ts
 - cmd: cd bin/
+- cmd: cd nouse/rootmisc/
+- cmd: cd
+- cmd: cd -
+- cmd: ./bh l
+- cmd: cat combash >> fish
+    - combash
 - cmd: n bh
+- cmd: awk -i inplace '!seen[$0]++' hfish
+- cmd: awk -i inplace '!seen[$0]++' fish
+    - fish
+- cmd: n fish
+- cmd: cdf
+- cmd: cd misc/
+- cmd: l
+- cmd: rn fish
+- cmd: rm fish
+- cmd: cd ~/bin
+    - bh

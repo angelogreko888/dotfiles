@@ -22,3 +22,6 @@ hyprland
 ./60stow.sh 
 ./99active.sh 
 reboot
+pacman -Q nvidia
+pacman -Q nvidia*
+pacman -Q *nvidia*

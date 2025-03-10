@@ -471,7 +471,6 @@
 - cmd: pss man
 - cmd: pss man-db
 - cmd: pi man-db
-- cmd: gu
 - cmd: ../misc/
 - cmd: cd ../misc/
 - cmd: rm  CanvasBlocker-settings_2025-01-20_21-34-53.json chameleon_1737401664737.json
@@ -506,7 +505,6 @@
 - cmd: lo logind.conf
 - cmd: systemd-analyze cat-config systemd/logind.conf
 - cmd: sn /etc/systemd/logind.conf
-- cmd: n monitor.conf
 - cmd: n config
 - cmd: cd distro/
 - cmd: co lmde-6-cinnamon-64bit.iso
@@ -568,12 +566,9 @@
 - cmd: cd .librewolf/
 - cmd: cd yay/
 - cmd: n installation
-- cmd: yd
-- cmd: pd
 - cmd: cpk
 - cmd: ls -la
 - cmd: n qhfish
-- cmd: ff
 - cmd: s reflector --protocol https --age 12 --country Israel --sort rate --number 10 --verbose
   when: 1738688161
 - cmd: ls -la | grep fish
@@ -1032,8 +1027,6 @@
   when: 1739005249
 - cmd: cd systemd-suspend.service.d/
   when: 1739005379
-- cmd: sn /etc/mkinitcpio.conf
-  when: 1739005587
 - cmd: mkinitcpio --config /etc/mkinitcpio.conf --generate /boot/initramfs-custom.img
   when: 1739005642
 - cmd: sudo  mkinitcpio --config /etc/mkinitcpio.conf --generate /boot/initramfs-custom.img
@@ -1706,8 +1699,6 @@
   when: 1739457718
 - cmd: pacman -Qi nvidia
   when: 1739457750
-- cmd: pacman -Q nvidia
-  when: 1739457761
 - cmd: sudo pacman -Rns linux-lts
   when: 1739457906
 - cmd: pacman -Q | rg linux
@@ -2522,8 +2513,6 @@
   when: 1740030475
 - cmd: pacman -Q | nvidia
   when: 1740030564
-- cmd: pacman -Q | rg nvidia
-  when: 1740030573
 - cmd: cd /etc/pacman.d/
   when: 1740030590
 - cmd: cd hooks/
@@ -2892,8 +2881,6 @@
   when: 1740293052
 - cmd: sudo  mkinitcpio -P
   when: 1740294411
-- cmd: hyprctl monitors all
-  when: 1740294662
 - cmd: lsinitcpio --early /boot/initramfs-linux.img | grep microcode
   when: 1740294760
 - cmd: sudo  journalctl -k
@@ -3012,8 +2999,6 @@
   when: 1740303099
 - cmd: CD vago/
   when: 1740303111
-- cmd: cd vago/
-  when: 1740303119
 - cmd: cd ~/Downloads/
   when: 1740303131
 - cmd: cp -i
@@ -3454,8 +3439,6 @@
   when: 1740497825
 - cmd: n 10pac.sh
   when: 1740497848
-- cmd: ch c
-  when: 1740499284
 - cmd: chmod 660 c
   when: 1740499318
 - cmd: chmod 666 c
@@ -3498,8 +3481,6 @@
   when: 1740554874
 - cmd: mv 80ftube.sh 990ftube.sh
   when: 1740555469
-- cmd: id vago
-  when: 1740555505
 - cmd: id  "$(whoami)"
   when: 1740555595
 - cmd: id  $(whoami)
@@ -3644,8 +3625,6 @@
   when: 1740737902
 - cmd: echo $USER
   when: 1740738052
-- cmd: cd -
-  when: 1740738075
 - cmd: cd root
   when: 1740738216
 - cmd: su -
@@ -3684,8 +3663,6 @@
   when: 1740806597
 - cmd: bash <(curl -s https://raw.githubusercontent.com/angelogreko888/dotfiles/main/00inst/010confpac.sh)
   when: 1740809259
-- cmd: bash
-  when: 1740809290
 - cmd: ch rsetup.sh
   when: 1740811511
 - cmd: ./rsetup.sh
@@ -3726,8 +3703,6 @@
   when: 1740823205
 - cmd: rr dotfiles/
   when: 1740823213
-- cmd: cd ~/atest/
-  when: 1740823307
 - cmd: bash  ~/dotfiles/00inst/011confpac-usr.sh
   when: 1740823643
 - cmd: ./user-setup
@@ -3750,8 +3725,6 @@
   when: 1740835807
 - cmd: wget https://raw.githubusercontent.com/angelogreko888/dotfiles/main/00inst/010confpac.sh
   when: 1740835827
-- cmd: rm 0*
-  when: 1740835858
 - cmd: n user-setup
   when: 1740835878
 - cmd: rm user-setup
@@ -3760,38 +3733,16 @@
   when: 1740835923
 - cmd: c
   when: 1740836048
-- cmd: n 030boot.sh
-  when: 1740836074
-- cmd: n 050grubefi.sh
-  when: 1740836110
-- cmd: n 060grubmbr.sh
-  when: 1740836137
-- cmd: ts
-  when: 1740836190
 - cmd: n rsetup.sh
   when: 1740836485
 - cmd: gg
   when: 1740844935
 - cmd: n user-setup.sh
   when: 1740845178
-- cmd: ggg
-  when: 1740845319
 - cmd: n 10yay.sh
   when: 1740894354
-- cmd: n c
-  when: 1740894542
-- cmd: cd atest/
-  when: 1740894561
-- cmd: ./c
-  when: 1740894565
 - cmd: n root-setup.sh
   when: 1740895557
-- cmd: cpi q
-  when: 1740896576
-- cmd: bh q
-  when: 1740896581
-- cmd: g
-  when: 1740896583
 - cmd: n /etc/pacman.conf.pacnew
   when: 1740896996
 - cmd: mv /etc/pacman.conf /etc/pacman.conf.bup
@@ -3818,8 +3769,6 @@
   when: 1740902174
 - cmd: s cat /mnt/data/distro/archlinux-2025.03.01-x86_64.iso /dev/disk/by-id//usb-USB_SanDisk_3.2Gen1_09012adede7af58d8ce3e5e69851c240103da8251ffb1faa6b6211d4591eed667c120000000000000000000098bbc584ff123020975581072a317b15-0:0
   when: 1740902216
-- cmd: lk
-  when: 1740902265
 - cmd: dd bs=4M if=/mnt/data/distro/archlinux-2025.03.01-x86_64.iso of=/dev/disk/by-id/usb-USB_SanDisk_3.2Gen1_09012adede7af58d8ce3e5e69851c240103da8251ffb1faa6b6211d4591eed667c120000000000000000000098bbc584ff123020975581072a317b15-0:0 conv=fsync oflag=direct status=progress
   when: 1740902593
 - cmd: ls -l /dev/disk/by-id/usb-*
@@ -3904,9 +3853,6 @@
   when: 1741508543
 - cmd: cd 00
   when: 1741508571
-- cmd: n 99active.sh
-  when: 1741508578
-    - 99active.sh
 - cmd: ctl start apparmor.service
   when: 1741508671
 - cmd: ctl status apparmor.service
@@ -3959,67 +3905,263 @@
 - cmd: cp -r vago/ /vt/
   when: 1741509313
     - /vt/
-- cmd: cd /vt
-  when: 1741509321
-- cmd: l
-  when: 1741509384
 - cmd: ./800ftube.sh
   when: 1741509390
-- cmd: chh
-  when: 1741509672
 - cmd: n autostart.conf
   when: 1741509683
-- cmd: cd
-  when: 1741509724
-- cmd: b
-  when: 1741509734
 - cmd: t
   when: 1741509762
 - cmd: systemctl suspend
   when: 1741523082
 - cmd: y freetube-git
   when: 1741531986
-- cmd: cdf
-  when: 1741532000
-- cmd: cd 00inst/
-  when: 1741532003
 - cmd: n aur.lst
   when: 1741532005
-- cmd: ..
-  when: 1741532049
 - cmd: mv ir.sh nouse/00inst/
   when: 1741532064
     - ir.sh
     - nouse/00inst/
+- cmd: cd -
   when: 1741532081
+- cmd: n 030boot.sh
   when: 1741532087
-    - 030boot.sh
+- cmd: n 050grubefi.sh
   when: 1741532140
-    - 050grubefi.sh
+- cmd: n 060grubmbr.sh
   when: 1741532169
-    - 060grubmbr.sh
-  when: 1741532199
-  when: 1741532221
 - cmd: cd vago/pc/pcc/
   when: 1741532236
     - vago/pc/pcc/
-  when: 1741532238
 - cmd: n git
   when: 1741532242
     - git
   when: 1741532268
-  when: 1741532272
 - cmd: git push
   when: 1741532287
-  when: 1741532292
 - cmd: git rm ir.sh
-  when: 1741532301
-  when: 1741532313
   when: 1741532318
-  when: 1741532322
+- cmd: cd /vt
   when: 1741532360
+- cmd: cd vago/
   when: 1741532365
-  when: 1741532367
-  when: 1741532371
+- cmd: cpi q
   when: 1741532429
+- cmd: bh q
   when: 1741532436
+- cmd: comm qpacman.lst ~/dotfiles/misc/qpacman.lst
+  when: 1741536635
+    - qpacman.lst
+    - ~/dotfiles/misc/qpacman.lst
+- cmd: gu
+  when: 1741536772
+- cmd: pacman -Q | rg ufw
+  when: 1741536819
+- cmd: comm qaur.lst ~/dotfiles/misc/qaur.lst
+  when: 1741536861
+    - qaur.lst
+    - ~/dotfiles/misc/qaur.lst
+- cmd: pd
+  when: 1741536968
+- cmd: yd
+  when: 1741536975
+- cmd: ff
+  when: 1741536984
+- cmd: ts
+  when: 1741537126
+- cmd: n m
+  when: 1741537426
+- cmd: cd
+  when: 1741538387
+- cmd: pacman -Q | rg firfox
+  when: 1741538398
+- cmd: hyprctl monitors all
+  when: 1741539036
+- cmd: chh
+  when: 1741539043
+- cmd: n monitor.conf
+  when: 1741539047
+- cmd: sn /etc/mkinitcpio.conf
+  when: 1741539440
+- cmd: sn /etc/pacman.d/mirrorlist
+  when: 1741540189
+    - /etc/pacman.d/mirrorlist
+- cmd: ctl enable now paccache.timer
+  when: 1741540421
+- cmd: ctl enable --now paccache.timer
+  when: 1741540433
+- cmd: ctl status paccache.timer
+  when: 1741540439
+- cmd: ch c
+  when: 1741588214
+- cmd: lk
+  when: 1741588437
+- cmd: ./c
+  when: 1741588799
+- cmd: cp ii.sh z.sh
+  when: 1741591020
+    - ii.sh
+- cmd: ch z
+  when: 1741591254
+- cmd: ch z.sh
+  when: 1741591264
+    - z.sh
+- cmd: cd atest/
+  when: 1741592495
+- cmd: n ii.sh
+  when: 1741592765
+- cmd: mv i.sh nouse/00inst/
+  when: 1741593095
+    - i.sh
+- cmd: mv ii.sh ~/dotfiles/i.sh
+  when: 1741593128
+- cmd: ch i.sh
+  when: 1741593224
+- cmd: n i.sh
+  when: 1741593229
+- cmd: cp r.sh ~/atest/
+  when: 1741593580
+    - ~/atest/
+- cmd: cp r.sh z.sh
+  when: 1741594285
+- cmd: cd ~/atest/
+  when: 1741594301
+- cmd: wget https://raw.githubusercontent.com/angelogreko888/dotfiles/main/00inst/010confpac.sh  https://raw.githubusercontent.com/angelogreko888/dotfiles/main/00inst/010confpac.sh
+  when: 1741596106
+- cmd: wget https://raw.githubusercontent.com/angelogreko888/dotfiles/main/00inst/010confpac.sh  https://raw.githubusercontent.com/angelogreko888/dotfiles/main/00inst/030boot.sh
+  when: 1741596139
+- cmd: n z.sh -l
+  when: 1741596501
+- cmd: mv 060grubmbr.sh 060grubgpt.sh
+  when: 1741597047
+    - 060grubmbr.sh
+- cmd: n z.sh
+  when: 1741597313
+- cmd: ./z.sh
+  when: 1741597355
+- cmd: n r.sh
+  when: 1741597443
+- cmd: mv r.sh ~/dotfiles/
+  when: 1741597473
+    - ~/dotfiles/
+- cmd: g
+  when: 1741597510
+- cmd: rm 0*
+  when: 1741597550
+- cmd: rm q*
+  when: 1741597558
+- cmd: mv z.sh z
+  when: 1741597579
+- cmd: l
+  when: 1741597580
+- cmd: n c
+  when: 1741597583
+- cmd: n z
+  when: 1741597596
+    - z
+- cmd: ..
+  when: 1741597734
+- cmd: n u.sh
+  when: 1741597747
+    - u.sh
+- cmd: ggg
+  when: 1741597858
+- cmd: b
+  when: 1741608642
+- cmd: id vago
+  when: 1741609486
+- cmd: pacman -Q | rg nvidia
+  when: 1741609550
+- cmd: pacman -Q | rg librewolf
+  when: 1741609576
+- cmd: pacman -Q librewolf
+  when: 1741609585
+- cmd: pacman -Q nvidia
+  when: 1741609644
+- cmd: pacman -Q nvidia*
+  when: 1741609676
+- cmd: bash
+  when: 1741609682
+- cmd: pacman -Q vidia
+  when: 1741609748
+- cmd: pacman -Q nvidia-open-dkms
+  when: 1741609763
+- cmd: pacman -Q nvidia-open-dkms-tkg
+  when: 1741609790
+- cmd: cdf
+  when: 1741609820
+- cmd: cd 00inst/
+  when: 1741609822
+- cmd: n 99active.sh
+  when: 1741609825
+    - 99active.sh
+  when: 1741609881
+  when: 1741609901
+  when: 1741610146
+  when: 1741610307
+    - pac.lst
+- cmd: n 30aur.sh
+  when: 1741610439
+    - 30aur.sh
+  when: 1741610624
+    - 20pac.sh
+  when: 1741610663
+- cmd: mv 030boot.sh ../nouse/00inst/
+  when: 1741610927
+    - 030boot.sh
+    - ../nouse/00inst/
+  when: 1741610931
+  when: 1741610942
+  when: 1741610992
+  when: 1741611033
+  when: 1741611037
+  when: 1741611100
+  when: 1741611102
+  when: 1741611203
+  when: 1741611205
+- cmd: n nvidia-all/
+  when: 1741611210
+    - nvidia-all/
+  when: 1741611218
+  when: 1741611221
+  when: 1741611242
+  when: 1741611248
+    - yay/
+  when: 1741611251
+  when: 1741613211
+  when: 1741618313
+  when: 1741618318
+  when: 1741618796
+  when: 1741620620
+    - bin
+  when: 1741620627
+    - bh
+  when: 1741620895
+  when: 1741620923
+    - bin/
+  when: 1741620928
+- cmd: cp ~/dotfiles/nouse/rootmisc/qhfish .
+  when: 1741621055
+    - ~/dotfiles/nouse/rootmisc/qhfish
+    - .
+- cmd: cp ~/dotfiles/nouse/rootmisc/lhfish .
+  when: 1741621064
+    - ~/dotfiles/nouse/rootmisc/lhfish
+  when: 1741621065
+- cmd: cat lhfish >> qhfish
+  when: 1741621139
+    - lhfish
+- cmd: awk -i inplace '!seen[$0]++' qhfish
+  when: 1741621204
+  when: 1741621211
+- cmd: n  ~/dotfiles/nouse/rootmisc/qhfish
+  when: 1741621311
+  when: 1741621323
+  when: 1741621733
+  when: 1741621746
+  when: 1741621755
+  when: 1741621757
+- cmd: n fish
+  when: 1741621763
+    - fish
+  when: 1741621814
+  when: 1741621872

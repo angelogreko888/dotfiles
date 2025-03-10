@@ -24,5 +24,5 @@ mv ~/hfish  ~/dotfiles/nouse/rootmisc/$1hfish
 cat ~/dotfiles/nouse/rootmisc/$1hfish >> ~/dotfiles/nouse/rootmisc/fish_history
 awk -i inplace '!seen[$0]++' ~/dotfiles/nouse/rootmisc/fish_history
 
-cat ~/dotfiles/nouse/rootmisc/$1hbash >> ~/dotfiles/nouse/rootmisc/bash
-awk -i inplace '!seen[$0]++' ~/dotfiles/nouse/rootmisc/bash
+cat ~/dotfiles/nouse/rootmisc/$1hbash >> ~/dotfiles/nouse/rootmisc/.bash_history
+awk -i inplace '!seen[$0]++' ~/dotfiles/nouse/rootmisc/.bash_history

@@ -85,6 +85,7 @@ fi
 
 #fish
 chsh -s /usr/bin/fish
+cp ~/dotfiles/misc/fish ~/.local/share/fish/fish_history
 
 id  $whoami
 

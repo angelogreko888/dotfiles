@@ -107,15 +107,15 @@ nwg-look
 jdk-openjdk
 font-manager
 dconf-editor
+jdk-openjdk
+libreoffice-fresh
+gimp
+simple-scan
 
 )
 
 plst=(
 kanshi
 zram-generator
-jdk-openjdk
-libreoffice-fresh
-gimp
-simple-scan
 
 )

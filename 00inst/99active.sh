@@ -56,7 +56,7 @@ for CTL in "${ctl[@]}";do
 	echo ""$CTL" activated"
 done
 
-if pacman -Q nvidia;then 
+if pacman -Q nvidia-open-dkms-tkg;then 
 	for NV in "${nv[@]}";do
 	        sudo systemctl enable "$NV"
         	echo ""$NV" activated"
@@ -70,7 +70,7 @@ sudo firecfg
 if [ -f /etc/default/grub ]; then
      # Check if apparmor is present
     if ! sudo grep -q "apparmor" /etc/default/grub; then
-    sudo sed -Ei 's/^(GRUB_CMDLINE_LINUX_DEFAULT=\([^\)]*)\)/\1 lsm=landlock,lockdown,yama,integrity,apparmor,bpf"/' /etc/default/grub
+    sudo sed -Ei 's/^(GRUB_CMDLINE_LINUX_DEFAULT=\([^\)]*)\)"/\1 lsm=landlock,lockdown,yama,integrity,apparmor,bpf"/' /etc/default/grub
     echo "apparmor  added to grub"  
     fi
 

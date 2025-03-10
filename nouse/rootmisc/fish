@@ -2207,3 +2207,4 @@ n ~/.config/waybar/style.css -l
 - cmd: awk -i inplace '!seen[$0]++' hfish
 - cmd: awk -i inplace '!seen[$0]++' fish
 - cmd: rn fish
+    - bin

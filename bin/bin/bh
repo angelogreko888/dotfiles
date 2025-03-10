@@ -21,7 +21,8 @@ sed -i '/when:/d' ~/hfish
 mv ~/hfish  ~/dotfiles/nouse/rootmisc/$1hfish
 
 
-cat ~/dotfiles/nouse/rootmisc/qhfish >> ~/dotfiles/nouse/rootmisc/fish
-cat ~/dotfiles/nouse/rootmisc/lhfish >> ~/dotfiles/nouse/rootmisc/fish
-cat ~/dotfiles/nouse/rootmisc/dhfish >> ~/dotfiles/nouse/rootmisc/fish
+cat ~/dotfiles/nouse/rootmisc/$1hfish >> ~/dotfiles/nouse/rootmisc/fish
 awk -i inplace '!seen[$0]++' ~/dotfiles/nouse/rootmisc/fish
+
+cat ~/dotfiles/nouse/rootmisc/$1hbash >> ~/dotfiles/nouse/rootmisc/bash
+awk -i inplace '!seen[$0]++' ~/dotfiles/nouse/rootmisc/bash

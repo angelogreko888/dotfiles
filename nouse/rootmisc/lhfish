@@ -344,6 +344,7 @@
 - cmd: n befi
 - cmd: cd ../../atesting/
 - cmd: sort a -o a
+- cmd: n a
 - cmd: sort baur -o baur
 - cmd: n base
 - cmd: n basea
@@ -372,6 +373,7 @@
 - cmd: n efi.sh
 - cmd: n mbr.sh
 - cmd: rm befi
+- cmd: pp
 - cmd: ע
 - cmd: ctl status nvidia-suspend.service
 - cmd: ctl status nvidia-hibernate.service
@@ -425,6 +427,7 @@
 - cmd: ctl systemd-zram-setup@zram0.service
 - cmd: zramctl
 - cmd: sn /sys/power/resume
+- cmd: lk -f
 - cmd: filefrag -v /swapfile
 - cmd: s dmesg | grep nvidia
 - cmd: pacman -Q | grep  nvidia
@@ -458,6 +461,7 @@
 - cmd: s mkinitcpio -P
 - cmd: n kanshi
 - cmd: n
+- cmd: ts
 - cmd: n active.sh
 - cmd: n nvidia.sh
 - cmd: h | rg pi
@@ -563,6 +567,7 @@
 - cmd: h |rg vb
 - cmd: reboot
 - cmd: s modprobe vboxdrv
+- cmd: nb
 - cmd: pss fish
 - cmd: pss fish | rg fish
 - cmd: pi fish
@@ -615,15 +620,18 @@
 - cmd: n ~/.config/fish/config.fish
 - cmd: cd ../nouse/rootmisc/
 - cmd: cat lhbash qhbash >com
+- cmd: n bh
 - cmd: awk -i inplace '!seen[$0]++' com
 - cmd: n com
 - cmd: cp com ~/.bash_history
+- cmd: cd nouse/rootmisc/
 - cmd: rm com
 - cmd: n .bash_history
 - cmd: cd .local/share/fish/
 - cmd: cd generated_completions/
 - cmd: l &| less
 - cmd: rm fish/
+- cmd: rm fish
 - cmd: rr fishlocal/
 - cmd: cd ../bin/
 - cmd: h
@@ -638,6 +646,7 @@
 - cmd: sudo pacman -R - < a
 - cmd: yay art-rawconverter
 - cmd: ./cpinst.sh l
+- cmd: ./bh l
 - cmd: cat $PATH
 - cmd: CD
 - cmd: hyprctl devices | rg keyboard
@@ -660,6 +669,7 @@
 - cmd: sudo  dmseg
 - cmd: history  | rg dm
 - cmd: sudo  dmesg
+- cmd: cd misc/
 - cmd: nano  lpacman.lst
 - cmd: sudo pacman -Rns blueman
 - cmd: disown
@@ -701,6 +711,7 @@
 - cmd: rm /bin/a
 - cmd: rm a
 - cmd: nano  $HOME/.config/waybar/power_menu.xml
+- cmd: cd bin/
 - cmd: nano  gpush.sh
 - cmd: btop
 - cmd: sudo updatedb; locate loader.conf
@@ -731,6 +742,7 @@
 - cmd: mv -i bepac epac.lst
 - cmd: mv -i nvidia.sh envidia.sh
 - cmd: nano  confpac.sh
+- cmd: cd ~/bin
 - cmd: ./gpush.sh
 - cmd: cd ~/.config/uwsm/
 - cmd: nano  env
@@ -875,9 +887,12 @@
 - cmd: sn /etc/pacman.conf
 - cmd: n dotfiles/00inst/030boot.sh
 - cmd: sn /etc/pacman.conf -l
+- cmd: n 010confpac.sh
 - cmd: pacman -Q | rg wlroots
 - cmd: pss wlroots
 - cmd: pi wlroots
+- cmd: pd
+- cmd: yd
 - cmd: cd mnt
 - cmd: cd /mnt
 - cmd: srr 6A14-BB2A/ 24DCEFD8DCEFA1F2/ data/
@@ -895,46 +910,61 @@
 - cmd: chh
 - cmd: n animations-dynamic.conf
 - cmd: n gitpull.sh
+- cmd: cd -
 - cmd: su -
 - cmd: ch c
+- cmd: cd
 - cmd: n .local/share/fish/fish_history
 - cmd: b
 - cmd: t
 - cmd: y usbimager\n
+- cmd: cpi l
+- cmd: bh l
 - cmd: librewolf://gpu
 - cmd: lk
 - cmd: gd
+- cmd: ff
 - cmd: cd bin
+- cmd: ./gitpull.sh
+- cmd: u
 - cmd: select  cn in Israel Cyprus;
 - cmd: select  cn in Israel Cyprus
 - cmd: bash
 - cmd: cd ~/atest/
 - cmd: pss ell
 - cmd: pss ell | rg extra/ell
+- cmd: cdf
+- cmd: g
+- cmd: cd atest/
+- cmd: l
+- cmd: ./c
+- cmd: n c
+- cmd: sn /etc/locale.gen
 - cmd: n 060grubmbr.sh
+- cmd: ggg
+- cmd: n 030boot.sh
 - cmd: n 050grubefi.sh
+- cmd: ..
 - cmd: n sroot.sh
 - cmd: n suser.sh
-- cmd: n 010confpac.sh
+- cmd: cd 00inst/
 - cmd: s reflector --latest 5 --sort rate --country Israel --protocol https --verbose
 - cmd: s reflector --latest 5 --sort rate --country Israel --protocol https --verbose --save /etc/pacman.d/mirrorlist
 - cmd: sn /etc/pacman.d/mirrorlist
 - cmd: s  reflector --latest 5 --sort rate  --country Greece,Tr,Israel,Germany,'United Kingdom'
-- cmd: sn /etc/locale.gen
 - cmd: n 020confpac-usr.sh
 - cmd: n 090nvidia.sh
 - cmd: n 20pac.sh
 - cmd: n 30aur.sh
+- cmd: n aur.lst
 - cmd: n pac.lst
 - cmd: rm uaur.sh upac.sh
 - cmd: cd ff
-- cmd: ff
 - cmd: pss usb disk formater
 - cmd: pss usb
 - cmd: pss mintstick
 - cmd: y mintstick
 - cmd: sudo -sE mintstick.py
-- cmd: pp
 - cmd: USB Image Writer
 - cmd: sudo -sE mintstick
 - cmd: sudo -sE mintstick -m format
@@ -942,27 +972,34 @@
 - cmd: fish
 - cmd: mf
 - cmd: mi
-- cmd: n aur.lst
+- cmd: n fish_history
+  paths:
+    - fish_history
+- cmd: ll
+- cmd: rm fish_history.bup
+    - fish_history.bup
+    - misc/
+- cmd: cpi q
+    - qaur.lst
+    - 00inst/
+- cmd: n 99active.sh
+    - 99active.sh
+    - .local/share/fish/fish_history
+    - bin/
+    - bh
+    - ~/.local/share/fish/fish_history
 - cmd: n laur.lst
 - cmd: yui usbimager
 - cmd: yui usbimager-debug
-- cmd: pd
-- cmd: yd
-- cmd: cpi l
 - cmd: yui art-rawconverter-bin
-- cmd: u
 - cmd: y floorp
 - cmd: pui firefox
-- cmd: ./gitpull.sh
 - cmd: n ir.sh
 - cmd: cd nouse/00inst/
 - cmd: mv i.sh r.sh ../../
 - cmd: ../../
 - cmd: n r.sh
-- cmd: cd 00inst/
-- cmd: n 030boot.sh
 - cmd: n /etc/fstab
-- cmd: lk -f
 - cmd: fdisk -f
 - cmd: fdisk -l
 - cmd: s fdisk -l
@@ -990,50 +1027,1184 @@
 - cmd: s blkid | grep nvme0n1p2 | awk '{print $2}' | cut -b 7-40
 - cmd: s blkid | grep nvme0n1p2 | awk '{print $2}' | cut -b 7-42
 - cmd: s blkid | grep nvme0n1p2 | awk '{print $2}' | set uid=(cut -b 7-42)
-- cmd: ..
 - cmd: n i.sh
-- cmd: cd atest/
-- cmd: nb
 - cmd: n  b
-- cmd: n a
 - cmd: n c -l
 - cmd: cat a
 - cmd: man sed
 - cmd: n  a
-- cmd: n c
-- cmd: ./c
 - cmd: n b
 - cmd: n u.sh
-- cmd: n 99active.sh
 - cmd: pacman -Q | rg freetube
 - cmd: n ~/dotfiles/misc/fish
 - cmd: n ~/dotfiles/nouse/rootmisc/lhfish
 - cmd: n ~/dotfiles/nouse/rootmisc/qhfish
-- cmd: ll
-- cmd: n fish_history
-  paths:
-    - fish_history
-- cmd: bh l
-- cmd: g
 - cmd: hyprshade off
-- cmd: ggg
-- cmd: ts
-- cmd: cd bin/
-- cmd: cd nouse/rootmisc/
-- cmd: cd
-- cmd: cd -
-- cmd: ./bh l
+    - nouse/rootmisc/
+ls
+ls -la
+rm .bashrc
+source .bashrc
+lsblk
+gnome-disks
+s gnome-disks
+sud gnome-disks
+sudo gnome-disks
+rsync -a /mnt/data/sync-vago/ /home/vago/
+pacman -S rsync
+sudo pacman -S rsync
+pacman -S stow
+sudo pacman -S stow
+cd dotfiles/
+stow home
+cd .config
+l
+pi exa
+cdf
+md backgrounds
+cd bin
+md bin
+rr bin
+cd i3
+rm config 
+stow i3
+..
+md dunst
+stow dunst
+cd dunst/
+md polybar
+stow polybar
+cd polybar/
+stow bin
+cd vago/
+pi base-devel btop cups cups-filters cups-pdf dpkg
+pi eog evince fastfetch feh file-roller firefox flameshot font-manager git gmtp gnome-text-editor gparted grub-btrfs
+pi gufw htop less mlocate mpv mpv-mpris network-manager-applet networkmanager numlockx nwg-look ranger redshift reflector ripgrep simple-scan system-config-printer thunar timeshift-autosnap tumbler ufw wget curl xdg-user-dirs xorg-xinit xss-lock zram-generator
+pi gufw htop less mlocate mpv mpv-mpris network-manager-applet networkmanager numlockx nwg-look ranger redshift reflector ripgrep simple-scan system-config-printer thunar  tumbler ufw wget curl xdg-user-dirs xorg-xinit xss-lock zram-generator
+n installed 
+cd
+cg
+cd yay
+makepkg -si
+y timeshift
+y android-sdk-platform-tools
+y open-jdk
+y jdk-openjdk
+sudo reboot
+pacman -S terminator
+sudo pacman -S terminator
+cgg
+s cp -r buuf-nestort/ /usr/share/icons/
+s cp -r radioactive-yellow/ /usr/share/icons/
+s cp fonts/* /usr/share/fonts/
+cd firefox-security/
+sudo bash sos-firefoxprivacy.sh 
+polybar
+cc
+n config.ini
+pi linux-headers
+yay -S nvidia-settings
+sudo nano /etc/default/grub
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+pi  	linux-firmware-qlogic linux-firmware-qlogic  	linux-firmware-qlogic  	linux-firmware-nfp  	linux-firmware-qlogic
+yi aic94xx-firmware 
+yi ast-firmware
+yi wd719x-firmware 
+yi upd72020x-fw 
+sudo nano /etc/mkinitcpio.conf
+sudo mkinitcpio -P
+wget https://raw.githubusercontent.com/korvahannu/arch-nvidia-drivers-installation-guide/main/nvidia.hook
+nano nvidia.hook
+sudo mkdir -p /etc/pacman.d/hooks/ && sudo mv ./nvidia.hook /etc/pacman.d/hooks/
+t
+pi polybar
+np
+pi xorg xorg-apps xorg-xinit xdotool xclip
+sudo systemctl enable fstrim.timer
+pi arc-gtk-theme
+sudo reflector --protocol https --age 12 --country Israel --sort rate --number 10 --verbose --save /etc/pacman.d/mirrorlist
+sn /etc/pacman.conf 
+sn /etc/pacman.d/mirrorlist 
+sudo pacman -S cups cups-filters cups-pdf system-config-printer --needed
+sudo systemctl enable cups.service
+sn /etc/systemd/zram-generator.conf
+b
+cd backgrounds/
+stow backgrounds/
+ts
+sudo btrfs subvolume list /
+lk
+sn /etc/X11/xinit/xinitrc
+cd 
+sudo pacman -S noto-fonts noto-fonts-emoji ttf-ubuntu-font-family ttf-dejavu ttf-freefont
+sudo pacman -S ttf-liberation ttf-droid ttf-roboto terminus-font
+pi xss-lock xautolock
+ni
+cd /usr/share/icons/
+cd gtk-3.0/
+n settings.ini 
+n gt
+n .gtkrc-2.0 
+gu
+ctl enable ufw.service
+ctl status ufw.service
+ctl start ufw.service
+ctl status ufw.service\
+sudo EDDITOR=nano visudo
+n.
+cd /etc/profile
+sn /etc/profile
+cd /etc/profile.d/
+sn editor.sh
+cd radioactive-yellow/
+ch editor.sh 
+sudo nano visudo
+sudo visudo
+rm config.ini.BACKUP 
+sudo bash popup-calendar.sh 
+y yad
+y freetube
+y anydesk
+cd /etc/xdg/autostart/
+pi kdeconnect
+cd cursor
+cd cursors
+nw
+s rr radioactive-yellow/
+sb
+pi btrfs-progs
+yi floorp-bin
+pi i3lock
+pi intel-media-driver
+yi libreoffice-fresh
+pi libva-intel-driver
+ps nss-mdns
+ps smartmontools
+ps sof-firmware
+ps wireless_tools
+ps xdg-utils
+pu
+cd FreeTube/
+rm *.db
+stow freetube/
+y 
+y libavcodec-extra
+y libavcodec
+y libavcodec 
+pi xtools
+y xtools
+y ffmpeg
+yui ffmpeg4.4
+pq
+pd
+nb
+pui android-sdk-platform-tools-debug gtkglext-debug
+yd
+find /usr/share/icons ~/.local/share/icons ~/.icons -type d -name "cursors"
+pi LXAppearance
+pi lxappearance
+pui nwg-look
+cp -r  ~/git/gnome/radioactive-yellow/ .
+s cp -r  ~/git/gnome/radioactive-yellow/ .
+cd polybar/.config/polybar/
+n popup-calendar.sh 
+cdd
+n config.ini 
+n launch_polybar.sh 
+n launch.sh 
+md rofi
+cp powermenu.rasi ~/.config/rofi/
+cp power.sh ~/.config/polybar/
+cd rofi/
+ch power.sh 
+l'
+rm power.sh 
+rr rofi/powermenu.rasi 
+rm *
+n .config/polybar/popup-calendar.sh 
+pi urxvt
+pi URxvt
+pi rxvt-unicode
+mv Xresources ~
+mv Xresources .Xresources 
+n .Xresources 
+rm .Xresources 
+pui rxvt-unicode
+cd home/
+mv .vimrc .vimrc.bup
+mv ~/Downloads/vimrc ./.vimrc
+vim .vimrc
+vim .bashrc
+vim
+yup
+s bash linux-brprinter-installer-*.*.*-* MFC-1910W
+s dpkg -i --force-all  brmfcfaxdrv-2.0.1-1.i386.deb 
+pui kdeconnect
+which cd
+df -h
+-h
+route
+uname -a
+uname
+cd bin/bin
+n db
+tree
+pup
+pi  	pcmanfm-gtk3
+pui  	pcmanfm-gtk3
+sudo pacman -R xterm
+pi gimp
+y gimp
+man xautolock
+pi man 
+w wireplumer
+w pipewire-media-session
+pi pipewire-media-session
+pui xf86-video-intel
+y xf86-video-intel
+pi  	mesa
+pi vlc
+pui mpv
+pui mpv mpv-mpris
+pi picom
+md picom
+cd picom/
+mv ~/Downloads/picom.conf .
+n picom.conf 
+n .config/picom/picom.conf 
+md -p picom/.config/picom
+mv .config/picom/picom.conf dotfiles/picom/.config/picom/
+stow picom/
+picom
+L
+cd picom/.config/picom/
+cd dotfiles/picom/.config/picom/
+npi
+n bin/bup 
+h | rg installed
+sudo pacman -Qe > ~/Documents/installed
+cat ~/Documents/installed
+xprop | rg WM_CLASS
+νπι
+y Free Download Manager
+yui freedownloadmanager
+sn /etc/X11/xorg.conf.d/90-touchpad.conf
+pi konsole
+pui konsole
+pui freedownloadmanager-debug libwireplumber luit xbitmaps 
+h
+cd /etc/X11/xorg.conf.d/
+md foo
+s cp 90-touchpad.conf ~/dotfiles/foo/
+cd foo
+mv 90-touchpad.conf etc*X11*xorg.conf.d*90-touchpad.conf 
+co etc*X11*xorg.conf.d*90-touchpad.conf 
+np -l
+w locate
+lu
+lo fastfetch
+fastfetch -h binary-prefix
+fastfetch -h 
+sn /usr/share/fastfetch/presets/all.jsonc
+cd /usr/share/fastfetch/presets
+sn all.jsonc 
+cd /usr/share/bash-completion/completions/fastfetch
+sn /usr/share/bash-completion/completions/fastfetch
+q
+fastfetch -c all.jsonc
+fastfetch -s <module> --format json
+fastfetch --gen-config
+n /home/vago/.config/fastfetch/config.jsonc
+fastfetch -h binaryPrefix
+lo all.jsonc
+s cp /usr/share/fastfetch/presets/all.jsonc .config/fastfetch/
+cd .config/fastfetch/
+co all.jsonc 
+mv all.jsonc all.jsonc.original
+n config.jsonc 
+cp all.jsonc.original config.jsonc 
+mv config.jsonc config.jsonc.new
+n config.jsonc.new 
+mv config.jsonc.new config.jsonc
+n all.jsonc.original 
+md -p fastfetch/.config/fastfetch
+mv ~/.config/fastfetch/config.jsonc .
+stow fastfetch/
+cd fastfetch/
+cd fastfetch/.config/fastfetch/
+mv config.jsonc fastfetch/.config/fastfetch/
+fastfetch --list-logos
+lo 2.jsonc
+sn /usr/share/fastfetch/presets/examples/2.jsonc
+cd fas
+n -i config.jsonc 
+n -l config.jsonc 
+rm config.jsonc 
+lo 1.jsonc
+cd /usr/share/fastfetch/presets/examples/
+s cp 2.jsonc ~/.config/fastfetch/
+s cp 2.jsonc ~/.config/fastfetch/config.jsonc
+s cp 3.jsonc ~/.config/fastfetch/config.jsonc
+s cp 4.jsonc ~/.config/fastfetch/config.jsonc
+s cp 5.jsonc ~/.config/fastfetch/config.jsonc
+s cp 6.jsonc ~/.config/fastfetch/config.jsonc
+s cp 7.jsonc ~/.config/fastfetch/config.jsonc
+s cp 8.jsonc ~/.config/fastfetch/config.jsonc
+s cp 9.jsonc ~/.config/fastfetch/config.jsonc
+s cp 10.jsonc ~/.config/fastfetch/config.jsonc
+s cp 11.jsonc ~/.config/fastfetch/config.jsonc
+s cp 12.jsonc ~/.config/fastfetch/config.jsonc
+s cp 13.jsonc ~/.config/fastfetch/config.jsonc
+s cp 14.jsonc ~/.config/fastfetch/config.jsonc
+s cp 15.jsonc ~/.config/fastfetch/config.jsonc
+s cp 16.jsonc ~/.config/fastfetch/config.jsonc
+s cp 17.jsonc ~/.config/fastfetch/config.jsonc
+s cp 18.jsonc ~/.config/fastfetch/config.jsonc
+s cp 19.jsonc ~/.config/fastfetch/config.jsonc
+s cp 20.jsonc ~/.config/fastfetch/config.jsonc
+s cp 21.jsonc ~/.config/fastfetch/config.jsonc
+s cp 22.jsonc ~/.config/fastfetch/config.jsonc
+s cp 23.jsonc ~/.config/fastfetch/config.jsonc
+s cp 24.jsonc ~/.config/fastfetch/config.jsonc
+sn 22.jsonc 
+n .config/fastfetch/config.jsonc 
+s rm 2.jsonc 
+ch config.jsonc 
+co config.jsonc 
+chnod -x config.jsonc 
+chmod -x config.jsonc 
+cd /usr/share/fastfetch/presets/
+cd examples/
+...
+lo arch3
+cd  ~/.config/fastfetch
+fastfetch --print-logos 
+fastfetch --print-logos | rg arch3
+fastfetch --print-logo arch3
+sn /usr/share/fastfetch/presets/archey.jsonc
+sn /usr/share/fastfetch/presets/paleofetch.jsonc
+sn /usr/share/fish/vendor_completions.d/fastfetch.fish
+sn /usr/share/fastfetch/presets/ci.jsonc
+fastfetch --print-logos | less
+lo logos
+mv config.jsonc ~/dotfiles/fastfetch/.config/fastfetch/
+cd ~/dotfiles/
+cd -
+gs
+ga
+gps
+gss
+n /usr/share/fastfetch/presets/examples/2.jsonc
+cp config.jsonc config.jsonc.n
+n config.jsonc
+
+pui wpebackend-fdo
+cpk
+pac
+chh
+cat ~/.bashrc ~/vago/pc/bash_history.txt 
+cat ~/.bashrc >> ~/vago/pc/bash_history.txt 
+cat ~/.bash_history >> ~/vago/pc/bash_history.txt 
+cp ~/.bash_history  ~/vago/pc/bash_history.txt -y
+cp ~/.bash_history  ~/vago/pc/bash_history.txt 
+command cp ~/.bash_history  ~/vago/pc/bash_history.txt 
+n .xprofile 
+sudo updatedb
+yui imagemagick 
+pui imagemagick 
+w imagemagick 
+free -h
+hdparm -t /dev/sdX
+pui hdparm
+pi hdparm
+hdparm -t /dev/nvmeon1
+hdparm -t /dev/nvme0n1
+s hdparm -t /dev/nvme0n1
+glxinfo | grep "direct rendering"
+pi glxinfo
+lo xxx
+lo xxx.txt
+exec --no-startup-id updatedb
+exec updatedb
+updatedb
+updatedb --require-visibility 0 -o ~/.locate.db
+updatedb --require-visibility 1 -o ~/.locate.db
+cat /etc/cron.daily
+cd /etc/cron.daily
+crontab
+crontab -l
+crontab -e
+crontab -r
+exec -h
+exec --help
+exec -a updatedb
+exec -cl updatedb
+exec updatedb --no-startup-id
+mlocate
+w mlocate
+pi mlocate
+pui hdparm glxinfo
+pui hdparm 
+w glxinfo
+pui glxinfo
+yui glxinfo
+pi darktable
+y darktable
+pi nvidia-modprobe
+y nvidia-modprobe
+y opencl
+2y cuda
+y cuda
+pi opencl
+psl
+pm
+cd /etc/pacman.d/mirrorlist 
+cd /etc/pacman.d/ 
+cp mirrorlist mirrorlist.back
+s cp mirrorlist mirrorlist.back
+reflector --protocol https --age 12  --sort rate --number 10 --verbose --save /etc/pacman.d/mirrorlist
+sn mirrorlist
+ps wezterm
+pi wezterm
+mv wezterm.lua ~/.wezterm.lua 
+rm .wezterm.lua 
+pui wezterm
+sudo pacaman -Qqdt
+sudo pacman -Qqdt
+h | rg class
+sn /etc/pacman.d/mirrorlist
+n .config/fastfetch/config.jsonc
+gnme-desktop
+gnome-desktop
+pi amixer
+ps amixer
+pi pamixer
+n microphone.sh
+ch microphone.sh 
+n la
+nv microphone.sh mic.sh 
+mv microphone.sh mic.sh 
+rm mic.sh 
+ps pulseaudioctl
+ps pulseaudio-ctl
+ps pulseaudio
+pi pulsaudio
+ps pulsaudio
+pi pulseaudio
+pipewire-pulse
+pui paximer
+ps paximer
+pui pamixer
+pi pavucontrol
+h |rg class
+/usr/share/fastfetch/presets/all.jsonc
+s /usr/share/fastfetch/presets/all.jsonc
+fastfetch /usr/share/fastfetch/presets/all.jsonc
+fastfetch -h
+fastfetch
+fastfetch --color
+fastfetch --color red
+bash /usr/share/fastfetch/presets/all.jsonc
+s bash /usr/share/fastfetch/presets/all.jsonc
+n .config/fastfetch/all.jsonc.original 
+pacman -Qe
+pacman -Qe > ~/Documents/loqinstall
+cat ~/Documents/loqinstall 
+ps Compiz
+ps magnifier
+ps zoom
+pi zoom
+pi xaos
+pui xaos
+pi kmag
+pui kmag
+y zoom
+zoomx -h
+zoomx
+man zoomx
+pui zoomx
+y glew
+zoomer
+man zoomer
+oui zoomer
+pui zoomer
+clear
+git push
+c
+git rm autostart
+git rr autostart
+git rm -r autostart
+rr dotfiles/
+gc https://github.com/angelogreko888/dotfiles-legion
+cd dotfiles-legion/
+md bash-histrory
+cd bash-histrory/
+cd vago/pc
+cp .bash_history* ~/dotfiles/foo/bash-histrory/
+n .xpr
+git push -u
+mv .bash_history.tmp bash_history.tmp 
+mv .bash_history-13823.tmp bash_history-13823.tmp 
+ch +r bash_history*
+chmod -x bash_history*
+chmod +r bash_history*
+mv bash_history.tmp bash_history
+mv bash_history-13823.tmp bash_history-13823
+git commit --amend
+cd foo/bash-histrory/
+n bash_history
+rr bash-histrory/
+git rm bash-*
+n xpr
+git log
+git pull
+git commit
+ps
+cd rofi/.config/rofi/
+ch rofi-power-menu 
+stow rofi/
+n rofi-power-menu 
+rm rofi-power-menu 
+ps zen browswer
+y zen browswer
+y zen browser
+yui floorp
+y floorp
+yui floorp-bin
+pi brightnessctl
+y zen\
+y zen
+y zen-browser-bin
+y zen-browser
+db
+./db
+gd
+lsblk --discard
+sync; dd if=/dev/zero of=tempfile bs=1M count=1024; sync
+dd if=tempfile of=/dev/null bs=1M count=1024
+cd /run/media/vago
+cd /mnt/vago
+cd /mnt
+sudo umount sdb1
+sudo umount /dev/sdb1
+sudo umount /dev/sdc1
+sudo mount /dev/sdb1 /mnt/Book
+sudo systemctl daemon-reload
+pi  	udisks2
+pi  	ntfs-3g
+sudo mount /dev/sdc1 /mnt/mybook
+co mydata
+co mybook
+co Book
+s cp mybook/* Book/mybook/
+cd my book
+cd mybook
+cd Book
+cd mybook/
+s cp * /mnt/Book/mybook/
+s cp -r * /mnt/Book/mybook/
+dd if=/dev/sdc1 of=/dev/null bs=1M
+s dd if=/dev/sdc1 of=/dev/null bs=1M
+s dd if=/dev/sdc1 of=/dev/null bs=8k
+cd vid
+cd books/
+dd if=books/ of=/dev/null bs=1M count=1024
+dd if=vid/'Sleepover With Hot Mom - Mom Comes First.mp4' of=/dev/null bs=1M count=1024
+sync; dd if=/dev/zero of=vid/ bs=1M count=1024; sync
+sync; dd if=/dev/zero of=/mnt/mybook/ bs=1M count=1024; sync
+sync; dd if=/dev/zero of=/mnt/mybook/temp bs=1M count=1024; sync
+gp
+co mybook/
+sync; dd if=/dev/zero of=/mnt/mydata/temp bs=1M count=1024; sync
+dd if=/mnt/mydata/temp of=/dev/null bs=1M count=1024
+dd if=/mnt/mybook/temp of=/dev/null bs=1M count=1024
+n bup 
+lkj
+cd mnt
+sudo mount /dev/sdc1 /mnt/Book
+co Book/
+s cp -r Book/mybook/ecam/ /mnt/mybook/
+s rsync /mnt/Book/Cam /mnt/mybook/cam
+s rsync /mnt/Book/Cam/* /mnt/mybook/cam/
+s rsync /mnt/Book/Cam/* /mnt/mybook/cam/*
+s rsync -a /mnt/Book/Cam/* /mnt/mybook/cam/*
+cd /mnt/mybook/
+co cam/
+cd cam 
+co -r *
+co -R *
+cd 100D300S/
+cd Book/
+co -R Book/
+co -R Cam/
+rsync -a /mnt/Book/mybook/ecam/* /mnt/Book/Cam/*
+rsync -a /mnt/Book/cam /mnt/mybookook/cam/
+rsync -a /mnt/Book/cam/ /mnt/mybook/cam/
+ps ncdu
+pi ncdu
+nu
+lo tempfile
+rm tempfile
+cd /
+cd mydata/
+rr mydata
+s rr mydata
+r
+.xpr
+rm -rf ~/.cache/* 
+bup
+ps simple-mtpfs 
+y simple-mtpfs 
+y android-file-transfer
+mtp
+pi syncthing
+syncthing
+android-file-transfer
+adb pull
+pui android-file-transfer
+simple-mtpfs
+simple-mtpfs -h
+simple-mtpfs -l
+simple-mtpfs -o
+pui simple-mtpfs 
+pui syncthing
+gmtp
+n bin/db 
+cd root
+su -
+pacma -Sc
+s pacman -Sc
+s du
+s du -hs * | sort -h > ~/Documents/size
+s du -h * | sort -h > ~/Documents/size1
+s pacman -Qe > ~/Documents/loqinstall 
+ranger --copy-config=all
+lo floorp
+rr .floorp/
+cd  /
+pi snapper
+snapper -c config list
+snapper list-configs
+pui snapper
+stat / | awk '/Birth: /{print $2 " " substr($3,1,5)}'
+Code language: JavaScript (javascript)
+Find the exact date and time when Linux was installed.
+stat /
+head -n1 /var/log/pacman.log
+y
+yu
+polybar -q
+ps Zsh
+reflector --protocol https --age 12 --country Israel --sort rate --number 10 --verbose
+tcp
+ctp
+spt
+pgrep -af polkit-gnome
+polkit-gnome
+ps polkit-gnome
+lo pc
+cap
+h | rg CLASS
+cd /etc/
+cd xdg/autostart/
+stat
+ps hack
+hack fonts
+ps hack fonts
+ps fonts
+y fonts
+pui yay
+rr yay
+git clone https://aur.archlinux.org/yay.git
+ps pcmanfm
+pi pcmanfm
+pui pcmanfm
+pi pcmanfm-gtk3
+pui pcmanfm-gtk3
+n power.sh 
+cd i3/.config/i3/
+n p
+cdf 
+stow rofi
+n powermenu.rasi 
+eza --icons
+eza -lah --icons
+ls --tree
+yay -Q | wc -l
+yay -Q 
+yay -Q
+yay -Qm
+yay -Syy
+ps redshift
+pui redshift
+cc 
+cd i3/
+i3-msg exit
+ps Roboto Condensed
+ps Roboto 
+lspci | grep VGA
+ls /sys/class/backlight/
+cat /sys/class/backlight/intel_backlight/max_brightness 
+cat /sys/class/backlight/nvidia_wmi_ec_backlight/max_brightness 
+cat /sys/class/backlight/nvidia_wmi_ec_backlight/brightness
+ls /sys/class/backlight/acpi_video0/
+ls /sys/class/backlight/nvidia_wmi_ec_backlight/
+cd /sys/class/backlight/nvidia_wmi_ec_backlight/
+n actual_brightness 
+s reflector --protocol https --age 12 --country Israel --sort rate --number 10 --verbose
+פו
+pu 
+cd /run/timeshift/
+ps midnight commander
+ps mc
+y midnight commander
+1
+3
+mc
+yay -Syu --devel
+journalctl -b 0 --grep "renderer for"
+s journalctl -b 0 --grep "renderer for"
+s journalctl -b 0 --grep nvidia
+s journalctl -b 0 --grep GBM
+s journalctl -b 0 --grep EGLStreams
+ps sddm
+h | rg adb
+adb shell cmd package list packages
+adb shell cmd package list packages > ~/Documents/phone
+adb shell pm uninstall -k --user 0 com.google.android.overlay.gmsconfig.personalsafety
+google
+adb shell pm uninstall -k --user 0 com.xiaomi.midrop
+adb shell pm uninstall -k --user 0 com.mi.globalminusscreen
+adb shell pm uninstall -k --user 0 com.google.android.ext.shared
+ps wayland
+mv config.jsonc config.jsonc.working
+mv all.jsonc.original config.jsonc
+fastfetch >~/Documents/fast
+cd ~/Documents/
+n fast 
+mv config.jsonc config.jsonc.all
+mv config.jsonc.working config.jsonc
+ps WAYLAND_DISPLAY
+y WAYLAND_DISPLAY
+y wayland display
+if [ -z "$WAYLAND_DISPLAY" ] && [ -n "$XDG_VTNR" ] && [ "$XDG_VTNR" -eq 1 ] ; then     ech "yes"; fi
+if [ -z "$WAYLAND_DISPLAY" ] && [ -n "$XDG_VTNR" ] && [ "$XDG_VTNR" -eq 1 ] ; then     echo "yes"; fi
+if [ -z "$WAYLAND_DISPLAY" ]  ; then     echo "yes"; fi
+if [ -n "$XDG_VTNR" ]  ; then     echo "yes"; fi
+if [ "$XDG_VTNR" -eq 1 ] ; then     echo "yes"; fi
+pi sway wlroot swaylock swayidle swaybg wofi waybar
+pi sway swaylock swayidle swaybg wofi waybar
+md sway
+cd /etc/xdg/sway
+cd /etc/xdg
+md waybar
+n waybar/
+cd waybar/\
+cd waybar/
+cp * ~/.config/waybar/
+cd /etc
+cd sway
+n config
+cd config.d/
+n 50-systemd-user.conf 
+s cp config ~/.config/sway/
+sway
+sway --unsupported-gpu
+pi xwayland
+ps xwayland
+pi xorg-xwayland
+pui xorg-xwayland
+pui sway swaylock swayidle swaybg wofi waybar
+rr sway/
+rr waybar/
+cpo
+sudo pacman Syy
+sudo pacman -Syy
+pacman -Qk $pkg
+lo db.lck 
+cd /var/lib/pacman/
+s rm db.lck 
+ps eww
+y eww
+ps myiphide
+y myiphide
+t\
+n bup
+picom -h
+cpd
+cd /etc/udev/rules.d/
+s chmod -x 50-brother-libsane-type1-inst.rules 
+sudo chmod -x 50-brother-libsane-type1-inst.rules 
+su
+sudo journalctl -b
+y stacer
+st
+dmesg | tail
+s dmesg | tail
+cat /proc/acpi/wakeup
+y nvidia
+lspci -k
+nvidia-settings
+dkms status
+s dkms status
+ps dkms
+ps xorg
+ps nvidia-prime
+cd  /lib/modprobe.d/
+n nvidia-utils.conf 
+n systemd.conf 
+xrandr --listproviders
+ls usr src | nvidia
+nvidia-smi
+ls usr/src | nviidia
+ls /usr/src | nviidia
+ls /usr/src | rg nvidia
+n /etc/X11/xorg.conf
+cd /etc/X11/
+cd xorg.conf.d/
+sn /etc/systemd/system/systemd-homed.service.d/override.conf
+cd /etc/systemd/system/
+cd /usr/lib/systemd/system/
+cd systemd-suspend.service.d
+n 10-nvidia-no-freeze-session.conf 
+sn override.conf
+sn /usr/lib/systemd/system/systemd-suspend.service.d/override.conf
+s rm /usr/lib/systemd/system/systemd-suspend.service.d/override.conf
+s journalctl -u systemd-suspend
+s journalctl -u suspend
+s journalctl -u 
+sudo strings /sys/firmware/acpi/tables/DSDT | grep -i 'windows ' | sort -u
+ng
+sn /etc/default/grub
+cd /etc/default
+s cp grub grub.orig
+sn grub
+ug
+n grub.orig 
+ctl staus nvidia-suspend.service
+ctl status nvidia-suspend.service
+ctl enable nvidia-suspend.service
+ctl start nvidia-suspend.service
+ps  	seatd
+ps systemd-logind
+y systemd-logind
+ps  	polkit
+sudo pacman -Sy
+s pacman -Qe > ~/Documents/installed1710
+cd Documents/
+rm -rf ~/.cache/* &
+~/bin/bup &
+n bin/bup
+pi ttf-font-awesome
+pi sddm
+ctl disable lighdm.service
+ctl disable lightdm.service
+ctl enable sddm.service
+pi hyprland waybar
+pi wofi
+cd hypr/
+arandr
+xrandr
+n hyprland.conf 
+hyprctl mnitors all
+hyprctl monitors all
+n ~/.config/hypr/hyprland.conf 
+ps hyprsome
+y hyprsome
+ps ttf-font-awesome
+lo waybar
+sn /etc/xdg/waybar/config.jsonc
+s cp /etc/xdg/waybar/config.jsonc ~/.config/waybar/config
+co config 
+n config 
+waybar
+n ~/.config/waybar/config 
+n ~/.config/waybar/config -l
+pi swaync
+swaync
+pi libnotify
+notify-send "i love you"
+flameshot gui
+pi hyprshot
+y hyprshot
+hyprshot -h
+pi hyprlock
+n .descktop
+n ~/.config/hypr/hyprlock.conf
+y hyprlock
+pi hypridle
+n ~/.config/hypr/hypridle.conf
+n ~/.config/hypr/hyprland.conf -l
+yui hyprsome
+yui hyprsome-git
+sudo poweroff
+HYPRCTL MONITORS ALL
+hyprctl monitor all
+pi swaybg
+pi blueman
+pi wlsunset
+hyprctl monitors
+ps QEMu
+pi qemu-full
+s reboot
+pui qemu-full
+localectl
+y hyprlang 
+mkdir -p ~/.config/kanshi && touch ~/.config/kanshi/config
+kanshi
+pi kanshi-git 
+y kanshi-git 
+n ~/.config/kanshi/config
+cat /sys/module/nvidia_drm/parameters/modeset
+s cat /sys/module/nvidia_drm/parameters/modeset
+ctl status simpledrm.service
+ps simpledrm
+y simpledrm
+sn /etc/mkinitcpio.conf
+mkinitcpio -P
+s mkinitcpio -P
+reboot
+lo power_menu.xml
+sn /etc/xdg/waybar/style.css
+s cp /etc/xdg/waybar/style.css ~/.config/waybar/
+cd ~/.config/waybar/
+co style.css 
+n ~/.config/waybar/power_menu.xml
+cat /sys/class/hwmon/hwmon2/temp1_input
+dpms
+ps dpms
+y dpms
+n $HOME/.config/waybar/power_menu.xml
+n /etc/xdg/waybar/config.jsonc
+swabg
+swaybg -m fill -i #HOME/.config/backgrounds/Parthenonpd.jpg
+swabg -h
+swaybg
+swaybg -m fill -i "#HOME/.config/backgrounds/Parthenonpd.jpg"
+/home/vago/.config/backgrounds/Parthenonpd.jpg
+s ts
+s mv /usr/share/applications/timeshift-gtk.desktop ~/.local/share/applications/
+cd /home/vago/.local/share/applications/
+s rm timeshift-gtk.desktop 
+cp timeshift-gtk\ \(copy\ 1\).desktop timeshift-gtk.desktop 
+timeshift
+timeshift-gtk
+s timeshift-gtk
+sudo -sE timeshift-gui
+sudo -sE timeshift-gtk
+sudo -sE thunar
+th
+ps libinput
+libinput
+n waybar.service.in
+simple-scan
+xprop | grep WM_CLASS
+xprop
+ps xprop
+y xprop
+hyprctl class
+hyprctl -h
+hyprctl | grep WM_CLASS
+hyprctl WM_CLASS simple-scan
+cd kanshi/
+n ~/.config/kanshi/config 
+ps libvarlink
+ps libscfg
+pi libscfg
+y kanshi
+yui kanshi-git
+lo kanshi
+kanshictl
+kanshictl ~/.config/kanshi/config
+ctl satuts kanshi.service
+ctl status kanshi.service
+cd systemd/
+cd user/
+kanshictl reload
+cd .config/kanshi/
+yui kanshi
+zsh
+ls /var/run/daemons
+rc.d list started
+ps -eo 'tty,pid,comm' | grep ^?
+ps -h
+ps -r 'tty,pid,comm' | grep ^?
+ctl
+ctl list units
+ctl list-units
+ctl list-units  rg kanshi
+systemctl list-unit-files
+systemctl list-unit-files | rg kanshi
+ctl kanshi
+ctl status kanshi
+cd /run/user/1000/
+$XDG_CONFIG_HOME
+ps wdisplays
+y wdisplays
+rr ~/.config/kanshi/
+yui stacer
+yui stacer-bin
+yi stacer-git
+y Qt5Charts
+pi  way-displays
+y  way-displays
+sudo usermod -a -G input "${USER}"
+md -p ~/.config/way-displays/
+s cp /etc/way-displays/cfg.yaml ~/.config/way-displays/cfg.yaml
+n ~/.config/way-displays/cfg.yaml
+co ~/.config/way-displays/cfg.yaml
+hyprcyl monitor all
+n ${HOME}/.config/hypr/start-way-displays.sh
+chmod 755 ${HOME}/.config/hypr/start-way-displays.sh
+cd .config/hy
+cd .config/hypr/
+way-displays > "/tmp/way-displays.${XDG_VTNR}.${USER}.log" 2>&1
+n start-way-displays.sh 
+way-display
+way-displays
+way-displays -g
+way-displays 
+n .config/waybar/config 
+cd .config/waybar/
+killall -SIGUSR2 waybar
+n style.css 
+ff
+n ~/.config/waybar/style.css 
+stow waybar
+stow hypr
+stow way-dispaly/
+hh
+cd way-display
+lo way-display
+s cp /etc/way-displays/cfg.yaml ~/.config/way-display/
+rm way-display
+md way-display
+s cp /etc/way-displays/cfg.yaml .
+n cfg.yaml 
+co cfg.yaml 
+n .config/way-display/cfg.yaml 
+pi kanshi
+md kanshi
+touch ~/.config/kanshi/config
+n /usr/share/doc/kanshi-git/README.md
+n ~/.config/way-display/cfg.yaml 
+pui way-display
+y way-display
+pui way-displays
+cd waybar/.config/waybar/
+mv config config.backup
+mv style.css style.css.backup
+n style.css
+rm config
+rm style.css
+y JetBrains Mono Nerd Font
+mv config.backup config
+mv style.css.backup style.css
+ctl status nvidia.service
+ctl staus nvidia-suspend.servicectl 
+ctl status nvidia-suspend.servicectl 
+ctl status nvidia-suspend
+git clone https://github.com/Frogging-Family/nvidia-all.git
+cd nvidia-all
+ctl enable nvidia-suspend
+polkit
+pi numlockx
+sn /usr/local/bin/numlock
+ch /usr/local/bin/numlock
+ls /usr/local/bin/numlock
+ls -alh /usr/local/bin/numlock
+s ch /usr/local/bin/numlock
+sn /etc/systemd/system/numlock.service
+ctl enable numlock.service
+ctl start numlock.service
+ctl status numlock.service
+cd hypr/.config/hypr/
+n .descktop 
+n backup.sh
+ch backup.sh 
+s chmod backup.sh 
+s chmod +x backup.sh 
+stow hypr/
+./backup.sh 
+n backup.sh 
+rm -rf ~/.cache/*
+s mv ~/Downloads/ActivityCenter.js /usr/local/bin/
+cd /usr/local/bin/
+md wofi
+cd wofi
+mv ~/Downloads/style.css .
+stow wofi
+md -p .config/wofi
+cd .config/wofi/
+mv ~/dotfiles/wofi/style.css .
+cd wofi/
+md -p .config/wofi/
+rr .config/
+ps pulsemixer
+pi pulsemixer
+pulsemixer
+pamixer
+cd ~/.local/tmp/
+cd ~/.local/
+md ~/.local/tmp/
+pacman -Q --info pamixer
+pacman -Q --info pulsemixer
+pulseaudio -v
+pipewire
+ps alsamixer
+y alsamixer
+y pipewire
+pui pulsemixer
+ps alsa
+ps playerctl
+playerctl
+wpctl
+ps wpctl
+y wpctl
+ps wireplumber
+pi wireplumber
+pi sway
+pui sway
+pi wlroots
+mv blueman.desktop blueman.desktop.backup
+s mv blueman.desktop blueman.desktop.backup
+s mv picom.desktop picom.desktop.backup
+mv ~/.config/fastfetch/config.jsonc.all .
+cp config.jsonc.all config.jsonc
+hc
+n hyprlock.conf 
+n hypridle.conf 
+n ~/.cofig/hypr/hypridle.conf 
+numlock
+s numlock
+numlockx
+y systemd-numlockontty 
+ctl status numLockOnTty
+ctl enable numLockOnTty
+ctl start numLockOnTty
+ch /etc/systemd/system/numlock.service
+cd .mozilla/
+cd firefox/
+cd pc
+mkinitcpio -L
+sn /etc/sddm.conf
+ctl disable numLockOnTty
+ctl disable numlock.service
+ctl stop numlock.service
+ctl stop numLockOnTty
+wc -l
+n ~/.config/waybar/style.css   -l
+cd ~/.config/waybar/ 
+mv style.css style.css.bup
+n style.css -l
+n style.css.bup 
+n ~/.config/waybar/style.css
+n ~/.config/waybar/style.css -l
+- cmd: n fish
+    - fish
 - cmd: cat combash >> fish
     - combash
-- cmd: n bh
 - cmd: awk -i inplace '!seen[$0]++' hfish
 - cmd: awk -i inplace '!seen[$0]++' fish
-    - fish
-- cmd: n fish
-- cmd: cdf
-- cmd: cd misc/
-- cmd: l
 - cmd: rn fish
-- cmd: rm fish
-- cmd: cd ~/bin
-    - bh
+    - bin

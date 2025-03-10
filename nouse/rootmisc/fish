@@ -2208,3 +2208,7 @@ n ~/.config/waybar/style.css -l
 - cmd: awk -i inplace '!seen[$0]++' fish
 - cmd: rn fish
     - bin
+- cmd: n bash
+    - bash
+- cmd: n ~/.local/share/fish/fish_history
+- cmd: n combash

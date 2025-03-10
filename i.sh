@@ -10,9 +10,9 @@ vt
 lsblk
 
 printf "\n\e[1;32m.......hard disk type? : \n\e[0m"
-select  ns in nvme sda;do
+select  ns in nvme0n1 sda;do
         case $ns in
-        nvme)
+        nvme0n1)
         aa=nvme0n1p
         break ;;
         sda)
@@ -33,7 +33,7 @@ for LD in "${ld[@]}";do
 	select  yn in yes no;do
         	case $yn in
         	yes) 
-			printf "\n\e[1;32mEnter"$LD" directory name: \e[0m"
+			printf "\n\e[1;32mEnter"$LD" directory number : \e[0m"
 			read bd
 			case $LD in
 				boot)
@@ -53,7 +53,7 @@ for LD in "${ld[@]}";do
                                         mount --mkdir /dev/$aa$bd /mnt/$LD
                                         break ;;
 			esac
-		break ;;
+			break ;;
 
         	no) 
 			printf "\n\e[1;32mNo "$LD" directory \n\e[0m"

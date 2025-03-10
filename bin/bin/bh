@@ -32,4 +32,5 @@ cat ~/dotfiles/nouse/rootmisc/dhfish >> ~/fish
 
 awk -i inplace '!seen[$0]++' ~/fish
 sed -i '/when:/d' ~/fish
+cp ~/fish ~/.local/share/fish/fish_history
 mv ~/fish ~/dotfiles/misc/

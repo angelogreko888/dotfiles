@@ -1,11 +1,9 @@
 aic94xx-firmware
 android-sdk-platform-tools
-android-sdk-platform-tools-debug
 anydesk-bin
 ast-firmware
 aurutils
 bezier
-bezier-debug
 checkupdates-with-aur
 freetube-git
 hyprevents-git
@@ -14,9 +12,7 @@ hyprshot
 lib32-nvidia-utils-tkg
 lib32-opencl-nvidia-tkg
 libglade
-libglade-debug
 librewolf-bin
-librewolf-bin-debug
 mintstick
 mkinitcpio-firmware
 nvidia-open-dkms-tkg
@@ -24,7 +20,6 @@ nvidia-settings-tkg
 nvidia-utils-tkg
 opencl-nvidia-tkg
 simple-mtpfs
-simple-mtpfs-debug
 upd72020x-fw
 wd719x-firmware
 yay

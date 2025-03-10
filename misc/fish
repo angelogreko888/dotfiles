@@ -1,7 +1,10 @@
 - cmd: ll
+  when: 1741622785
 - cmd: n fish_history
+  when: 1741622795
   paths:
     - fish_history
+  when: 1741622810
 - cmd: cd nouse/
 - cmd: cd rootmisc/
 - cmd: n mirrorlist
@@ -348,7 +351,6 @@
 - cmd: n befi
 - cmd: cd ../../atesting/
 - cmd: sort a -o a
-- cmd: n a
 - cmd: sort baur -o baur
 - cmd: n base
 - cmd: n basea
@@ -377,7 +379,6 @@
 - cmd: n efi.sh
 - cmd: n mbr.sh
 - cmd: rm befi
-- cmd: pp
 - cmd: ע
 - cmd: ctl status nvidia-suspend.service
 - cmd: ctl status nvidia-hibernate.service
@@ -431,7 +432,6 @@
 - cmd: ctl systemd-zram-setup@zram0.service
 - cmd: zramctl
 - cmd: sn /sys/power/resume
-- cmd: lk -f
 - cmd: filefrag -v /swapfile
 - cmd: s dmesg | grep nvidia
 - cmd: pacman -Q | grep  nvidia
@@ -571,7 +571,6 @@
 - cmd: h |rg vb
 - cmd: reboot
 - cmd: s modprobe vboxdrv
-- cmd: nb
 - cmd: pss fish
 - cmd: pss fish | rg fish
 - cmd: pi fish
@@ -678,7 +677,6 @@
 - cmd: sudo  dmseg
 - cmd: history  | rg dm
 - cmd: sudo  dmesg
-- cmd: cd misc/
 - cmd: nano  lpacman.lst
     - lpacman.lst
 - cmd: sudo pacman -Rns blueman
@@ -736,7 +734,6 @@
 - cmd: rm a
 - cmd: nano  $HOME/.config/waybar/power_menu.xml
     - $HOME/.config/waybar/power_menu.xml
-- cmd: cd bin/
 - cmd: nano  gpush.sh
     - gpush.sh
 - cmd: btop
@@ -998,13 +995,9 @@
 - cmd: n dotfiles/00inst/030boot.sh
     - dotfiles/00inst/030boot.sh
 - cmd: sn /etc/pacman.conf -l
-- cmd: n 010confpac.sh
-    - 010confpac.sh
 - cmd: pacman -Q | rg wlroots
 - cmd: pss wlroots
 - cmd: pi wlroots
-- cmd: pd
-- cmd: yd
 - cmd: cd mnt
 - cmd: cd /mnt
     - /mnt
@@ -1031,21 +1024,15 @@
 - cmd: su -
 - cmd: ch c
     - c
-- cmd: cd
 - cmd: n .local/share/fish/fish_history
     - .local/share/fish/fish_history
 - cmd: b
 - cmd: t
 - cmd: y usbimager\n
-- cmd: cpi l
-- cmd: bh l
 - cmd: librewolf://gpu
 - cmd: lk
 - cmd: gd
-- cmd: ff
 - cmd: cd bin
-- cmd: ./gitpull.sh
-- cmd: u
 - cmd: select  cn in Israel Cyprus;
 - cmd: select  cn in Israel Cyprus
 - cmd: bash
@@ -1053,34 +1040,22 @@
     - ~/atest/
 - cmd: pss ell
 - cmd: pss ell | rg extra/ell
-- cmd: cdf
-- cmd: g
-- cmd: cd atest/
-    - atest/
-- cmd: l
-- cmd: ./c
-- cmd: n c
-- cmd: sn /etc/locale.gen
 - cmd: n 060grubmbr.sh
     - 060grubmbr.sh
-- cmd: ggg
-- cmd: n 030boot.sh
-    - 030boot.sh
 - cmd: n 050grubefi.sh
     - 050grubefi.sh
-- cmd: ..
 - cmd: n sroot.sh
     - sroot.sh
 - cmd: n suser.sh
     - suser.sh
-- cmd: cd 00inst/
+- cmd: n 010confpac.sh
+    - 010confpac.sh
 - cmd: s reflector --latest 5 --sort rate --country Israel --protocol https --verbose
 - cmd: s reflector --latest 5 --sort rate --country Israel --protocol https --verbose --save /etc/pacman.d/mirrorlist
     - /etc/pacman.d/mirrorlist
 - cmd: sn /etc/pacman.d/mirrorlist
 - cmd: s  reflector --latest 5 --sort rate  --country Greece,Tr,Israel,Germany,'United Kingdom'
-    - /etc/locale.gen
-    - 00inst/
+- cmd: sn /etc/locale.gen
 - cmd: n 020confpac-usr.sh
     - 020confpac-usr.sh
 - cmd: n 090nvidia.sh
@@ -1089,17 +1064,18 @@
     - 20pac.sh
 - cmd: n 30aur.sh
     - 30aur.sh
-- cmd: n aur.lst
 - cmd: n pac.lst
 - cmd: rm uaur.sh upac.sh
     - uaur.sh
     - upac.sh
 - cmd: cd ff
+- cmd: ff
 - cmd: pss usb disk formater
 - cmd: pss usb
 - cmd: pss mintstick
 - cmd: y mintstick
 - cmd: sudo -sE mintstick.py
+- cmd: pp
 - cmd: USB Image Writer
 - cmd: sudo -sE mintstick
 - cmd: sudo -sE mintstick -m format
@@ -1107,3 +1083,97 @@
 - cmd: fish
 - cmd: mf
 - cmd: mi
+- cmd: bh l
+- cmd: n aur.lst
+- cmd: cd misc/
+- cmd: n laur.lst
+    - laur.lst
+- cmd: yui usbimager
+- cmd: yui usbimager-debug
+- cmd: pd
+- cmd: yd
+- cmd: cpi l
+- cmd: yui art-rawconverter-bin
+- cmd: u
+- cmd: y floorp
+- cmd: pui firefox
+- cmd: cd bin/
+- cmd: ./gitpull.sh
+- cmd: cdf
+- cmd: n ir.sh
+    - ir.sh
+- cmd: cd nouse/00inst/
+    - nouse/00inst/
+- cmd: mv i.sh r.sh ../../
+    - i.sh
+    - r.sh
+    - ../../
+- cmd: ../../
+- cmd: n r.sh
+- cmd: cd 00inst/
+- cmd: n 030boot.sh
+    - 030boot.sh
+- cmd: n /etc/fstab
+    - /etc/fstab
+- cmd: lk -f
+- cmd: fdisk -f
+- cmd: fdisk -l
+- cmd: s fdisk -l
+- cmd: s fdisk --list-details | awk '{print $8}'
+- cmd: s fdisk --list-details
+- cmd: s cat fdisk --list-details
+- cmd: s fdisk --list-details | grep nvme0n1p2 | cut -f1
+- cmd: s fdisk --list-details | grep nvme0n1p2 | cut -f8
+- cmd: s fdisk --list-details | grep nvme0n1p2 | awk '{print $8}'
+- cmd: s fdisk --list-details | grep nvme0n1p2
+- cmd: s fdisk --list-details | grep /dev/nvme0n1p2
+    - /dev/nvme0n1p2
+- cmd: s fdisk --list-details | grep /dev/nvme0n1p2 | awk '{print $8}'
+- cmd: s fdisk --list-details | awk '{print $8}' | grep nmve0n1p2
+- cmd: lsblk -l
+- cmd: lbkid
+- cmd: blkid
+- cmd: s blkid
+- cmd: s blkid | grep nvme0n1p2 | awk '{print $2}'
+- cmd: s blkid | grep nvme0n1p2 | awk '{print $2}' | cut f1
+- cmd: s blkid | grep nvme0n1p2 | awk '{print $2}' | cut -f1
+- cmd: s blkid | grep nvme0n1p2 | awk '{print $2}' | cut -f2
+- cmd: s blkid | grep nvme0n1p2 | awk '{print $2}' | cut -b 6
+- cmd: s blkid | grep nvme0n1p2 | awk '{print $2}' | cut -b 7-10
+- cmd: s blkid | grep nvme0n1p2 | awk '{print $2}' | cut -b 7-34
+- cmd: s blkid | grep nvme0n1p2 | awk '{print $2}' | cut -b 7-40
+- cmd: s blkid | grep nvme0n1p2 | awk '{print $2}' | cut -b 7-42
+- cmd: s blkid | grep nvme0n1p2 | awk '{print $2}' | set uid=(cut -b 7-42)
+- cmd: ..
+- cmd: ggg
+- cmd: n i.sh
+- cmd: g
+- cmd: cd
+- cmd: cd atest/
+    - atest/
+- cmd: l
+- cmd: nb
+- cmd: n  b
+    - b
+- cmd: n a
+- cmd: n c -l
+- cmd: cat a
+- cmd: man sed
+- cmd: n  a
+- cmd: n c
+- cmd: ./c
+- cmd: n b
+    - 00inst/
+- cmd: n u.sh
+    - u.sh
+- cmd: n 99active.sh
+    - 99active.sh
+- cmd: pacman -Q | rg freetube
+    - freetube
+    - bin/
+- cmd: n ~/dotfiles/misc/fish
+    - ~/dotfiles/misc/fish
+- cmd: n ~/dotfiles/nouse/rootmisc/lhfish
+    - ~/dotfiles/nouse/rootmisc/lhfish
+- cmd: n ~/dotfiles/nouse/rootmisc/qhfish
+    - ~/dotfiles/nouse/rootmisc/qhfish

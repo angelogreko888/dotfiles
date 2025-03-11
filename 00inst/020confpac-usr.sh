@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-pacman_conf="/etc/pacman.conf"
+pac-conf="/etc/pacman.conf"
 
 sudo pacman -Sy --needed --noconfirm reflector 
 
@@ -13,17 +13,17 @@ lines_to_edit=(
 )
 
 for line in "${lines_to_edit[@]}"; do
-    if grep -q "^#$line" "$pacman_conf"; then
-        sudo sed -i "s/^#$line/$line/" "$pacman_conf"
+    if grep -q "^#$line" "$pac-conf"; then
+        sudo sed -i "s/^#$line/$line/" "$pac-conf"
         echo "Uncommented: $line" 
     else
         echo "$line is already uncommented."
     fi
 done
 
-sudo sed -i '92s/#//' $pacman_conf
+sudo sed -i '92s/#//' $pac-conf
 
-sudo sed -i '93s/#//' $pacman_conf
+sudo sed -i '93s/#//' $pac-conf
 
 printf "\e[1;32m.......Enter Country.......: \n\e[0m"
 

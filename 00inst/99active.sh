@@ -12,16 +12,11 @@ upower
 systemd-resolved.service
 apparmor.service
 paccache.timer 
-
-)
-
-nv=(
 nvidia-suspend.service
 nvidia-hibernate.service
 nvidia-resume.service
 
 )
-
 
 #zram
 if pacman -Q zram-generator ;then
@@ -49,19 +44,15 @@ fi
 sudo usermod -aG input "$(whoami)"
         echo "User added to the 'input' group. Changes will take effect after you log out and log back in."
 
+#wheel group
+sudo usermod -aG wheel "$(whoami)"
+
 
 #enable services
 for CTL in "${ctl[@]}";do
 	sudo systemctl enable "$CTL"
 	echo ""$CTL" activated"
 done
-
-if pacman -Q nvidia-open-dkms-tkg;then 
-	for NV in "${nv[@]}";do
-	        sudo systemctl enable "$NV"
-        	echo ""$NV" activated"
-	done
-fi
 
 #firejail
 sudo firecfg
@@ -84,9 +75,9 @@ else
 fi
 
 #fish
-chsh -s /usr/bin/fish
 cp ~/dotfiles/nouse/rootmisc/fish_history ~/.local/share/fish/
 cp ~/dotfiles/nouse/rootmisc/.bash_history ~/
+chsh -s /usr/bin/fish
 
 id  $whoami
 

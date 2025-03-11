@@ -23,7 +23,7 @@ select  bm in efi gpt;do
 	esac
 done
 
-if  [ -f "$cp" ] && [ -f "$bb" ];then
+if [ -f "$bb" ];then
         chmod +x $bb
         bash $bb 
 else

@@ -42,7 +42,6 @@ else
 fi
 
 sudo usermod -aG input "$(whoami)"
-        echo "User added to the 'input' group. Changes will take effect after you log out and log back in."
 
 #wheel group
 sudo usermod -aG wheel "$(whoami)"
@@ -57,21 +56,15 @@ done
 #firejail
 sudo firecfg
 
-# Check if /etc/default/grub exists
-if [ -f /etc/default/grub ]; then
-     # Check if apparmor is present
-    if ! sudo grep -q "apparmor" /etc/default/grub; then
-    sudo sed -Ei 's/^(GRUB_CMDLINE_LINUX_DEFAULT=\([^\)]*)\)"/\1 lsm=landlock,lockdown,yama,integrity,apparmor,bpf"/' /etc/default/grub
-    echo "apparmor  added to grub"  
-    fi
+# Check if apparmor is present in grub
+if ! sudo grep -q "apparmor" /etc/default/grub; then
+	sudo sed -Ei 's/^(GRUB_CMDLINE_LINUX_DEFAULT=\([^\)]*)\)"/\1 lsm=landlock,lockdown,yama,integrity,apparmor,bpf"/' /etc/default/grub
+	echo "apparmor  added to grub"  
+fi
 
-    # Regenerate GRUB configuration 
-    if sudo grep -q "apparmor" /etc/default/grub; then
-        sudo grub-mkconfig -o /boot/grub/grub.cfg
-    fi
-
-else
-    echo "grub does not exist"
+# Regenerate GRUB configuration 
+if sudo grep -q "apparmor" /etc/default/grub; then
+  	sudo grub-mkconfig -o /boot/grub/grub.cfg
 fi
 
 #fish

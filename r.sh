@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 
 gh="https://raw.githubusercontent.com/angelogreko888/dotfiles/main/00inst/"
-cp="010confpac.sh"
-bt="030boot.sh"
 ef="050grubefi.sh"
 gt="060grubgpt.sh"
 
@@ -13,11 +11,11 @@ printf "\n\e[1;32m... Enter your choice ... : \n\e[0m"
 select  bm in efi gpt;do
 	case $bm in
 		efi)
-                        wget $gh$ef $gh$cp
+                        wget $gh$ef 
                         bb=$ef
 			break ;;
 		gpt)
-                        wget $gh$gt $gh$cp
+                        wget $gh$gt 
                         bb=$gt
 			break ;;
 		*)
@@ -26,8 +24,7 @@ select  bm in efi gpt;do
 done
 
 if  [ -f "$cp" ] && [ -f "$bb" ];then
-        chmod +x 0*
-        bash $cp
+        chmod +x $bb
         bash $bb 
 else
         printf "\n\e[1;31m!!! Something went wrong- missing file !!! \e[0m"

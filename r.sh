@@ -31,4 +31,6 @@ else
         exit 1 
 fi
 
+rm 0*
+
 printf "\n\n\e[1;32m ... Done Root Setup! Type exit, umount -a and reboot ...\n\n\e[0m"

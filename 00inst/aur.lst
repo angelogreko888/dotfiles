@@ -10,11 +10,9 @@ librewolf-bin
 simple-mtpfs
 hyprshot
 mintstick
-
-)
-
-alst=(
 android-sdk-platform-tools
 anydesk-bin
 freetube-git
+
 )
+

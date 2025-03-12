@@ -12,6 +12,7 @@ upower
 systemd-resolved.service
 apparmor.service
 paccache.timer 
+seatd
 nvidia-suspend.service
 nvidia-hibernate.service
 nvidia-resume.service

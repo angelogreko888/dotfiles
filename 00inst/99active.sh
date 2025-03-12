@@ -58,7 +58,7 @@ sudo firecfg
 
 # Check if apparmor is present in grub
 if ! sudo grep -q "apparmor" /etc/default/grub; then
-	sudo sed -Ei 's/^(GRUB_CMDLINE_LINUX_DEFAULT=\([^\)]*)\)"/\1 lsm=landlock,lockdown,yama,integrity,apparmor,bpf"/' /etc/default/grub
+	sudo sed -Ei 's/^(GRUB_CMDLINE_LINUX_DEFAULT=\([^\)]".*\)"/\1 lsm=landlock,lockdown,yama,integrity,apparmor,bpf"/' /etc/default/grub
 	echo "apparmor  added to grub"  
 fi
 

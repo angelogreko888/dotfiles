@@ -13,8 +13,9 @@ cd ~
 
 for PKG in "${lst[@]}";do
         yay -Su --needed --noconfirm "$PKG"
-	 if ! sudo pacman -Q "$PKG" &>/dev/null; then
-        printf "\e[1;31mERROR...Sorry, could not install... $PKG\e[0m\n" >&2
-   fi
 done
+
+ if ! sudo pacman -Q "$PKG" &>/dev/null; then
+        printf "\e[1;31mERROR...Sorry, could not install... $PKG\e[0m\n" >&2
+ fi
 

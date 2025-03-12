@@ -40,13 +40,18 @@ select  yn in yes no;do
 done
 
 bash $is$pc
+printf "\n\e[1;32m... press enter to continue ... : \e[0m"
+read
 bash $is$ar
+printf "\n\e[1;32m... press enter to continue ... : \e[0m"
+read
 bash $is$pp
 printf "\n\e[1;32m... press enter to activate hyprland ... : \e[0m"
 read
 hyprland
 sleep 10
 bash $is$st
+printf "\n\e[1;32m... press enter to continue ... : \e[0m"
+read
 bash $is$at
-
 printf "\n\e[1;32m... Done user setup - reboot ... : \e[0m"

@@ -12,7 +12,7 @@ at="99active.sh"
 
 cd ~
 
-sudo pacman -Sy --needed --noconfirm git nano 
+sudo pacman -Sy --needed --noconfirm git nano reflector
 
 git clone https://github.com/angelogreko888/dotfiles
 

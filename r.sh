@@ -4,7 +4,7 @@ gh="https://raw.githubusercontent.com/angelogreko888/dotfiles/main/00inst/"
 ef="050grubefi.sh"
 gt="060grubgpt.sh"
 
-pacman -Sy --needed --noconfirm  wget nano reflector
+pacman -Sy --needed --noconfirm  wget nano 
 
 printf "\n\e[1;32m... Enter your choice ... : \n\e[0m"
 

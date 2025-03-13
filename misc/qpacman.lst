@@ -12,6 +12,7 @@ dbxtool
 dconf-editor
 dmidecode
 dosfstools
+dpkg
 efibootmgr
 eog
 evince
@@ -68,6 +69,7 @@ nemo
 network-manager-applet
 networkmanager
 nmap
+nss-mdns
 nwg-look
 pacman-contrib
 pamixer

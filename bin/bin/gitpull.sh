@@ -7,9 +7,12 @@ handle_error() {
 
   trap 'handle_error $LINENO' ERR
 
-wget -q --spider http://google.com 
 
-if [ $? -eq 0 ];then
+until ping -c1 www.google.com &>/dev/null
+do
+sleep 2
+done
+
 cd ~/dotfiles 
 
   exec foot sh -c  'git pull;
@@ -20,6 +23,3 @@ cd ~/dotfiles
   rsync search-history.db  ~/.config/FreeTube/search-history.db;
   rsync settings.db  ~/.config/FreeTube/settings.db;
   echo Done!!!; cd ~;  read'
-else 
-bash ~/bin/gitpull.sh
-fi

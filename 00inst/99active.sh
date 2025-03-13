@@ -13,6 +13,7 @@ systemd-resolved.service
 apparmor.service
 paccache.timer 
 seatd
+systemd-homed.service
 nvidia-suspend.service
 nvidia-hibernate.service
 nvidia-resume.service

@@ -7,6 +7,8 @@ handle_error() {
 
   trap 'handle_error $LINENO' ERR
 
-sudo timeshift --create
 a=$(sudo timeshift --list |awk 'NR==13{print $3}')
-sudo timeshift  --delete  --snapshot $a
+
+exec foot sh -c 'sudo timeshift --create;
+sudo timeshift  --delete  --snapshot $a;
+echo done!!!; read'

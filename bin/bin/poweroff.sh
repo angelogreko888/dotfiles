@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-~/bin/gpush.sh
 ~/bin/tshift.sh
+~/bin/gpush.sh
 sleep 1
 poweroff

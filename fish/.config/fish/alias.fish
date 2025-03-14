@@ -79,6 +79,7 @@ alias ts='sudo -sE timeshift-gtk'
 alias tsc='sudo timeshift --create'
 alias tsr='sudo timeshift --restore'
 alias tsl='sudo timeshift --list'
+alias tss='~/bin/tshift.sh'
 
 alias gu='sudo -sE /sbin/gufw-pkexec'
 

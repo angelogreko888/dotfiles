@@ -19,7 +19,7 @@ select  ns in nvme0n1 sda;do
         aa=sda
         break ;;
         *)
-         printf "\n\e[1;31m... !!! ERROR Enter Your Choice !!! ... \e[0m" >>
+         printf "\n\e[1;31m... !!! ERROR Enter Your Choice !!! ... \e[0m" >&2
         esac
 done
 

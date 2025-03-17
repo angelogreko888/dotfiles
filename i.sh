@@ -37,7 +37,17 @@ for LD in "${ld[@]}";do
 			read bd
 			case $LD in
 				boot)
-					mkfs.fat -F32 /dev/$aa$bd
+					 printf "\n\e[1;32m.......formar "$LD" ?: \n\e[0m"
+                                         select  yn in yes no;do
+                                                case $yn in
+                                                yes) 
+							mkfs.fat -F32 /dev/$aa$bd
+					                break ;;
+                                                no)
+                                                        echo "not formating"
+                                                        break ;;
+                                                esac
+                                        done
 					mount /dev/$aa$bd /mnt/$LD
 					break ;;
 				swap)
@@ -45,11 +55,31 @@ for LD in "${ld[@]}";do
 					swapon /dev/$aa$bd 
                 			break ;;
 				home)
-					mkfs.ext4 /dev/$aa$bd
+					 printf "\n\e[1;32m.......formar "$LD" ?: \n\e[0m"
+                                         select  yn in yes no;do
+                                                case $yn in
+                                                yes) 
+							mkfs.ext4 /dev/$aa$bd
+							 break ;;
+                                                no)
+                                                        echo "not formating"
+                                                        break ;;
+                                                esac
+                                        done		
 					mount --mkdir /dev/$aa$bd /mnt/$LD
 					break ;;
 				vt)
-                                        mkfs.ext4 /dev/$aa$bd
+					printf "\n\e[1;32m.......formar "$LD" ?: \n\e[0m"
+                                        select  yn in yes no;do
+                                                case $yn in
+                                                yes)                 
+                				        mkfs.ext4 /dev/$aa$bd
+							 break ;;
+                                                no)
+                                                        echo "not formating"
+                                                        break ;;
+                                                esac
+                                        done            
                                         mount --mkdir /dev/$aa$bd /mnt/$LD
                                         break ;;
 			esac

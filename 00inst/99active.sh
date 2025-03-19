@@ -47,7 +47,7 @@ sudo usermod -aG input "$(whoami)"
 
 #wheel group
 sudo usermod -aG wheel "$(whoami)"
-
+sudo usermod -aG users "$(whoami)"
 
 #enable services
 for CTL in "${ctl[@]}";do

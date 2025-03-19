@@ -13,4 +13,3 @@ export GTK_THEME=Arc-Dark
 export XCURSOR_THEME=radioactive-yellow
 export XCURSOR_SIZE=24
 
-export DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY

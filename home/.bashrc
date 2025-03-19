@@ -6,6 +6,8 @@ if uwsm check may-start; then
     exec uwsm start hyprland.desktop
 fi
 
+xhost + > /dev/null
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;

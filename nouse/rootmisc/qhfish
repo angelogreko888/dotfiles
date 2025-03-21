@@ -92,8 +92,6 @@
 - cmd: cd XiaomiADBFastbootTools/
 - cmd: n apps.yml
 - cmd: cd .nv
-- cmd: cg
-- cmd: git pull
 - cmd: hyprland
 - cmd: h | rg open
 - cmd: h | rg xdg-open
@@ -128,9 +126,6 @@
 - cmd: n b5fzf.sh
 - cmd: cd polybar/
 - cmd: cd .config/polybar/
-- cmd: n config.ini
-- cmd: cat /sys/module/nvidia_drm/parameters/modeset
-- cmd: s cat /sys/module/nvidia_drm/parameters/modeset
 - cmd: w polkit
 - cmd: ps polkit
 - cmd: pi sway
@@ -169,8 +164,6 @@
 - cmd: n  ~/.xprofile
 - cmd: h | rg group
 - cmd: sn /etc/groupsn
-- cmd: id vago
-- cmd: sn /etc/group
 - cmd: ps seatd
 - cmd: ctl status ly
 - cmd: ctl status sddm
@@ -203,7 +196,6 @@
 - cmd: loginctl session-status
 - cmd: mv hyprlock.conf hyprlock.conf.bup
 - cmd: n hyprlock
-- cmd: n hypridle.conf
 - cmd: n hyprlock.conf.bup
 - cmd: hyprlock
 - cmd: comm ~/dotfiles/misc/qpacman.lst ~/dotfiles/00inst/pac.sh
@@ -215,7 +207,6 @@
 - cmd: ps dbxtool
 - cmd: pacman -Si dbxtool
 - cmd: n  ~/dotfiles/00inst/aur.sh
-- cmd: n pac
 - cmd: cp ~/dotfiles/00inst/pac.sh .
 - cmd: n  ~/dotfiles/00inst/pac.sh
 - cmd: mv pac bpac
@@ -293,7 +284,6 @@
 - cmd: n /home/vago/.nvidia-settings-rc
 - cmd: rm /home/vago/.nvidia-settings-rc
 - cmd: d 00inst/
-- cmd: n env-hyprland
 - cmd: ./backup.sh
 - cmd: n backup.sh
 - cmd: y fmc-1910w
@@ -310,7 +300,6 @@
 - cmd: pacman -Q | rg nfs-utils
 - cmd: pacman -Q | rg inetutils
 - cmd: pacman -Q | rg dnsutils
-- cmd: n.
 - cmd: pacman -Q | rg bash-completion
 - cmd: pacman -Q | rg openssh
 - cmd: pacman -Q | rg acpi
@@ -367,7 +356,6 @@
 - cmd: n efi.sh
 - cmd: n mbr.sh
 - cmd: rm befi
-- cmd: pp
 - cmd: ע
 - cmd: ctl status nvidia-suspend.service
 - cmd: ctl status nvidia-hibernate.service
@@ -400,7 +388,6 @@
 - cmd: ./nvidia.sh
 - cmd: n nvidia.hook
 - cmd: n hyprlo
-- cmd: n keybind.conf
 - cmd: hypr
 - cmd: cd hypr
 - cmd: lo systemd-sleep.conf
@@ -416,7 +403,6 @@
 - cmd: lo dsdt.aml
 - cmd: sn /etc/systemd/sleep.conf.d/mem-deep.conf
 - cmd: sn /etc/systemd/sleep.conf.d/freeze.conf
-- cmd: sn /etc/fstab
 - cmd: cat /sys/block/zram0/comp_algorithm
 - cmd: ctl systemd-zram-setup@zram0.service
 - cmd: zramctl
@@ -446,7 +432,6 @@
 - cmd: sn /etc/mkinitcpio.conf
 - cmd: lo nvidia
 - cmd: s rm /etc/modprobe.d/nvidia.conf
-- cmd: sn /etc/modprobe.d/nvidia.conf
 - cmd: sn /etc/modules-load.d/nvidia.conf
 - cmd: s rm /etc/modules-load.d/nvidia.conf
 - cmd: s rm /etc/pacman.d/hooks/nvidia.hook
@@ -553,7 +538,6 @@
 - cmd: yui cachy-browser
 - cmd: bb
 - cmd: cpd
-- cmd: cpk
 - cmd: lo
 - cmd: lo cachy
 - cmd: rr /home/vago/.cachy
@@ -647,7 +631,6 @@
 - cmd: sudo nano  nano /etc/default/keyboard\n
 - cmd: localectl status
 - cmd: localectl status\n
-- cmd: ψηη
 - cmd: nano  input.conf
 - cmd: ביי
 - cmd: sudo updatedb; locate nvidia.conf
@@ -697,7 +680,6 @@
 - cmd: nano  sync.sh
 - cmd: touch a
 - cmd: rm /bin/a
-- cmd: rm a
 - cmd: nano  $HOME/.config/waybar/power_menu.xml
 - cmd: cd bin/
 - cmd: nano  gpush.sh
@@ -771,7 +753,6 @@
 - cmd: cd 24DCEFD8DCEFA1F2/
 - cmd: cd 6A14-BB2A/
 - cmd: git clone https://aur.archlinux.org/yay.git
-- cmd: cd yay/
 - cmd: cp -i  ~/git/yay/ .
 - cmd: cp -i -r  ~/git/yay/ .
 - cmd: cd /run/media/vago/USB\\ STICK/
@@ -801,7 +782,6 @@
 - cmd: nano  user.conf
 - cmd: nano  gitpull.sh
 - cmd: sudo pacman -Syyu --noconfirm && yay -Syyu --noconfirm
-- cmd: 110201
 - cmd: cd ~/dotfiles && git pull && cd -
 - cmd: fastfetch
 - cmd: htop
@@ -877,8 +857,6 @@
 - cmd: pacman -Q | rg wlroots
 - cmd: pss wlroots
 - cmd: pi wlroots
-- cmd: pd
-- cmd: yd
 - cmd: cd mnt
 - cmd: cd /mnt
 - cmd: srr 6A14-BB2A/ 24DCEFD8DCEFA1F2/ data/
@@ -890,9 +868,7 @@
 - cmd: cd gtk-4.0/.config/gtk-4.0/
 - cmd: n settings.ini
 - cmd: stow gtk-4.0/
-- cmd: cc
 - cmd: cd uwsm
-- cmd: n env
 - cmd: n animations-dynamic.conf
 - cmd: su -
 - cmd: ch c
@@ -902,19 +878,15 @@
 - cmd: librewolf://gpu
 - cmd: lk
 - cmd: gd
-- cmd: ff
 - cmd: ./gitpull.sh
 - cmd: select  cn in Israel Cyprus;
 - cmd: select  cn in Israel Cyprus
-- cmd: bash
 - cmd: pss ell
 - cmd: pss ell | rg extra/ell
-- cmd: cd atest/
 - cmd: sn /etc/locale.gen
 - cmd: n 060grubmbr.sh
 - cmd: ggg
 - cmd: n 050grubefi.sh
-- cmd: ..
 - cmd: n sroot.sh
 - cmd: n suser.sh
 - cmd: s reflector --latest 5 --sort rate --country Israel --protocol https --verbose
@@ -925,8 +897,6 @@
 - cmd: n 090nvidia.sh
 - cmd: n 20pac.sh
 - cmd: n 30aur.sh
-- cmd: n aur.lst
-- cmd: n pac.lst
 - cmd: rm uaur.sh upac.sh
 - cmd: cd ff
 - cmd: pss usb disk formater
@@ -941,7 +911,6 @@
 - cmd: mf
 - cmd: mi
 - cmd: rm fish_history.bup
-- cmd: cpi q
 - cmd: n laur.lst
 - cmd: yui usbimager
 - cmd: yui usbimager-debug
@@ -980,7 +949,6 @@
 - cmd: s blkid | grep nvme0n1p2 | awk '{print $2}' | cut -b 7-40
 - cmd: s blkid | grep nvme0n1p2 | awk '{print $2}' | cut -b 7-42
 - cmd: s blkid | grep nvme0n1p2 | awk '{print $2}' | set uid=(cut -b 7-42)
-- cmd: n i.sh
 - cmd: n  b
 - cmd: cat a
 - cmd: man sed
@@ -1019,7 +987,6 @@
 - cmd: rm a b tee
 - cmd: n sync.sh
 - cmd: pi hyprshade
-- cmd: y hyprshade
 - cmd: ctl status hyprshade
 - cmd: lo nemo
 - cmd: n /home/vago/.local/share/nemo/scripts
@@ -1072,7 +1039,6 @@
 - cmd: sudo nvidia-bug-report.sh
 - cmd: pss qtwayland5
 - cmd: mv env env-hyprland ~/dotfiles/nouse/uwsm/
-- cmd: cd uwsm/
 - cmd: s journalctl -b -1
 - cmd: pss  pambase
 - cmd: ctl status systemd-homed.service
@@ -1084,14 +1050,11 @@
 - cmd: modprobe intel_pmc_bxt
 - cmd: modprobe iTCO_vendor_support
 - cmd: h |rg adb
-- cmd: bh q
 - cmd: h | grep adb
-- cmd: n .local/share/fish/fish_history
 - cmd: cd nouse/rootmisc/
 - cmd: n fish_history
   paths:
     - fish_history
-- cmd: n 99active.sh
 - cmd: pacman -Qsq mesa
 - cmd: pss glu
 - cmd: pacman -Qi mesa
@@ -1107,14 +1070,12 @@
     - ~/.librewolf/
 - cmd: pss gnupg
 - cmd: gpg -c brlw.tar.xz
-- cmd: ll
 - cmd: rm ggg brlw.tar.xz
     - ggg
 - cmd: gpg brlw.tar.xz.gpg
     - brlw.tar.xz.gpg
 - cmd: rm br*
 - cmd: b
-- cmd: t
 - cmd: tsc
 - cmd: sudo timeshift --delete --snapshot 1
 - cmd: sudo timeshift --delete 1
@@ -1135,8 +1096,6 @@
 - cmd: s timeshift --list --snapshot-device /dev/nvme0n1p5 |grep 2025 |sed -e '2'
 - cmd: s timeshift --list --snapshot-device /dev/nvme0n1p5 |grep -n 1
 - cmd: s timeshift --list --snapshot-device /dev/nvme0n1p5 |grep -n 12
-- cmd: cd ~/atest/
-- cmd: n c -l
 - cmd: s timeshift --list --snapshot-device /dev/nvme0n1p5 |grep -n 12 |awk '{print $3}'
 - cmd: s timeshift --list |grep -n 12 |awk '{print $3}'
 - cmd: s timeshift --list |grep -n 11 |awk '{print $3}'
@@ -1145,53 +1104,36 @@
 - cmd: s timeshift --list |grep -n 12
 - cmd: s timeshift --list |grep -l 12
 - cmd: s timeshift --list >a
-- cmd: n a
 - cmd: n a -l
     - a
 - cmd: s timeshift --list |grep -a -n 12
 - cmd: s timeshift --list |grep -x 12
 - cmd: s timeshift --list |awk 'NR==12{print $3}'
-- cmd: ./c
 - cmd: cp c tshift.sh
     - c
-- cmd: n c
 - cmd: mv tshift.sh ~/bin
     - tshift.sh
     - ~/bin
-- cmd: cd ~/bin
 - cmd: n gitpull.sh
 - cmd: ./systeminfo.sh
 - cmd: sudo timeshift --list |awk 'NR==13{print $3}'
 - cmd: n poweroff.sh
     - poweroff.sh
 - cmd: ./tshift.sh
-- cmd: ts
 - cmd: af
-- cmd: tss
-- cmd: chh
-- cmd: n autostart.conf
-- cmd: gg
 - cmd: ctl suspend
 - cmd: s dmesg
 - cmd: c
-- cmd: u
-- cmd: cdf
-- cmd: cd 00inst/
 - cmd: cd  bin/
     - bin/
 - cmd: sudo timeshift --create
-- cmd: tsl
 - cmd: n tshift.sh
-- cmd: g
-- cmd: cd vago/
-    - vago/
 - cmd: du -h
 - cmd: du -f
-- cmd: cd
 - cmd: cd bin
-- cmd: cd /vt
 - cmd: md sync-vago
 - cmd: mv vago/ sync-vago/
+    - vago/
     - sync-vago/
 - cmd: cd ~/bin/
     - ~/bin/
@@ -1199,15 +1141,231 @@
 - cmd: cd -
 - cmd: n bup
 - cmd: cdc
-- cmd: cd sync-vago/
 - cmd: mv librewolf/ .librewolf/
     - librewolf/
 - cmd: rr git
     - git
-- cmd: l
 - cmd: cd .vp
     - .vp
 - cmd: cd p
     - p
 - cmd: xopen
-    - .local/share/fish/fish_history
+- cmd: bh q
+- cmd: cpi q
+- cmd: cd /run/timeshift/
+    - /run/timeshift/
+- cmd: sn /etc/fstab
+- cmd: cd /vt
+- cmd: cd sync-vago/
+- cmd: n vago/
+- cmd: cd vago/
+- cmd: cd dotfiles/
+    - dotfiles/
+- cmd: n c -l
+- cmd: ./c
+- cmd: y libva-nvidia-driver
+- cmd: sn /etc/modprobe.d/nvidia.conf
+- cmd: cat /sys/module/nvidia_drm/parameters/modeset
+- cmd: s cat /sys/module/nvidia_drm/parameters/modeset
+- cmd: y libva
+- cmd: y libva-utils
+- cmd: cg
+- cmd: cd nvidia-all/
+    - nvidia-all/
+- cmd: cd yay/
+- cmd: git pull
+- cmd: h | grep ctl
+- cmd: ctl status paccache.timer
+- cmd: paccache -ruk0
+- cmd: s paccache -ruk0
+- cmd: s paccache -rk1
+- cmd: cpk
+- cmd: cd ~/atest/
+- cmd: n z -l
+    - z
+- cmd: paccache -rk1
+- cmd: notify-send "done"
+- cmd: ./z
+- cmd: cp z clearpac.sh
+- cmd: mv clearpac.sh prpac.sh
+    - clearpac.sh
+- cmd: ./prpac.sh
+- cmd: mv prpac.sh ~/bin
+    - prpac.sh
+- cmd: cd ~/bin
+- cmd: n prpac.sh
+- cmd: mv prpac.sh paccach.sh
+- cmd: n autostart.conf
+- cmd: n i.sh
+- cmd: gg
+- cmd: ψδ
+- cmd: loginctl suspend
+- cmd: n hypridle.conf
+- cmd: u
+- cmd: t
+- cmd: pss gnome-session
+- cmd: pss gnome-shell
+- cmd: pss gnome-accesability
+- cmd: g
+- cmd: pss polkitagent
+- cmd: pi hyprpolkitagent
+- cmd: s systemctl  enable --now hyprpolkitagent.service
+- cmd: xdg-user-dirs-update
+- cmd: ctl status xdg-user-dirs-update.service
+- cmd: pss  xdg-user-dirs
+- cmd: who
+- cmd: sn /etc/default/useradd
+    - /etc/default/useradd
+- cmd: cd 00inst/
+- cmd: n 99active.sh
+- cmd: sudo usermod -aG users "$(whoami)"
+- cmd: id vago
+- cmd: s systemctl --user enable --now hyprpolkitagent.service
+- cmd: s systemctl  --machine=vago@.host --user enable --now hyprpolkitagent.service
+- cmd: pss  xorg-xhost
+- cmd: xhost +SI:localuser:vago
+- cmd: s timeshift-launcher
+- cmd: pkexec timeshift-launcher
+- cmd: cd /etc/ly
+    - /etc/ly
+- cmd: n config.ini
+- cmd: sn config.ini
+    - config.ini
+- cmd: ll
+- cmd: n a
+- cmd: rm a
+- cmd: s xauth
+- cmd: pi xauth
+- cmd: pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY /sbin/timeshift
+    - /sbin/timeshift
+- cmd: pui  xorg-xhost
+- cmd: pi  xorg-xhost
+- cmd: xhost -
+- cmd: xhost +SI:localuser:root
+- cmd: bash
+- cmd: pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY /sbin/timeshift-gtk
+    - /sbin/timeshift-gtk
+- cmd: gparted
+- cmd: timeshift
+- cmd: cdf
+- cmd: n fuzzel/.config/fuzzel/fuzzel.ini
+    - fuzzel/.config/fuzzel/fuzzel.ini
+- cmd: sn /tmp/.Xauthority
+- cmd: cd /tmp/
+    - /tmp/
+- cmd: n env-hyprland
+- cmd: b env
+    - env
+- cmd: w xauth
+- cmd: timeshift-gtk
+- cmd: s timeshift-gtk
+- cmd: n.
+- cmd: cat /etc/hostname
+    - /etc/hostname
+- cmd: pss xauth
+- cmd: pi xorg-xauth
+- cmd: xauth
+- cmd: cd /tmp
+    - /tmp
+- cmd: timeshift-launcher
+- cmd: echo $XAUTHORITY
+- cmd: sn /etc/spnavd.conf
+- cmd: sn /etc/spnavrc
+- cmd: lo spnavrc
+- cmd: lo spnavd
+- cmd: sn /etc/systemd/system/spacenavd.service
+- cmd: cd /var/run
+    - /var/run
+- cmd: pss polkit
+- cmd: pui hyprpolkitagent
+- cmd: sudo timeshift-gtk
+- cmd: pi xorg-xhost
+- cmd: pkexec timeshift-gtk
+- cmd: n .Xauthority
+- cmd: cc
+- cmd: n env
+- cmd: xauth -f ~/.Xauthority -vqibn generate displayname protocolname trusted
+- cmd: echo $DISPALY
+- cmd: echo $DISPLAY
+- cmd: xauth -f ~/.Xauthority -vqibn generate :0 protocolname trusted
+    - ~/.Xauthority
+- cmd: sn /etc/group
+- cmd: sn $XDG_RUNTIME_DIR/.lyxauth
+- cmd: sn $XDG_RUNTIME_DIR/.lyxauth:
+- cmd: cd $XDG_RUNTIME_DIR/
+    - $XDG_RUNTIME_DIR/
+- cmd: cd p11-kit/
+    - p11-kit/
+- cmd: n pkcs11
+    - pkcs11
+- cmd: sn pkcs11
+- cmd: cd uwsm/
+- cmd: sn env_cleanup.list
+    - env_cleanup.list
+- cmd: sn env_pre
+    - env_pre
+- cmd: ..
+- cmd: cd
+- cmd: lo login c
+- cmd: man pkexec | grep -i ^Example -A 60
+- cmd: man pkexec
+- cmd: h | grep pi
+- cmd: rm .Xauthority
+    - .Xauthority
+- cmd: pui xorg-xhost
+- cmd: tss
+- cmd: tsl
+- cmd: w timeshift
+- cmd: sudo /bin/env WAYLAND_DISPLAY="$XDG_RUNTIME_DIR/$WAYLAND_DISPLAY"  XDG_RUNTIME_DIR=/user/run/0  /sbin/timeshift
+    - /bin/env
+- cmd: sudo /bin/env WAYLAND_DISPLAY="$XDG_RUNTIME_DIR/$WAYLAND_DISPLAY"  XDG_RUNTIME_DIR=/user/run/0  /sbin/timeshift-gtk
+- cmd: ts
+- cmd: pacman -Qqen
+- cmd: pacman -Qqem
+- cmd: pacman -Qqem > aur
+- cmd: cp ~/dotfiles/00inst/pac.lst  .
+    - ~/dotfiles/00inst/pac.lst
+    - .
+- cmd: cp ~/dotfiles/00inst/aur.lst  .
+    - ~/dotfiles/00inst/aur.lst
+- cmd: sort -i pac.lst pac.lst
+    - pac.lst
+- cmd: sort  pac.lst -o  pac.lst
+- cmd: sort  aur.lst -o  aur.lst
+    - aur.lst
+- cmd: n pac.lst
+- cmd: n aur.lst
+- cmd: comm pac pac.lst
+    - pac
+- cmd: pui xorg-xauth
+- cmd: pss  egl-wayland
+- cmd: pss efibootmgr
+- cmd: pss gvfs
+- cmd: pss mesa
+- cmd: comm aur aur.lst
+    - aur
+- cmd: pss xorg-xauth
+- cmd: pacman -Qqen > pac
+- cmd: n pac
+- cmd: pd
+- cmd: yd
+- cmd: ff
+- cmd: rm pac
+- cmd: cd atest/
+- cmd: rm a*
+- cmd: rm p*
+- cmd: l
+- cmd: n c
+- cmd: n z
+- cmd: n .local/share/fish/fish_history
+- cmd: ψηη
+- cmd: chh
+- cmd: pp
+- cmd: n keybind.conf
+- cmd: pacman -Q hyprshade
+- cmd: n /etc/pacman.d/mirrorlist
+    - /etc/pacman.d/mirrorlist
+- cmd: reflector --country Israel --latest 5 --sort rate --protocol https --verbose --save /etc/pacman.d/mirrorlist
+- cmd: s reflector --country Israel --latest 5 --sort rate --protocol https --verbose --save /etc/pacman.d/mirrorlist
+- cmd: y hyprshade
+    - keybind.conf

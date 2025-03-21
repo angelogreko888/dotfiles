@@ -8,12 +8,12 @@ checkupdates-with-aur
 freetube-git
 hyprevents-git
 hyprprop-git
+hyprshade
 hyprshot
 lib32-nvidia-utils-tkg
 lib32-opencl-nvidia-tkg
 libglade
 librewolf-bin
-librewolf-bin-debug
 mintstick
 mkinitcpio-firmware
 nvidia-open-dkms-tkg

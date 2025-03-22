@@ -121,7 +121,7 @@ user_pref("extensions.webextensions.uuids", "{\"formautofill@mozilla.org\":\"5d4
 user_pref("gecko.handlerService.defaultHandlersVersion", 1);
 user_pref("identity.fxaccounts.account.device.name", "vago’s LibreWolf on greko");
 user_pref("identity.fxaccounts.account.telemetry.sanitized_uid", "49a627dcf7cfc29ae0a782466ab6a37f");
-user_pref("identity.fxaccounts.commands.missed.last_fetch", 1742591245);
+user_pref("identity.fxaccounts.commands.missed.last_fetch", 1742678937);
 user_pref("identity.fxaccounts.enabled", true);
 user_pref("identity.fxaccounts.lastSignedInUserHash", "OQs9qltTl0K9hbLQ0+DgvUBRIxVtlj9MTcgN9VeCwNw=");
 user_pref("idle.lastDailyNotification", 1742678656);
@@ -200,8 +200,8 @@ user_pref("services.sync.engine.tabs", false);
 user_pref("services.sync.forms.lastSync", "0");
 user_pref("services.sync.globalScore", 0);
 user_pref("services.sync.lastPing", 1742678335);
-user_pref("services.sync.lastSync", "Sat Mar 22 2025 23:18:56 GMT+0200 (Israel Standard Time)");
-user_pref("services.sync.nextSync", 1742678936);
+user_pref("services.sync.lastSync", "Sat Mar 22 2025 23:39:00 GMT+0200 (Israel Standard Time)");
+user_pref("services.sync.nextSync", 1742683140);
 user_pref("services.sync.prefs.lastSync", "1741322574.72");
 user_pref("services.sync.prefs.sync-seen.accessibility.typeaheadfind", true);
 user_pref("services.sync.prefs.sync-seen.app.shield.optoutstudies.enabled", true);
@@ -248,7 +248,7 @@ user_pref("services.sync.prefs.sync.browser.newtabpage.activity-stream.showSpons
 user_pref("services.sync.prefs.sync.browser.newtabpage.activity-stream.showSponsoredTopSites", false);
 user_pref("services.sync.prefs.sync.privacy.trackingprotection.cryptomining.enabled", false);
 user_pref("services.sync.prefs.syncID", "LiC6or4w7-QP");
-user_pref("services.sync.syncInterval", 600000);
+user_pref("services.sync.syncInterval", 3600000);
 user_pref("services.sync.syncThreshold", 300);
 user_pref("services.sync.username", "greco.v@yandex.com");
 user_pref("sidebar.backupState", "{\"command\":\"\",\"launcherExpanded\":false,\"launcherVisible\":false}");

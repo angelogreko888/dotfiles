@@ -34,6 +34,10 @@ sudo cp -r  ~/dotfiles/nouse/icons/buuf-nestort  /usr/share/icons/
 sudo cp -r  ~/dotfiles/nouse/icons/radioactive-yellow /usr/share/icons/ 
 sudo cp ~/dotfiles/nouse/fonts/NotoColorEmoji-flagsonly.ttf /usr/share/fonts 
 
+#browsers
+cp -r ~/dotfiles/nouse/brows/.libreoffice ~/
+cp -r ~/dotfiles/nouse/brows/.mullvad ~/
+
 #input group
 if grep -q '^input:' /etc/group; then
 	echo "'input' group exists."

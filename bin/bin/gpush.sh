@@ -12,6 +12,7 @@
 
 	cd ~
 	rsync -r --exclude 'lock' .mullvad/mullvadbrowser  ~/dotfiles/home/.mullvad/
+	rsync -r --exclude 'lock' .librewolf  ~/dotfiles/home/
 
 	cd ~/dotfiles
 	git add * && git commit -m "save" && git push -u origin main

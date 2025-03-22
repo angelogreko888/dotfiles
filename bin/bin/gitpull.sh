@@ -24,4 +24,5 @@ cd ~/dotfiles
   rsync settings.db  ~/.config/FreeTube/settings.db;
   cd ~/dotfiles/home/;
   rsync -r --exclude 'lock' .mullvad  ~/;
+  rsync -r --exclude 'lock' .librewolf  ~/;
   echo Done!!!; cd ~;  read'

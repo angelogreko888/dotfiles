@@ -22,4 +22,6 @@ cd ~/dotfiles
   rsync profiles.db  ~/.config/FreeTube/profiles.db;
   rsync search-history.db  ~/.config/FreeTube/search-history.db;
   rsync settings.db  ~/.config/FreeTube/settings.db;
+  cd ~/dotfiles/home/.mullvad/;
+  rsync -r --exclude 'lock' mullvadbrowser/  ~/.mullvad/;
   echo Done!!!; cd ~;  read'

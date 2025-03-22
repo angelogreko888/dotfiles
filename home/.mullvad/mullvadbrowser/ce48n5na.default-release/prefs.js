@@ -11,7 +11,7 @@
 
 user_pref("app.update.lastUpdateTime.addon-background-update-timer", 1742636842);
 user_pref("app.update.lastUpdateTime.background-update-timer", 1742636842);
-user_pref("app.update.lastUpdateTime.browser-cleanup-thumbnails", 1742666897);
+user_pref("app.update.lastUpdateTime.browser-cleanup-thumbnails", 1742670498);
 user_pref("app.update.lastUpdateTime.xpi-signature-verification", 1742636842);
 user_pref("basebrowser.migration.version", 3);
 user_pref("browser.aboutConfig.showWarning", false);
@@ -100,7 +100,7 @@ user_pref("privacy.history.custom", true);
 user_pref("privacy.purge_trackers.date_in_cookie_database", "0");
 user_pref("privacy.resistFingerprinting.letterboxing.didForceSize", true);
 user_pref("privacy.sanitize.clearOnShutdown.hasMigratedToNewPrefs2", true);
-user_pref("privacy.sanitize.pending", "[{\"id\":\"newtab-container\",\"itemsToClear\":[],\"options\":{}}]");
+user_pref("privacy.sanitize.pending", "[]");
 user_pref("privacy.userContext.enabled", true);
 user_pref("privacy.userContext.extension", "@contain-facebook");
 user_pref("privacy.userContext.ui.enabled", true);

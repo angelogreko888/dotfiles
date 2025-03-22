@@ -11,7 +11,7 @@
 	rsync settings.db  ~/dotfiles/freetube/.config/FreeTube/settings.db
 
 	cd ~
-	rsync -r --exclude 'lock' .mullvad/mullvadbrowser  ~/dotfiles/nouse/brows/.mullvad/
+	rsync -r --exclude 'lock' .mullvad  ~/dotfiles/nouse/brows/
 	rsync -r --exclude 'lock' .librewolf  ~/dotfiles/nouse/brows/
 
 	cd ~/dotfiles

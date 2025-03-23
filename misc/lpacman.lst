@@ -38,6 +38,7 @@ grim
 grub
 grub-btrfs
 gst-plugin-pipewire
+gtk2
 gufw
 hdparm
 htop
@@ -56,6 +57,7 @@ jdk-openjdk
 less
 libpulse
 libreoffice-fresh
+libva-utils
 linux
 linux-firmware
 linux-firmware-qlogic

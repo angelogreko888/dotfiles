@@ -297,8 +297,6 @@
 - cmd: d 00inst/
 - cmd: n env-hyprland
 - cmd: ./backup.sh
-- cmd: n backup.sh
-- cmd: ./bup
 - cmd: y fmc-1910w
 - cmd: y mfc-1910w
 - cmd: sv /etc/locale.gen
@@ -357,7 +355,6 @@
 - cmd: yui virtio-win
 - cmd: fwupdmgr
 - cmd: cd ../../bin
-- cmd: n bup
 - cmd: modprobe vboxdrv
 - cmd: ctl enable systemd-modules-load.service
 - cmd: ctl status systemd-modules-load.service
@@ -371,7 +368,6 @@
 - cmd: n efi.sh
 - cmd: n mbr.sh
 - cmd: rm befi
-- cmd: pp
 - cmd: ע
 - cmd: ctl status nvidia-suspend.service
 - cmd: ctl status nvidia-hibernate.service
@@ -404,7 +400,6 @@
 - cmd: ./nvidia.sh
 - cmd: n nvidia.hook
 - cmd: n hyprlo
-- cmd: n keybind.conf
 - cmd: hypr
 - cmd: cd hypr
 - cmd: lo systemd-sleep.conf
@@ -459,7 +454,6 @@
 - cmd: s mkinitcpio -P
 - cmd: n kanshi
 - cmd: n
-- cmd: ts
 - cmd: n active.sh
 - cmd: n nvidia.sh
 - cmd: h | rg pi
@@ -587,7 +581,6 @@
 - cmd: exit
 - cmd: n config.fish
 - cmd: n .config/fish/config.fish
-- cmd: cd /
 - cmd: fish_config
 - cmd: cdc
 - cmd: bup
@@ -734,8 +727,6 @@
 - cmd: mv -i bepac epac.lst
 - cmd: mv -i nvidia.sh envidia.sh
 - cmd: nano  confpac.sh
-- cmd: cd ~/bin
-- cmd: ./gpush.sh
 - cmd: cd ~/.config/uwsm/
 - cmd: nano  env
 - cmd: sudo nano  .config/uwsm/env-hyprland
@@ -883,8 +874,6 @@
 - cmd: pacman -Q | rg wlroots
 - cmd: pss wlroots
 - cmd: pi wlroots
-- cmd: pd
-- cmd: yd
 - cmd: cd mnt
 - cmd: cd /mnt
 - cmd: srr 6A14-BB2A/ 24DCEFD8DCEFA1F2/ data/
@@ -896,32 +885,23 @@
 - cmd: cd gtk-4.0/.config/gtk-4.0/
 - cmd: n settings.ini
 - cmd: stow gtk-4.0/
-- cmd: cc
 - cmd: cd uwsm
 - cmd: n env
-- cmd: chh
 - cmd: n animations-dynamic.conf
 - cmd: cd -
 - cmd: su -
 - cmd: ch c
-- cmd: b
-- cmd: t
 - cmd: y usbimager\n
 - cmd: librewolf://gpu
-- cmd: lk
-- cmd: gd
-- cmd: ff
 - cmd: select  cn in Israel Cyprus;
 - cmd: select  cn in Israel Cyprus
 - cmd: bash
-- cmd: cd ~/atest/
 - cmd: pss ell
 - cmd: pss ell | rg extra/ell
 - cmd: sn /etc/locale.gen
 - cmd: n 060grubmbr.sh
 - cmd: n 030boot.sh
 - cmd: n 050grubefi.sh
-- cmd: ..
 - cmd: n sroot.sh
 - cmd: n suser.sh
 - cmd: s reflector --latest 5 --sort rate --country Israel --protocol https --verbose
@@ -951,15 +931,12 @@
 - cmd: n fish_history
   paths:
     - fish_history
-- cmd: ll
 - cmd: rm fish_history.bup
 - cmd: cpi q
 - cmd: n laur.lst
 - cmd: yui usbimager
 - cmd: yui usbimager-debug
 - cmd: yui art-rawconverter-bin
-- cmd: y floorp
-- cmd: pui firefox
 - cmd: n ir.sh
 - cmd: cd nouse/00inst/
 - cmd: mv i.sh r.sh ../../
@@ -1021,16 +998,10 @@
 - cmd: ...
 - cmd: cd 00inst/
 - cmd: n 99active.sh
-- cmd: g
-- cmd: ggg
 - cmd: cd bin/
-- cmd: ./gitpull.sh
-- cmd: u
 - cmd: systemctl list-unit-files | grep enabled
 - cmd: systemctl | grep running
 - cmd: systemctl list-unit-files
-- cmd: cpi l
-- cmd: bh l
 - cmd: systemctl list-unit-files | grep seatd
 - cmd: cd misc/
 - cmd: comm qpacman.lst lpacman.lst
@@ -1040,15 +1011,11 @@
 - cmd: pui xorg-server
 - cmd: pui tumbler
 - cmd: pui ttf-ubuntu-font-family
-- cmd: journalctl -b 1
-- cmd: n gpush.sh
-    - gpush.sh
 - cmd: wget -q --spider http://google.com
 - cmd: cd at
 - cmd: hypershade off
 - cmd: hyprshade off
 - cmd: pui hyprshade
-- cmd: l
 - cmd: n a
 - cmd: n b
 - cmd: n tee
@@ -1056,19 +1023,119 @@
 - cmd: rm a b tee
     - a
     - b
-- cmd: cdf
-- cmd: cd
-- cmd: cd bin
 - cmd: n sync.sh
     - sync.sh
-- cmd: n gitpull.sh
-- cmd: cd atest/
 - cmd: ./
-- cmd: ./c
-- cmd: n c
-    - c
-    - bin
-    - gitpull.sh
+- cmd: journalctl -b 1
 - cmd: pi hyprshade
 - cmd: y hyprshade
 - cmd: ctl status hyprshade
+- cmd: cpi l
+- cmd: bh l
+- cmd: lspci
+- cmd: pui firefox
+- cmd: cd .mozilla/
+    - .mozilla/
+- cmd: rr .mozilla/
+- cmd: lo firefox
+- cmd: lk
+- cmd: ts
+- cmd: cc
+- cmd: cd foot/
+    - foot/
+- cmd: n foot.ini
+    - foot.ini
+- cmd: n foot.ini -l
+- cmd: tsc
+- cmd: tsl
+- cmd: pss vaapi
+- cmd: pss libva
+- cmd: pi libva-utils libva-nvidia-driver
+- cmd: pi libva-utils
+- cmd: n .gtkrc-2.0
+    - .gtkrc-2.0
+- cmd: rm .gtkrc-2.0
+- cmd: cd .icons/default/
+    - .icons/default/
+- cmd: n index.theme
+    - index.theme
+- cmd: rr .icons/
+    - .icons/
+- cmd: stow home
+    - home
+- cmd: u
+- cmd: y mullvad
+- cmd: b
+- cmd: t
+- cmd: cd atest/
+- cmd: n wget-log
+    - wget-log
+- cmd: rm wget-log
+- cmd: cd home
+- cmd: cd ~/atest/
+- cmd: md .mullvad
+- cmd: rr .mullvad/
+    - .mullvad/
+- cmd: cd
+- cmd: ..
+- cmd: rr mullvadbrowser/
+    - mullvadbrowser/
+- cmd: cd ce48n5na.default-release/
+    - ce48n5na.default-release/
+- cmd: n lock
+- cmd: cd mullvadbrowser/
+- cmd: ./c
+- cmd: n c
+- cmd: cdf
+- cmd: cd home/
+    - home/
+- cmd: cd .mullvad/
+- cmd: pp
+- cmd: cd bin
+- cmd: ggp
+- cmd: gd
+- cmd: cd /vt
+    - /vt
+- cmd: cd /
+- cmd: co vt/
+    - vt/
+- cmd: ll
+- cmd: cd vt
+    - vt
+- cmd: md sync-vago
+- cmd: cd sync-vago/
+    - sync-vago/
+- cmd: cd vago/
+    - vago/
+- cmd: n backup.sh
+- cmd: rm -rf ~/.cache/*
+- cmd: cd .cache/
+    - .cache/
+- cmd: l
+- cmd: n bup
+- cmd: ./bup
+- cmd: chh
+- cmd: n keybind.conf
+- cmd: yui floorp
+- cmd: y floorp
+- cmd: yui floorp-bin
+- cmd: pi gtk2
+- cmd: ff
+- cmd: yd
+- cmd: pd
+- cmd: g
+- cmd: ggg
+- cmd: cd ~/bin
+- cmd: n gitpull.sh
+- cmd: n gpush.sh
+    - gpush.sh
+- cmd: ./gpush.sh
+- cmd: ./gitpull.sh
+    - 00inst/
+- cmd: n 800ftube.sh
+    - 800ftube.sh
+- cmd: n 700brows.sh
+    - 99active.sh
+    - ~/bin
+    - gitpull.sh
+    - bin/

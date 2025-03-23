@@ -247,7 +247,6 @@
 - cmd: mv gitpull.sh ~/bin
 - cmd: cd 00
 - cmd: journalctl
-- cmd: hyprctl monitors all
 - cmd: -cd
 - cmd: -cdlf
 - cmd: journalctl | grep feb 1
@@ -277,10 +276,7 @@
 - cmd: journalctl -b
 - cmd: pui lib32-nvidia-utils
 - cmd: n /etc/systemd/system/systemd-hibernate.service.wants/nvidia-hibernate.service
-- cmd: sn /etc/systemd/system/systemd-hibernate.service.wants/nvidia-hibernate.service
 - cmd: sn /etc/systemd/system/systemd-hibernate.service.wants/nvidia-resume.service
-- cmd: sn /etc/systemd/system/systemd-suspend.service.wants/nvidia-resume.service
-- cmd: sn /etc/systemd/system/systemd-suspend.service.wants/nvidia-suspend.service
 - cmd: n /home/vago/.nvidia-settings-rc
 - cmd: rm /home/vago/.nvidia-settings-rc
 - cmd: d 00inst/
@@ -725,7 +721,6 @@
 - cmd: cat /sys/module/nvidia_drm/parameters/fbdev
 - cmd: sudo  cat /sys/module/nvidia_drm/parameters/fbdev
 - cmd: sudo  cat /sys/module/nvidia_drm/parameters/modeset
-- cmd: cat /proc/driver/nvidia/params | sort
 - cmd: lspci -k -d ::03xx
 - cmd: pacman -Q | rg nvdia
 - cmd: pacman -Q | rg nvidia
@@ -878,7 +873,6 @@
 - cmd: librewolf://gpu
 - cmd: lk
 - cmd: gd
-- cmd: ./gitpull.sh
 - cmd: select  cn in Israel Cyprus;
 - cmd: select  cn in Israel Cyprus
 - cmd: pss ell
@@ -891,7 +885,6 @@
 - cmd: n suser.sh
 - cmd: s reflector --latest 5 --sort rate --country Israel --protocol https --verbose
 - cmd: s reflector --latest 5 --sort rate --country Israel --protocol https --verbose --save /etc/pacman.d/mirrorlist
-- cmd: sn /etc/pacman.d/mirrorlist
 - cmd: s  reflector --latest 5 --sort rate  --country Greece,Tr,Israel,Germany,'United Kingdom'
 - cmd: n 020confpac-usr.sh
 - cmd: n 090nvidia.sh
@@ -915,7 +908,6 @@
 - cmd: yui usbimager
 - cmd: yui usbimager-debug
 - cmd: yui art-rawconverter-bin
-- cmd: y floorp
 - cmd: pui firefox
 - cmd: n ir.sh
 - cmd: mv i.sh r.sh ../../
@@ -1075,7 +1067,6 @@
 - cmd: gpg brlw.tar.xz.gpg
     - brlw.tar.xz.gpg
 - cmd: rm br*
-- cmd: b
 - cmd: tsc
 - cmd: sudo timeshift --delete --snapshot 1
 - cmd: sudo timeshift --delete 1
@@ -1114,7 +1105,6 @@
 - cmd: mv tshift.sh ~/bin
     - tshift.sh
     - ~/bin
-- cmd: n gitpull.sh
 - cmd: ./systeminfo.sh
 - cmd: sudo timeshift --list |awk 'NR==13{print $3}'
 - cmd: n poweroff.sh
@@ -1130,7 +1120,6 @@
 - cmd: n tshift.sh
 - cmd: du -h
 - cmd: du -f
-- cmd: cd bin
 - cmd: md sync-vago
 - cmd: mv vago/ sync-vago/
     - vago/
@@ -1150,8 +1139,6 @@
 - cmd: cd p
     - p
 - cmd: xopen
-- cmd: bh q
-- cmd: cpi q
 - cmd: cd /run/timeshift/
     - /run/timeshift/
 - cmd: sn /etc/fstab
@@ -1197,7 +1184,6 @@
 - cmd: mv prpac.sh paccach.sh
 - cmd: n autostart.conf
 - cmd: n i.sh
-- cmd: gg
 - cmd: ψδ
 - cmd: loginctl suspend
 - cmd: n hypridle.conf
@@ -1206,7 +1192,6 @@
 - cmd: pss gnome-session
 - cmd: pss gnome-shell
 - cmd: pss gnome-accesability
-- cmd: g
 - cmd: pss polkitagent
 - cmd: pi hyprpolkitagent
 - cmd: s systemctl  enable --now hyprpolkitagent.service
@@ -1216,7 +1201,6 @@
 - cmd: who
 - cmd: sn /etc/default/useradd
     - /etc/default/useradd
-- cmd: cd 00inst/
 - cmd: n 99active.sh
 - cmd: sudo usermod -aG users "$(whoami)"
 - cmd: id vago
@@ -1247,7 +1231,6 @@
     - /sbin/timeshift-gtk
 - cmd: gparted
 - cmd: timeshift
-- cmd: cdf
 - cmd: n fuzzel/.config/fuzzel/fuzzel.ini
     - fuzzel/.config/fuzzel/fuzzel.ini
 - cmd: sn /tmp/.Xauthority
@@ -1305,7 +1288,6 @@
 - cmd: sn env_pre
     - env_pre
 - cmd: ..
-- cmd: cd
 - cmd: lo login c
 - cmd: man pkexec | grep -i ^Example -A 60
 - cmd: man pkexec
@@ -1334,7 +1316,6 @@
 - cmd: sort  aur.lst -o  aur.lst
     - aur.lst
 - cmd: n pac.lst
-- cmd: n aur.lst
 - cmd: comm pac pac.lst
     - pac
 - cmd: pui xorg-xauth
@@ -1354,18 +1335,67 @@
 - cmd: cd atest/
 - cmd: rm a*
 - cmd: rm p*
-- cmd: l
 - cmd: n c
 - cmd: n z
 - cmd: n .local/share/fish/fish_history
 - cmd: ψηη
-- cmd: chh
-- cmd: pp
-- cmd: n keybind.conf
-- cmd: pacman -Q hyprshade
 - cmd: n /etc/pacman.d/mirrorlist
     - /etc/pacman.d/mirrorlist
 - cmd: reflector --country Israel --latest 5 --sort rate --protocol https --verbose --save /etc/pacman.d/mirrorlist
 - cmd: s reflector --country Israel --latest 5 --sort rate --protocol https --verbose --save /etc/pacman.d/mirrorlist
 - cmd: y hyprshade
-    - keybind.conf
+- cmd: sn /etc/pacman.d/mirrorlist
+- cmd: cpi q
+- cmd: bh q
+- cmd: n aur.lst
+- cmd: pacman -Q hyprshade
+- cmd: pp
+- cmd: LibreOffice Writer
+- cmd: Writer
+- cmd: libreoffice
+- cmd: libreoffice  --enable-native-access=ALL-UNNAMED
+- cmd: libreoffice  --writer
+- cmd: cd 00inst/
+- cmd: chh
+- cmd: n keybind.conf
+- cmd: cd
+- cmd: y Mullvad
+- cmd: journalctl -b 0 --grep "renderer for"
+- cmd: s journalctl -b 0 --grep "renderer for"
+- cmd: cat /proc/driver/nvidia/params | sort
+- cmd: sn /etc/systemd/system/user-suspend@.service
+- cmd: sn /etc/systemd/system/user-resume@.service
+- cmd: ctl enable user-suspend@user.service
+- cmd: ctl enable user-resume@user.service
+- cmd: sn /etc/systemd/system/root-suspend.service
+- cmd: sn /etc/systemd/system/root-resume.service
+- cmd: journalctl -b -u systemd-suspend.service
+- cmd: lo systemd-suspend.service
+- cmd: sn /etc/systemd/system/systemd-suspend.service.wants/nvidia-suspend.service
+- cmd: sn /etc/systemd/system/systemd-suspend.service.wants/nvidia-resume.service
+- cmd: sn systemd-hibernate.service
+- cmd: lo systemd-suspend-then-hibernate.service
+- cmd: sn /etc/systemd/system/systemd-suspend-then-hibernate.service.wants/nvidia-resume.service
+    - /etc/systemd/system/systemd-suspend-then-hibernate.service.wants/nvidia-resume.service
+- cmd: lo systemd-hibernate.service
+- cmd: sn /etc/systemd/system/systemd-hibernate.service.wants/nvidia-hibernate.service
+- cmd: sn /usr/lib/systemd/system/systemd-suspend.service
+    - /usr/lib/systemd/system/systemd-suspend.service
+- cmd: hyprctl monitors all
+- cmd: l
+- cmd: hyprctl dispatch dpms
+- cmd: b
+- cmd: y KeePassXC
+- cmd: gg
+- cmd: cdf
+- cmd: stow home/
+    - home/
+- cmd: g
+- cmd: cd bin
+- cmd: ./gitpull.sh
+- cmd: n gitpull.sh
+- cmd: yui floorp-bin
+- cmd: y floorp
+- cmd: y mullvard
+- cmd: y mullvad
+    - 00inst/

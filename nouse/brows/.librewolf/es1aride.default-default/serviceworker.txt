@@ -1,13 +1,1 @@
 9
-
-https://xlife.com/
-https://xlife.com/sw.js
-true
-{a42db373-922b-4ab0-bc5f-504a56a7440f}
-0
-1742940635455372
-1742940635456020
-1742940635405825
-1
-true
-#

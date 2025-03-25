@@ -9,7 +9,7 @@ handle_error() {
 
 a=$(date | awk '{print $1}')
 
-if [ $a == Sat ];then
+if [ $a == Fri ];then
 	paccache -ruk0
 	paccache -rk1
 	notify-send "paccache: pakages cleared !"

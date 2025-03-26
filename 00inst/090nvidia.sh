@@ -64,11 +64,13 @@ else
     echo "/etc/default/grub does not exist"
 fi
 
-cd ~/git
+#cd ~/git
+#
+#git clone  https://github.com/Frogging-Family/nvidia-all.git
+#cd  nvidia-all/
+#makepkg -si 
 
-git clone  https://github.com/Frogging-Family/nvidia-all.git
-cd  nvidia-all/
-makepkg -si 
+sudo pacman -S --noconfirm nvidia-dkms egl-wayland lib32-nvidia-utils lib32-opencl-nvidia opencl-nvidia nvidia-utils
 
 sudo mkinitcpio -P
 

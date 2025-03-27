@@ -1,4 +1,3 @@
-- cmd: cd nouse/
 - cmd: cd rootmisc/
 - cmd: n mirrorlist
 - cmd: s reflector --protocol https --age 12 --country Cyprus --sort rate --number 10 --verbose
@@ -86,7 +85,6 @@
 - cmd: s pacman -Syy linux-headers
 - cmd: n /etc/pacman.conf
 - cmd: cd librew
-- cmd: cd .librewolf/
 - cmd: n profiles.ini
 - cmd: n installs.ini
 - cmd: cd XiaomiADBFastbootTools/
@@ -117,7 +115,6 @@
 - cmd: sudo pacman -Scc
 - cmd: sudo pacman -Rns $(pacman -Qdtq)
 - cmd: df -h
-- cmd: nu
 - cmd: y skype-secure
 - cmd: y skype
 - cmd: free -h
@@ -260,7 +257,6 @@
 - cmd: cd /home/user/.config/environment.d/
 - cmd: ps
 - cmd: command ps
-- cmd: hyprctl scale 1
 - cmd: cat /sys/power/mem_sleep
 - cmd: sudo update-initramfs -u
 - cmd: si
@@ -273,7 +269,6 @@
 - cmd: lsblk -f
 - cmd: s cp  /etc/default/grub  /etc/default/grub.bup
 - cmd: s dmesg | rg PreserveVideoMemoryAllocations
-- cmd: journalctl -b
 - cmd: pui lib32-nvidia-utils
 - cmd: n /etc/systemd/system/systemd-hibernate.service.wants/nvidia-hibernate.service
 - cmd: sn /etc/systemd/system/systemd-hibernate.service.wants/nvidia-resume.service
@@ -369,11 +364,6 @@
 - cmd: pss sddm
 - cmd: pacman -Si sddm
 - cmd: pacman -Si ly
-- cmd: pi sddm
-- cmd: ctl disable ly
-- cmd: ctl enable sddm
-- cmd: ctl disable sddm
-- cmd: ctl enable ly
 - cmd: ctl stop sddm
 - cmd: pui sddm
 - cmd: sn sudo tee /etc/pacman.d/hooks/nvidia.hook
@@ -407,7 +397,6 @@
 - cmd: filefrag -v /swapfile
 - cmd: s dmesg | grep nvidia
 - cmd: pacman -Q | grep  nvidia
-- cmd: pi nvidia-dkms nvidia-utils libva-nvidia-driver
 - cmd: s pacman -Su nvidia-dkms nvidia-utils libva-nvidia-driver
 - cmd: sn /etc/booster.yaml
 - cmd: /usr/lib/booster/regenerate_images
@@ -433,7 +422,6 @@
 - cmd: s rm /etc/pacman.d/hooks/nvidia.hook
 - cmd: pi libva-nvidia-drivers
 - cmd: pi libva-nvidia-driver
-- cmd: s mkinitcpio -P
 - cmd: n kanshi
 - cmd: n
 - cmd: n active.sh
@@ -486,7 +474,6 @@
 - cmd: pss man
 - cmd: pss man-db
 - cmd: pi man-db
-- cmd: gu
 - cmd: ../misc/
 - cmd: cd ../misc/
 - cmd: rm  CanvasBlocker-settings_2025-01-20_21-34-53.json chameleon_1737401664737.json
@@ -501,7 +488,6 @@
 - cmd: pm
 - cmd: sn /etc/xdg/reflector/reflector.conf
 - cmd: n hyprlock.conf
-- cmd: nwc
 - cmd: lo nvidia-resume.service
 - cmd: sn /usr/lib/systemd/system/nvidia-resume.service
 - cmd: n gtk-2.0
@@ -533,12 +519,10 @@
 - cmd: y cachy-browser
 - cmd: yui cachy-browser
 - cmd: bb
-- cmd: cpd
 - cmd: lo
 - cmd: lo cachy
 - cmd: rr /home/vago/.cachy
 - cmd: h |rg vb
-- cmd: reboot
 - cmd: s modprobe vboxdrv
 - cmd: nb
 - cmd: pss fish
@@ -559,7 +543,6 @@
 - cmd: lo fish  &| less
 - cmd: cd /etc/fish/conf.d
 - cmd: y oh-my-fish
-- cmd: exit
 - cmd: n config.fish
 - cmd: n .config/fish/config.fish
 - cmd: cd /
@@ -604,7 +587,6 @@
 - cmd: rm fish
 - cmd: rr fishlocal/
 - cmd: cd ../bin/
-- cmd: h
 - cmd: ./
 - cmd: gp
 - cmd: yay -Rns art-rawconverter
@@ -723,7 +705,6 @@
 - cmd: sudo  cat /sys/module/nvidia_drm/parameters/modeset
 - cmd: lspci -k -d ::03xx
 - cmd: pacman -Q | rg nvdia
-- cmd: pacman -Q | rg nvidia
 - cmd: dkms status
 - cmd: nano  stow.sh
 - cmd: cd nemo/
@@ -844,7 +825,6 @@
 - cmd: eza -a --color always --long --git --no-filesize --icons always --no-time --no-user
 - cmd: nano  /etc/default/grub
 - cmd: s nano  /etc/default/grub
-- cmd: ug
 - cmd: sn /etc/pacman.conf
 - cmd: n dotfiles/00inst/030boot.sh
 - cmd: sn /etc/pacman.conf -l
@@ -856,7 +836,6 @@
 - cmd: cd /mnt
 - cmd: srr 6A14-BB2A/ 24DCEFD8DCEFA1F2/ data/
 - cmd: s mv dataq/ data/
-- cmd: sn /etc/default/grub
 - cmd: n look.conf
 - cmd: n hyprland.conf
 - cmd: cd gtk-2.0/cdf
@@ -879,7 +858,6 @@
 - cmd: pss ell | rg extra/ell
 - cmd: sn /etc/locale.gen
 - cmd: n 060grubmbr.sh
-- cmd: ggg
 - cmd: n 050grubefi.sh
 - cmd: n sroot.sh
 - cmd: n suser.sh
@@ -887,7 +865,6 @@
 - cmd: s reflector --latest 5 --sort rate --country Israel --protocol https --verbose --save /etc/pacman.d/mirrorlist
 - cmd: s  reflector --latest 5 --sort rate  --country Greece,Tr,Israel,Germany,'United Kingdom'
 - cmd: n 020confpac-usr.sh
-- cmd: n 090nvidia.sh
 - cmd: n 20pac.sh
 - cmd: n 30aur.sh
 - cmd: rm uaur.sh upac.sh
@@ -901,7 +878,6 @@
 - cmd: sudo -sE mintstick
 - cmd: sudo -sE mintstick -m format
 - cmd: fish
-- cmd: mf
 - cmd: mi
 - cmd: rm fish_history.bup
 - cmd: n laur.lst
@@ -977,7 +953,6 @@
 - cmd: pui hyprshade
 - cmd: n tee
 - cmd: rm a b tee
-- cmd: n sync.sh
 - cmd: pi hyprshade
 - cmd: ctl status hyprshade
 - cmd: lo nemo
@@ -1112,7 +1087,6 @@
 - cmd: ./tshift.sh
 - cmd: af
 - cmd: ctl suspend
-- cmd: s dmesg
 - cmd: c
 - cmd: cd  bin/
     - bin/
@@ -1142,8 +1116,6 @@
 - cmd: cd /run/timeshift/
     - /run/timeshift/
 - cmd: sn /etc/fstab
-- cmd: cd /vt
-- cmd: cd sync-vago/
 - cmd: n vago/
 - cmd: cd vago/
 - cmd: cd dotfiles/
@@ -1151,26 +1123,17 @@
 - cmd: n c -l
 - cmd: ./c
 - cmd: y libva-nvidia-driver
-- cmd: sn /etc/modprobe.d/nvidia.conf
 - cmd: cat /sys/module/nvidia_drm/parameters/modeset
 - cmd: s cat /sys/module/nvidia_drm/parameters/modeset
 - cmd: y libva
 - cmd: y libva-utils
-- cmd: cg
-- cmd: cd nvidia-all/
-    - nvidia-all/
-- cmd: cd yay/
-- cmd: git pull
 - cmd: h | grep ctl
 - cmd: ctl status paccache.timer
-- cmd: paccache -ruk0
 - cmd: s paccache -ruk0
 - cmd: s paccache -rk1
-- cmd: cpk
 - cmd: cd ~/atest/
 - cmd: n z -l
     - z
-- cmd: paccache -rk1
 - cmd: notify-send "done"
 - cmd: ./z
 - cmd: cp z clearpac.sh
@@ -1187,8 +1150,6 @@
 - cmd: ψδ
 - cmd: loginctl suspend
 - cmd: n hypridle.conf
-- cmd: u
-- cmd: t
 - cmd: pss gnome-session
 - cmd: pss gnome-shell
 - cmd: pss gnome-accesability
@@ -1236,7 +1197,6 @@
 - cmd: sn /tmp/.Xauthority
 - cmd: cd /tmp/
     - /tmp/
-- cmd: n env-hyprland
 - cmd: b env
     - env
 - cmd: w xauth
@@ -1265,8 +1225,6 @@
 - cmd: pi xorg-xhost
 - cmd: pkexec timeshift-gtk
 - cmd: n .Xauthority
-- cmd: cc
-- cmd: n env
 - cmd: xauth -f ~/.Xauthority -vqibn generate displayname protocolname trusted
 - cmd: echo $DISPALY
 - cmd: echo $DISPLAY
@@ -1282,12 +1240,10 @@
 - cmd: n pkcs11
     - pkcs11
 - cmd: sn pkcs11
-- cmd: cd uwsm/
 - cmd: sn env_cleanup.list
     - env_cleanup.list
 - cmd: sn env_pre
     - env_pre
-- cmd: ..
 - cmd: lo login c
 - cmd: man pkexec | grep -i ^Example -A 60
 - cmd: man pkexec
@@ -1295,8 +1251,6 @@
 - cmd: rm .Xauthority
     - .Xauthority
 - cmd: pui xorg-xhost
-- cmd: tss
-- cmd: tsl
 - cmd: w timeshift
 - cmd: sudo /bin/env WAYLAND_DISPLAY="$XDG_RUNTIME_DIR/$WAYLAND_DISPLAY"  XDG_RUNTIME_DIR=/user/run/0  /sbin/timeshift
     - /bin/env
@@ -1315,7 +1269,6 @@
 - cmd: sort  pac.lst -o  pac.lst
 - cmd: sort  aur.lst -o  aur.lst
     - aur.lst
-- cmd: n pac.lst
 - cmd: comm pac pac.lst
     - pac
 - cmd: pui xorg-xauth
@@ -1328,16 +1281,12 @@
 - cmd: pss xorg-xauth
 - cmd: pacman -Qqen > pac
 - cmd: n pac
-- cmd: pd
-- cmd: yd
-- cmd: ff
 - cmd: rm pac
 - cmd: cd atest/
 - cmd: rm a*
 - cmd: rm p*
 - cmd: n c
 - cmd: n z
-- cmd: n .local/share/fish/fish_history
 - cmd: ψηη
 - cmd: n /etc/pacman.d/mirrorlist
     - /etc/pacman.d/mirrorlist
@@ -1345,9 +1294,6 @@
 - cmd: s reflector --country Israel --latest 5 --sort rate --protocol https --verbose --save /etc/pacman.d/mirrorlist
 - cmd: y hyprshade
 - cmd: sn /etc/pacman.d/mirrorlist
-- cmd: cpi q
-- cmd: bh q
-- cmd: n aur.lst
 - cmd: pacman -Q hyprshade
 - cmd: pp
 - cmd: LibreOffice Writer
@@ -1355,10 +1301,6 @@
 - cmd: libreoffice
 - cmd: libreoffice  --enable-native-access=ALL-UNNAMED
 - cmd: libreoffice  --writer
-- cmd: cd 00inst/
-- cmd: chh
-- cmd: n keybind.conf
-- cmd: cd
 - cmd: y Mullvad
 - cmd: journalctl -b 0 --grep "renderer for"
 - cmd: s journalctl -b 0 --grep "renderer for"
@@ -1369,7 +1311,6 @@
 - cmd: ctl enable user-resume@user.service
 - cmd: sn /etc/systemd/system/root-suspend.service
 - cmd: sn /etc/systemd/system/root-resume.service
-- cmd: journalctl -b -u systemd-suspend.service
 - cmd: lo systemd-suspend.service
 - cmd: sn /etc/systemd/system/systemd-suspend.service.wants/nvidia-suspend.service
 - cmd: sn /etc/systemd/system/systemd-suspend.service.wants/nvidia-resume.service
@@ -1382,20 +1323,167 @@
 - cmd: sn /usr/lib/systemd/system/systemd-suspend.service
     - /usr/lib/systemd/system/systemd-suspend.service
 - cmd: hyprctl monitors all
-- cmd: l
-- cmd: hyprctl dispatch dpms
-- cmd: b
 - cmd: y KeePassXC
-- cmd: gg
-- cmd: cdf
 - cmd: stow home/
     - home/
-- cmd: g
-- cmd: cd bin
 - cmd: ./gitpull.sh
 - cmd: n gitpull.sh
 - cmd: yui floorp-bin
 - cmd: y floorp
 - cmd: y mullvard
 - cmd: y mullvad
-    - 00inst/
+- cmd: n aur.lst
+- cmd: n pac.lst
+- cmd: cpi q
+- cmd: bh q
+- cmd: y zoomer
+- cmd: gnome-zoomer
+- cmd: gnome-zoomer 0.1
+- cmd: yui gnome-zoomer
+- cmd: yui gnome-zoomer-git
+- cmd: y xbindkeys
+- cmd: y \nhyprctl_magnifier\n
+- cmd: y hyprctl_magnifier\n
+- cmd: ggg
+- cmd: mf
+- cmd: u
+- cmd: gu
+- cmd: n .local/share/fish/fish_history
+- cmd: cg
+- cmd: cd nvidia-all/
+    - nvidia-all/
+- cmd: makepkg -si
+- cmd: cd yay/
+- cmd: git pull
+- cmd: tss
+- cmd: tsl
+- cmd: cd /vt
+- cmd: cd sync-vago/
+- cmd: gg
+- cmd: nu
+- cmd: sn /etc/default/grub
+- cmd: ug
+- cmd: mkinitcpio -P
+- cmd: sn /etc/modprobe.d/nvidia.conf
+- cmd: s mkinitcpio -P
+- cmd: pi sddm
+- cmd: ctl enable sddm
+- cmd: pss nvidia-detect
+- cmd: y nvidia-detect
+- cmd: pi gdm
+- cmd: ctl disable ly
+- cmd: ctl disable sddm
+- cmd: ctl enable gdm
+- cmd: cd nouse/
+- cmd: cd gnome-i3/
+    - gnome-i3/
+- cmd: cd gnome-stable/
+    - gnome-stable/
+- cmd: y gnome-tweaks
+- cmd: y gnome-session
+- cmd: y gnome-control-center
+- cmd: b
+- cmd: t
+- cmd: y gnome-shell-extention-manager
+- cmd: y gnome-shell
+- cmd: pui gnome-shell-extensions
+- cmd: pss gnome-shell-extensions-manager
+- cmd: y gnome-shell-extensions-manager
+- cmd: cd nouse/gnome-i3/gnome-stable/
+    - nouse/gnome-i3/gnome-stable/
+- cmd: n a4gnome.sh
+    - a4gnome.sh
+- cmd: pss gnome-shell-extension-manager
+- cmd: y gnome-shell-extensions
+- cmd: gnome-shell-extensions
+- cmd: y gnome-shell-extention-dash-to-panel
+- cmd: y gnome-shell-extention
+- cmd: y gnome-shell-extension-dash-to-panel
+- cmd: gnome-shell-extension-manager
+- cmd: y gnome-shell-extension-manager
+- cmd: y gnome-shell-extension
+- cmd: y extension-manager
+- cmd: rr ri7shlwk.default/
+    - ri7shlwk.default/
+- cmd: cd nouse/brows/
+    - nouse/brows/
+- cmd: cd .librewolf/
+- cmd: rr syb7rx0z.default-default/
+    - syb7rx0z.default-default/
+- cmd: ctl disable gdm
+- cmd: ctl enable ly
+- cmd: yui extension-manager gnome-shell gnome-control-center gnome-tweaks gdm sddm
+- cmd: yui extension-manager gnome-shell gnome-control-center gdm sddm
+- cmd: yui extension-manager gnome-shell gnome-control-center gdm sddm gnome-shell-extension-dash-to-panel gnome-shell-extensions
+- cmd: n paccach.sh
+    - paccach.sh
+- cmd: paccache -ruk0
+- cmd: paccache -rk1
+- cmd: cpd
+- cmd: cpk
+- cmd: sudo pacman -Rdd lib32-nvidia-utils-tkg lib32-opencl-nvidia-tkg nvidia-dkms-tkg nvidia-egl-wayland-tkg nvidia-settings-tkg nvidia-utils-tkg opencl-nvidia-tkg
+- cmd: pacman -Q nvidia
+- cmd: sudo pacman -Rdd lib32-nvidia-utils-tkg lib32-opencl-nvidia-tkg nvidia-settings-tkg nvidia-utils-tkg opencl-nvidia-tkg
+- cmd: sudo pacman -Rdd nvidia-open-dkms-tkg
+- cmd: pacman -Q | rg nvidia
+- cmd: pi nvidia-dkms nvidia-utils libva-nvidia-driver
+- cmd: pi nvidia-dkms nvidia-utils
+- cmd: sudo pacman -S nvidia-dkms egl-wayland lib32-nvidia-utils lib32-opencl-nvidia opencl-nvidia nvidia-utils
+- cmd: pss libva-nvidia-driver
+- cmd: s dmesg
+- cmd: journalctl -b -u systemd-suspend.service
+- cmd: pss wayland-scanner
+- cmd: n reboot.sh
+    - reboot.sh
+- cmd: n rnv
+- cmd: n suspend.sh
+    - suspend.sh
+- cmd: nwc
+- cmd: n sync.sh
+- cmd: cd bin
+- cmd: n cpinst.sh
+    - cpinst.sh
+- cmd: pacman -Qqe | grep -v "$(pacman -Qqm)"
+- cmd: cdf
+- cmd: cd 00inst/
+- cmd: n 090nvidia.sh
+- cmd: h
+- cmd: exit
+- cmd: hyprctl dispatch dpms
+- cmd: hyprctl scale 1
+- cmd: hyprctl dispatch scale 1
+- cmd: hyprctl monitor cursorpos scale 1
+- cmd: hyprctl reload
+- cmd: ctl exit
+- cmd: n env
+- cmd: journalctl -b
+- cmd: cd uwsm/
+- cmd: n env-hyprland
+- cmd: reboot
+- cmd: cc
+- cmd: cd foot/
+    - foot/
+- cmd: n foot.ini
+    - foot.ini
+- cmd: ..
+- cmd: cd fuzzel/
+    - fuzzel/
+- cmd: l
+- cmd: n fuzzel.ini
+    - fuzzel.ini
+- cmd: chh
+- cmd: n keybind.conf
+- cmd: g
+- cmd: ff
+- cmd: pd
+- cmd: yd
+- cmd: cd
+- cmd: systemctl suspend
+    - /vt
+- cmd: pui  nvidia-dkms egl-wayland lib32-nvidia-utils lib32-opencl-nvidia opencl-nvidia nvidia-utils
+- cmd: sudo pacman -Rdd lib32-nvidia-utils-tkg lib32-opencl-nvidia-tkg  nvidia-settings-tkg nvidia-utils-tkg opencl-nvidia-tkg
+- cmd: pi nvidia nvidia-utils
+- cmd: pui nvidia nvidia-utils
+- cmd: hyprctl dispatch reload
+    - keybind.conf
+- cmd: pi qt6-wayland

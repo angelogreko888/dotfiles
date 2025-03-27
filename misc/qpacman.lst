@@ -56,6 +56,8 @@ jdk-openjdk
 kanshi
 keepassxc
 less
+lib32-nvidia-utils
+lib32-opencl-nvidia
 libreoffice-fresh
 linux
 linux-firmware
@@ -71,7 +73,10 @@ network-manager-applet
 networkmanager
 nmap
 nss-mdns
+nvidia-dkms
+nvidia-utils
 nwg-look
+opencl-nvidia
 pacman-contrib
 pamixer
 pavucontrol

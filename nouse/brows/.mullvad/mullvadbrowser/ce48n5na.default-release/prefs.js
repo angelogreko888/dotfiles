@@ -10,8 +10,8 @@
 // - set it within a user.js file in your profile.
 
 user_pref("app.update.lastUpdateTime.addon-background-update-timer", 1742973731);
-user_pref("app.update.lastUpdateTime.background-update-timer", 1742973731);
-user_pref("app.update.lastUpdateTime.browser-cleanup-thumbnails", 1742997417);
+user_pref("app.update.lastUpdateTime.background-update-timer", 1743053225);
+user_pref("app.update.lastUpdateTime.browser-cleanup-thumbnails", 1743053225);
 user_pref("app.update.lastUpdateTime.xpi-signature-verification", 1742973731);
 user_pref("basebrowser.migration.version", 3);
 user_pref("browser.aboutConfig.showWarning", false);
@@ -33,7 +33,7 @@ user_pref("browser.startup.homepage", "chrome://browser/content/blanktab.html");
 user_pref("browser.startup.homepage_override.buildID", "20250303093702");
 user_pref("browser.startup.homepage_override.mstone", "128.8.0");
 user_pref("browser.startup.homepage_override.mullvadbrowser.version", "14.0.7");
-user_pref("browser.startup.lastColdStartupCheck", 1742997388);
+user_pref("browser.startup.lastColdStartupCheck", 1743053195);
 user_pref("browser.toolbars.bookmarks.showOtherBookmarks", false);
 user_pref("browser.toolbars.bookmarks.visibility", "always");
 user_pref("browser.uiCustomization.state", "{\"placements\":{\"widget-overflow-fixed-list\":[],\"unified-extensions-area\":[\"_contain-facebook-browser-action\"],\"nav-bar\":[\"back-button\",\"forward-button\",\"stop-reload-button\",\"bookmarks-menu-button\",\"urlbar-container\",\"downloads-button\",\"_73a6fe31-595d-460b-a920-fcc0f8843232_-browser-action\",\"fxa-toolbar-menu-button\",\"ublock0_raymondhill_net-browser-action\",\"cookieautodelete_kennydo_com-browser-action\",\"_3579f63b-d8ee-424f-bbb6-6d0ce3285e6a_-browser-action\",\"canvasblocker_kkapsner_de-browser-action\",\"jid1-mnnxcxisbpnsxq_jetpack-browser-action\",\"_ddc62400-f22d-4dd3-8b4a-05837de53c2e_-browser-action\",\"_9aa46f4f-4dc7-4c06-97af-5035170634fe_-browser-action\",\"unified-extensions-button\",\"_d19a89b9-76c1-4a61-bcd4-49e8de916403_-browser-action\",\"new-identity-button\"],\"toolbar-menubar\":[\"menubar-items\"],\"TabsToolbar\":[\"firefox-view-button\",\"tabbrowser-tabs\",\"new-tab-button\",\"alltabs-button\"],\"PersonalToolbar\":[\"personal-bookmarks\"]},\"seen\":[\"_d19a89b9-76c1-4a61-bcd4-49e8de916403_-browser-action\",\"ublock0_raymondhill_net-browser-action\",\"_73a6fe31-595d-460b-a920-fcc0f8843232_-browser-action\",\"developer-button\",\"canvasblocker_kkapsner_de-browser-action\",\"_3579f63b-d8ee-424f-bbb6-6d0ce3285e6a_-browser-action\",\"cookieautodelete_kennydo_com-browser-action\",\"_contain-facebook-browser-action\",\"jid1-mnnxcxisbpnsxq_jetpack-browser-action\",\"_9aa46f4f-4dc7-4c06-97af-5035170634fe_-browser-action\",\"_ddc62400-f22d-4dd3-8b4a-05837de53c2e_-browser-action\"],\"dirtyAreaCache\":[\"nav-bar\",\"unified-extensions-area\",\"PersonalToolbar\",\"toolbar-menubar\",\"TabsToolbar\"],\"currentVersion\":20,\"currentVersionBaseBrowser\":2,\"currentVersionMullvadBrowser\":1,\"newElementCount\":4}");
@@ -100,12 +100,12 @@ user_pref("privacy.history.custom", true);
 user_pref("privacy.purge_trackers.date_in_cookie_database", "0");
 user_pref("privacy.resistFingerprinting.letterboxing.didForceSize", true);
 user_pref("privacy.sanitize.clearOnShutdown.hasMigratedToNewPrefs2", true);
-user_pref("privacy.sanitize.pending", "[{\"id\":\"newtab-container\",\"itemsToClear\":[],\"options\":{}}]");
+user_pref("privacy.sanitize.pending", "[]");
 user_pref("privacy.userContext.enabled", true);
 user_pref("privacy.userContext.ui.enabled", true);
 user_pref("security.sandbox.content.tempDirSuffix", "3820a1d4-a772-45a1-8899-4d1b1e28d355");
 user_pref("storage.vacuum.last.index", 0);
 user_pref("storage.vacuum.last.places.sqlite", 1742657295);
-user_pref("toolkit.startup.last_success", 1742997386);
+user_pref("toolkit.startup.last_success", 1743053194);
 user_pref("toolkit.telemetry.cachedClientID", "9cc59c47-be0f-4d7d-a016-94caa5b3ae97");
 user_pref("toolkit.telemetry.reportingpolicy.firstRun", false);

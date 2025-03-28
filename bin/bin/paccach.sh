@@ -10,8 +10,9 @@ handle_error() {
 a=$(date | awk '{print $1}')
 
 if [ $a == Fri ];then
-	exec foot sh -c sudo paccache -ruk0;
+	exec foot sh -c 'echo "paccash...";
+	sudo paccache -ruk0;
 	sudo paccache -rk1;
-#	notify-send "paccache: pakages cleared !"
-	echo Done!!!; cd ~;  read'
+	echo Done!!!; 
+	sleep 2'
 fi

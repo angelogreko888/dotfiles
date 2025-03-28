@@ -10,9 +10,11 @@ handle_error() {
 a=$(date | awk '{print $1}')
 
 if [ $a == Fri ];then
-	exec foot sh -c 'echo "paccash...";
+	exec foot sh -c 'echo "paccash...git...";
 	sudo paccache -ruk0;
 	sudo paccache -rk1;
+	cd ~/dotfiles;
+	git cg;
 	echo Done!!!; 
-	sleep 5'
+	sleep 3'
 fi

@@ -14,5 +14,5 @@ if [ $a == Fri ];then
 	sudo paccache -ruk0;
 	sudo paccache -rk1;
 	echo Done!!!; 
-	sleep 2'
+	sleep 5'
 fi

@@ -16,6 +16,11 @@ do
   rsync search-history.db  ~/dotfiles/freetube/.config/FreeTube/search-history.db
   rsync settings.db  ~/dotfiles/freetube/.config/FreeTube/settings.db
 
+  cd ~
+  rsync -r --exclude 'lock' .mullvad  ~/dotfiles/nouse/brows/
+  rsync -r --exclude 'lock' .librewolf  ~/dotfiles/nouse/brows/
+
+
   cd ~/dotfiles
   git add * && git commit -m "save" && git push -u origin main
 

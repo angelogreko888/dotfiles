@@ -145,3 +145,5 @@ alias af='nano ~/.config/fish/alias.fish'
 
 alias mf=' sudo -sE mintstick -m format'
 alias mi=' sudo -sE mintstick -m iso'
+
+alias fc="sudo sh -c 'echo 3 >/proc/sys/vm/drop_caches'"

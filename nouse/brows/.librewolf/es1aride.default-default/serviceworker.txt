@@ -1,13 +1,13 @@
 9
 
-https://www.reddit.com/
-https://www.reddit.com/sw.js
+https://xlife.com/
+https://xlife.com/sw.js
 true
-{80d78326-f363-41ff-911f-b16a67cd3b1f}
-1
-1743230538487745
-1743230538642308
-1743230538476623
+{10fc2551-daf7-4715-b6e7-2a98a0c9a9cb}
 0
+1743231888123568
+1743231888124135
+1743231888095122
+1
 true
 #

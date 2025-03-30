@@ -100,8 +100,6 @@
 - cmd: sn /usr/bin/xdg-open
 - cmd: n .local/share/applications/mimeapps.list
 - cmd: cd .local/share/applications/
-- cmd: waybar
-- cmd: checkupdates-with-aur
 - cmd: cd /var/log/
 - cmd: n lastlog
 - cmd: cd journal/
@@ -109,7 +107,6 @@
 - cmd: sn 0a077fcb483b4708ae77b568d8e002d2/
 - cmd: cd 0a077fcb483b4708ae77b568d8e002d2/
 - cmd: sn system.journal
-- cmd: ....
 - cmd: cd log/
 - cmd: vws
 - cmd: sudo pacman -Scc
@@ -241,7 +238,6 @@
 - cmd: ./git.sh
 - cmd: mv gitpull bup-gitpull
 - cmd: mv git.sh gitpull.sh
-- cmd: mv gitpull.sh ~/bin
 - cmd: cd 00
 - cmd: journalctl
 - cmd: -cd
@@ -315,7 +311,6 @@
 - cmd: comm befi ~/dotfiles/00inst/bpac
 - cmd: pacman -Qtdq
 - cmd: n qhbash
-- cmd: ...
 - cmd: n base-efi.sh
 - cmd: mv base-efi.sh efi.sh
 - cmd: n befi
@@ -505,7 +500,6 @@
 - cmd: systemd-analyze cat-config systemd/logind.conf
 - cmd: sn /etc/systemd/logind.conf
 - cmd: hyprctl monitors
-- cmd: n monitor.conf
 - cmd: cd kanshi
 - cmd: n config
 - cmd: journalctl -xe | grep -i suspend
@@ -545,7 +539,6 @@
 - cmd: y oh-my-fish
 - cmd: n config.fish
 - cmd: n .config/fish/config.fish
-- cmd: cd /
 - cmd: fish_config
 - cmd: bup
 - cmd: help
@@ -659,7 +652,6 @@
 - cmd: touch a
 - cmd: rm /bin/a
 - cmd: nano  $HOME/.config/waybar/power_menu.xml
-- cmd: cd bin/
 - cmd: nano  gpush.sh
 - cmd: btop
 - cmd: sudo updatedb; locate loader.conf
@@ -809,7 +801,6 @@
 - cmd: nano  990active.sh
 - cmd: sudo systemctl  enable apparmor.service
 - cmd: sudo  nano  /etc/default/grub
-- cmd: fwupdmgr refresh
 - cmd: rm *
 - cmd: cd ~/dotfiles && git status && cd -
 - cmd: stow gtk-2.0/
@@ -946,7 +937,6 @@
 - cmd: pui xorg-server
 - cmd: pui tumbler
 - cmd: pui ttf-ubuntu-font-family
-- cmd: n gpush.sh
 - cmd: wget -q --spider http://google.com
 - cmd: cd at
 - cmd: hypershade off
@@ -958,7 +948,6 @@
 - cmd: lo nemo
 - cmd: n /home/vago/.local/share/nemo/scripts
 - cmd: cd /home/vago/.local/share/nemo/scripts
-- cmd: cd .cache/
 - cmd: n zstd.fish
 - cmd: n yay.fish
 - cmd: cd vago/.cache/
@@ -1085,13 +1074,10 @@
 - cmd: n poweroff.sh
     - poweroff.sh
 - cmd: ./tshift.sh
-- cmd: af
 - cmd: ctl suspend
-- cmd: c
 - cmd: cd  bin/
     - bin/
 - cmd: sudo timeshift --create
-- cmd: n tshift.sh
 - cmd: du -h
 - cmd: du -f
 - cmd: md sync-vago
@@ -1101,7 +1087,6 @@
 - cmd: cd ~/bin/
     - ~/bin/
 - cmd: ./bup
-- cmd: cd -
 - cmd: n bup
 - cmd: cdc
 - cmd: mv librewolf/ .librewolf/
@@ -1118,8 +1103,6 @@
 - cmd: sn /etc/fstab
 - cmd: n vago/
 - cmd: cd vago/
-- cmd: cd dotfiles/
-    - dotfiles/
 - cmd: n c -l
 - cmd: ./c
 - cmd: y libva-nvidia-driver
@@ -1145,7 +1128,6 @@
 - cmd: cd ~/bin
 - cmd: n prpac.sh
 - cmd: mv prpac.sh paccach.sh
-- cmd: n autostart.conf
 - cmd: n i.sh
 - cmd: ψδ
 - cmd: loginctl suspend
@@ -1322,20 +1304,14 @@
 - cmd: sn /etc/systemd/system/systemd-hibernate.service.wants/nvidia-hibernate.service
 - cmd: sn /usr/lib/systemd/system/systemd-suspend.service
     - /usr/lib/systemd/system/systemd-suspend.service
-- cmd: hyprctl monitors all
 - cmd: y KeePassXC
 - cmd: stow home/
     - home/
 - cmd: ./gitpull.sh
-- cmd: n gitpull.sh
 - cmd: yui floorp-bin
 - cmd: y floorp
 - cmd: y mullvard
 - cmd: y mullvad
-- cmd: n aur.lst
-- cmd: n pac.lst
-- cmd: cpi q
-- cmd: bh q
 - cmd: y zoomer
 - cmd: gnome-zoomer
 - cmd: gnome-zoomer 0.1
@@ -1344,25 +1320,14 @@
 - cmd: y xbindkeys
 - cmd: y \nhyprctl_magnifier\n
 - cmd: y hyprctl_magnifier\n
-- cmd: ggg
 - cmd: mf
 - cmd: u
 - cmd: gu
-- cmd: n .local/share/fish/fish_history
-- cmd: cg
-- cmd: cd nvidia-all/
-    - nvidia-all/
-- cmd: makepkg -si
 - cmd: cd yay/
 - cmd: git pull
 - cmd: tss
 - cmd: tsl
-- cmd: cd /vt
-- cmd: cd sync-vago/
 - cmd: gg
-- cmd: nu
-- cmd: sn /etc/default/grub
-- cmd: ug
 - cmd: mkinitcpio -P
 - cmd: sn /etc/modprobe.d/nvidia.conf
 - cmd: s mkinitcpio -P
@@ -1374,7 +1339,6 @@
 - cmd: ctl disable ly
 - cmd: ctl disable sddm
 - cmd: ctl enable gdm
-- cmd: cd nouse/
 - cmd: cd gnome-i3/
     - gnome-i3/
 - cmd: cd gnome-stable/
@@ -1382,8 +1346,6 @@
 - cmd: y gnome-tweaks
 - cmd: y gnome-session
 - cmd: y gnome-control-center
-- cmd: b
-- cmd: t
 - cmd: y gnome-shell-extention-manager
 - cmd: y gnome-shell
 - cmd: pui gnome-shell-extensions
@@ -1403,34 +1365,23 @@
 - cmd: y gnome-shell-extension-manager
 - cmd: y gnome-shell-extension
 - cmd: y extension-manager
-- cmd: rr ri7shlwk.default/
-    - ri7shlwk.default/
 - cmd: cd nouse/brows/
     - nouse/brows/
 - cmd: cd .librewolf/
-- cmd: rr syb7rx0z.default-default/
-    - syb7rx0z.default-default/
 - cmd: ctl disable gdm
 - cmd: ctl enable ly
 - cmd: yui extension-manager gnome-shell gnome-control-center gnome-tweaks gdm sddm
 - cmd: yui extension-manager gnome-shell gnome-control-center gdm sddm
 - cmd: yui extension-manager gnome-shell gnome-control-center gdm sddm gnome-shell-extension-dash-to-panel gnome-shell-extensions
-- cmd: n paccach.sh
-    - paccach.sh
-- cmd: paccache -ruk0
 - cmd: paccache -rk1
 - cmd: cpd
 - cmd: cpk
-- cmd: sudo pacman -Rdd lib32-nvidia-utils-tkg lib32-opencl-nvidia-tkg nvidia-dkms-tkg nvidia-egl-wayland-tkg nvidia-settings-tkg nvidia-utils-tkg opencl-nvidia-tkg
 - cmd: pacman -Q nvidia
 - cmd: sudo pacman -Rdd lib32-nvidia-utils-tkg lib32-opencl-nvidia-tkg nvidia-settings-tkg nvidia-utils-tkg opencl-nvidia-tkg
 - cmd: sudo pacman -Rdd nvidia-open-dkms-tkg
-- cmd: pacman -Q | rg nvidia
 - cmd: pi nvidia-dkms nvidia-utils libva-nvidia-driver
-- cmd: pi nvidia-dkms nvidia-utils
 - cmd: sudo pacman -S nvidia-dkms egl-wayland lib32-nvidia-utils lib32-opencl-nvidia opencl-nvidia nvidia-utils
 - cmd: pss libva-nvidia-driver
-- cmd: s dmesg
 - cmd: journalctl -b -u systemd-suspend.service
 - cmd: pss wayland-scanner
 - cmd: n reboot.sh
@@ -1438,52 +1389,171 @@
 - cmd: n rnv
 - cmd: n suspend.sh
     - suspend.sh
-- cmd: nwc
-- cmd: n sync.sh
-- cmd: cd bin
 - cmd: n cpinst.sh
     - cpinst.sh
-- cmd: pacman -Qqe | grep -v "$(pacman -Qqm)"
-- cmd: cdf
-- cmd: cd 00inst/
 - cmd: n 090nvidia.sh
-- cmd: h
-- cmd: exit
-- cmd: hyprctl dispatch dpms
 - cmd: hyprctl scale 1
 - cmd: hyprctl dispatch scale 1
 - cmd: hyprctl monitor cursorpos scale 1
-- cmd: hyprctl reload
 - cmd: ctl exit
 - cmd: n env
 - cmd: journalctl -b
 - cmd: cd uwsm/
 - cmd: n env-hyprland
-- cmd: reboot
 - cmd: cc
 - cmd: cd foot/
     - foot/
 - cmd: n foot.ini
     - foot.ini
-- cmd: ..
 - cmd: cd fuzzel/
     - fuzzel/
-- cmd: l
 - cmd: n fuzzel.ini
     - fuzzel.ini
-- cmd: chh
-- cmd: n keybind.conf
-- cmd: g
-- cmd: ff
-- cmd: pd
-- cmd: yd
-- cmd: cd
-- cmd: systemctl suspend
-    - /vt
+- cmd: h
 - cmd: pui  nvidia-dkms egl-wayland lib32-nvidia-utils lib32-opencl-nvidia opencl-nvidia nvidia-utils
+- cmd: cg
+- cmd: cd nvidia-all/
+    - nvidia-all/
+- cmd: makepkg -si
+- cmd: s dmesg
+- cmd: sudo pacman -Rdd lib32-nvidia-utils-tkg lib32-opencl-nvidia-tkg nvidia-dkms-tkg nvidia-egl-wayland-tkg nvidia-settings-tkg nvidia-utils-tkg opencl-nvidia-tkg
 - cmd: sudo pacman -Rdd lib32-nvidia-utils-tkg lib32-opencl-nvidia-tkg  nvidia-settings-tkg nvidia-utils-tkg opencl-nvidia-tkg
 - cmd: pi nvidia nvidia-utils
+- cmd: pacman -Q | rg nvidia
 - cmd: pui nvidia nvidia-utils
+- cmd: pi nvidia-dkms nvidia-utils
 - cmd: hyprctl dispatch reload
-    - keybind.conf
+- cmd: hyprctl dispatch dpms
 - cmd: pi qt6-wayland
+- cmd: fwupdmgr refresh
+- cmd: bh q
+- cmd: n dotfiles/misc/qaur.lst
+    - dotfiles/misc/qaur.lst
+- cmd: n dotfiles/00inst/090nvidia.sh
+    - dotfiles/00inst/090nvidia.sh
+- cmd: pi lib32-nvidia-utils lib32-opencl-nvidia opencl-nvidia
+- cmd: cpi q
+- cmd: pi egl-wayland
+- cmd: y xcb
+- cmd: md ~/.config/wayfire/
+- cmd: mv Downloads/wayfire.ini ~/.config/wayfire/
+    - Downloads/wayfire.ini
+    - ~/.config/wayfire/
+- cmd: y wayfire
+- cmd: wayfire
+- cmd: yui wayfire
+- cmd: pacman -Qqe | grep -v "$(pacman -Qqm)"
+- cmd: pacman -Qqe | grep -v "$(pacman -Qqm)" >atest/a
+- cmd: comm atest/a dotfiles/misc/qpacman.lst
+    - atest/a
+    - dotfiles/misc/qpacman.lst
+- cmd: pacman -Qqm >atest/b
+- cmd: comm atest/b dotfiles/misc/qaur.lst
+    - atest/b
+- cmd: rr git/nvidia-all/
+    - git/nvidia-all/
+- cmd: n bin/paccach.sh
+    - bin/paccach.sh
+- cmd: date | awk '{print $1}'
+- cmd: rr .config/wayfire/
+    - .config/wayfire/
+- cmd: cd .cache/
+- cmd: rr *
+- cmd: cd bin/
+- cmd: paccache -ruk0
+- cmd: systemctl suspend
+- cmd: n .local/share/fish/fish_history
+- cmd: n autostart.conf
+- cmd: n paccach.sh -l
+    - paccach.sh
+- cmd: ./paccach.sh
+- cmd: n paccach.sh
+- cmd: sn /boot/loader/loader.conf
+- cmd: sn etc/ly/config.ini
+- cmd: sn /etc/systemd/journald.conf.d/usbstick.conf
+- cmd: pi  libeatmydata
+- cmd: eatmydata firefox
+- cmd: eatmydata librewolf
+- cmd: n keybind.conf
+- cmd: n gitpull.sh
+- cmd: n gpush.sh
+- cmd: n tshift.sh
+- cmd: cd nouse/
+- cmd: rr brows/
+    - brows/
+- cmd: cd /vt
+- cmd: rr ri7shlwk.default/
+    - ri7shlwk.default/
+- cmd: rr syb7rx0z.default-default/
+    - syb7rx0z.default-default/
+- cmd: cd sync-vago/
+- cmd: cd dot
+- cmd: cd dotfiles/
+    - dotfiles/
+- cmd: cd bin
+- cmd: n sync.sh
+- cmd: cp sync.sh gitpull.sh gpush.sh ~/dotfiles/nouse/bin/
+    - sync.sh
+    - gitpull.sh
+    - gpush.sh
+    - ~/dotfiles/nouse/bin/
+- cmd: ....
+- cmd: cd nouse/bin/
+    - nouse/bin/
+- cmd: cp * ../bin/bin
+- cmd: cp * ../bin
+    - ../bin
+- cmd: command cp * ../bin
+- cmd: mv * ../bin
+- cmd: mv gitpull.sh ~/bin
+- cmd: mv gpush.sh ~/bin
+- cmd: mv sync.sh ~/bin
+- cmd: //
+- cmd: cd -
+- cmd: ..
+- cmd: rr bin
+    - bin
+- cmd: cd brows/
+- cmd: ...
+- cmd: git gc
+- cmd: sudo sh -c 'echo 1 >/proc/sys/vm/drop_caches'
+- cmd: echo "echo 1 > /proc/sys/vm/drop_caches" | sudo sh
+- cmd: sudo sh -c 'echo 3 >/proc/sys/vm/drop_caches'\n
+- cmd: fc-cache
+- cmd: t
+- cmd: fc
+- cmd: sn /sys/kernel/debug/dri/<GPUID>/<PORT>/trigger_hotplug
+- cmd: lo trigger_hotplug
+- cmd: sn /etc/default/grub
+- cmd: ug
+- cmd: reboot
+- cmd: hyprctl reload
+- cmd: l
+- cmd: hyprctl monitors all
+- cmd: chh
+- cmd: n monitor.conf
+- cmd: exit
+- cmd: yui freetube-git
+- cmd: w electron
+- cmd: cd\\\n
+- cmd: cd /
+- cmd: y freetube
+- cmd: cdf
+- cmd: cd 00inst/
+- cmd: n aur.lst
+- cmd: n pac.lst
+- cmd: g
+- cmd: yd
+- cmd: pd
+- cmd: cd
+- cmd: ff
+- cmd: nwc
+- cmd: checkupdates-with-aur
+- cmd: waybar
+- cmd: pss bluez
+- cmd: b
+- cmd: nu
+- cmd: c
+- cmd: af
+- cmd: ggg
+- cmd: ~/bin/bh q

@@ -1593,3 +1593,8 @@
 - cmd: hostnamectl | rg Model | awk '{print $4}'
 - cmd: hostnamectl | rg Model | awk '{print $3}'
 - cmd: n v
+- cmd: comm ~/dotfiles/misc/qpacman.lst /mnt/data/sync-vago/dotfiles/misc/qpacman.lst
+    - ~/dotfiles/misc/qpacman.lst
+    - /mnt/data/sync-vago/dotfiles/misc/qpacman.lst
+    - 00inst/
+- cmd: hostnamectl\\\n

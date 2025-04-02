@@ -9,4 +9,3 @@
 
 	cd ~/dotfiles
 	git status
-	cd -

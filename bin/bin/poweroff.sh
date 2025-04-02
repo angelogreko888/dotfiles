@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 ~/bin/cpbh.sh
 sleep 0.5
 ~/bin/vtbup

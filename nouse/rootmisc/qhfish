@@ -547,7 +547,6 @@
 - cmd: mv fish/ ~/dotfiles/
 - cmd: mv fish/ ~/dotfiles/fish/.config/
 - cmd: stow fish/
-- cmd: cd fish/
 - cmd: history
 - cmd: md -p lfish/.local/share/fish
 - cmd: cd lfish/.local/share/
@@ -574,7 +573,6 @@
 - cmd: rm com
 - cmd: n .bash_history
 - cmd: cd .local/share/fish/
-- cmd: cd generated_completions/
 - cmd: l &| less
 - cmd: rm fish/
 - cmd: rm fish
@@ -1069,8 +1067,6 @@
     - tshift.sh
     - ~/bin
 - cmd: sudo timeshift --list |awk 'NR==13{print $3}'
-- cmd: n poweroff.sh
-    - poweroff.sh
 - cmd: ./tshift.sh
 - cmd: ctl suspend
 - cmd: cd  bin/
@@ -1085,7 +1081,6 @@
 - cmd: cd ~/bin/
     - ~/bin/
 - cmd: ./bup
-- cmd: n bup
 - cmd: cdc
 - cmd: mv librewolf/ .librewolf/
     - librewolf/
@@ -1101,8 +1096,6 @@
 - cmd: sn /etc/fstab
 - cmd: n vago/
 - cmd: cd vago/
-- cmd: n c -l
-- cmd: ./c
 - cmd: y libva-nvidia-driver
 - cmd: cat /sys/module/nvidia_drm/parameters/modeset
 - cmd: s cat /sys/module/nvidia_drm/parameters/modeset
@@ -1122,7 +1115,6 @@
 - cmd: ./prpac.sh
 - cmd: mv prpac.sh ~/bin
     - prpac.sh
-- cmd: cd ~/bin
 - cmd: n prpac.sh
 - cmd: mv prpac.sh paccach.sh
 - cmd: n i.sh
@@ -1259,7 +1251,6 @@
 - cmd: pacman -Qqen > pac
 - cmd: n pac
 - cmd: rm pac
-- cmd: cd atest/
 - cmd: rm a*
 - cmd: rm p*
 - cmd: n z
@@ -1449,7 +1440,6 @@
 - cmd: date | awk '{print $1}'
 - cmd: rr .config/wayfire/
     - .config/wayfire/
-- cmd: cd .cache/
 - cmd: rr *
 - cmd: cd bin/
 - cmd: paccache -ruk0
@@ -1534,8 +1524,6 @@
 - cmd: ~/bin/cpinst.sh q
 - cmd: n paccach.sh
 - cmd: n 99active.sh
-- cmd: cd 00inst/
-- cmd: n pac.lst
 - cmd: n aur.lst
 - cmd: gg
 - cmd: h | grep gnome
@@ -1543,31 +1531,23 @@
 - cmd: pi mpv
 - cmd: pp
 - cmd: n autostart.conf
-- cmd: ggg
-- cmd: cd
 - cmd: pui vlc
 - cmd: pd
 - cmd: yd
 - cmd: pacman -Q | rg egl
 - cmd: b
 - cmd: n keybind.conf
-- cmd: g
 - cmd: cd ~/atest/
 - cmd: n a
 - cmd: n b
 - cmd: rm a b
     - b
-- cmd: n c
-- cmd: cd bin
-- cmd: ff
 - cmd: n systeminfo.sh
     - systeminfo.sh
 - cmd: ./systeminfo.sh
 - cmd: chh
-- cmd: cdf
 - cmd: cd fastfetch/.config/fastfetch/
     - fastfetch/.config/fastfetch/
-- cmd: l
 - cmd: n config.jsonc
     - config.jsonc
 - cmd: echo $HOST
@@ -1580,21 +1560,56 @@
 - cmd: lo hostFormat
 - cmd: echo $hostFormat
 - cmd: fastfetch | rg host
+- cmd: ff
 - cmd: fastfetch | rg Host
 - cmd: fastfetch | rg Host | awk '{print $3}'
-- cmd: hostnamectl
 - cmd: hostnamectl chassis
 - cmd: hostnamectl status
 - cmd: hostnamectl deployment
 - cmd: hostnamectl icon-name
 - cmd: hostnamectl location
 - cmd: hostnamectl | rg model
+- cmd: hostnamectl
 - cmd: hostnamectl | rg Model
 - cmd: hostnamectl | rg Model | awk '{print $4}'
 - cmd: hostnamectl | rg Model | awk '{print $3}'
 - cmd: n v
+- cmd: n c -l
 - cmd: comm ~/dotfiles/misc/qpacman.lst /mnt/data/sync-vago/dotfiles/misc/qpacman.lst
     - ~/dotfiles/misc/qpacman.lst
     - /mnt/data/sync-vago/dotfiles/misc/qpacman.lst
-    - 00inst/
+- cmd: cdf
+- cmd: cd 00inst/
+- cmd: n pac.lst
 - cmd: hostnamectl\\\n
+- cmd: ./c
+- cmd: cp c cpbh.sh
+- cmd: mv cpbh.sh ~/dotfiles/bin/bin/
+    - cpbh.sh
+    - ~/dotfiles/bin/bin/
+- cmd: cd ~bin
+    - ~bin
+- cmd: cd
+- cmd: cd bin
+- cmd: g
+- cmd: ggg
+- cmd: cd atest/
+- cmd: n c
+- cmd: cd ~/bin
+- cmd: n poweroff.sh
+    - poweroff.sh
+- cmd: n pub
+- cmd: n bup
+- cmd: cd .cache/
+- cmd: cd fish/
+- cmd: cd generated_completions/
+- cmd: l
+- cmd: n xdg-open.fish
+    - xdg-open.fish
+- cmd: n nano.fish
+    - nano.fish
+- cmd: l | wc -l
+- cmd: cp bup vtbup
+    - bup
+- cmd: n vtbup
+    - vtbup

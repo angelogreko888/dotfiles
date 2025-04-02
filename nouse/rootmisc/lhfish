@@ -254,8 +254,6 @@
 - cmd: mv gitpull bup-gitpull
 - cmd: mv git.sh gitpull.sh
 - cmd: mv gitpull.sh ~/bin
-- cmd: cd 00
-- cmd: n autostart.conf
 - cmd: journalctl
 - cmd: hyprctl monitors all
 - cmd: -cd
@@ -386,10 +384,8 @@
 - cmd: pacman -Si sddm
 - cmd: pacman -Si ly
 - cmd: pi sddm
-- cmd: ctl disable ly
 - cmd: ctl enable sddm
 - cmd: ctl disable sddm
-- cmd: ctl enable ly
 - cmd: ctl stop sddm
 - cmd: pui sddm
 - cmd: sn sudo tee /etc/pacman.d/hooks/nvidia.hook
@@ -506,7 +502,6 @@
 - cmd: pi man-db
 - cmd: gu
 - cmd: ../misc/
-- cmd: cd ../misc/
 - cmd: rm  CanvasBlocker-settings_2025-01-20_21-34-53.json chameleon_1737401664737.json
 - cmd: n bup-gitpull
 - cmd: rm bup-gitpull
@@ -624,7 +619,6 @@
 - cmd: rr fishlocal/
 - cmd: cd ../bin/
 - cmd: c
-- cmd: gg
 - cmd: gp
 - cmd: yay -Rns art-rawconverter
 - cmd: nano  a
@@ -886,7 +880,6 @@
 - cmd: n settings.ini
 - cmd: stow gtk-4.0/
 - cmd: cd uwsm
-- cmd: n env
 - cmd: n animations-dynamic.conf
 - cmd: cd -
 - cmd: su -
@@ -912,8 +905,6 @@
 - cmd: n 090nvidia.sh
 - cmd: n 20pac.sh
 - cmd: n 30aur.sh
-- cmd: n aur.lst
-- cmd: n pac.lst
 - cmd: rm uaur.sh upac.sh
 - cmd: cd ff
 - cmd: pss usb disk formater
@@ -924,7 +915,6 @@
 - cmd: USB Image Writer
 - cmd: sudo -sE mintstick
 - cmd: sudo -sE mintstick -m format
-- cmd: af
 - cmd: fish
 - cmd: mf
 - cmd: mi
@@ -933,7 +923,6 @@
     - fish_history
 - cmd: rm fish_history.bup
 - cmd: cpi q
-- cmd: n laur.lst
 - cmd: yui usbimager
 - cmd: yui usbimager-debug
 - cmd: yui art-rawconverter-bin
@@ -989,16 +978,12 @@
 - cmd: n bash
 - cmd: n ~/.local/share/fish/fish_history
 - cmd: n combash
-- cmd: h
 - cmd: n .local/share/fish/fish_history
 - cmd: n bh
 - cmd: cd nouse/rootmisc/
 - cmd: mv bash .bash_history
     - bash
 - cmd: ...
-- cmd: cd 00inst/
-- cmd: n 99active.sh
-- cmd: cd bin/
 - cmd: systemctl list-unit-files | grep enabled
 - cmd: systemctl | grep running
 - cmd: systemctl list-unit-files
@@ -1023,15 +1008,11 @@
 - cmd: rm a b tee
     - a
     - b
-- cmd: n sync.sh
-    - sync.sh
 - cmd: ./
 - cmd: journalctl -b 1
 - cmd: pi hyprshade
 - cmd: y hyprshade
 - cmd: ctl status hyprshade
-- cmd: cpi l
-- cmd: bh l
 - cmd: lspci
 - cmd: pui firefox
 - cmd: cd .mozilla/
@@ -1040,7 +1021,6 @@
 - cmd: lo firefox
 - cmd: lk
 - cmd: ts
-- cmd: cc
 - cmd: cd foot/
     - foot/
 - cmd: n foot.ini
@@ -1065,8 +1045,6 @@
     - home
 - cmd: u
 - cmd: y mullvad
-- cmd: b
-- cmd: t
 - cmd: cd atest/
 - cmd: n wget-log
     - wget-log
@@ -1076,7 +1054,6 @@
 - cmd: md .mullvad
 - cmd: rr .mullvad/
     - .mullvad/
-- cmd: cd
 - cmd: ..
 - cmd: rr mullvadbrowser/
     - mullvadbrowser/
@@ -1086,12 +1063,10 @@
 - cmd: cd mullvadbrowser/
 - cmd: ./c
 - cmd: n c
-- cmd: cdf
 - cmd: cd home/
     - home/
 - cmd: cd .mullvad/
 - cmd: pp
-- cmd: cd bin
 - cmd: ggp
 - cmd: gd
 - cmd: cd /vt
@@ -1111,31 +1086,115 @@
 - cmd: rm -rf ~/.cache/*
 - cmd: cd .cache/
     - .cache/
-- cmd: l
 - cmd: n bup
 - cmd: ./bup
-- cmd: chh
 - cmd: n keybind.conf
 - cmd: yui floorp
 - cmd: y floorp
 - cmd: yui floorp-bin
 - cmd: pi gtk2
 - cmd: ff
-- cmd: yd
-- cmd: pd
-- cmd: g
-- cmd: ggg
-- cmd: cd ~/bin
+- cmd: cd 00
+- cmd: n 800ftube.sh
+    - 800ftube.sh
+- cmd: n 700brows.sh
+- cmd: l
+- cmd: n 99active.sh
 - cmd: n gitpull.sh
 - cmd: n gpush.sh
     - gpush.sh
 - cmd: ./gpush.sh
+- cmd: af
+- cmd: cpi l
+- cmd: bh l
+- cmd: pacman -Q pypr
+- cmd: n aur.lst
+- cmd: w pypr
+- cmd: y pypr
+- cmd: cd 00inst/
+- cmd: n pac.lst
+- cmd: cd ../misc/
+- cmd: n laur.lst
+- cmd: yui pyprland
+- cmd: cd bin/
 - cmd: ./gitpull.sh
-    - 00inst/
-- cmd: n 800ftube.sh
-    - 800ftube.sh
-- cmd: n 700brows.sh
-    - 99active.sh
+- cmd: y totem
+- cmd: pss hdparm
+- cmd: pi gnome-shell
+- cmd: pi gdm
+- cmd: ctl disable ly
+- cmd: ctl enable gdm
+- cmd: spt
+- cmd: pi gnome-shell=controller
+- cmd: pi gnome-shell0controller
+- cmd: pi gnome-shell-controller
+- cmd: pss gnome controller
+- cmd: pss gnome control
+- cmd: pi gnome-control-center gnome-terminal
+- cmd: pi gnome-tweaks
+- cmd: t
+- cmd: gnome-terminal
+- cmd: cdf
+- cmd: ggg
+- cmd: h
+- cmd: ctl disable gdm
+- cmd: ctl enable ly
+- cmd: pui gnome-tweaks gnome-control-center gnome-terminal gdm gnome-shell
+- cmd: yd
+- cmd: pd
+- cmd: cd bin
+- cmd: n paccach.sh
+    - paccach.sh
+- cmd: paccache -ruk0
+- cmd: paccache -rk1
+- cmd: chh
+- cmd: n autostart.conf
+- cmd: cd ~/bin
+- cmd: n sync.sh
+    - sync.sh
+- cmd: date | awk '{print $1}'
+- cmd: ./paccach.sh
+- cmd: g
+- cmd: b
+- cmd: cc
+- cmd: cd uwsm/
+    - uwsm/
+- cmd: n env
+- cmd: gg
+- cmd: cd
+- cmd: y newpipe
+- cmd: y libretube
+- cmd: y piped
+- cmd: yui pipeline
+- cmd: y pipeline
+- cmd: yui pipeline-gtk
+- cmd: hyprctl reload
+    - keybind.conf
+- cmd: pui totem
     - ~/bin
+- cmd: pi  libeatmydata
+    - 00inst/
+    - pac.lst
+- cmd: git gc
+- cmd: rr ri7shlwk.default/
+    - ri7shlwk.default/
+- cmd: rr syb7rx0z.default-default/
+    - syb7rx0z.default-default/
+    - bin
     - gitpull.sh
-    - bin/
+- cmd: n l
+- cmd: n poweroff.sh
+    - poweroff.sh
+- cmd: n gp
+    - nouse/
+- cmd: rr brows/
+    - brows/
+- cmd: y mpv
+- cmd: homstnamectl
+- cmd: hostnamectl
+- cmd: hostnamectl | rg Model | awk '{print $3}'
+    - atest/
+    - c
+- cmd: n cpbh.sh
+    - cpbh.sh
+- cmd: ./cpbh.sh

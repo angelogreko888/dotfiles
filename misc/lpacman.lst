@@ -1,6 +1,5 @@
 acpi
 aquamarine
-arc-gtk-theme
 arch-install-scripts
 base
 base-devel
@@ -55,6 +54,7 @@ iw
 iwd
 jdk-openjdk
 less
+libeatmydata
 libpulse
 libreoffice-fresh
 libva-utils
@@ -64,6 +64,7 @@ linux-firmware-qlogic
 linux-headers
 ly
 man-db
+mpv
 mtools
 nano
 nano-syntax-highlighting

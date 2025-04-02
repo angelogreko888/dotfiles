@@ -1,6 +1,7 @@
 aic94xx-firmware
 android-sdk-platform-tools
 anydesk-bin
+arc-gtk-theme
 ast-firmware
 aurutils
 bezier
@@ -11,10 +12,11 @@ hyprprop-git
 hyprshade
 hyprshot
 librewolf-bin
+librewolf-bin-debug
 libva-nvidia-driver-git
 mintstick
 mullvad-browser-bin
-pyprland
+mullvad-browser-bin-debug
 timeshift-autosnap
 upd72020x-fw
 wd719x-firmware

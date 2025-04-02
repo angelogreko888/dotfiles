@@ -1440,7 +1440,6 @@
 - cmd: date | awk '{print $1}'
 - cmd: rr .config/wayfire/
     - .config/wayfire/
-- cmd: rr *
 - cmd: cd bin/
 - cmd: paccache -ruk0
 - cmd: systemctl suspend
@@ -1455,7 +1454,6 @@
 - cmd: eatmydata firefox
 - cmd: eatmydata librewolf
 - cmd: n gitpull.sh
-- cmd: n gpush.sh
 - cmd: n tshift.sh
 - cmd: cd nouse/
 - cmd: rr brows/
@@ -1492,7 +1490,6 @@
 - cmd: rr bin
     - bin
 - cmd: cd brows/
-- cmd: ...
 - cmd: sudo sh -c 'echo 1 >/proc/sys/vm/drop_caches'
 - cmd: echo "echo 1 > /proc/sys/vm/drop_caches" | sudo sh
 - cmd: sudo sh -c 'echo 3 >/proc/sys/vm/drop_caches'\n
@@ -1516,9 +1513,7 @@
 - cmd: checkupdates-with-aur
 - cmd: waybar
 - cmd: pss bluez
-- cmd: nu
 - cmd: c
-- cmd: af
 - cmd: git gc
 - cmd: ~/bin/bh q
 - cmd: ~/bin/cpinst.sh q
@@ -1591,25 +1586,33 @@
     - ~bin
 - cmd: cd
 - cmd: cd bin
-- cmd: g
 - cmd: ggg
 - cmd: cd atest/
 - cmd: n c
-- cmd: cd ~/bin
-- cmd: n poweroff.sh
-    - poweroff.sh
 - cmd: n pub
 - cmd: n bup
 - cmd: cd .cache/
 - cmd: cd fish/
 - cmd: cd generated_completions/
-- cmd: l
 - cmd: n xdg-open.fish
     - xdg-open.fish
 - cmd: n nano.fish
     - nano.fish
 - cmd: l | wc -l
+- cmd: nu
+- cmd: ...
+- cmd: rr *
 - cmd: cp bup vtbup
     - bup
+- cmd: l
 - cmd: n vtbup
     - vtbup
+- cmd: n poweroff.sh
+    - poweroff.sh
+- cmd: af
+- cmd: cd ~/bin
+- cmd: n gpush.sh
+- cmd: cp gpush.sh gstatus.sh
+- cmd: n gstatus.sh
+    - gstatus.sh
+- cmd: g

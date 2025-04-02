@@ -1,6 +1,7 @@
 aic94xx-firmware
 android-sdk-platform-tools
 anydesk-bin
+arc-gtk-theme
 ast-firmware
 aurutils
 bezier
@@ -15,6 +16,7 @@ librewolf-bin
 mintstick
 mkinitcpio-firmware
 mullvad-browser-bin
+mullvad-browser-bin-debug
 simple-mtpfs
 upd72020x-fw
 wd719x-firmware

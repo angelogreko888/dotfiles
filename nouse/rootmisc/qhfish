@@ -912,7 +912,6 @@
 - cmd: cat a
 - cmd: man sed
 - cmd: n  a
-- cmd: n b
 - cmd: n u.sh
 - cmd: pacman -Q | rg freetube
 - cmd: n ~/dotfiles/misc/fish
@@ -1069,7 +1068,6 @@
 - cmd: mv tshift.sh ~/bin
     - tshift.sh
     - ~/bin
-- cmd: ./systeminfo.sh
 - cmd: sudo timeshift --list |awk 'NR==13{print $3}'
 - cmd: n poweroff.sh
     - poweroff.sh
@@ -1114,7 +1112,6 @@
 - cmd: ctl status paccache.timer
 - cmd: s paccache -ruk0
 - cmd: s paccache -rk1
-- cmd: cd ~/atest/
 - cmd: n z -l
     - z
 - cmd: notify-send "done"
@@ -1144,7 +1141,6 @@
 - cmd: who
 - cmd: sn /etc/default/useradd
     - /etc/default/useradd
-- cmd: n 99active.sh
 - cmd: sudo usermod -aG users "$(whoami)"
 - cmd: id vago
 - cmd: s systemctl --user enable --now hyprpolkitagent.service
@@ -1159,7 +1155,6 @@
 - cmd: sn config.ini
     - config.ini
 - cmd: ll
-- cmd: n a
 - cmd: rm a
 - cmd: s xauth
 - cmd: pi xauth
@@ -1267,7 +1262,6 @@
 - cmd: cd atest/
 - cmd: rm a*
 - cmd: rm p*
-- cmd: n c
 - cmd: n z
 - cmd: ψηη
 - cmd: n /etc/pacman.d/mirrorlist
@@ -1277,7 +1271,6 @@
 - cmd: y hyprshade
 - cmd: sn /etc/pacman.d/mirrorlist
 - cmd: pacman -Q hyprshade
-- cmd: pp
 - cmd: LibreOffice Writer
 - cmd: Writer
 - cmd: libreoffice
@@ -1327,7 +1320,6 @@
 - cmd: git pull
 - cmd: tss
 - cmd: tsl
-- cmd: gg
 - cmd: mkinitcpio -P
 - cmd: sn /etc/modprobe.d/nvidia.conf
 - cmd: s mkinitcpio -P
@@ -1463,18 +1455,15 @@
 - cmd: paccache -ruk0
 - cmd: systemctl suspend
 - cmd: n .local/share/fish/fish_history
-- cmd: n autostart.conf
 - cmd: n paccach.sh -l
     - paccach.sh
 - cmd: ./paccach.sh
-- cmd: n paccach.sh
 - cmd: sn /boot/loader/loader.conf
 - cmd: sn etc/ly/config.ini
 - cmd: sn /etc/systemd/journald.conf.d/usbstick.conf
 - cmd: pi  libeatmydata
 - cmd: eatmydata firefox
 - cmd: eatmydata librewolf
-- cmd: n keybind.conf
 - cmd: n gitpull.sh
 - cmd: n gpush.sh
 - cmd: n tshift.sh
@@ -1490,7 +1479,6 @@
 - cmd: cd dot
 - cmd: cd dotfiles/
     - dotfiles/
-- cmd: cd bin
 - cmd: n sync.sh
 - cmd: cp sync.sh gitpull.sh gpush.sh ~/dotfiles/nouse/bin/
     - sync.sh
@@ -1515,12 +1503,10 @@
     - bin
 - cmd: cd brows/
 - cmd: ...
-- cmd: git gc
 - cmd: sudo sh -c 'echo 1 >/proc/sys/vm/drop_caches'
 - cmd: echo "echo 1 > /proc/sys/vm/drop_caches" | sudo sh
 - cmd: sudo sh -c 'echo 3 >/proc/sys/vm/drop_caches'\n
 - cmd: fc-cache
-- cmd: t
 - cmd: fc
 - cmd: sn /sys/kernel/debug/dri/<GPUID>/<PORT>/trigger_hotplug
 - cmd: lo trigger_hotplug
@@ -1528,9 +1514,7 @@
 - cmd: ug
 - cmd: reboot
 - cmd: hyprctl reload
-- cmd: l
 - cmd: hyprctl monitors all
-- cmd: chh
 - cmd: n monitor.conf
 - cmd: exit
 - cmd: yui freetube-git
@@ -1538,22 +1522,74 @@
 - cmd: cd\\\n
 - cmd: cd /
 - cmd: y freetube
-- cmd: cdf
-- cmd: cd 00inst/
-- cmd: n aur.lst
-- cmd: n pac.lst
-- cmd: g
-- cmd: yd
-- cmd: pd
-- cmd: cd
-- cmd: ff
 - cmd: nwc
 - cmd: checkupdates-with-aur
 - cmd: waybar
 - cmd: pss bluez
-- cmd: b
 - cmd: nu
 - cmd: c
 - cmd: af
-- cmd: ggg
+- cmd: git gc
 - cmd: ~/bin/bh q
+- cmd: ~/bin/cpinst.sh q
+- cmd: n paccach.sh
+- cmd: n 99active.sh
+- cmd: cd 00inst/
+- cmd: n pac.lst
+- cmd: n aur.lst
+- cmd: gg
+- cmd: h | grep gnome
+- cmd: t
+- cmd: pi mpv
+- cmd: pp
+- cmd: n autostart.conf
+- cmd: ggg
+- cmd: cd
+- cmd: pui vlc
+- cmd: pd
+- cmd: yd
+- cmd: pacman -Q | rg egl
+- cmd: b
+- cmd: n keybind.conf
+- cmd: g
+- cmd: cd ~/atest/
+- cmd: n a
+- cmd: n b
+- cmd: rm a b
+    - b
+- cmd: n c
+- cmd: cd bin
+- cmd: ff
+- cmd: n systeminfo.sh
+    - systeminfo.sh
+- cmd: ./systeminfo.sh
+- cmd: chh
+- cmd: cdf
+- cmd: cd fastfetch/.config/fastfetch/
+    - fastfetch/.config/fastfetch/
+- cmd: l
+- cmd: n config.jsonc
+    - config.jsonc
+- cmd: echo $HOST
+- cmd: echo host
+- cmd: lo defs/hostFormat
+- cmd: #/$defs/hostFormat
+- cmd: echo #/$defs/hostFormat
+- cmd: echo $defs/hostFormat
+- cmd: echo $defs
+- cmd: lo hostFormat
+- cmd: echo $hostFormat
+- cmd: fastfetch | rg host
+- cmd: fastfetch | rg Host
+- cmd: fastfetch | rg Host | awk '{print $3}'
+- cmd: hostnamectl
+- cmd: hostnamectl chassis
+- cmd: hostnamectl status
+- cmd: hostnamectl deployment
+- cmd: hostnamectl icon-name
+- cmd: hostnamectl location
+- cmd: hostnamectl | rg model
+- cmd: hostnamectl | rg Model
+- cmd: hostnamectl | rg Model | awk '{print $4}'
+- cmd: hostnamectl | rg Model | awk '{print $3}'
+- cmd: n v

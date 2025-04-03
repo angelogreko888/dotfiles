@@ -1,4 +1,3 @@
-- cmd: cd nouse/
 - cmd: cd rootmisc/
 - cmd: n mirrorlist
 - cmd: s reflector --protocol https --age 12 --country Cyprus --sort rate --number 10 --verbose
@@ -293,7 +292,6 @@
 - cmd: n /home/vago/.nvidia-settings-rc
 - cmd: rm /home/vago/.nvidia-settings-rc
 - cmd: d 00inst/
-- cmd: n env-hyprland
 - cmd: ./backup.sh
 - cmd: y fmc-1910w
 - cmd: y mfc-1910w
@@ -1043,9 +1041,7 @@
     - .icons/
 - cmd: stow home
     - home
-- cmd: u
 - cmd: y mullvad
-- cmd: cd atest/
 - cmd: n wget-log
     - wget-log
 - cmd: rm wget-log
@@ -1054,7 +1050,6 @@
 - cmd: md .mullvad
 - cmd: rr .mullvad/
     - .mullvad/
-- cmd: ..
 - cmd: rr mullvadbrowser/
     - mullvadbrowser/
 - cmd: cd ce48n5na.default-release/
@@ -1062,15 +1057,12 @@
 - cmd: n lock
 - cmd: cd mullvadbrowser/
 - cmd: ./c
-- cmd: n c
 - cmd: cd home/
     - home/
 - cmd: cd .mullvad/
 - cmd: pp
 - cmd: ggp
 - cmd: gd
-- cmd: cd /vt
-    - /vt
 - cmd: cd /
 - cmd: co vt/
     - vt/
@@ -1088,31 +1080,22 @@
     - .cache/
 - cmd: n bup
 - cmd: ./bup
-- cmd: n keybind.conf
 - cmd: yui floorp
 - cmd: y floorp
 - cmd: yui floorp-bin
 - cmd: pi gtk2
-- cmd: ff
 - cmd: cd 00
 - cmd: n 800ftube.sh
     - 800ftube.sh
 - cmd: n 700brows.sh
-- cmd: l
 - cmd: n 99active.sh
-- cmd: n gitpull.sh
-- cmd: n gpush.sh
-    - gpush.sh
 - cmd: ./gpush.sh
-- cmd: af
 - cmd: cpi l
 - cmd: bh l
 - cmd: pacman -Q pypr
 - cmd: n aur.lst
 - cmd: w pypr
 - cmd: y pypr
-- cmd: cd 00inst/
-- cmd: n pac.lst
 - cmd: cd ../misc/
 - cmd: n laur.lst
 - cmd: yui pyprland
@@ -1134,67 +1117,80 @@
 - cmd: pi gnome-tweaks
 - cmd: t
 - cmd: gnome-terminal
-- cmd: cdf
-- cmd: ggg
 - cmd: h
 - cmd: ctl disable gdm
 - cmd: ctl enable ly
 - cmd: pui gnome-tweaks gnome-control-center gnome-terminal gdm gnome-shell
-- cmd: yd
-- cmd: pd
-- cmd: cd bin
-- cmd: n paccach.sh
-    - paccach.sh
 - cmd: paccache -ruk0
 - cmd: paccache -rk1
-- cmd: chh
 - cmd: n autostart.conf
-- cmd: cd ~/bin
 - cmd: n sync.sh
     - sync.sh
 - cmd: date | awk '{print $1}'
-- cmd: ./paccach.sh
-- cmd: g
-- cmd: b
-- cmd: cc
-- cmd: cd uwsm/
-    - uwsm/
-- cmd: n env
 - cmd: gg
-- cmd: cd
 - cmd: y newpipe
 - cmd: y libretube
 - cmd: y piped
 - cmd: yui pipeline
 - cmd: y pipeline
 - cmd: yui pipeline-gtk
+- cmd: yd
+- cmd: pd
 - cmd: hyprctl reload
-    - keybind.conf
 - cmd: pui totem
-    - ~/bin
+- cmd: u
+- cmd: ./paccach.sh
 - cmd: pi  libeatmydata
-    - 00inst/
-    - pac.lst
-- cmd: git gc
+- cmd: cd 00inst/
+- cmd: n pac.lst
+- cmd: ..
+- cmd: ff
+- cmd: cd ~/bin
+- cmd: n paccach.sh
+    - paccach.sh
+- cmd: cd /vt
+    - /vt
 - cmd: rr ri7shlwk.default/
     - ri7shlwk.default/
 - cmd: rr syb7rx0z.default-default/
     - syb7rx0z.default-default/
-    - bin
-    - gitpull.sh
+- cmd: n gitpull.sh
 - cmd: n l
 - cmd: n poweroff.sh
     - poweroff.sh
 - cmd: n gp
-    - nouse/
+- cmd: n gpush.sh
+    - gpush.sh
 - cmd: rr brows/
     - brows/
+- cmd: cd nouse/
+- cmd: cdf
+- cmd: git gc
 - cmd: y mpv
+- cmd: ggg
 - cmd: homstnamectl
 - cmd: hostnamectl
-- cmd: hostnamectl | rg Model | awk '{print $3}'
-    - atest/
-    - c
+- cmd: cd atest/
+- cmd: n c
+- cmd: cd bin
+- cmd: l
 - cmd: n cpbh.sh
     - cpbh.sh
+- cmd: hostnamectl | rg Model | awk '{print $3}'
 - cmd: ./cpbh.sh
+- cmd: n env
+- cmd: cc
+- cmd: cd uwsm/
+    - uwsm/
+- cmd: n env-
+- cmd: n env-hyprland
+- cmd: af
+- cmd: chh
+- cmd: n keybind.conf
+- cmd: q
+- cmd: b
+- cmd: cd
+- cmd: strings /sys/firmware/acpi/tables/DSDT | grep -i 'windows ' | sort | tail -1
+    - /sys/firmware/acpi/tables/DSDT
+- cmd: s strings /sys/firmware/acpi/tables/DSDT | grep -i 'windows ' | sort | tail -1
+- cmd: g

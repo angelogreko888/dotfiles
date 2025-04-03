@@ -13,3 +13,7 @@ export GTK_THEME=Arc-Dark
 export XCURSOR_THEME=radioactive-yellow
 export XCURSOR_SIZE=24
 
+env = NVD_BACKEND,direct
+env = MOZ_DISABLE_RDD_SANDBOX,1
+env = __EGL_VENDOR_LIBRARY_FILENAMES=/usr/share/glvnd/egl_vendor.d/10_nvidia.json
+env = ELECTRON_OZONE_PLATFORM_HINT,auto

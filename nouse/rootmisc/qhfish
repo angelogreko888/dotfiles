@@ -272,7 +272,6 @@
 - cmd: rm /home/vago/.nvidia-settings-rc
 - cmd: d 00inst/
 - cmd: ./backup.sh
-- cmd: n backup.sh
 - cmd: y fmc-1910w
 - cmd: y mfc-1910w
 - cmd: sv /etc/locale.gen
@@ -346,9 +345,7 @@
 - cmd: ctl status nvidia-suspend.service
 - cmd: ctl status nvidia-hibernate.service
 - cmd: cd active.sh
-- cmd: nvidia-smi --query-gpu=memory.total --format=csv,noheader,nounits
 - cmd: w sh
-- cmd: sn /usr/lib/systemd/system-sleep/nvidia
 - cmd: cd /bin
 - cmd: l | rg sh
 - cmd: d
@@ -416,7 +413,6 @@
 - cmd: s rm /etc/modules-load.d/nvidia.conf
 - cmd: s rm /etc/pacman.d/hooks/nvidia.hook
 - cmd: pi libva-nvidia-drivers
-- cmd: pi libva-nvidia-driver
 - cmd: n kanshi
 - cmd: n
 - cmd: n active.sh
@@ -1097,8 +1093,6 @@
 - cmd: n vago/
 - cmd: cd vago/
 - cmd: y libva-nvidia-driver
-- cmd: cat /sys/module/nvidia_drm/parameters/modeset
-- cmd: s cat /sys/module/nvidia_drm/parameters/modeset
 - cmd: y libva
 - cmd: y libva-utils
 - cmd: h | grep ctl
@@ -1146,8 +1140,6 @@
 - cmd: n config.ini
 - cmd: sn config.ini
     - config.ini
-- cmd: ll
-- cmd: rm a
 - cmd: s xauth
 - cmd: pi xauth
 - cmd: pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY /sbin/timeshift
@@ -1291,7 +1283,6 @@
 - cmd: y KeePassXC
 - cmd: stow home/
     - home/
-- cmd: ./gitpull.sh
 - cmd: yui floorp-bin
 - cmd: y floorp
 - cmd: y mullvard
@@ -1305,15 +1296,12 @@
 - cmd: y \nhyprctl_magnifier\n
 - cmd: y hyprctl_magnifier\n
 - cmd: mf
-- cmd: u
 - cmd: gu
 - cmd: cd yay/
 - cmd: git pull
 - cmd: tss
 - cmd: tsl
 - cmd: mkinitcpio -P
-- cmd: sn /etc/modprobe.d/nvidia.conf
-- cmd: s mkinitcpio -P
 - cmd: pi sddm
 - cmd: ctl enable sddm
 - cmd: pss nvidia-detect
@@ -1379,11 +1367,8 @@
 - cmd: hyprctl dispatch scale 1
 - cmd: hyprctl monitor cursorpos scale 1
 - cmd: ctl exit
-- cmd: n env
 - cmd: journalctl -b
-- cmd: cd uwsm/
 - cmd: n env-hyprland
-- cmd: cc
 - cmd: cd foot/
     - foot/
 - cmd: n foot.ini
@@ -1442,7 +1427,6 @@
     - .config/wayfire/
 - cmd: cd bin/
 - cmd: paccache -ruk0
-- cmd: systemctl suspend
 - cmd: n .local/share/fish/fish_history
 - cmd: n paccach.sh -l
     - paccach.sh
@@ -1467,7 +1451,6 @@
 - cmd: cd dot
 - cmd: cd dotfiles/
     - dotfiles/
-- cmd: n sync.sh
 - cmd: cp sync.sh gitpull.sh gpush.sh ~/dotfiles/nouse/bin/
     - sync.sh
     - gitpull.sh
@@ -1485,7 +1468,6 @@
 - cmd: mv gpush.sh ~/bin
 - cmd: mv sync.sh ~/bin
 - cmd: //
-- cmd: cd -
 - cmd: ..
 - cmd: rr bin
     - bin
@@ -1497,13 +1479,7 @@
 - cmd: fc
 - cmd: sn /sys/kernel/debug/dri/<GPUID>/<PORT>/trigger_hotplug
 - cmd: lo trigger_hotplug
-- cmd: sn /etc/default/grub
-- cmd: ug
-- cmd: reboot
-- cmd: hyprctl reload
-- cmd: hyprctl monitors all
 - cmd: n monitor.conf
-- cmd: exit
 - cmd: yui freetube-git
 - cmd: w electron
 - cmd: cd\\\n
@@ -1517,30 +1493,24 @@
 - cmd: git gc
 - cmd: ~/bin/bh q
 - cmd: ~/bin/cpinst.sh q
-- cmd: n paccach.sh
 - cmd: n 99active.sh
 - cmd: n aur.lst
-- cmd: gg
 - cmd: h | grep gnome
 - cmd: t
 - cmd: pi mpv
 - cmd: pp
-- cmd: n autostart.conf
 - cmd: pui vlc
 - cmd: pd
 - cmd: yd
 - cmd: pacman -Q | rg egl
-- cmd: b
 - cmd: n keybind.conf
 - cmd: cd ~/atest/
-- cmd: n a
 - cmd: n b
 - cmd: rm a b
     - b
 - cmd: n systeminfo.sh
     - systeminfo.sh
 - cmd: ./systeminfo.sh
-- cmd: chh
 - cmd: cd fastfetch/.config/fastfetch/
     - fastfetch/.config/fastfetch/
 - cmd: n config.jsonc
@@ -1584,13 +1554,8 @@
     - ~/dotfiles/bin/bin/
 - cmd: cd ~bin
     - ~bin
-- cmd: cd
-- cmd: cd bin
-- cmd: ggg
-- cmd: cd atest/
 - cmd: n c
 - cmd: n pub
-- cmd: n bup
 - cmd: cd .cache/
 - cmd: cd fish/
 - cmd: cd generated_completions/
@@ -1604,15 +1569,80 @@
 - cmd: rr *
 - cmd: cp bup vtbup
     - bup
-- cmd: l
 - cmd: n vtbup
     - vtbup
 - cmd: n poweroff.sh
     - poweroff.sh
 - cmd: af
-- cmd: cd ~/bin
 - cmd: n gpush.sh
 - cmd: cp gpush.sh gstatus.sh
+- cmd: ggg
 - cmd: n gstatus.sh
     - gstatus.sh
+- cmd: u
+- cmd: nvidia-smi --query-gpu=memory.total --format=csv,noheader,nounits
+- cmd: sn /usr/lib/systemd/system-sleep/nvidia
+- cmd: ctl status nvidia-resume.service
+- cmd: ctl enable --now nvidia-persistenced.service
+- cmd: ctl status nvidia-persistenced.service
+- cmd: sn /etc/default/grub
+- cmd: ug
+- cmd: pi  hwinfo
+- cmd: hwinfo --framebuffer
+- cmd: hwinfo --framebuffer >a
+- cmd: n a
+- cmd: ll
+- cmd: rm a
+- cmd: hyprctl monitors all
+- cmd: nvidia-smi -q -d SUPPORTED_CLOCKS
+- cmd: s nvidia-smi --lock-gpu-clocks=0,1695 --mode=1
+- cmd: s nvidia-smi --lock-memory-clocks=0,5001
+- cmd: pui  hwinfo
+- cmd: systemctl suspend
+- cmd: chh
+- cmd: cd ~/bin
+- cmd: n paccach.sh
+- cmd: n autostart.conf
+- cmd: n sync.sh
+- cmd: n backup.sh
+- cmd: n bup
+- cmd: hyprctl reload
+- cmd: s mkinitcpio -P
+- cmd: cat /sys/module/nvidia_drm/parameters/modeset
+- cmd: s cat /sys/module/nvidia_drm/parameters/modeset
+- cmd: y  nvidia-vaapi-driver\n
+- cmd: pi libva-nvidia-driver
+- cmd: ffmpeg -hwaccels
+- cmd: sn /etc/environment
+    - /etc/environment
+- cmd: sn /usr/share/glvnd/egl_vendor.d/10_nvidia.json
+    - /usr/share/glvnd/egl_vendor.d/10_nvidia.json
+- cmd: sn /etc/libva.conf
+    - /etc/libva.conf
+- cmd: pss optimus-manager
+- cmd: cd -
+- cmd: reboot
+- cmd: sn /etc/modprobe.d/nvidia.conf
+- cmd: exit
+- cmd: b
+- cmd: cc
+- cmd: cd uwsm/
+- cmd: n env
+- cmd: gg
 - cmd: g
+- cmd: cd bin
+- cmd: ./gitpull.sh
+- cmd: mv dotfiles/ atest/
+    - atest/
+- cmd: cd atest/
+- cmd: l
+- cmd: cd
+- cmd: git clone https://github.com/angelogreko888/dotfiles
+- cmd: rr dotfiles/
+- cmd: n cpbh.sh
+    - autostart.conf
+    - keybind.conf
+    - nouse/rootmisc/
+- cmd: comm fish_history ~/.local/share/fish/fish_history
+    - ~/.local/share/fish/fish_history
+- cmd: ./cpbh.sh

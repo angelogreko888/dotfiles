@@ -59,6 +59,7 @@ lib32-nvidia-utils
 lib32-opencl-nvidia
 libeatmydata
 libreoffice-fresh
+libva-nvidia-driver
 linux
 linux-firmware
 linux-headers

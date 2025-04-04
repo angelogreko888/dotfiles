@@ -551,7 +551,6 @@
 - cmd: stow lfish/
 - cmd: cd ~/.local/share/fish/
 - cmd: ./cpinst.sh q
-- cmd: ./bh q
 - cmd: n qhfish
 - cmd: rm qhfish
 - cmd: n pac.sh
@@ -918,7 +917,6 @@
 - cmd: awk -i inplace '!seen[$0]++' fish
 - cmd: rn fish
 - cmd: n bash
-- cmd: n ~/.local/share/fish/fish_history
 - cmd: n combash
 - cmd: mv bash .bash_history
 - cmd: systemctl list-unit-files | grep enabled
@@ -1000,7 +998,6 @@
 - cmd: modprobe iTCO_vendor_support
 - cmd: h |rg adb
 - cmd: h | grep adb
-- cmd: cd nouse/rootmisc/
 - cmd: n fish_history
   paths:
     - fish_history
@@ -1065,8 +1062,6 @@
 - cmd: sudo timeshift --list |awk 'NR==13{print $3}'
 - cmd: ./tshift.sh
 - cmd: ctl suspend
-- cmd: cd  bin/
-    - bin/
 - cmd: sudo timeshift --create
 - cmd: du -h
 - cmd: du -f
@@ -1485,7 +1480,6 @@
 - cmd: cd\\\n
 - cmd: cd /
 - cmd: y freetube
-- cmd: nwc
 - cmd: checkupdates-with-aur
 - cmd: waybar
 - cmd: pss bluez
@@ -1503,7 +1497,6 @@
 - cmd: pd
 - cmd: yd
 - cmd: pacman -Q | rg egl
-- cmd: n keybind.conf
 - cmd: cd ~/atest/
 - cmd: n b
 - cmd: rm a b
@@ -1543,7 +1536,6 @@
 - cmd: comm ~/dotfiles/misc/qpacman.lst /mnt/data/sync-vago/dotfiles/misc/qpacman.lst
     - ~/dotfiles/misc/qpacman.lst
     - /mnt/data/sync-vago/dotfiles/misc/qpacman.lst
-- cmd: cdf
 - cmd: cd 00inst/
 - cmd: n pac.lst
 - cmd: hostnamectl\\\n
@@ -1599,10 +1591,7 @@
 - cmd: s nvidia-smi --lock-memory-clocks=0,5001
 - cmd: pui  hwinfo
 - cmd: systemctl suspend
-- cmd: chh
 - cmd: cd ~/bin
-- cmd: n paccach.sh
-- cmd: n autostart.conf
 - cmd: n sync.sh
 - cmd: n backup.sh
 - cmd: n bup
@@ -1623,26 +1612,35 @@
 - cmd: cd -
 - cmd: reboot
 - cmd: sn /etc/modprobe.d/nvidia.conf
-- cmd: exit
 - cmd: b
 - cmd: cc
 - cmd: cd uwsm/
 - cmd: n env
-- cmd: gg
-- cmd: g
-- cmd: cd bin
 - cmd: ./gitpull.sh
 - cmd: mv dotfiles/ atest/
     - atest/
-- cmd: cd atest/
-- cmd: l
-- cmd: cd
 - cmd: git clone https://github.com/angelogreko888/dotfiles
+- cmd: exit
+- cmd: cd bin
+- cmd: n paccach.sh
+- cmd: cd atest/
 - cmd: rr dotfiles/
+- cmd: cd  bin/
+    - bin/
 - cmd: n cpbh.sh
-    - autostart.conf
-    - keybind.conf
-    - nouse/rootmisc/
+- cmd: n autostart.conf
+- cmd: chh
+- cmd: n keybind.conf
+- cmd: nwc
+- cmd: cdf
+- cmd: cd nouse/rootmisc/
+- cmd: l
 - cmd: comm fish_history ~/.local/share/fish/fish_history
     - ~/.local/share/fish/fish_history
+- cmd: n ~/.local/share/fish/fish_history
+- cmd: cd
+- cmd: ./bh q
 - cmd: ./cpbh.sh
+- cmd: gg
+- cmd: g
+- cmd: cd  bin

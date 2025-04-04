@@ -1468,7 +1468,6 @@
 - cmd: echo "echo 1 > /proc/sys/vm/drop_caches" | sudo sh
 - cmd: sudo sh -c 'echo 3 >/proc/sys/vm/drop_caches'\n
 - cmd: fc-cache
-- cmd: fc
 - cmd: sn /sys/kernel/debug/dri/<GPUID>/<PORT>/trigger_hotplug
 - cmd: lo trigger_hotplug
 - cmd: n monitor.conf
@@ -1566,7 +1565,6 @@
 - cmd: ggg
 - cmd: n gstatus.sh
     - gstatus.sh
-- cmd: u
 - cmd: nvidia-smi --query-gpu=memory.total --format=csv,noheader,nounits
 - cmd: sn /usr/lib/systemd/system-sleep/nvidia
 - cmd: ctl status nvidia-resume.service
@@ -1607,7 +1605,6 @@
 - cmd: cd -
 - cmd: reboot
 - cmd: sn /etc/modprobe.d/nvidia.conf
-- cmd: b
 - cmd: cd uwsm/
 - cmd: n env
 - cmd: ./gitpull.sh
@@ -1619,7 +1616,6 @@
 - cmd: rr dotfiles/
 - cmd: cd  bin/
     - bin/
-- cmd: n cpbh.sh
 - cmd: n autostart.conf
 - cmd: chh
 - cmd: n keybind.conf
@@ -1631,7 +1627,6 @@
 - cmd: n ~/.local/share/fish/fish_history
 - cmd: ./bh q
 - cmd: cd  bin
-- cmd: cd bin
 - cmd: ./cpbh.sh
 - cmd: gg
 - cmd: sudo passwd vago
@@ -1657,6 +1652,17 @@
 - cmd: l
 - cmd: rr .mullvad/
     - .mullvad/
-- cmd: g
 - cmd: nu
 - cmd: r
+- cmd: g
+- cmd: fc
+- cmd: b
+- cmd: u
+- cmd: /bin/date -d today '+%m-%d-%Y_%I:%M-%p'
+- cmd: /bin/date  today '+%m-%d-%Y_%I:%M-%p'
+- cmd: /bin/date
+- cmd: /bin/date -d today
+- cmd: cd bin
+- cmd: n cpbh.sh
+    - 00inst/
+    - i.sh

@@ -828,7 +828,6 @@
 - cmd: stow gtk-4.0/
 - cmd: cd uwsm
 - cmd: n animations-dynamic.conf
-- cmd: su -
 - cmd: ch c
 - cmd: y usbimager\n
 - cmd: cpi l
@@ -1294,8 +1293,6 @@
 - cmd: gu
 - cmd: cd yay/
 - cmd: git pull
-- cmd: tss
-- cmd: tsl
 - cmd: mkinitcpio -P
 - cmd: pi sddm
 - cmd: ctl enable sddm
@@ -1556,7 +1553,6 @@
 - cmd: n nano.fish
     - nano.fish
 - cmd: l | wc -l
-- cmd: nu
 - cmd: ...
 - cmd: rr *
 - cmd: cp bup vtbup
@@ -1565,7 +1561,6 @@
     - vtbup
 - cmd: n poweroff.sh
     - poweroff.sh
-- cmd: af
 - cmd: n gpush.sh
 - cmd: cp gpush.sh gstatus.sh
 - cmd: ggg
@@ -1613,15 +1608,12 @@
 - cmd: reboot
 - cmd: sn /etc/modprobe.d/nvidia.conf
 - cmd: b
-- cmd: cc
 - cmd: cd uwsm/
 - cmd: n env
 - cmd: ./gitpull.sh
 - cmd: mv dotfiles/ atest/
     - atest/
 - cmd: git clone https://github.com/angelogreko888/dotfiles
-- cmd: exit
-- cmd: cd bin
 - cmd: n paccach.sh
 - cmd: cd atest/
 - cmd: rr dotfiles/
@@ -1634,13 +1626,37 @@
 - cmd: nwc
 - cmd: cdf
 - cmd: cd nouse/rootmisc/
-- cmd: l
 - cmd: comm fish_history ~/.local/share/fish/fish_history
     - ~/.local/share/fish/fish_history
 - cmd: n ~/.local/share/fish/fish_history
-- cmd: cd
 - cmd: ./bh q
+- cmd: cd  bin
+- cmd: cd bin
 - cmd: ./cpbh.sh
 - cmd: gg
+- cmd: sudo passwd vago
+    - vago
+- cmd: af
+- cmd: n ~/bin/tshift.sh
+    - ~/bin/tshift.sh
+- cmd: su -
+- cmd: exit
+- cmd: tss
+- cmd: tsl
+- cmd: cc
+- cmd: rr vlc/
+    - vlc/
+- cmd: cd GIMP/
+    - GIMP/
+- cmd: rr 2.10/
+    - 2.10/
+- cmd: cd 3.0/
+    - 3.0/
+- cmd: cd
+- cmd: xdg-settings set default-web-browser librewolf.desktop
+- cmd: l
+- cmd: rr .mullvad/
+    - .mullvad/
 - cmd: g
-- cmd: cd  bin
+- cmd: nu
+- cmd: r

@@ -1139,15 +1139,12 @@
 - cmd: hyprctl reload
 - cmd: pui totem
 - cmd: u
-- cmd: ./paccach.sh
 - cmd: pi  libeatmydata
 - cmd: cd 00inst/
 - cmd: n pac.lst
 - cmd: ..
 - cmd: ff
 - cmd: cd ~/bin
-- cmd: n paccach.sh
-    - paccach.sh
 - cmd: cd /vt
     - /vt
 - cmd: rr ri7shlwk.default/
@@ -1164,15 +1161,12 @@
 - cmd: rr brows/
     - brows/
 - cmd: cd nouse/
-- cmd: cdf
-- cmd: git gc
 - cmd: y mpv
 - cmd: ggg
 - cmd: homstnamectl
 - cmd: hostnamectl
 - cmd: cd atest/
 - cmd: n c
-- cmd: cd bin
 - cmd: l
 - cmd: n cpbh.sh
     - cpbh.sh
@@ -1189,8 +1183,16 @@
 - cmd: n keybind.conf
 - cmd: q
 - cmd: b
-- cmd: cd
 - cmd: strings /sys/firmware/acpi/tables/DSDT | grep -i 'windows ' | sort | tail -1
     - /sys/firmware/acpi/tables/DSDT
 - cmd: s strings /sys/firmware/acpi/tables/DSDT | grep -i 'windows ' | sort | tail -1
+- cmd: ./bin/paccach.sh
+- cmd: cd bin
+- cmd: ./paccach.sh
+- cmd: n paccach.sh
+    - paccach.sh
 - cmd: g
+- cmd: cdf
+- cmd: git gc
+- cmd: cd
+    - bin

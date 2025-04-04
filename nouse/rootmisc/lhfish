@@ -1196,3 +1196,5 @@
 - cmd: git gc
 - cmd: cd
     - bin
+    - 00inst/
+    - pac.lst

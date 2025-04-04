@@ -10,17 +10,18 @@ handle_error() {
 a=$(date | awk '{print $1}')
 
 if [ $a == Fri ];then
+	exec foot sh -c '
 	printf "\n\e[1;32m.......clean paccache? : \n\e[0m"
 	select yn in yes no;do
-	case #yn in
+	case $yn in
 	yes)
-		exec foot sh -c 'sudo paccache -ruk0;
+		sudo paccache -ruk0;
 		sudo paccache -rk1;
-		sleep 5'
+		sleep 3
 		break ;;
 	no)
 		exit 0
 		break ;;
 	esac
-done
+done'
 fi

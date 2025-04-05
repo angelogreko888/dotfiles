@@ -22,16 +22,16 @@
 *{
   font-size: 19px;
   font-family: "JetBrainsMono Nerd Font";
-  color: #FFD700;
+  color: #ffffff;
   font-weight: 800;
   min-height: 0;
 }
 
 #waybar {
-;  background-color: #570987;
   background: transparent;
-  border-radius:10px;
-  padding: 0px 10px 0px 10px;
+  background-color: #570987;
+  border-radius:30px;
+  padding: 0px 30px 0px 30px;
 }
 #workspaces{
    border-radius:30px;

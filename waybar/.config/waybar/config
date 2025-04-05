@@ -1,11 +1,11 @@
 // -*- mode: jsonc -*-
 {
-  "height": 32,
+  "height": 21,
   "position": "top",
   "mod": "dock",
   "layer": "bottom",
-  "margin-left": 10,
-  "margin-right": 10,
+  "margin-left": 7,
+  "margin-right": 7,
   "margin-top": 0,
   "margin-bottom": 0,
   "exclusive": true,

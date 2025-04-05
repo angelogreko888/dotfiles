@@ -1666,3 +1666,6 @@
 - cmd: n cpbh.sh
     - 00inst/
     - i.sh
+    - keybind.conf
+    - autostart.conf
+- cmd: nws

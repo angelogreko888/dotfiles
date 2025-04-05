@@ -22,15 +22,15 @@
 *{
   font-size: 19px;
   font-family: "JetBrainsMono Nerd Font";
-  color: #ffffff;
-  font-weight: 800;
+  color: #ffff00;
+  font-weig00: 800;
   min-height: 0;
 }
 
 #waybar {
+;  background-color: #570987;
   background: transparent;
-  background-color: #570987;
-  border-radius:30px;
+  border-radius:10px;
   padding: 0px 10px 0px 10px;
 }
 #workspaces{
@@ -136,6 +136,7 @@
 
 #clock {
   color: #ffffff;
+  background-color: #7D0DC3;
   border-radius:10px;
   padding: 0px 10px 0px 10px;
   font-size: 19px;

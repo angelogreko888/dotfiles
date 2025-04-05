@@ -1671,3 +1671,4 @@
 - cmd: waybar
 - cmd: n .config/foot/foot.ini
     - .config/foot/foot.ini
+    - keybind.conf

@@ -22,8 +22,8 @@
 *{
   font-size: 19px;
   font-family: "JetBrainsMono Nerd Font";
-  color: #ffff00;
-  font-weig00: 800;
+  color: #FFD700;
+  font-weight: 800;
   min-height: 0;
 }
 
@@ -127,16 +127,12 @@
 
 
 #custom-clock {
-  color: #ffffff;
-  background-color: #7D0DC3;
   border-radius:30px;
   padding: 0px 20px 0px 20px;
   font-size: 21px;
 }
 
 #clock {
-  color: #ffffff;
-  background-color: #7D0DC3;
   border-radius:10px;
   padding: 0px 10px 0px 10px;
   font-size: 19px;

@@ -1105,7 +1105,6 @@
     - prpac.sh
 - cmd: n prpac.sh
 - cmd: mv prpac.sh paccach.sh
-- cmd: n i.sh
 - cmd: ψδ
 - cmd: loginctl suspend
 - cmd: n hypridle.conf
@@ -1157,7 +1156,6 @@
 - cmd: w xauth
 - cmd: timeshift-gtk
 - cmd: s timeshift-gtk
-- cmd: n.
 - cmd: cat /etc/hostname
     - /etc/hostname
 - cmd: pss xauth
@@ -1361,10 +1359,6 @@
 - cmd: ctl exit
 - cmd: journalctl -b
 - cmd: n env-hyprland
-- cmd: cd foot/
-    - foot/
-- cmd: n foot.ini
-    - foot.ini
 - cmd: cd fuzzel/
     - fuzzel/
 - cmd: n fuzzel.ini
@@ -1422,7 +1416,6 @@
 - cmd: n .local/share/fish/fish_history
 - cmd: n paccach.sh -l
     - paccach.sh
-- cmd: ./paccach.sh
 - cmd: sn /boot/loader/loader.conf
 - cmd: sn etc/ly/config.ini
 - cmd: sn /etc/systemd/journald.conf.d/usbstick.conf
@@ -1460,7 +1453,6 @@
 - cmd: mv gpush.sh ~/bin
 - cmd: mv sync.sh ~/bin
 - cmd: //
-- cmd: ..
 - cmd: rr bin
     - bin
 - cmd: cd brows/
@@ -1477,7 +1469,6 @@
 - cmd: cd /
 - cmd: y freetube
 - cmd: checkupdates-with-aur
-- cmd: waybar
 - cmd: pss bluez
 - cmd: c
 - cmd: git gc
@@ -1532,7 +1523,6 @@
 - cmd: comm ~/dotfiles/misc/qpacman.lst /mnt/data/sync-vago/dotfiles/misc/qpacman.lst
     - ~/dotfiles/misc/qpacman.lst
     - /mnt/data/sync-vago/dotfiles/misc/qpacman.lst
-- cmd: cd 00inst/
 - cmd: n pac.lst
 - cmd: hostnamectl\\\n
 - cmd: ./c
@@ -1562,7 +1552,6 @@
     - poweroff.sh
 - cmd: n gpush.sh
 - cmd: cp gpush.sh gstatus.sh
-- cmd: ggg
 - cmd: n gstatus.sh
     - gstatus.sh
 - cmd: nvidia-smi --query-gpu=memory.total --format=csv,noheader,nounits
@@ -1602,7 +1591,6 @@
 - cmd: sn /etc/libva.conf
     - /etc/libva.conf
 - cmd: pss optimus-manager
-- cmd: cd -
 - cmd: reboot
 - cmd: sn /etc/modprobe.d/nvidia.conf
 - cmd: cd uwsm/
@@ -1611,16 +1599,10 @@
 - cmd: mv dotfiles/ atest/
     - atest/
 - cmd: git clone https://github.com/angelogreko888/dotfiles
-- cmd: n paccach.sh
 - cmd: cd atest/
 - cmd: rr dotfiles/
 - cmd: cd  bin/
     - bin/
-- cmd: n autostart.conf
-- cmd: chh
-- cmd: n keybind.conf
-- cmd: nwc
-- cmd: cdf
 - cmd: cd nouse/rootmisc/
 - cmd: comm fish_history ~/.local/share/fish/fish_history
     - ~/.local/share/fish/fish_history
@@ -1628,7 +1610,6 @@
 - cmd: ./bh q
 - cmd: cd  bin
 - cmd: ./cpbh.sh
-- cmd: gg
 - cmd: sudo passwd vago
     - vago
 - cmd: af
@@ -1638,7 +1619,6 @@
 - cmd: exit
 - cmd: tss
 - cmd: tsl
-- cmd: cc
 - cmd: rr vlc/
     - vlc/
 - cmd: cd GIMP/
@@ -1647,16 +1627,12 @@
     - 2.10/
 - cmd: cd 3.0/
     - 3.0/
-- cmd: cd
 - cmd: xdg-settings set default-web-browser librewolf.desktop
-- cmd: l
 - cmd: rr .mullvad/
     - .mullvad/
 - cmd: nu
 - cmd: r
-- cmd: g
 - cmd: fc
-- cmd: b
 - cmd: u
 - cmd: /bin/date -d today '+%m-%d-%Y_%I:%M-%p'
 - cmd: /bin/date  today '+%m-%d-%Y_%I:%M-%p'
@@ -1664,8 +1640,34 @@
 - cmd: /bin/date -d today
 - cmd: cd bin
 - cmd: n cpbh.sh
-    - 00inst/
-    - i.sh
-    - keybind.conf
-    - autostart.conf
+- cmd: cd 00inst/
+- cmd: ..
+- cmd: n i.sh
+- cmd: n paccach.sh
+- cmd: ./paccach.sh
+- cmd: b
+- cmd: n keybind.conf
+- cmd: nwc
+- cmd: cd -
+- cmd: chh
+- cmd: n autostart.conf
+- cmd: ggg
+- cmd: cd foo
+- cmd: cdf
+- cmd: n.
+- cmd: cd /usr/share/foot/themes
+    - /usr/share/foot/themes
+- cmd: l
+- cmd: cc
+- cmd: cd fo
+- cmd: cd foot/
+    - foot/
+- cmd: n foot.ini
+    - foot.ini
+- cmd: cd
 - cmd: nws
+- cmd: gg
+- cmd: g
+- cmd: waybar
+- cmd: n .config/foot/foot.ini
+    - .config/foot/foot.ini

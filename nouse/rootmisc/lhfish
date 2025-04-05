@@ -1198,3 +1198,5 @@
     - bin
     - 00inst/
     - pac.lst
+    - bh
+    - .local/share/fish/fish_history

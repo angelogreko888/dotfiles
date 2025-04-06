@@ -976,8 +976,6 @@
 - cmd: n bash
 - cmd: n ~/.local/share/fish/fish_history
 - cmd: n combash
-- cmd: n .local/share/fish/fish_history
-- cmd: n bh
 - cmd: cd nouse/rootmisc/
 - cmd: mv bash .bash_history
     - bash
@@ -1017,7 +1015,6 @@
     - .mozilla/
 - cmd: rr .mozilla/
 - cmd: lo firefox
-- cmd: lk
 - cmd: ts
 - cmd: cd foot/
     - foot/
@@ -1060,7 +1057,6 @@
 - cmd: cd home/
     - home/
 - cmd: cd .mullvad/
-- cmd: pp
 - cmd: ggp
 - cmd: gd
 - cmd: cd /
@@ -1127,7 +1123,6 @@
 - cmd: n sync.sh
     - sync.sh
 - cmd: date | awk '{print $1}'
-- cmd: gg
 - cmd: y newpipe
 - cmd: y libretube
 - cmd: y piped
@@ -1138,15 +1133,10 @@
 - cmd: pd
 - cmd: hyprctl reload
 - cmd: pui totem
-- cmd: u
 - cmd: pi  libeatmydata
-- cmd: cd 00inst/
-- cmd: n pac.lst
 - cmd: ..
 - cmd: ff
 - cmd: cd ~/bin
-- cmd: cd /vt
-    - /vt
 - cmd: rr ri7shlwk.default/
     - ri7shlwk.default/
 - cmd: rr syb7rx0z.default-default/
@@ -1167,7 +1157,6 @@
 - cmd: hostnamectl
 - cmd: cd atest/
 - cmd: n c
-- cmd: l
 - cmd: n cpbh.sh
     - cpbh.sh
 - cmd: hostnamectl | rg Model | awk '{print $3}'
@@ -1179,24 +1168,49 @@
 - cmd: n env-
 - cmd: n env-hyprland
 - cmd: af
-- cmd: chh
-- cmd: n keybind.conf
 - cmd: q
-- cmd: b
 - cmd: strings /sys/firmware/acpi/tables/DSDT | grep -i 'windows ' | sort | tail -1
     - /sys/firmware/acpi/tables/DSDT
 - cmd: s strings /sys/firmware/acpi/tables/DSDT | grep -i 'windows ' | sort | tail -1
 - cmd: ./bin/paccach.sh
-- cmd: cd bin
-- cmd: ./paccach.sh
+- cmd: git gc
 - cmd: n paccach.sh
     - paccach.sh
-- cmd: g
+- cmd: ./paccach.sh
+- cmd: gg
 - cmd: cdf
-- cmd: git gc
+- cmd: cd 00inst/
+- cmd: n pac.lst
+- cmd: cd bin
+- cmd: n bh
+- cmd: n .local/share/fish/fish_history
+- cmd: g
+- cmd: lk
+- cmd: cd /vt
+    - /vt
+- cmd: l
 - cmd: cd
-    - bin
-    - 00inst/
-    - pac.lst
-    - bh
-    - .local/share/fish/fish_history
+- cmd: u
+- cmd: lo librewolf.cfg
+- cmd: sn /usr/lib/librewolf/librewolf.cfg
+    - /usr/lib/librewolf/librewolf.cfg
+- cmd: pss fmpeg
+- cmd: pi ffnvcodec-headers
+- cmd: s pacman -Syu pipewire-media-session
+- cmd: s pacman -Syu wireplumber
+- cmd: rm ~/.local/state/wireplumber/*
+- cmd: sudo pacman -S pipewire pipewire-pulse pipewire-alsa wireplumber
+- cmd: b
+- cmd: pss ffmpeg
+- cmd: s pacman -S ffmpeg4.4
+- cmd: pui ffmpeg
+- cmd: s pacman -S ffmpeg
+- cmd: chh
+- cmd: n keybind.conf
+- cmd: mpv
+- cmd: mpv --list-options
+- cmd: pp
+- cmd: No file - mpv
+- cmd: mpv --fs
+- cmd: w mpv
+- cmd: /sbin/mpv

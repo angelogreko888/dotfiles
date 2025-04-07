@@ -1129,8 +1129,6 @@
 - cmd: yui pipeline
 - cmd: y pipeline
 - cmd: yui pipeline-gtk
-- cmd: yd
-- cmd: pd
 - cmd: hyprctl reload
 - cmd: pui totem
 - cmd: pi  libeatmydata
@@ -1152,7 +1150,6 @@
     - brows/
 - cmd: cd nouse/
 - cmd: y mpv
-- cmd: ggg
 - cmd: homstnamectl
 - cmd: hostnamectl
 - cmd: cd atest/
@@ -1184,7 +1181,6 @@
 - cmd: cd bin
 - cmd: n bh
 - cmd: n .local/share/fish/fish_history
-- cmd: g
 - cmd: lk
 - cmd: cd /vt
     - /vt
@@ -1214,3 +1210,19 @@
 - cmd: mpv --fs
 - cmd: w mpv
 - cmd: /sbin/mpv
+- cmd: g
+- cmd: ggg
+- cmd: pui freetube-git
+- cmd: pi freetube-bin
+- cmd: y freetube-bin
+- cmd: yui freetube-bin
+- cmd: pd
+- cmd: yd
+- cmd: y freetube
+    - bin
+- cmd: sudo paccache -ruk0
+- cmd: sudo paccache -rk1
+    - 00inst/
+- cmd: n 40pipewire.sh
+    - 40pipewire.sh
+- cmd: sudo pacman -S pipewire pipewire-alsa pipewire-jack pipewire-pulse

@@ -1427,7 +1427,6 @@
 - cmd: cd nouse/
 - cmd: rr brows/
     - brows/
-- cmd: cd /vt
 - cmd: rr ri7shlwk.default/
     - ri7shlwk.default/
 - cmd: rr syb7rx0z.default-default/
@@ -1478,11 +1477,7 @@
 - cmd: n aur.lst
 - cmd: h | grep gnome
 - cmd: t
-- cmd: pi mpv
-- cmd: pp
 - cmd: pui vlc
-- cmd: pd
-- cmd: yd
 - cmd: pacman -Q | rg egl
 - cmd: cd ~/atest/
 - cmd: n b
@@ -1505,7 +1500,6 @@
 - cmd: lo hostFormat
 - cmd: echo $hostFormat
 - cmd: fastfetch | rg host
-- cmd: ff
 - cmd: fastfetch | rg Host
 - cmd: fastfetch | rg Host | awk '{print $3}'
 - cmd: hostnamectl chassis
@@ -1632,7 +1626,6 @@
     - .mullvad/
 - cmd: nu
 - cmd: r
-- cmd: fc
 - cmd: u
 - cmd: /bin/date -d today '+%m-%d-%Y_%I:%M-%p'
 - cmd: /bin/date  today '+%m-%d-%Y_%I:%M-%p'
@@ -1645,11 +1638,7 @@
 - cmd: n i.sh
 - cmd: n paccach.sh
 - cmd: ./paccach.sh
-- cmd: b
-- cmd: n keybind.conf
-- cmd: nwc
 - cmd: cd -
-- cmd: chh
 - cmd: n autostart.conf
 - cmd: ggg
 - cmd: cd foo
@@ -1657,7 +1646,6 @@
 - cmd: n.
 - cmd: cd /usr/share/foot/themes
     - /usr/share/foot/themes
-- cmd: l
 - cmd: cc
 - cmd: cd fo
 - cmd: cd foot/
@@ -1665,10 +1653,22 @@
 - cmd: n foot.ini
     - foot.ini
 - cmd: cd
-- cmd: nws
 - cmd: gg
-- cmd: g
-- cmd: waybar
 - cmd: n .config/foot/foot.ini
     - .config/foot/foot.ini
-    - keybind.conf
+- cmd: nws
+- cmd: waybar
+- cmd: nwc
+- cmd: g
+- cmd: pp
+- cmd: chh
+- cmd: n keybind.conf
+- cmd: fc
+- cmd: pui mpv
+- cmd: pd
+- cmd: yd
+- cmd: pi mpv
+- cmd: b
+- cmd: ff
+- cmd: cd /vt
+- cmd: l

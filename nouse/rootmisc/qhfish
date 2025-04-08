@@ -378,7 +378,6 @@
 - cmd: cd /kernel/firmware/
 - cmd: cd /kernel/
 - cmd: lo dsdt.aml
-- cmd: sn /etc/systemd/sleep.conf.d/mem-deep.conf
 - cmd: sn /etc/systemd/sleep.conf.d/freeze.conf
 - cmd: cat /sys/block/zram0/comp_algorithm
 - cmd: ctl systemd-zram-setup@zram0.service
@@ -738,7 +737,6 @@
 - cmd: cd user/default.target.wants/l
 - cmd: cd user/default.target.wants/
 - cmd: cd ../../..
-- cmd: cd /etc/systemd/
 - cmd: nano  user.conf
 - cmd: nano  gitpull.sh
 - cmd: sudo pacman -Syyu --noconfirm && yay -Syyu --noconfirm
@@ -1366,7 +1364,6 @@
 - cmd: cd nvidia-all/
     - nvidia-all/
 - cmd: makepkg -si
-- cmd: s dmesg
 - cmd: sudo pacman -Rdd lib32-nvidia-utils-tkg lib32-opencl-nvidia-tkg nvidia-dkms-tkg nvidia-egl-wayland-tkg nvidia-settings-tkg nvidia-utils-tkg opencl-nvidia-tkg
 - cmd: sudo pacman -Rdd lib32-nvidia-utils-tkg lib32-opencl-nvidia-tkg  nvidia-settings-tkg nvidia-utils-tkg opencl-nvidia-tkg
 - cmd: pi nvidia nvidia-utils
@@ -1549,8 +1546,6 @@
 - cmd: ctl status nvidia-resume.service
 - cmd: ctl enable --now nvidia-persistenced.service
 - cmd: ctl status nvidia-persistenced.service
-- cmd: sn /etc/default/grub
-- cmd: ug
 - cmd: pi  hwinfo
 - cmd: hwinfo --framebuffer
 - cmd: hwinfo --framebuffer >a
@@ -1566,7 +1561,6 @@
 - cmd: n sync.sh
 - cmd: n backup.sh
 - cmd: n bup
-- cmd: hyprctl reload
 - cmd: s mkinitcpio -P
 - cmd: cat /sys/module/nvidia_drm/parameters/modeset
 - cmd: s cat /sys/module/nvidia_drm/parameters/modeset
@@ -1652,18 +1646,15 @@
 - cmd: g
 - cmd: pp
 - cmd: n keybind.conf
-- cmd: fc
 - cmd: pui mpv
 - cmd: pd
 - cmd: yd
 - cmd: pi mpv
 - cmd: ff
 - cmd: cd /vt
-- cmd: l
 - cmd: cd
 - cmd: tss
 - cmd: tsl
-- cmd: b
 - cmd: u
 - cmd: pss xf86-video-intel
 - cmd: pss hyprland-nvidia
@@ -1674,21 +1665,66 @@
 - cmd: hyprctl monitors all
 - cmd: chh
 - cmd: n monitor.conf
-- cmd: sn /sys/power/state
-    - /sys/power/state
 - cmd: cd atest/
 - cmd: ./z
 - cmd: n z
 - cmd: acpi
 - cmd: sn /sys/power/mem_sleep
-- cmd: sudo echo s2idle > /sys/power/mem_sleep
-    - /sys/power/mem_sleep
 - cmd: echo s2idle > /sys/power/mem_sleep
+- cmd: sudo echo s2idle > /sys/power/mem_sleep
+- cmd: sn /sys/power/state
+    - /sys/power/state
 - cmd: sudo echo mem > /sys/power/state
 - cmd: s cat /sys/devices/system/cpu/cpuidle/low_power_idle_cpu_residency_us
     - /sys/devices/system/cpu/cpuidle/low_power_idle_cpu_residency_us
 - cmd: sudo turbostat --show Pk%pc10
+- cmd: sn /etc/systemd/sleep.conf.d/mem-deep.conf
 - cmd: cd /etc/systemd/sleep.conf.d/
-    - /etc/systemd/
+- cmd: cd /etc/systemd/
 - cmd: n sleep.conf
     - sleep.conf
+- cmd: fc
+- cmd: b
+- cmd: hyprctl reload
+- cmd: s dmesg
+- cmd: sudo journalctl -b | curl -F 'file=@-' 0x0.st
+- cmd: sn /etc/default/grub
+- cmd: ug
+- cmd: lo http://0x0.st/8_J-.txt
+- cmd: lo 8_J-.txt
+- cmd: cat /proc/sys/vm/panic_on_oom
+    - /proc/sys/vm/panic_on_oom
+- cmd: lo user.service
+- cmd: sn /usr/local/bin/music.sh
+- cmd: sn /usr/bin/sflock
+- cmd: cd /usr/bin/sflock
+- cmd: cd /usr/bin/
+    - /usr/bin/
+- cmd: pss sflock
+- cmd: cd /usr/local/bin/
+    - /usr/local/bin/
+- cmd: l
+- cmd: sn /etc/systemd/system/suspend.target.wants/user-resume@user.service
+    - /etc/systemd/system/suspend.target.wants/user-resume@user.service
+- cmd: sudo journalctl -b
+- cmd: sn /etc/udev/rules.d/50-brother-brscan4-libsane-type1.rules
+    - /etc/udev/rules.d/50-brother-brscan4-libsane-type1.rules
+- cmd: ll /etc/udev/rules.d/50-brother-brscan4-libsane-type1.rules
+- cmd: ctl avahi-daemon.service
+- cmd: ctl status avahi-daemon.service
+- cmd: ctl status systemd-resolved.service
+- cmd: pss lsof
+- cmd: pi lsof
+- cmd: lsof -i -P -n | grep 5353
+- cmd: lsof -i -P -n | grep 925
+- cmd: lsof -i -P -n
+- cmd: pui lsof
+    - uwsm/
+- cmd: b env-hyprland
+    - env-hyprland
+- cmd: ctl stauts
+- cmd: ctl status user-resume@user.service
+- cmd: s rm /etc/systemd/system/sleep.target.wants/user-suspend@user.service
+    - /etc/systemd/system/sleep.target.wants/user-suspend@user.service
+- cmd: s rm /etc/systemd/system/suspend.target.wants/user-resume@user.service
+    - monitor.conf

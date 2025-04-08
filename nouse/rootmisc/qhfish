@@ -1728,3 +1728,14 @@
     - /etc/systemd/system/sleep.target.wants/user-suspend@user.service
 - cmd: s rm /etc/systemd/system/suspend.target.wants/user-resume@user.service
     - monitor.conf
+- cmd: pui freetube-bin
+- cmd: lo freetube
+- cmd: cd FreeTube/
+    - FreeTube/
+- cmd: rr FreeTube/
+- cmd: y freetube-bin
+    - autostart.conf
+    - keybind.conf
+    - 00inst/
+- cmd: ./800ftube.sh
+- cmd: s journalctl -b

@@ -104,16 +104,21 @@
   padding: 0px 15px 0px 10px;
   border-radius:15px;
   color:white;
-  background-color: green;(gols. 0.3)
+  background-color: green;
 }
 
 #workspaces button:hover {
-  background-color: alpha ;
+  background-color: alpha (gold, 0.3);
   border-radius:30px;
 }
 
-#workspaces button:active {
-  background-color: alpha (green, 0.8);
+#workspaces button,inactive {
+  background-color: alpha (yellow, 0.9);
+  border-radius:30px;
+}
+
+#workspaces button,active {
+  background-color: alpha (green, 0.9);
   border-radius:30px;
 }
 

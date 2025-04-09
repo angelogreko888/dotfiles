@@ -112,12 +112,7 @@
   border-radius:30px;
 }
 
-#workspaces button,inactive {
-  background-color: alpha (yellow, 0.9);
-  border-radius:30px;
-}
-
-#workspaces button,active {
+#workspaces button.active {
   background-color: alpha (green, 0.9);
   border-radius:30px;
 }

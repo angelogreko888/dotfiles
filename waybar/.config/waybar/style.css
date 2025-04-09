@@ -28,8 +28,8 @@
 }
 
 #waybar {
-  background-color: #570987;
-  border-radius:0px;
+  background-color: alpha (#570987 ,0.7);
+  border-radius:30px;
   padding: 0px 30px 0px 30px;
 }
 #workspaces{
@@ -110,7 +110,7 @@
 
 
 #workspaces button.active {
-  background-color: #7D0DC3;
+  background-color: alpha (#7D0DC3, 1);
   border-radius:30px;
 }
 
@@ -127,6 +127,7 @@
 
 #custom-clock {
   border-radius:30px;
+  background-color: alpha (#7D0DC3, 0.9);
   padding: 0px 20px 0px 20px;
   font-size: 21px;
 }

@@ -1227,3 +1227,4 @@
     - 40pipewire.sh
 - cmd: sudo pacman -S pipewire pipewire-alsa pipewire-jack pipewire-pulse
 - cmd: s journalctl -b
+- cmd: nws

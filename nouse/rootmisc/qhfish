@@ -507,7 +507,6 @@
 - cmd: y cachy-browser
 - cmd: yui cachy-browser
 - cmd: bb
-- cmd: lo
 - cmd: lo cachy
 - cmd: rr /home/vago/.cachy
 - cmd: h |rg vb
@@ -767,7 +766,6 @@
 - cmd: cd /etc/firejail/
 - cmd: nano  freecad.profile
 - cmd: sudo nano  freetube.profile
-- cmd: freetube
 - cmd: mkdir -pv atest
 - cmd: pacman -Qq >> pacages.lst
 - cmd: readarray -t a <
@@ -1254,7 +1252,6 @@
 - cmd: sn /etc/systemd/system/user-resume@.service
 - cmd: ctl enable user-suspend@user.service
 - cmd: ctl enable user-resume@user.service
-- cmd: sn /etc/systemd/system/root-suspend.service
 - cmd: sn /etc/systemd/system/root-resume.service
 - cmd: lo systemd-suspend.service
 - cmd: sn /etc/systemd/system/systemd-suspend.service.wants/nvidia-suspend.service
@@ -1353,12 +1350,10 @@
 - cmd: hyprctl monitor cursorpos scale 1
 - cmd: ctl exit
 - cmd: journalctl -b
-- cmd: n env-hyprland
 - cmd: cd fuzzel/
     - fuzzel/
 - cmd: n fuzzel.ini
     - fuzzel.ini
-- cmd: h
 - cmd: pui  nvidia-dkms egl-wayland lib32-nvidia-utils lib32-opencl-nvidia opencl-nvidia nvidia-utils
 - cmd: cg
 - cmd: cd nvidia-all/
@@ -1561,7 +1556,6 @@
 - cmd: n sync.sh
 - cmd: n backup.sh
 - cmd: n bup
-- cmd: s mkinitcpio -P
 - cmd: cat /sys/module/nvidia_drm/parameters/modeset
 - cmd: s cat /sys/module/nvidia_drm/parameters/modeset
 - cmd: y  nvidia-vaapi-driver\n
@@ -1576,8 +1570,6 @@
 - cmd: pss optimus-manager
 - cmd: reboot
 - cmd: sn /etc/modprobe.d/nvidia.conf
-- cmd: cd uwsm/
-- cmd: n env
 - cmd: ./gitpull.sh
 - cmd: mv dotfiles/ atest/
     - atest/
@@ -1618,53 +1610,31 @@
 - cmd: /bin/date -d today
 - cmd: cd bin
 - cmd: n cpbh.sh
-- cmd: cd 00inst/
-- cmd: ..
 - cmd: n i.sh
 - cmd: n paccach.sh
 - cmd: ./paccach.sh
 - cmd: cd -
-- cmd: n autostart.conf
-- cmd: ggg
 - cmd: cd foo
-- cmd: cdf
 - cmd: n.
 - cmd: cd /usr/share/foot/themes
     - /usr/share/foot/themes
-- cmd: cc
 - cmd: cd fo
 - cmd: cd foot/
     - foot/
 - cmd: n foot.ini
     - foot.ini
-- cmd: gg
 - cmd: n .config/foot/foot.ini
     - .config/foot/foot.ini
-- cmd: nws
-- cmd: waybar
-- cmd: nwc
-- cmd: g
 - cmd: pp
-- cmd: n keybind.conf
 - cmd: pui mpv
-- cmd: pd
-- cmd: yd
 - cmd: pi mpv
-- cmd: ff
 - cmd: cd /vt
-- cmd: cd
-- cmd: tss
-- cmd: tsl
-- cmd: u
 - cmd: pss xf86-video-intel
 - cmd: pss hyprland-nvidia
 - cmd: y hyprland-nvidia
 - cmd: y nvidia
 - cmd: pss hyprland
 - cmd: lspci
-- cmd: hyprctl monitors all
-- cmd: chh
-- cmd: n monitor.conf
 - cmd: cd atest/
 - cmd: ./z
 - cmd: n z
@@ -1684,9 +1654,7 @@
 - cmd: n sleep.conf
     - sleep.conf
 - cmd: fc
-- cmd: b
 - cmd: hyprctl reload
-- cmd: s dmesg
 - cmd: sudo journalctl -b | curl -F 'file=@-' 0x0.st
 - cmd: sn /etc/default/grub
 - cmd: ug
@@ -1694,7 +1662,6 @@
 - cmd: lo 8_J-.txt
 - cmd: cat /proc/sys/vm/panic_on_oom
     - /proc/sys/vm/panic_on_oom
-- cmd: lo user.service
 - cmd: sn /usr/local/bin/music.sh
 - cmd: sn /usr/bin/sflock
 - cmd: cd /usr/bin/sflock
@@ -1703,10 +1670,8 @@
 - cmd: pss sflock
 - cmd: cd /usr/local/bin/
     - /usr/local/bin/
-- cmd: l
 - cmd: sn /etc/systemd/system/suspend.target.wants/user-resume@user.service
     - /etc/systemd/system/suspend.target.wants/user-resume@user.service
-- cmd: sudo journalctl -b
 - cmd: sn /etc/udev/rules.d/50-brother-brscan4-libsane-type1.rules
     - /etc/udev/rules.d/50-brother-brscan4-libsane-type1.rules
 - cmd: ll /etc/udev/rules.d/50-brother-brscan4-libsane-type1.rules
@@ -1719,28 +1684,80 @@
 - cmd: lsof -i -P -n | grep 925
 - cmd: lsof -i -P -n
 - cmd: pui lsof
-    - uwsm/
 - cmd: b env-hyprland
     - env-hyprland
+- cmd: h
 - cmd: ctl stauts
 - cmd: ctl status user-resume@user.service
+- cmd: lo
+- cmd: lo user.service
 - cmd: s rm /etc/systemd/system/sleep.target.wants/user-suspend@user.service
     - /etc/systemd/system/sleep.target.wants/user-suspend@user.service
 - cmd: s rm /etc/systemd/system/suspend.target.wants/user-resume@user.service
-    - monitor.conf
+- cmd: n monitor.conf
+- cmd: hyprctl monitors all
+- cmd: cd
+- cmd: ggg
+- cmd: sudo journalctl -b
+- cmd: b
 - cmd: pui freetube-bin
 - cmd: lo freetube
 - cmd: cd FreeTube/
     - FreeTube/
+- cmd: ..
 - cmd: rr FreeTube/
 - cmd: y freetube-bin
-    - autostart.conf
-    - keybind.conf
-    - 00inst/
+- cmd: chh
+- cmd: n autostart.conf
+- cmd: n keybind.conf
+- cmd: cdf
+- cmd: cd 00inst/
+- cmd: l
 - cmd: ./800ftube.sh
+- cmd: freetube
+- cmd: cc
+- cmd: cd uwsm/
+- cmd: n env-hyprland
+- cmd: s dmesg
+- cmd: n env
 - cmd: s journalctl -b
 - cmd: y  mkinitcpio-firmware
 - cmd: y xhci_pci_renesas
 - cmd: sudo dmesg | grep xhci_pci
 - cmd: s journalctl -b  | grep xhci_pci
+- cmd: s mkinitcpio -P
+- cmd: u
 - cmd: y upd72020x-fw
+- cmd: tss
+- cmd: tsl
+- cmd: pd
+- cmd: yd
+- cmd: nws
+- cmd: waybar
+- cmd: nwc
+- cmd: g
+- cmd: gg
+- cmd: ff
+- cmd: sn /etc/systemd/system/root-suspend.service
+- cmd: s rm /etc/systemd/system/root-suspend.service
+    - /etc/systemd/system/root-suspend.service
+- cmd: s rm /etc/systemd/system/root-resume.service
+    - /etc/systemd/system/root-resume.service
+- cmd: s cat /sys/power/mem_sleep
+    - /sys/power/mem_sleep
+- cmd: s echo s2idle > /sys/power/mem_sleep
+    - /etc/default/grub
+- cmd: sn /sys/power/pm_debug_messages
+    - /sys/power/pm_debug_messages
+- cmd: sn /sys/power/pm_async
+    - /sys/power/pm_async
+- cmd: s cat /sys/power/pm_test
+    - /sys/power/pm_test
+- cmd: pi powertop
+- cmd: s powertop
+- cmd: sn /etc/systemd/system/wicd-sleep.service
+- cmd: pui powertop
+- cmd: s rm /etc/systemd/system/wicd-sleep.service
+    - /etc/systemd/system/wicd-sleep.service
+- cmd: ngr
+- cmd: bgr

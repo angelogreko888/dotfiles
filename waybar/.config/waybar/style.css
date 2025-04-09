@@ -22,20 +22,20 @@
 *{
   font-size: 19px;
   font-family: "JetBrainsMono Nerd Font";
-  color: gold;
+  color: white;
   font-weight: 800;
   min-height: 0;
 }
 
 #waybar {
-  background-color: alpha (black ,0.6);
+  background-color: alpha (black ,0.7);
   border-radius:30px;
   padding: 0px 30px 0px 30px;
 }
 #workspaces{
    border-radius:30px;
    padding: 0px 30px 0px 30px;
-   color: gold;
+   color: white;
 }
 
 
@@ -105,12 +105,12 @@
 }
 
 #workspaces button:hover {
-  background-color: #7D0DC3;
+  background-color: green;
   border-radius:30px;
 }
 
-#workspaces button.active {
-  background-color: alpha (#A020F0, 0.7);
+#workspaces button:active {
+  background-color: alpha (#A020F0, 0.8);
   border-radius:30px;
 }
 

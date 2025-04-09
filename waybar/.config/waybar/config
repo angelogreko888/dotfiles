@@ -31,8 +31,8 @@
   "modules-right": [
         "pulseaudio",
 	 "custom/pacman",
-	    "idle_inhibitor",
          "custom/swaync",
+	    "idle_inhibitor",
 	    "pulseaudio#microphone",
         "backlight",
 	    "network",

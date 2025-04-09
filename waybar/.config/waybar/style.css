@@ -81,14 +81,14 @@
 
 #idle_inhibitor {
   border-radius:30px;
-  padding: 0px 20px 0px 20px;
+  padding: 0px 15px 0px 15px;
 }
 
 
 #idle_inhibitor.activated{
  color:#e57474;
  border-radius:30px;
- padding: 0px 20px 0px 20px;
+ padding: 0px 15px 0px 15px;
 }
 
 #custom-power{
@@ -124,7 +124,7 @@
 
 #language {
   border-radius:30px;
-  padding: 0px 15px 0px 15px;
+  padding: 0px 10px 0px 10px;
 }
 
 
@@ -146,7 +146,7 @@
 
 #custom-swaync {
   border-radius:10px;
-  padding: 0px 10px 0px 15px;
+  padding: 0px 10px 0px 10px;
 }
 
 #pulseaudio {
@@ -162,7 +162,7 @@
 
 #taskbar {
   border-radius:10px;
-  padding: 0px 10px 0px 10px;
+  padding: 0px 15px 0px 15px;
 }
 
 #power-profiles-daemon {
@@ -178,7 +178,7 @@
 
 #backlight {
  border-radius:10px;
- padding: 0px 15px 0px 15px;
+ padding: 0px 20px 0px 20px;
 }
 
 #keyboard-state.locked {

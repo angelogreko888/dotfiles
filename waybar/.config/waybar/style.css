@@ -94,23 +94,26 @@
 #custom-power{
   color:white;
   padding: 0px 5px 0px 10px;
-  border-radius:30px;
+  border-radius:15px;
+  background-color: green;
+   margin-right: 15px;
 }
 
 #custom-arch {
-  margin-left: 5px;
+  margin-left: 15px;
   padding: 0px 15px 0px 10px;
-  border-radius:30px;
+  border-radius:15px;
   color:white;
+  background-color: green;(gols. 0.3)
 }
 
 #workspaces button:hover {
-  background-color: green;
+  background-color: alpha ;
   border-radius:30px;
 }
 
 #workspaces button:active {
-  background-color: alpha (#A020F0, 0.8);
+  background-color: alpha (green, 0.8);
   border-radius:30px;
 }
 
@@ -127,7 +130,7 @@
 
 #custom-clock {
   border-radius:30px;
-  background-color: alpha (#7D0DC3, 0.6);
+  background-color: alpha (green, 0.5);
   padding: 0px 20px 0px 20px;
   font-size: 21px;
   color: white;

@@ -16,9 +16,8 @@
 
   "modules-left": [
 	    "custom/arch",
-	        "hyprland/language",
         "clock",
-	    "idle_inhibitor",
+	        "hyprland/language",
         "hyprland/workspaces",
         "wlr/taskbar",
         "memory",
@@ -32,8 +31,9 @@
   "modules-right": [
         "pulseaudio",
 	 "custom/pacman",
-	    "pulseaudio#microphone",
+	    "idle_inhibitor",
          "custom/swaync",
+	    "pulseaudio#microphone",
         "backlight",
 	    "network",
         "tray",

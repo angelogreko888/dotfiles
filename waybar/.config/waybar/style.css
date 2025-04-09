@@ -76,19 +76,19 @@
 
 #custom-pacman{
  border-radius:30px;
-  padding: 0px 0px 0px 25px;
+  padding: 0px 20px 0px 20px;
 }
 
 #idle_inhibitor {
   border-radius:30px;
-  padding: 0px 20px 0px 10px;
+  padding: 0px 20px 0px 20px;
 }
 
 
 #idle_inhibitor.activated{
  color:#e57474;
  border-radius:30px;
- padding: 0px 20px 0px 10px;
+ padding: 0px 20px 0px 20px;
 }
 
 #custom-power{
@@ -108,7 +108,7 @@
 }
 
 #workspaces button:hover {
-  background-color: alpha (gold, 0.3);
+  background-color: alpha (gold, 0.5);
   border-radius:30px;
 }
 
@@ -124,7 +124,7 @@
 
 #language {
   border-radius:30px;
-  padding: 0px 25px 0px 0px;
+  padding: 0px 15px 0px 15px;
 }
 
 
@@ -138,7 +138,7 @@
 
 #clock {
   border-radius:10px;
-  padding: 0px 10px 0px 10px;
+  padding: 0px 20px 0px 20px;
   font-size: 19px;
 }
 

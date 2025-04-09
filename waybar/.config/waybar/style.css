@@ -22,7 +22,7 @@
 *{
   font-size: 19px;
   font-family: "JetBrainsMono Nerd Font";
-  color: green;
+  color: gold;
   font-weight: 800;
   min-height: 0;
 }
@@ -92,7 +92,7 @@
 }
 
 #custom-power{
-  color:gold;
+  color:white;
   padding: 0px 5px 0px 10px;
   border-radius:30px;
 }
@@ -101,7 +101,7 @@
   margin-left: 5px;
   padding: 0px 15px 0px 10px;
   border-radius:30px;
-  color:gold;
+  color:white;
 }
 
 #workspaces button:hover {

@@ -1739,3 +1739,8 @@
     - 00inst/
 - cmd: ./800ftube.sh
 - cmd: s journalctl -b
+- cmd: y  mkinitcpio-firmware
+- cmd: y xhci_pci_renesas
+- cmd: sudo dmesg | grep xhci_pci
+- cmd: s journalctl -b  | grep xhci_pci
+- cmd: y upd72020x-fw

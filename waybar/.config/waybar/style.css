@@ -22,13 +22,13 @@
 *{
   font-size: 19px;
   font-family: "JetBrainsMono Nerd Font";
-  color: #ffffff;
+  color: gold;
   font-weight: 800;
   min-height: 0;
 }
 
 #waybar {
-  background-color: alpha (black ,0.3);
+  background-color: alpha (black ,0.6);
   border-radius:30px;
   padding: 0px 30px 0px 30px;
 }
@@ -91,7 +91,7 @@
 }
 
 #custom-power{
-  color:#c47fd5;
+  color:white;
   padding: 0px 5px 0px 10px;
   border-radius:30px;
 }
@@ -100,7 +100,7 @@
   margin-left: 5px;
   padding: 0px 15px 0px 10px;
   border-radius:30px;
-  color:orange;
+  color:white;
 }
 
 #workspaces button:hover {
@@ -110,7 +110,7 @@
 
 
 #workspaces button.active {
-  background-color: alpha (#A020F0, 1);
+  background-color: alpha (#A020F0, 0.7);
   border-radius:30px;
 }
 
@@ -127,9 +127,10 @@
 
 #custom-clock {
   border-radius:30px;
-  background-color: alpha (#7D0DC3, 0.9);
+  background-color: alpha (#7D0DC3, 0.6);
   padding: 0px 20px 0px 20px;
   font-size: 21px;
+  color: white;
 }
 
 #clock {

@@ -104,13 +104,13 @@
 }
 
 #workspaces button:hover {
-  background-color: #A020F0;
+  background-color: #7D0DC3;
   border-radius:30px;
 }
 
 
 #workspaces button.active {
-  background-color: alpha (#7D0DC3, 1);
+  background-color: alpha (#A020F0, 1);
   border-radius:30px;
 }
 

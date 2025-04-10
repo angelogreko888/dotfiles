@@ -95,7 +95,6 @@
   color:white;
   padding: 0px 5px 0px 10px;
   border-radius:15px;
-  background-color: green;
    margin-right: 15px;
 }
 
@@ -104,7 +103,6 @@
   padding: 0px 15px 0px 10px;
   border-radius:15px;
   color:white;
-  background-color: green;
 }
 
 #workspaces button:hover {

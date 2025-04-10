@@ -77,7 +77,7 @@
 #custom-pacman{
   border-radius:30px;
   padding: 0px 20px 0px 20px;
-  color: red;
+  background-color: red;
 }
 
 #idle_inhibitor {

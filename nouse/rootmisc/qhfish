@@ -1586,7 +1586,6 @@
 - cmd: ./cpbh.sh
 - cmd: sudo passwd vago
     - vago
-- cmd: af
 - cmd: n ~/bin/tshift.sh
     - ~/bin/tshift.sh
 - cmd: su -
@@ -1641,9 +1640,6 @@
 - cmd: acpi
 - cmd: sn /sys/power/mem_sleep
 - cmd: echo s2idle > /sys/power/mem_sleep
-- cmd: sudo echo s2idle > /sys/power/mem_sleep
-- cmd: sn /sys/power/state
-    - /sys/power/state
 - cmd: sudo echo mem > /sys/power/state
 - cmd: s cat /sys/devices/system/cpu/cpuidle/low_power_idle_cpu_residency_us
     - /sys/devices/system/cpu/cpuidle/low_power_idle_cpu_residency_us
@@ -1656,8 +1652,6 @@
 - cmd: fc
 - cmd: hyprctl reload
 - cmd: sudo journalctl -b | curl -F 'file=@-' 0x0.st
-- cmd: sn /etc/default/grub
-- cmd: ug
 - cmd: lo http://0x0.st/8_J-.txt
 - cmd: lo 8_J-.txt
 - cmd: cat /proc/sys/vm/panic_on_oom
@@ -1699,7 +1693,6 @@
 - cmd: cd
 - cmd: ggg
 - cmd: sudo journalctl -b
-- cmd: b
 - cmd: pui freetube-bin
 - cmd: lo freetube
 - cmd: cd FreeTube/
@@ -1725,18 +1718,10 @@
 - cmd: y xhci_pci_renesas
 - cmd: sudo dmesg | grep xhci_pci
 - cmd: s journalctl -b  | grep xhci_pci
-- cmd: s mkinitcpio -P
-- cmd: u
-- cmd: y upd72020x-fw
 - cmd: tss
 - cmd: tsl
 - cmd: pd
 - cmd: yd
-- cmd: nws
-- cmd: waybar
-- cmd: nwc
-- cmd: g
-- cmd: gg
 - cmd: ff
 - cmd: sn /etc/systemd/system/root-suspend.service
 - cmd: s rm /etc/systemd/system/root-suspend.service
@@ -1746,7 +1731,10 @@
 - cmd: s cat /sys/power/mem_sleep
     - /sys/power/mem_sleep
 - cmd: s echo s2idle > /sys/power/mem_sleep
-    - /etc/default/grub
+- cmd: sn /etc/default/grub
+- cmd: sn /sys/power/state
+    - /sys/power/state
+- cmd: sudo echo s2idle > /sys/power/mem_sleep
 - cmd: sn /sys/power/pm_debug_messages
     - /sys/power/pm_debug_messages
 - cmd: sn /sys/power/pm_async
@@ -1759,5 +1747,17 @@
 - cmd: pui powertop
 - cmd: s rm /etc/systemd/system/wicd-sleep.service
     - /etc/systemd/system/wicd-sleep.service
-- cmd: ngr
+- cmd: s mkinitcpio -P
+- cmd: af
 - cmd: bgr
+- cmd: ngr
+- cmd: ug
+- cmd: b
+- cmd: gg
+- cmd: waybar
+- cmd: y upd72020x-fw
+- cmd: g
+- cmd: u
+- cmd: nws
+- cmd: nwc
+- cmd: y -Qum

@@ -15,13 +15,14 @@
   "fixed-center": true,
 
   "modules-left": [
-	    "custom/arch",
-        "clock",
-	        "hyprland/language",
-        "hyprland/workspaces",
-        "wlr/taskbar",
-        "memory",
-	    "cpu",
+	"custom/arch",
+	"clock",
+	"hyprland/language",
+	"hyprland/workspaces",
+	"wlr/taskbar",
+	"memory",
+	"cpu",
+	"custom/pacman",
     ],
 
   "modules-center": [
@@ -29,16 +30,15 @@
 ],
 
   "modules-right": [
-        "pulseaudio",
-	 "custom/pacman",
-         "custom/swaync",
-	    "idle_inhibitor",
-	    "pulseaudio#microphone",
+	"pulseaudio",
+        "custom/swaync",
+	"idle_inhibitor",
+	"pulseaudio#microphone",
         "backlight",
-	    "network",
+	"network",
         "tray",
-	    "power-profiles-daemon",
-	    "battery",
+	"power-profiles-daemon",
+	"battery",
         "custom/power"
     ],
 
@@ -48,7 +48,7 @@
  "custom/pacman": {
          "format": "󰅢 {}",
          "interval": 600,   
-         "exec": "checkupdates-with-aur | wc -l",
+         "exec": "checkupdates-with-aur | wc -l | grep -vx 0",
          "exec-if": "exit 0",
 	 "on-click": "foot sh -c 'yay -Syu; echo ~~~~~~~~~~~~~~~Done~~~~~~~~~~~~~~~~~~~ - Press enter to exit; read'; pkill -SIGRTMIN+8 waybar", 
          "signal": 8,

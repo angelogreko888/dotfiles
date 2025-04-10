@@ -103,7 +103,6 @@
 - cmd: sn /usr/bin/xdg-open
 - cmd: n .local/share/applications/mimeapps.list
 - cmd: cd .local/share/applications/
-- cmd: waybar
 - cmd: checkupdates-with-aur
 - cmd: cd /var/log/
 - cmd: n lastlog
@@ -512,7 +511,6 @@
 - cmd: pm
 - cmd: sn /etc/xdg/reflector/reflector.conf
 - cmd: n hyprlock.conf
-- cmd: nwc
 - cmd: lo nvidia-resume.service
 - cmd: sn /usr/lib/systemd/system/nvidia-resume.service
 - cmd: n gtk-2.0
@@ -661,7 +659,6 @@
 - cmd: bash bh q
 - cmd: bash cpinst.sh l
 - cmd: bash bh l
-- cmd: librewolf
 - cmd: sudo pacman -Syu --needed  firejail
 - cmd: cd /etc/pacman.d/
 - cmd: mkdir -pv hooks
@@ -1171,22 +1168,15 @@
 - cmd: s strings /sys/firmware/acpi/tables/DSDT | grep -i 'windows ' | sort | tail -1
 - cmd: ./bin/paccach.sh
 - cmd: git gc
-- cmd: n paccach.sh
-    - paccach.sh
 - cmd: ./paccach.sh
 - cmd: gg
-- cmd: cdf
-- cmd: cd 00inst/
 - cmd: n pac.lst
-- cmd: cd bin
 - cmd: n bh
 - cmd: n .local/share/fish/fish_history
 - cmd: lk
 - cmd: cd /vt
     - /vt
-- cmd: l
 - cmd: cd
-- cmd: u
 - cmd: lo librewolf.cfg
 - cmd: sn /usr/lib/librewolf/librewolf.cfg
     - /usr/lib/librewolf/librewolf.cfg
@@ -1210,21 +1200,60 @@
 - cmd: mpv --fs
 - cmd: w mpv
 - cmd: /sbin/mpv
-- cmd: g
 - cmd: ggg
 - cmd: pui freetube-git
 - cmd: pi freetube-bin
 - cmd: y freetube-bin
 - cmd: yui freetube-bin
-- cmd: pd
-- cmd: yd
 - cmd: y freetube
-    - bin
+- cmd: cd bin
+- cmd: n paccach.sh
+    - paccach.sh
 - cmd: sudo paccache -ruk0
 - cmd: sudo paccache -rk1
-    - 00inst/
+- cmd: cdf
+- cmd: cd 00inst/
 - cmd: n 40pipewire.sh
     - 40pipewire.sh
 - cmd: sudo pacman -S pipewire pipewire-alsa pipewire-jack pipewire-pulse
 - cmd: s journalctl -b
+- cmd: g
+- cmd: waybar
+- cmd: nwc
 - cmd: nws
+- cmd: sudo pacman -Rnsc $(pacman -Qdtq)
+- cmd: sudo systemctl status paccache.timer
+- cmd: sudo systemctl enable --now paccache.timer
+- cmd: librewolf
+- cmd: rm -r ~/.local/state/wireplumber/\n
+    - ~/.local/state/wireplumber/
+- cmd: ctl status wireplumber.service
+- cmd: sudo journalctl -b
+- cmd: sudo pacman -S pipewire --overwrite '*'
+- cmd: sudo pacman -S wireplumber --overwrite '*'
+- cmd: ctl --user stop pipewire
+- cmd: ctl  stop pipewire
+- cmd: ctl start pipewire
+- cmd: ctl status pipewire
+- cmd: ctl start wireplumber
+- cmd: cd ~/.local/state/wireplumber
+    - ~/.local/state/wireplumber
+- cmd: n stream-properties
+    - stream-properties
+- cmd: rm stream-properties
+- cmd: l
+- cmd: pui ppewire
+- cmd: pui pipewire
+- cmd: pui gst-plugin-pipewire pipewire-alsa pipewire-audio pipewire-jack pipewire-pulse wireplumber xdg-desktop-portal xdg-desktop-portal-hyprland pipewire
+- cmd: pui gst-plugin-pipewire pipewire-alsa pipewire-audio pipewire-jack pipewire-pulse wireplumber xdg-desktop-portal xdg-desktop-portal-hyprland pipewire ffmpeg ffmpeg4.4 mpv portaudio waybar xdg-desktop-portal-gtk
+- cmd: pui gst-plugin-pipewire pipewire-alsa pipewire-audio pipewire-jack pipewire-pulse wireplumber xdg-desktop-portal xdg-desktop-portal-hyprland pipewire ffmpeg ffmpeg4.4 mpv portaudio waybar xdg-desktop-portal-gtk vlc librewolf-bin
+- cmd: pi gst-plugin-pipewire pipewire-alsa pipewire-audio pipewire-jack pipewire-pulse wireplumber xdg-desktop-portal xdg-desktop-portal-hyprland pipewire ffmpeg ffmpeg4.4 mpv portaudio waybar xdg-desktop-portal-gtk vlc librewolf-bin
+- cmd: pi gst-plugin-pipewire pipewire-alsa pipewire-audio pipewire-jack pipewire-pulse wireplumber xdg-desktop-portal xdg-desktop-portal-hyprland pipewire ffmpeg ffmpeg4.4 mpv portaudio waybar xdg-desktop-portal-gtk
+- cmd: y librewolf-bin
+- cmd: u
+- cmd: yd
+- cmd: pd
+    - env
+- cmd: pacman -Q | rg libva
+- cmd: pui libva-nvidia-driver-git
+    - bin

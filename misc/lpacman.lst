@@ -18,6 +18,8 @@ eog
 evince
 eza
 fastfetch
+ffmpeg
+ffmpeg4.4
 ffnvcodec-headers
 file-roller
 firejail
@@ -82,10 +84,12 @@ pamixer
 pavucontrol
 pipewire
 pipewire-alsa
+pipewire-audio
 pipewire-jack
 pipewire-pulse
 plocate
 polkit-kde-agent
+portaudio
 power-profiles-daemon
 python-pip
 qt5-wayland
@@ -109,13 +113,13 @@ ufw
 usbutils
 uwsm
 vim
-vlc
 waybar
 wget
 wireless_tools
 wireplumber
 wlroots
 wofi
+xdg-desktop-portal
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 xdg-user-dirs

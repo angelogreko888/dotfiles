@@ -1257,3 +1257,4 @@
 - cmd: pacman -Q | rg libva
 - cmd: pui libva-nvidia-driver-git
     - bin
+    - keybind.conf

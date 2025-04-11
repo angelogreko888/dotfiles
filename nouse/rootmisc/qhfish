@@ -260,7 +260,6 @@
 - cmd: cd /etc/modprobe.d
 - cmd: n nvidia.conf
 - cmd: sn nvidia.conf
-- cmd: nvidia-smi
 - cmd: dmesg
 - cmd: lsblk -f
 - cmd: s cp  /etc/default/grub  /etc/default/grub.bup
@@ -1320,7 +1319,6 @@
 - cmd: y extension-manager
 - cmd: cd nouse/brows/
     - nouse/brows/
-- cmd: cd .librewolf/
 - cmd: ctl disable gdm
 - cmd: ctl enable ly
 - cmd: yui extension-manager gnome-shell gnome-control-center gnome-tweaks gdm sddm
@@ -1362,7 +1360,6 @@
 - cmd: sudo pacman -Rdd lib32-nvidia-utils-tkg lib32-opencl-nvidia-tkg nvidia-dkms-tkg nvidia-egl-wayland-tkg nvidia-settings-tkg nvidia-utils-tkg opencl-nvidia-tkg
 - cmd: sudo pacman -Rdd lib32-nvidia-utils-tkg lib32-opencl-nvidia-tkg  nvidia-settings-tkg nvidia-utils-tkg opencl-nvidia-tkg
 - cmd: pi nvidia nvidia-utils
-- cmd: pacman -Q | rg nvidia
 - cmd: pui nvidia nvidia-utils
 - cmd: pi nvidia-dkms nvidia-utils
 - cmd: hyprctl dispatch reload
@@ -1455,7 +1452,6 @@
 - cmd: cd\\\n
 - cmd: cd /
 - cmd: y freetube
-- cmd: checkupdates-with-aur
 - cmd: pss bluez
 - cmd: c
 - cmd: git gc
@@ -1560,13 +1556,10 @@
 - cmd: s cat /sys/module/nvidia_drm/parameters/modeset
 - cmd: y  nvidia-vaapi-driver\n
 - cmd: pi libva-nvidia-driver
-- cmd: ffmpeg -hwaccels
 - cmd: sn /etc/environment
     - /etc/environment
 - cmd: sn /usr/share/glvnd/egl_vendor.d/10_nvidia.json
     - /usr/share/glvnd/egl_vendor.d/10_nvidia.json
-- cmd: sn /etc/libva.conf
-    - /etc/libva.conf
 - cmd: pss optimus-manager
 - cmd: reboot
 - cmd: sn /etc/modprobe.d/nvidia.conf
@@ -1601,7 +1594,6 @@
 - cmd: xdg-settings set default-web-browser librewolf.desktop
 - cmd: rr .mullvad/
     - .mullvad/
-- cmd: nu
 - cmd: r
 - cmd: /bin/date -d today '+%m-%d-%Y_%I:%M-%p'
 - cmd: /bin/date  today '+%m-%d-%Y_%I:%M-%p'
@@ -1690,8 +1682,6 @@
 - cmd: s rm /etc/systemd/system/suspend.target.wants/user-resume@user.service
 - cmd: n monitor.conf
 - cmd: hyprctl monitors all
-- cmd: cd
-- cmd: ggg
 - cmd: sudo journalctl -b
 - cmd: pui freetube-bin
 - cmd: lo freetube
@@ -1705,7 +1695,6 @@
 - cmd: n keybind.conf
 - cmd: cdf
 - cmd: cd 00inst/
-- cmd: l
 - cmd: ./800ftube.sh
 - cmd: freetube
 - cmd: cc
@@ -1720,9 +1709,6 @@
 - cmd: s journalctl -b  | grep xhci_pci
 - cmd: tss
 - cmd: tsl
-- cmd: pd
-- cmd: yd
-- cmd: ff
 - cmd: sn /etc/systemd/system/root-suspend.service
 - cmd: s rm /etc/systemd/system/root-suspend.service
     - /etc/systemd/system/root-suspend.service
@@ -1755,9 +1741,58 @@
 - cmd: b
 - cmd: gg
 - cmd: waybar
-- cmd: y upd72020x-fw
-- cmd: g
 - cmd: u
-- cmd: nws
-- cmd: nwc
 - cmd: y -Qum
+- cmd: nwc
+- cmd: pd
+- cmd: yd
+- cmd: ff
+- cmd: y upd72020x-fw
+- cmd: ggg
+- cmd: checkupdates-with-aur
+- cmd: nws
+- cmd: g
+- cmd: pacman -Q | rg nvidia
+- cmd: pacman -Q | rg libva
+- cmd: pss opencl-nvidia
+- cmd: pacman -Q | rg meson
+- cmd: pss meson
+- cmd: pss gst-plugins-bad
+- cmd: pss ffnvcodec-headers
+- cmd: ffmpeg -hwaccels
+- cmd: pacman -Q | rg nvidia-vaapi-driver
+- cmd: pss nvidia-vaapi-driver
+- cmd: y nvidia-vaapi-driver
+- cmd: pacman -Q | rg libva-nvidia-driver
+- cmd: n .config/uwsm/env
+    - .config/uwsm/env
+- cmd: sn /etc/libva.conf
+    - /etc/libva.conf
+- cmd: nvidia-smi
+- cmd: pi nvidia-settings
+- cmd: nvidia-settings
+- cmd: cd .librewolf/
+- cmd: l
+- cmd: nu
+- cmd: cd
+- cmd: pss sqlite
+- cmd: sqlite3
+- cmd: sqlite3 .open  ~/.librewolf/es1aride.default-default/places.sqlite
+    - ~/.librewolf/es1aride.default-default/places.sqlite
+- cmd: cd .librewolf/es1aride.default-default/
+    - .librewolf/es1aride.default-default/
+- cmd: sqlite3 .open places.sqlite
+    - places.sqlite
+- cmd: sqlite3 places.sqlite
+- cmd: sudo pacman -S sqlitebrowser
+- cmd: sqlitebrowser
+- cmd: pss qtwayland
+- cmd: y qtwayland
+- cmd: s sqlitebrowser
+- cmd: n ~/.config/uwsm/env
+    - ~/.config/uwsm/env
+- cmd: pss offscreen
+- cmd: y offscreen
+- cmd: y wayland-xcomposite-egl
+- cmd: y wayland-egl
+- cmd: pui sqlitebrowser

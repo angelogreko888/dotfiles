@@ -1096,7 +1096,6 @@
 - cmd: mv prpac.sh paccach.sh
 - cmd: ψδ
 - cmd: loginctl suspend
-- cmd: n hypridle.conf
 - cmd: pss gnome-session
 - cmd: pss gnome-shell
 - cmd: pss gnome-accesability
@@ -1248,17 +1247,12 @@
 - cmd: ctl enable user-suspend@user.service
 - cmd: ctl enable user-resume@user.service
 - cmd: sn /etc/systemd/system/root-resume.service
-- cmd: lo systemd-suspend.service
-- cmd: sn /etc/systemd/system/systemd-suspend.service.wants/nvidia-suspend.service
-- cmd: sn /etc/systemd/system/systemd-suspend.service.wants/nvidia-resume.service
 - cmd: sn systemd-hibernate.service
 - cmd: lo systemd-suspend-then-hibernate.service
 - cmd: sn /etc/systemd/system/systemd-suspend-then-hibernate.service.wants/nvidia-resume.service
     - /etc/systemd/system/systemd-suspend-then-hibernate.service.wants/nvidia-resume.service
 - cmd: lo systemd-hibernate.service
 - cmd: sn /etc/systemd/system/systemd-hibernate.service.wants/nvidia-hibernate.service
-- cmd: sn /usr/lib/systemd/system/systemd-suspend.service
-    - /usr/lib/systemd/system/systemd-suspend.service
 - cmd: y KeePassXC
 - cmd: stow home/
     - home/
@@ -1358,7 +1352,6 @@
 - cmd: pui nvidia nvidia-utils
 - cmd: pi nvidia-dkms nvidia-utils
 - cmd: hyprctl dispatch reload
-- cmd: hyprctl dispatch dpms
 - cmd: pi qt6-wayland
 - cmd: fwupdmgr refresh
 - cmd: bh q
@@ -1447,7 +1440,6 @@
 - cmd: cd /
 - cmd: y freetube
 - cmd: pss bluez
-- cmd: c
 - cmd: git gc
 - cmd: ~/bin/bh q
 - cmd: ~/bin/cpinst.sh q
@@ -1555,7 +1547,6 @@
 - cmd: sn /usr/share/glvnd/egl_vendor.d/10_nvidia.json
     - /usr/share/glvnd/egl_vendor.d/10_nvidia.json
 - cmd: pss optimus-manager
-- cmd: reboot
 - cmd: sn /etc/modprobe.d/nvidia.conf
 - cmd: ./gitpull.sh
 - cmd: mv dotfiles/ atest/
@@ -1593,10 +1584,8 @@
 - cmd: /bin/date  today '+%m-%d-%Y_%I:%M-%p'
 - cmd: /bin/date
 - cmd: /bin/date -d today
-- cmd: cd bin
 - cmd: n cpbh.sh
 - cmd: n i.sh
-- cmd: n paccach.sh
 - cmd: ./paccach.sh
 - cmd: cd -
 - cmd: cd foo
@@ -1666,7 +1655,6 @@
 - cmd: pui lsof
 - cmd: b env-hyprland
     - env-hyprland
-- cmd: h
 - cmd: ctl stauts
 - cmd: ctl status user-resume@user.service
 - cmd: lo
@@ -1674,8 +1662,6 @@
 - cmd: s rm /etc/systemd/system/sleep.target.wants/user-suspend@user.service
     - /etc/systemd/system/sleep.target.wants/user-suspend@user.service
 - cmd: s rm /etc/systemd/system/suspend.target.wants/user-resume@user.service
-- cmd: n monitor.conf
-- cmd: hyprctl monitors all
 - cmd: sudo journalctl -b
 - cmd: pui freetube-bin
 - cmd: lo freetube
@@ -1737,7 +1723,6 @@
 - cmd: ggg
 - cmd: checkupdates-with-aur
 - cmd: nws
-- cmd: pacman -Q | rg nvidia
 - cmd: pacman -Q | rg libva
 - cmd: pss opencl-nvidia
 - cmd: pacman -Q | rg meson
@@ -1779,16 +1764,10 @@
 - cmd: y wayland-egl
 - cmd: y xcb
 - cmd: pui sqlitebrowser
-- cmd: pd
-- cmd: yd
 - cmd: n ~/.config/uwsm/env
     - ~/.config/uwsm/env
-- cmd: g
-- cmd: gg
 - cmd: y upd72020x-fw
-- cmd: chh
 - cmd: n input.conf
-- cmd: cd
 - cmd: pacman -Q | rg intel
 - cmd: pacman -Q | rg video
 - cmd: pacman -Q | rg mesa
@@ -1799,8 +1778,55 @@
 - cmd: cat /proc/acpi/wakeup
 - cmd: cat /proc/acpi/wakeup |rg GPP0
     - /proc/acpi/wakeup
+- cmd: ngr
+- cmd: pss linux-lts
+- cmd: pi linux-lts linux-lts-headers nvidia-lts
+- cmd: pi  nvidia-lts
+- cmd: pui lib32-nvidia-utils lib32-opencl-nvidia opencl-nvidia
+- cmd: pss nvidia-lts
+- cmd: pui linux
+- cmd: pui linux-api-headers
+- cmd: reboot
+- cmd: pui linux-lts-headers
+- cmd: pacman -Q | rg linux
+- cmd: pacman -Q | rg nvidia
+- cmd: h
+- cmd: pi lib32-nvidia-utils lib32-opencl-nvidia opencl-nvidia linux-api-headers
+- cmd: pd
+- cmd: yd
+- cmd: cd bin
+- cmd: n paccach.sh
+- cmd: sudo paccache -ruk0
+- cmd: sudo paccache -rk1
+- cmd: hyprctl monitors all
+- cmd: n monitor.conf
+- cmd: g
+- cmd: gg
+- cmd: chh
+- cmd: n hypridle.conf
+- cmd: cd
+- cmd: hyprctl dispatch dpms
+- cmd: hyprctl dispatch dpms on
+- cmd: hyprctl dispatch fakefullscreen
+- cmd: c
+- cmd: hyprctl dispatch focusmonitor
+- cmd: s dmesg
 - cmd: journalctl -b -u systemd-suspend.service
+- cmd: lo systemd-suspend.service
+- cmd: lo systemd-resume.service
+- cmd: sn /usr/lib/systemd/system/systemd-suspend.service
+    - /usr/lib/systemd/system/systemd-suspend.service
 - cmd: sn /usr/lib/systemd/system/systemd-suspend.service.d/nvidia.conf
 - cmd: sn /usr/lib/systemd/system/systemd-homed.service.d/nvidia.conf
-- cmd: ngr
-- cmd: s dmesg
+- cmd: lo systemd-homed.service
+- cmd: lo systemd-hybernate.service
+- cmd: sn /etc/systemd/system/systemd-homed.service.wants
+    - /etc/systemd/system/systemd-homed.service.wants
+- cmd: sn /etc/systemd/system/multi-user.target.wants/systemd-homed.service
+    - /etc/systemd/system/multi-user.target.wants/systemd-homed.service
+- cmd: sn /usr/lib/systemd/system/systemd-homed.service
+    - /usr/lib/systemd/system/systemd-homed.service
+- cmd: sn /etc/systemd/system/systemd-suspend.service.wants/nvidia-resume.service
+- cmd: sn /etc/systemd/system/systemd-suspend.service.wants/nvidia-suspend.service
+- cmd: sn /etc/systemd/system/systemd-homed.service.d/override.conf
+- cmd: sn /etc/systemd/system/systemd-suspend.service.d/override.conf

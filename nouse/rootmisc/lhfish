@@ -291,7 +291,6 @@
 - cmd: n /home/vago/.nvidia-settings-rc
 - cmd: rm /home/vago/.nvidia-settings-rc
 - cmd: d 00inst/
-- cmd: ./backup.sh
 - cmd: y fmc-1910w
 - cmd: y mfc-1910w
 - cmd: sv /etc/locale.gen
@@ -548,7 +547,6 @@
 - cmd: lo cachy
 - cmd: rr /home/vago/.cachy
 - cmd: h |rg vb
-- cmd: reboot
 - cmd: s modprobe vboxdrv
 - cmd: nb
 - cmd: pss fish
@@ -569,7 +567,6 @@
 - cmd: lo fish  &| less
 - cmd: cd /etc/fish/conf.d
 - cmd: y oh-my-fish
-- cmd: exit
 - cmd: n config.fish
 - cmd: n .config/fish/config.fish
 - cmd: fish_config
@@ -732,7 +729,6 @@
 - cmd: cat /proc/driver/nvidia/params | sort
 - cmd: lspci -k -d ::03xx
 - cmd: pacman -Q | rg nvdia
-- cmd: pacman -Q | rg nvidia
 - cmd: dkms status
 - cmd: nano  stow.sh
 - cmd: cd nemo/
@@ -855,7 +851,6 @@
 - cmd: eza -a --color always --long --git --no-filesize --icons always --no-time --no-user
 - cmd: nano  /etc/default/grub
 - cmd: s nano  /etc/default/grub
-- cmd: ug
 - cmd: sn /etc/pacman.conf
 - cmd: n dotfiles/00inst/030boot.sh
 - cmd: sn /etc/pacman.conf -l
@@ -1093,14 +1088,12 @@
 - cmd: n laur.lst
 - cmd: yui pyprland
 - cmd: cd bin/
-- cmd: ./gitpull.sh
 - cmd: y totem
 - cmd: pss hdparm
 - cmd: pi gnome-shell
 - cmd: pi gdm
 - cmd: ctl disable ly
 - cmd: ctl enable gdm
-- cmd: spt
 - cmd: pi gnome-shell=controller
 - cmd: pi gnome-shell0controller
 - cmd: pi gnome-shell-controller
@@ -1110,7 +1103,6 @@
 - cmd: pi gnome-tweaks
 - cmd: t
 - cmd: gnome-terminal
-- cmd: h
 - cmd: ctl disable gdm
 - cmd: ctl enable ly
 - cmd: pui gnome-tweaks gnome-control-center gnome-terminal gdm gnome-shell
@@ -1138,8 +1130,6 @@
     - syb7rx0z.default-default/
 - cmd: n gitpull.sh
 - cmd: n l
-- cmd: n poweroff.sh
-    - poweroff.sh
 - cmd: n gp
 - cmd: n gpush.sh
     - gpush.sh
@@ -1155,10 +1145,6 @@
     - cpbh.sh
 - cmd: hostnamectl | rg Model | awk '{print $3}'
 - cmd: ./cpbh.sh
-- cmd: n env
-- cmd: cc
-- cmd: cd uwsm/
-    - uwsm/
 - cmd: n env-
 - cmd: n env-hyprland
 - cmd: af
@@ -1168,15 +1154,11 @@
 - cmd: s strings /sys/firmware/acpi/tables/DSDT | grep -i 'windows ' | sort | tail -1
 - cmd: ./bin/paccach.sh
 - cmd: git gc
-- cmd: ./paccach.sh
-- cmd: gg
 - cmd: n pac.lst
 - cmd: n bh
-- cmd: n .local/share/fish/fish_history
 - cmd: lk
 - cmd: cd /vt
     - /vt
-- cmd: cd
 - cmd: lo librewolf.cfg
 - cmd: sn /usr/lib/librewolf/librewolf.cfg
     - /usr/lib/librewolf/librewolf.cfg
@@ -1186,13 +1168,10 @@
 - cmd: s pacman -Syu wireplumber
 - cmd: rm ~/.local/state/wireplumber/*
 - cmd: sudo pacman -S pipewire pipewire-pulse pipewire-alsa wireplumber
-- cmd: b
 - cmd: pss ffmpeg
 - cmd: s pacman -S ffmpeg4.4
 - cmd: pui ffmpeg
 - cmd: s pacman -S ffmpeg
-- cmd: chh
-- cmd: n keybind.conf
 - cmd: mpv
 - cmd: mpv --list-options
 - cmd: pp
@@ -1206,25 +1185,21 @@
 - cmd: y freetube-bin
 - cmd: yui freetube-bin
 - cmd: y freetube
-- cmd: cd bin
 - cmd: n paccach.sh
     - paccach.sh
 - cmd: sudo paccache -ruk0
 - cmd: sudo paccache -rk1
-- cmd: cdf
 - cmd: cd 00inst/
 - cmd: n 40pipewire.sh
     - 40pipewire.sh
 - cmd: sudo pacman -S pipewire pipewire-alsa pipewire-jack pipewire-pulse
 - cmd: s journalctl -b
-- cmd: g
 - cmd: waybar
 - cmd: nwc
 - cmd: nws
 - cmd: sudo pacman -Rnsc $(pacman -Qdtq)
 - cmd: sudo systemctl status paccache.timer
 - cmd: sudo systemctl enable --now paccache.timer
-- cmd: librewolf
 - cmd: rm -r ~/.local/state/wireplumber/\n
     - ~/.local/state/wireplumber/
 - cmd: ctl status wireplumber.service
@@ -1250,11 +1225,41 @@
 - cmd: pi gst-plugin-pipewire pipewire-alsa pipewire-audio pipewire-jack pipewire-pulse wireplumber xdg-desktop-portal xdg-desktop-portal-hyprland pipewire ffmpeg ffmpeg4.4 mpv portaudio waybar xdg-desktop-portal-gtk vlc librewolf-bin
 - cmd: pi gst-plugin-pipewire pipewire-alsa pipewire-audio pipewire-jack pipewire-pulse wireplumber xdg-desktop-portal xdg-desktop-portal-hyprland pipewire ffmpeg ffmpeg4.4 mpv portaudio waybar xdg-desktop-portal-gtk
 - cmd: y librewolf-bin
-- cmd: u
-- cmd: yd
-- cmd: pd
-    - env
+- cmd: librewolf
+- cmd: cc
+- cmd: cd uwsm/
+    - uwsm/
+- cmd: n env
+- cmd: pacman -Q | rg nvidia
 - cmd: pacman -Q | rg libva
 - cmd: pui libva-nvidia-driver-git
-    - bin
-    - keybind.conf
+- cmd: ./paccach.sh
+- cmd: chh
+- cmd: n keybind.conf
+- cmd: n poweroff.sh
+    - poweroff.sh
+- cmd: ./gitpull.sh
+- cmd: gg
+- cmd: ctl start --now NetworkManager
+- cmd: ctl disable --now NetworkManager
+- cmd: ctl enable --now NetworkManager
+- cmd: h
+- cmd: u
+- cmd: cd bin
+- cmd: ./backup.sh
+- cmd: spt
+- cmd: sudo pacman -S networkmanager
+- cmd: ngr
+- cmd: ug
+- cmd: pd
+- cmd: yd
+- cmd: ping -c3 google.com
+- cmd: rr dotfiles/
+    - dotfiles/
+- cmd: git clone https://github.com/angelogreko888/dotfiles
+- cmd: exit
+- cmd: reboot
+- cmd: cdf
+- cmd: g
+- cmd: cd
+- cmd: b

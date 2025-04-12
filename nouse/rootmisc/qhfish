@@ -26,7 +26,6 @@
 - cmd: mv printbr pbr
 - cmd: mv pbr pbr.sh
 - cmd: sudo pacman -S --needed ffmpeg gstreamer mesa
-- cmd: cat /proc/acpi/wakeup
 - cmd: doas pacman -Sy --needed archlinux-keyring
 - cmd: s pacman -Sy --needed archlinux-keyring
 - cmd: s pacman -Qu
@@ -138,7 +137,6 @@
 - cmd: cd nouse/gnome-i3/
 - cmd: cd i3
 - cmd: n .config/i3/
-- cmd: n input.conf
 - cmd: cd waybar
 - cmd: n style.css
 - cmd: swaymsg -t get_inputs
@@ -403,7 +401,6 @@
 - cmd: cd 565.77/
 - cmd: cd build/
 - cmd: n make.log
-- cmd: sn /etc/mkinitcpio.conf
 - cmd: lo nvidia
 - cmd: s rm /etc/modprobe.d/nvidia.conf
 - cmd: sn /etc/modules-load.d/nvidia.conf
@@ -964,7 +961,6 @@
 - cmd: cp 30aur.sh ../nouse/00inst/
 - cmd: s /etc/mkinitcpio.conf
 - cmd: sn /etc/default/grub\n
-- cmd: sn /etc/modprobe.d/blacklist.conf
 - cmd: sn /etc/modprobe.d/nouveau.conf
 - cmd: ls /usr/lib/modules
 - cmd: pacman -Qsq "(vulk|mesa|nvidia|xf86-video|optimus)"
@@ -1333,7 +1329,6 @@
 - cmd: pi nvidia-dkms nvidia-utils libva-nvidia-driver
 - cmd: sudo pacman -S nvidia-dkms egl-wayland lib32-nvidia-utils lib32-opencl-nvidia opencl-nvidia nvidia-utils
 - cmd: pss libva-nvidia-driver
-- cmd: journalctl -b -u systemd-suspend.service
 - cmd: pss wayland-scanner
 - cmd: n reboot.sh
     - reboot.sh
@@ -1374,7 +1369,6 @@
 - cmd: pi lib32-nvidia-utils lib32-opencl-nvidia opencl-nvidia
 - cmd: cpi q
 - cmd: pi egl-wayland
-- cmd: y xcb
 - cmd: md ~/.config/wayfire/
 - cmd: mv Downloads/wayfire.ini ~/.config/wayfire/
     - Downloads/wayfire.ini
@@ -1690,7 +1684,6 @@
 - cmd: ..
 - cmd: rr FreeTube/
 - cmd: y freetube-bin
-- cmd: chh
 - cmd: n autostart.conf
 - cmd: n keybind.conf
 - cmd: cdf
@@ -1700,7 +1693,6 @@
 - cmd: cc
 - cmd: cd uwsm/
 - cmd: n env-hyprland
-- cmd: s dmesg
 - cmd: n env
 - cmd: s journalctl -b
 - cmd: y  mkinitcpio-firmware
@@ -1733,25 +1725,18 @@
 - cmd: pui powertop
 - cmd: s rm /etc/systemd/system/wicd-sleep.service
     - /etc/systemd/system/wicd-sleep.service
-- cmd: s mkinitcpio -P
 - cmd: af
 - cmd: bgr
-- cmd: ngr
 - cmd: ug
 - cmd: b
-- cmd: gg
 - cmd: waybar
 - cmd: u
 - cmd: y -Qum
 - cmd: nwc
-- cmd: pd
-- cmd: yd
 - cmd: ff
-- cmd: y upd72020x-fw
 - cmd: ggg
 - cmd: checkupdates-with-aur
 - cmd: nws
-- cmd: g
 - cmd: pacman -Q | rg nvidia
 - cmd: pacman -Q | rg libva
 - cmd: pss opencl-nvidia
@@ -1764,8 +1749,6 @@
 - cmd: pss nvidia-vaapi-driver
 - cmd: y nvidia-vaapi-driver
 - cmd: pacman -Q | rg libva-nvidia-driver
-- cmd: n .config/uwsm/env
-    - .config/uwsm/env
 - cmd: sn /etc/libva.conf
     - /etc/libva.conf
 - cmd: nvidia-smi
@@ -1774,7 +1757,6 @@
 - cmd: cd .librewolf/
 - cmd: l
 - cmd: nu
-- cmd: cd
 - cmd: pss sqlite
 - cmd: sqlite3
 - cmd: sqlite3 .open  ~/.librewolf/es1aride.default-default/places.sqlite
@@ -1788,11 +1770,37 @@
 - cmd: sqlitebrowser
 - cmd: pss qtwayland
 - cmd: y qtwayland
+- cmd: n .config/uwsm/env
+    - .config/uwsm/env
 - cmd: s sqlitebrowser
-- cmd: n ~/.config/uwsm/env
-    - ~/.config/uwsm/env
 - cmd: pss offscreen
 - cmd: y offscreen
 - cmd: y wayland-xcomposite-egl
 - cmd: y wayland-egl
+- cmd: y xcb
 - cmd: pui sqlitebrowser
+- cmd: pd
+- cmd: yd
+- cmd: n ~/.config/uwsm/env
+    - ~/.config/uwsm/env
+- cmd: g
+- cmd: gg
+- cmd: y upd72020x-fw
+- cmd: chh
+- cmd: n input.conf
+- cmd: cd
+- cmd: pacman -Q | rg intel
+- cmd: pacman -Q | rg video
+- cmd: pacman -Q | rg mesa
+- cmd: ctl status suspend.target
+- cmd: sn /etc/modprobe.d/blacklist.conf
+- cmd: sn /etc/mkinitcpio.conf
+- cmd: s mkinitcpio -P
+- cmd: cat /proc/acpi/wakeup
+- cmd: cat /proc/acpi/wakeup |rg GPP0
+    - /proc/acpi/wakeup
+- cmd: journalctl -b -u systemd-suspend.service
+- cmd: sn /usr/lib/systemd/system/systemd-suspend.service.d/nvidia.conf
+- cmd: sn /usr/lib/systemd/system/systemd-homed.service.d/nvidia.conf
+- cmd: ngr
+- cmd: s dmesg

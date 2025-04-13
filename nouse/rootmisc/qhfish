@@ -185,7 +185,6 @@
 - cmd: y wlr00ts-eglstreams
 - cmd: sway
 - cmd: y sway-git
-- cmd: foot
 - cmd: yui sway-git
 - cmd: lo sway
 - cmd: cd /etc/pam.d/
@@ -311,7 +310,6 @@
 - cmd: pacman -Q | rg nfs-utils
 - cmd: pacman -Q | rg inetutils
 - cmd: pacman -Q | rg dnsutils
-- cmd: n.
 - cmd: pacman -Q | rg bash-completion
 - cmd: pacman -Q | rg openssh
 - cmd: pacman -Q | rg acpi
@@ -631,7 +629,6 @@
 - cmd: h
 - cmd: c
 - cmd: ./
-- cmd: gg
 - cmd: gp
 - cmd: yay -Rns art-rawconverter
 - cmd: nano  a
@@ -1778,7 +1775,6 @@
 - cmd: nano 60stow.sh
     - 60stow.sh
 - cmd: ./60stow.sh
-- cmd: bash
 - cmd: pss extension-manager
 - cmd: pss extensions-manager
 - cmd: pss extentions-manager
@@ -1786,13 +1782,11 @@
 - cmd: y extension-manager
 - cmd: dump /org/gnome/shell/extensions/
 - cmd: dconf dump /org/gnome/shell/extensions/
-- cmd: dconf dump /org/gnome/shell/extensions/ > ext.txt
 - cmd: cat ext.txt
     - ext.txt
 - cmd: dconf load /org/gnome/shell/extensions/ < ext.txt
 - cmd: r
 - cmd: pi nwg-look
-- cmd: ff
 - cmd: w nautilus
 - cmd: pui nautilus
 - cmd: pi gnome-shell-extensions
@@ -1824,7 +1818,6 @@
 - cmd: mv sync-vago/ oldsync-vago/
     - sync-vago/
 - cmd: n vt
-- cmd: n vtbup
 - cmd: md vago
 - cmd: md sync-vago
 - cmd: cd -
@@ -1839,27 +1832,18 @@
 - cmd: foot sh -c 'sudo pacman -Syy'
 - cmd: u
 - cmd: notify-send "done"
-- cmd: n poweroff.sh
-- cmd: n backup.sh
-- cmd: n cpbh.sh
 - cmd: hostnamectl | rg Model | awk '{print $3}'
 - cmd: mv vtbup.desktop poweroff.desktop
     - vtbup.desktop
 - cmd: ch poweroff.desktop
     - poweroff.desktop
-- cmd: g
 - cmd: ggg
 - cmd: git push
 - cmd: md atest
 - cmd: mv dotfiles/ atest/
 - cmd: git clone https://github.com/angelogreko888/dotfiles
-- cmd: cdf
-- cmd: cd
-- cmd: n poweroff.desktop
 - cmd: ch gitpull.desktop
     - gitpull.desktop
-- cmd: cd bin
-- cmd: n gitpull.sh
 - cmd: w foot
 - cmd: /usr/bin/foot
 - cmd: ping -c1 www.google.com
@@ -1871,16 +1855,44 @@
 - cmd: xdg-settings set default-terminal footclient.desktop
 - cmd: xdg-settings --help
 - cmd: xdg-settings --list
-- cmd: cd .local/share/applications/
-- cmd: l
 - cmd: w dex
-- cmd: ./gitpull.desktop
-- cmd: n gitpull.desktop
-    - .local/share/applications/
-    - bin
-    - poweroff.sh
-- cmd: ./poweroff.desktop
+- cmd: bash
+- cmd: n.
 - cmd: ch poweroff.sh
-    - cpbh.sh
-    - vtbup
-    - backup.sh
+    - poweroff.sh
+- cmd: n cpbh.sh
+- cmd: n vtbup
+- cmd: n backup.sh
+- cmd: ./poweroff.desktop
+- cmd: n poweroff.desktop
+- cmd: cd
+- cmd: n gi
+- cmd: cp gitpull.sh.bup
+- cmd: cp gitpull.sh gitpull.sh.bup
+    - gitpull.sh
+- cmd: cd .local/share/applications/
+- cmd: n gitpull.desktop
+- cmd: ./gitpull.desktop
+- cmd: rm gitpull.sh
+- cmd: mv gitpull.sh.bup gitpull.sh
+    - gitpull.sh.bup
+- cmd: n gitpull.sh
+- cmd: w footclient
+- cmd: footserver
+- cmd: foot
+- cmd: footclient
+- cmd: y gnome-defaults-list
+- cmd: sn /usr/share/applications/gnome-mimeapps.list
+    - /usr/share/applications/gnome-mimeapps.list
+- cmd: cdf
+- cmd: md gnome
+- cmd: cd gnome/
+    - gnome/
+- cmd: dconf dump /org/gnome/shell/extensions/ > ext.txt
+- cmd: l
+- cmd: gg
+- cmd: ff
+- cmd: g
+- cmd: cd bin
+- cmd: n poweroff.sh
+- cmd: ./poweroff.sh

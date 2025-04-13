@@ -1533,7 +1533,6 @@
 - cmd: s nvidia-smi --lock-gpu-clocks=0,1695 --mode=1
 - cmd: s nvidia-smi --lock-memory-clocks=0,5001
 - cmd: pui  hwinfo
-- cmd: systemctl suspend
 - cmd: cd ~/bin
 - cmd: n sync.sh
 - cmd: n backup.sh
@@ -1672,7 +1671,6 @@
 - cmd: y freetube-bin
 - cmd: n autostart.conf
 - cmd: n keybind.conf
-- cmd: cdf
 - cmd: cd 00inst/
 - cmd: ./800ftube.sh
 - cmd: freetube
@@ -1680,7 +1678,6 @@
 - cmd: cd uwsm/
 - cmd: n env-hyprland
 - cmd: n env
-- cmd: s journalctl -b
 - cmd: y  mkinitcpio-firmware
 - cmd: y xhci_pci_renesas
 - cmd: sudo dmesg | grep xhci_pci
@@ -1714,7 +1711,6 @@
 - cmd: af
 - cmd: bgr
 - cmd: ug
-- cmd: b
 - cmd: waybar
 - cmd: u
 - cmd: y -Qum
@@ -1766,7 +1762,6 @@
 - cmd: pui sqlitebrowser
 - cmd: n ~/.config/uwsm/env
     - ~/.config/uwsm/env
-- cmd: y upd72020x-fw
 - cmd: n input.conf
 - cmd: pacman -Q | rg intel
 - cmd: pacman -Q | rg video
@@ -1778,7 +1773,6 @@
 - cmd: cat /proc/acpi/wakeup
 - cmd: cat /proc/acpi/wakeup |rg GPP0
     - /proc/acpi/wakeup
-- cmd: ngr
 - cmd: pss linux-lts
 - cmd: pi linux-lts linux-lts-headers nvidia-lts
 - cmd: pi  nvidia-lts
@@ -1800,7 +1794,6 @@
 - cmd: sudo paccache -rk1
 - cmd: hyprctl monitors all
 - cmd: n monitor.conf
-- cmd: g
 - cmd: gg
 - cmd: chh
 - cmd: n hypridle.conf
@@ -1810,7 +1803,6 @@
 - cmd: hyprctl dispatch fakefullscreen
 - cmd: c
 - cmd: hyprctl dispatch focusmonitor
-- cmd: s dmesg
 - cmd: journalctl -b -u systemd-suspend.service
 - cmd: lo systemd-suspend.service
 - cmd: lo systemd-resume.service
@@ -1830,3 +1822,16 @@
 - cmd: sn /etc/systemd/system/systemd-suspend.service.wants/nvidia-suspend.service
 - cmd: sn /etc/systemd/system/systemd-homed.service.d/override.conf
 - cmd: sn /etc/systemd/system/systemd-suspend.service.d/override.conf
+- cmd: ngr
+- cmd: systemctl suspend
+- cmd: g
+- cmd: b
+- cmd: y upd72020x-fw
+- cmd: s journalctl -b
+- cmd: s dmesg
+- cmd: cdf
+    - 00inst/
+- cmd: y theme
+- cmd: y gtk-theme
+- cmd: pui gtk-theme-orion
+- cmd: s journalctl -b  | rg suspend

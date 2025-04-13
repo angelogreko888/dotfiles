@@ -1881,3 +1881,6 @@
     - poweroff.sh
 - cmd: ./poweroff.desktop
 - cmd: ch poweroff.sh
+    - cpbh.sh
+    - vtbup
+    - backup.sh

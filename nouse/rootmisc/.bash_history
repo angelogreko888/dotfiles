@@ -2091,3 +2091,18 @@ cd ~/.config/waybar/
 n style.css.bup 
 n ~/.config/waybar/style.css -l
 cp .bash_history ~/.bash_history 
+n 99active.sh 
+nano 99active.sh 
+nano 30aur.sh 
+nano aur.lst 
+n 60stow.sh 
+nano 60stow.sh 
+stow 60stow.sh 
+./60stow.sh 
+./800ftube.sh 
+cp ~/dotfiles/nouse/rootmisc/fish_history ~/.local/share/fish/
+cp ~/dotfiles/nouse/rootmisc/.bash_history ~/
+ yay -Su --needed --noconfirm aurutils hyprprop-git librewolf-bin hyprshot mintstick mullvad-browser-bin android-sdk-platform-tools anydesk-bin freetube-bin
+cd .config/fish/
+rm config.fish fish_variables 
+./gitpull.desktop 

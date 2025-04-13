@@ -1263,3 +1263,8 @@
 - cmd: g
 - cmd: cd
 - cmd: b
+    - 00inst/
+    - 050grubefi.sh
+- cmd: n r
+    - r.sh
+    - i.sh

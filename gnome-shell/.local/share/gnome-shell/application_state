@@ -8,15 +8,15 @@
     <application id="org.gnome.Shell.Extensions.desktop" score="330" last-seen="1744665379"/>
     <application id="org.gnome.TextEditor.desktop" score="193" last-seen="1744667073"/>
     <application id="anydesk.desktop" score="0" last-seen="1744566715"/>
-    <application id="foot.desktop" score="2491" last-seen="1744667014"/>
-    <application id="org.gnome.eog.desktop" score="9" last-seen="1744581047"/>
+    <application id="foot.desktop" score="2492" last-seen="1744667703"/>
+    <application id="org.gnome.eog.desktop" score="24" last-seen="1744667566"/>
     <application id="com.mattjakeman.ExtensionManager.desktop" score="414" last-seen="1744665380"/>
     <application id="org.gnome.Nautilus.desktop" score="1" last-seen="1744566432"/>
-    <application id="nemo.desktop" score="755" last-seen="1744667070"/>
-    <application id="mpv.desktop" score="1" last-seen="1744660222"/>
+    <application id="nemo.desktop" score="811" last-seen="1744667601"/>
+    <application id="mpv.desktop" score="2" last-seen="1744667595"/>
     <application id="org.gnome.Calculator.desktop" score="0" last-seen="1744566547"/>
     <application id="freetube.desktop" score="414" last-seen="1744660322"/>
-    <application id="librewolf.desktop" score="783" last-seen="1744666960"/>
+    <application id="librewolf.desktop" score="795" last-seen="1744667693"/>
     <application id="org.gnome.DiskUtility.desktop" score="5" last-seen="1744560305"/>
     <application id="mullvad-browser.desktop" score="0" last-seen="1744666901"/>
     <application id="timeshift-gtk.desktop" score="19" last-seen="1744666884"/>

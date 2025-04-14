@@ -10,9 +10,9 @@ handle_error() {
 
 cd ~
 
-if ! [ -d git ]; then
-        mkdir ~/git
-fi
+#if ! [ -d git ]; then
+#       mkdir ~/git
+#fi
 
 if [ -f /etc/modprobe.d/nouveau.conf ]; then
   printf "Seems like nouveau is already blacklisted."
@@ -70,7 +70,7 @@ fi
 #cd  nvidia-all/
 #makepkg -si 
 
-sudo pacman -S --noconfirm nvidia-dkms egl-wayland lib32-nvidia-utils lib32-opencl-nvidia opencl-nvidia nvidia-utils
+#sudo pacman -Sy --noconfirm nvidia-dkms egl-wayland lib32-nvidia-utils lib32-opencl-nvidia opencl-nvidia nvidia-utils
 
 sudo mkinitcpio -P
 

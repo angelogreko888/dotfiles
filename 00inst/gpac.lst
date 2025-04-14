@@ -1,3 +1,5 @@
+lst=(
+
 arch-install-scripts
 base
 base-devel
@@ -23,6 +25,7 @@ gmtp
 gnome-calculator
 gnome-control-center
 gnome-disk-utility
+gnome-shell
 gnome-shell-extensions
 gnome-text-editor
 gnome-tweaks
@@ -33,8 +36,6 @@ gvfs-mtp
 jdk-openjdk
 less
 libreoffice-fresh
-linux
-linux-firmware
 linux-headers
 mpv
 nano
@@ -43,6 +44,7 @@ ncdu
 nemo
 networkmanager
 nvidia-dkms
+nvidia-utils
 nwg-look
 plocate
 ranger
@@ -54,6 +56,8 @@ stow
 timeshift
 ttf-font-awesome
 ttf-jetbrains-mono-nerd
+ufw
 usbutils
 wget
 wpa_supplicant
+)

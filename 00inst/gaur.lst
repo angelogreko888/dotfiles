@@ -1,3 +1,4 @@
+lst=(
 android-sdk-platform-tools
 anydesk-bin
 aurutils
@@ -7,5 +8,4 @@ librewolf-bin
 mintstick
 mullvad-browser-bin
 paccache-hook
-yay
-yay-debug
+)

@@ -1,6 +1,6 @@
 {"_id":"barColor","value":false}
 {"_id":"baseTheme","value":"dark"}
-{"_id":"bounds","value":{"x":6,"y":38,"width":1908,"height":1036,"maximized":false,"fullScreen":false}}
+{"_id":"bounds","value":{"x":6,"y":71,"width":1908,"height":1009,"maximized":false,"fullScreen":false}}
 {"_id":"checkForBlogPosts","value":false}
 {"_id":"checkForUpdates","value":false}
 {"_id":"defaultInterval","value":0}

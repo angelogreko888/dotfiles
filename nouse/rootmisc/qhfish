@@ -228,7 +228,6 @@
 - cmd: pui pipewire-jack
 - cmd: pi pipewire-jack
 - cmd: comm ~/dotfiles/misc/qpacman.lst bpac
-- cmd: n installation
 - cmd: ps libpulse
 - cmd: ps slurp
 - cmd: mv ~/atesting/bpac .
@@ -252,7 +251,6 @@
 - cmd: mv gitpull bup-gitpull
 - cmd: mv git.sh gitpull.sh
 - cmd: mv gitpull.sh ~/bin
-- cmd: cd 00
 - cmd: n autostart.conf
 - cmd: journalctl
 - cmd: hyprctl monitors all
@@ -295,6 +293,7 @@
 - cmd: d 00inst/
 - cmd: n env-hyprland
 - cmd: ./backup.sh
+- cmd: n backup.sh
 - cmd: ./bup
 - cmd: y fmc-1910w
 - cmd: y mfc-1910w
@@ -310,6 +309,7 @@
 - cmd: pacman -Q | rg nfs-utils
 - cmd: pacman -Q | rg inetutils
 - cmd: pacman -Q | rg dnsutils
+- cmd: n.
 - cmd: pacman -Q | rg bash-completion
 - cmd: pacman -Q | rg openssh
 - cmd: pacman -Q | rg acpi
@@ -355,6 +355,7 @@
 - cmd: yui virtio-win
 - cmd: fwupdmgr
 - cmd: cd ../../bin
+- cmd: n bup
 - cmd: modprobe vboxdrv
 - cmd: ctl enable systemd-modules-load.service
 - cmd: ctl status systemd-modules-load.service
@@ -368,9 +369,8 @@
 - cmd: n efi.sh
 - cmd: n mbr.sh
 - cmd: rm befi
+- cmd: pp
 - cmd: ע
-- cmd: ctl status nvidia-suspend.service
-- cmd: ctl status nvidia-hibernate.service
 - cmd: cd active.sh
 - cmd: nvidia-smi --query-gpu=memory.total --format=csv,noheader,nounits
 - cmd: w sh
@@ -473,6 +473,7 @@
 - cmd: ssh vago@192.168.1.104
 - cmd: x ssh
 - cmd: foot --default
+- cmd: foot sh -c
 - cmd: foot sh -c goot
 - cmd: foot sh -c foot
 - cmd: foot sh -c ssh
@@ -506,7 +507,6 @@
 - cmd: pss man-db
 - cmd: pi man-db
 - cmd: gu
-- cmd: ../misc/
 - cmd: cd ../misc/
 - cmd: rm  CanvasBlocker-settings_2025-01-20_21-34-53.json chameleon_1737401664737.json
 - cmd: n bup-gitpull
@@ -584,6 +584,7 @@
 - cmd: n .config/fish/config.fish
 - cmd: cd /
 - cmd: fish_config
+- cmd: cdc
 - cmd: bup
 - cmd: help
 - cmd: md -p fish/.config
@@ -859,7 +860,6 @@
 - cmd: sudo systemctl  enable apparmor.service
 - cmd: sudo  nano  /etc/default/grub
 - cmd: fwupdmgr refresh
-- cmd: rm *
 - cmd: cd ~/dotfiles && git status && cd -
 - cmd: stow gtk-2.0/
 - cmd: cd ~/.config/gtk-2.0/
@@ -875,15 +875,12 @@
 - cmd: nano  /etc/default/grub
 - cmd: s nano  /etc/default/grub
 - cmd: ug
-- cmd: sn /etc/pacman.conf
 - cmd: n dotfiles/00inst/030boot.sh
 - cmd: sn /etc/pacman.conf -l
 - cmd: n 010confpac.sh
 - cmd: pacman -Q | rg wlroots
 - cmd: pss wlroots
 - cmd: pi wlroots
-- cmd: pd
-- cmd: yd
 - cmd: cd mnt
 - cmd: cd /mnt
 - cmd: srr 6A14-BB2A/ 24DCEFD8DCEFA1F2/ data/
@@ -899,6 +896,8 @@
 - cmd: n env
 - cmd: chh
 - cmd: n animations-dynamic.conf
+- cmd: n gitpull.sh
+- cmd: cd -
 - cmd: su -
 - cmd: ch c
 - cmd: n .local/share/fish/fish_history
@@ -914,7 +913,6 @@
 - cmd: cd ~/atest/
 - cmd: pss ell
 - cmd: pss ell | rg extra/ell
-- cmd: cd atest/
 - cmd: ./c
 - cmd: n c
 - cmd: sn /etc/locale.gen
@@ -924,7 +922,6 @@
 - cmd: ..
 - cmd: n sroot.sh
 - cmd: n suser.sh
-- cmd: cd 00inst/
 - cmd: s reflector --latest 5 --sort rate --country Israel --protocol https --verbose
 - cmd: s reflector --latest 5 --sort rate --country Israel --protocol https --verbose --save /etc/pacman.d/mirrorlist
 - cmd: sn /etc/pacman.d/mirrorlist
@@ -952,9 +949,7 @@
 - cmd: n fish_history
   paths:
     - fish_history
-- cmd: ll
 - cmd: rm fish_history.bup
-- cmd: cpi q
 - cmd: n 99active.sh
 - cmd: n laur.lst
 - cmd: yui usbimager
@@ -1074,6 +1069,7 @@
 - cmd: cp 30aur.sh ../nouse/00inst/
 - cmd: s /etc/mkinitcpio.conf
 - cmd: sn /etc/default/grub\n
+- cmd: cd /vt
 - cmd: sn /etc/modprobe.d/blacklist.conf
 - cmd: sn /etc/modprobe.d/nouveau.conf
 - cmd: ls /usr/lib/modules
@@ -1092,7 +1088,6 @@
 - cmd: cd uwsm/
 - cmd: s journalctl -b -1
 - cmd: pss  pambase
-- cmd: ctl status systemd-homed.service
 - cmd: ctl enable --now systemd-homed.service
 - cmd: sn /etc/systemd/system.conf.d/watchdog.conf
 - cmd: lsmod | grep wdt
@@ -1155,8 +1150,12 @@
 - cmd: sudo timeshift --create
 - cmd: tsl
 - cmd: n tshift.sh
+- cmd: cd vago/
 - cmd: du -f
+- cmd: md sync-vago
+- cmd: mv vago/ sync-vago/
 - cmd: cd ~/bin/
+- cmd: cd sync-vago/
 - cmd: mv librewolf/ .librewolf/
 - cmd: rr git
 - cmd: cd .vp
@@ -1170,12 +1169,12 @@
 - cmd: y libva-utils
 - cmd: cd nvidia-all/
 - cmd: h | grep ctl
-- cmd: ctl status paccache.timer
 - cmd: paccache -ruk0
 - cmd: s paccache -ruk0
 - cmd: s paccache -rk1
 - cmd: n z -l
 - cmd: paccache -rk1
+- cmd: notify-send "done"
 - cmd: ./z
 - cmd: cp z clearpac.sh
 - cmd: mv clearpac.sh prpac.sh
@@ -1318,6 +1317,8 @@
 - cmd: cd .mozilla/
 - cmd: rr .mozilla/
 - cmd: lo firefox
+- cmd: cd foot/
+- cmd: n foot.ini
 - cmd: n foot.ini -l
 - cmd: pss vaapi
 - cmd: pss libva
@@ -1383,6 +1384,7 @@
 - cmd: gnome-shell-extension-manager
 - cmd: y gnome-shell-extension-manager
 - cmd: y gnome-shell-extension
+- cmd: y extension-manager
 - cmd: rr ri7shlwk.default/
 - cmd: cd nouse/brows/
 - cmd: rr syb7rx0z.default-default/
@@ -1501,6 +1503,7 @@
 - cmd: hostnamectl | rg model
 - cmd: hostnamectl | rg Model
 - cmd: hostnamectl | rg Model | awk '{print $4}'
+- cmd: hostnamectl | rg Model | awk '{print $3}'
 - cmd: n v
 - cmd: comm ~/dotfiles/misc/qpacman.lst /mnt/data/sync-vago/dotfiles/misc/qpacman.lst
 - cmd: hostnamectl\\\n
@@ -1512,6 +1515,7 @@
 - cmd: n nano.fish
 - cmd: l | wc -l
 - cmd: cp bup vtbup
+- cmd: n vtbup
 - cmd: cp gpush.sh gstatus.sh
 - cmd: n gstatus.sh
 - cmd: pacman -Q pypr
@@ -1541,13 +1545,13 @@
 - cmd: n gp
 - cmd: y mpv
 - cmd: homstnamectl
+- cmd: n cpbh.sh
 - cmd: ./cpbh.sh
 - cmd: n env-
 - cmd: q
 - cmd: strings /sys/firmware/acpi/tables/DSDT | grep -i 'windows ' | sort | tail -1
 - cmd: s strings /sys/firmware/acpi/tables/DSDT | grep -i 'windows ' | sort | tail -1
 - cmd: ./bin/paccach.sh
-- cmd: ctl status nvidia-resume.service
 - cmd: ctl enable --now nvidia-persistenced.service
 - cmd: ctl status nvidia-persistenced.service
 - cmd: pi  hwinfo
@@ -1563,7 +1567,8 @@
 - cmd: sn /usr/share/glvnd/egl_vendor.d/10_nvidia.json
 - cmd: sn /etc/libva.conf
 - cmd: pss optimus-manager
-- cmd: rr dotfiles/
+- cmd: mv dotfiles/ atest/
+- cmd: git clone https://github.com/angelogreko888/dotfiles
 - cmd: comm fish_history ~/.local/share/fish/fish_history
 - cmd: cd  bin
 - cmd: sudo passwd vago
@@ -1573,6 +1578,7 @@
 - cmd: rr 2.10/
 - cmd: cd 3.0/
 - cmd: xdg-settings set default-web-browser librewolf.desktop
+- cmd: r
 - cmd: /bin/date -d today '+%m-%d-%Y_%I:%M-%p'
 - cmd: /bin/date  today '+%m-%d-%Y_%I:%M-%p'
 - cmd: /bin/date
@@ -1640,7 +1646,6 @@
 - cmd: ll /etc/udev/rules.d/50-brother-brscan4-libsane-type1.rules
 - cmd: ctl avahi-daemon.service
 - cmd: ctl status avahi-daemon.service
-- cmd: ctl status systemd-resolved.service
 - cmd: pss lsof
 - cmd: pi lsof
 - cmd: lsof -i -P -n | grep 5353
@@ -1735,7 +1740,6 @@
 - cmd: pacman -Q | rg intel
 - cmd: pacman -Q | rg video
 - cmd: pacman -Q | rg mesa
-- cmd: ctl status suspend.target
 - cmd: cat /proc/acpi/wakeup |rg GPP0
 - cmd: sn /usr/lib/systemd/system/systemd-suspend.service.d/nvidia.conf
 - cmd: sn /usr/lib/systemd/system/systemd-homed.service.d/nvidia.conf
@@ -1769,23 +1773,19 @@
 - cmd: y gtk-theme
 - cmd: pui gtk-theme-orion
 - cmd: s journalctl -b  | rg suspend
+- cmd: n r
 - cmd: cp ~/dotfiles/00inst/60stow.sh .
-    - ~/dotfiles/00inst/60stow.sh
-    - .
 - cmd: nano 60stow.sh
-    - 60stow.sh
 - cmd: ./60stow.sh
 - cmd: pss extension-manager
 - cmd: pss extensions-manager
 - cmd: pss extentions-manager
 - cmd: pss manager
-- cmd: y extension-manager
 - cmd: dump /org/gnome/shell/extensions/
 - cmd: dconf dump /org/gnome/shell/extensions/
+- cmd: dconf dump /org/gnome/shell/extensions/ > ext.txt
 - cmd: cat ext.txt
-    - ext.txt
 - cmd: dconf load /org/gnome/shell/extensions/ < ext.txt
-- cmd: r
 - cmd: pi nwg-look
 - cmd: w nautilus
 - cmd: pui nautilus
@@ -1797,102 +1797,138 @@
 - cmd: brightnessctl set max
 - cmd: brightnessctl set 800
 - cmd: dconf reset -f /
-    - /
 - cmd: nwg-look
-- cmd: cc
-- cmd: cd foot/
-- cmd: n foot.ini
-- cmd: pp
 - cmd: nemo
 - cmd: w nemo
 - cmd: /usr/bin/nemo
-- cmd: b
 - cmd: n .nanorc
-    - .nanorc
 - cmd: pi nano-syntax-highlighting
-- cmd: n bup
-- cmd: cdc
-- cmd: mv vago/ sync-vago/
 - cmd: mv vago/ oldvago/
-    - vago/
 - cmd: mv sync-vago/ oldsync-vago/
-    - sync-vago/
 - cmd: n vt
 - cmd: md vago
-- cmd: md sync-vago
-- cmd: cd -
 - cmd: ./vtbup
-- cmd: cd /vt
-- cmd: cd sync-vago/
-- cmd: cd vago/
 - cmd: cd pc
-    - pc
 - cmd: n vtbup.desktop
-- cmd: foot sh -c
 - cmd: foot sh -c 'sudo pacman -Syy'
-- cmd: u
-- cmd: notify-send "done"
-- cmd: hostnamectl | rg Model | awk '{print $3}'
 - cmd: mv vtbup.desktop poweroff.desktop
-    - vtbup.desktop
 - cmd: ch poweroff.desktop
-    - poweroff.desktop
-- cmd: ggg
 - cmd: git push
-- cmd: md atest
-- cmd: mv dotfiles/ atest/
-- cmd: git clone https://github.com/angelogreko888/dotfiles
-- cmd: ch gitpull.desktop
-    - gitpull.desktop
 - cmd: w foot
 - cmd: /usr/bin/foot
 - cmd: ping -c1 www.google.com
-- cmd: ./gitpull.sh
 - cmd: h | rg set
 - cmd: h | rg gtk
 - cmd: n .config/mimeapps.list
-    - .config/mimeapps.list
 - cmd: xdg-settings set default-terminal footclient.desktop
 - cmd: xdg-settings --help
 - cmd: xdg-settings --list
 - cmd: w dex
-- cmd: bash
-- cmd: n.
-- cmd: ch poweroff.sh
-    - poweroff.sh
-- cmd: n cpbh.sh
-- cmd: n vtbup
-- cmd: n backup.sh
 - cmd: ./poweroff.desktop
-- cmd: n poweroff.desktop
-- cmd: cd
+- cmd: ch poweroff.sh
 - cmd: n gi
 - cmd: cp gitpull.sh.bup
 - cmd: cp gitpull.sh gitpull.sh.bup
-    - gitpull.sh
-- cmd: cd .local/share/applications/
-- cmd: n gitpull.desktop
-- cmd: ./gitpull.desktop
 - cmd: rm gitpull.sh
 - cmd: mv gitpull.sh.bup gitpull.sh
-    - gitpull.sh.bup
-- cmd: n gitpull.sh
 - cmd: w footclient
 - cmd: footserver
-- cmd: foot
 - cmd: footclient
 - cmd: y gnome-defaults-list
 - cmd: sn /usr/share/applications/gnome-mimeapps.list
-    - /usr/share/applications/gnome-mimeapps.list
-- cmd: cdf
 - cmd: md gnome
 - cmd: cd gnome/
-    - gnome/
-- cmd: dconf dump /org/gnome/shell/extensions/ > ext.txt
-- cmd: l
-- cmd: gg
-- cmd: ff
-- cmd: g
-- cmd: cd bin
-- cmd: n poweroff.sh
 - cmd: ./poweroff.sh
+- cmd: ctl status suspend.target
+- cmd: n 990active.sh
+    - 990active.sh
+- cmd: ctl status systemd-homed.service
+- cmd: ctl enable systemd-homed.service
+- cmd: ctl status nvidia-suspend.service
+- cmd: ctl status nvidia-hibernate.service
+- cmd: ctl status nvidia-resume.service
+- cmd: pi paccache
+- cmd: pss paccache
+- cmd: y paccache
+- cmd: ctl status paccache.timer
+- cmd: ctl enable paccache.timer
+- cmd: cd 00
+- cmd: n gaur.lst
+    - gaur.lst
+- cmd: ctl start apparmor.service
+- cmd: ctl status apparmor.service
+- cmd: ctl status systemd-resolved.service
+- cmd: cd 00inst/
+- cmd: ll
+- cmd: md atest
+- cmd: ../misc/
+- cmd: n installation
+- cmd: pacman -Qqe | grep -v "$(pacman -Qqm)" >pacman.lst
+- cmd: rr dotfiles/
+- cmd: comm pacman.lst ~/dotfiles/00inst/gpac.lst
+    - pacman.lst
+    - ~/dotfiles/00inst/gpac.lst
+- cmd: sort pacman.lst -o pacman.lst
+- cmd: cp ~/dotfiles/00inst/gpac.lst  .
+    - .
+- cmd: sort gpac.lst -o gpac.lst
+    - gpac.lst
+- cmd: comm pacman.lst gpac.lst
+- cmd: w ufw
+- cmd: pacman -Qqm >aut.lst
+- cmd: cp ~/dotfiles/00inst/gaur.lst .
+    - ~/dotfiles/00inst/gaur.lst
+- cmd: sort gaur.lst -o gaur.lst
+- cmd: sort aut.lst -o aut.lst
+    - aut.lst
+- cmd: comm gaur.lst aut.lst
+- cmd: cd atest/
+- cmd: rm *
+- cmd: ff
+- cmd: cpi q
+- cmd: cdf
+- cmd: pi terminator
+- cmd: b
+- cmd: pui terminator
+- cmd: pd
+- cmd: yd
+- cmd: sn /etc/pacman.conf
+- cmd: u
+- cmd: rm gitpull.desktop
+    - gitpull.desktop
+- cmd: foot
+- cmd: n freetube.desktop
+    - freetube.desktop
+- cmd: cp gitpull.sh ggitpull.sh
+    - gitpull.sh
+- cmd: ./ggitpull.sh
+- cmd: cc
+- cmd: cd autostart/
+    - autostart/
+- cmd: ch -x gitpull.desktop
+- cmd: cp gitpull.sh ~/.config/autostart/
+    - ~/.config/autostart/
+- cmd: cp gitpull.desktop ~/.config/autostart/
+- cmd: n ggitpull.sh
+    - ggitpull.sh
+- cmd: gg
+- cmd: n poweroff.sh
+- cmd: cp poweroff.sh ~/atest/
+    - poweroff.sh
+    - ~/atest/
+- cmd: cd /usr/share/minecraft/
+- cmd: cd /usr/share/
+    - /usr/share/
+- cmd: ch gitpull.desktop
+- cmd: l
+- cmd: bash gitpull.desktop
+- cmd: bash
+- cmd: ./gitpull.desktop
+- cmd: g
+- cmd: ggg
+- cmd: cd bin
+- cmd: ./gitpull.sh
+- cmd: cd
+- cmd: cd .local/share/applications/
+- cmd: n gitpull.desktop
+- cmd: n poweroff.desktop

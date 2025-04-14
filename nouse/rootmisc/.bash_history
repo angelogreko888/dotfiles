@@ -2106,3 +2106,6 @@ cp ~/dotfiles/nouse/rootmisc/.bash_history ~/
 cd .config/fish/
 rm config.fish fish_variables 
 ./gitpull.desktop 
+./99active.sh 
+sudo usermod -aG wheel vago
+ctl enable gdm

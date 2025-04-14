@@ -13,6 +13,7 @@ do
 sleep 2
 done
 
+sleep 10
   cd ~/dotfiles 
   git pull;
   

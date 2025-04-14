@@ -1,0 +1,14 @@
+env = HYPRLAND_TRACE=1
+env = HYPRLAND_NO_RT=1
+env = HYPRLAND_NO_SD_NOTIFY=1
+env = HYPRLAND_NO_SD_VARS=1 
+env = HYPRLAND_CONFIG=~/.config/hypr
+
+env = AQ_TRACE=1 
+env = AQ_DRM_DEVICES=/dev/dri/card1:/dev/dri/card0
+env = AQ_MGPU_NO_EXPLICIT=1
+env = AQ_NO_MODIFIERS=1
+
+export GTK_THEME=Arc-Dark
+export XCURSOR_THEME=radioactive-yellow
+export XCURSOR_SIZE=24

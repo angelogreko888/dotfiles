@@ -12,6 +12,9 @@ rm ~/.bashrc
 cd ~/dotfiles
 
 stow=(
+applications
+backgrounds
+gnome-shell
 bin
 fastfetch
 fish

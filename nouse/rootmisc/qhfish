@@ -1932,3 +1932,9 @@
 - cmd: cd .local/share/applications/
 - cmd: n gitpull.desktop
 - cmd: n poweroff.desktop
+    - 00inst/
+- cmd: rn ggaur.lst ggpac.lst
+    - ggaur.lst
+    - ggpac.lst
+- cmd: rm ggaur.lst ggpac.lst
+    - ~/bin/

@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=sync
+Exec=bash /home/vago/bin/sync.sh
+Terminal=false
+Type=Application
+Icon=stock_shuffle.png

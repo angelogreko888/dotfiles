@@ -1029,7 +1029,6 @@
 - cmd: pui hyprshade
 - cmd: n tee
 - cmd: rm a b tee
-- cmd: n sync.sh
 - cmd: pi hyprshade
 - cmd: y hyprshade
 - cmd: ctl status hyprshade
@@ -1154,7 +1153,6 @@
 - cmd: du -f
 - cmd: md sync-vago
 - cmd: mv vago/ sync-vago/
-- cmd: cd ~/bin/
 - cmd: cd sync-vago/
 - cmd: mv librewolf/ .librewolf/
 - cmd: rr git
@@ -1392,7 +1390,6 @@
 - cmd: yui extension-manager gnome-shell gnome-control-center gnome-tweaks gdm sddm
 - cmd: yui extension-manager gnome-shell gnome-control-center gdm sddm
 - cmd: yui extension-manager gnome-shell gnome-control-center gdm sddm gnome-shell-extension-dash-to-panel gnome-shell-extensions
-- cmd: n paccach.sh
 - cmd: sudo pacman -Rdd lib32-nvidia-utils-tkg lib32-opencl-nvidia-tkg nvidia-dkms-tkg nvidia-egl-wayland-tkg nvidia-settings-tkg nvidia-utils-tkg opencl-nvidia-tkg
 - cmd: pacman -Q nvidia
 - cmd: sudo pacman -Rdd lib32-nvidia-utils-tkg lib32-opencl-nvidia-tkg nvidia-settings-tkg nvidia-utils-tkg opencl-nvidia-tkg
@@ -1459,7 +1456,6 @@
 - cmd: //
 - cmd: rr bin
 - cmd: cd brows/
-- cmd: git gc
 - cmd: sudo sh -c 'echo 1 >/proc/sys/vm/drop_caches'
 - cmd: echo "echo 1 > /proc/sys/vm/drop_caches" | sudo sh
 - cmd: sudo sh -c 'echo 3 >/proc/sys/vm/drop_caches'\n
@@ -1625,8 +1621,6 @@
 - cmd: pi freetube-bin
 - cmd: y freetube-bin
 - cmd: yui freetube-bin
-- cmd: sudo paccache -ruk0
-- cmd: sudo paccache -rk1
 - cmd: n 40pipewire.sh
 - cmd: sudo pacman -S pipewire pipewire-alsa pipewire-jack pipewire-pulse
 - cmd: sudo journalctl -b | curl -F 'file=@-' 0x0.st
@@ -1858,8 +1852,6 @@
 - cmd: ctl start apparmor.service
 - cmd: ctl status apparmor.service
 - cmd: ctl status systemd-resolved.service
-- cmd: cd 00inst/
-- cmd: ll
 - cmd: md atest
 - cmd: ../misc/
 - cmd: n installation
@@ -1882,18 +1874,12 @@
 - cmd: sort aut.lst -o aut.lst
     - aut.lst
 - cmd: comm gaur.lst aut.lst
-- cmd: cd atest/
 - cmd: rm *
 - cmd: ff
 - cmd: cpi q
-- cmd: cdf
 - cmd: pi terminator
-- cmd: b
 - cmd: pui terminator
-- cmd: pd
-- cmd: yd
 - cmd: sn /etc/pacman.conf
-- cmd: u
 - cmd: rm gitpull.desktop
     - gitpull.desktop
 - cmd: foot
@@ -1902,7 +1888,6 @@
 - cmd: cp gitpull.sh ggitpull.sh
     - gitpull.sh
 - cmd: ./ggitpull.sh
-- cmd: cc
 - cmd: cd autostart/
     - autostart/
 - cmd: ch -x gitpull.desktop
@@ -1911,8 +1896,6 @@
 - cmd: cp gitpull.desktop ~/.config/autostart/
 - cmd: n ggitpull.sh
     - ggitpull.sh
-- cmd: gg
-- cmd: n poweroff.sh
 - cmd: cp poweroff.sh ~/atest/
     - poweroff.sh
     - ~/atest/
@@ -1920,21 +1903,61 @@
 - cmd: cd /usr/share/
     - /usr/share/
 - cmd: ch gitpull.desktop
-- cmd: l
 - cmd: bash gitpull.desktop
 - cmd: bash
 - cmd: ./gitpull.desktop
-- cmd: g
-- cmd: ggg
-- cmd: cd bin
 - cmd: ./gitpull.sh
-- cmd: cd
-- cmd: cd .local/share/applications/
-- cmd: n gitpull.desktop
 - cmd: n poweroff.desktop
-    - 00inst/
 - cmd: rn ggaur.lst ggpac.lst
     - ggaur.lst
     - ggpac.lst
 - cmd: rm ggaur.lst ggpac.lst
-    - ~/bin/
+- cmd: cd ~/bin/
+- cmd: n poweroff.sh
+- cmd: n 60stow.sh
+    - 60stow.sh
+- cmd: rm hypr
+- cmd: rm hypr/*
+- cmd: git add
+- cmd: cd atest/
+- cmd: n sync.sh
+- cmd: cd .local/share/applications/
+- cmd: ll
+- cmd: n gitpull.desktop
+- cmd: ch sync.desktop
+    - sync.desktop
+- cmd: mv sync.desktop ~/.local/share/applications
+    - ~/.local/share/applications
+- cmd: n sync.desktop
+- cmd: stow applications/
+    - applications/
+- cmd: stow backgrounds/
+    - backgrounds/
+- cmd: stoe gnome-shell/
+    - gnome-shell/
+- cmd: stow gnome-shell/
+- cmd: n 66stow.sh
+    - 66stow.sh
+- cmd: cc
+- cmd: l
+- cmd: dconf dump /org/gnome/shell/extensions/ > ~/dotfiles/gnome/ext.txt
+- cmd: git add .
+- cmd: ggg
+- cmd: gg
+- cmd: b
+- cmd: git gc
+- cmd: cd
+- cmd: g
+- cmd: cd bin
+- cmd: n paccach.sh
+- cmd: sudo paccache -ruk0
+- cmd: sudo paccache -rk1
+- cmd: pd
+- cmd: yd
+- cmd: u
+- cmd: cdf
+- cmd: cd 00inst/
+- cmd: n au
+- cmd: pi brightnessctl
+    - misc/
+    - qpacman.lst

@@ -54,7 +54,12 @@
         "physicalmemory",
         "swap",
         "disk",
-        "battery",
+        "btrfs",
+        "zpool",
+        {
+            "type": "battery",
+            "temp": true
+        },
         "poweradapter",
         "player",
         "media",
@@ -65,7 +70,12 @@
         {
             "type": "localip",
             "showIpv6": true,
-            "showMac": true
+            "showMac": true,
+            "showSpeed": true,
+            "showMtu": true,
+            "showLoop": true,
+            "showFlags": true,
+            "showAllIps": true
         },
         "dns",
         "wifi",
@@ -80,6 +90,8 @@
         "sound",
         "camera",
         "gamepad",
+        "mouse",
+        "keyboard",
         {
           "type": "weather",
           "timeout": 1000
@@ -90,6 +102,7 @@
             "type": "physicaldisk",
             "temp": true
         },
+        "tpm",
         "version",
         "break",
         "colors"

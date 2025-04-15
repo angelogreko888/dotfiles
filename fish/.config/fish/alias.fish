@@ -4,6 +4,18 @@ alias wj='curl wttr.in/jerusalem'
 alias wp='curl wttr.in/paphos'
 #alias xx='_x() { curl https://cht.sh/$1 ;}; _x'
 
+alias ui="sudo apt purge -y && sudo apt autoremove -y"
+alias i="sudo apt install "
+alias ar="sudo apt autoremove -y"
+alias upu='sudo apt update'
+alias upl='sudo apt list --upgradable'
+alias upg='sudo apt full-upgrade -y'
+alias upf='flatpak update -y'
+#alias up="sudo apt update && sudo apt dist-upgrade -y && sudo apt autoremove -y && flatpak update -y"
+alias u="sudo apt update && sudo apt dist-upgrade -y && sudo apt autoremove -y"
+alias ifb='sudo apt --fix-broken install'
+alias ss='sudo apt search'
+
 alias c='clear'
 alias r='ranger'
 alias ff='fastfetch'
@@ -11,8 +23,6 @@ alias ff='fastfetch'
 alias n="nano"
 alias s="sudo"
 alias sn="sudo nano"
-alias v='vim'
-alias sv='sudo vim'
 
 alias rr="rm -rf"
 alias srr="sudo rm -rf"
@@ -25,16 +35,14 @@ alias w="which"
 alias cp="cp -i"
 alias mv='mv -i'
 
-alias l='eza -a --color always --long --git --no-filesize --icons always --no-time --no-user'
+alias l='exa -a --color always --long --git --no-filesize --icons  --no-time --no-user'
 alias ll='exa -lha'
 alias lk='lsblk'
 
 alias bb="source ~/.bashrc"
 alias n.="nano ~/.bashrc"
 alias nb="nano ~/.bash_aliases"
-
-alias v.="vim ~/.bashrc"
-alias vb="vim ~/.bash_aliases"
+alias nsl='sudo nano /etc/apt/sources.list'
 
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -58,6 +66,7 @@ alias ctl="sudo systemctl"
 alias xopen='xdg-open'
 alias spo='sudo systemctl poweroff'
 alias srb='sudo reboot'
+alias si='sudo update-initramfs -u'
 
 alias gc='git clone'
 alias gps='git push -u origin main'
@@ -74,8 +83,7 @@ alias ap='apropos'
 alias b='btop'
 alias t='htop'
 alias nu='ncdu'
-alias th='sudo -sE thunar'
-alias nm='sudo -sE nemo'
+
 
 alias ts='sudo -sE timeshift-gtk'
 alias tsc='sudo timeshift --create'
@@ -83,7 +91,9 @@ alias tsr='sudo timeshift --restore'
 alias tsl='sudo timeshift --list'
 alias tss='~/bin/tshift.sh'
 
-alias gu='sudo -sE /sbin/gufw-pkexec'
+alias uf='sudo -sE /sbin/gufw-pkexec'
+
+alias gu='sudo update-grub'
 
 alias ch='chmod +x'
 alias co='sudo chown vago:'
@@ -94,45 +104,10 @@ alias gd='sudo -sE gnome-disks'
 alias ggp='sudo -sE gparted'
 alias gw='sudo -sE usbimager'
 
-alias ug='sudo grub-mkconfig -o /boot/grub/grub.cfg'
-
-alias cpk='du -sh /var/cache/pacman/pkg/'
-alias cpd='sudo pacman -Scc && yay -Scc'
-
 alias ccc='du -sh ~/.cache/'
 alias ccd='rm -rf ~/.cache/*'
 
-alias pi='sudo pacman -Syu --needed'
-alias pss='sudo pacman -Ss'
-alias pu='sudo pacman -Syyu'
-alias pud='sudo pacman -Syu'
-alias pui='sudo pacman -Rns'
-alias psl='sudo nano /etc/pacman.conf'
-alias pdg='sudo pacman -U'
-alias pd='sudo pacman -Qdtq | sudo pacman -Rns'
-#alias pd='sudo pacman -Rns $(pacman -Qqdt)'
-alias tm='sudo fstrim -av'
 
-alias pm='sudo nano /etc/pacman.d/mirrorlist'
-alias pl='sudo cat /var/log/pacman.log'
-
-alias u='sudo pacman -Syyu --noconfirm && yay -Syyu --noconfirm'
-
-alias y='yay'
-alias yi='yay -S --noconfirm'
-alias ys='yay -Ss'
-alias yu='yay -Syyu'
-alias yd='yay -Yc'
-alias yui='yay -Rns'
-
-alias hh='nano ~/.config/hypr/hyprland.conf'
-alias nwc='nano ~/.config/waybar/config'
-alias nws='nano ~/.config/waybar/style.css'
-
-alias chh='cd ~/.config/hypr/'
-alias cdw='cd ~/.config/waybar/'
-
-alias pp='hyprprop WM_CLASS'
 
 alias cf='nano  ~/.config/fish/config.fish'
 alias cpi='~/bin/cpinst.sh'

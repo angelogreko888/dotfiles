@@ -9,4 +9,4 @@ sleep 0.5
 sleep 0.5
 ~/bin/gpush.sh
 sleep 0.5
-poweroff
+#poweroff

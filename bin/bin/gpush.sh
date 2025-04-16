@@ -11,7 +11,7 @@
 	rsync settings.db  ~/dotfiles/freetube/.config/FreeTube/settings.db
 
 	cd ~/dotfiles
-	git add * && git commit -m "save" && git push -u origin main
+	git add . && git commit -m "save" && git push -u origin main
 
   else
   echo exit

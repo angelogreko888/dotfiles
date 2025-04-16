@@ -140,7 +140,7 @@ alias bh='~/bin/bh'
 alias ngr='sudo nano /etc/default/grub'
 alias ftr='systemctl daemon-reload'
 alias ft='sudo nano /etc/fstab'
-alias ba='sudo nano  /boot/loader/entries/arch.conf'
+alias ba='sudo nano  /boot/loader/entries/2025-04-16_12-24-46_linux.conf'
 alias fh='nano  ~/.local/share/fish/fish_history'
 alias af='nano ~/.config/fish/alias.fish'
 

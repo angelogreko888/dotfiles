@@ -2109,3 +2109,21 @@ rm config.fish fish_variables
 ./99active.sh 
 sudo usermod -aG wheel vago
 ctl enable gdm
+s pacman -S nwg-look
+nwg-look
+gdd
+ggd
+pss adwaita-dark
+pss adwaita
+pss arc-dark
+pss arc-gtk
+pss gtk-arc
+pss arc
+pss arc-gtk-theme
+sudo usermod -aG wheel "$(whoami)"
+sudo usermod -aG users "$(whoami)"
+sudo usermod -aG input "$(whoami)"
+sudo firecfg
+cd /boot/loader/entries/
+cd 2025-04-16_12-24-46_linux.conf 
+sn 2025-04-16_12-24-46_linux.conf 

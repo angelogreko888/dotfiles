@@ -1,28 +1,28 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="org.gnome.tweaks.desktop" score="34" last-seen="1744761048"/>
-    <application id="org.gnome.TextEditor.desktop" score="230" last-seen="1744784708"/>
+    <application id="org.gnome.tweaks.desktop" score="40" last-seen="1744785685"/>
+    <application id="org.gnome.TextEditor.desktop" score="241" last-seen="1744786275"/>
     <application id="org.gnome.Software.desktop" score="2" last-seen="1744760219"/>
-    <application id="org.gnome.Shell.Extensions.desktop" score="101" last-seen="1744784928"/>
+    <application id="org.gnome.Shell.Extensions.desktop" score="139" last-seen="1744785570"/>
     <application id="software-properties-gtk.desktop" score="2" last-seen="1744758374"/>
     <application id="org.gnome.FileRoller.desktop" score="4" last-seen="1744748791"/>
     <application id="anydesk.desktop" score="0" last-seen="1744748576"/>
-    <application id="foot.desktop" score="193" last-seen="1744784967"/>
+    <application id="foot.desktop" score="284" last-seen="1744786273"/>
     <application id="org.gnome.Terminal.Preferences.desktop" score="37" last-seen="1744755255"/>
-    <application id="com.mattjakeman.ExtensionManager.desktop" score="76" last-seen="1744784970"/>
+    <application id="com.mattjakeman.ExtensionManager.desktop" score="77" last-seen="1744785572"/>
     <application id="nm-connection-editor.desktop" score="4" last-seen="1744754761"/>
-    <application id="nemo.desktop" score="661" last-seen="1744784705"/>
+    <application id="nemo.desktop" score="664" last-seen="1744786197"/>
     <application id="libreoffice25.2-writer.desktop" score="1" last-seen="1744748599"/>
     <application id="org.gnome.Terminal.desktop" score="1159" last-seen="1744760986"/>
     <application id="lxappearance.desktop" score="23" last-seen="1744744056"/>
     <application id="simple-scan.desktop" score="2" last-seen="1744727088"/>
     <application id="org.gnome.DiskUtility.desktop" score="6" last-seen="1744744417"/>
-    <application id="librewolf.desktop" score="960" last-seen="1744784752"/>
+    <application id="librewolf.desktop" score="977" last-seen="1744785765"/>
     <application id="synaptic.desktop" score="108" last-seen="1744760421"/>
     <application id="freetube.desktop" score="14" last-seen="1744782949"/>
     <application id="pavucontrol.desktop" score="5" last-seen="1744727133"/>
-    <application id="org.gnome.Settings.desktop" score="137" last-seen="1744782656"/>
+    <application id="org.gnome.Settings.desktop" score="147" last-seen="1744785769"/>
     <application id="laptop-mode-tools.desktop" score="1" last-seen="1744759790"/>
   </context>
 </application-state>

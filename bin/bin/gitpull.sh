@@ -13,8 +13,7 @@ do
 sleep 2
 done
 
-cd ~/dotfiles 
-
+  cd ~/dotfiles 
   exec foot sh -c  'git pull;
   cd ~/dotfiles/freetube/.config/FreeTube/;
   rsync history.db  ~/.config/FreeTube/history.db;

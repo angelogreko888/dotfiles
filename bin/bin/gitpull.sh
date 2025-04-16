@@ -15,7 +15,7 @@ done
 
 cd ~/dotfiles 
 
-  exec gnome-terminal sh --  'git pull;
+  exec foot sh -c  'git pull;
   cd ~/dotfiles/freetube/.config/FreeTube/;
   rsync history.db  ~/.config/FreeTube/history.db;
   rsync playlists.db  ~/.config/FreeTube/playlists.db;

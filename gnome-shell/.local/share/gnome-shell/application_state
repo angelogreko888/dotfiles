@@ -2,23 +2,23 @@
 <application-state>
   <context id="">
     <application id="org.gnome.tweaks.desktop" score="40" last-seen="1744785685"/>
-    <application id="org.gnome.TextEditor.desktop" score="241" last-seen="1744786557"/>
+    <application id="org.gnome.TextEditor.desktop" score="246" last-seen="1744787606"/>
     <application id="org.gnome.Software.desktop" score="2" last-seen="1744760219"/>
     <application id="org.gnome.Shell.Extensions.desktop" score="139" last-seen="1744785570"/>
     <application id="software-properties-gtk.desktop" score="2" last-seen="1744758374"/>
     <application id="org.gnome.FileRoller.desktop" score="4" last-seen="1744748791"/>
     <application id="anydesk.desktop" score="0" last-seen="1744748576"/>
-    <application id="foot.desktop" score="319" last-seen="1744786644"/>
+    <application id="foot.desktop" score="388" last-seen="1744787461"/>
     <application id="org.gnome.Terminal.Preferences.desktop" score="37" last-seen="1744755255"/>
     <application id="com.mattjakeman.ExtensionManager.desktop" score="77" last-seen="1744785572"/>
     <application id="nm-connection-editor.desktop" score="4" last-seen="1744754761"/>
-    <application id="nemo.desktop" score="678" last-seen="1744786645"/>
+    <application id="nemo.desktop" score="690" last-seen="1744787600"/>
     <application id="libreoffice25.2-writer.desktop" score="1" last-seen="1744748599"/>
     <application id="org.gnome.Terminal.desktop" score="1159" last-seen="1744760986"/>
     <application id="lxappearance.desktop" score="23" last-seen="1744744056"/>
     <application id="simple-scan.desktop" score="2" last-seen="1744727088"/>
     <application id="org.gnome.DiskUtility.desktop" score="6" last-seen="1744744417"/>
-    <application id="librewolf.desktop" score="977" last-seen="1744786601"/>
+    <application id="librewolf.desktop" score="1019" last-seen="1744787393"/>
     <application id="synaptic.desktop" score="108" last-seen="1744760421"/>
     <application id="freetube.desktop" score="14" last-seen="1744782949"/>
     <application id="pavucontrol.desktop" score="5" last-seen="1744727133"/>

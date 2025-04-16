@@ -1,5 +1,5 @@
 [auto-move-windows]
-application-list=['org.gnome.Terminal.desktop:1', 'librewolf.desktop:2', 'nemo.desktop:3', 'foot.desktop:1']
+application-list=['org.gnome.Terminal.desktop:1', 'librewolf.desktop:2', 'nemo.desktop:3', 'foot.desktop:1', 'anydesk.desktop:9', 'freetube.desktop:4', 'libreoffice25.2-writer.desktop:4', 'mpv.desktop:5', 'org.gnome.Software.desktop:6', 'synaptic.desktop:4']
 
 [dash-to-panel]
 animate-appicon-hover-animation-extent={'RIPPLE': 4, 'PLANK': 4, 'SIMPLE': 1}

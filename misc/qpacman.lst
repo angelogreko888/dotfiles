@@ -41,7 +41,6 @@ intel-ucode
 iwd
 jdk-openjdk
 kanshi
-kitty
 less
 libeatmydata
 libpulse
@@ -89,7 +88,6 @@ timeshift
 ttf-jetbrains-mono
 ttf-jetbrains-mono-nerd
 usbutils
-vim
 waybar
 wget
 wireless_tools

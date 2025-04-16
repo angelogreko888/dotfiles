@@ -1,4 +1,3 @@
-- cmd: cd nouse/
 - cmd: cd rootmisc/
 - cmd: n mirrorlist
 - cmd: s reflector --protocol https --age 12 --country Cyprus --sort rate --number 10 --verbose
@@ -91,7 +90,6 @@
 - cmd: cd XiaomiADBFastbootTools/
 - cmd: n apps.yml
 - cmd: cd .nv
-- cmd: cg
 - cmd: git pull
 - cmd: hyprland
 - cmd: h | rg open
@@ -184,7 +182,6 @@
 - cmd: y wlr00ts-eglstreams
 - cmd: sway
 - cmd: y sway-git
-- cmd: foot
 - cmd: yui sway-git
 - cmd: lo sway
 - cmd: cd /etc/pam.d/
@@ -372,8 +369,6 @@
 - cmd: n mbr.sh
 - cmd: rm befi
 - cmd: ע
-- cmd: ctl status nvidia-suspend.service
-- cmd: ctl status nvidia-hibernate.service
 - cmd: cd active.sh
 - cmd: nvidia-smi --query-gpu=memory.total --format=csv,noheader,nounits
 - cmd: w sh
@@ -457,7 +452,6 @@
 - cmd: s mkinitcpio -P
 - cmd: n kanshi
 - cmd: n
-- cmd: ts
 - cmd: n active.sh
 - cmd: n nvidia.sh
 - cmd: h | rg pi
@@ -896,7 +890,6 @@
 - cmd: cd -
 - cmd: su -
 - cmd: ch c
-- cmd: cd
 - cmd: n .local/share/fish/fish_history
 - cmd: t
 - cmd: y usbimager\n
@@ -928,7 +921,6 @@
 - cmd: sn /etc/pacman.d/mirrorlist
 - cmd: s  reflector --latest 5 --sort rate  --country Greece,Tr,Israel,Germany,'United Kingdom'
 - cmd: n 020confpac-usr.sh
-- cmd: n 090nvidia.sh
 - cmd: n 20pac.sh
 - cmd: n 30aur.sh
 - cmd: n aur.lst
@@ -943,8 +935,6 @@
 - cmd: USB Image Writer
 - cmd: sudo -sE mintstick
 - cmd: sudo -sE mintstick -m format
-- cmd: af
-- cmd: fish
 - cmd: mf
 - cmd: mi
 - cmd: n fish_history
@@ -1088,7 +1078,6 @@
 - cmd: cd uwsm/
 - cmd: s journalctl -b -1
 - cmd: pss  pambase
-- cmd: ctl status systemd-homed.service
 - cmd: ctl enable --now systemd-homed.service
 - cmd: sn /etc/systemd/system.conf.d/watchdog.conf
 - cmd: lsmod | grep wdt
@@ -1149,7 +1138,6 @@
 - cmd: tss
 - cmd: cd  bin/
 - cmd: sudo timeshift --create
-- cmd: tsl
 - cmd: n tshift.sh
 - cmd: du -f
 - cmd: mv vago/ sync-vago/
@@ -1167,7 +1155,6 @@
 - cmd: y libva-utils
 - cmd: cd nvidia-all/
 - cmd: h | grep ctl
-- cmd: ctl status paccache.timer
 - cmd: paccache -ruk0
 - cmd: s paccache -ruk0
 - cmd: s paccache -rk1
@@ -1547,7 +1534,6 @@
 - cmd: strings /sys/firmware/acpi/tables/DSDT | grep -i 'windows ' | sort | tail -1
 - cmd: s strings /sys/firmware/acpi/tables/DSDT | grep -i 'windows ' | sort | tail -1
 - cmd: ./bin/paccach.sh
-- cmd: ctl status nvidia-resume.service
 - cmd: ctl enable --now nvidia-persistenced.service
 - cmd: ctl status nvidia-persistenced.service
 - cmd: pi  hwinfo
@@ -1643,7 +1629,6 @@
 - cmd: ll /etc/udev/rules.d/50-brother-brscan4-libsane-type1.rules
 - cmd: ctl avahi-daemon.service
 - cmd: ctl status avahi-daemon.service
-- cmd: ctl status systemd-resolved.service
 - cmd: pss lsof
 - cmd: pi lsof
 - cmd: lsof -i -P -n | grep 5353
@@ -1841,14 +1826,12 @@
 - cmd: md gnome
 - cmd: cd gnome/
 - cmd: n 990active.sh
-- cmd: ctl enable systemd-homed.service
 - cmd: pi paccache
 - cmd: pss paccache
 - cmd: y paccache
 - cmd: ctl enable paccache.timer
 - cmd: n gaur.lst
 - cmd: ctl start apparmor.service
-- cmd: ctl status apparmor.service
 - cmd: pacman -Qqe | grep -v "$(pacman -Qqm)" >pacman.lst
 - cmd: comm pacman.lst ~/dotfiles/00inst/gpac.lst
 - cmd: sort pacman.lst -o pacman.lst
@@ -1902,7 +1885,6 @@
 - cmd: pi libeatmydata
 - cmd: md vago
 - cmd: ..
-- cmd: b
 - cmd: md misc
 - cmd: cd /
 - cmd: co vt
@@ -1911,8 +1893,6 @@
 - cmd: cd vt
 - cmd: md sync-vago
 - cmd: n gpush.sh
-- cmd: cd nouse/hyprland/00inst/
-    - nouse/hyprland/00inst/
 - cmd: ./800ftube.sh
 - cmd: ./cpbh.sh
 - cmd: ./gpush.sh
@@ -1926,7 +1906,6 @@
 - cmd: n power_menu.xml
     - power_menu.xml
 - cmd: n config
-- cmd: cd /vt
 - cmd: cd sync-vago/
 - cmd: cd vago/
 - cmd: cdc
@@ -1935,10 +1914,7 @@
 - cmd: cp -r vago/ ~/
     - vago/
     - ~/
-- cmd: n poweroff.sh
-- cmd: cdf
 - cmd: cd misc/
-- cmd: l
 - cmd: n qpacman.lst
 - cmd: pss grim
 - cmd: pui wofi grim dolphin
@@ -1948,10 +1924,65 @@
 - cmd: sn /etc/pacman.conf -l
 - cmd: u
 - cmd: cd ~/bin
-- cmd: g
 - cmd: n cpbh.sh
 - cmd: pss rgrep
 - cmd: pss grep
 - cmd: pi ripgrep
 - cmd: cd bin
 - cmd: ./poweroff.sh
+- cmd: n poweroff.sh
+- cmd: cd /boot/loader/entries/
+    - /boot/loader/entries/
+- cmd: af
+- cmd: fish
+- cmd: ba
+- cmd: cd nouse/hyprland/00inst/
+    - nouse/hyprland/00inst/
+- cmd: n 090nvidia.sh
+- cmd: bootctl update
+- cmd: s bootctl update
+- cmd: ctl status systemd-boot-update.service
+- cmd: ctl enable systemd-boot-update.service
+- cmd: ctl start systemd-boot-update.service
+- cmd: b
+- cmd: ts
+- cmd: cd /vt
+- cmd: md timeshift
+- cmd: tsl
+- cmd: cg
+- cmd: git clone https://github.com/JaKooLit/Hyprland-Dots/tree/main/config/swaync
+- cmd: git clone https://github.com/JaKooLit/Hyprland-Dots/
+- cmd: cd Hyprland-Dots/
+    - Hyprland-Dots/
+- cmd: cd config/swaync/
+    - config/swaync/
+- cmd: cp -r icons/ ~/dotfiles/waybar/.config/waybar/
+    - icons/
+    - ~/dotfiles/waybar/.config/waybar/
+- cmd: n ~/.config/foot/foot.ini
+    - ~/.config/foot/foot.ini
+- cmd: foot
+- cmd: cdf
+- cmd: mv applications/ nouse/
+    - applications/
+    - nouse/
+- cmd: cd nouse/
+- cmd: l
+- cmd: g
+- cmd: cd
+- cmd: cdt status systemd-homed.service
+- cmd: ctl status systemd-homed.service
+- cmd: ctl enable systemd-homed.service
+- cmd: ctl status nvidia-suspend.service
+- cmd: ctl status nvidia-hibernate.service
+- cmd: ctl status nvidia-resume.service
+- cmd: ctl status apparmor.service
+- cmd: ctl enable --now apparmor.service
+- cmd: ctl status paccache.timer
+- cmd: ctl enable --now paccache.timer
+- cmd: ctl status systemd-resolved.service
+- cmd: ctl enable  systemd-resolved.service
+- cmd: ctl status fstrim.timer
+- cmd: ctl enable cups
+- cmd: pui kitty
+- cmd: pui vim

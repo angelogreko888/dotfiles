@@ -57,7 +57,7 @@
 
   "custom/arch": {
         "format": "󰣇",
-        "on-click": "uwsm app -- fuzzel",
+        "on-click": "fuzzel",
         "tooltip": false
     },
 

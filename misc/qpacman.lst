@@ -9,7 +9,6 @@ dbxtool
 dconf-editor
 dkms
 dmidecode
-dolphin
 dosfstools
 dunst
 efibootmgr
@@ -76,6 +75,7 @@ qt6-wayland
 qt6ct
 ranger
 reflector
+ripgrep
 rsync
 sddm
 simple-scan
@@ -94,7 +94,6 @@ waybar
 wget
 wireless_tools
 wireplumber
-wofi
 xdg-desktop-portal-hyprland
 xdg-user-dirs
 xdg-utils

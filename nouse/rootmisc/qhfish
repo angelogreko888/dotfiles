@@ -47,7 +47,6 @@
 - cmd: sn /etc/hostapd/hostapd.conf
 - cmd: sudo ufw route allow in on wlan0 out on enp7s0
 - cmd: s mv hostapd.conf.bup hostapd.conf
-- cmd: n qpacman.lst
 - cmd: pui hostapd
 - cmd: iw list
 - cmd: ctl staus avahi
@@ -105,7 +104,6 @@
 - cmd: n .local/share/applications/mimeapps.list
 - cmd: cd .local/share/applications/
 - cmd: waybar
-- cmd: checkupdates-with-aur
 - cmd: cd /var/log/
 - cmd: n lastlog
 - cmd: cd journal/
@@ -525,7 +523,6 @@
 - cmd: pm
 - cmd: sn /etc/xdg/reflector/reflector.conf
 - cmd: n hyprlock.conf
-- cmd: nwc
 - cmd: lo nvidia-resume.service
 - cmd: sn /usr/lib/systemd/system/nvidia-resume.service
 - cmd: n gtk-2.0
@@ -545,7 +542,6 @@
 - cmd: hyprctl monitors
 - cmd: n monitor.conf
 - cmd: cd kanshi
-- cmd: n config
 - cmd: journalctl -xe | grep -i suspend
 - cmd: cd distro/
 - cmd: co lmde-6-cinnamon-64bit.iso
@@ -633,7 +629,6 @@
 - cmd: h
 - cmd: c
 - cmd: ./
-- cmd: gg
 - cmd: gp
 - cmd: yay -Rns art-rawconverter
 - cmd: nano  a
@@ -665,7 +660,6 @@
 - cmd: sudo  dmseg
 - cmd: history  | rg dm
 - cmd: sudo  dmesg
-- cmd: cd misc/
 - cmd: nano  lpacman.lst
 - cmd: sudo pacman -Rns blueman
 - cmd: disown
@@ -738,7 +732,6 @@
 - cmd: mv -i bepac epac.lst
 - cmd: mv -i nvidia.sh envidia.sh
 - cmd: nano  confpac.sh
-- cmd: ./gpush.sh
 - cmd: cd ~/.config/uwsm/
 - cmd: nano  env
 - cmd: sudo nano  .config/uwsm/env-hyprland
@@ -881,13 +874,10 @@
 - cmd: ug
 - cmd: sn /etc/pacman.conf
 - cmd: n dotfiles/00inst/030boot.sh
-- cmd: sn /etc/pacman.conf -l
 - cmd: n 010confpac.sh
 - cmd: pacman -Q | rg wlroots
 - cmd: pss wlroots
 - cmd: pi wlroots
-- cmd: pd
-- cmd: yd
 - cmd: cd mnt
 - cmd: cd /mnt
 - cmd: srr 6A14-BB2A/ 24DCEFD8DCEFA1F2/ data/
@@ -899,7 +889,6 @@
 - cmd: cd gtk-4.0/.config/gtk-4.0/
 - cmd: n settings.ini
 - cmd: stow gtk-4.0/
-- cmd: cc
 - cmd: cd uwsm
 - cmd: n env
 - cmd: n animations-dynamic.conf
@@ -916,16 +905,13 @@
 - cmd: librewolf://gpu
 - cmd: lk
 - cmd: gd
-- cmd: ff
 - cmd: ./gitpull.sh
-- cmd: u
 - cmd: select  cn in Israel Cyprus;
 - cmd: select  cn in Israel Cyprus
 - cmd: bash
 - cmd: cd ~/atest/
 - cmd: pss ell
 - cmd: pss ell | rg extra/ell
-- cmd: g
 - cmd: cd atest/
 - cmd: ./c
 - cmd: n c
@@ -1038,7 +1024,6 @@
 - cmd: pui xorg-server
 - cmd: pui tumbler
 - cmd: pui ttf-ubuntu-font-family
-- cmd: n gpush.sh
 - cmd: wget -q --spider http://google.com
 - cmd: cd at
 - cmd: hypershade off
@@ -1557,8 +1542,6 @@
 - cmd: n gp
 - cmd: y mpv
 - cmd: homstnamectl
-- cmd: n cpbh.sh
-- cmd: ./cpbh.sh
 - cmd: n env-
 - cmd: q
 - cmd: strings /sys/firmware/acpi/tables/DSDT | grep -i 'windows ' | sort | tail -1
@@ -1676,7 +1659,6 @@
 - cmd: lo freetube
 - cmd: cd FreeTube/
 - cmd: rr FreeTube/
-- cmd: ./800ftube.sh
 - cmd: s journalctl -b
 - cmd: y  mkinitcpio-firmware
 - cmd: y xhci_pci_renesas
@@ -1918,27 +1900,58 @@
 - cmd: n keybind.conf
 - cmd: pss eatmydata
 - cmd: pi libeatmydata
-- cmd: cdc
 - cmd: md vago
-- cmd: cd vago/
 - cmd: ..
-- cmd: cd ~/bin
-- cmd: n poweroff.sh
 - cmd: b
-- cmd: ./poweroff.sh
-- cmd: cd bin
-- cmd: cdf
 - cmd: md misc
-- cmd: cd /vt
 - cmd: cd /
 - cmd: co vt
     - vt
 - cmd: ll
 - cmd: cd vt
 - cmd: md sync-vago
-- cmd: cd sync-vago/
-- cmd: l
-    - poweroff.sh
-    - gpush.sh
+- cmd: n gpush.sh
 - cmd: cd nouse/hyprland/00inst/
     - nouse/hyprland/00inst/
+- cmd: ./800ftube.sh
+- cmd: ./cpbh.sh
+- cmd: ./gpush.sh
+- cmd: checkupdates-with-aur
+- cmd: ff
+- cmd: nwc
+- cmd: gg
+- cmd: cc
+- cmd: cd waybar/
+    - waybar/
+- cmd: n power_menu.xml
+    - power_menu.xml
+- cmd: n config
+- cmd: cd /vt
+- cmd: cd sync-vago/
+- cmd: cd vago/
+- cmd: cdc
+- cmd: cd oldsync-vago/
+    - oldsync-vago/
+- cmd: cp -r vago/ ~/
+    - vago/
+    - ~/
+- cmd: n poweroff.sh
+- cmd: cdf
+- cmd: cd misc/
+- cmd: l
+- cmd: n qpacman.lst
+- cmd: pss grim
+- cmd: pui wofi grim dolphin
+- cmd: pui wofi dolphin
+- cmd: pd
+- cmd: yd
+- cmd: sn /etc/pacman.conf -l
+- cmd: u
+- cmd: cd ~/bin
+- cmd: g
+- cmd: n cpbh.sh
+- cmd: pss rgrep
+- cmd: pss grep
+- cmd: pi ripgrep
+- cmd: cd bin
+- cmd: ./poweroff.sh

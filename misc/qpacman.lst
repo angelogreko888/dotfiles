@@ -86,9 +86,10 @@ stow
 swaybg
 swaync
 timeshift
-ttf-jetbrains-mono
+ttf-font-awesome
 ttf-jetbrains-mono-nerd
 usbutils
+uwsm
 waybar
 wget
 wireless_tools

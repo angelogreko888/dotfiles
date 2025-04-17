@@ -109,7 +109,6 @@
 - cmd: sn 0a077fcb483b4708ae77b568d8e002d2/
 - cmd: cd 0a077fcb483b4708ae77b568d8e002d2/
 - cmd: sn system.journal
-- cmd: ....
 - cmd: cd log/
 - cmd: vws
 - cmd: sudo pacman -Scc
@@ -206,7 +205,6 @@
 - cmd: y uwsm
 - cmd: yui uwsm
 - cmd: ps uwsm
-- cmd: pi uwsm
 - cmd: ps dbxtool
 - cmd: pacman -Si dbxtool
 - cmd: n  ~/dotfiles/00inst/aur.sh
@@ -250,7 +248,6 @@
 - cmd: mv git.sh gitpull.sh
 - cmd: mv gitpull.sh ~/bin
 - cmd: cd 00
-- cmd: n autostart.conf
 - cmd: journalctl
 - cmd: -cd
 - cmd: -cdlf
@@ -330,7 +327,6 @@
 - cmd: comm befi ~/dotfiles/00inst/bpac
 - cmd: pacman -Qtdq
 - cmd: n qhbash
-- cmd: ...
 - cmd: n base-efi.sh
 - cmd: mv base-efi.sh efi.sh
 - cmd: n befi
@@ -565,7 +561,6 @@
 - cmd: lo fish  &| less
 - cmd: cd /etc/fish/conf.d
 - cmd: y oh-my-fish
-- cmd: exit
 - cmd: n config.fish
 - cmd: n .config/fish/config.fish
 - cmd: fish_config
@@ -902,7 +897,6 @@
 - cmd: cd 00inst/
 - cmd: s reflector --latest 5 --sort rate --country Israel --protocol https --verbose
 - cmd: s reflector --latest 5 --sort rate --country Israel --protocol https --verbose --save /etc/pacman.d/mirrorlist
-- cmd: sn /etc/pacman.d/mirrorlist
 - cmd: s  reflector --latest 5 --sort rate  --country Greece,Tr,Israel,Germany,'United Kingdom'
 - cmd: n 020confpac-usr.sh
 - cmd: n 20pac.sh
@@ -914,7 +908,6 @@
 - cmd: pss usb disk formater
 - cmd: pss usb
 - cmd: pss mintstick
-- cmd: y mintstick
 - cmd: sudo -sE mintstick.py
 - cmd: USB Image Writer
 - cmd: sudo -sE mintstick
@@ -996,13 +989,11 @@
 - cmd: pui xorg-server
 - cmd: pui tumbler
 - cmd: pui ttf-ubuntu-font-family
-- cmd: wget -q --spider http://google.com
 - cmd: cd at
 - cmd: hypershade off
 - cmd: pui hyprshade
 - cmd: n tee
 - cmd: rm a b tee
-- cmd: n sync.sh
 - cmd: pi hyprshade
 - cmd: y hyprshade
 - cmd: ctl status hyprshade
@@ -1057,7 +1048,6 @@
 - cmd: sudo nvidia-bug-report.sh
 - cmd: pss qtwayland5
 - cmd: mv env env-hyprland ~/dotfiles/nouse/uwsm/
-- cmd: cd uwsm/
 - cmd: s journalctl -b -1
 - cmd: pss  pambase
 - cmd: ctl enable --now systemd-homed.service
@@ -1123,7 +1113,6 @@
 - cmd: n tshift.sh
 - cmd: du -f
 - cmd: mv vago/ sync-vago/
-- cmd: cd ~/bin/
 - cmd: mv librewolf/ .librewolf/
 - cmd: rr git
 - cmd: cd .vp
@@ -1480,7 +1469,6 @@
 - cmd: cp bup vtbup
 - cmd: n vtbup
 - cmd: cp gpush.sh gstatus.sh
-- cmd: n gstatus.sh
 - cmd: pacman -Q pypr
 - cmd: w pypr
 - cmd: y pypr
@@ -1843,7 +1831,6 @@
 - cmd: git add
 - cmd: ch sync.desktop
 - cmd: mv sync.desktop ~/.local/share/applications
-- cmd: n sync.desktop
 - cmd: stow applications/
 - cmd: stow backgrounds/
 - cmd: stoe gnome-shell/
@@ -1854,11 +1841,9 @@
 - cmd: n au
 - cmd: pi brightnessctl
 - cmd: pp
-- cmd: n keybind.conf
 - cmd: pss eatmydata
 - cmd: pi libeatmydata
 - cmd: md vago
-- cmd: ..
 - cmd: md misc
 - cmd: cd /
 - cmd: co vt
@@ -1870,12 +1855,10 @@
 - cmd: ./cpbh.sh
 - cmd: ./gpush.sh
 - cmd: checkupdates-with-aur
-- cmd: nwc
 - cmd: cd waybar/
     - waybar/
 - cmd: n power_menu.xml
     - power_menu.xml
-- cmd: n config
 - cmd: cd sync-vago/
 - cmd: cd vago/
 - cmd: cdc
@@ -1884,8 +1867,6 @@
 - cmd: cp -r vago/ ~/
     - vago/
     - ~/
-- cmd: cd misc/
-- cmd: n qpacman.lst
 - cmd: pss grim
 - cmd: pui wofi grim dolphin
 - cmd: pui wofi dolphin
@@ -1942,19 +1923,14 @@
 - cmd: pui kitty
 - cmd: pui vim
 - cmd: ctl status fstrim.timer
-- cmd: cc
 - cmd: pd
 - cmd: yd
-- cmd: b
 - cmd: y nvidia-vaapi-driver
 - cmd: y upd72020x-fw
 - cmd: cd hypr/.config/hypr/
     - hypr/.config/hypr/
 - cmd: co *env*
 - cmd: ll
-- cmd: n env
-- cmd: n env.conf
-    - env.conf
 - cmd: n hypr-env.conf
     - hypr-env.conf
 - cmd: rm hypr-env.conf
@@ -1973,11 +1949,9 @@
 - cmd: s mkinitcpio -P
 - cmd: s dmesg
 - cmd: hyprctl monitors all
-- cmd: chh
 - cmd: n monitor.conf
 - cmd: gg
 - cmd: hyprctl reload
-- cmd: cd bin
 - cmd: n gitpull.sh
 - cmd: n .nanorc
 - cmd: cd /usr/share/nano/
@@ -1986,7 +1960,6 @@
 - cmd: cd /usr/share/nano-syntax-highlighting
     - /usr/share/nano-syntax-highlighting
 - cmd: fc
-- cmd: af
 - cmd: cf
 - cmd: bash
 - cmd: pi lxappearance
@@ -2005,7 +1978,6 @@
 - cmd: n i.sh\\ \\(copy\\)
     - i.sh\\ \\(copy\\)
 - cmd: mv i.sh\\ \\(copy\\) ~/dotfiles/i.sh
-- cmd: n r.sh
 - cmd: mv r.sh ~/dotfiles/
     - r.sh
     - ~/dotfiles/
@@ -2015,9 +1987,6 @@
 - cmd: n 99active.sh
 - cmd: ctl status upower
 - cmd: ctl enable --now upower
-- cmd: cdf
-- cmd: l
-- cmd: cd
 - cmd: cd /boot/loader/
     - /boot/loader/
 - cmd: sn loader.conf
@@ -2027,10 +1996,86 @@
 - cmd: ctl enablr ly
 - cmd: ctl enable ly
 - cmd: pui sddm
-- cmd: g
-    - bin
-    - gstatus.sh
-    - ~/bin/
-    - sync.sh
+- cmd: cd bin
+- cmd: n gstatus.sh
+- cmd: b
+- cmd: cd ~/bin/
+- cmd: n sync.desktop
+- cmd: n sync.sh
+- cmd: wget -q --spider http://google.com
 - cmd: echo $status
 - cmd: n en
+- cmd: n env.conf
+    - env.conf
+- cmd: rr gnome*
+- cmd: md 0inst
+- cmd: n r.sh
+- cmd: mv r.sh 0inst/
+    - 0inst/
+- cmd: cd waybar/.config/waybar/
+    - waybar/.config/waybar/
+- cmd: n config
+- cmd: cd scripts/
+    - scripts/
+- cmd: n Volume.sh
+    - Volume.sh
+- cmd: cd swaync/.config/swaync/
+    - swaync/.config/swaync/
+- cmd: mv icons/ ../../../waybar/.config/waybar/
+    - ../../../waybar/.config/waybar/
+- cmd: ...
+- cmd: ..
+- cmd: stow swaync/
+    - swaync/
+- cmd: rr scripts/
+- cmd: cd
+- cmd: nwc
+- cmd: pss awesome
+- cmd: pi ttf-font-awesome
+- cmd: pi mintstick
+- cmd: pi mintstik
+- cmd: af
+- cmd: y mintstick
+- cmd: nm
+- cmd: sn /etc/pacman.d/mirrorlist
+- cmd: cd misc/
+- cmd: n qpacman.lst
+- cmd: pui ttf-jetbrains-mono
+- cmd: pi uwsm
+- cmd: cd ../nouse/hyprland/uwsm/
+    - ../nouse/hyprland/uwsm/
+- cmd: cd .config/uwsm/
+    - .config/uwsm/
+- cmd: n env
+- cmd: ....
+- cmd: mv uwsm/ ~/dotfiles/
+    - uwsm/
+- cmd: stow uwsm/
+- cmd: setfont solar24x32
+- cmd: chh
+- cmd: n keybind.conf
+- cmd: n autostart.conf
+- cmd: hh
+- cmd: n ~/.config/fuzzel/fuzzel.ini
+    - ~/.config/fuzzel/fuzzel.ini
+- cmd: cc
+- cmd: rm uwsm/
+- cmd: rr uwsm/
+- cmd: exit
+- cmd: g
+- cmd: cdf
+- cmd: cd nouse/hyprland/
+    - nouse/hyprland/
+- cmd: md uwsm
+- cmd: cd uwsm/
+- cmd: cp ~/Downloads/* .
+    - .
+- cmd: l
+- cmd: md .config
+- cmd: cd .config/
+    - .config/
+    - uwsm
+- cmd: mv env env-hyprland uuctl.sh .config/uwsm/
+    - env
+    - env-hyprland
+    - uuctl.sh

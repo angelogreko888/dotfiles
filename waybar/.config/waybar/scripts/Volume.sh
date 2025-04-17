@@ -2,8 +2,8 @@
 # /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
 # Scripts for volume controls for audio and mic 
 
-iDIR="$HOME/.config/swaync/icons"
-sDIR="$HOME/.config/hypr/scripts"
+iDIR="$HOME/.config/waybar/icons"
+sDIR="$HOME/.config/waybar/scripts"
 
 # Get Volume
 get_volume() {

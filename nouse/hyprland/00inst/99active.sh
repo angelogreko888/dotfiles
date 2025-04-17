@@ -12,7 +12,7 @@ upower
 systemd-resolved.service
 apparmor.service
 paccache.timer 
-seatd
+#seatd
 systemd-homed.service
 nvidia-suspend.service
 nvidia-hibernate.service

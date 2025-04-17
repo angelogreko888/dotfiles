@@ -383,10 +383,7 @@
 - cmd: pi sddm
 - cmd: ctl disable ly
 - cmd: ctl enable sddm
-- cmd: ctl disable sddm
-- cmd: ctl enable ly
 - cmd: ctl stop sddm
-- cmd: pui sddm
 - cmd: sn sudo tee /etc/pacman.d/hooks/nvidia.hook
 - cmd: cd /etc/pacman.d/hooks/
 - cmd: s rn nvidia.hook
@@ -939,7 +936,6 @@
 - cmd: cd nouse/00inst/
 - cmd: mv i.sh r.sh ../../
 - cmd: ../../
-- cmd: n r.sh
 - cmd: n /etc/fstab
 - cmd: fdisk -f
 - cmd: fdisk -l
@@ -1317,7 +1313,6 @@
 - cmd: rm -rf ~/.cache/*
 - cmd: yui floorp
 - cmd: pi gtk2
-- cmd: n 800ftube.sh
 - cmd: n 700brows.sh
 - cmd: y zoomer
 - cmd: gnome-zoomer
@@ -1963,9 +1958,6 @@
 - cmd: n hypr-env.conf
     - hypr-env.conf
 - cmd: rm hypr-env.conf
-- cmd: cd nouse/hyprland/00inst/
-    - nouse/hyprland/00inst/
-- cmd: n 99active.sh
 - cmd: sudo usermod -aG input "$(whoami)"
 - cmd: sudo usermod -aG wheel "$(whoami)"
 - cmd: sudo usermod -aG users "$(whoami)"
@@ -1987,15 +1979,12 @@
 - cmd: hyprctl reload
 - cmd: cd bin
 - cmd: n gitpull.sh
-- cmd: cd
 - cmd: n .nanorc
 - cmd: cd /usr/share/nano/
     - /usr/share/nano/
 - cmd: lo nano-syntax-highlighting
 - cmd: cd /usr/share/nano-syntax-highlighting
     - /usr/share/nano-syntax-highlighting
-- cmd: cdf
-- cmd: l
 - cmd: fc
 - cmd: af
 - cmd: cf
@@ -2011,4 +2000,37 @@
 - cmd: ff
 - cmd: pss Adwaita
 - cmd: pi adw-gtk-theme
+- cmd: cd nouse/hyprland/00inst/
+    - nouse/hyprland/00inst/
+- cmd: n i.sh\\ \\(copy\\)
+    - i.sh\\ \\(copy\\)
+- cmd: mv i.sh\\ \\(copy\\) ~/dotfiles/i.sh
+- cmd: n r.sh
+- cmd: mv r.sh ~/dotfiles/
+    - r.sh
+    - ~/dotfiles/
+- cmd: n 800ftube.sh
+- cmd: rm 800ftube\\ \\(copy\\).sh
+    - 800ftube\\ \\(copy\\).sh
+- cmd: n 99active.sh
+- cmd: ctl status upower
+- cmd: ctl enable --now upower
+- cmd: cdf
+- cmd: l
+- cmd: cd
+- cmd: cd /boot/loader/
+    - /boot/loader/
+- cmd: sn loader.conf
+    - loader.conf
+- cmd: pi ly
+- cmd: ctl disable sddm
+- cmd: ctl enablr ly
+- cmd: ctl enable ly
+- cmd: pui sddm
 - cmd: g
+    - bin
+    - gstatus.sh
+    - ~/bin/
+    - sync.sh
+- cmd: echo $status
+- cmd: n en

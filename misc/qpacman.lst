@@ -49,6 +49,7 @@ libreoffice-fresh
 linux
 linux-firmware
 linux-headers
+ly
 mtools
 nano
 nano-syntax-highlighting
@@ -77,7 +78,6 @@ ranger
 reflector
 ripgrep
 rsync
-sddm
 simple-scan
 slurp
 smartmontools

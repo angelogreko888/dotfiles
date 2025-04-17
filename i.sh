@@ -48,7 +48,7 @@ for LD in "${ld[@]}";do
                                                         break ;;
                                                 esac
                                         done
-					mount /dev/$aa$bd /mnt/$LD
+					mount --mkdir /dev/$aa$bd /mnt/$LD
 					break ;;
 				swap)
 					mkswap /dev/$aa$bd
@@ -65,21 +65,21 @@ for LD in "${ld[@]}";do
                                                         echo "not formating"
                                                         break ;;
                                                 esac
-                                        done		
+                                        done
 					mount --mkdir /dev/$aa$bd /mnt/$LD
 					break ;;
 				vt)
 					printf "\n\e[1;32m.......formar "$LD" ?: \n\e[0m"
                                         select  yn in yes no;do
                                                 case $yn in
-                                                yes)                 
+                                                yes)
                 				        mkfs.ext4 /dev/$aa$bd
 							 break ;;
                                                 no)
                                                         echo "not formating"
                                                         break ;;
                                                 esac
-                                        done            
+                                        done
                                         mount --mkdir /dev/$aa$bd /mnt/$LD
                                         break ;;
 			esac

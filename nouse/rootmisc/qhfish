@@ -252,7 +252,6 @@
 - cmd: cd 00
 - cmd: n autostart.conf
 - cmd: journalctl
-- cmd: hyprctl monitors all
 - cmd: -cd
 - cmd: -cdlf
 - cmd: journalctl | grep feb 1
@@ -279,7 +278,6 @@
 - cmd: lsblk -f
 - cmd: s cp  /etc/default/grub  /etc/default/grub.bup
 - cmd: s dmesg | rg PreserveVideoMemoryAllocations
-- cmd: s dmesg
 - cmd: journalctl -b
 - cmd: pui lib32-nvidia-utils
 - cmd: n /etc/systemd/system/systemd-hibernate.service.wants/nvidia-hibernate.service
@@ -329,7 +327,6 @@
 - cmd: pacman -Q |rg acpid
 - cmd: sort befi
 - cmd: sort befi > befi
-- cmd: ctl status cups
 - cmd: comm befi ~/dotfiles/00inst/bpac
 - cmd: pacman -Qtdq
 - cmd: n qhbash
@@ -440,7 +437,6 @@
 - cmd: cd 565.77/
 - cmd: cd build/
 - cmd: n make.log
-- cmd: sn /etc/mkinitcpio.conf
 - cmd: lo nvidia
 - cmd: s rm /etc/modprobe.d/nvidia.conf
 - cmd: sn /etc/modprobe.d/nvidia.conf
@@ -449,7 +445,6 @@
 - cmd: s rm /etc/pacman.d/hooks/nvidia.hook
 - cmd: pi libva-nvidia-drivers
 - cmd: pi libva-nvidia-driver
-- cmd: s mkinitcpio -P
 - cmd: n kanshi
 - cmd: n
 - cmd: n active.sh
@@ -534,7 +529,6 @@
 - cmd: systemd-analyze cat-config systemd/logind.conf
 - cmd: sn /etc/systemd/logind.conf
 - cmd: hyprctl monitors
-- cmd: n monitor.conf
 - cmd: cd kanshi
 - cmd: journalctl -xe | grep -i suspend
 - cmd: cd distro/
@@ -603,7 +597,6 @@
 - cmd: sort bpac  -o bpac
 - cmd: mv lfish/ fishlocal
 - cmd: n /etc/default/grub
-- cmd: n ~/.config/fish/config.fish
 - cmd: cd ../nouse/rootmisc/
 - cmd: cat lhbash qhbash >com
 - cmd: n bh
@@ -621,7 +614,6 @@
 - cmd: rr fishlocal/
 - cmd: cd ../bin/
 - cmd: h
-- cmd: c
 - cmd: ./
 - cmd: gp
 - cmd: yay -Rns art-rawconverter
@@ -884,11 +876,8 @@
 - cmd: n settings.ini
 - cmd: stow gtk-4.0/
 - cmd: cd uwsm
-- cmd: n env
 - cmd: n animations-dynamic.conf
-- cmd: n gitpull.sh
 - cmd: cd -
-- cmd: su -
 - cmd: ch c
 - cmd: n .local/share/fish/fish_history
 - cmd: t
@@ -901,7 +890,6 @@
 - cmd: ./gitpull.sh
 - cmd: select  cn in Israel Cyprus;
 - cmd: select  cn in Israel Cyprus
-- cmd: bash
 - cmd: cd ~/atest/
 - cmd: pss ell
 - cmd: pss ell | rg extra/ell
@@ -912,7 +900,6 @@
 - cmd: n 060grubmbr.sh
 - cmd: ggg
 - cmd: n 030boot.sh
-- cmd: n 050grubefi.sh
 - cmd: n sroot.sh
 - cmd: n suser.sh
 - cmd: cd 00inst/
@@ -942,7 +929,6 @@
     - fish_history
 - cmd: rm fish_history.bup
 - cmd: cpi q
-- cmd: n 99active.sh
 - cmd: n laur.lst
 - cmd: yui usbimager
 - cmd: yui usbimager-debug
@@ -1181,7 +1167,6 @@
 - cmd: pss  xdg-user-dirs
 - cmd: who
 - cmd: sn /etc/default/useradd
-- cmd: sudo usermod -aG users "$(whoami)"
 - cmd: s systemctl --user enable --now hyprpolkitagent.service
 - cmd: s systemctl  --machine=vago@.host --user enable --now hyprpolkitagent.service
 - cmd: pss  xorg-xhost
@@ -1448,7 +1433,6 @@
 - cmd: echo "echo 1 > /proc/sys/vm/drop_caches" | sudo sh
 - cmd: sudo sh -c 'echo 3 >/proc/sys/vm/drop_caches'\n
 - cmd: fc-cache
-- cmd: fc
 - cmd: sn /sys/kernel/debug/dri/<GPUID>/<PORT>/trigger_hotplug
 - cmd: lo trigger_hotplug
 - cmd: yui freetube-git
@@ -1649,7 +1633,6 @@
 - cmd: y xhci_pci_renesas
 - cmd: sudo dmesg | grep xhci_pci
 - cmd: s journalctl -b  | grep xhci_pci
-- cmd: y upd72020x-fw
 - cmd: s rm /etc/systemd/system/root-suspend.service
 - cmd: s rm /etc/systemd/system/root-resume.service
 - cmd: s cat /sys/power/mem_sleep
@@ -1697,7 +1680,6 @@
 - cmd: pss ffnvcodec-headers
 - cmd: pacman -Q | rg nvidia-vaapi-driver
 - cmd: pss nvidia-vaapi-driver
-- cmd: y nvidia-vaapi-driver
 - cmd: pacman -Q | rg libva-nvidia-driver
 - cmd: n .config/uwsm/env
 - cmd: pi nvidia-settings
@@ -1784,7 +1766,6 @@
 - cmd: nemo
 - cmd: w nemo
 - cmd: /usr/bin/nemo
-- cmd: n .nanorc
 - cmd: pi nano-syntax-highlighting
 - cmd: mv vago/ oldvago/
 - cmd: mv sync-vago/ oldsync-vago/
@@ -1877,9 +1858,7 @@
 - cmd: git add .
 - cmd: n au
 - cmd: pi brightnessctl
-- cmd: hyprctl reload
 - cmd: pp
-- cmd: chh
 - cmd: n keybind.conf
 - cmd: pss eatmydata
 - cmd: pi libeatmydata
@@ -1889,7 +1868,6 @@
 - cmd: cd /
 - cmd: co vt
     - vt
-- cmd: ll
 - cmd: cd vt
 - cmd: md sync-vago
 - cmd: n gpush.sh
@@ -1897,10 +1875,7 @@
 - cmd: ./cpbh.sh
 - cmd: ./gpush.sh
 - cmd: checkupdates-with-aur
-- cmd: ff
 - cmd: nwc
-- cmd: gg
-- cmd: cc
 - cmd: cd waybar/
     - waybar/
 - cmd: n power_menu.xml
@@ -1919,32 +1894,23 @@
 - cmd: pss grim
 - cmd: pui wofi grim dolphin
 - cmd: pui wofi dolphin
-- cmd: pd
-- cmd: yd
 - cmd: sn /etc/pacman.conf -l
-- cmd: u
 - cmd: cd ~/bin
 - cmd: n cpbh.sh
 - cmd: pss rgrep
 - cmd: pss grep
 - cmd: pi ripgrep
-- cmd: cd bin
 - cmd: ./poweroff.sh
 - cmd: n poweroff.sh
 - cmd: cd /boot/loader/entries/
     - /boot/loader/entries/
-- cmd: af
-- cmd: fish
 - cmd: ba
-- cmd: cd nouse/hyprland/00inst/
-    - nouse/hyprland/00inst/
 - cmd: n 090nvidia.sh
 - cmd: bootctl update
 - cmd: s bootctl update
 - cmd: ctl status systemd-boot-update.service
 - cmd: ctl enable systemd-boot-update.service
 - cmd: ctl start systemd-boot-update.service
-- cmd: b
 - cmd: ts
 - cmd: cd /vt
 - cmd: md timeshift
@@ -1959,17 +1925,11 @@
 - cmd: cp -r icons/ ~/dotfiles/waybar/.config/waybar/
     - icons/
     - ~/dotfiles/waybar/.config/waybar/
-- cmd: n ~/.config/foot/foot.ini
-    - ~/.config/foot/foot.ini
 - cmd: foot
-- cmd: cdf
 - cmd: mv applications/ nouse/
     - applications/
     - nouse/
 - cmd: cd nouse/
-- cmd: l
-- cmd: g
-- cmd: cd
 - cmd: cdt status systemd-homed.service
 - cmd: ctl status systemd-homed.service
 - cmd: ctl enable systemd-homed.service
@@ -1982,7 +1942,73 @@
 - cmd: ctl enable --now paccache.timer
 - cmd: ctl status systemd-resolved.service
 - cmd: ctl enable  systemd-resolved.service
-- cmd: ctl status fstrim.timer
+- cmd: ctl status cups
 - cmd: ctl enable cups
 - cmd: pui kitty
 - cmd: pui vim
+- cmd: ctl status fstrim.timer
+- cmd: cc
+- cmd: pd
+- cmd: yd
+- cmd: b
+- cmd: y nvidia-vaapi-driver
+- cmd: y upd72020x-fw
+- cmd: cd hypr/.config/hypr/
+    - hypr/.config/hypr/
+- cmd: co *env*
+- cmd: ll
+- cmd: n env
+- cmd: n env.conf
+    - env.conf
+- cmd: n hypr-env.conf
+    - hypr-env.conf
+- cmd: rm hypr-env.conf
+- cmd: cd nouse/hyprland/00inst/
+    - nouse/hyprland/00inst/
+- cmd: n 99active.sh
+- cmd: sudo usermod -aG input "$(whoami)"
+- cmd: sudo usermod -aG wheel "$(whoami)"
+- cmd: sudo usermod -aG users "$(whoami)"
+- cmd: n 050grubefi.sh
+- cmd: echo "vago ALL=(ALL) ALL" >> /etc/sudoers.d/vago
+- cmd: s echo "vago ALL=(ALL) ALL" >> /etc/sudoers.d/vago
+- cmd: cd /etc/
+    - /etc/
+- cmd: cd sudoers.d/
+    - sudoers.d/
+- cmd: su -
+- cmd: sn /etc/mkinitcpio.conf
+- cmd: s mkinitcpio -P
+- cmd: s dmesg
+- cmd: hyprctl monitors all
+- cmd: chh
+- cmd: n monitor.conf
+- cmd: gg
+- cmd: hyprctl reload
+- cmd: cd bin
+- cmd: n gitpull.sh
+- cmd: cd
+- cmd: n .nanorc
+- cmd: cd /usr/share/nano/
+    - /usr/share/nano/
+- cmd: lo nano-syntax-highlighting
+- cmd: cd /usr/share/nano-syntax-highlighting
+    - /usr/share/nano-syntax-highlighting
+- cmd: cdf
+- cmd: l
+- cmd: fc
+- cmd: af
+- cmd: cf
+- cmd: bash
+- cmd: pi lxappearance
+- cmd: pui lxappearance
+- cmd: n ~/.config/foot/foot.ini
+    - ~/.config/foot/foot.ini
+- cmd: u
+- cmd: n ~/.config/fish/config.fish
+- cmd: fish
+- cmd: c
+- cmd: ff
+- cmd: pss Adwaita
+- cmd: pi adw-gtk-theme
+- cmd: g

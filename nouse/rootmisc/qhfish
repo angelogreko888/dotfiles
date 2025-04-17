@@ -303,7 +303,6 @@
 - cmd: pacman -Q | rg nfs-utils
 - cmd: pacman -Q | rg inetutils
 - cmd: pacman -Q | rg dnsutils
-- cmd: n.
 - cmd: pacman -Q | rg bash-completion
 - cmd: pacman -Q | rg openssh
 - cmd: pacman -Q | rg acpi
@@ -867,7 +866,6 @@
 - cmd: cd gtk-4.0/.config/gtk-4.0/
 - cmd: n settings.ini
 - cmd: stow gtk-4.0/
-- cmd: cd uwsm
 - cmd: n animations-dynamic.conf
 - cmd: cd -
 - cmd: ch c
@@ -2023,12 +2021,10 @@
     - swaync/.config/swaync/
 - cmd: mv icons/ ../../../waybar/.config/waybar/
     - ../../../waybar/.config/waybar/
-- cmd: ...
 - cmd: ..
 - cmd: stow swaync/
     - swaync/
 - cmd: rr scripts/
-- cmd: cd
 - cmd: nwc
 - cmd: pss awesome
 - cmd: pi ttf-font-awesome
@@ -2052,30 +2048,35 @@
     - uwsm/
 - cmd: stow uwsm/
 - cmd: setfont solar24x32
-- cmd: chh
-- cmd: n keybind.conf
-- cmd: n autostart.conf
-- cmd: hh
 - cmd: n ~/.config/fuzzel/fuzzel.ini
     - ~/.config/fuzzel/fuzzel.ini
-- cmd: cc
 - cmd: rm uwsm/
 - cmd: rr uwsm/
 - cmd: exit
-- cmd: g
 - cmd: cdf
 - cmd: cd nouse/hyprland/
     - nouse/hyprland/
-- cmd: md uwsm
 - cmd: cd uwsm/
 - cmd: cp ~/Downloads/* .
     - .
-- cmd: l
 - cmd: md .config
 - cmd: cd .config/
     - .config/
-    - uwsm
+- cmd: md uwsm
+- cmd: ...
+- cmd: cd uwsm
 - cmd: mv env env-hyprland uuctl.sh .config/uwsm/
     - env
     - env-hyprland
     - uuctl.sh
+- cmd: l
+- cmd: g
+- cmd: cd
+- cmd: n.
+- cmd: chh
+- cmd: n autostart.conf
+- cmd: hh
+- cmd: n keybind.conf
+- cmd: cc
+    - fuzzel/
+    - fuzzel.ini

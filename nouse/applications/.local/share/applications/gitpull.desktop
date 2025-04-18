@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=gitpull
-Exec=bash /home/vago/bin/gitpull.sh
-Terminal=false
-Type=Application
-Icon=gtk-save.png

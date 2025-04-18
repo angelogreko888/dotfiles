@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=poweroff
-Exec=bash /home/vago/bin/poweroff.sh
-Icon=application-exit.png
-Terminal=false
-Type=Application

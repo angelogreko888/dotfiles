@@ -15,6 +15,7 @@ mintstick
 mkinitcpio-firmware
 mullvad-browser-bin
 simple-mtpfs
+tlpui
 wd719x-firmware
 yay
 yay-debug

@@ -90,7 +90,6 @@
 - cmd: cd XiaomiADBFastbootTools/
 - cmd: n apps.yml
 - cmd: cd .nv
-- cmd: git pull
 - cmd: hyprland
 - cmd: h | rg open
 - cmd: h | rg xdg-open
@@ -114,7 +113,6 @@
 - cmd: sudo pacman -Scc
 - cmd: sudo pacman -Rns $(pacman -Qdtq)
 - cmd: df -h
-- cmd: nu
 - cmd: y skype-secure
 - cmd: y skype
 - cmd: free -h
@@ -729,7 +727,6 @@
 - cmd: dkms status
 - cmd: nano  stow.sh
 - cmd: cd nemo/
-- cmd: cd user/
 - cmd: cd gtk-4.0/
 - cmd: nano  .config/gtk-4.0/gtk.css
 - cmd: cd .config/gtk-4.0/
@@ -744,7 +741,6 @@
 - cmd: sudo pacman -Qs nano
 - cmd: nano  aur.sh
 - cmd: cd ~/git/
-- cmd: cd yay
 - cmd: cd ~/git/yay/
 - cmd: ls
 - cmd: cd 24DCEFD8DCEFA1F2/
@@ -888,7 +884,6 @@
 - cmd: n c
 - cmd: sn /etc/locale.gen
 - cmd: n 060grubmbr.sh
-- cmd: ggg
 - cmd: n 030boot.sh
 - cmd: n sroot.sh
 - cmd: n suser.sh
@@ -1118,8 +1113,6 @@
 - cmd: xopen
 - cmd: cd /run/timeshift/
 - cmd: n vago/
-- cmd: cd dotfiles/
-- cmd: y libva-nvidia-driver
 - cmd: y libva
 - cmd: y libva-utils
 - cmd: cd nvidia-all/
@@ -1361,8 +1354,6 @@
 - cmd: hyprctl dispatch scale 1
 - cmd: hyprctl monitor cursorpos scale 1
 - cmd: ctl exit
-- cmd: cd fuzzel/
-- cmd: n fuzzel.ini
 - cmd: systemctl suspend
 - cmd: pui  nvidia-dkms egl-wayland lib32-nvidia-utils lib32-opencl-nvidia opencl-nvidia nvidia-utils
 - cmd: sudo pacman -Rdd lib32-nvidia-utils-tkg lib32-opencl-nvidia-tkg  nvidia-settings-tkg nvidia-utils-tkg opencl-nvidia-tkg
@@ -1391,7 +1382,6 @@
 - cmd: rr *
 - cmd: n paccach.sh -l
 - cmd: ./paccach.sh
-- cmd: sn /boot/loader/loader.conf
 - cmd: sn etc/ly/config.ini
 - cmd: sn /etc/systemd/journald.conf.d/usbstick.conf
 - cmd: pi  libeatmydata
@@ -1410,7 +1400,6 @@
 - cmd: //
 - cmd: rr bin
 - cmd: cd brows/
-- cmd: git gc
 - cmd: sudo sh -c 'echo 1 >/proc/sys/vm/drop_caches'
 - cmd: echo "echo 1 > /proc/sys/vm/drop_caches" | sudo sh
 - cmd: sudo sh -c 'echo 3 >/proc/sys/vm/drop_caches'\n
@@ -1885,11 +1874,9 @@
 - cmd: ctl status systemd-boot-update.service
 - cmd: ctl enable systemd-boot-update.service
 - cmd: ctl start systemd-boot-update.service
-- cmd: ts
 - cmd: cd /vt
 - cmd: md timeshift
 - cmd: tsl
-- cmd: cg
 - cmd: git clone https://github.com/JaKooLit/Hyprland-Dots/tree/main/config/swaync
 - cmd: git clone https://github.com/JaKooLit/Hyprland-Dots/
 - cmd: cd Hyprland-Dots/
@@ -1921,9 +1908,6 @@
 - cmd: pui kitty
 - cmd: pui vim
 - cmd: ctl status fstrim.timer
-- cmd: pd
-- cmd: yd
-- cmd: y nvidia-vaapi-driver
 - cmd: y upd72020x-fw
 - cmd: cd hypr/.config/hypr/
     - hypr/.config/hypr/
@@ -1945,11 +1929,7 @@
 - cmd: su -
 - cmd: sn /etc/mkinitcpio.conf
 - cmd: s mkinitcpio -P
-- cmd: s dmesg
-- cmd: hyprctl monitors all
 - cmd: n monitor.conf
-- cmd: gg
-- cmd: hyprctl reload
 - cmd: n gitpull.sh
 - cmd: n .nanorc
 - cmd: cd /usr/share/nano/
@@ -1957,18 +1937,14 @@
 - cmd: lo nano-syntax-highlighting
 - cmd: cd /usr/share/nano-syntax-highlighting
     - /usr/share/nano-syntax-highlighting
-- cmd: fc
 - cmd: cf
 - cmd: bash
 - cmd: pi lxappearance
 - cmd: pui lxappearance
 - cmd: n ~/.config/foot/foot.ini
     - ~/.config/foot/foot.ini
-- cmd: u
 - cmd: n ~/.config/fish/config.fish
 - cmd: fish
-- cmd: c
-- cmd: ff
 - cmd: pss Adwaita
 - cmd: pi adw-gtk-theme
 - cmd: cd nouse/hyprland/00inst/
@@ -1996,7 +1972,6 @@
 - cmd: pui sddm
 - cmd: cd bin
 - cmd: n gstatus.sh
-- cmd: b
 - cmd: cd ~/bin/
 - cmd: n sync.desktop
 - cmd: n sync.sh
@@ -2021,7 +1996,6 @@
     - swaync/.config/swaync/
 - cmd: mv icons/ ../../../waybar/.config/waybar/
     - ../../../waybar/.config/waybar/
-- cmd: ..
 - cmd: stow swaync/
     - swaync/
 - cmd: rr scripts/
@@ -2030,7 +2004,6 @@
 - cmd: pi ttf-font-awesome
 - cmd: pi mintstick
 - cmd: pi mintstik
-- cmd: af
 - cmd: y mintstick
 - cmd: nm
 - cmd: sn /etc/pacman.d/mirrorlist
@@ -2042,21 +2015,15 @@
     - ../nouse/hyprland/uwsm/
 - cmd: cd .config/uwsm/
     - .config/uwsm/
-- cmd: n env
 - cmd: ....
 - cmd: mv uwsm/ ~/dotfiles/
     - uwsm/
-- cmd: stow uwsm/
-- cmd: setfont solar24x32
 - cmd: n ~/.config/fuzzel/fuzzel.ini
     - ~/.config/fuzzel/fuzzel.ini
 - cmd: rm uwsm/
 - cmd: rr uwsm/
-- cmd: exit
-- cmd: cdf
 - cmd: cd nouse/hyprland/
     - nouse/hyprland/
-- cmd: cd uwsm/
 - cmd: cp ~/Downloads/* .
     - .
 - cmd: md .config
@@ -2069,14 +2036,138 @@
     - env
     - env-hyprland
     - uuctl.sh
-- cmd: l
-- cmd: g
-- cmd: cd
 - cmd: n.
 - cmd: chh
 - cmd: n autostart.conf
 - cmd: hh
 - cmd: n keybind.conf
+- cmd: cd fuzzel/
+- cmd: n fuzzel.ini
+- cmd: stow uwsm/
+- cmd: gg
+- cmd: cd uwsm/
+- cmd: n env
+- cmd: sudo  reflector --age 1 --sort rate --country Israel --protocol https --verbose --save /etc/pacman.d/mirrorlist
+    - /etc/pacman.d/mirrorlist
+- cmd: sn  /etc/pacman.d/mirrorlist
+- cmd: cd .git
+    - .git
+- cmd: n objects/
+    - objects/
+- cmd: cd objects/
+- cmd: cd pack
+    - pack
+- cmd: stow gtk-3.0/
+    - gtk-3.0/
+- cmd: stow xsettingsd/
+    - xsettingsd/
+- cmd: git gc
+- cmd: git gc --aggressive --prune=now
+- cmd: git clone --depth 1 https://github.com.angelogreko888/dotfiles
+- cmd: git clone --depth 1 https://github.com/angelogreko888/dotfiles
+- cmd: cd dotfiles/
+- cmd: setfont solar24x32
+- cmd: mv dotfiles/ git/dotfilesold
+    - dotfiles/
+- cmd: mv dotfiles/ ~/
+- cmd: exit
 - cmd: cc
-    - fuzzel/
-    - fuzzel.ini
+- cmd: git push origin main --force\n
+- cmd: cg
+- cmd: git clone  https://github.com/angelogreko888/dotfiles
+- cmd: rm dot* Hyprland-Dots/
+- cmd: rr dot* Hyprland-Dots/
+- cmd: cd yay
+- cmd: git pull
+- cmd: u
+- cmd: ts
+- cmd: y nvidia-vaapi-driver
+- cmd: y libva-nvidia-driver
+- cmd: sn /boot/loader/entries/2025-04-16_12-24-46_linux.conf
+    - /boot/loader/entries/2025-04-16_12-24-46_linux.conf
+- cmd: ggg
+- cmd: h | rg depth
+- cmd: y libglade
+- cmd: fc
+- cmd: nu
+- cmd: mv i.sh 0inst/
+    - i.sh
+- cmd: sn /boot/loader/loader.conf
+- cmd: y udev-block-notify
+- cmd: ff
+- cmd: ctl status udev-block-notify
+- cmd: udev-block-notify
+- cmd: yui swaync
+- cmd: y dunst
+- cmd: dunst "hi"
+- cmd: dunstctl
+- cmd: dunstify
+- cmd: stow dunst
+- cmd: dunst
+- cmd: dunstify hi
+- cmd: dunstify -h string:x-dunst-stack-tag:test Test -A 'tested,default'
+- cmd: y swaync
+    - swaync
+- cmd: yui udev-block-notify
+- cmd: pd
+- cmd: yd
+- cmd: cdf
+- cmd: lo sysemd
+- cmd: lo systemd
+- cmd: cd /etc/systemd
+    - /etc/systemd
+- cmd: cd system/
+    - system/
+- cmd: cd user/
+- cmd: cd
+- cmd: cd .local/
+    - .local/
+- cmd: cd share/
+    - share/
+- cmd: cd hyprland/
+    - hyprland/
+- cmd: cd sddm
+    - sddm
+- cmd: md ahyb
+- cmd: n ahyb.service
+- cmd: lo suspend
+- cmd: s mv ahyb/ /etc/systemd/system/
+    - ahyb/
+    - /etc/systemd/system/
+- cmd: cd /etc/systemd/system/
+- cmd: s mv ahyb/ /usr/lib/systemd/system/
+    - /usr/lib/systemd/system/
+- cmd: cd ahyb/
+- cmd: s mv ahyb.service ../
+    - ahyb.service
+    - ../
+- cmd: ..
+- cmd: l
+- cmd: s rr ahyb/
+- cmd: s rm -rf ahyb/
+- cmd: l less
+- cmd: l | less
+- cmd: hyprctl reload
+- cmd: cd /usr/lib/systemd/system/
+- cmd: sn ahyb.service
+- cmd: rmmod
+- cmd: s dmesg
+- cmd: y tlpui
+- cmd: ctl disable ahyb.service
+- cmd: s tlpui
+- cmd: s -si tlpui
+- cmd: s -sE tlpui
+- cmd: hyprctl monitors all
+- cmd: ctl enable ahyb.service
+- cmd: b
+- cmd: af
+- cmd: g
+- cmd: hyprctl keyword monitor HDMI-A-1,1920x1080@60.0,0x0,4
+- cmd: hyprctl keyword monitor HDMI-A-1,1920x1080@60.0,0x0,1
+- cmd: c
+- cmd: mm
+- cmd: ctl status ahyb.service
+- cmd: h |rg tlp
+- cmd: tlp
+- cmd: fish lp
+- cmd: lp

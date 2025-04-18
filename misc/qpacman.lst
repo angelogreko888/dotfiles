@@ -46,6 +46,7 @@ less
 libeatmydata
 libpulse
 libreoffice-fresh
+libva-nvidia-driver
 linux
 linux-firmware
 linux-headers
@@ -68,7 +69,6 @@ pipewire-jack
 pipewire-pulse
 plocate
 polkit-kde-agent
-power-profiles-daemon
 python-pip
 qt5-wayland
 qt5ct

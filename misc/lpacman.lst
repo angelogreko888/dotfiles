@@ -1,4 +1,5 @@
 acpi
+adw-gtk-theme
 aquamarine
 arch-install-scripts
 base
@@ -118,8 +119,6 @@ waybar
 wget
 wireless_tools
 wireplumber
-wlroots
-wofi
 xdg-desktop-portal
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland

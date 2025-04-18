@@ -117,7 +117,6 @@
 - cmd: sudo pacman -Scc
 - cmd: sudo pacman -Rns $(pacman -Qdtq)
 - cmd: df -h
-- cmd: nu
 - cmd: y skype-secure
 - cmd: y skype
 - cmd: free -h
@@ -442,7 +441,6 @@
 - cmd: s rm /etc/modules-load.d/nvidia.conf
 - cmd: s rm /etc/pacman.d/hooks/nvidia.hook
 - cmd: pi libva-nvidia-drivers
-- cmd: pi libva-nvidia-driver
 - cmd: s mkinitcpio -P
 - cmd: n kanshi
 - cmd: n
@@ -884,7 +882,6 @@
 - cmd: sn /etc/locale.gen
 - cmd: n 060grubmbr.sh
 - cmd: n 030boot.sh
-- cmd: n 050grubefi.sh
 - cmd: n sroot.sh
 - cmd: n suser.sh
 - cmd: s reflector --latest 5 --sort rate --country Israel --protocol https --verbose
@@ -920,7 +917,6 @@
 - cmd: cd nouse/00inst/
 - cmd: mv i.sh r.sh ../../
 - cmd: ../../
-- cmd: n r.sh
 - cmd: n /etc/fstab
 - cmd: fdisk -f
 - cmd: fdisk -l
@@ -949,7 +945,6 @@
 - cmd: s blkid | grep nvme0n1p2 | awk '{print $2}' | cut -b 7-40
 - cmd: s blkid | grep nvme0n1p2 | awk '{print $2}' | cut -b 7-42
 - cmd: s blkid | grep nvme0n1p2 | awk '{print $2}' | set uid=(cut -b 7-42)
-- cmd: n i.sh
 - cmd: n  b
 - cmd: n c -l
 - cmd: cat a
@@ -976,10 +971,6 @@
 - cmd: systemctl | grep running
 - cmd: systemctl list-unit-files
 - cmd: systemctl list-unit-files | grep seatd
-- cmd: cd misc/
-- cmd: comm qpacman.lst lpacman.lst
-    - qpacman.lst
-    - lpacman.lst
 - cmd: pui xorg-xinit
 - cmd: pui xorg-server
 - cmd: pui tumbler
@@ -1121,8 +1112,6 @@
 - cmd: hyprctl reload
 - cmd: pui totem
 - cmd: pi  libeatmydata
-- cmd: ..
-- cmd: ff
 - cmd: cd ~/bin
 - cmd: rr ri7shlwk.default/
     - ri7shlwk.default/
@@ -1179,7 +1168,6 @@
 - cmd: mpv --fs
 - cmd: w mpv
 - cmd: /sbin/mpv
-- cmd: ggg
 - cmd: pui freetube-git
 - cmd: pi freetube-bin
 - cmd: y freetube-bin
@@ -1189,7 +1177,6 @@
     - paccach.sh
 - cmd: sudo paccache -ruk0
 - cmd: sudo paccache -rk1
-- cmd: cd 00inst/
 - cmd: n 40pipewire.sh
     - 40pipewire.sh
 - cmd: sudo pacman -S pipewire pipewire-alsa pipewire-jack pipewire-pulse
@@ -1216,7 +1203,6 @@
 - cmd: n stream-properties
     - stream-properties
 - cmd: rm stream-properties
-- cmd: l
 - cmd: pui ppewire
 - cmd: pui pipewire
 - cmd: pui gst-plugin-pipewire pipewire-alsa pipewire-audio pipewire-jack pipewire-pulse wireplumber xdg-desktop-portal xdg-desktop-portal-hyprland pipewire
@@ -1243,28 +1229,47 @@
 - cmd: ctl start --now NetworkManager
 - cmd: ctl disable --now NetworkManager
 - cmd: ctl enable --now NetworkManager
-- cmd: h
-- cmd: u
 - cmd: cd bin
 - cmd: ./backup.sh
 - cmd: spt
 - cmd: sudo pacman -S networkmanager
 - cmd: ngr
 - cmd: ug
-- cmd: pd
-- cmd: yd
 - cmd: ping -c3 google.com
+- cmd: git clone https://github.com/angelogreko888/dotfiles
+- cmd: reboot
+- cmd: pi libva-nvidia-driver
+- cmd: b
+- cmd: cd 00inst/
+- cmd: n 050grubefi.sh
+- cmd: ..
+- cmd: n r
+- cmd: n r.sh
+- cmd: n i.sh
+- cmd: h
 - cmd: rr dotfiles/
     - dotfiles/
-- cmd: git clone https://github.com/angelogreko888/dotfiles
+- cmd: ping -c 3 google.com
+- cmd: git clone --depth 1 https://github.com/angelogreko888/dotfiles
 - cmd: exit
-- cmd: reboot
-- cmd: cdf
-- cmd: g
+- cmd: u
+- cmd: nu
+- cmd: git push
+- cmd: ggg
 - cmd: cd
-- cmd: b
-    - 00inst/
-    - 050grubefi.sh
-- cmd: n r
-    - r.sh
-    - i.sh
+- cmd: fastfetch --config neofetch.jsonc
+- cmd: ff
+- cmd: g
+- cmd: cdf
+- cmd: cd misc/
+- cmd: l
+- cmd: comm qpacman.lst lpacman.lst
+    - qpacman.lst
+    - lpacman.lst
+- cmd: y adw-gtk-theme
+- cmd: pui wlroots wofi
+- cmd: pd
+- cmd: yd
+- cmd: comm qaur.lst laur.lst
+    - qaur.lst
+    - laur.lst

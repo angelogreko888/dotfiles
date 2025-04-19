@@ -2235,3 +2235,7 @@
     - entries/
 - cmd: n 2025-04-16_12-24-46_linux.conf
     - 2025-04-16_12-24-46_linux.conf
+- cmd: n mimeapps.list
+    - mimeapps.list
+- cmd: rr kanshi/
+- cmd: stow kanshi/

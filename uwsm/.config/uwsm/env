@@ -5,16 +5,16 @@ export GTK_ICON_THEME=buuf-nestort
 export GTL_FONT=Cantarell 
 export XCURSOR_SIZE=24
 
-export EDITOR=nano foot
+env EDITOR=nano foot
 
-export MOZ_ENABLE_WAYLAND=1 Librewolf
-export MOZ_ENABLE_WAYLAND=1 firefox
-export MOZ_ENABLE_WAYLAND=1 FreeTube
+#env = MOZ_ENABLE_WAYLAND=1 Librewolf
+#env = MOZ_ENABLE_WAYLAND=1 firefox
+#env = MOZ_ENABLE_WAYLAND=1 FreeTube
 
 # NVIDIA https://wiki.hyprland.org/Nvidia/
 export GBM_BACKEND=nvidia-drm
 export LIBVA_DRIVER_NAME=nvidia
-export SDL_VIDEODRIVER=wayland
+#export SDL_VIDEODRIVER=wayland
 export WLR_DRM_NO_ATOMIC=1
 #export __GL_VRR_ALLOWED=1
 export __GLX_VENDOR_LIBRARY_NAME=nvidia

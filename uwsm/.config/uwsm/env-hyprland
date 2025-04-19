@@ -12,7 +12,7 @@ export  AQ_NO_MODIFIERS=1
 
 export GDK_BACKEND=wayland,x11,*
 export QT_QPA_PLATFORM=wayland,xcb
-export SDL_VIDEODRIVER=wayland
+#export SDL_VIDEODRIVER=wayland
 export CLUTTER_BACKEND=wayland
 
 #export XDG_CURRENT_DESKTOP=hyprland
@@ -25,12 +25,12 @@ export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
 export QT_QPA_PLATFORMTHEME=qt5ct
 export QT_QPA_PLATFORMTHEME=qt6ct
 
-export GDK_SCALE=1
-export APPIMAGELAUNCHER_DISABLE=1
+#export GDK_SCALE=1
+#export APPIMAGELAUNCHER_DISABLE=1
 
 # Ozone
-export OZONE_PLATFORM=wayland
-export ELECTRON_OZONE_PLATFORM_HINT=wayland
+#env = OZONE_PLATFORM=wayland
+#env = ELECTRON_OZONE_PLATFORM_HINT=wayland
 
 # Python
 # export PYTHONPATH=/usr/lib/python3.12/site-packages:/usr/lib/python3.13/site-packages:$PYTHONPATH

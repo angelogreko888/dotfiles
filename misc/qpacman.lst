@@ -42,6 +42,7 @@ intel-ucode
 iwd
 jdk-openjdk
 kanshi
+kitty
 less
 libeatmydata
 libpulse
@@ -78,6 +79,7 @@ ranger
 reflector
 ripgrep
 rsync
+sddm
 simple-scan
 slurp
 smartmontools
@@ -87,9 +89,10 @@ swaybg
 swaync
 timeshift
 ttf-font-awesome
+ttf-jetbrains-mono
 ttf-jetbrains-mono-nerd
 usbutils
-uwsm
+vim
 waybar
 wget
 wireless_tools

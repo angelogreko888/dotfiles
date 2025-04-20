@@ -1273,3 +1273,4 @@
 - cmd: comm qaur.lst laur.lst
     - qaur.lst
     - laur.lst
+- cmd: md .log

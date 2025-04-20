@@ -11,17 +11,11 @@ a=$(date | awk '{print $1}')
 
 if [ $a == Fri ];then
 	exec foot sh -c '
-	printf "\n\e[1;32m.......clean paccache? : \n\e[0m"
+	printf "\n\e[1;32m.......trim? : \n\e[0m"
 	select yn in yes no;do
 	case $yn in
 	yes)
-		sudo paccache -ruk0;
-		sudo paccache -rk1;
-		sudo pacman -Scc --noconfirm
-		yay -Scc --noconfirm
-		yay -Yc
-		sudo pacman -Rnsc $(pacman -Qdtq)
-		sleep 3
+		sudo fstrim -av
 		break ;;
 	no)
 		exit 0

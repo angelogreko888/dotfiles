@@ -2125,8 +2125,6 @@
 - cmd: y tlpui
 - cmd: n qaur.lst
 - cmd: y wd719x-firmware
-- cmd: pd
-- cmd: yd
 - cmd: ff
 - cmd: ba
 - cmd: ctl enable tlp.service
@@ -2226,7 +2224,6 @@
 - cmd: rm ggitpull.sh
     - ggitpull.sh
 - cmd: n cpbh.sh
-- cmd: af
 - cmd: sudo pacman -Scc
 - cmd: sudo pacman -Scc --noconfirm
 - cmd: sudo paccache -ruk0
@@ -2235,28 +2232,45 @@
 - cmd: sudo pacman -Rnsc $(pacman -Qdtq)
 - cmd: yay -Yc
 - cmd: n poweroff.sh
-- cmd: n paccach.sh
 - cmd: n pac.sh
 - cmd: ch pac.sh
     - pac.sh
 - cmd: mv pac.sh dpaccach.sh
 - cmd: ./dpaccach.sh
-- cmd: cpk
 - cmd: nwc
-- cmd: gg
-- cmd: g
-- cmd: chh
-- cmd: n autostart.conf
 - cmd: cd ~/atest/
-- cmd: cd bin
 - cmd: n dpaccach.sh
     - dpaccach.sh
-- cmd: n c
 - cmd: ch c
 - cmd: l
 - cmd: ./c -l
 - cmd: a=$(pacman -Qdtq)
 - cmd: bash
-- cmd: n c -l
 - cmd: ./c
-    - c
+- cmd: n c -l
+- cmd: n c
+- cmd: gg
+- cmd: g
+- cmd: cpk
+- cmd: pd
+- cmd: yd
+- cmd: af
+- cmd: tm
+- cmd: ctl status trim.timer
+- cmd: ctl status trim
+- cmd: cd bin
+- cmd: n paccach.sh
+- cmd: mv paccach.sh trim.sh
+    - paccach.sh
+- cmd: chh
+- cmd: n autostart.conf
+- cmd: n trim.sh
+    - trim.sh
+    - bin
+- cmd: n trim
+- cmd: date
+- cmd: date | awk '{print $2,$3}'
+- cmd: h | rg (date | awk '{print $2,$3}')
+- cmd: history search date | awk '{print $2,$3}'
+- cmd: history search (date | awk '{print $2,$3}')
+- cmd: history search trim

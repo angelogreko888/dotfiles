@@ -594,7 +594,6 @@
 - cmd: rm fish
 - cmd: rr fishlocal/
 - cmd: cd ../bin/
-- cmd: h
 - cmd: ./
 - cmd: gp
 - cmd: yay -Rns art-rawconverter
@@ -852,7 +851,6 @@
 - cmd: n settings.ini
 - cmd: stow gtk-4.0/
 - cmd: n animations-dynamic.conf
-- cmd: cd -
 - cmd: n .local/share/fish/fish_history
 - cmd: t
 - cmd: y usbimager\n
@@ -933,7 +931,6 @@
 - cmd: s blkid | grep nvme0n1p2 | awk '{print $2}' | cut -b 7-40
 - cmd: s blkid | grep nvme0n1p2 | awk '{print $2}' | cut -b 7-42
 - cmd: s blkid | grep nvme0n1p2 | awk '{print $2}' | set uid=(cut -b 7-42)
-- cmd: n i.sh
 - cmd: n  b
 - cmd: cat a
 - cmd: man sed
@@ -1917,7 +1914,6 @@
 - cmd: ctl enablr ly
 - cmd: pui sddm
 - cmd: n gstatus.sh
-- cmd: cd ~/bin/
 - cmd: n sync.desktop
 - cmd: n sync.sh
 - cmd: wget -q --spider http://google.com
@@ -2209,8 +2205,6 @@
 - cmd: ctl status paccache
 - cmd: ctl status paccache.timer
 - cmd: ctl enable paccache.timer
-- cmd: cdf
-- cmd: cd 0inst/
 - cmd: n 050grubefi.sh
 - cmd: cd vago
     - vago
@@ -2218,7 +2212,6 @@
     - /etc/sudoers.d/
 - cmd: s echo "vago ALL=(ALL) ALL" >> /etc/sudoers.d/vago
 - cmd: su -
-- cmd: cd
 - cmd: n gitpull.sh
 - cmd: n ggitpull.sh
 - cmd: rm ggitpull.sh
@@ -2238,17 +2231,10 @@
 - cmd: mv pac.sh dpaccach.sh
 - cmd: ./dpaccach.sh
 - cmd: nwc
-- cmd: cd ~/atest/
-- cmd: n dpaccach.sh
-    - dpaccach.sh
 - cmd: ch c
-- cmd: l
 - cmd: ./c -l
 - cmd: a=$(pacman -Qdtq)
 - cmd: bash
-- cmd: ./c
-- cmd: n c -l
-- cmd: n c
 - cmd: gg
 - cmd: g
 - cmd: cpk
@@ -2258,19 +2244,48 @@
 - cmd: tm
 - cmd: ctl status trim.timer
 - cmd: ctl status trim
-- cmd: cd bin
 - cmd: n paccach.sh
 - cmd: mv paccach.sh trim.sh
     - paccach.sh
-- cmd: chh
-- cmd: n autostart.conf
-- cmd: n trim.sh
-    - trim.sh
-    - bin
+- cmd: h
+- cmd: cd -
 - cmd: n trim
-- cmd: date
 - cmd: date | awk '{print $2,$3}'
 - cmd: h | rg (date | awk '{print $2,$3}')
 - cmd: history search date | awk '{print $2,$3}'
 - cmd: history search (date | awk '{print $2,$3}')
 - cmd: history search trim
+- cmd: cd ~/atest/
+- cmd: cd bin
+- cmd: exho date
+- cmd: echo date
+- cmd: echo $date
+- cmd: echo $DATE
+- cmd: echo "$date"
+- cmd: date
+- cmd: md .log
+- cmd: rm trim.log
+    - trim.log
+- cmd: ./c
+- cmd: n c -l
+- cmd: n c
+- cmd: cd ~/bin/
+- cmd: n dpaccach.sh
+    - dpaccach.sh
+- cmd: cdf
+- cmd: cd 0inst/
+- cmd: n i.sh
+- cmd: cd
+- cmd: cd .log
+    - .log
+- cmd: n trim.log
+- cmd: echo $(date)
+- cmd: n trim.sh
+    - trim.sh
+- cmd: ./trim.sh
+- cmd: l
+- cmd: chh
+- cmd: n autostart.conf
+    - ~/bin/
+    - tshift.sh
+    - /proc/acpi/wakeup

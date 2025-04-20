@@ -18,7 +18,7 @@ if [ $a == Fri ];then
 		sudo paccache -ruk0;
 		sudo paccache -rk1;
 		sudo pacman -Scc --noconfirm
-		yay -Scc
+		yay -Scc --noconfirm
 		yay -Yc
 		sudo pacman -Rnsc $(pacman -Qdtq)
 		sleep 3

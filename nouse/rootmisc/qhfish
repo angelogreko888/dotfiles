@@ -108,7 +108,6 @@
 - cmd: sn system.journal
 - cmd: cd log/
 - cmd: vws
-- cmd: sudo pacman -Scc
 - cmd: sudo pacman -Rns $(pacman -Qdtq)
 - cmd: df -h
 - cmd: y skype-secure
@@ -528,7 +527,6 @@
 - cmd: yui cachy-browser
 - cmd: bb
 - cmd: cpd
-- cmd: cpk
 - cmd: lo
 - cmd: lo cachy
 - cmd: rr /home/vago/.cachy
@@ -576,7 +574,6 @@
 - cmd: ./bh q
 - cmd: n qhfish
 - cmd: rm qhfish
-- cmd: n pac.sh
 - cmd: n bpac
 - cmd: sort bpac  -o bpac
 - cmd: mv lfish/ fishlocal
@@ -818,7 +815,6 @@
 - cmd: ./10pac.sh
 - cmd: sudo pacman -Rns  simple-scan kanshi inotify-tools imagemagick
 - cmd: sudo pacman -Qdtq | sudo pacman -Rns
-- cmd: yay -Yc
 - cmd: nano  990active.sh
 - cmd: sudo systemctl  enable apparmor.service
 - cmd: sudo  nano  /etc/default/grub
@@ -857,7 +853,6 @@
 - cmd: stow gtk-4.0/
 - cmd: n animations-dynamic.conf
 - cmd: cd -
-- cmd: ch c
 - cmd: n .local/share/fish/fish_history
 - cmd: t
 - cmd: y usbimager\n
@@ -869,11 +864,8 @@
 - cmd: ./gitpull.sh
 - cmd: select  cn in Israel Cyprus;
 - cmd: select  cn in Israel Cyprus
-- cmd: cd ~/atest/
 - cmd: pss ell
 - cmd: pss ell | rg extra/ell
-- cmd: ./c
-- cmd: n c
 - cmd: sn /etc/locale.gen
 - cmd: n 060grubmbr.sh
 - cmd: n 030boot.sh
@@ -943,7 +935,6 @@
 - cmd: s blkid | grep nvme0n1p2 | awk '{print $2}' | set uid=(cut -b 7-42)
 - cmd: n i.sh
 - cmd: n  b
-- cmd: n c -l
 - cmd: cat a
 - cmd: man sed
 - cmd: n  a
@@ -1326,7 +1317,6 @@
 - cmd: yui extension-manager gnome-shell gnome-control-center gnome-tweaks gdm sddm
 - cmd: yui extension-manager gnome-shell gnome-control-center gdm sddm
 - cmd: yui extension-manager gnome-shell gnome-control-center gdm sddm gnome-shell-extension-dash-to-panel gnome-shell-extensions
-- cmd: n paccach.sh
 - cmd: sudo pacman -Rdd lib32-nvidia-utils-tkg lib32-opencl-nvidia-tkg nvidia-dkms-tkg nvidia-egl-wayland-tkg nvidia-settings-tkg nvidia-utils-tkg opencl-nvidia-tkg
 - cmd: pacman -Q nvidia
 - cmd: sudo pacman -Rdd lib32-nvidia-utils-tkg lib32-opencl-nvidia-tkg nvidia-settings-tkg nvidia-utils-tkg opencl-nvidia-tkg
@@ -1548,8 +1538,6 @@
 - cmd: pi freetube-bin
 - cmd: y freetube-bin
 - cmd: yui freetube-bin
-- cmd: sudo paccache -ruk0
-- cmd: sudo paccache -rk1
 - cmd: n 40pipewire.sh
 - cmd: sudo pacman -S pipewire pipewire-alsa pipewire-jack pipewire-pulse
 - cmd: sudo journalctl -b | curl -F 'file=@-' 0x0.st
@@ -1603,7 +1591,6 @@
 - cmd: ngr
 - cmd: bgr
 - cmd: y -Qum
-- cmd: sudo pacman -Rnsc $(pacman -Qdtq)
 - cmd: sudo systemctl status paccache.timer
 - cmd: sudo systemctl enable --now paccache.timer
 - cmd: rm -r ~/.local/state/wireplumber/\n
@@ -1764,7 +1751,6 @@
 - cmd: pi paccache
 - cmd: pss paccache
 - cmd: y paccache
-- cmd: ctl enable paccache.timer
 - cmd: n gaur.lst
 - cmd: ctl start apparmor.service
 - cmd: pacman -Qqe | grep -v "$(pacman -Qqm)" >pacman.lst
@@ -1789,7 +1775,6 @@
 - cmd: ch -x gitpull.desktop
 - cmd: cp gitpull.sh ~/.config/autostart/
 - cmd: cp gitpull.desktop ~/.config/autostart/
-- cmd: n ggitpull.sh
 - cmd: cp poweroff.sh ~/atest/
 - cmd: cd /usr/share/minecraft/
 - cmd: cd /usr/share/
@@ -1843,12 +1828,10 @@
 - cmd: pui wofi dolphin
 - cmd: sn /etc/pacman.conf -l
 - cmd: cd ~/bin
-- cmd: n cpbh.sh
 - cmd: pss rgrep
 - cmd: pss grep
 - cmd: pi ripgrep
 - cmd: ./poweroff.sh
-- cmd: n poweroff.sh
 - cmd: cd /boot/loader/entries/
     - /boot/loader/entries/
 - cmd: n 090nvidia.sh
@@ -1881,7 +1864,6 @@
 - cmd: ctl status nvidia-resume.service
 - cmd: ctl status apparmor.service
 - cmd: ctl enable --now apparmor.service
-- cmd: ctl status paccache.timer
 - cmd: ctl enable --now paccache.timer
 - cmd: ctl status systemd-resolved.service
 - cmd: ctl enable  systemd-resolved.service
@@ -1901,17 +1883,11 @@
 - cmd: sudo usermod -aG input "$(whoami)"
 - cmd: sudo usermod -aG wheel "$(whoami)"
 - cmd: sudo usermod -aG users "$(whoami)"
-- cmd: n 050grubefi.sh
 - cmd: echo "vago ALL=(ALL) ALL" >> /etc/sudoers.d/vago
-- cmd: s echo "vago ALL=(ALL) ALL" >> /etc/sudoers.d/vago
 - cmd: cd /etc/
     - /etc/
 - cmd: cd sudoers.d/
     - sudoers.d/
-- cmd: su -
-- cmd: sn /etc/mkinitcpio.conf
-- cmd: s mkinitcpio -P
-- cmd: n gitpull.sh
 - cmd: n .nanorc
 - cmd: cd /usr/share/nano/
     - /usr/share/nano/
@@ -1919,7 +1895,6 @@
 - cmd: cd /usr/share/nano-syntax-highlighting
     - /usr/share/nano-syntax-highlighting
 - cmd: cf
-- cmd: bash
 - cmd: n ~/.config/foot/foot.ini
     - ~/.config/foot/foot.ini
 - cmd: n ~/.config/fish/config.fish
@@ -1939,11 +1914,8 @@
 - cmd: n 99active.sh
 - cmd: ctl status upower
 - cmd: ctl enable --now upower
-- cmd: sn loader.conf
-    - loader.conf
 - cmd: ctl enablr ly
 - cmd: pui sddm
-- cmd: cd bin
 - cmd: n gstatus.sh
 - cmd: cd ~/bin/
 - cmd: n sync.desktop
@@ -1971,7 +1943,6 @@
 - cmd: stow swaync/
     - swaync/
 - cmd: rr scripts/
-- cmd: nwc
 - cmd: pss awesome
 - cmd: pi ttf-font-awesome
 - cmd: pi mintstick
@@ -2041,7 +2012,6 @@
     - /boot/loader/entries/2025-04-16_12-24-46_linux.conf
 - cmd: h | rg depth
 - cmd: y libglade
-- cmd: fc
 - cmd: nu
 - cmd: mv i.sh 0inst/
     - i.sh
@@ -2109,14 +2079,11 @@
 - cmd: tlp
 - cmd: fish lp
 - cmd: fish
-- cmd: c
 - cmd: waybar
 - cmd: sudo systemctl enable nvidia-suspend
 - cmd: sudo systemctl status nvidia-suspend
-- cmd: mm
 - cmd: hyprctl keyword monitor HDMI-A-1,1920x1080@60.0,0x0,1
 - cmd: s dmesg
-- cmd: af
 - cmd: ctl status nvidia-persistenced.service
 - cmd: n a
 - cmd: ctl status systemd-machine-id-commit.service
@@ -2171,9 +2138,6 @@
 - cmd: rm a
 - cmd: stow home
 - cmd: pui lxappearance
-- cmd: s journalctl -b
-- cmd: ts
-- cmd: lp
 - cmd: n monitor.conf
 - cmd: ggg
 - cmd: pi kanshi
@@ -2186,7 +2150,6 @@
 - cmd: n config.bup
     - config.bup
 - cmd: s pacman -S kanshi
-- cmd: n autostart.conf
 - cmd: kanshictl
 - cmd: kanshi .config/kanshi/config
 - cmd: lo kanshi
@@ -2200,24 +2163,17 @@
 - cmd: kanshictl switch .config/kanshi/config
 - cmd: kanshi
 - cmd: hyprctl monitors all
-- cmd: u
-- cmd: b
 - cmd: cd atest/
 - cmd: rm *
 - cmd: rr dotfiles/
-- cmd: cdf
 - cmd: cd uwsm/.config/uwsm/
     - uwsm/.config/uwsm/
 - cmd: n env
 - cmd: n env-hyprland
-- cmd: cd
-- cmd: cc
 - cmd: cd fuzzel/
 - cmd: n fuzzel.ini
-- cmd: l
 - cmd: n hypr-keybind.conf
     - hypr-keybind.conf
-- cmd: chh
 - cmd: mv keybind.conf ukeybind.conf
     - keybind.conf
 - cmd: cp ukeybind.conf keybind.conf
@@ -2225,17 +2181,82 @@
 - cmd: n keybind.conf
 - cmd: rm hypr-keybind.conf
 - cmd: hh
-- cmd: g
-- cmd: gg
 - cmd: cd /boot/loader/
     - /boot/loader/
+- cmd: sn loader.conf
+    - loader.conf
 - cmd: s systemctl enable systemd-boot-update.service
 - cmd: s systemctl status systemd-boot-update.service
 - cmd: cd entries/
     - entries/
 - cmd: n 2025-04-16_12-24-46_linux.conf
     - 2025-04-16_12-24-46_linux.conf
+- cmd: ts
 - cmd: n mimeapps.list
     - mimeapps.list
+- cmd: cc
 - cmd: rr kanshi/
 - cmd: stow kanshi/
+- cmd: lp
+- cmd: u
+- cmd: sn /etc/mkinitcpio.conf
+- cmd: s mkinitcpio -P
+- cmd: s journalctl -b
+- cmd: c
+- cmd: mm
+- cmd: fc
+- cmd: echo 3 >/proc/sys/vm/drop_caches
+- cmd: b
+- cmd: ctl stauts paccache
+- cmd: ctl status paccache
+- cmd: ctl status paccache.timer
+- cmd: ctl enable paccache.timer
+- cmd: cdf
+- cmd: cd 0inst/
+- cmd: n 050grubefi.sh
+- cmd: cd vago
+    - vago
+- cmd: cd /etc/sudoers.d/
+    - /etc/sudoers.d/
+- cmd: s echo "vago ALL=(ALL) ALL" >> /etc/sudoers.d/vago
+- cmd: su -
+- cmd: cd
+- cmd: n gitpull.sh
+- cmd: n ggitpull.sh
+- cmd: rm ggitpull.sh
+    - ggitpull.sh
+- cmd: n cpbh.sh
+- cmd: af
+- cmd: sudo pacman -Scc
+- cmd: sudo pacman -Scc --noconfirm
+- cmd: sudo paccache -ruk0
+- cmd: sudo paccache -rk1
+- cmd: yay -Scc
+- cmd: sudo pacman -Rnsc $(pacman -Qdtq)
+- cmd: yay -Yc
+- cmd: n poweroff.sh
+- cmd: n paccach.sh
+- cmd: n pac.sh
+- cmd: ch pac.sh
+    - pac.sh
+- cmd: mv pac.sh dpaccach.sh
+- cmd: ./dpaccach.sh
+- cmd: cpk
+- cmd: nwc
+- cmd: gg
+- cmd: g
+- cmd: chh
+- cmd: n autostart.conf
+- cmd: cd ~/atest/
+- cmd: cd bin
+- cmd: n dpaccach.sh
+    - dpaccach.sh
+- cmd: n c
+- cmd: ch c
+- cmd: l
+- cmd: ./c -l
+- cmd: a=$(pacman -Qdtq)
+- cmd: bash
+- cmd: n c -l
+- cmd: ./c
+    - c

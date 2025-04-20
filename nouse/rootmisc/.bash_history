@@ -2127,3 +2127,10 @@ sudo firecfg
 cd /boot/loader/entries/
 cd 2025-04-16_12-24-46_linux.conf 
 sn 2025-04-16_12-24-46_linux.conf 
+a=$(pacman -Qdtq)
+echo $a
+pacman -Qdtq | wl -l
+pacman -Qdtq | lc -l
+pacman -Qdtq | wc -l
+a="(pacman -Qdtq) | wc -l"
+echo a

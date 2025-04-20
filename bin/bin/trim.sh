@@ -10,16 +10,13 @@ handle_error() {
 a=$(date | awk '{print $1}')
 
 if [ $a == Fri ];then
-	exec foot sh -c '
-	printf "\n\e[1;32m.......trim? : \n\e[0m"
-	select yn in yes no;do
-	case $yn in
-	yes)
-		sudo fstrim -av
-		break ;;
-	no)
-		exit 0
-		break ;;
-	esac
-done'
+        if ! [ -f ~/.log/trim.log ]; then
+                exec foot sh -c '
+		 printf "\n\e[1;32m....... trim....... \n\e[0m"  
+                sudo fstrim -av;
+                echo date > ~/.log/trim.log;
+                read;'
+        fi
+else
+        rm ~/.log/trim.log 2>1 /dev/null
 fi

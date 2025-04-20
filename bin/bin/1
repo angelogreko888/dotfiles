@@ -1,0 +1,2 @@
+rm: cannot remove '/home/vago/.log/trim.log': No such file or directory
+rm: cannot remove '/dev/null': Permission denied

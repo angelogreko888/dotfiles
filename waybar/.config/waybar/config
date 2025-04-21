@@ -238,7 +238,7 @@
         "menu-actions": {
             "shutdown": "~/bin/poweroff.sh",	
             "reboot": "reboot",
-            "suspend": "pidof hyprlock || (hyprlock & sleep 1s && systemctl suspend)",
+            "suspend": "systemctl suspend)",
 	    "log out": "exit"
         }
     },

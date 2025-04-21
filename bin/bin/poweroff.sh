@@ -3,9 +3,7 @@ rm -rf ~/.cache/*
 sleep 0.5
 ~/bin/cb.sh
 sleep 0.5
-~/bin/bup
-sleep 0.5
-~/bin/vtbup
+~/bin/bup.sh
 sleep 0.5
 ~/bin/gpush.sh
 sleep 0.5

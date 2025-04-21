@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 rm -rf ~/.cache/* 
 sleep 0.5
-~/bin/cpbh.sh
+~/bin/cb.sh
 sleep 0.5
 ~/bin/bup
 sleep 0.5

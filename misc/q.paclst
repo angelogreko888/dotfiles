@@ -52,6 +52,7 @@ linux
 linux-firmware
 linux-headers
 ly
+mpv
 mtools
 nano
 nano-syntax-highlighting
@@ -88,7 +89,6 @@ swaybg
 swaync
 timeshift
 ttf-font-awesome
-ttf-jetbrains-mono
 ttf-jetbrains-mono-nerd
 usbutils
 vim

@@ -32,12 +32,12 @@
   "modules-right": [
 	"pulseaudio",
         "custom/swaync",
-	"idle_inhibitor",
+//	"idle_inhibitor",
 	"pulseaudio#microphone",
         "backlight",
 	"network",
         "tray",
-	"power-profiles-daemon",
+//	"power-profiles-daemon",
 	"battery",
         "custom/power"
     ],
@@ -267,7 +267,7 @@
         "format-en": "🇺🇸",
 	    "format-gr": "🇬🇷",
 	    "format-he": "🇮🇱",
-        "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next"
+//        "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next"
 	},
 
 	"custom/swaync": {

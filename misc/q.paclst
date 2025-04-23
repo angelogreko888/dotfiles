@@ -11,6 +11,7 @@ dconf-editor
 dkms
 dmidecode
 dosfstools
+dpkg
 dunst
 efibootmgr
 eog
@@ -42,7 +43,6 @@ intel-ucode
 iwd
 jdk-openjdk
 kanshi
-kitty
 less
 libeatmydata
 libpulse
@@ -101,3 +101,4 @@ xdg-user-dirs
 xdg-utils
 xorg-server
 xorg-xinit
+yt-dlp

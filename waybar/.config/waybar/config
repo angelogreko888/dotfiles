@@ -237,9 +237,9 @@
         "menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
         "menu-actions": {
             "shutdown": "~/bin/poweroff.sh",	
-            "reboot": "reboot",
-            "suspend": "systemctl suspend)",
-	    "log out": "exit"
+            "reboot": "~/bin/reboot.sh",
+            "suspend": "~/bin/suspend.sh",
+	    "log out": "~/bin/exit.sh"
         }
     },
 

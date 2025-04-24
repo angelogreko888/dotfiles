@@ -14,7 +14,7 @@ fi
 touch "$flag"
 
 for i in $(seq 1 999); do
-sleep 600
+sleep 6
 cd  ~/.config/FreeTube/
 rsync history.db  ~/dotfiles/freetube/.config/FreeTube/history.db
 rsync playlists.db  ~/dotfiles/freetube/.config/FreeTube/playlists.db
@@ -27,7 +27,7 @@ cd ~/dotfiles
 a=$(git status |wc -l)
 
 if [ $a -gt 4 ]; then
-        wget -q --spider http://google.com
+        wget -q --spider http://google.com > /dev/null
         if [ $? -eq 0 ]; then
         git add . && git commit -m "save" && git push -u origin main
 	notify-send " dotfiles synchronized "

@@ -1,26 +1,31 @@
 #!/usr/bin/env bash
+handle_error() {
+      echo "An error occurred on line $1"
+      exit 1
+  }
+
+  trap 'handle_error $LINENO' ERR
 
 
-for i in $(seq 1 99);
-do
-  sleep 900
+for i in $(seq 1 999); do
+sleep 300
+cd  ~/.config/FreeTube/
+rsync history.db  ~/dotfiles/freetube/.config/FreeTube/history.db
+rsync playlists.db  ~/dotfiles/freetube/.config/FreeTube/playlists.db
+rsync profiles.db  ~/dotfiles/freetube/.config/FreeTube/profiles.db
+rsync search-history.db  ~/dotfiles/freetube/.config/FreeTube/search-history.db
+rsync settings.db  ~/dotfiles/freetube/.config/FreeTube/settings.db
 
-  wget -q --spider http://google.com
+cd ~/dotfiles
+a=$(git status |wc -l)
 
-  if [ $? -eq 0 ]; then
-
-  cd  ~/.config/FreeTube/
-  rsync history.db  ~/dotfiles/freetube/.config/FreeTube/history.db
-  rsync playlists.db  ~/dotfiles/freetube/.config/FreeTube/playlists.db
-  rsync profiles.db  ~/dotfiles/freetube/.config/FreeTube/profiles.db
-  rsync search-history.db  ~/dotfiles/freetube/.config/FreeTube/search-history.db
-  rsync settings.db  ~/dotfiles/freetube/.config/FreeTube/settings.db
-
-  cd ~/dotfiles
-  git add . && git commit -m "save" && git push -u origin main
-
-  else
-  echo exit 
-  fi
-
+if [ $a -gt 0 ]; then
+        wget -q --spider http://google.com
+        if [ $? -eq 0 ]; then
+        git add . && git commit -m "save" && git push -u origin main
+        fi
+else
+        exit 0
+fi
 done
+

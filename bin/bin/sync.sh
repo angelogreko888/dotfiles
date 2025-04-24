@@ -15,6 +15,7 @@ touch "$flag"
 
 
 for i in $(seq 1 999); do
+ notify-send " b4 sleep "
 sleep 600
 cd  ~/.config/FreeTube/
 rsync history.db  ~/dotfiles/freetube/.config/FreeTube/history.db

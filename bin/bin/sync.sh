@@ -25,7 +25,7 @@ if [ $a -gt 0 ]; then
         wget -q --spider http://google.com
         if [ $? -eq 0 ]; then
         git add . && git commit -m "save" && git push -u origin main
-	notify-send "\n dotfiles synchronized \n"
+	notify-send " dotfiles synchronized "
         fi
 else
         exit 0

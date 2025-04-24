@@ -8,7 +8,7 @@ handle_error() {
 
 
 for i in $(seq 1 999); do
-sleep 300
+sleep 600
 cd  ~/.config/FreeTube/
 rsync history.db  ~/dotfiles/freetube/.config/FreeTube/history.db
 rsync playlists.db  ~/dotfiles/freetube/.config/FreeTube/playlists.db
@@ -25,7 +25,7 @@ if [ $a -gt 0 ]; then
         wget -q --spider http://google.com
         if [ $? -eq 0 ]; then
         git add . && git commit -m "save" && git push -u origin main
-	notify-send "dotfiles synchronized"
+	notify-send "\n dotfiles synchronized \n"
         fi
 else
         exit 0

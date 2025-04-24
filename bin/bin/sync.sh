@@ -26,7 +26,7 @@ rsync settings.db  ~/dotfiles/freetube/.config/FreeTube/settings.db
 cd ~/dotfiles
 a=$(git status |wc -l)
 
-if [ $a > 4 ]; then
+if [ $a -gt 4 ]; then
         wget -q --spider http://google.com
         if [ $? -eq 0 ]; then
         git add . && git commit -m "save" && git push -u origin main

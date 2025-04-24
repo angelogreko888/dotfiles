@@ -1,19 +1,22 @@
 lst=(
-mkinitcpio-firmware
+aic94xx-firmware
+android-sdk-platform-tools
+anydesk-bin
+ast-firmware
 aurutils
 bezier
 checkupdates-with-aur
+freetube-bin
 hyprevents-git
 hyprprop-git
-librewolf-bin
-simple-mtpfs
 hyprshade
 hyprshot
+librewolf-bin
 mintstick
 mullvad-browser-bin
-android-sdk-platform-tools
-anydesk-bin
-freetube-bin
+simple-mtpfs
+tlpui
+wd719x-firmware
 
 )
 

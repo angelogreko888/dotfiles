@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
+~/bin/cb.sh
 ~/bin/gpush.sh
-sleep 1
 reboot

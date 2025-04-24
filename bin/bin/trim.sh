@@ -17,7 +17,7 @@ if [ $a == Fri ];then
 		printf "\n\e[1;32m....... trim....... \n\n\e[0m"  
                 sudo fstrim -av;'
 else
-		if [ -f ~/var/tmp/trim.sh.flag ]; then
-		rm ~/var/tmp/trim.sh.flag 
+		if [ -f /var/tmp/trim.sh.flag ]; then
+		rm /var/tmp/trim.sh.flag 
 		fi
 fi

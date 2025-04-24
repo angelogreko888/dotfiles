@@ -7,5 +7,7 @@
 	rsync search-history.db  ~/dotfiles/freetube/.config/FreeTube/search-history.db
 	rsync settings.db  ~/dotfiles/freetube/.config/FreeTube/settings.db
 
+	bash ~/bin/cb.sh
+
 	cd ~/dotfiles
 	git status

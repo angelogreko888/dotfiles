@@ -11,11 +11,9 @@ flag="/var/tmp/$(basename -- $0).flag"
 if [ -e "$flag" ] ;then
   [ $(date +%F) = $(date +%F -r "$flag") ] && exit 1
 fi
-touch "$flag"
 
 
 for i in $(seq 1 999); do
- notify-send " b4 sleep "
 sleep 600
 cd  ~/.config/FreeTube/
 rsync history.db  ~/dotfiles/freetube/.config/FreeTube/history.db
@@ -40,3 +38,4 @@ else
 fi
 done
 
+touch "$flag"

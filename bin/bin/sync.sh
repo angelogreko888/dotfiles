@@ -16,14 +16,14 @@ rsync profiles.db  ~/dotfiles/freetube/.config/FreeTube/profiles.db
 rsync search-history.db  ~/dotfiles/freetube/.config/FreeTube/search-history.db
 rsync settings.db  ~/dotfiles/freetube/.config/FreeTube/settings.db
 
-bash ~/bin/cb.sh
 
 cd ~/dotfiles
 a=$(git status |wc -l)
 
-if [ $a -gt 0 ]; then
+if [ $a > 0 ]; then
         wget -q --spider http://google.com
         if [ $? -eq 0 ]; then
+	bash ~/bin/cb.sh
         git add . && git commit -m "save" && git push -u origin main
 	notify-send " dotfiles synchronized "
         fi

@@ -10,6 +10,7 @@ btrfs-progs
 cups-pdf
 dbxtool
 dconf-editor
+dhcp
 dkms
 dmidecode
 dosfstools
@@ -111,6 +112,7 @@ timeshift
 ttf-font-awesome
 ttf-jetbrains-mono-nerd
 ufw
+usb_modeswitch
 usbutils
 uwsm
 vim

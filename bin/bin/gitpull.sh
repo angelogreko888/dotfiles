@@ -7,6 +7,12 @@ handle_error() {
 
   trap 'handle_error $LINENO' ERR
 
+flag="/var/tmp/$(basename -- $0).flag"
+
+if [ -e "$flag" ] ;then
+  [ $(date +%F) = $(date +%F -r "$flag") ] && exit 1
+fi
+touch "$flag"
 
 until ping -c1 www.google.com &>/dev/null
 do

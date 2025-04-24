@@ -6,6 +6,13 @@ handle_error() {
 
   trap 'handle_error $LINENO' ERR
 
+flag="/var/tmp/$(basename -- $0).flag"
+
+if [ -e "$flag" ] ;then
+  [ $(date +%F) = $(date +%F -r "$flag") ] && exit 1
+fi
+touch "$flag"
+
 
 for i in $(seq 1 999); do
 sleep 600

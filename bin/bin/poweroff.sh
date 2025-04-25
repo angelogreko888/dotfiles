@@ -7,6 +7,7 @@ sleep 0.5
 sleep 0.5
 ~/bin/gpush.sh
 sleep 0.5
+pkill sleep
 rm /var/tmp/sync.sh.flag
 rm /var/tmp/gitpull.sh.flag
 

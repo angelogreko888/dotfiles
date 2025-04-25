@@ -23,10 +23,15 @@ for i in $(seq 1 999); do
 	rsync settings.db  ~/dotfiles/freetube/.config/FreeTube/settings.db
 
 	cd ~/dotfiles
-       	wget -q --spider http://google.com > /dev/null
-        if [ $? -eq 0 ]; then
-        git add . && git commit -m "save" && git push -u origin main
-	notify-send " dotfiles synchronized "
-        fi
+	a=$(git status | wc -l) > /dev/null
+	if [ $a -ne 4 ];then
+	       	wget -q --spider http://google.com > /dev/null
+        	if [ $? -eq 0 ]; then
+		        git add . && git commit -m "save" && git push -u origin main
+			notify-send " dotfiles synchronized "
+	        fi
+	else
+		exit 0
+	fi
 done
 

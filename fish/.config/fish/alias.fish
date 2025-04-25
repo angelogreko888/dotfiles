@@ -153,3 +153,4 @@ alias fc="sudo sh -c 'echo 3 >/proc/sys/vm/drop_caches'"
 alias mm='hyprctl keyword monitor HDMI-A-1,1920x1080@60.0,0x0,1'
 alias dp='~/bin/dpaccach.sh'
 
+alias ee='ps ac | rg sleep'

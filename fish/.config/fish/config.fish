@@ -23,3 +23,5 @@ function fish_prompt
 
     echo \n (set_color red)∋∈  ∋∈  ∋∈    (set_color blue) (prompt_pwd --full-length-dirs 8)  (set_color yellow) $stat ' '
 end
+
+export ANDROID_HOME=/opt/android-sdk/

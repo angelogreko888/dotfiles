@@ -8,6 +8,7 @@ cups
 cups-pdf
 dbxtool
 dconf-editor
+dhcpcd
 dkms
 dmidecode
 dosfstools
@@ -58,6 +59,7 @@ nano
 nano-syntax-highlighting
 ncdu
 nemo
+net-tools
 network-manager-applet
 networkmanager
 nvidia-dkms

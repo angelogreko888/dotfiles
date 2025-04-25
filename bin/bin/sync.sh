@@ -13,7 +13,7 @@ if [ -e "$flag" ] ;then
 fi
 touch "$flag"
 
-for i in $(seq 1 999); do
+for i in $(seq 1 99); do
 	sleep 600
 	cd  ~/.config/FreeTube/
 	rsync history.db  ~/dotfiles/freetube/.config/FreeTube/history.db

@@ -13,7 +13,7 @@ if [ -e "$flag" ] ;then
 fi
 touch "$flag"
 
-for i in $(seq 1 99); do
+while (true); do
 	sleep 600
 	cd  ~/.config/FreeTube/
 	rsync history.db  ~/dotfiles/freetube/.config/FreeTube/history.db
@@ -31,7 +31,7 @@ for i in $(seq 1 99); do
 			notify-send " dotfiles synchronized "
 	        fi
 	else
-		exit 0
+		echo
 	fi
 done
 

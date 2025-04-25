@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
-rm /var/tmp/sync.sh.flag
+if [ -f /var/tmp/sync.sh.flag ];then
+	rm /var/tmp/sync.sh.flag
+fi
 ~/bin/gpush.sh
 reboot

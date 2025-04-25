@@ -24,7 +24,7 @@ for i in $(seq 1 999); do
 
 
 	cd ~/dotfiles
-	a=$(git status |wc -l)
+	a=$(git status |wc -l) > /dev/null
 
 	if [ $a -gt 4 ]; then
         	wget -q --spider http://google.com > /dev/null

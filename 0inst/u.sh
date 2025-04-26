@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-is="$HOME/dotfiles/00inst/"
+is="$HOME/dotfiles/0inst/"
 cp="020confpac-usr.sh"
 nv="090nvidia.sh"
 yy="10yay.sh"
@@ -14,7 +14,7 @@ cd ~
 
 sudo pacman -Sy --needed --noconfirm git nano reflector
 
-git clone https://github.com/angelogreko888/dotfiles
+git clone --depth 1 https://github.com/angelogreko888/dotfiles
 
 if ! [ -d ~/dotfiles ];then
 	printf "\n\e[1;31m... ERROR Folder Does Not Exist ... : \n\e[0m"

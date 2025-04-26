@@ -9,6 +9,7 @@ fstrim.timer
 ufw
 avahi-daemon
 upower
+adb
 systemd-resolved.service
 apparmor.service
 paccache.timer 
@@ -58,23 +59,23 @@ printf "\n\e[1;32m......install br printer" ?: \n\e[0m"
         select  yn in yes no;do
                 case $yn in
                 yes)  
-			bash  ~/dotfiles/0inst/900pbr.sh
+			~/dotfiles/0inst/900pbr.sh
 			break ;;
 
 		no) 
-			exit 0
+			echo
                         break ;;
                  *) 
                         printf "\n\e[1;31m... !!! ERROR Enter Your Choice !>
                 esac
 
-#firejail
-sudo firecfg
-
 #fish
 cp ~/dotfiles/nouse/rootmisc/fish_history ~/.local/share/fish/
 cp ~/dotfiles/nouse/rootmisc/.bash_history ~/
 chsh -s /usr/bin/fish
+
+#firejail
+sudo firecfg
 
 id  $whoami
 

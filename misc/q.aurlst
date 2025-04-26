@@ -13,9 +13,11 @@ hyprprop-git
 hyprshade
 hyprshot
 librewolf-bin
+libwireplumber-4.0-compat-debug
 mintstick
 mkinitcpio-firmware
 mullvad-browser-bin
+pwvucontrol-debug
 simple-mtpfs
 tlpui
 wd719x-firmware

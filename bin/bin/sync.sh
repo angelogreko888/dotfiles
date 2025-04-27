@@ -28,7 +28,7 @@ while (true); do
 	       	wget -q --spider http://google.com > /dev/null
         	if [ $? -eq 0 ]; then
 		        git add . && git commit -m "save" && git push -u origin main
-			notify-send " dotfiles synchronized "
+			notify-send --hint int:transient:1 " dotfiles synchronized "
 	        fi
 	else
 		echo

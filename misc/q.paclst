@@ -27,6 +27,7 @@ fuzzel
 fwupd
 gimp
 git
+glib2-devel
 gnome-calculator
 gnome-disk-utility
 gnome-text-editor

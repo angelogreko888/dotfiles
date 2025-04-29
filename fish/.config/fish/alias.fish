@@ -122,7 +122,7 @@ alias y='yay'
 alias yi='yay -S --noconfirm'
 alias ys='yay -Ss'
 alias yu='yay -Syyu'
-alias yd='yay -Yc'
+alias yd='yay -Ycc'
 alias yui='yay -Rns'
 
 alias hh='nano ~/.config/hypr/hyprland.conf'

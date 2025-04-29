@@ -47,6 +47,8 @@ iwd
 jdk-openjdk
 kanshi
 less
+lib32-nvidia-utils
+lib32-opencl-nvidia
 libeatmydata
 libpulse
 libreoffice-fresh
@@ -64,6 +66,7 @@ nemo
 net-tools
 network-manager-applet
 networkmanager
+nss-mdns
 nvidia-dkms
 nwg-look
 pacman-contrib

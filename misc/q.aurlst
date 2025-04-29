@@ -17,5 +17,6 @@ mintstick
 mkinitcpio-firmware
 mullvad-browser-bin
 simple-mtpfs
+spd5118-dkms-git
 wd719x-firmware
 yay

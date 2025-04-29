@@ -1,3 +1,5 @@
+acpi
+acpid
 arch-install-scripts
 base
 base-devel
@@ -73,6 +75,7 @@ pipewire-jack
 pipewire-pulse
 plocate
 polkit-kde-agent
+power-profiles-daemon
 python-pip
 qt5-wayland
 qt5ct

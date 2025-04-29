@@ -42,6 +42,8 @@ blkid
 printf "\n\e[1;32m..... enter root : \e[0m"
 read rd
 
+a=$(blkid | grep $rd | awk '{print $2}' | cut -b 7-42)
+
 echo "
 default  arch.conf
 timeout  0
@@ -54,10 +56,9 @@ title   Arch Linux
 linux   /vmlinuz-linux
 initrd  /intel-ucode.img
 initrd  /initramfs-linux.img
-options root=UUID=  rw quiet splash nvidia-drm.modeset=1 nvidia_drm.fbdev=1 rd.driver.blacklist=nouveau modprob.blacklist=nouveau lsm=landlock,lockdown,yama,integrity,apparmor,bpf
+options root=PARTUUID=$a   rw rootfstype=ext4 quiet splash nvidia-drm.modeset=1 nvidia_drm.fbdev=1 rd.driver.blacklist=nouveau modprob.blacklist=nouveau lsm=landlock,lockdown,yama,integrity,apparmor,bpf
 " | tee /boot/loader/entries/arch.conf
 
-echo $(blkid | grep $rd | awk '{print $2}' | cut -b 7-42) | tee -a /boot/loader/entries/arch.conf
 
 useradd -m vago
 

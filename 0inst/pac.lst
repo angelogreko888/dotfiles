@@ -47,7 +47,6 @@ less
 libeatmydata
 libpulse
 libreoffice-fresh
-libva-nvidia-driver
 linux
 linux-firmware
 linux-headers
@@ -60,7 +59,6 @@ ncdu
 nemo
 network-manager-applet
 networkmanager
-nvidia-dkms
 nwg-look
 pacman-contrib
 pamixer

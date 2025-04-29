@@ -10,10 +10,6 @@ handle_error() {
 
 cd ~
 
-#if ! [ -d git ]; then
-#       mkdir ~/git
-#fi
-
 if [ -f /etc/modprobe.d/nouveau.conf ]; then
   printf "Seems like nouveau is already blacklisted."
 else
@@ -64,13 +60,8 @@ else
     echo "/etc/default/grub does not exist"
 fi
 
-#cd ~/git
-#
-#git clone  https://github.com/Frogging-Family/nvidia-all.git
-#cd  nvidia-all/
-#makepkg -si 
-
 #sudo pacman -Sy --noconfirm nvidia-dkms egl-wayland lib32-nvidia-utils lib32-opencl-nvidia opencl-nvidia nvidia-utils
+sudo pacman -S --noconfirm nvidia-dkms libva-nvidia-driver 
 
 sudo mkinitcpio -P
 

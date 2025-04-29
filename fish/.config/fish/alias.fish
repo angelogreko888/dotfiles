@@ -73,7 +73,7 @@ alias ggg='~/bin/gpush.sh'
 alias ap='apropos'
 alias b='btop'
 alias t='htop'
-alias nu='ncdu'
+alias nu='ncdu / --exclude /mnt --exclude /vt'
 alias th='sudo -sE thunar'
 alias nm='sudo -sE nemo'
 

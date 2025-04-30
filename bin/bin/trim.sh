@@ -22,7 +22,7 @@ if [ $a == Sat ];then
 	sudo pacman -Scc --noconfirm
 	yay -Scc --noconfirm
 	yay -Yc --noconfirm
-	a="$((pacman -Qdtq) | wc -l >/dev/null)" > /dev/null
+	a="$((pacman -Qdtq) | wc -l" > /dev/null
 	if [ $a > 0 ];then
 	        sudo pacman -Rnsc $(pacman -Qdtq)
 	else

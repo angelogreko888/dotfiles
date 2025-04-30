@@ -45,15 +45,15 @@
     // Modules configuration
 
 
- "custom/pacman": {
-         "format": "󰅢 {}",
-         "interval": 600,   
-         "exec": "checkupdates-with-aur | wc -l | grep -vx 0",
-         "exec-if": "exit 0",
-	 "on-click": "foot sh -c 'yay -Syu;  echo ~~~~~~~~~~~~~~~Done~~~~~~~~~~~~~~~~~~~ - Press enter to exit; read'; pkill -SIGRTMIN+8 waybar", 
-         "signal": 8,
-         "tooltip": false ,
-        },
+// "custom/pacman": {
+//         "format": "󰅢 {}",
+//         "interval": 600,   
+//         "exec": "checkupdates-with-aur | wc -l | grep -vx 0",
+//         "exec-if": "exit 0",
+//	 "on-click": "foot sh -c 'yay -Syu;  echo ~~~~~~~~~~~~~~~Done~~~~~~~~~~~~~~~~~~~ - Press enter to exit; read'; pkill -SIGRTMIN+8 waybar", 
+//         "signal": 8,
+//         "tooltip": false ,
+//        },
 
   "custom/arch": {
         "format": "󰣇",

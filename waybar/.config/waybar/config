@@ -22,7 +22,7 @@
 	"wlr/taskbar",
 	"memory",
 	"cpu",
-	"custom/pacman",
+//	"custom/pacman",
     ],
 
   "modules-center": [

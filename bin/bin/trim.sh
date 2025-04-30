@@ -14,7 +14,9 @@ if [ $a == Sat ];then
 	fi
 	touch "$flag"
 	exec foot sh -c '
-	printf "\n\e[1;32m....... pacache ..... trim ....... \n\n\e[0m";
+	printf "\n\e[1;32m....... update ..... pacache ..... trim ....... \n\n\e[0m";
+	sudo pacman -Syyu --noconfirm
+	yay -Syyu --noconfirm
 	sudo paccache -ruk0
 	sudo paccache -rk1
 	sudo pacman -Scc --noconfirm

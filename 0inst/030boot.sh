@@ -37,12 +37,12 @@ if ! [ -d  /boot/loader/ ];then
 	exit 1
 fi
 
-blkid
+lsblk
 
 printf "\n\e[1;32m..... enter root : \e[0m"
 read rd
 
-a=$(blkid | grep $rd | awk '{print $2}' | cut -b 7-42)
+a=$(blkid | grep nvme0n1p$rd | awk '{print $7}' | cut -b 11-46)
 
 echo "
 default  arch.conf
@@ -56,9 +56,8 @@ title   Arch Linux
 linux   /vmlinuz-linux
 initrd  /intel-ucode.img
 initrd  /initramfs-linux.img
-options root=PARTUUID=$a   rw rootfstype=ext4 quiet splash nvidia-drm.modeset=1 nvidia_drm.fbdev=1 rd.driver.blacklist=nouveau modprob.blacklist=nouveau lsm=landlock,lockdown,yama,integrity,apparmor,bpf
+options root=PARTUUID=$a rw rootfstype=ext4 quiet splash nvidia-drm.modeset=1 nvidia_drm.fbdev=1 rd.driver.blacklist=nouveau modprob.blacklist=nouveau lsm=landlock,lockdown,yama,integrity,apparmor,bpf
 " | tee /boot/loader/entries/arch.conf
-
 
 useradd -m vago
 
@@ -74,4 +73,4 @@ systemctl enable systemd-boot-update.service
 
 cat /boot/loader/entries/arch.conf | grep options
 
-echo "exit umount  reboot"
+echo "~~~~~ exit, umount -R /mnt, reboot ~~~~~"

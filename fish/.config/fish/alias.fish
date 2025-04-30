@@ -102,7 +102,7 @@ alias cpd='sudo pacman -Scc && yay -Scc'
 alias ccc='du -sh ~/.cache/'
 alias ccd='rm -rf ~/.cache/*'
 
-alias pi='sudo pacman -Syu --needed'
+alias pi='sudo pacman -S --needed'
 alias pss='sudo pacman -Ss'
 alias pu='sudo pacman -Syyu'
 alias pud='sudo pacman -Syu'

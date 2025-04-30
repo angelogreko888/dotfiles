@@ -61,7 +61,7 @@ else
 fi
 
 #sudo pacman -Sy --noconfirm nvidia-dkms egl-wayland lib32-nvidia-utils lib32-opencl-nvidia opencl-nvidia nvidia-utils
-sudo pacman -S --noconfirm nvidia-dkms libva-nvidia-driver 
+sudo pacman -S --noconfirm --needed nvidia-dkms nvidia-utils lib32-nvidia-utils libva-nvidia-driver 
 
 sudo mkinitcpio -P
 

@@ -40,7 +40,6 @@ gufw
 gvfs-mtp
 htop
 hyprland
-hyprpolkitagent
 imagemagick
 inotify-tools
 intel-ucode
@@ -70,6 +69,7 @@ networkmanager
 nss-mdns
 nvidia-dkms
 nwg-look
+opencl-nvidia
 pacman-contrib
 pamixer
 pavucontrol

@@ -40,6 +40,7 @@ gufw
 gvfs-mtp
 htop
 hyprland
+hyprpolkitagent
 imagemagick
 inotify-tools
 intel-ucode
@@ -77,7 +78,6 @@ pipewire-alsa
 pipewire-jack
 pipewire-pulse
 plocate
-polkit-kde-agent
 power-profiles-daemon
 python-pip
 qt5-wayland

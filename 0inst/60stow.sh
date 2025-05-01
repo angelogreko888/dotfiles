@@ -18,9 +18,9 @@ fastfetch
 fish
 foot
 fuzzel
-gtk-2.0
+#gtk-2.0
 gtk-3.0
-gtk-4.0
+#gtk-4.0
 home
 hypr
 ranger

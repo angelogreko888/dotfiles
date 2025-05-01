@@ -1,4 +1,3 @@
-lst=(
 adw-gtk-theme-git
 aic94xx-firmware
 android-sdk-platform-tools
@@ -19,7 +18,3 @@ mullvad-browser-bin
 simple-mtpfs
 wd719x-firmware
 
-)
-
-
-spd5118-dkms-git

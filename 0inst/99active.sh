@@ -5,14 +5,14 @@ cd ~
 ctl=(
 ly
 cups
-fstrim.timer
+#fstrim.timer
 ufw
 avahi-daemon
 upower
 adb
 systemd-resolved.service
 apparmor.service
-paccache.timer 
+#paccache.timer 
 systemd-homed.service
 nvidia-suspend.service
 nvidia-hibernate.service

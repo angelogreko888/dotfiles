@@ -25,7 +25,7 @@ home
 hypr
 ranger
 swaync
-uwsm
+#uwsm
 waybar
 xsettingsd
 )

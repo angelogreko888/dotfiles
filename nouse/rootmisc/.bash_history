@@ -2134,3 +2134,4 @@ pacman -Qdtq | lc -l
 pacman -Qdtq | wc -l
 a="(pacman -Qdtq) | wc -l"
 echo a
+mv animations-* animations/

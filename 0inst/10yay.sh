@@ -13,13 +13,11 @@ if  pacman -Q yay &>/dev/null; then
 	exit 0
   fi
 
-cd ~
-
-if ! [ -d git ]; then
-        mkdir ~/git
+if ! [ -d ~/.cache ];then
+	mkdir ~/.cache
 fi
 
-cd ~/git
+cd ~/.cache
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si --noconfirm

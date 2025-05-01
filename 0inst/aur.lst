@@ -1,4 +1,5 @@
 lst=(
+adw-gtk-theme-git
 aic94xx-firmware
 android-sdk-platform-tools
 anydesk-bin
@@ -6,6 +7,7 @@ ast-firmware
 aurutils
 bezier
 checkupdates-with-aur
+flameshot-git
 freetube-bin
 hyprevents-git
 hyprprop-git
@@ -15,8 +17,9 @@ librewolf-bin
 mintstick
 mullvad-browser-bin
 simple-mtpfs
-tlpui
 wd719x-firmware
 
 )
 
+
+spd5118-dkms-git

@@ -7,7 +7,9 @@ handle_error() {
 
   trap 'handle_error $LINENO' ERR
 
-source ~/dotfiles/00inst/pac.lst
+#source ~/dotfiles/00inst/pac.lst
+lst=($(cat ~/dotfiles/00inst/pac.lst))
+plst=($(cat ~/dotfiles/00inst/ppac.lst))
 
 cd ~
 

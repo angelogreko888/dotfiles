@@ -1,4 +1,3 @@
-lst=(
 acpi
 acpid
 adw-gtk-theme
@@ -105,10 +104,4 @@ xdg-utils
 xorg-server
 xorg-xinit
 yt-dlp
-)
 
-plst=(
-kanshi
-zram-generator
-
-)

@@ -7,22 +7,18 @@ handle_error() {
 
   trap 'handle_error $LINENO' ERR
 
-
+cd ~
 if  pacman -Q yay &>/dev/null; then
 	printf "\n\e[1;32m... yay is installed - quiting ...\e[0m\n"
 	exit 0
-  fi
-
-if ! [ -d ~/.cache ];then
-	mkdir ~/.cache
+else
+	git clone https://aur.archlinux.org/yay.git
+	cd yay
+	makepkg -si --noconfirm
+	if ! pacman -Q yay &>/dev/null; then
+		printf "\e[1;31mERROR...Sorry, could not install... yay\e[0m\n"
+	fi
 fi
-
-cd ~/.cache
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si --noconfirm
 cd ~
-
-if ! pacman -Q yay &>/dev/null; then
-       printf "\e[1;31mERROR...Sorry, could not install... yay\e[0m\n"
-  fi
+rm -rf yay
+rm -rg go-build

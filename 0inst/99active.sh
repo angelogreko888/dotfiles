@@ -17,6 +17,7 @@ systemd-homed.service
 nvidia-suspend.service
 nvidia-hibernate.service
 nvidia-resume.service
+acpid
 
 )
 

@@ -102,11 +102,11 @@ alias cpd='sudo pacman -Scc && yay -Scc'
 alias ccc='du -sh ~/.cache/'
 alias ccd='rm -rf ~/.cache/*'
 
-alias pi='sudo pacman -S --needed'
+alias pi='sudo pacman -S --needed --noconfirm'
 alias pss='sudo pacman -Ss'
 alias pu='sudo pacman -Syyu'
 alias pud='sudo pacman -Syu'
-alias pui='sudo pacman -Rns'
+alias pui='sudo pacman -Rns && ~/bin/dpaccache.sh'
 alias psl='sudo nano /etc/pacman.conf'
 alias pdg='sudo pacman -U'
 alias pd='sudo pacman -Qdtq | sudo pacman -Rns'
@@ -117,13 +117,14 @@ alias pm='sudo nano /etc/pacman.d/mirrorlist'
 alias pl='sudo cat /var/log/pacman.log'
 
 alias u='sudo pacman -Syyu --noconfirm && yay -Syyu --noconfirm'
+alias dp='~/bin/dpaccache.sh'
 
 alias y='yay'
 alias yi='yay -S --noconfirm'
 alias ys='yay -Ss'
 alias yu='yay -Syyu'
 alias yd='yay -Ycc'
-alias yui='yay -Rns'
+alias yui='yay -Rns && ~/bin/dpaccache.sh'
 
 alias hh='nano ~/.config/hypr/hyprland.conf'
 alias nwc='nano ~/.config/waybar/config'
@@ -151,6 +152,5 @@ alias lp='sudo -sE tlpui'
 
 alias fc="sudo sh -c 'echo 3 >/proc/sys/vm/drop_caches'"
 alias mm='hyprctl keyword monitor HDMI-A-1,1920x1080@60.0,0x0,1'
-alias dp='~/bin/dpaccach.sh'
 
 alias ee='ps ac | rg sleep'

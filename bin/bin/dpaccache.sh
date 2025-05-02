@@ -11,8 +11,8 @@ handle_error() {
 	sudo pacman -Scc --noconfirm
 	yay -Scc --noconfirm
 	yay -Yc --noconfirm
-	a="$((pacman -Qdtq) | wc -l" > /dev/null
-	if [ $a > 0 ];then
+	a=$(pacman -Qdtq | wc -l) > /dev/null
+	if [ $a -ne 0 ];then
 	        sudo pacman -Rnsc $(pacman -Qdtq)
 	else
 		echo

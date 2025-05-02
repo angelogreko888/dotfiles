@@ -83,7 +83,8 @@
    "custom/clock": {
          "exec": "date +\"%-I:%M %p\"",
          "interval": 1, 
-    },
+	 "tooltip": false,  
+	},
 
    "clock": {
          "format": "{:%a %b %d}",
@@ -120,7 +121,8 @@
    "memory": {
         "format": "{used:.2g} ",
         "interval": 1,
-    },
+	"tooltip": false,
+	},
 
    "backlight": {
     	"interval": 2,
@@ -213,9 +215,10 @@
         "on-click-right": "pavucontrol -t 3",
         "on-scroll-up": "$HOME/.config/waybar/scripts/Volume.sh --inc",
         "on-scroll-down": "$HOME/.config/waybar/scripts/Volume.sh --dec",
-        "tooltip-format": "{icon} {desc} | {volume}%",
+     //   "tooltip-format": "{icon} {desc} | {volume}%",
         "smooth-scrolling-threshold": 1,
-    },
+	"tooltip": false,
+	},
 
     "pulseaudio#microphone": {
         "format": "{format_source}",
@@ -225,9 +228,10 @@
         "on-click-right": "pavucontrol -t 4",
         "on-scroll-up": "$HOME/.config/waybar/scripts/Volume.sh --mic-inc",
         "on-scroll-down": "$HOME/.config/waybar/scripts/Volume.sh --mic-dec",
-        "tooltip-format": "{source_desc} | {source_volume}%",
+  //      "tooltip-format": "{source_desc} | {source_volume}%",
         "scroll-step": 5,
-    },
+	"tooltip": false,
+	},
 
 
     "custom/power": {

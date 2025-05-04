@@ -3,6 +3,9 @@ acpid
 arch-install-scripts
 base
 base-devel
+blueman
+bluez-deprecated-tools
+bluez-utils
 brightnessctl
 btop
 cups
@@ -47,12 +50,16 @@ iwd
 jdk-openjdk
 kanshi
 less
+lib32-nvidia-utils
+lib32-opencl-nvidia
 libeatmydata
 libpulse
 libreoffice-fresh
+libva-nvidia-driver
 linux
 linux-firmware
 linux-headers
+lsof
 ly
 mpv
 mtools
@@ -66,6 +73,7 @@ networkmanager
 nss-mdns
 nvidia-open
 nwg-look
+opencl-nvidia
 pacman-contrib
 pamixer
 pavucontrol
@@ -100,6 +108,7 @@ waybar
 wget
 wireless_tools
 wireplumber
+xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 xdg-user-dirs
 xdg-utils

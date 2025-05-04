@@ -34,7 +34,7 @@
         "custom/swaync",
 //	"idle_inhibitor",
 	"pulseaudio#microphone",
-	"bluetooth",     
+//	"bluetooth",     
 	"backlight",
 	"network",
         "tray",

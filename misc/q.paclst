@@ -47,12 +47,9 @@ iwd
 jdk-openjdk
 kanshi
 less
-lib32-nvidia-utils
-lib32-opencl-nvidia
 libeatmydata
 libpulse
 libreoffice-fresh
-libva-nvidia-driver
 linux
 linux-firmware
 linux-headers
@@ -67,9 +64,8 @@ net-tools
 network-manager-applet
 networkmanager
 nss-mdns
-nvidia-dkms
+nvidia-open
 nwg-look
-opencl-nvidia
 pacman-contrib
 pamixer
 pavucontrol

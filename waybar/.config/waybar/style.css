@@ -85,6 +85,10 @@
   padding: 0px 15px 0px 15px;
 }
 
+#bluetooth{
+ border-radius:30px;
+  padding: 0px 10px 0px 10px;
+}
 
 #idle_inhibitor.activated{
  color:#e57474;
@@ -173,7 +177,7 @@
 
 #backlight {
  border-radius:10px;
- padding: 0px 20px 0px 20px;
+ padding: 0px 15px 0px 15px;
 }
 
 #keyboard-state.locked {

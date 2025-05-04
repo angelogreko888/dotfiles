@@ -34,7 +34,8 @@
         "custom/swaync",
 //	"idle_inhibitor",
 	"pulseaudio#microphone",
-        "backlight",
+	"bluetooth",     
+	"backlight",
 	"network",
         "tray",
 	"power-profiles-daemon",
@@ -259,10 +260,10 @@
     "bluetooth":{
     	"format-on": "<span color='#e57474'></span>  Turned On",
     	"format-off": "<span color='#e57474'></span>  Turned Off",
-    	//"format-disabled": "<span color='#e57474'></span>  Disabled",
-    	"format-disabled": "<span color='#0000ff'></span> ",
+    	"format-disabled": "<span color='#e57474'></span>  Disabled",
+    	"format-disabled": "<span color='#00ffff'></span> ",
         "format-connected": "<span color='#e57474'></span> Connected",
-    	//"format": "<span color='#e57474'></span> Disabled",
+    	"format": "<span color='#e57474'></span> Disabled",
         "format": "<span color='#ff0000'></span> ",    
         "on-click":"blueman-manager &"
     },

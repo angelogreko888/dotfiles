@@ -53,6 +53,7 @@ hyprland
 hyprland-qtutils
 hyprlang
 hyprlock
+inotify-tools
 intel-ucode
 inxi
 iw
@@ -93,6 +94,7 @@ pipewire-pulse
 plocate
 polkit-kde-agent
 portaudio
+power-profiles-daemon
 python-pip
 qt5-wayland
 qt5ct

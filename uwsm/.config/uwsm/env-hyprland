@@ -4,8 +4,8 @@ env =  HYPRLAND_NO_SD_NOTIFY=1
 env =  HYPRLAND_NO_SD_VARS=1
 env =  HYPRLAND_CONFIG=$HOME/.config/hypr
 
+export  AQ_DRM_DEVICES="/dev/dri/card0:/dev/dri/card1"
 export  AQ_TRACE=1
-#env =  AQ_DRM_DEVICES=/dev/dri/card0:/dev/dri/card1
 export  AQ_MGPU_NO_EXPLICIT=1
 export  AQ_NO_MODIFIERS=1
 

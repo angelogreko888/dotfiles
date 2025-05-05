@@ -151,6 +151,6 @@ alias mi=' sudo -sE mintstick -m iso'
 alias lp='sudo -sE tlpui'
 
 alias fc="sudo sh -c 'echo 3 >/proc/sys/vm/drop_caches'"
-alias mm='hyprctl keyword monitor HDMI-A-1,1920x1080@60.0,0x0,1'
-
+alias mm='hyprctl keyword monitor HDMI-A-5,1920x1080@60.0,0x0,1'
+alias mmm'hyprctl keyword monitor HDMI-A-5,disable && hyprctl keyword monitor HDMI-A-5,preferred,auto '
 alias ee='ps ac | rg sleep'

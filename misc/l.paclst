@@ -63,7 +63,6 @@ less
 libeatmydata
 libpulse
 libreoffice-fresh
-libva-nvidia-driver
 libva-utils
 linux
 linux-firmware
@@ -81,8 +80,6 @@ network-manager-applet
 networkmanager
 nmap
 numlockx
-nvidia-dkms
-nvidia-utils
 nwg-look
 pamixer
 pavucontrol

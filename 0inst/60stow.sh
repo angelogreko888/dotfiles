@@ -24,7 +24,8 @@ gtk-3.0
 home
 hypr
 ranger
-swaync
+dunst
+#swaync
 #uwsm
 waybar
 xsettingsd

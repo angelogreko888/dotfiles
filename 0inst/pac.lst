@@ -16,7 +16,6 @@ dmidecode
 dosfstools
 dpkg
 dunst
-efibootmgr
 eog
 evince
 eza
@@ -88,7 +87,7 @@ smartmontools
 sof-firmware
 stow
 swaybg
-swaync
+#swaync
 timeshift
 ttf-font-awesome
 ttf-jetbrains-mono-nerd

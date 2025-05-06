@@ -18,6 +18,8 @@ mkinitcpio-firmware
 mullvad-browser-bin
 simple-mtpfs
 spd5118-dkms-git
+v4l-utils-git
+v4l-utils-git-debug
 wd719x-firmware
 yay
 yay-debug

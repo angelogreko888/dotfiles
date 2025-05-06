@@ -56,6 +56,7 @@ libeatmydata
 libpulse
 libreoffice-fresh
 libva-nvidia-driver
+libva-utils
 linux
 linux-firmware
 linux-headers
@@ -74,7 +75,6 @@ nss-mdns
 nvidia-dkms
 nwg-look
 opencl-nvidia
-openresolv
 pacman-contrib
 pamixer
 pavucontrol
@@ -100,15 +100,18 @@ sof-firmware
 stow
 swaybg
 swaync
+systemd-resolvconf
 timeshift
 ttf-font-awesome
 ttf-jetbrains-mono-nerd
+usb_modeswitch
 usbutils
 vim
 waybar
 wget
 wireless_tools
 wireplumber
+xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 xdg-user-dirs
 xdg-utils

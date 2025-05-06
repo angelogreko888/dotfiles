@@ -31,8 +31,8 @@
 
   "modules-right": [
 	"pulseaudio",
-	"custom/notifications",      
-//	"custom/swaync",
+//	"custom/notifications",      
+	"custom/swaync",
 //	"idle_inhibitor",
 	"pulseaudio#microphone",
 //	"bluetooth",     

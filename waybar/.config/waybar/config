@@ -320,7 +320,7 @@
         },
         "return-type": "json",
         "exec-if": "which dunstctl",
-        "exec": "notifications.py",
+        "exec": "~/.config/dunst/notifications.py",
         "on-scroll-down": "sleep 0.1 && dunstctl history-pop",
         "on-click": "dunstctl set-paused toggle",
         "on-click-middle": "dunstctl history-clear",

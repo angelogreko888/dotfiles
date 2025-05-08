@@ -9,7 +9,7 @@ env =  HYPRLAND_CONFIG=$HOME/.config/hypr
 #export  AQ_MGPU_NO_EXPLICIT,1
 #export  AQ_NO_MODIFIERS,1
 
-export WAYLAND_DISPLAY=wayland-0
+export WAYLAND_DISPLAY=wayland-1
 export DISPLAY=:0
 
 export GDK_BACKEND=wayland,x11,*

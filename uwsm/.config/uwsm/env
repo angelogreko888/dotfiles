@@ -20,6 +20,7 @@ export WLR_DRM_NO_ATOMIC=1
 export __GLX_VENDOR_LIBRARY_NAME=nvidia
 export __NV_PRIME_RENDER_OFFLOAD=1
 export __VK_LAYER_NV_optimus=NVIDIA_only
+export __NV_PRIME_RENDER_OFFLOAD=1
 
 # FOR VM and POSSIBLY NVIDIA
 export WLR_NO_HARDWARE_CURSORS=1 # On hyprland >v0.41, now configured on variable cursor section

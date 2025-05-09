@@ -14,7 +14,7 @@ fi
 touch "$flag"
 
 while (true); do
-	sleep 600
+	sleep 900
 	cd  ~/.config/FreeTube/
 	rsync history.db  ~/dotfiles/freetube/.config/FreeTube/history.db
 	rsync playlists.db  ~/dotfiles/freetube/.config/FreeTube/playlists.db

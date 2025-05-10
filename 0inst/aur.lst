@@ -1,3 +1,4 @@
+
 adw-gtk-theme-git
 aic94xx-firmware
 android-sdk-platform-tools
@@ -16,5 +17,6 @@ librewolf-bin
 mintstick
 mullvad-browser-bin
 simple-mtpfs
+spd5118-dkms-git
+v4l-utils-git
 wd719x-firmware
-

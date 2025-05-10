@@ -33,7 +33,7 @@
 	"pulseaudio",
 //	"custom/notifications",      
 	"custom/swaync",
-//	"idle_inhibitor",
+	"idle_inhibitor",
 	"pulseaudio#microphone",
 //	"bluetooth",     
 	"backlight",

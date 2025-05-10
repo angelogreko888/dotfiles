@@ -10,7 +10,6 @@ cups-pdf
 dbxtool
 dconf-editor
 dhcp
-dhcpcd
 dkms
 dmidecode
 dosfstools
@@ -108,6 +107,8 @@ usb_modeswitch
 usbutils
 uwsm
 vim
+virtualbox
+virtualbox-guest-utils
 waybar
 wget
 wireless_tools

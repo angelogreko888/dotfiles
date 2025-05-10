@@ -17,7 +17,6 @@
   "modules-left": [
 	"custom/arch",
 	"clock",
-	"idle_inhibitor",
 	"hyprland/language",
 	"hyprland/workspaces",
 	"wlr/taskbar",
@@ -35,6 +34,7 @@
 //	"custom/notifications",      
 	"custom/swaync",
 	"pulseaudio#microphone",
+	"idle_inhibitor",
 //	"bluetooth",     
 	"backlight",
 	"network",

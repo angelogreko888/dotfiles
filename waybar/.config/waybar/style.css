@@ -122,12 +122,12 @@
 
 #workspaces button.urgent {
   background-color: #f00000;
-  border-radius:10px;
+  border-radius:30px;
 }
 
 #language {
   border-radius:30px;
-  padding: 0px 10px 0px 10px;
+  padding: 0px 15px 0px 15px;
 }
 
 #custom-clock {
@@ -140,7 +140,7 @@
 
 #clock {
   border-radius:10px;
-  padding: 0px 20px 0px 20px;
+  padding: 0px 10px 0px 10px;
   font-size: 19px;
 }
 
@@ -171,7 +171,7 @@
 
 #power-profiles-daemon {
   border-radius:10px;
-  padding: 0px 25px 0px 10px;
+  padding: 0px 25px 0px 15px;
 }
 
 

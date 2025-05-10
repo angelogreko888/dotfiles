@@ -60,7 +60,11 @@ else
     echo "/etc/default/grub does not exist"
 fi
 
-#sudo pacman -Sy --noconfirm nvidia-dkms egl-wayland lib32-nvidia-utils lib32-opencl-nvidia opencl-nvidia nvidia-utils
+echo "
+options nvidia NVreg_UsePageAttributeTable=1 NVreg_RegistryDwords="OverrideMaxPerf=0x1"
+" | sudo tee /etc/modprobe.d/nvidia.conf
+
+
 sudo pacman -S --noconfirm --needed nvidia-dkms nvidia-utils lib32-nvidia-utils libva-nvidia-driver  lib32-opencl-nvidia opencl-nvidia
 
 sudo mkinitcpio -P

@@ -17,6 +17,7 @@ nvidia-suspend.service
 nvidia-hibernate.service
 nvidia-resume.service
 acpid
+seatd
 
 )
 

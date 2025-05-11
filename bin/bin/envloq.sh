@@ -9,7 +9,7 @@ handle_error() {
 a=$(hostnamectl | rg Model | awk '{print $3}')
 
 if [ $a == LOQ ];then
-	sed -i 's/#env = AQ_DRM_DEVICES/env = AQ_DRM_DEVICES/'  ~/.config/hypr/env.conf
+	sed -i 's/^#env = AQ_DRM_DEVICES/env = AQ_DRM_DEVICES/'  ~/.config/hypr/env.conf
 else
-	sed -i 's/env = AQ_DRM_DEVICES/#env = AQ_DRM_DEVICES/'  ~/.config/hypr/env.conf
+	sed -i 's/^env = AQ_DRM_DEVICES/#env = AQ_DRM_DEVICES/'  ~/.config/hypr/env.conf
 fi

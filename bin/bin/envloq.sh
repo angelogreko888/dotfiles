@@ -13,3 +13,5 @@ if [ $a == LOQ ];then
 else
 	sed -i 's/^env = AQ_DRM_DEVICES/#env = AQ_DRM_DEVICES/'  ~/.config/hypr/env.conf
 fi
+
+hyprctl reload

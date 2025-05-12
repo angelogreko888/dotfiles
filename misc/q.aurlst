@@ -16,6 +16,7 @@ librewolf-bin
 mintstick
 mkinitcpio-firmware
 mullvad-browser-bin
+rustdesk-bin
 simple-mtpfs
 spd5118-dkms-git
 v4l-utils-git

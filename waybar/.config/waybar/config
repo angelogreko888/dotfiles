@@ -125,6 +125,7 @@
         "format": "{used:.2g} ",
         "interval": 1,
 	"tooltip": false,
+	"on-click-right": "foot btop",
 	},
 
    "backlight": {

@@ -42,6 +42,7 @@ gvfs-mtp
 htop
 hypridle
 hyprland
+hyprlock
 imagemagick
 inotify-tools
 intel-ucode
@@ -83,6 +84,7 @@ pipewire-alsa
 pipewire-jack
 pipewire-pulse
 plocate
+polkit
 power-profiles-daemon
 python-pip
 qt5-wayland
@@ -93,6 +95,7 @@ ranger
 reflector
 ripgrep
 rsync
+seatd
 simple-scan
 slurp
 smartmontools

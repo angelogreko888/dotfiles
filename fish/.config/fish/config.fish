@@ -21,7 +21,7 @@ function fish_prompt
         set stat (set_color red)"[$last_status]"(set_color normal)
     end
 
-    echo \n (set_color -o brblue)  ∋∈ (set_color -o brwhite)∋∈ (set_color -o brblue)∋∈ (set_color -o brwhite)∋∈ (set_color -o brblue)∋∈ (set_color -o brblue) >>  (set_color -oi bryellow) (prompt_pwd --full-length-dirs 8)    (set_color -o brblue) $stat '  ' 
+    echo \n (set_color -o brblue)  ∋∈ (set_color -o brwhite)∋∈ (set_color -o brblue)∋∈ (set_color -o brwhite)∋∈ (set_color -o brblue)∋∈ (set_color -o brblue)  (set_color -oi bryellow) (prompt_pwd --full-length-dirs 8)    (set_color -o brblue) $stat '  ' 
 end
 
 export ANDROID_HOME=/opt/android-sdk/

@@ -22,7 +22,7 @@ function fish_prompt
 end
 
 echo \n   (set_color -o brblue)   ∋∈ (set_color -o brwhite) ∋∈ (set_color -o brblue) ∋∈ (set_color -o brwhite) ∋∈ (set_color -o brblue) ∋∈ (set_color -o brblue)    (set_color -oi bryellow) (prompt_pwd --full-length-dirs 8)  (set_color -o brblue) $stat '  ' 
-
 end
+
 
 export ANDROID_HOME=/opt/android-sdk/

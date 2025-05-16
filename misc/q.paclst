@@ -14,7 +14,6 @@ dkms
 dmidecode
 dosfstools
 dpkg
-dysk
 eog
 evince
 eza
@@ -61,7 +60,6 @@ libva-utils
 linux
 linux-firmware
 linux-headers
-lsof
 ly
 mpv
 mtools

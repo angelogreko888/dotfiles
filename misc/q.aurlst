@@ -8,6 +8,7 @@ bezier
 checkupdates-with-aur
 flameshot-git
 freetube-bin
+gnome-icon-theme-extras
 hyprevents-git
 hyprprop-git
 hyprshade
@@ -19,6 +20,8 @@ mullvad-browser-bin
 rustdesk-bin
 simple-mtpfs
 spd5118-dkms-git
+udev-block-notify
+udev-block-notify-debug
 v4l-utils-git
 wd719x-firmware
 yay

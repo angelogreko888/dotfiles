@@ -14,6 +14,7 @@ dkms
 dmidecode
 dosfstools
 dpkg
+dysk
 eog
 evince
 eza
@@ -103,6 +104,7 @@ swaybg
 swaync
 systemd-resolvconf
 timeshift
+torbrowser-launcher
 ttf-font-awesome
 ttf-jetbrains-mono-nerd
 usb_modeswitch

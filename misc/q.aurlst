@@ -19,6 +19,7 @@ mullvad-browser-bin
 rustdesk-bin
 simple-mtpfs
 spd5118-dkms-git
+udev-notify-git
 v4l-utils-git
 wd719x-firmware
 yay

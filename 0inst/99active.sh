@@ -78,6 +78,9 @@ chsh -s /usr/bin/fish
 #firejail
 sudo firecfg
 
+sudo unlink /etc/firejail/simple-scan
+sudo unlink /etc/firejail/cups
+
 id  $whoami
 
 echo "Done!!!"

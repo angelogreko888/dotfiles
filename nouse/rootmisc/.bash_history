@@ -2135,3 +2135,11 @@ pacman -Qdtq | wc -l
 a="(pacman -Qdtq) | wc -l"
 echo a
 mv animations-* animations/
+sudo mount --mkdir /dev/sda1 /mnt/data
+cd dotfiles/0inst/
+./u.sh 
+nano u.sh 
+sudo pacman -Su nano 
+cd ../..
+cd data
+cp -r dotfiles/ ~/

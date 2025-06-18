@@ -2143,3 +2143,5 @@ sudo pacman -Su nano
 cd ../..
 cd data
 cp -r dotfiles/ ~/
+cp -r /mnt/data/dotfiles/ .
+./090nvidia.sh 

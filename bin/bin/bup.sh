@@ -11,9 +11,9 @@ rsync -a /home/vago/vago/ /mnt/data/sync-vago/vago/ --delete
 
 
 #vt
-rsync -a /home/vago/vago/ /vt/sync-vago/vago/ --delete
+rsync -a /home/vago/vago/ /mnt/vt/sync-vago/vago/ --delete
 
-rsync -a /home/vago/dotfiles/ /vt/sync-vago/dotfiles/ --delete
+rsync -a /home/vago/dotfiles/ /mnt/vt/sync-vago/dotfiles/ --delete
 
 echo "Sync Finished"
 

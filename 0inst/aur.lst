@@ -5,7 +5,7 @@ android-sdk-platform-tools
 anydesk-bin
 ast-firmware
 aurutils
-bezier
+#bezier
 checkupdates-with-aur
 flameshot-git
 freetube-bin
@@ -17,7 +17,7 @@ librewolf-bin
 mintstick
 mullvad-browser-bin
 simple-mtpfs
-v4l-utils-git
+#v4l-utils-git
 wd719x-firmware
  mkinitcpio-firmware
  udev-notify-git

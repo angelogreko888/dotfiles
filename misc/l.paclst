@@ -83,7 +83,6 @@ python-pip
 qt5-wayland
 qt5ct
 qt6ct
-ranger
 reflector
 ripgrep
 rsync

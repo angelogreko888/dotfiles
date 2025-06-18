@@ -37,7 +37,7 @@ for LD in "${ld[@]}";do
 			read bd
 			case $LD in
 				boot)
-					 printf "\n\e[1;32m.......formar "$LD" ?: \n\e[0m"
+					 printf "\n\e[1;32m.......format "$LD" ?: \n\e[0m"
                                          select  yn in yes no;do
                                                 case $yn in
                                                 yes) 
@@ -55,7 +55,7 @@ for LD in "${ld[@]}";do
 					swapon /dev/$aa$bd 
                 			break ;;
 				home)
-					 printf "\n\e[1;32m.......formar "$LD" ?: \n\e[0m"
+					 printf "\n\e[1;32m.......format "$LD" ?: \n\e[0m"
                                          select  yn in yes no;do
                                                 case $yn in
                                                 yes) 
@@ -69,7 +69,7 @@ for LD in "${ld[@]}";do
 					mount --mkdir /dev/$aa$bd /mnt/$LD
 					break ;;
 				vt)
-					printf "\n\e[1;32m.......formar "$LD" ?: \n\e[0m"
+					printf "\n\e[1;32m.......format "$LD" ?: \n\e[0m"
                                         select  yn in yes no;do
                                                 case $yn in
                                                 yes)
@@ -80,7 +80,7 @@ for LD in "${ld[@]}";do
                                                         break ;;
                                                 esac
                                         done
-                                        mount --mkdir /dev/$aa$bd /mnt/$LD
+                                        mount --mkdir /dev/$aa$bd /mnt/mnt/$LD
                                         break ;;
 			esac
 			break ;;

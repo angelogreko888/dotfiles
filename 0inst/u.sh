@@ -14,7 +14,7 @@ cd ~
 
 sudo pacman -Sy --needed --noconfirm git nano reflector
 
-git clone --depth 1 https://github.com/angelogreko888/dotfiles
+#git clone --depth 1 https://github.com/angelogreko888/dotfiles
 
 if ! [ -d ~/dotfiles ];then
 	printf "\n\e[1;31m... ERROR Folder Does Not Exist ... : \n\e[0m"

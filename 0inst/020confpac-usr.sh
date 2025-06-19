@@ -2,15 +2,12 @@
 
 pac-conf="/etc/pacman.conf"
 
-sudo pacman -Sy --needed --noconfirm reflector 
-
 # Remove comments '#' from specific lines
 lines_to_edit=(
     "Color"
     "CheckSpace"
     "VerbosePkgLists"
-    "ParallelDownloads"
-)
+    )
 
 for line in "${lines_to_edit[@]}"; do
     if grep -q "^#$line" "$pac-conf"; then

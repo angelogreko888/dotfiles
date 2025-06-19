@@ -56,7 +56,7 @@ title   Arch Linux
 linux   /vmlinuz-linux
 initrd  /intel-ucode.img
 initrd  /initramfs-linux.img
-options root=PARTUUID=$a rw rootfstype=ext4 quiet splash nvidia-drm.modeset=1 nvidia_drm.fbdev=1 rd.driver.blacklist=nouveau modprob.blacklist=nouveau lsm=landlock,lockdown,yama,integrity,apparmor,bpf  NVreg_PreserveVideoMemoryAllocations=1 TemporaryFilePath: "/var/tmp" i8042.nopnp initcall_blacklist=simpledrm_platform_driver_init
+options root=PARTUUID=$a rw rootfstype=ext4 quiet splash nvidia-drm.modeset=1 nvidia_drm.fbdev=1 rd.driver.blacklist=nouveau modprob.blacklist=nouveau lsm=landlock,lockdown,yama,integrity,apparmor,bpf  NVreg_PreserveVideoMemoryAllocations=1 TemporaryFilePath: "/var/tmp" i8042.nopnp initcall_blacklist=simpledrm_platform_driver_init i915 enable_guc=2
 " | tee /boot/loader/entries/arch.conf
 
 useradd -m vago

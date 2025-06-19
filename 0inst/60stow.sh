@@ -26,6 +26,7 @@ hypr
 ranger
 waybar
 xsettingsd
+swaync
 )
 
 for ST in "${stow[@]}"; do
@@ -33,9 +34,7 @@ for ST in "${stow[@]}"; do
 done
 
 plst=(
-swaync
 kanshi
-dunst
 uwsm
 
 )

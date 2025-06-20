@@ -37,7 +37,6 @@
 	"pulseaudio#microphone",
 //	"bluetooth",     
 	"backlight",
-	 "custom/network",
 	"network",
         "tray",
 	"power-profiles-daemon",
@@ -181,7 +180,8 @@
          "format": "{ifname}",
          "format-wifi": "{icon}",
          "format-ethernet": "󰈀",
-         "format-disconnected": "󰌙",
+//	 "format": " {bandwidthUpBits}  {bandwidthDownBits}", 
+        "format-disconnected": "󰌙",
          "tooltip-format": "{ipaddr}  {bandwidthUpBits}  {bandwidthDownBits}",
          "format-linked": "󰈁 {ifname} (No IP)",
          "tooltip-format-wifi": "{essid} {icon} {signalStrength}%",
@@ -197,11 +197,6 @@
     "on-click-right": "foot nmtui"
 },
 
-    "custom/network": {
-	"format-ethernet": "  {bandwidthUpBits}  {bandwidthDownBits}",
-	 "max-length": 30,
-         "interval": 1,
-},
 
     "pulseaudio": {
          "format": "{volume} {icon}",

@@ -15,7 +15,6 @@ mintstick
 mkinitcpio-firmware
 mullvad-browser-bin
 python-bidi
-python-bidi-debug
 ranger-git
 simple-mtpfs
 udev-notify-git

@@ -37,6 +37,7 @@
 	"pulseaudio#microphone",
 //	"bluetooth",     
 	"backlight",
+	 "custom/network",
 	"network",
         "tray",
 	"power-profiles-daemon",
@@ -194,6 +195,12 @@
             "󰤯", "󰤟", "󰤢", "󰤥", "󰤨"
         ],
     "on-click-right": "foot nmtui"
+},
+
+    "custom/network": {
+	"format-ethernet": "  {bandwidthUpBits}  {bandwidthDownBits}",
+	 "max-length": 30,
+         "interval": 1,
 },
 
     "pulseaudio": {

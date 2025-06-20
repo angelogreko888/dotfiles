@@ -14,6 +14,8 @@ librewolf-bin
 mintstick
 mkinitcpio-firmware
 mullvad-browser-bin
+python-bidi
+python-bidi-debug
 ranger-git
 simple-mtpfs
 spd5118-dkms-git

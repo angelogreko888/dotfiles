@@ -34,7 +34,8 @@ select  cn in Israel Cyprus;do
 		break ;;
 
         Cyprus) 
-		sudo  reflector --latest 5 --sort rate  --country Greece,Tr,Israel,Germany,'United Kingdom'  --protocol https --verbose --save /etc/pacman.d/mirrorlist 
+#		sudo  reflector --latest 5 --sort rate  --country Greece,Tr,Israel,Germany,'United Kingdom'  --protocol https --verbose --save /etc/pacman.d/mirrorlist 
+		echo
 		break ;;
 
 	*) 

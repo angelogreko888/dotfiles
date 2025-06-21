@@ -180,7 +180,7 @@
          "format": "{ifname}",
          "format-wifi": "{icon}",
 //         "format-ethernet": "󰈀",
-	 "format": "↓ {bandwidthDownBits}  ↑ {bandwidthUpBits}", 
+	 "format": "↓{bandwidthDownBits}  ↑{bandwidthUpBits}", 
         "format-disconnected": "󰌙",
          "tooltip-format": "{ipaddr}  {bandwidthUpBits}  {bandwidthDownBits}",
          "format-linked": "󰈁 {ifname} (No IP)",
@@ -190,7 +190,7 @@
 	"tooltip-format-ethernet": "{ipaddr}",  
        "tooltip-format-disconnected": "󰌙 Disconnected",
          "icon-size": 21,
-         "max-length": 30,
+         "max-length": 35,
          "interval": 1,
          "format-icons": [
             "󰤯", "󰤟", "󰤢", "󰤥", "󰤨"

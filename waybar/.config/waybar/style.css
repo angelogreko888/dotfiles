@@ -34,7 +34,7 @@
 }
 #workspaces{
    border-radius:30px;
-   padding: 0px 20px 0px 20px;
+   padding: 0px 15px 0px 15px;
    color: white;
 }
 
@@ -70,7 +70,7 @@
 
 #network {
   border-radius:30px;
-   padding: 0px 20px 0px 20px;
+   padding: 0px 15px 0px 15px;
 }
 
 #custom-notification{
@@ -82,36 +82,36 @@
 
 #custom-pacman{
   border-radius:30px;
-  padding: 0px 20px 0px 20px;
+  padding: 0px 15px 0px 15px;
   background-color: red;
 }
 
 #idle_inhibitor {
   border-radius:30px;
-  padding: 0px 20px 0px 20px;
+  padding: 0px 15px 0px 15px;
 }
 
 #bluetooth{
  border-radius:30px;
-  padding: 0px 20px 0px 20px;
+  padding: 0px 15px 0px 15px;
 }
 
 #idle_inhibitor.activated{
  color:#e57474;
  border-radius:30px;
- padding: 0px 20px 0px 20px;
+ padding: 0px 15px 0px 15px;
 }
 
 #custom-power{
   color:white;
-  padding: 0px 20px 0px 20px;
+  padding: 0px 15px 0px 15px;
   border-radius:15px;
    margin-right: 15px;
 }
 
 #custom-arch {
   margin-left: 15px;
-  padding: 0px 20px 0px 20px;
+  padding: 0px 15px 0px 15px;
   border-radius:15px;
   color:white;
 }
@@ -133,20 +133,20 @@
 
 #language {
   border-radius:30px;
-  padding: 0px 20px 0px 20px;
+  padding: 0px 15px 0px 15px;
 }
 
 #custom-clock {
   border-radius:30px;
   background-color: alpha (green, 0.5);
-  padding: 0px 30px 0px 30px;
+  padding: 0px 20px 0px 20px;
   font-size: 21px;
   color: white;
 }
 
 #clock {
   border-radius:10px;
-  padding: 0px 20px 0px 20px;
+  padding: 0px 15px 0px 15px;
   font-size: 19px;
 }
 
@@ -162,7 +162,7 @@
 
 #pulseaudio {
   border-radius:10px;
-  padding: 0px 20px 0px 20px;
+  padding: 0px 15px 0px 15px;
    font-size: 19px;
 }
 
@@ -173,34 +173,34 @@
 
 #taskbar {
   border-radius:10px;
-  padding: 0px 20px 0px 20px;
+  padding: 0px 15px 0px 15px;
 }
 
 #power-profiles-daemon {
-  border-radius:20px;
-  padding: 0px 20px 0px 20px;
+  border-radius:10px;
+  padding: 0px 15px 0px 15px;
 }
 
 
 #keyboard-state {
  border-radius:10px;
- padding: 0px 20px 0px 20px;
+ padding: 0px 15px 0px 15px;
 }
 
 #backlight {
  border-radius:10px;
- padding: 0px 20px 0px 20px;
+ padding: 0px 15px 0px 15px;
 }
 
 #keyboard-state.locked {
  color:#e57474;
  border-radius:10px;
- padding: 0px 20px 0px 20px;
+ padding: 0px 15px 0px 15px;
 }
 
 #battery {
     border-radius:10px;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 15px 0px 15px;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;

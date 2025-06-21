@@ -118,7 +118,8 @@
    "cpu": {
         "format": "{usage}%  ",
         "tooltip": true,
-        "interval": 1
+        "interval": 1,
+	"min-width": 10,
     },
 
    "memory": {
@@ -126,6 +127,7 @@
         "interval": 1,
 	"tooltip": false,
 	"on-click-right": "foot btop",
+	"min-width": 10,
 	},
 
    "backlight": {
@@ -180,7 +182,7 @@
          "format": "{ifname}",
          "format-wifi": "{icon}",
 //         "format-ethernet": "󰈀",
-	 "format": "↓{bandwidthDownBits}  ↑{bandwidthUpBits}", 
+	 "format": "↓ {bandwidthDownBits}  ↑ {bandwidthUpBits}", 
         "format-disconnected": "󰌙",
          "tooltip-format": "{ipaddr}  {bandwidthUpBits}  {bandwidthDownBits}",
          "format-linked": "󰈁 {ifname} (No IP)",
@@ -191,6 +193,7 @@
        "tooltip-format-disconnected": "󰌙 Disconnected",
          "icon-size": 21,
          "max-length": 35,
+	"min-width": 30,
          "interval": 1,
          "format-icons": [
             "󰤯", "󰤟", "󰤢", "󰤥", "󰤨"

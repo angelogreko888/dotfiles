@@ -67,6 +67,12 @@
 #custom-clock,
 #clock,
 
+
+#network {
+  border-radius:30px;
+   padding: 0px 10px 0px 10px;
+}
+
 #custom-notification{
   margin-left:5px;
   margin-right:5px;

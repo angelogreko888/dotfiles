@@ -180,7 +180,7 @@
          "format": "{ifname}",
          "format-wifi": "{icon}",
 //         "format-ethernet": "󰈀",
-	 "format": " {bandwidthUpBits}  {bandwidthDownBits}", 
+	 "format": "↓ {bandwidthDownBits}  ↑ {bandwidthUpBits}", 
         "format-disconnected": "󰌙",
          "tooltip-format": "{ipaddr}  {bandwidthUpBits}  {bandwidthDownBits}",
          "format-linked": "󰈁 {ifname} (No IP)",

@@ -20,4 +20,6 @@ rsync -a Music/ /mnt/shared-data/phone/Music
 
 rsync -a Recordings/ /mnt/shared-data/phone/Recordings
 
+rsync -a /mnt/shared-data/phone/ /mnt/data/phone
+
 echo "finished sync"

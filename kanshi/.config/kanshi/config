@@ -1,7 +1,8 @@
 
 profile  {
         output  "AU Optronics 0x7EAD 0x00007EAD" disable
-        output "LG Electronics LG TV 0x01010101" mode 1920x1080@60 position 0,0 
+#        output "LG Electronics LG TV 0x01010101" mode 1920x1080@60 position 0,0 
+	output "*" mode 1920.1080@60 
 	}
 
 profile {

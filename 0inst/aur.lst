@@ -20,5 +20,5 @@ simple-mtpfs
 #v4l-utils-git
 wd719x-firmware
  mkinitcpio-firmware
- udev-notify-git
 upd72020x-fw
+udev-block-notify

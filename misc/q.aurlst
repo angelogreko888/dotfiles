@@ -7,6 +7,7 @@ aurutils
 checkupdates-with-aur
 flameshot-git
 freetube-bin
+gnome-icon-theme-extras
 hyprevents-git
 hyprprop-git
 hyprshade
@@ -18,7 +19,7 @@ python-bidi
 ranger-git
 simple-mtpfs
 spd5118-dkms-git
-udev-notify-git
+udev-block-notify
 upd72020x-fw
 wd719x-firmware
 yay

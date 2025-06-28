@@ -159,3 +159,5 @@ alias ee='pgrep sleep'
 alias d='dysk'
 alias f='fish'
 alias cdv='cd /mnt/vt'
+
+alias dff='df -h --exclude-type tmpfs'

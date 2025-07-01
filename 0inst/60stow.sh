@@ -27,6 +27,7 @@ ranger
 waybar
 xsettingsd
 swaync
+flameshot
 )
 
 for ST in "${stow[@]}"; do

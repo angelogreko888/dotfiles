@@ -299,10 +299,11 @@
         "https://iframe.arkoselabs.com",
         "73fa81c29d.com",
         "storage.googleapis.com",
-        "whatsapp.com",
         "live.com",
+        "statsigapi.net",
+        "grok.com",
         "google.com",
-        "statsigapi.net"
+        "whatsapp.com"
       ],
       "custom": {
         "§:fbsbx.com": {
@@ -399,7 +400,8 @@
           "capabilities": [
             "script",
             "fetch",
-            "media"
+            "media",
+            "frame"
           ],
           "temp": false
         },
@@ -1480,7 +1482,8 @@
             "other",
             "font",
             "script",
-            "webgl"
+            "webgl",
+            "lazy_load"
           ],
           "temp": false
         },
@@ -4884,6 +4887,54 @@
             "fetch",
             "font",
             "lazy_load",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:xbody.gr": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "lazy_load",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:edx.org": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "lazy_load",
+            "noscript",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:justice.gov.il": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:omarchy.org": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:bashhandbook.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
             "script"
           ],
           "temp": false

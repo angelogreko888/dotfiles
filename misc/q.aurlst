@@ -6,6 +6,7 @@ ast-firmware
 aurutils
 checkupdates-with-aur
 flameshot-git
+floorp-bin
 freetube-bin
 gnome-icon-theme-extras
 hyprevents-git
@@ -14,7 +15,6 @@ hyprshade
 librewolf-bin
 mintstick
 mkinitcpio-firmware
-mullvad-browser-bin
 python-bidi
 ranger-git
 simple-mtpfs

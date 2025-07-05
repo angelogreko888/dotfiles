@@ -28,7 +28,8 @@
 }
 
 #waybar {
-  background-color: alpha (purple ,0.4);
+  background: transparant;
+//  background-color: alpha (purple ,0.4);
   border-radius:30px;
   padding: 0px 30px 0px 30px;
 }

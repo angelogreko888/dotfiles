@@ -88,7 +88,7 @@
 
 #idle_inhibitor {
   border-radius:30px;
-  padding: 0px 15px 0px 15px;
+  padding: 0px 21px 0px 15px;
 }
 
 #bluetooth{
@@ -98,9 +98,10 @@
 
 #idle_inhibitor.activated{
 ; color:#e57474;
-color: red; 
-border-radius:30px;
- padding: 0px 15px 0px 15px;
+color: yellow;
+ background-color: alpha (red, 0.7);
+ border-radius:30px;
+ padding: 0px 21px 0px 15px;
 }
 
 #custom-power{

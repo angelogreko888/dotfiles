@@ -12,4 +12,5 @@ fi
 echo "start sync"
 rsync -a ~/vago/ /mnt/shared-data/vago/  --delete
 echo "sync finished"
+echo "unmounting .........."
 sudo umount /mnt/shared-data

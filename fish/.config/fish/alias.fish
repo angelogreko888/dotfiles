@@ -159,5 +159,9 @@ alias ee='pgrep sleep'
 alias d='dysk'
 alias f='fish'
 alias cdv='cd /mnt/vt'
+alias cds='cd /mnt/shared-data'
 
 alias dff='df -h --exclude-type tmpfs'
+
+alias ny='TZ='America/New_York' date'
+alias la='TZ='America/Los_Angeles' date'

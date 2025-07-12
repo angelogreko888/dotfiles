@@ -5,7 +5,7 @@ hyprlock
 polkit
 swaync
 tldr
-
+xf86-input-synaptics
 
 acpi
 acpid

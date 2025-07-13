@@ -10,7 +10,7 @@ sudo mount /dev/sdb /mnt/shared-data/
 fi
 
 echo "start sync"
-rsync -a /mnt/shared-data/vago/ ~/vago/
+rsync -a /mnt/shared-data/vago/ ~/vago/ --delete
 echo "sync finished"
 echo "unmounting ............."
 sudo umount /mnt/shared-data

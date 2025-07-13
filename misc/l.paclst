@@ -109,6 +109,7 @@ wireplumber
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 xdg-user-dirs
+xf86-input-synaptics
 xorg-server
 xorg-xinit
 yt-dlp

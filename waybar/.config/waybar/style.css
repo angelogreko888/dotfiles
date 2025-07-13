@@ -99,7 +99,7 @@
 #idle_inhibitor.activated{
 ; color:#e57474;
 color: yellow;
- background-color: alpha (red, 0.7);
+ background-color: alpha (purple, 0.7);
  border-radius:30px;
  padding: 0px 21px 0px 13px;
 }

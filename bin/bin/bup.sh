@@ -3,7 +3,7 @@
 echo "Sync Started"
 
 #data
-rsync -a --exclude 'nvidia' --exclude 'gufw.py' --exclude 'mesa_shader_cache_db' /home/vago/ /mnt/data/vago/ --delete
+rsync -a --exclude 'vago' --exclude 'nvidia' --exclude 'gufw.py' --exclude 'mesa_shader_cache_db' /home/vago/ /mnt/data/vago/ --delete
 
 rsync -a /home/vago/dotfiles/ /mnt/data/sync-vago/dotfiles/ --delete
 

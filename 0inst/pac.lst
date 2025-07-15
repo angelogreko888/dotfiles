@@ -6,6 +6,7 @@ polkit
 swaync
 tldr
 xf86-input-synaptics
+ffmpegthumbnailer
 
 acpi
 acpid

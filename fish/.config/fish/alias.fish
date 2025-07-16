@@ -149,15 +149,10 @@ alias af='nano ~/.config/fish/alias.fish'
 alias mf=' sudo -sE mintstick -m format'
 alias mi=' sudo -sE mintstick -m iso'
 
-alias lp='sudo -sE tlpui'
-
 alias fc="sudo sh -c 'echo 3 >/proc/sys/vm/drop_caches'"
-alias mm='hyprctl keyword monitor HDMI-A-5,1920x1080@60.0,0x0,1'
-alias mmm='hyprctl keyword monitor HDMI-A-5,disable && hyprctl keyword monitor HDMI-A-5,1920x1080,1'
 alias se='~/bin/sleep.sh'
 alias ee='pgrep sleep'
-alias d='dysk'
-alias f='fish'
+
 alias cdv='cd /mnt/vt'
 alias cds='cd /mnt/shared-data'
 
@@ -165,3 +160,6 @@ alias dff='df -h --exclude-type tmpfs'
 
 alias ny='TZ='America/New_York' date'
 alias la='TZ='America/Los_Angeles' date'
+
+alias pcs='~/bin/pctoshared.sh'
+alias spc='~/bin/sharedtopc.sh'

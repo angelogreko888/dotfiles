@@ -157,6 +157,7 @@ alias cdv='cd /mnt/vt'
 alias cds='cd /mnt/shared-data'
 
 alias dff='df -h --exclude-type tmpfs'
+alias duu='du -h --max-depth=1'
 
 alias ny='TZ='America/New_York' date'
 alias la='TZ='America/Los_Angeles' date'

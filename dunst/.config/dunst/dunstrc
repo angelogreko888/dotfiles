@@ -5,7 +5,7 @@ enable_posix_regex = true
 width = 300
 height = (0, 120)
 notification_limit = 0
-origin = top-right
+origin = top-center
 offset = (0, 10)
 scale = 0
 progress_bar = true
@@ -70,7 +70,7 @@ foreground = "#ffffff"
 frame_color = "#7d80b8"
 
 [urgency_normal]
-timeout = 5
+timeout = 2
 background = "#181818"
 foreground = "#ffffff"
 frame_color = "#7d80b0"

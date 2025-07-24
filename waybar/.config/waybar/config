@@ -308,8 +308,8 @@
 
 
  "custom/notifications": {
-       "format": "{icon} {}",
-      //  "format": "{icon}", // TODO: workaround for the module not showing up // revert when fixed
+      // "format": "{icon} {}",
+        "format": "{icon}", // TODO: workaround for the module not showing up // revert when fixed
 //        "rotate": ${r_deg},
         "format-icons": {
             "email-notification": "<span foreground='white'><sup></sup></span>",
@@ -329,8 +329,8 @@
         "exec-if": "which dunstctl",
         "exec": "~/.config/dunst/notifications.py",
         "on-scroll-down": "sleep 0.1 && dunstctl history-pop",
-        "on-click": "dunstctl set-paused toggle",
-        "on-click-middle": "dunstctl history-clear",
+        "on-click": "dunstctl history-clear",
+        "on-click-middle": "dunstctl set-paused toggle", 
         "on-click-right": "dunstctl close-all",
         "interval": 1,
         "tooltip": true,

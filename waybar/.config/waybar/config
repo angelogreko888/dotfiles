@@ -34,7 +34,6 @@
 	"network",
 	"memory",
 	"cpu",
-//	"custom/notifications",      
 	"pulseaudio#microphone",
 //	"bluetooth",     
 	"backlight",

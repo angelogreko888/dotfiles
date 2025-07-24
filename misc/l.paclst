@@ -14,6 +14,7 @@ dkms
 dmidecode
 dosfstools
 dpkg
+dunst
 dysk
 efibootmgr
 eog
@@ -93,7 +94,6 @@ smartmontools
 sof-firmware
 stow
 swaybg
-swaync
 systemd-resolvconf
 timeshift
 tldr

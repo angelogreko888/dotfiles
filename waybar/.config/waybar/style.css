@@ -156,6 +156,11 @@ color: yellow;
   font-size: 19px;
 }
 
+#custom-notifications {
+  border-radius:10px;
+  padding: 0px 5px 0px 5px;
+}
+
 #custom-swaync {
   border-radius:10px;
   padding: 0px 5px 0px 5px;

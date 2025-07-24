@@ -308,8 +308,8 @@
 
 
  "custom/notifications": {
-      // "format": "{icon} {}",
-        "format": "{icon}", // TODO: workaround for the module not showing up // revert when fixed
+       "format": "{icon} {}",
+      //  "format": "{icon}", // TODO: workaround for the module not showing up // revert when fixed
 //        "rotate": ${r_deg},
         "format-icons": {
             "email-notification": "<span foreground='white'><sup></sup></span>",

@@ -26,7 +26,8 @@ hypr
 ranger
 waybar
 xsettingsd
-swaync
+#swaync
+dunst
 flameshot
 )
 

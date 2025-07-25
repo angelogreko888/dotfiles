@@ -3,10 +3,11 @@ ffnvcodec-headers
 glib2-devel
 hyprlock
 polkit
-swaync
+#swaync
 tldr
 xf86-input-synaptics
 ffmpegthumbnailer
+dunst
 
 acpi
 acpid

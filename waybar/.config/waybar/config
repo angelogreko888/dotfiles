@@ -320,9 +320,9 @@
             "update-notification": "󰚰<span foreground='white'><sup></sup></span>",
             "music-notification": "󰝚<span foreground='white'><sup></sup></span>",
             "volume-notification": "󰕿<span foreground='white'><sup></sup></span>",
-            "notification": "  <span foreground='red'><sup></sup></span>",
+            "notification": "<span foreground='red'><sup></sup></span>",
             "dnd": "",
-            "none": "  "
+            "none": ""
         },
         "return-type": "json",
         "exec-if": "which dunstctl",

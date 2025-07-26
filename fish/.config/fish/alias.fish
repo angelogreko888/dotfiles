@@ -7,6 +7,7 @@ alias wp='curl wttr.in/paphos'
 alias c='clear'
 alias r='ranger'
 alias ff='fastfetch'
+alias fff='fastfetch --config neofetch.jsonc'
 
 alias n="nano"
 alias s="sudo"

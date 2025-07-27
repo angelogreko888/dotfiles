@@ -18,6 +18,7 @@ nvidia-hibernate.service
 nvidia-resume.service
 acpid
 seatd
+laptop-mode.service
 
 )
 

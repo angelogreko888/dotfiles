@@ -117,6 +117,7 @@ waybar
 wget
 wireless_tools
 wireplumber
+woff2-font-awesome
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 xdg-user-dirs

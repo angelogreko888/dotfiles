@@ -320,7 +320,7 @@
 //            "update-notification": "󰚰<span foreground='white'><sup></sup></span>",
 //            "music-notification": "󰝚<span foreground='white'><sup></sup></span>",
 //            "volume-notification": "󰕿<span foreground='white'><sup></sup></span>",
-            "notification": "<span foreground='red'><sup></sup></span>",
+            "notification": "<span foreground='blue'><sup></sup></span>",
             "dnd": "",
             "none": ""
         },

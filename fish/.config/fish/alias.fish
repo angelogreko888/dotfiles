@@ -156,6 +156,7 @@ alias ee='pgrep sleep'
 
 alias cdv='cd /mnt/vt'
 alias cds='cd /mnt/shared-data'
+alias vv='cd ~/vago'
 
 alias dff='df -h --exclude-type tmpfs'
 alias duu='du -h --max-depth=1'

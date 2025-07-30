@@ -79,6 +79,7 @@ nvidia-dkms
 nvidia-utils
 nwg-look
 opencl-nvidia
+otf-font-awesome
 pacman-contrib
 pamixer
 pavucontrol

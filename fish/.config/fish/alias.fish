@@ -30,7 +30,7 @@ alias l='eza -a --color always --long --git --no-filesize --icons always --no-ti
 alias ll='exa -lha'
 alias lk='lsblk'
 
-alias bb="source ~/.bashrc"
+alias bbb="source ~/.bashrc"
 alias n.="nano ~/.bashrc"
 alias nb="nano ~/.bash_aliases"
 
@@ -72,7 +72,7 @@ alias gp='cd ~/dotfiles && git pull && cd -'
 alias ggg='~/bin/gpush.sh'
 
 alias ap='apropos'
-alias b='btop'
+alias bb='btop'
 alias t='htop'
 alias nur='ncdu / --exclude /mnt --exclude /vt'
 alias nu='ncdu .'
@@ -146,6 +146,7 @@ alias ft='sudo nano /etc/fstab'
 alias ba='sudo nano  /boot/loader/entries/2025-04-16_12-24-46_linux.conf'
 alias fh='nano  ~/.local/share/fish/fish_history'
 alias af='nano ~/.config/fish/alias.fish'
+alias b='bat -p'
 
 alias mf=' sudo -sE mintstick -m format'
 alias mi=' sudo -sE mintstick -m iso'

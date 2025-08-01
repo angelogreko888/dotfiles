@@ -3,6 +3,7 @@ acpid
 arch-install-scripts
 base
 base-devel
+bat
 brightnessctl
 btop
 cups

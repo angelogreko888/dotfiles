@@ -29,6 +29,8 @@ xsettingsd
 #swaync
 dunst
 flameshot
+icons
+
 )
 
 for ST in "${stow[@]}"; do
@@ -37,7 +39,6 @@ done
 
 plst=(
 kanshi
-uwsm
 
 )
 

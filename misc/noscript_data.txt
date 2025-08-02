@@ -147,7 +147,6 @@
         "permutive.app",
         "privacy-mgmt.com",
         "dotmetrics.net",
-        "onesignal.com",
         "clarity.ms",
         "advanced-web-analytics.com",
         "pages06.net",
@@ -302,6 +301,12 @@
         "live.com",
         "statsigapi.net",
         "grok.com",
+        "visualwebsiteoptimizer.com",
+        "nagich.co.il",
+        "msn.com",
+        "playbuzz.com",
+        "ucarecdn.com",
+        "rsms.me",
         "google.com",
         "whatsapp.com"
       ],
@@ -3303,13 +3308,11 @@
         },
         "§:x.com": {
           "capabilities": [
-            "frame",
             "fetch",
-            "font",
+            "lazy_load",
             "script",
-            "media",
-            "object",
-            "lazy_load"
+            "noscript",
+            "media"
           ],
           "temp": false
         },
@@ -3448,7 +3451,8 @@
             "fetch",
             "noscript",
             "other",
-            "font"
+            "font",
+            "script"
           ],
           "temp": false
         },
@@ -3470,7 +3474,8 @@
             "noscript",
             "other",
             "font",
-            "script"
+            "script",
+            "media"
           ],
           "temp": false
         },
@@ -4191,7 +4196,8 @@
             "fetch",
             "font",
             "script",
-            "noscript"
+            "noscript",
+            "lazy_load"
           ],
           "temp": false
         },
@@ -4935,6 +4941,206 @@
             "frame",
             "fetch",
             "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:tvopen.gr": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "lazy_load",
+            "script",
+            "media"
+          ],
+          "temp": false
+        },
+        "§:siliconweb.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script",
+            "media",
+            "noscript"
+          ],
+          "temp": false
+        },
+        "§:onesignal.com": {
+          "capabilities": [
+            "script",
+            "frame",
+            "media"
+          ],
+          "temp": false
+        },
+        "§:inmobi.com": {
+          "capabilities": [
+            "script",
+            "media",
+            "frame"
+          ],
+          "temp": false
+        },
+        "§:onlinetonegenerator.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "noscript",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:fuseplatform.net": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:goo.gl": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:malam-payroll.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:tawk.to": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font"
+          ],
+          "temp": false
+        },
+        "§:tubeninja.net": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "lazy_load",
+            "noscript",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:savethevideo.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:itch.io": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:proxmox.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "lazy_load",
+            "noscript",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:vmware.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:kolhair.co.il": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "lazy_load",
+            "noscript",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:python.org": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:sublimetext.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:stackshare.io": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "noscript",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:hypr.land": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "media",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:voidlinux.org": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:chaotic.cx": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "noscript",
             "script"
           ],
           "temp": false

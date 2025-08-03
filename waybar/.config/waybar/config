@@ -280,7 +280,7 @@
         "format-en": "🇺🇸",
 	    "format-gr": "🇬🇷",
 	    "format-he": "🇮🇱",
-//        "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next"
+        "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next"
 	},
 
 	"custom/swaync": {
@@ -311,18 +311,18 @@
         "format": "{icon}",
 //        "rotate": ${r_deg},
         "format-icons": {
-            "email-notification": "<span foreground='white'><sup></sup></span>",
-            "chat-notification": "󱋊<span foreground='white'><sup></sup></span>",
+	    "notification": "<span foreground='white'><sup></sup></span>",
+            "none": "",
             "warning-notification": "󱨪<span foreground='yellow'><sup></sup></span>",
             "error-notification": "󱨪<span foreground='red'><sup></sup></span>",
-            "network-notification": "󱂇<span foreground='white'><sup></sup></span>",
-            "battery-notification": "󰁺<span foreground='white'><sup></sup></span>",
-            "update-notification": "󰚰<span foreground='white'><sup></sup></span>",
-            "music-notification": "󰝚<span foreground='white'><sup></sup></span>",
-            "volume-notification": "󰕿<span foreground='white'><sup></sup></span>",
-	    "notification": "<span foreground='white'><sup></sup></span>",
             "dnd": "",
-            "none": ""
+//            "email-notification": "<span foreground='white'><sup></sup></span>",
+//            "chat-notification": "󱋊<span foreground='white'><sup></sup></span>",
+//            "network-notification": "󱂇<span foreground='white'><sup></sup></span>",
+//            "battery-notification": "󰁺<span foreground='white'><sup></sup></span>",
+//            "update-notification": "󰚰<span foreground='white'><sup></sup></span>",
+//            "music-notification": "󰝚<span foreground='white'><sup></sup></span>",
+//            "volume-notification": "󰕿<span foreground='white'><sup></sup></span>",
         },
         "return-type": "json",
         "exec-if": "which dunstctl",

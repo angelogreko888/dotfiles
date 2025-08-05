@@ -27,7 +27,8 @@ alias cp="cp -i"
 alias mv='mv -i'
 
 alias l='eza -a --color always --long --git --no-filesize --icons always --no-time --no-user'
-alias ll='exa -lha'
+alias ll='eza -lha'
+alias lt=' eza --tree'
 alias lk='lsblk'
 
 alias bbb="source ~/.bashrc"

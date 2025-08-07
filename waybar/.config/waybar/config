@@ -17,7 +17,8 @@
   "modules-left": [
 	"custom/arch",
 	"clock",
-	 "custom/notifications",
+	"custom/swaync",
+//	 "custom/notifications",
 	"idle_inhibitor",
 	"hyprland/workspaces",
 	"wlr/taskbar",

@@ -308,8 +308,8 @@
 
 
  "custom/notifications": {
-      // "format": "{icon} {}",
-        "format": "{icon}",
+        "format": "{icon} {0}",
+//        "format": "{icon}",
 //        "rotate": ${r_deg},
         "format-icons": {
 	    "notification": "<span foreground='white'><sup></sup></span>",

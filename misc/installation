@@ -1,6 +1,6 @@
 pacman -Qqe | grep -v "$(pacman -Qqm)" >pacman.lst
 
-pacman -Qqm >aut.lst
+pacman -Qqm >aur.lst
 
 
 cat pacman.lst | xargs pacman -S --needed --noconfirm

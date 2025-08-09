@@ -1,4 +1,4 @@
-ranger-git
+#v4l-utils-git
 adw-gtk-theme-git
 aic94xx-firmware
 android-sdk-platform-tools
@@ -8,17 +8,18 @@ aurutils
 #bezier
 checkupdates-with-aur
 flameshot-git
+floorp-bin
 freetube-bin
 hyprevents-git
 hyprprop-git
 hyprshade
+laptop-mode-tools
 librewolf-bin
 mintstick
-#mullvad-browser-bin
+mkinitcpio-firmware
+ranger-git
 simple-mtpfs
-#v4l-utils-git
-wd719x-firmware
- mkinitcpio-firmware
 upd72020x-fw
-floorp-bin
-laptop-mode-tools
+wd719x-firmware
+spd5118-dkms-git
+yp-tools

@@ -64,11 +64,11 @@ corners = all
 ignore_dbusclose = false
 override_pause_level = 0
 
-#[urgency_low]
-#timeout = 2
-#background = "#181818"
-#foreground = "#ffffff"
-#frame_color = "#7d80b8"
+[urgency_low]
+timeout = 2
+background = "#181818"
+foreground = "#ffffff"
+frame_color = "#7d80b8"
 
 [urgency_normal]
 timeout = 2
@@ -76,11 +76,11 @@ background = "#181818"
 foreground = "#ffffff"
 frame_color = "#7d80b0"
 
-#[urgency_critical]
-#timeout = 0
-#background = "#181818"
-#foreground = "#ffffff"
-#frame_color = "#b87e7d"
+[urgency_critical]
+timeout = 4
+background = "#181818"
+foreground = "#ffffff"
+frame_color = "#b87e7d"
 
 [transient_history_ignore]
 match_transient = yes

@@ -308,12 +308,12 @@
 
 
  "custom/notifications": {
-        "format": "{icon} {0}",
+        "format": "  {0}",
 //        "format": "{icon}",
 //        "rotate": ${r_deg},
         "format-icons": {
 //	    "notification": "<span foreground='white'><sup></sup></span>",
-	     "notification": "", 
+//	     "notification": "", 
             "none": "",
 //            "warning-notification": "󱨪<span foreground='yellow'><sup></sup></span>",
 	     "warning-notification": "",

@@ -51,10 +51,10 @@ bash $is$ar
 printf "\n\e[1;32m... press enter to continue ...pipewire : \e[0m"
 read
 bash $is$pp
-printf "\n\e[1;32m... press enter to activate hyprland ... : \e[0m"
-read
-hyprland
-sleep 5
+#printf "\n\e[1;32m... press enter to activate hyprland ... : \e[0m"
+#read
+#hyprland
+#sleep 5
 bash $is$st
 printf "\n\e[1;32m... press enter to continue ...activation : \e[0m"
 read

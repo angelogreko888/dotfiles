@@ -2,9 +2,9 @@
 
 if [ -d ~/.config/hypr ];then
 	rm -rf ~/.config/hypr
-else
-	echo "hypr does not exist"
-	exit 1
+#else
+#	echo "hypr does not exist"
+#	exit 1
 fi
 
 rm ~/.bashrc

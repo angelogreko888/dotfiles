@@ -1,4 +1,3 @@
-#v4l-utils-git
 adw-gtk-theme-git
 aic94xx-firmware
 android-sdk-platform-tools
@@ -20,6 +19,6 @@ mkinitcpio-firmware
 ranger-git
 simple-mtpfs
 upd72020x-fw
+#v4l-utils-git
 wd719x-firmware
-spd5118-dkms-git
 yp-tools

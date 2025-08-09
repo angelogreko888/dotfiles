@@ -100,7 +100,6 @@ smartmontools
 sof-firmware
 stow
 swaybg
-#swaync
 systemd-resolvconf
 timeshift
 tldr
@@ -118,6 +117,8 @@ xdg-desktop-portal-hyprland
 xdg-user-dirs
 xdg-utils
 xf86-input-synaptics
+xf86-input-synaptics
 xorg-server
 xorg-xinit
 yt-dlp
+zram-generator

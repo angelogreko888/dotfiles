@@ -32,9 +32,9 @@ compression-algorithm = zstd
 fi
 
 #icons & fonts
-sudo cp -r  ~/dotfiles/nouse/icons/buuf-nestort  /usr/share/icons/
-sudo cp -r  ~/dotfiles/nouse/icons/radioactive-yellow /usr/share/icons/ 
-sudo cp ~/dotfiles/nouse/fonts/NotoColorEmoji-flagsonly.ttf /usr/share/fonts 
+#sudo cp -r  ~/dotfiles/nouse/icons/buuf-nestort  /usr/share/icons/
+#sudo cp -r  ~/dotfiles/nouse/icons/radioactive-yellow /usr/share/icons/ 
+#sudo cp ~/dotfiles/nouse/fonts/NotoColorEmoji-flagsonly.ttf /usr/share/fonts 
 
 #input group
 if grep -q '^input:' /etc/group; then

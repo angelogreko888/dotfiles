@@ -3,13 +3,13 @@
 pac-conf="/etc/pacman.conf"
 
 # Remove comments '#' from specific lines
-lines_to_edit=(
+lte=(
     "Color"
     "CheckSpace"
     "VerbosePkgLists"
     )
 
-for line in "${lines_to_edit[@]}"; do
+for line in "${lte[@]}"; do
     if grep -q "^#$line" "$pac-conf"; then
         sudo sed -i "s/^#$line/$line/" "$pac-conf"
         echo "Uncommented: $line" 
@@ -29,13 +29,12 @@ select  cn in Israel Cyprus;do
 	case $cn in
 
         Israel) 
-		sudo  reflector --latest 5 --sort rate --country Israel --protocol https --verbose --save /etc/pacman.d/mirrorlist 
+		sudo  reflector --latest 1 --sort rate --country Israel --protocol https --verbose --save /etc/pacman.d/mirrorlist 
                 sudo sed -rie '/mivzakim/d' /etc/pacman.d/mirrorlist  
 		break ;;
 
         Cyprus) 
-#		sudo  reflector --latest 5 --sort rate  --country Greece,Tr,Israel,Germany,'United Kingdom'  --protocol https --verbose --save /etc/pacman.d/mirrorlist 
-		echo
+		sudo  reflector --latest 5 --sort rate  --country Greece,Tr,Israel,Germany,'United Kingdom'  --protocol https --verbose --save /etc/pacman.d/mirrorlist 
 		break ;;
 
 	*) 

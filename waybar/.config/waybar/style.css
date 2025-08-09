@@ -115,8 +115,13 @@ color: yellow;
 }
 
 #workspaces button:hover {
-  background-color: alpha (gold, 0.3);
+  background-color: alpha (gold, 0.7);
   border-radius:15px;
+}
+
+#workspaces button {
+  background-color: alpha (gold, 0.5);
+  border-radius:30px;
 }
 
 #workspaces button.active {

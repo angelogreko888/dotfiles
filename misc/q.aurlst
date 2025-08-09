@@ -8,7 +8,6 @@ checkupdates-with-aur
 flameshot-git
 floorp-bin
 freetube-bin
-gnome-icon-theme-extras
 hyprevents-git
 hyprprop-git
 hyprshade
@@ -21,7 +20,6 @@ ranger-git
 simple-mtpfs
 spd5118-dkms-git
 ttf-font-awesome-4
-udev-block-notify
 upd72020x-fw
 wd719x-firmware
 yay

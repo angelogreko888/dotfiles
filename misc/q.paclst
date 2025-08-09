@@ -62,6 +62,7 @@ lib32-opencl-nvidia
 libeatmydata
 libpulse
 libreoffice-fresh
+libva-nvidia-driver
 linux
 linux-firmware
 linux-headers
@@ -122,6 +123,7 @@ woff2-font-awesome
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 xdg-user-dirs
+xf86-input-synaptics
 xorg-server
 xorg-xinit
 yt-dlp

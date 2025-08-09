@@ -12,7 +12,6 @@ freetube-bin
 hyprevents-git
 hyprprop-git
 hyprshade
-hyprshot
 librewolf-bin
 mintstick
 #mullvad-browser-bin
@@ -21,6 +20,5 @@ simple-mtpfs
 wd719x-firmware
  mkinitcpio-firmware
 upd72020x-fw
-udev-block-notify
 floorp-bin
 laptop-mode-tools

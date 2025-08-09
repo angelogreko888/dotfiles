@@ -311,8 +311,9 @@
         "format": " {icon} {0} ",
 //        "format": "{icon}",
         "format-icons": {
-	    "notification": "<span foreground='white'><sup></sup></span>",
-            "none": "",
+//	    "notification": "<span foreground='white'><sup></sup></span>",
+"notification": "<span foreground='yellow'><sup></sup></span>",  
+          "none": "",
             "warning-notification": "󱨪<span foreground='yellow'><sup></sup></span>",
             "error-notification": "󱨪<span foreground='red'><sup></sup></span>",
             "dnd": "",

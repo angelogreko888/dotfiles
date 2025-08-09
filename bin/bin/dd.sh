@@ -7,4 +7,4 @@ read iso
 printf "\n\e[1;32m... usb path ... : \n\e[0m"
 read usb
 
-sudo dd bs=8M status=progress if=$iso of=/dev/$usb
+sudo dd if=$iso of=/dev/$usb bs=8M status=progress

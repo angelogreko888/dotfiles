@@ -1,0 +1,17 @@
+[org/gnome/desktop/interface]
+cursor-theme='radioactive-yellow'
+cursor-size=24
+gtk-theme='Adwaita'
+icon-theme='buuf-nestort'
+font-name='Adwaita Sans 11'
+font-hinting='slight'
+font-antialiasing='grayscale'
+font-rgba-order='rgb'
+text-scaling-factor=1.0
+toolbar-style='both-horiz'
+toolbar-icons-size='large'
+color-scheme='default'
+
+[org/gnome/desktop/sound]
+event-sounds=true
+input-feedback-sounds=false

@@ -1,0 +1,24 @@
+#!/run/current-system/sw/bin/bash
+lpadmin -x BRFAX
+if [ -e /usr/lib64/cups/filter/brfaxfilter ];then
+     rm -f /usr/lib64/cups/filter/brfaxfilter
+fi
+if [ -e /usr/lib32/cups/filter/brfaxfilter ];then
+     rm -f /usr/lib32/cups/filter/brfaxfilter
+fi
+if [ -e /usr/lib/cups/filter/brfaxfilter ];then
+     rm -f /usr/lib/cups/filter/brfaxfilter
+fi
+#rm -fR /var/spool/lpd/BRFAX/*
+if [ -e /usr/share/cups/model/brfax_cups.ppd ];then
+  rm  /usr/share/cups/model/brfax_cups.ppd
+fi
+if [ -e /usr/share/ppd/brfax_cups.ppd ];then
+  rm  /usr/share/ppd/brfax_cups.ppd
+fi
+rm  /usr/bin/brpcfax
+#rm  /usr/bin/brmfcfaxconfig
+rm  /etc/opt/brother/fax/brmfcfax/config
+rm  /etc/opt/brother/fax/brmfcfax/lists
+
+exit 0

@@ -1,0 +1,10 @@
+Package: brmfcfaxdrv
+Version: 2.0.2-1
+Architecture: amd64
+Maintainer: Brother Industries,Ltd.
+Installed-Size: 246
+Section: Brohter
+Priority: extra
+Description: Brother Fax share driver
+ Brother fax share function driver
+ .

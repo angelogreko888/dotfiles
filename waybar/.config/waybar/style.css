@@ -115,14 +115,10 @@ color: yellow;
 }
 
 #workspaces button:hover {
-  background-color: alpha (purple, 0.99);
+  background-color: alpha (green, 0.3);
   border-radius:15px;
 }
 
-#workspaces button {
-  background-color: alpha (purple, 0.3);
-  border-radius:30px;
-}
 
 #workspaces button.active {
   background-color: alpha (green, 0.99);

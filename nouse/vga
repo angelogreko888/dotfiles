@@ -1,0 +1,3 @@
+lspci -k | grep -A 2 VGA
+ls -l /dev/dri/by-path/
+lspci -k | grep -A 2 -E "01:00.0|00:02.0"

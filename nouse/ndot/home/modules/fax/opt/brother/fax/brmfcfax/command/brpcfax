@@ -1,0 +1,108 @@
+#! /bin/bash
+
+# This program is free software; you can redistribute it and/or modify it
+# under the terms of the GNU General Public License as published by the Free
+# Software Foundation; either version 2 of the License, or (at your option)
+# any later version.
+#
+# This program is distributed in the hope that it will be useful, but WITHOUT
+# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+# FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for
+# more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program; if not, write to the Free Software Foundation, Inc., 59 Temple
+# Place, Suite 330, Boston, MA  02111-1307  USA
+#
+
+## Brother CUPS Fax filter
+# Copyright (C) 2005-  Brother Industries, Ltd.
+
+
+DEBUG=0
+
+BASEDIR="/opt/brother/fax/brmfcfax"
+CONFIGFILE="/${BASEDIR}/config/brmfcfax.config"
+source $CONFIGFILE
+
+
+
+hdir=${HOME//'/'/'\/'}
+
+
+
+number=""
+
+chkcmd="$BASEDIR/lpd/$(uname -m)/brps2brfax"
+if ! [ -e "$chkcmd" ];then
+   chkcmd="./brps2brfax"
+fi
+
+if ! [ -e $chkcmd ];then
+   exit 0
+fi
+
+new_args=''
+
+while [ "$1" != '' ]
+do
+  if [ "$1" = '-o' ];then
+    if [ "$(echo "$2" | grep '^fax-broadcast=')" != "" ];then 
+      tmp=$(echo "$2"| \
+          sed s/"fax-broadcast="//g |\
+          sed s/"^~"/"$hdir"/g );
+
+      if [ "$(echo "$tmp" | grep '^/')" = '' ];then
+        faxbcfile=$(pwd)/$tmp
+      else
+        faxbcfile=$tmp
+      fi
+    elif [ "$(echo "$2" | grep '^fax-number=')" != "" ];then 
+      number="${2//fax-number=/}"
+    elif [ "$(echo "$2" | grep '^--brpcfax-debug=')" != "" ];then
+      DEBUG="${2//"--brpcfax-debug="/}"
+    else
+      new_args="$new_args $1 $2"
+    fi
+    shift
+  else
+    datafile="$1"
+  fi
+  shift
+done
+
+numlist=$($chkcmd --number-check --fax_num="$number" --fax_list="$faxbcfile")
+if [ "$?" != '0' ];then
+    echo "INVALID FAX NUMBER [ $numlist]"
+    if [ "$TXLOG" = YES ] || [ "$TXLOG" = Yes ] || [ "$TXLOG" = yes ];then
+	touch "$TXLOGDIR"/"$TXLOGFILE"
+	echo "ERROR: BRFAX INVALID FAX NUMBER [ $numlist]" \
+	    >> "$TXLOGDIR"/"$TXLOGFILE"
+    fi
+    exit -1
+fi
+
+
+
+
+new_args=" -o fax-number=$numlist $new_args"
+
+lprcmd="lpr -P BRFAX   $new_args"
+
+case "$DEBUG" in
+     "0" )
+	$lprcmd "$datafile"
+	;;
+     "1" )
+	echo "$lprcmd" "$datafile"
+	$lprcmd "$datafile"
+	;;
+      "2" )
+	echo "$lprcmd" "$datafile"
+	;;
+      "*" )
+	$lprcmd "$datafile"
+	;;
+esac
+
+exit 0

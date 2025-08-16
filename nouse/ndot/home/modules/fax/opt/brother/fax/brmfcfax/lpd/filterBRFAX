@@ -1,0 +1,302 @@
+#! /bin/bash
+
+## Brother CUPS Fax filter
+# Copyright (C) 2005-  Brother Industries, Ltd.
+
+
+
+DEBUG=0
+
+BASEDIR="/opt/brother/fax/brmfcfax"
+CONFIGFILE="/${BASEDIR}/config/brmfcfax.config"
+
+if [ "$DEBUGCONFIGFILE" != "" ];then
+   CONFIGFILE="$DEBUGCONFIGFILE"
+fi
+
+source "$CONFIGFILE"
+
+INFDIR=$BASEDIR/inf
+if [ "$DEBUGINFDIR" != "" ];then
+   INFDIR="$DEBUGINFDIR"
+fi
+BINDIR=$BASEDIR/lpd/$(uname -m)
+if [ "$DEBUGBINDIR" != "" ];then
+   BINDIR="$DEBUGBINDIR"/$(uname -m)
+fi
+
+
+#
+#  arg check
+
+args="$*"
+
+#
+#   option 
+#
+PAPER='-faxoption-papersize'
+QUALITY='-faxoption-quality'
+NUMBER='-faxoption-faxnumber'
+BCAST='-faxoption-faxnumlist'
+IGNORERC='-faxoption-ignorercfile'
+DEBUGARG='-faxoption-debug'
+LOGFILE='-faxoption-logfile'
+TITLE='-faxoption-title'
+
+#
+#  Get temporally files
+#
+mkdir -p /tmp/brother_brpcfax
+INPUT_TEMP_PS=$(mktemp /tmp/brother_brpcfax/br_input_faxps.XXXXXX)
+TMPFILE=$(mktemp /tmp/brother_brpcfax/br_faxtmp.XXXXXX)
+TMPOUTPUTFILE=$(mktemp /tmp/brother_brpcfax/br_fax_output.XXXXXX)
+TMPCUPSLOGFILE=$(mktemp /tmp/brother_brpcfax/br_fax_cupslog.XXXXXX)
+
+
+
+
+#
+#  initialize valiables
+#
+paper_size=''
+resolution=''
+fax_number=''
+fax_bclist=''
+arg_fax_number=''
+arg_fax_bclist=''
+ignorercfile='OFF'
+debuglog=''
+result='0'
+error_msg=""
+
+#chaeck arguments
+
+while [ "$1" != '' ]
+do
+  if [ "$1" = $PAPER ];then 
+      shift
+      paper_size="$1"
+  elif [ "$1" = $QUALITY ];then 
+      shift
+      resolution="$1"
+  elif [ "$1" = $NUMBER ];then 
+      shift
+      arg_fax_number="$1"
+      if [ "$arg_fax_number" = "&&" ];then
+      	 arg_fax_number=''
+      fi
+  elif [ "$1" = $BCAST ];then 
+      shift
+      arg_fax_bclist="$1"
+      if [ "$arg_fax_bclist" = "&&" ];then
+      	 arg_fax_bclist=''
+      fi
+  elif [ "$1" = $IGNORERC ];then 
+      shift
+      ignorercfile="$1"
+  elif [ "$1" = $DEBUGARG ];then 
+      shift
+      if [ $DEBUG = 0 ];then
+          DEBUG="$1"
+      fi
+  elif [ "$1" = $TITLE ];then 
+      shift
+      document_title="$1"
+  elif [ "$1" = $LOGFILE ];then
+      shift
+      if [ "$1" != "/dev/null" ];then
+          debuglog=$1
+      fi
+  fi
+  shift
+done
+
+
+
+LOG=/dev/null
+if [ "$DEBUG" != 0 ];then
+   if [ "$debuglog" = '' ];then
+	LOG=/tmp/br_lpdfax_debug_log
+	rm -f "$LOG"
+	touch "$LOG"
+        echo "arg* = $*"   >> "$LOG"
+   else
+        LOG=$debuglog
+   fi
+fi
+
+
+if [ "$DEBUG" != 0 ];then
+	echo   args="$args" 			>> "$LOG"
+	echo   paper_size="$paper_size"		>> "$LOG"
+	echo   resolution="$resolution"   	>> "$LOG"
+	#echo   fax_number=$fax_number   	>> "$LOG"
+	echo   fax_bclist="$fax_bclist"   	>> "$LOG"
+	echo   arg_fax_number="$arg_fax_number" >> "$LOG"
+	echo   arg_fax_bclist="$arg_fax_bclist" >> "$LOG"
+	echo   ignorercfile="$ignorercfile"   	>> "$LOG"
+	echo   debuglog="$debuglog"   		>> "$LOG"
+fi
+
+
+
+if [ "$paper_size" = '' ];then
+	if [ "$(grep '^Paper=LTR' "$INFDIR"/brFAXrc)" != '' ]; then
+		paper_size=LETTER
+	elif [ "$(grep '^Paper=LGL' "$INFDIR"/brFAXrc)" != '' ]; then
+		paper_size=LEGAL
+	else
+		paper_size=A4
+	fi
+fi
+
+if [ "$resolution" = '' ];then
+	if [ "$(grep '^Quality=FINE' "$INFDIR"/brFAXrc)" != '' ]; then
+		resolution=FINE
+	else
+		resolution=STD
+	fi
+fi
+
+if [ "$DEBUG" != 0 ];then
+	echo   paper=$paper_size   		>> "$LOG"
+	echo   resolution=$resolution           >> "$LOG"
+fi
+
+GS="$(which gs)"
+
+if ! [ -e "$GS" ];then
+	error_msg="GS ERROR 1"
+	echo "DATE&TIME     :""$(date  +%Y/%m/%d)""$(date  +%H:%M:%S)" >> "$LOG"
+        echo "DOCUMENT:$document_title" >> "$LOG"
+	echo "$error_msg"			>> "$LOG"
+
+	rm -f "$INPUT_TEMP_PS"
+	rm -f "$TMPFILE"
+	rm -f "$TMPOUTPUTFILE"
+	rm -f "$TMPCUPSLOGFILE"
+	exit 32
+fi
+
+
+format=faxg3
+
+cat > "$INPUT_TEMP_PS"
+
+#
+#  Get destination 
+#
+fax_number="$(grep "^fax_number=" "$INFDIR"/brFAXrc  | sed s/"fax_number="//g)"
+fax_bclist="$(grep "^fax_number_list=" "$INFDIR"/brFAXrc |\
+                  sed s/"fax_number_list="//g)"
+
+
+if [  "$fax_number" = '' ];then
+	fax_number=$arg_fax_number
+elif [ "$ignorercfile" != 'OFF' ];then
+	fax_number=$arg_fax_number
+else
+	fax_number="$fax_number"",""$arg_fax_number"
+fi
+
+
+if [ "$fax_bclist" = '' ];then
+	fax_bclist=$arg_fax_bclist
+elif [ "$ignorercfile" != 'OFF' ];then
+	fax_bclist=$arg_fax_bclist
+fi
+
+
+ignoreOptionSettings="$(grep "^IgnoreOptionSettings=" "$INFDIR"/brFAXrc  |\
+    sed s/"IgnoreOptionSettings="//g)"
+
+if   [ "$ignoreOptionSettings" = "Yes" ];then
+     fax_number="$(grep "^fax_number=" "$INFDIR"/brFAXrc | sed s/"fax_number="//g)"
+     fax_bclist="$(grep "^fax_number_list=" "$INFDIR"/brFAXrc |\
+                  sed s/"fax_number_list="//g)"
+
+
+     if [ "$(grep '^Paper=LTR' "$INFDIR"/brFAXrc)" != '' ]; then
+	paper_size=LETTER
+     elif [ "$(grep '^Paper=LGL' "$INFDIR"/brFAXrc)" != '' ]; then
+	paper_size=LEGAL
+     else
+	paper_size=A4
+     fi
+
+     if [ "$(grep '^Quality=FINE' "$INFDIR"/brFAXrc)" != '' ]; then
+	resolution=FINE
+     else
+	resolution=STD
+     fi
+fi
+
+if [ "$DEBUG" != 0 ];then
+  echo "$BINDIR"/brps2brfax  \
+   --ps_file="$INPUT_TEMP_PS" \
+   --gs_file="$GS" \
+   --quality="$resolution" \
+   --fax_num="$fax_number" \
+   --fax_list="$fax_bclist" \
+   --format="$format" \
+   --paper="$paper_size" \
+   --tmp_file="$TMPFILE" \
+   --log_file="$LOG" \
+   --title="$document_title" >> "$LOG"
+fi
+
+
+"$BINDIR"/brps2brfax  \
+   --ps_file="$INPUT_TEMP_PS" \
+   --gs_file="$GS" \
+   --quality="$resolution" \
+   --fax_num="$fax_number" \
+   --fax_list="$fax_bclist" \
+   --format="$format" \
+   --paper="$paper_size" \
+   --tmp_file="$TMPFILE" \
+   --log_file="$LOG" \
+   --title="$document_title" 1> "$TMPOUTPUTFILE" 2>"$TMPCUPSLOGFILE"
+
+cat "$TMPCUPSLOGFILE" >&2
+if [ "$TXLOG" = YES ] || [ "$TXLOG" = Yes ] || [ "$TXLOG" = yes ];then
+    touch "$TXLOGDIR"/"$TXLOGFILE"
+    cat "$TMPCUPSLOGFILE" >> "$TXLOGDIR"/"$TXLOGFILE"
+fi
+
+result=$?
+
+if [ "$result" = 0 ];then
+   case "$DEBUG" in
+	"0" )
+		cat "$TMPOUTPUTFILE"
+		;;
+	"1" )
+		cat "$TMPOUTPUTFILE"
+		hexdump -C "$TMPOUTPUTFILE"	        >> "$LOG"
+		;;
+	"2" )
+		cat "$TMPOUTPUTFILE"
+		hexdump -C "$TMPOUTPUTFILE"	        >> "$LOG"
+		;;
+	"3" )
+		hexdump -C "$TMPOUTPUTFILE"	        >> "$LOG"
+		;;
+	"4" )
+		cat "$INPUT_TEMP_PS"			>> "$LOG"
+		hexdump -C "$TMPOUTPUTFILE"	        >> "$LOG"
+		;;
+	* )
+		cat "$TMPOUTPUTFILE"
+		;;
+   esac
+fi
+
+rm -f "$INPUT_TEMP_PS"
+rm -f "$TMPFILE"
+rm -f "$TMPOUTPUTFILE"
+rm -f "$TMPCUPSLOGFILE"
+
+exit $result
+
+

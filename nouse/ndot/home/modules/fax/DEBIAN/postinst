@@ -1,0 +1,140 @@
+#!/bin/bash
+
+if [ -e /usr/share/cups/model ];then
+  ln -s /opt/brother/fax/brmfcfax/cupswrapper/brfax_cups.ppd /usr/share/cups/model/
+fi
+if [ -e /usr/share/ppd ];then
+  ln -s /opt/brother/fax/brmfcfax/cupswrapper/brfax_cups.ppd /usr/share/ppd/
+fi
+if [ -e /usr/lib/cups/filter ];then
+  ln -s /opt/brother/fax/brmfcfax/cupswrapper/brfaxfilter    /usr/lib/cups/filter
+fi
+if [ -e /usr/lib/cups/filter32 ];then
+  ln -s /opt/brother/fax/brmfcfax/cupswrapper/brfaxfilter    /usr/lib/cups/filter32
+fi
+if [ -e /usr/lib/cups/filter64 ];then
+  ln -s /opt/brother/fax/brmfcfax/cupswrapper/brfaxfilter    /usr/lib/cups/filter64
+fi
+ln -s /opt/brother/fax/brmfcfax/command/brpcfax            /usr/bin
+ln -s /opt/brother/fax/brmfcfax/config                     /etc/opt/brother/fax/brmfcfax/
+ln -s /opt/brother/fax/brmfcfax/lists                      /etc/opt/brother/fax/brmfcfax/
+
+
+#chown  lp  /var/opt/brother/fax/brmfcfax/
+#chgrp  lp  /var/opt/brother/fax/brmfcfax/
+#chown  lp  /var/log/cups/brfax
+#chgrp  lp  /var/log/cups/brfax
+
+
+#----------
+if [ "$(which lpinfo  2> /dev/null)" != '' ] && \
+   [ "$(which lpadmin  2> /dev/null)" != '' ];then
+  uris=$(lpinfo -v)
+
+  for uri in $uris
+  do  
+    URI=$(echo $uri | grep 'MFC-' | grep -i "Brother" | grep usb | head -1)
+    if [ "$URI" != '' ];then
+      break;
+    fi
+  done
+
+  if [ "$URI" = '' ];then
+    for uri in $uris
+    do  
+	URI=$(echo $uri | grep 'FAX-' | grep -i "Brother" | grep usb | head -1)
+	if [ "$URI" != '' ];then
+	    break;
+	fi
+    done
+  fi
+
+  if [ "$URI" = '' ];then
+    for uri in $uris
+    do  
+      URI=$(echo $uri | grep 'MFC-'| grep -i "Brother" | head -1)
+      if [ "$URI" != '' ];then
+        break;
+      fi
+    done
+  fi
+
+  if [ "$URI" = '' ];then
+    for uri in $uris
+    do  
+	URI=$(echo $uri | grep 'FAX-' | grep -i "Brother"  | head -1)
+	if [ "$URI" != '' ];then
+	    break;
+	fi
+    done
+  fi
+
+  if [ "$URI" = '' ];then
+    for uri in $uris
+    do  
+	URI=$(echo $uri | grep 'HL-' | grep -i "Brother" | grep usb | head -1)
+	if [ "$URI" != '' ];then
+	    break;
+	fi
+    done
+  fi
+
+  if [ "$URI" = '' ];then
+    for uri in $uris
+    do  
+	URI=$(echo $uri | grep 'HL-' | grep -i "Brother"  | head -1)
+	if [ "$URI" != '' ];then
+	    break;
+	fi
+    done
+  fi
+
+  if [ "$URI" = '' ];then
+    for uri in $uris
+    do  
+	URI=$(echo $uri |  grep -i "Brother" | grep usb | head -1)
+	if [ "$URI" != '' ];then
+	    break;
+	fi
+    done
+  fi
+
+  if [ "$URI" = '' ];then
+    for uri in $uris
+    do  
+	URI=$(echo $uri | grep -i "Brother"  | head -1)
+	if [ "$URI" != '' ];then
+	    break;
+	fi
+    done
+  fi
+
+
+  if [ "$URI" = '' ];then
+    URI="usb://dev/usb/lp0"
+  fi
+
+  echo lpadmin -p BRFAX  -E -v $URI -P /usr/share/cups/model/brfax_cups.ppd
+  lpadmin -p BRFAX  -E -v $URI -P /usr/share/cups/model/brfax_cups.ppd
+
+fi
+#-------------
+
+
+
+
+if [ -e /usr/lib64/cups/filter ];then
+  cp /usr/lib/cups/filter/brfaxfilter /usr/lib64/cups/filter
+fi
+
+if [ "$(which semanage 2> /dev/null)" != '' ];then
+  semanage fcontext -a -t cupsd_rw_etc_t '/opt/brother/fax/brmfcfax/inf(/.*)?'
+  semanage fcontext -a -t cupsd_rw_etc_t '/opt/brother/fax/brmfcfax/lists(/.*)?'
+  semanage fcontext -a -t bin_t          '/opt/brother/fax/brmfcfax/lpd(/.*)?'
+  semanage fcontext -a -t bin_t          '/opt/brother/fax/brmfcfax/cupswrapper(/.*)?'
+
+  if [ "$(which restorecon  2> /dev/null)" != '' ];then
+    restorecon -R /opt/brother/fax/brmfcfax
+  fi
+fi
+exit 0

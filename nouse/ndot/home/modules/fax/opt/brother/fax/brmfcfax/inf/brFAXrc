@@ -1,0 +1,19 @@
+#   Paper
+#	A4   : A4
+#	LTR  : Letter
+#	LGL  : Legal
+Paper=A4
+
+#   Quality
+#	FINE : resolution 200x200
+#	STD  : resolution 200x100
+Quality=STD
+
+fax_number=
+fax_number_list=
+
+#
+# Ignore CUPS option settings
+#  IgnoreOptionSettings=Yes/No
+#
+IgnoreOptionSettings=No

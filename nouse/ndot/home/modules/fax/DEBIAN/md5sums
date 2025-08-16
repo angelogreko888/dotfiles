@@ -1,0 +1,13 @@
+1aa8c90610f85487d8073a415deaeac3  opt/brother/fax/brmfcfax/LICENSE_ENG.txt
+0a60d679656698a305b6ccf17237d6ba  opt/brother/fax/brmfcfax/LICENSE_JPN.txt
+8910e7eadab00bda82b92c5b967ad617  opt/brother/fax/brmfcfax/command/brpcfax
+2025bf717f583cdf0636c4e3fbd98372  opt/brother/fax/brmfcfax/config/brmfcfax.config
+e06c68a02befdf8997dda21acb7075d4  opt/brother/fax/brmfcfax/cupswrapper/brfax_cups.ppd
+b328b2e93f60b559574d18fa884612e8  opt/brother/fax/brmfcfax/cupswrapper/brfaxfilter
+32568e0cba0529a9e731e3d56bec90c8  opt/brother/fax/brmfcfax/inf/brFAXrc
+2d1fd564633ac5ab726e6456fc5dae7c  opt/brother/fax/brmfcfax/lpd/armv7l/brps2brfax
+7879aadb7ef925e5adc9ce2662bf0c46  opt/brother/fax/brmfcfax/lpd/filterBRFAX
+0d2828d5ad1fe3ab8ebce01866625957  opt/brother/fax/brmfcfax/lpd/i686/brps2brfax
+d1a0fbd06df67ec9f5317556c90d0f0d  opt/brother/fax/brmfcfax/lpd/x86_64/brps2brfax
+052e3bdc3d40bbcd0c24eb30b59ca136  usr/share/doc/brmfcfaxdrv/changelog.Debian.gz
+f70961701cebf2f087f8e7aad0f4a280  usr/share/doc/brmfcfaxdrv/copyright

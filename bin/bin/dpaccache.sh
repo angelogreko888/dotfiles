@@ -5,9 +5,10 @@ handle_error() {
   }
 
   trap 'handle_error $LINENO' ERR
-/n
-/n
 
+echo
+echo
+echo
 
 	sudo paccache -ruk0
 	sudo paccache -rk1

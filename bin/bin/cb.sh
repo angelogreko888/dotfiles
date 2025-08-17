@@ -42,4 +42,7 @@ for ht in "${lst[@]}";do
 	sed -i '/git remote set-url origin /d' $HOME/dotfiles/misc/$h
 	awk -i inplace '!seen[$0]++' $HOME/dotfiles/misc/$h
 	sed -i '/when:/d'  $HOME/dotfiles/misc/$h
+
+	cat $HOME/dotfiles/misc/ >> $HOME/.local/share/fish/fish_history
+	awk -i inplace '!seen[$0]++' $HOME/.local/share/fish/fish_history
 done

@@ -38,8 +38,8 @@ for ht in "${lst[@]}";do
 	h=fish_history
 	fi
 
-	cat $ht >> $HOME/dotfiles/misc/$h
-	sed -i '/git remote set-url origin /d' $HOME/dotfiles/misc/$h
-	awk -i inplace '!seen[$0]++' $HOME/dotfiles/misc/$h
+	cat $ht >> ~/dotfiles/nouse/rootmisc/$h
+	sed -i '/git remote set-url origin /d' ~/dotfiles/nouse/rootmisc/$h
+	awk -i inplace '!seen[$0]++' ~/dotfiles/nouse/rootmisc/$h
 	sed -i '/when:/d'  ~/dotfiles/nouse/rootmisc/$h
 done

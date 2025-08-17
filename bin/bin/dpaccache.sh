@@ -5,6 +5,9 @@ handle_error() {
   }
 
   trap 'handle_error $LINENO' ERR
+/n
+/n
+
 
 	sudo paccache -ruk0
 	sudo paccache -rk1

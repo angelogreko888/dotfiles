@@ -119,7 +119,8 @@ alias tm='sudo fstrim -av'
 alias pm='sudo nano /etc/pacman.d/mirrorlist'
 alias pl='sudo cat /var/log/pacman.log'
 
-alias u='sudo pacman -Syyu --noconfirm && yay -Syyu --noconfirm'
+#alias u='sudo pacman -Syyu --noconfirm && yay -Syyu --noconfirm'
+alias u='yay -Syyu --noconfirm'
 alias dp='~/bin/dpaccache.sh'
 
 alias y='yay'

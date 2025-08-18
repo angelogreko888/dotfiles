@@ -113,6 +113,7 @@ usb_modeswitch
 usbutils
 vim
 virtualbox
+virtualbox-ext-vnc
 virtualbox-guest-utils
 w3m
 waybar

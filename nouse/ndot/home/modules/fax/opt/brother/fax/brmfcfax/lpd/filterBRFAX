@@ -1,4 +1,4 @@
-#! /bin/bash
+#! /run/current-system/sw/bin/bash
 
 ## Brother CUPS Fax filter
 # Copyright (C) 2005-  Brother Industries, Ltd.

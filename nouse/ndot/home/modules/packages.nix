@@ -20,6 +20,16 @@
 
   home.packages = with pkgs; [
 
+vulkan-headers
+vulkan-loader
+gtk-layer-shell
+xdg-dbus-proxy
+xdg-desktop-portal
+xdg-desktop-portal-gtk
+xdg-utils
+libdrm
+
+nwg-look
 font-awesome
 nerd-fonts.jetbrains-mono
 libadwaita

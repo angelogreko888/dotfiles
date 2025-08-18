@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/run/current-system/sw/bin/bash
 
 if [ -e /usr/share/cups/model ];then
   ln -s /opt/brother/fax/brmfcfax/cupswrapper/brfax_cups.ppd /usr/share/cups/model/

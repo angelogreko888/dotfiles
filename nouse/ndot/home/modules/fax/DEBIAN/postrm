@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/run/current-system/sw/bin/bash
 if [ "$(which semanage 2> /dev/null)" != '' ];then
   semanage fcontext -d -t cupsd_rw_etc_t '/opt/brother/fax/brmfcfax/inf(/.*)?'
   semanage fcontext -d -t cupsd_rw_etc_t '/opt/brother/fax/brmfcfax/lists(/.*)?'

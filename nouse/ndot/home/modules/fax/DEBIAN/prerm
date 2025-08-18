@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/run/current-system/sw/bin/bash
 lpadmin -x BRFAX
 if [ -e /usr/lib64/cups/filter/brfaxfilter ];then
      rm -f /usr/lib64/cups/filter/brfaxfilter

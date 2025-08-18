@@ -2,7 +2,7 @@
 {
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-  services.displayManager.ly.enable = true;
+#  services.displayManager.ly.enable = true;
 
   boot.loader.timeout = 1;
   boot.loader.grub.extraEntries = "Defaults timestamp_timeout=999";

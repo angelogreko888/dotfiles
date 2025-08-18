@@ -7,7 +7,7 @@ handle_error() {
   trap 'handle_error $LINENO' ERR
 
 a=$(date | awk '{print $1}')
-if [ $a == Sat ];then
+if [ $a == Sun ];then
 	flag="/var/tmp/$(basename -- $0).flag"
 	if [ -e "$flag" ] ;then
 	[ $(date +%F) = $(date +%F -r "$flag") ] && exit 1
@@ -21,7 +21,7 @@ if [ $a == Sat ];then
 #		nix flake update
 #		nix-channel --update
 		 sudo nix-channel --update nix flake update
-		~/bin/switch.sh
+#		~/bin/switch.sh
 		echo ~~~~~~~~~~~~~~~~Done!!!~~~~~~~~~~~~~~~~; cd ~;  read'
 else
 		if [ -f /var/tmp/update.sh.flag ]; then

@@ -5,18 +5,17 @@
 { config, pkgs, ... }:
 
 {
+
+environment.sessionVariables.VK_ICD_FILENAMES = "/run/opengl-driver/share/vulkan/icd.d/nvidia_icd.x86_64.json";
+
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
     ];
 
   # Bootloader.
-  boot.loader.grub.enable = true;
-  boot.loader.grub.device = "/dev/sda";
-#  boot.loader.grub.useOSProber = true;
-
-  # Use latest kernel.
-  boot.kernelPackages = pkgs.linuxPackages_latest;
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = true;
 
   networking.hostName = "asus"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -49,6 +48,10 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
+  # Enable the XFCE Desktop Environment.
+  services.xserver.displayManager.lightdm.enable = true;
+  services.xserver.desktopManager.xfce.enable = true;
+
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "us";
@@ -67,7 +70,7 @@
     alsa.support32Bit = true;
     pulse.enable = true;
     # If you want to use JACK applications, uncomment this
-    jack.enable = true;
+    #jack.enable = true;
 
     # use the example session manager (no others are packaged yet so this is enabled by default,
     # no need to redefine it in your config for now)
@@ -81,7 +84,7 @@
   users.users.vago = {
     isNormalUser = true;
     description = "vago";
-    extraGroups = [ "networkmanager" "wheel" "inputs" "lp" "video"];
+    extraGroups = [ "networkmanager" "wheel" "lp" ];
     packages = with pkgs; [
     #  thunderbird
     ];
@@ -98,7 +101,9 @@
   environment.systemPackages = with pkgs; [
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #  wget
-        brgenml1lpr
+	git
+	nano
+	brgenml1lpr
         brgenml1cupswrapper
         system-config-printer
   ];

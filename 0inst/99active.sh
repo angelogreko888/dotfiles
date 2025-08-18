@@ -13,9 +13,6 @@ adb
 systemd-resolved.service
 apparmor.service
 systemd-homed.service
-nvidia-suspend.service
-nvidia-hibernate.service
-nvidia-resume.service
 acpid
 seatd
 laptop-mode.service

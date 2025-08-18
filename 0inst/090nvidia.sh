@@ -69,3 +69,14 @@ sudo pacman -S --noconfirm --needed nvidia-dkms nvidia-utils lib32-nvidia-utils 
 
 sudo mkinitcpio -P
 
+ctl=(
+nvidia-suspend.service
+nvidia-hibernate.service
+nvidia-resume.service
+
+)
+
+for CTL in "${ctl[@]}";do
+        sudo systemctl enable "$CTL"
+        echo ""$CTL" activated"
+done

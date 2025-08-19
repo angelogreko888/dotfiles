@@ -79,6 +79,6 @@ sudo firecfg
 sudo unlink /etc/firejail/simple-scan
 sudo unlink /etc/firejail/cups
 
-id  $whoami
+bash ~/dotfiles/0inst/vu.sh
 
 echo "Done!!!"

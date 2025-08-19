@@ -4,7 +4,6 @@ android-sdk-platform-tools
 anydesk-bin
 ast-firmware
 aurutils
-#bezier
 checkupdates-with-aur
 flameshot-git
 floorp-bin
@@ -19,6 +18,5 @@ mkinitcpio-firmware
 ranger-git
 simple-mtpfs
 upd72020x-fw
-#v4l-utils-git
 wd719x-firmware
 yp-tools

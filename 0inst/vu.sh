@@ -34,11 +34,11 @@ if pacman -Q virtualbox &>/dev/null; then
        	sudo groupadd vboxsf
        	echo "'vboxsf' group created" 
 	fi
-		$(grep vboxsf /etc/group |grep vago)
-		if [ $1 -ne 0 ]; then
-			sudo usermod -aG input "$(whoami)"
-		else
+		a=(grep vboxsf /etc/group | awk -F: '{print $3}')
+		if [ $a == vago ]; then
 			echo
+		else
+			sudo usermod -aG vboxsf "$(whoami)"
 		fi
 else 
 	echo

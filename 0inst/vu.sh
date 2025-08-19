@@ -23,6 +23,16 @@ printf "\n\e[1;32m... Checking zram .... continue ?  ... : \n\e[0m"
 read
 cat /etc/systemd/zram-generator.conf
 
+if pacman -Q virtualbox; then
+	if grep -q '^vboxsf:' /etc/group; then
+        echo "'vboxsf' group exists."
+	else
+        echo "'vboxsf' group doesn't exist. Creating 'input' group..."
+        sudo groupadd vboxsf
+        echo "'vboxsf' group created" 
+	fi
+	sudo usermod -aG input "$(whoami)"
+fi
 
 printf "\n\e[1;32m... Checking groups.... continue ?  ... : \n\e[0m"
 read

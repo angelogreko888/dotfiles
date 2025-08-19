@@ -37,10 +37,8 @@
         "§:gfx.ms",
         "§:live.net",
         "§:mozilla.net",
-        "§:netflix.com",
         "§:nflxext.com",
         "§:nflximg.com",
-        "§:nflxvideo.net",
         "§:noscript.net",
         "§:securecode.com",
         "§:securesuite.net",
@@ -171,7 +169,6 @@
         "vidsmoon.space",
         "vidsreal.space",
         "xliirdr.com",
-        "firebaseinstallations.googleapis.com",
         "quantcast.com",
         "weatherwidget.io",
         "wp.com",
@@ -247,7 +244,6 @@
         "tgwidget.com",
         "cdn-cookieyes.com",
         "jwplayer.com",
-        "doubleclick.net",
         "heyday.io",
         "kaltura.com",
         "youbora.com",
@@ -269,7 +265,6 @@
         "senja.io",
         "quantummetric.com",
         "nagich.com",
-        "cdn-apple.com",
         "google.co.il",
         "cdn4ads.com",
         "optmn.cloud",
@@ -308,7 +303,12 @@
         "ucarecdn.com",
         "rsms.me",
         "google.com",
-        "whatsapp.com"
+        "whatsapp.com",
+        "firebaseinstallations.googleapis.com",
+        "doubleclick.net",
+        "cdn-apple.com",
+        "netflix.com",
+        "tsyndicate.com"
       ],
       "custom": {
         "§:fbsbx.com": {
@@ -584,10 +584,6 @@
         },
         "§:cdnst.net": {
           "capabilities": [
-            "frame",
-            "fetch",
-            "noscript",
-            "other",
             "script"
           ],
           "temp": false
@@ -1154,12 +1150,10 @@
         },
         "§:speedtest.net": {
           "capabilities": [
-            "frame",
             "fetch",
-            "noscript",
-            "other",
             "font",
-            "script"
+            "script",
+            "noscript"
           ],
           "temp": false
         },
@@ -3399,13 +3393,6 @@
           ],
           "temp": false
         },
-        "§:tsyndicate.com": {
-          "capabilities": [
-            "fetch",
-            "script"
-          ],
-          "temp": false
-        },
         "§:vsmvideo.com": {
           "capabilities": [
             "frame",
@@ -5141,6 +5128,146 @@
             "fetch",
             "font",
             "noscript",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:mor.org.il": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "noscript",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:ipify.org": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font"
+          ],
+          "temp": false
+        },
+        "§:antixlinux.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:fast.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:nflxvideo.net": {
+          "capabilities": [
+            "fetch"
+          ],
+          "temp": false
+        },
+        "§:uptimerobot.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "media",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:peertube.wtf": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script",
+            "noscript",
+            "media"
+          ],
+          "temp": false
+        },
+        "§:ebay.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "lazy_load",
+            "noscript",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:ebaydesc.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:ebaystatic.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:bezeq.co.il": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "noscript",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:speedtestcustom.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script"
+          ],
+          "temp": false
+        },
+        "§:net-usb.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script",
+            "noscript"
+          ],
+          "temp": false
+        },
+        "§:whonix.org": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
+            "script",
+            "noscript"
+          ],
+          "temp": false
+        },
+        "§:cnet.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "font",
             "script"
           ],
           "temp": false

@@ -17,6 +17,7 @@ mintstick
 mkinitcpio-firmware
 python-bidi
 ranger-git
+raw-thumbnailer
 simple-mtpfs
 spd5118-dkms-git
 ttf-font-awesome-4

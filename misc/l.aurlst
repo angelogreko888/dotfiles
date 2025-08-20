@@ -8,6 +8,7 @@ checkupdates-with-aur
 flameshot-git
 floorp-bin
 freetube-bin
+gnome-icon-theme-extras
 hyprevents-git
 hyprprop-git
 hyprshade
@@ -18,6 +19,7 @@ mkinitcpio-firmware
 python-bidi
 ranger-git
 simple-mtpfs
+udev-block-notify
 upd72020x-fw
 wd719x-firmware
 yay

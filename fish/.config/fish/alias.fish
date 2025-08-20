@@ -156,6 +156,7 @@ alias mi=' sudo -sE mintstick -m iso'
 alias fc="sudo sh -c 'echo 3 >/proc/sys/vm/drop_caches'"
 alias se='~/bin/sleep.sh'
 alias ee='pgrep sleep'
+alias mk='mako history'
 
 alias cdv='cd /mnt/vt'
 alias cds='cd /mnt/shared-data'

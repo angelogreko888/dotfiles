@@ -27,7 +27,8 @@ ranger
 waybar
 xsettingsd
 #swaync
-dunst
+#dunst
+mako
 flameshot
 icons
 

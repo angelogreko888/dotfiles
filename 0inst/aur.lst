@@ -17,6 +17,7 @@ mintstick
 mkinitcpio-firmware
 ranger-git
 simple-mtpfs
+udev-block-notify
 upd72020x-fw
 wd719x-firmware
 yp-tools

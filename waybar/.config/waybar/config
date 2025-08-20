@@ -19,7 +19,6 @@
 	"clock",
 //	"custom/swaync",
 //	 "custom/notifications",
-	"custom/mako",
 	"idle_inhibitor",
 	"hyprland/workspaces",
 	"wlr/taskbar",
@@ -338,36 +337,6 @@
     },
 
 
-
- "custom/mako": {
-//        "format": " {icon} {0} ",
-        "format": "{icon}",
-        "format-icons": {
-//          "notification": "<span foreground='white'><sup></sup></span>",
-	"notification": "<span foreground='red'><sup></sup></span>",
-          "none": "",
-            "warning-notification": "<span foreground='gold'>󱨪<sup></sup></span>",
-            "error-notification": "<span foreground='red'>󱨪<sup></sup></span>",
-            "dnd": "",
-//            "email-notification": "<span foreground='white'><sup></sup></span>",
-//            "chat-notification": "󱋊<span foreground='white'><sup></sup></span>",
-//            "network-notification": "󱂇<span foreground='white'><sup></sup></span>",
-//            "battery-notification": "󰁺<span foreground='white'><sup></sup></span>",
-//            "update-notification": "󰚰<span foreground='white'><sup></sup></span>",
-//            "music-notification": "󰝚<span foreground='white'><sup></sup></span>",
-//            "volume-notification": "󰕿<span foreground='white'><sup></sup></span>",
-        },
-        "return-type": "json",
-        "exec-if": "which makoctl",
-        "exec": "~/.config/mako/notifications.py",
-        "on-scroll-down": "sleep 0.1 && makoctl history-pop",
-        "on-click": "makoctl history-clear",
-        "on-click-middle": "makoctl set-paused toggle",
-        "on-click-right": "makoctl close-all",
-        "interval": 1,
-        "tooltip": true,
-        "escape": true
-    },
 
 
 

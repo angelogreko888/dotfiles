@@ -8,7 +8,6 @@ handle_error() {
 
 echo
 echo
-echo
 
 	sudo paccache -ruk0
 	sudo paccache -rk1

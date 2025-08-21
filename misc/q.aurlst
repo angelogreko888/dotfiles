@@ -16,6 +16,8 @@ laptop-mode-tools
 librewolf-bin
 mintstick
 mkinitcpio-firmware
+mmv
+mmv-debug
 python-bidi
 ranger-git
 simple-mtpfs

@@ -7,6 +7,7 @@ yy="10yay.sh"
 pc="20pac.sh"
 ar="30aur.sh"
 pp="40pipewire.sh"
+mv="50mmv.sh"
 st="60stow.sh"
 at="99active.sh"
 
@@ -51,6 +52,9 @@ bash $is$ar
 printf "\n\e[1;32m... press enter to continue ...pipewire : \e[0m"
 read
 bash $is$pp
+printf "\n\e[1;32m... press enter to continue ...mmv : \e[0m"
+read
+bash $is$mv
 #printf "\n\e[1;32m... press enter to activate hyprland ... : \e[0m"
 #read
 #hyprland

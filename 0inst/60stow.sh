@@ -18,19 +18,16 @@ fastfetch
 fish
 foot
 fuzzel
-#gtk-2.0
 gtk-3.0
-#gtk-4.0
+gtk-4.0
 home
 hypr
 ranger
 waybar
 xsettingsd
-#swaync
-#dunst
-mako
 flameshot
 icons
+mako
 
 )
 
@@ -40,6 +37,8 @@ done
 
 plst=(
 kanshi
+#swaync
+#dunst
 
 )
 
@@ -58,5 +57,7 @@ for PLST in "${plst[@]}";do
 		esac
 	done
 done
+
+
 
 cd ~

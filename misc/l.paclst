@@ -32,6 +32,7 @@ font-manager
 foot
 fuzzel
 fwupd
+fzf
 gimp
 git
 glib2-devel
@@ -122,3 +123,4 @@ xf86-input-synaptics
 xorg-server
 xorg-xinit
 yt-dlp
+zoxide

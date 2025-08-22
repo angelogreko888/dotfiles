@@ -31,6 +31,7 @@ font-manager
 foot
 fuzzel
 fwupd
+fzf
 gimp
 git
 glib2-devel

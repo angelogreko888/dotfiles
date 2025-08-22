@@ -4,6 +4,8 @@ end
 
 source ~/.config/fish/alias.fish
 
+zoxide init fish | source
+
 set fish_color_valid_path
 
 set -g fish_greeting

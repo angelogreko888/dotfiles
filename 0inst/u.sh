@@ -59,6 +59,8 @@ bash $is$mv
 #read
 #hyprland
 #sleep 5
+printf "\n\e[1;32m... press enter to stow ... : \e[0m"
+read
 bash $is$st
 printf "\n\e[1;32m... press enter to continue ...activation : \e[0m"
 read

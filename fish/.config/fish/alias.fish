@@ -26,8 +26,8 @@ alias w="which"
 alias cp="cp -i"
 alias mv='mv -i'
 
-alias l='eza -a --color always --long --git --no-filesize --icons always --no-time --no-user'
-alias ll='eza -lha'
+alias l='eza -ao --color always --long --git --no-filesize --icons always --no-time --no-user'
+alias ll='eza -lhao'
 alias lt=' eza --tree'
 alias lk='lsblk'
 

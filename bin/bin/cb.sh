@@ -43,5 +43,5 @@ for ht in "${lst[@]}";do
 	awk -i inplace '!seen[$0]++' $HOME/dotfiles/misc/$h
 	sed -i '/when:/d'  $HOME/dotfiles/misc/$h
 
-#	command cp $HOME/dotfiles/misc/fish_history  $HOME/.local/share/fish/fish_history
+	command cp $HOME/dotfiles/misc/fish_history  $HOME/.local/share/fish/fish_history
 done

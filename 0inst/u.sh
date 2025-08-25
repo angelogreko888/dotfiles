@@ -22,7 +22,7 @@ if ! [ -d ~/dotfiles ];then
 	exit 1
 fi
 
-#bash $is$cp
+bash $is$cp
 
 printf "\n\e[1;32m... press enter to continue ...yay : \e[0m"
 read

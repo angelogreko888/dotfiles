@@ -29,12 +29,12 @@ select  cn in Israel Cyprus;do
 	case $cn in
 
         Israel) 
-		sudo  reflector --latest 1 --sort rate --country Israel --protocol https --verbose --save /etc/pacman.d/mirrorlist 
+		sudo  reflector --latest 5 --sort rate --country Israel --protocol https --verbose --save /etc/pacman.d/mirrorlist 
                 sudo sed -rie '/mivzakim/d' /etc/pacman.d/mirrorlist  
 		break ;;
 
         Cyprus) 
-		sudo  reflector --latest 5 --sort rate  --country Greece,Tr,Israel,Germany,'United Kingdom'  --protocol https --verbose --save /etc/pacman.d/mirrorlist 
+#		sudo  reflector --latest 5 --sort rate  --country Greece,Tr,Israel,Germany,'United Kingdom'  --protocol https --verbose --save /etc/pacman.d/mirrorlist 
 		break ;;
 
 	*) 

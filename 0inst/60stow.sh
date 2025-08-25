@@ -7,7 +7,9 @@ if [ -d ~/.config/hypr ];then
 #	exit 1
 fi
 
-rm ~/.bashrc
+if [ -f ~/.bashrc ];then
+	rm ~/.bashrc
+fi
 
 cd ~/dotfiles
 

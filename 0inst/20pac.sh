@@ -36,9 +36,9 @@ for PLST in "${plst[@]}";do
 	done
 done
 
-for PKG in "${lst[@]}";do
-        if ! pacman -Q "$PKG" &>/dev/null; then
-                printf "\e[1;31mERROR...Sorry, could not install... $PKG\e[0m\n" >&2
-        fi
-done
+#for PKG in "${lst[@]}";do
+#        if ! pacman -Q "$PKG" &>/dev/null; then
+#                printf "\e[1;31mERROR...Sorry, could not install... $PKG\e[0m\n" >&2
+#        fi
+#done
 

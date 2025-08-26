@@ -32,12 +32,12 @@
 ],
 
   "modules-right": [
-	"network",
 	"memory",
 	"cpu",
 	"pulseaudio#microphone",
 //	"bluetooth",     
 	"backlight",
+	"network",
         "tray",
 	"power-profiles-daemon",
 	"battery",
@@ -180,7 +180,7 @@
     "network": {
          "format": "{ifname}",
          "format-wifi": "{icon}",
-//         "format-ethernet": "󰈀",
+         "format-ethernet": "󰈀",
 	 "format": "↓ {bandwidthDownBits}  ↑ {bandwidthUpBits}", 
         "format-disconnected": "󰌙",
          "tooltip-format": "{ipaddr}  {bandwidthUpBits}  {bandwidthDownBits}",

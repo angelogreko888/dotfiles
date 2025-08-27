@@ -170,5 +170,6 @@ alias la='TZ='America/Los_Angeles' date'
 
 alias pcs='~/bin/pctoshared.sh'
 alias spc='~/bin/sharedtopc.sh'
+alias ph='~/bin/phonebup.sh'
 
 alias dd='~/bin/dd.sh'

@@ -137,7 +137,7 @@
         "format-icons": ["","","","","","","","","","","","","","","","󰃠"],
         "tooltip-format": "backlight {percent}%",
         "icon-size": 10,
-        "on-click": "idle_inhibitor --onclick activated",
+        "on-click": "",
         "on-click-middle": "",
         "on-click-right": "",
         "on-update": "",

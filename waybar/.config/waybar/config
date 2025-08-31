@@ -35,7 +35,7 @@
 	"memory",
 	"cpu",
 	"pulseaudio#microphone",
-//	"bluetooth",     
+	"bluetooth",     
 	"backlight",
 	"network",
         "tray",

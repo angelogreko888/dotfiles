@@ -9,8 +9,11 @@ flameshot-git
 floorp-bin
 freetube-bin
 hyprevents-git
+hyprlang-git
 hyprprop-git
 hyprshade
+hyprutils-git
+hyprwayland-scanner-git
 laptop-mode-tools
 librewolf-bin
 mintstick
@@ -20,4 +23,5 @@ simple-mtpfs
 udev-block-notify
 upd72020x-fw
 wd719x-firmware
+xdg-desktop-portal-hyprland-git
 yp-tools

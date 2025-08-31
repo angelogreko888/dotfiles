@@ -4,6 +4,7 @@ arch-install-scripts
 base
 base-devel
 bat
+bluez-utils
 brightnessctl
 btop
 cups
@@ -123,7 +124,6 @@ wireless_tools
 wireplumber
 woff2-font-awesome
 xdg-desktop-portal-gtk
-xdg-desktop-portal-hyprland
 xdg-user-dirs
 xf86-input-synaptics
 xorg-server

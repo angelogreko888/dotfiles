@@ -19,6 +19,7 @@ librewolf-bin
 mintstick
 mkinitcpio-firmware
 ranger-git
+rustdesk
 simple-mtpfs
 udev-block-notify
 upd72020x-fw

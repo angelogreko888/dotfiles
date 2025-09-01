@@ -2147,3 +2147,4 @@ cp -r /mnt/data/dotfiles/ .
 ./090nvidia.sh 
 n ene
 bash -version
+startx

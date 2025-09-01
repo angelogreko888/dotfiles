@@ -22,8 +22,6 @@ mkinitcpio-firmware
 mmv
 mmv-debug
 python-bidi
-qt4
-qtmib
 ranger-git
 rustdesk-bin
 simple-mtpfs

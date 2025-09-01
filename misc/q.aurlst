@@ -23,9 +23,7 @@ mmv
 mmv-debug
 python-bidi
 qt4
-qt4-debug
 qtmib
-qtmib-debug
 ranger-git
 rustdesk-bin
 simple-mtpfs

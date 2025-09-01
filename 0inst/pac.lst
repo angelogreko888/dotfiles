@@ -47,8 +47,11 @@ gvfs-mtp
 htop
 hypridle
 hyprland
+hyprlang
 hyprlock
 hyprshot
+hyprutils
+hyprwayland-scanner
 imagemagick
 inetutils
 inotify-tools
@@ -115,9 +118,9 @@ wget
 wireless_tools
 wireplumber
 xdg-desktop-portal-gtk
+xdg-desktop-portal-hyprland
 xdg-user-dirs
 xdg-utils
-xf86-input-synaptics
 xf86-input-synaptics
 xorg-server
 xorg-xinit

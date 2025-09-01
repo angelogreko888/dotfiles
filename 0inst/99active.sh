@@ -76,8 +76,8 @@ chsh -s /usr/bin/fish
 #firejail
 sudo firecfg
 
-sudo unlink /etc/firejail/simple-scan
-sudo unlink /etc/firejail/cups
+#sudo unlink /etc/firejail/simple-scan
+#sudo unlink /etc/firejail/cups
 
 bash ~/dotfiles/0inst/vu.sh
 

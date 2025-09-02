@@ -74,6 +74,11 @@
    padding: 0px 15px 0px 15px;
 }
 
+#custom-weather{
+border-radius:30px;
+padding: 0px 15px 0px 15px;
+}
+
 
 #custom-pacman{
   border-radius:30px;

@@ -34,7 +34,7 @@
   "modules-right": [
 	"memory",
 	"cpu",
-	"custom/weather",
+//	"custom/weather",
 	"pulseaudio#microphone",
 //	"bluetooth",     
 	"backlight",

@@ -148,7 +148,7 @@ alias ft='sudo nano /etc/fstab'
 alias ba='sudo nano  /boot/loader/entries/2025-04-16_12-24-46_linux.conf'
 alias fh='nano  ~/.local/share/fish/fish_history'
 alias af='nano ~/.config/fish/alias.fish'
-alias b='bat -p'
+alias b='bat -pl conf'
 
 alias mf=' sudo -sE mintstick -m format'
 alias mi=' sudo -sE mintstick -m iso'

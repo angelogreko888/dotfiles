@@ -7,6 +7,7 @@ bat
 bluez-utils
 brightnessctl
 btop
+clang
 cups
 cups-pdf
 dbxtool
@@ -73,6 +74,7 @@ mpv
 mtools
 nano
 nano-syntax-highlighting
+nasm
 ncdu
 nemo
 net-tools
@@ -100,6 +102,7 @@ qt6ct
 reflector
 ripgrep
 rsync
+rust
 simple-scan
 slurp
 smartmontools
@@ -112,6 +115,7 @@ timeshift
 tldr
 ttf-jetbrains-mono-nerd
 ueberzugpp
+unzip
 usb_modeswitch
 usbutils
 vim
@@ -129,5 +133,7 @@ xdg-user-dirs
 xf86-input-synaptics
 xorg-server
 xorg-xinit
+yasm
 yt-dlp
+zip
 zoxide

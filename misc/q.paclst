@@ -7,7 +7,6 @@ bat
 bluez-utils
 brightnessctl
 btop
-clang
 cups
 cups-pdf
 dbxtool
@@ -74,7 +73,6 @@ mpv
 mtools
 nano
 nano-syntax-highlighting
-nasm
 ncdu
 nemo
 net-tools
@@ -107,14 +105,12 @@ simple-scan
 slurp
 smartmontools
 sof-firmware
-sqlitebrowser
 stow
 swaybg
 systemd-resolvconf
 timeshift
 tldr
 ttf-jetbrains-mono-nerd
-ueberzugpp
 unzip
 usb_modeswitch
 usbutils
@@ -126,14 +122,11 @@ waybar
 wget
 wireless_tools
 wireplumber
-woff2-font-awesome
-xcursor-vanilla-dmz
 xdg-desktop-portal-gtk
 xdg-user-dirs
 xf86-input-synaptics
 xorg-server
 xorg-xinit
-yasm
 yt-dlp
 zip
 zoxide

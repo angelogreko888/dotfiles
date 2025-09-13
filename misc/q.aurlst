@@ -21,12 +21,10 @@ mintstick
 mkinitcpio-firmware
 mmv
 mmv-debug
-python-bidi
 ranger-git
 rustdesk-bin
 simple-mtpfs
 spd5118-dkms-git
-ttf-font-awesome-4
 udev-block-notify
 upd72020x-fw
 wd719x-firmware

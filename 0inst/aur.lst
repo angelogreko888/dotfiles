@@ -8,6 +8,7 @@ checkupdates-with-aur
 flameshot-git
 floorp-bin
 freetube-bin
+gnome-icon-theme-extras
 hyprevents-git
 hyprlang-git
 hyprprop-git
@@ -19,7 +20,7 @@ librewolf-bin
 mintstick
 mkinitcpio-firmware
 ranger-git
-rustdesk
+rustdesk-bin
 simple-mtpfs
 udev-block-notify
 upd72020x-fw

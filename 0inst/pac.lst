@@ -67,6 +67,7 @@ linux
 linux-firmware
 linux-headers
 ly
+mako
 mpv
 mtools
 nano
@@ -87,7 +88,6 @@ pipewire-alsa
 pipewire-jack
 pipewire-pulse
 plocate
-polkit
 polkit
 power-profiles-daemon
 python-pip

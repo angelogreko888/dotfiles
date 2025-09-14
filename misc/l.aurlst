@@ -18,7 +18,6 @@ mintstick
 mkinitcpio-firmware
 mmv
 mmv-debug
-python-bidi
 ranger-git
 simple-mtpfs
 udev-block-notify

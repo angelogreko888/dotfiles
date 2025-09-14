@@ -16,7 +16,6 @@ dmidecode
 dosfstools
 dpkg
 dunst
-dysk
 efibootmgr
 eog
 evince
@@ -50,6 +49,7 @@ hyprland
 hyprlock
 hyprshot
 imagemagick
+inetutils
 inotify-tools
 intel-ucode
 iw
@@ -107,15 +107,14 @@ systemd-resolvconf
 timeshift
 tldr
 ttf-jetbrains-mono-nerd
-ueberzugpp
 usb_modeswitch
 usbutils
 vim
+w3m
 waybar
 wget
 wireless_tools
 wireplumber
-woff2-font-awesome
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 xdg-user-dirs

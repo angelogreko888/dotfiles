@@ -4,11 +4,10 @@
 {"_id":"Alice Wetterlund","lastUpdatedAt":1743595938675}
 {"_id":"Brad Williams","lastUpdatedAt":1746256885863}
 {"_id":"Carole Montgomery","lastUpdatedAt":1752825209710}
-{"_id":"EF - Linux Made Simple","lastUpdatedAt":1753426805809}
 {"_id":"Erica Rhodes","lastUpdatedAt":1750946371888}
 {"_id":"Firejail","lastUpdatedAt":1739252737438}
 {"_id":"Gina Yashere","lastUpdatedAt":1753163044573}
-{"_id":"Jeff Allen","lastUpdatedAt":1757405124944}
+{"_id":"Jeff Allen","lastUpdatedAt":1757840111690}
 {"_id":"Jeff foxworthy","lastUpdatedAt":1747546589617}
 {"_id":"Jethro Jokes","lastUpdatedAt":1746223936318}
 {"_id":"KC SHORNIMA","lastUpdatedAt":1753252926018}
@@ -25,17 +24,14 @@
 {"_id":"Sheng Wang ","lastUpdatedAt":1753256412607}
 {"_id":"Sinbad","lastUpdatedAt":1744496785123}
 {"_id":"Steve Treviño","lastUpdatedAt":1740431814723}
-{"_id":"Susan Rice","lastUpdatedAt":1757751510626}
 {"_id":"Tatiana Frank","lastUpdatedAt":1747942274016}
 {"_id":"Taylor Tomlinson","lastUpdatedAt":1757627379745}
 {"_id":"Thea Vidale","lastUpdatedAt":1755241756064}
 {"_id":"Vanessa Hollingshead","lastUpdatedAt":1749503320369}
 {"_id":"Wendy Liebman","lastUpdatedAt":1751484304998}
-{"_id":"aircrack-ng","lastUpdatedAt":1753241790117}
-{"_id":"aircrack-ng arch","lastUpdatedAt":1753241799996}
 {"_id":"alonzo bodden","lastUpdatedAt":1743957302281}
 {"_id":"andrea jin","lastUpdatedAt":1743621093253}
-{"_id":"andy huggins","lastUpdatedAt":1742858930543}
+{"_id":"andy huggins","lastUpdatedAt":1757840367680}
 {"_id":"arch vs nixos vs void","lastUpdatedAt":1751873213407}
 {"_id":"archlinux","lastUpdatedAt":1745744768168}
 {"_id":"bill engvall","lastUpdatedAt":1747772448037}
@@ -53,16 +49,14 @@
 {"_id":"nixhero","lastUpdatedAt":1748879987458}
 {"_id":"nixos","lastUpdatedAt":1747726281257}
 {"_id":"nixos  diffrent hosts","lastUpdatedAt":1748158253585}
-{"_id":"nixos dpkg","lastUpdatedAt":1753627171737}
 {"_id":"nixos fax","lastUpdatedAt":1752327431886}
 {"_id":"nixos hosts","lastUpdatedAt":1748172316084}
 {"_id":"nixos hyprland","lastUpdatedAt":1748232488792}
-{"_id":"nixos vs arch","lastUpdatedAt":1752917929640}
 {"_id":"paul reizer","lastUpdatedAt":1742458314062}
 {"_id":"python for beginners","lastUpdatedAt":1753509798485}
 {"_id":"roadrunner and coyote cartoons","lastUpdatedAt":1755328453266}
 {"_id":"rust tutorial 2024","lastUpdatedAt":1740956698864}
-{"_id":"rustdesk","lastUpdatedAt":1756534289953}
+{"_id":"susan rice comedian","lastUpdatedAt":1757838242431}
 {"_id":"systemd-boot","lastUpdatedAt":1739566156841}
 {"_id":"systemd-boot vs grub","lastUpdatedAt":1739534492425}
 {"_id":"systemd-boot vs grub arch","lastUpdatedAt":1739534680071}
@@ -71,34 +65,5 @@
 {"_id":"teri hatcher stand up comedy","lastUpdatedAt":1750745690456}
 {"_id":"vim","lastUpdatedAt":1752742452256}
 {"_id":"vimjoyer","lastUpdatedAt":1749582220889}
-{"_id":"void hyprland","lastUpdatedAt":1756724045735}
-{"_id":"void linux","lastUpdatedAt":1753801470216}
-{"_id":"void linux install","lastUpdatedAt":1756722222799}
-{"_id":"void linux install hyprland","lastUpdatedAt":1756723127179}
-{"_id":"void vs nixos vs arch","lastUpdatedAt":1753822458798}
-{"_id":"void vs nixos vs hyprland","lastUpdatedAt":1753821662704}
-{"_id":"void wayland","lastUpdatedAt":1753869561838}
-{"_id":"zeoxide","lastUpdatedAt":1755860960224}
 {"_id":"Λεωνίδας Μπαλάφας","lastUpdatedAt":1750767505741}
 {"_id":"λαζοπουλο","lastUpdatedAt":1744998398868}
-{"_id":"Susan Rice","lastUpdatedAt":1757838230522}
-{"_id":"susan rice comedian","lastUpdatedAt":1757838242431}
-{"_id":"Susan Rice","lastUpdatedAt":1757840101463}
-{"$$deleted":true,"_id":"Susan Rice"}
-{"_id":"Jeff Allen","lastUpdatedAt":1757840111690}
-{"$$deleted":true,"_id":"void hyprland"}
-{"$$deleted":true,"_id":"void linux install hyprland"}
-{"$$deleted":true,"_id":"void linux install"}
-{"$$deleted":true,"_id":"rustdesk"}
-{"$$deleted":true,"_id":"void wayland"}
-{"$$deleted":true,"_id":"void vs nixos vs arch"}
-{"$$deleted":true,"_id":"void vs nixos vs hyprland"}
-{"$$deleted":true,"_id":"void linux"}
-{"$$deleted":true,"_id":"nixos dpkg"}
-{"_id":"EF - Linux Made Simple","lastUpdatedAt":1757840174081}
-{"$$deleted":true,"_id":"EF - Linux Made Simple"}
-{"$$deleted":true,"_id":"zeoxide"}
-{"$$deleted":true,"_id":"aircrack-ng arch"}
-{"$$deleted":true,"_id":"aircrack-ng"}
-{"$$deleted":true,"_id":"nixos vs arch"}
-{"_id":"andy huggins","lastUpdatedAt":1757840367680}

@@ -19,9 +19,9 @@
 	"clock",
 //	"custom/swaync",
 //	 "custom/notifications",
-	"idle_inhibitor",
+//	"idle_inhibitor",
 	"hyprland/workspaces",
-	"wlr/taskbar",
+//	"wlr/taskbar",
 	"custom/pacman",
     ],
 
@@ -40,7 +40,7 @@
 	"backlight",
 	"network",
         "tray",
-	"power-profiles-daemon",
+//	"power-profiles-daemon",
 	"battery",
         "custom/power"
     ],

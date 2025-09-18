@@ -17,18 +17,18 @@
   "modules-left": [
 	"custom/arch",
 	"clock",
-	"hyprland/language",
 //	"custom/swaync",
 //	 "custom/notifications",
 	"idle_inhibitor",
 	"hyprland/workspaces",
 	"wlr/taskbar",
-	"pulseaudio",
 	"custom/pacman",
     ],
 
   "modules-center": [
+	"hyprland/language",
 	 "custom/clock",
+	"pulseaudio",
 ],
 
   "modules-right": [

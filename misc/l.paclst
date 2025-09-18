@@ -101,6 +101,7 @@ simple-scan
 slurp
 smartmontools
 sof-firmware
+speedtest-cli
 stow
 swaybg
 systemd-resolvconf

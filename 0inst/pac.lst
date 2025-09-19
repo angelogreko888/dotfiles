@@ -109,6 +109,7 @@ systemd-resolvconf
 timeshift
 tldr
 ttf-jetbrains-mono-nerd
+unzip
 usb_modeswitch
 usbutils
 vim
@@ -125,4 +126,5 @@ xf86-input-synaptics
 xorg-server
 xorg-xinit
 yt-dlp
+zip
 zoxide

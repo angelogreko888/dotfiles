@@ -16,6 +16,7 @@ systemd-homed.service
 acpid
 seatd
 laptop-mode.service
+iwd.service
 
 )
 

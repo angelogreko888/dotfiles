@@ -279,9 +279,9 @@
 
     "hyprland/language":{
 	    "format": "{}",
-        "format-en": "🇺🇸",
-	    "format-gr": "🇬🇷",
-	    "format-he": "🇮🇱",
+        "format-en": "<span color='#e57474'>EN</span>",
+	    "format-gr": "<span color='#e57474'>GR</span>",
+	    "format-he": "<span color='#e57474'>HE</span>",
         "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next"
 	},
 

@@ -204,7 +204,7 @@
 
 
     "pulseaudio": {
-         "format": "{volume} {icon}",
+         "format": " {volume} {icon}",
          "format-bluetooth": "{icon} 󰂰 {volume}%",
          "format-muted": "󰖁",
          "format-icons": {
@@ -279,9 +279,9 @@
 
     "hyprland/language":{
 	    "format": "{}",
-        "format-en": "<span color='#e57474'>EN</span>",
-	    "format-gr": "<span color='#00ffff'>GR</span>",
-	    "format-he": "<span color='#ffffff'>HE</span>",
+        "format-en": "<span color='#e57474'>en </span>",
+	    "format-gr": "<span color='#00ffff'>gr </span>",
+	    "format-he": "<span color='#ffffff'>he </span>",
         "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next"
 	},
 

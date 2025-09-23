@@ -42,7 +42,9 @@ gnome-disk-utility
 gnome-text-editor
 gparted
 grim
+gscan2pdf
 gst-plugin-pipewire
+gtk2
 gufw
 gvfs-mtp
 htop
@@ -87,12 +89,14 @@ otf-font-awesome
 pacman-contrib
 pamixer
 pavucontrol
+pdftk
 pipewire
 pipewire-alsa
 pipewire-jack
 pipewire-pulse
 plocate
 power-profiles-daemon
+python-pdftotext
 python-pip
 qt5-wayland
 qt5ct
@@ -121,7 +125,7 @@ waybar
 wget
 wireless_tools
 wireplumber
-xdg-desktop-portal-gtk
+xdg-desktop-portal-hyprland
 xdg-user-dirs
 xf86-input-synaptics
 xorg-server

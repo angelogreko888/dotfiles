@@ -21,6 +21,7 @@ mintstick
 mkinitcpio-firmware
 mmv
 mmv-debug
+qt6-tools-desktop
 ranger-git
 rustdesk-bin
 simple-mtpfs
@@ -28,7 +29,6 @@ spd5118-dkms-git
 udev-block-notify
 upd72020x-fw
 wd719x-firmware
-xdg-desktop-portal-hyprland-git
 xorgproto-git
 yay
 yay-debug

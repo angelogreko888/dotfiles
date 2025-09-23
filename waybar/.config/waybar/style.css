@@ -117,7 +117,7 @@ color: yellow;
   padding: 0px 15px 0px 15px;
   border-radius:15px;
   color:white;
-  font-size: 19px;
+  font-size: 21px;
 }
 
 #workspaces button:hover {
@@ -154,7 +154,7 @@ color: yellow;
 #clock {
   border-radius:30px;
   padding: 0px 15px 0px 15px;
-  font-size: 19px;
+  font-size: 21px;
 }
 
 #custom-notifications {

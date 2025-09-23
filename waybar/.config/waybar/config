@@ -280,8 +280,8 @@
     "hyprland/language":{
 	    "format": "{}",
         "format-en": "<span color='#e57474'>EN</span>",
-	    "format-gr": "<span color='#e57474'>GR</span>",
-	    "format-he": "<span color='#e57474'>HE</span>",
+	    "format-gr": "<span color='#00ffff'>GR</span>",
+	    "format-he": "<span color='#ffffff'>HE</span>",
         "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next"
 	},
 

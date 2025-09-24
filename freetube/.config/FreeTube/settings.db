@@ -8,7 +8,7 @@
 {"_id":"defaultVideoFormat","value":"dash"}
 {"_id":"disableSmoothScrolling","value":false}
 {"_id":"expandSideBar","value":false}
-{"_id":"externalPlayer","value":"vlc"}
+{"_id":"externalPlayer","value":"mpv"}
 {"_id":"externalPlayerExecutable","value":""}
 {"_id":"externalPlayerIgnoreDefaultArgs","value":true}
 {"_id":"externalPlayerIgnoreWarnings","value":true}

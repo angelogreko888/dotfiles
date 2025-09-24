@@ -279,7 +279,7 @@
 
     "hyprland/language":{
 	    "format": "{}",
-        "format-en": "<span color='#fff0f0'>en </span>",
+        "format-en": "<span color='#eeeeee'>en </span>",
 	    "format-gr": "<span color='#00ffff'>gr </span>",
 	    "format-he": "<span color='#e57474'>he </span>",
         "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next"

@@ -71,7 +71,7 @@
    
    "idle_inhibitor": {
          "format": "{icon}",
-	"start-activated": true,    
+//	"start-activated": true,    
          "format-icons": {
                 "activated": "",
                 "deactivated": ""

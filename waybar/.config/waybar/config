@@ -22,7 +22,6 @@
 	"idle_inhibitor",
 	"hyprland/workspaces",
 	"wlr/taskbar",
-	"custom/pacman",
     ],
 
   "modules-center": [

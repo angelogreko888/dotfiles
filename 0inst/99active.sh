@@ -55,19 +55,19 @@ for CTL in "${ctl[@]}";do
 	echo ""$CTL" activated"
 done
 
-printf "\n\e[1;32m......install br printer" ?: \n\e[0m"
-        select  yn in yes no;do
-                case $yn in
-                yes)  
-			~/dotfiles/0inst/900pbr.sh
-			break ;;
-
-		no) 
-			echo
-                        break ;;
-                 *) 
-                        printf "\n\e[1;31m... !!! ERROR Enter Your Choice !>
-                esac
+#printf "\n\e[1;32m......install br printer" ?: \n\e[0m"
+#        select  yn in yes no;do
+#                case $yn in
+#                yes)  
+#			~/dotfiles/0inst/900pbr.sh
+#			break ;;
+#
+#		no) 
+#			echo
+#                        break ;;
+#                 *) 
+#                        printf "\n\e[1;31m... !!! ERROR Enter Your Choice !>
+#                esac
 
 #fish
 cp ~/dotfiles/nouse/rootmisc/fish_history ~/.local/share/fish/

@@ -17,12 +17,12 @@ cd ~
 
 #git clone --depth 1 https://github.com/angelogreko888/dotfiles
 
-if ! [ -d ~/dotfiles ];then
-	printf "\n\e[1;31m... ERROR Folder Does Not Exist ... : \n\e[0m"
-	exit 1
-fi
-
-bash $is$cp
+#if ! [ -d ~/dotfiles ];then
+#	printf "\n\e[1;31m... ERROR Folder Does Not Exist ... : \n\e[0m"
+#	exit 1
+#fi
+#
+#bash $is$cp
 
 printf "\n\e[1;32m... press enter to continue ...yay : \e[0m"
 read

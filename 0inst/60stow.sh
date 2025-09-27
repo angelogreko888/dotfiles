@@ -11,7 +11,7 @@ if [ -f ~/.bashrc ];then
 	rm ~/.bashrc
 fi
 
-mkdir ~/.local
+mkdir -p ~/.local/share
 
 cd ~/dotfiles
 

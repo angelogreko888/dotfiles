@@ -13,6 +13,8 @@ if [ $a == LOQ ];then
 cp=q
 elif [ $a == Lenovo ];then
 cp=l
+elif [ $a == Dell ];then
+cp=d
 fi
 
 case $cp in

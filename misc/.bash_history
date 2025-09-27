@@ -2148,3 +2148,21 @@ cp -r /mnt/data/dotfiles/ .
 n ene
 bash -version
 startx
+sudo pacman -Syyu nano git
+rm -rf dotfiles
+git clone https://github.com/angelogreko888/dotfiles --depth 1
+grep -n 'scanner' -r .
+n aur.lst 
+nano  aur.lst 
+grep -n 'hyprlang' -r .
+grep -n 'hyprevents' -r .
+sudo nano /etc/pacman.conf 
+nano 020confpac-usr.sh 
+sudo pacman -Syyu reflector
+sudo pacman -S reflector
+sudo reflector --latest 5 --sort rate --protocol https --verbose 
+sudo reflector --latest 5 --sort rate --protocol https --verbose --country Greece,Tr,Israel,Germany,'United Kingdom'
+sudo nano /etc/pacman.d/mirrorlist 
+sudo reflector --latest 1 --sort rate --protocol https --verbose 
+cd waybar
+nano config

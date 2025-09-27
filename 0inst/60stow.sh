@@ -11,6 +11,8 @@ if [ -f ~/.bashrc ];then
 	rm ~/.bashrc
 fi
 
+mkdir ~/.local
+
 cd ~/dotfiles
 
 stow=(

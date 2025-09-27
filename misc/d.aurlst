@@ -4,6 +4,9 @@ android-sdk-platform-tools
 anydesk-bin
 ast-firmware
 aurutils
+checkupdates-systemd-git
+dell-bios-fan-control-git
+dell-bios-fan-control-git-debug
 flameshot-git
 floorp-bin
 freetube-bin
@@ -11,6 +14,7 @@ gnome-icon-theme-extras
 hyprevents-git
 hyprprop-git
 hyprshade
+i8kutils
 intel-gmmlib-legacy
 intel-media-driver-legacy-bin
 laptop-mode-tools
@@ -24,6 +28,7 @@ nvidia-390xx-utils
 ranger-git
 rustdesk-bin
 simple-mtpfs
+tcllib
 udev-block-notify
 upd72020x-fw
 wd719x-firmware

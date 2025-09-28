@@ -29,7 +29,7 @@ done
   rsync settings.db  ~/.config/FreeTube/settings.db;
   cd ~; 
   echo upgrading..........;
-  yay -Syyu;
+  yay -Syyu --noconfirm;
   ~/bin/dpaccache.sh;
   echo " Done!!!!!"
   read'

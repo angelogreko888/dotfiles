@@ -27,4 +27,9 @@ done
   rsync profiles.db  ~/.config/FreeTube/profiles.db;
   rsync search-history.db  ~/.config/FreeTube/search-history.db;
   rsync settings.db  ~/.config/FreeTube/settings.db;
-  echo Done!!!; cd ~;  read'
+  cd ~; 
+  echo upgrading..........;
+  yay -Syyu;
+  ~/bin/dpaccache.sh;
+  echo " Done!!!!!"
+  read'

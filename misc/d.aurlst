@@ -23,7 +23,6 @@ mintstick
 mkinitcpio-firmware
 mmv
 mmv-debug
-nvidia-390xx-utils
 ranger-git
 rustdesk-bin
 simple-mtpfs

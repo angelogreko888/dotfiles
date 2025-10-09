@@ -57,6 +57,12 @@ alias lu='sudo updatedb'
 alias md='mkdir -pv'
 
 alias ctl="sudo systemctl"
+alias ctls="sudo systemctl status"
+alias ctle="sudo systemctl enable"
+alias ctlst="sudo systemctl start"
+alias ctlen="sudo systemctl enable --now"
+alias ctlsp="sudo systemctl stop"
+alias ctld="sudo systemctl disavle"
 alias xopen='xdg-open'
 alias spo='sudo systemctl poweroff'
 alias srb='sudo reboot'

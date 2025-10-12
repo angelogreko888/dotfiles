@@ -184,7 +184,7 @@
          "format-ethernet": "󰈀",
 //	 "format": "↓ {bandwidthDownBits}  ↑ {bandwidthUpBits}", 
         "format-disconnected": "󰌙",
-//       "tooltip-format": "{ipaddr} ↓ {bandwidthDownBits}  ↑ {bandwidthUpBits}",
+       "tooltip-format": "{ipaddr} ↓ {bandwidthDownBits}  ↑ {bandwidthUpBits}",
         "format-linked": "󰈁 {ifname} (No IP)",
          "tooltip-format-wifi": "{essid} {icon} {signalStrength}%",
 //	 "tooltip-format-ethernet": "{ifname} ",

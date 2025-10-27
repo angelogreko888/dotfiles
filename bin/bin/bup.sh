@@ -3,7 +3,7 @@
 echo "Sync Started"
 
 #data
-rsync -a --exclude 'vago' --exclude '.cache' --exclude 'dotfiles'  /home/vago/ /mnt/data/vago/ --delete
+#rsync -a --exclude 'vago' --exclude '.cache' --exclude 'dotfiles' --exclude 'data' /home/vago/ /mnt/data/vago/ --delete
 
 rsync -a /home/vago/dotfiles/ /mnt/data/sync-vago/dotfiles/ --delete
 

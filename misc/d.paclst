@@ -44,7 +44,6 @@ gparted
 grim
 grub
 gst-plugin-pipewire
-gstreamer-vaapi
 gufw
 gvfs-mtp
 htop
@@ -60,12 +59,9 @@ iw
 iwd
 jdk-openjdk
 less
-lib32-nvidia-utils
-lib32-opencl-nvidia
 libeatmydata
 libpulse
 libreoffice-fresh
-libva-nvidia-driver
 linux
 linux-firmware
 linux-headers
@@ -81,9 +77,7 @@ net-tools
 network-manager-applet
 networkmanager
 nss-mdns
-nvidia-dkms
 nwg-look
-opencl-nvidia
 otf-font-awesome
 pacman-contrib
 pamixer
@@ -97,6 +91,7 @@ power-profiles-daemon
 python-pip
 qt5-wayland
 qt5ct
+qt6-wayland
 qt6ct
 reflector
 ripgrep
@@ -109,7 +104,6 @@ swaybg
 systemd-resolvconf
 timeshift
 tldr
-tllist
 ttf-jetbrains-mono-nerd
 unzip
 usb_modeswitch
@@ -120,8 +114,6 @@ waybar
 wget
 wireless_tools
 wireplumber
-wlroots0.19
-wmenu
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 xdg-user-dirs
@@ -131,3 +123,4 @@ xorg-xinit
 yt-dlp
 zip
 zoxide
+zram-generator

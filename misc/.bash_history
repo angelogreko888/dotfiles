@@ -2166,3 +2166,14 @@ sudo nano /etc/pacman.d/mirrorlist
 sudo reflector --latest 1 --sort rate --protocol https --verbose 
 cd waybar
 nano config
+sudo pacman -Su reflector
+sudo reflector --country Germany --sort rate --latest 5 --verbose
+sudo reflector --country Germany --sort rate --latest 1 --verbose
+sudo pacman -Su
+sudo pacman -Syu
+rm -rf yay
+rm -rf go
+./10yay.sh 
+nano 10yay.sh 
+nano 10yay.sh  -l
+makepkg -si 

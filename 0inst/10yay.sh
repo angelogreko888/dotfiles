@@ -20,5 +20,5 @@ else
 	fi
 fi
 cd ~
-rm -rf yay
-rm -rf go-build
+#rm -rf yay
+#rm -rf go-build

@@ -104,6 +104,7 @@ swaybg
 systemd-resolvconf
 timeshift
 tldr
+tllist
 ttf-jetbrains-mono-nerd
 unzip
 usb_modeswitch
@@ -114,6 +115,8 @@ waybar
 wget
 wireless_tools
 wireplumber
+wlroots0.19
+wmenu
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 xdg-user-dirs

@@ -7,6 +7,7 @@
 #fi
 
 
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -133,3 +134,4 @@ fi
 PS1='\n\[\033[1;33m\] ∋∈ ∋∈ ∋∈   \[\033[0m\]\[\033[3;34m\]\w \[\033[1;32m\]\[\033[0m\] \[\033[3;33m\]'
 
 . "$HOME/.cargo/env"
+

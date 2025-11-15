@@ -28,3 +28,5 @@ end
 
 
 export ANDROID_HOME=/opt/android-sdk/
+
+export PATH="$HOME/.local/bin:$PATH"

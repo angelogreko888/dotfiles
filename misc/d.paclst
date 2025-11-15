@@ -119,6 +119,7 @@ wlroots0.19
 wmenu
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
+xdg-desktop-portal-wlr
 xdg-user-dirs
 xf86-input-synaptics
 xorg-server

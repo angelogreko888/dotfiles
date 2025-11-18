@@ -1,6 +1,6 @@
 {"_id":"barColor","value":false}
 {"_id":"baseTheme","value":"dark"}
-{"_id":"bounds","value":{"x":6,"y":23,"width":1908,"height":1034,"maximized":false,"fullScreen":false}}
+{"_id":"bounds","value":{"x":6,"y":40,"width":1908,"height":1034,"maximized":false,"fullScreen":false}}
 {"_id":"checkForBlogPosts","value":false}
 {"_id":"checkForUpdates","value":false}
 {"_id":"defaultInterval","value":0}
@@ -20,4 +20,3 @@
 {"_id":"quickBookmarkTargetPlaylistId","value":"favorites"}
 {"_id":"region","value":"GR"}
 {"_id":"secColor","value":"Green"}
-{"_id":"bounds","value":{"x":6,"y":40,"width":1908,"height":1034,"maximized":false,"fullScreen":false}}

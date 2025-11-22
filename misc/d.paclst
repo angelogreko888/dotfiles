@@ -110,6 +110,8 @@ unzip
 usb_modeswitch
 usbutils
 vim
+virtualbox
+virtualbox-guest-utils
 w3m
 waybar
 wget

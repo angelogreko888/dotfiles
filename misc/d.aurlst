@@ -14,11 +14,13 @@ hyprprop-git
 hyprshade
 jp
 laptop-mode-tools
+lib32-nvidia-390xx-utils
 librewolf-bin
 mintstick
 mkinitcpio-firmware
 mmv
 mmv-debug
+nvidia-390xx-utils
 ranger-git
 rustdesk-bin
 simple-mtpfs

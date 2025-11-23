@@ -65,7 +65,7 @@ options nvidia NVreg_UsePageAttributeTable=1 NVreg_RegistryDwords="OverrideMaxPe
 " | sudo tee /etc/modprobe.d/nvidia.conf
 
 
-#sudo pacman -S --noconfirm --needed nvidia-dkms nvidia-utils lib32-nvidia-utils libva-nvidia-driver  lib32-opencl-nvidia opencl-nvidia
+sudo pacman -S --noconfirm --needed nvidia-dkms nvidia-utils lib32-nvidia-utils libva-nvidia-driver  lib32-opencl-nvidia opencl-nvidia
 
 sudo mkinitcpio -P
 

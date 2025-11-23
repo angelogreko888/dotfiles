@@ -62,6 +62,7 @@ less
 libeatmydata
 libpulse
 libreoffice-fresh
+libva-nvidia-driver
 linux
 linux-firmware
 linux-headers
@@ -125,6 +126,7 @@ xdg-desktop-portal-wlr
 xdg-user-dirs
 xf86-input-synaptics
 xorg-server
+xorg-server-devel
 xorg-xinit
 yt-dlp
 zip
